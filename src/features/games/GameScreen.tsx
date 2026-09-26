@@ -24,11 +24,18 @@ import { currentSpeed, updateSegment } from '../../lib/session/session'
 import { useSettings } from '../../lib/settings/settings'
 import s from './games.module.css'
 import { SpeedreadGame } from './Speedread'
+import { FalseFriendsGame, TwinsGame } from './Twins'
 
 type Outcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
 
+/** Новая игра — новое состояние: при переходе /game/twins → /game/ff экран не должен остаться на итогах прошлой. */
 export function GameRoute() {
   const id = useParams().id as GameId
+  const [params] = useSearchParams()
+  return <Game key={`${id}:${params.get('seg') ?? ''}`} id={id} />
+}
+
+function Game({ id }: { id: GameId }) {
   const [params] = useSearchParams()
   const seg = params.get('seg')
   // ?seconds= — короткий раунд для автотестов
@@ -84,6 +91,10 @@ export function GameRoute() {
           <StaticGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
         ) : id === 'quick' ? (
           <QuickGame key={round} onFinish={(o) => void finish(o)} />
+        ) : id === 'twins' ? (
+          <TwinsGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
+        ) : id === 'ff' ? (
+          <FalseFriendsGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
         ) : (
           <SpeedreadGame key={round} onFinish={(o) => void finish(o)} />
         ))}

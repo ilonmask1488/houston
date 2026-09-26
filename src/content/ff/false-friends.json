@@ -1,0 +1,808 @@
+[
+ {
+  "id": "ff-design",
+  "ru": "конструкция",
+  "context": "Конструкция кронштейна слишком тяжёлая.",
+  "options": [
+   "design",
+   "construction",
+   "constructive"
+  ],
+  "trap": "construction",
+  "why": "Construction — строительство, стройка. Конструкция изделия — design (как устроено) или structure (несущая часть).",
+  "speak": [
+   {
+    "text": "design",
+    "voice": "us-f"
+   },
+   {
+    "text": "design",
+    "voice": "us-m"
+   },
+   {
+    "text": "design",
+    "voice": "gb-f"
+   },
+   {
+    "text": "design",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-part",
+  "ru": "деталь",
+  "context": "Эта деталь изготовлена из титана.",
+  "options": [
+   "part",
+   "detail",
+   "item"
+  ],
+  "trap": "detail",
+  "why": "Detail — подробность, мелкая особенность. Деталь изделия — part (или component).",
+  "speak": [
+   {
+    "text": "part",
+    "voice": "us-f"
+   },
+   {
+    "text": "part",
+    "voice": "us-m"
+   },
+   {
+    "text": "part",
+    "voice": "gb-f"
+   },
+   {
+    "text": "part",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-design-project",
+  "ru": "проект (конструкторский)",
+  "context": "Проект узла готов на 80 %.",
+  "options": [
+   "design",
+   "project",
+   "draft"
+  ],
+  "trap": "project",
+  "why": "Project — работа, затея целиком («наш проект по композитам»). Сам проект изделия, чертежи и модель — design.",
+  "speak": [
+   {
+    "text": "design",
+    "voice": "us-f"
+   },
+   {
+    "text": "design",
+    "voice": "us-m"
+   },
+   {
+    "text": "design",
+    "voice": "gb-f"
+   },
+   {
+    "text": "design",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-design-engineer",
+  "ru": "конструктор",
+  "context": "Я работаю конструктором.",
+  "options": [
+   "design engineer",
+   "constructor",
+   "builder"
+  ],
+  "trap": "constructor",
+  "why": "Constructor — конструктор в программировании или строитель. Инженер-конструктор — design engineer.",
+  "speak": [
+   {
+    "text": "design engineer",
+    "voice": "us-f"
+   },
+   {
+    "text": "design engineer",
+    "voice": "us-m"
+   },
+   {
+    "text": "design engineer",
+    "voice": "gb-f"
+   },
+   {
+    "text": "design engineer",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-test",
+  "ru": "испытание",
+  "context": "Испытание на растяжение прошло успешно.",
+  "options": [
+   "test",
+   "experience",
+   "examination"
+  ],
+  "trap": "experience",
+  "why": "Experience — опыт, examination — осмотр или экзамен. Испытание — test (или trial для натурных).",
+  "speak": [
+   {
+    "text": "test",
+    "voice": "us-f"
+   },
+   {
+    "text": "test",
+    "voice": "us-m"
+   },
+   {
+    "text": "test",
+    "voice": "gb-f"
+   },
+   {
+    "text": "test",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-strength",
+  "ru": "прочность",
+  "context": "Нужно проверить прочность соединения.",
+  "options": [
+   "strength",
+   "durability",
+   "firmness"
+  ],
+  "trap": "durability",
+  "why": "Durability — долговечность, способность долго служить. Прочность — strength.",
+  "speak": [
+   {
+    "text": "strength",
+    "voice": "us-f"
+   },
+   {
+    "text": "strength",
+    "voice": "us-m"
+   },
+   {
+    "text": "strength",
+    "voice": "gb-f"
+   },
+   {
+    "text": "strength",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-neat",
+  "ru": "аккуратный",
+  "context": "У него очень аккуратные чертежи.",
+  "options": [
+   "neat",
+   "accurate",
+   "exact"
+  ],
+  "trap": "accurate",
+  "why": "Accurate — точный (accurate measurements). Аккуратный — neat (о работе, почерке) или careful (о человеке).",
+  "speak": [
+   {
+    "text": "neat",
+    "voice": "us-f"
+   },
+   {
+    "text": "neat",
+    "voice": "us-m"
+   },
+   {
+    "text": "neat",
+    "voice": "gb-f"
+   },
+   {
+    "text": "neat",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-surname",
+  "ru": "фамилия",
+  "context": "Напишите фамилию латиницей.",
+  "options": [
+   "surname",
+   "family",
+   "nickname"
+  ],
+  "trap": "family",
+  "why": "Family — семья, nickname — прозвище. Фамилия — surname, last name или family name.",
+  "speak": [
+   {
+    "text": "surname",
+    "voice": "us-f"
+   },
+   {
+    "text": "surname",
+    "voice": "us-m"
+   },
+   {
+    "text": "surname",
+    "voice": "gb-f"
+   },
+   {
+    "text": "surname",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-shop",
+  "ru": "магазин",
+  "context": "Купил болты в магазине рядом.",
+  "options": [
+   "shop",
+   "magazine",
+   "market"
+  ],
+  "trap": "magazine",
+  "why": "Magazine — журнал (или магазин оружия). Магазин — shop (BrE) или store (AmE).",
+  "speak": [
+   {
+    "text": "shop",
+    "voice": "us-f"
+   },
+   {
+    "text": "shop",
+    "voice": "us-m"
+   },
+   {
+    "text": "shop",
+    "voice": "gb-f"
+   },
+   {
+    "text": "shop",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-relevant",
+  "ru": "актуальный",
+  "context": "Эта тема очень актуальна.",
+  "options": [
+   "relevant",
+   "actual",
+   "actually"
+  ],
+  "trap": "actual",
+  "why": "Actual — фактический, настоящий (the actual load — фактическая нагрузка). Актуальный — relevant, current или up-to-date.",
+  "speak": [
+   {
+    "text": "relevant",
+    "voice": "us-f"
+   },
+   {
+    "text": "relevant",
+    "voice": "us-m"
+   },
+   {
+    "text": "relevant",
+    "voice": "gb-f"
+   },
+   {
+    "text": "relevant",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-rubber",
+  "ru": "резина",
+  "context": "Уплотнение из резины.",
+  "options": [
+   "rubber",
+   "resin",
+   "gum"
+  ],
+  "trap": "resin",
+  "why": "Resin — смола (эпоксидная смола — epoxy resin). Резина — rubber.",
+  "speak": [
+   {
+    "text": "rubber",
+    "voice": "us-f"
+   },
+   {
+    "text": "rubber",
+    "voice": "us-m"
+   },
+   {
+    "text": "rubber",
+    "voice": "gb-f"
+   },
+   {
+    "text": "rubber",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-cylinder",
+  "ru": "баллон (газовый)",
+  "context": "Баллон с азотом стоит у стенда.",
+  "options": [
+   "cylinder",
+   "balloon",
+   "bulb"
+  ],
+  "trap": "balloon",
+  "why": "Balloon — воздушный шар. Газовый баллон — gas cylinder или bottle.",
+  "speak": [
+   {
+    "text": "cylinder",
+    "voice": "us-f"
+   },
+   {
+    "text": "cylinder",
+    "voice": "us-m"
+   },
+   {
+    "text": "cylinder",
+    "voice": "gb-f"
+   },
+   {
+    "text": "cylinder",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-service-life",
+  "ru": "ресурс (двигателя)",
+  "context": "Ресурс двигателя — 500 часов.",
+  "options": [
+   "service life",
+   "resource",
+   "reserve"
+  ],
+  "trap": "resource",
+  "why": "Resource — запас, ресурс в смысле средств. Ресурс изделия — service life (или life).",
+  "speak": [
+   {
+    "text": "service life",
+    "voice": "us-f"
+   },
+   {
+    "text": "service life",
+    "voice": "us-m"
+   },
+   {
+    "text": "service life",
+    "voice": "gb-f"
+   },
+   {
+    "text": "service life",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-unit",
+  "ru": "агрегат",
+  "context": "Агрегат подачи топлива заменили.",
+  "options": [
+   "unit",
+   "aggregate",
+   "aggregator"
+  ],
+  "trap": "aggregate",
+  "why": "Aggregate — заполнитель бетона или совокупность. Агрегат в технике — unit или assembly.",
+  "speak": [
+   {
+    "text": "unit",
+    "voice": "us-f"
+   },
+   {
+    "text": "unit",
+    "voice": "us-m"
+   },
+   {
+    "text": "unit",
+    "voice": "gb-f"
+   },
+   {
+    "text": "unit",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-installation",
+  "ru": "монтаж",
+  "context": "Монтаж датчиков займёт два дня.",
+  "options": [
+   "installation",
+   "montage",
+   "editing"
+  ],
+  "trap": "montage",
+  "why": "Montage — монтаж фильма или коллаж. Монтаж оборудования — installation или assembly.",
+  "speak": [
+   {
+    "text": "installation",
+    "voice": "us-f"
+   },
+   {
+    "text": "installation",
+    "voice": "us-m"
+   },
+   {
+    "text": "installation",
+    "voice": "gb-f"
+   },
+   {
+    "text": "installation",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-review",
+  "ru": "экспертиза",
+  "context": "Проект прошёл экспертизу.",
+  "options": [
+   "expert review",
+   "expertise",
+   "expert"
+  ],
+  "trap": "expertise",
+  "why": "Expertise — компетентность, знания. Экспертиза — expert review, examination или assessment.",
+  "speak": [
+   {
+    "text": "expert review",
+    "voice": "us-f"
+   },
+   {
+    "text": "expert review",
+    "voice": "us-m"
+   },
+   {
+    "text": "expert review",
+    "voice": "gb-f"
+   },
+   {
+    "text": "expert review",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-office",
+  "ru": "кабинет",
+  "context": "Зайди ко мне в кабинет.",
+  "options": [
+   "office",
+   "cabinet",
+   "cab"
+  ],
+  "trap": "cabinet",
+  "why": "Cabinet — шкаф (или кабинет министров). Кабинет — office.",
+  "speak": [
+   {
+    "text": "office",
+    "voice": "us-f"
+   },
+   {
+    "text": "office",
+    "voice": "us-m"
+   },
+   {
+    "text": "office",
+    "voice": "gb-f"
+   },
+   {
+    "text": "office",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-ten-days",
+  "ru": "декада",
+  "context": "Отчёт сдаём в первой декаде месяца.",
+  "options": [
+   "the first ten days",
+   "the first decade",
+   "the first dozen"
+  ],
+  "trap": "the first decade",
+  "why": "Decade — десятилетие. Декада месяца — ten days.",
+  "speak": [
+   {
+    "text": "the first ten days",
+    "voice": "us-f"
+   },
+   {
+    "text": "the first ten days",
+    "voice": "us-m"
+   },
+   {
+    "text": "the first ten days",
+    "voice": "gb-f"
+   },
+   {
+    "text": "the first ten days",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-chuck",
+  "ru": "патрон (станка)",
+  "context": "Зажми заготовку в патроне.",
+  "options": [
+   "chuck",
+   "patron",
+   "cartridge"
+  ],
+  "trap": "patron",
+  "why": "Patron — покровитель или клиент. Патрон токарного станка — chuck; патрон с порохом — cartridge.",
+  "speak": [
+   {
+    "text": "chuck",
+    "voice": "us-f"
+   },
+   {
+    "text": "chuck",
+    "voice": "us-m"
+   },
+   {
+    "text": "chuck",
+    "voice": "gb-f"
+   },
+   {
+    "text": "chuck",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-schedule",
+  "ru": "график (работ)",
+  "context": "По графику испытания в мае.",
+  "options": [
+   "schedule",
+   "graphic",
+   "graph"
+  ],
+  "trap": "graphic",
+  "why": "Graphic — изображение, графика; graph — график функции. График работ — schedule.",
+  "speak": [
+   {
+    "text": "schedule",
+    "voice": "us-f"
+   },
+   {
+    "text": "schedule",
+    "voice": "us-m"
+   },
+   {
+    "text": "schedule",
+    "voice": "gb-f"
+   },
+   {
+    "text": "schedule",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-diagram",
+  "ru": "схема",
+  "context": "Посмотри электрическую схему.",
+  "options": [
+   "diagram",
+   "scheme",
+   "schema"
+  ],
+  "trap": "scheme",
+  "why": "Scheme — план или махинация. Схема (рисунок) — diagram; электрическая — circuit diagram, wiring diagram.",
+  "speak": [
+   {
+    "text": "diagram",
+    "voice": "us-f"
+   },
+   {
+    "text": "diagram",
+    "voice": "us-m"
+   },
+   {
+    "text": "diagram",
+    "voice": "gb-f"
+   },
+   {
+    "text": "diagram",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-reasonable",
+  "ru": "адекватный",
+  "context": "Это адекватное решение.",
+  "options": [
+   "reasonable",
+   "adequate",
+   "adequately"
+  ],
+  "trap": "adequate",
+  "why": "Adequate — достаточный, «сойдёт». Адекватный (разумный) — reasonable или sensible.",
+  "speak": [
+   {
+    "text": "reasonable",
+    "voice": "us-f"
+   },
+   {
+    "text": "reasonable",
+    "voice": "us-m"
+   },
+   {
+    "text": "reasonable",
+    "voice": "gb-f"
+   },
+   {
+    "text": "reasonable",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-efficient",
+  "ru": "эффективный (двигатель)",
+  "context": "Новый двигатель эффективнее.",
+  "options": [
+   "more efficient",
+   "more effective",
+   "more active"
+  ],
+  "trap": "more effective",
+  "why": "Effective — дающий нужный результат; efficient — с меньшими затратами, с высоким КПД. Двигатель — efficient.",
+  "speak": [
+   {
+    "text": "more efficient",
+    "voice": "us-f"
+   },
+   {
+    "text": "more efficient",
+    "voice": "us-m"
+   },
+   {
+    "text": "more efficient",
+    "voice": "gb-f"
+   },
+   {
+    "text": "more efficient",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-educated",
+  "ru": "интеллигентный",
+  "context": "Он очень интеллигентный человек.",
+  "options": [
+   "well-educated and cultured",
+   "intelligent",
+   "intellectual"
+  ],
+  "trap": "intelligent",
+  "why": "Intelligent — умный, сообразительный. Интеллигентный — well-educated, cultured, well-mannered.",
+  "speak": [
+   {
+    "text": "well-educated and cultured",
+    "voice": "us-f"
+   },
+   {
+    "text": "well-educated and cultured",
+    "voice": "us-m"
+   },
+   {
+    "text": "well-educated and cultured",
+    "voice": "gb-f"
+   },
+   {
+    "text": "well-educated and cultured",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-performer",
+  "ru": "артист",
+  "context": "На корпоративе выступал артист.",
+  "options": [
+   "performer",
+   "artist",
+   "artiste"
+  ],
+  "trap": "artist",
+  "why": "Artist — прежде всего художник. Артист на сцене — performer, actor, singer.",
+  "speak": [
+   {
+    "text": "performer",
+    "voice": "us-f"
+   },
+   {
+    "text": "performer",
+    "voice": "us-m"
+   },
+   {
+    "text": "performer",
+    "voice": "gb-f"
+   },
+   {
+    "text": "performer",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-thesis",
+  "ru": "дипломная работа",
+  "context": "Тема моего диплома — композитные панели.",
+  "options": [
+   "graduation thesis",
+   "diploma",
+   "diploma work"
+  ],
+  "trap": "diploma",
+  "why": "Diploma — сам документ об окончании. Дипломная работа — graduation thesis или final-year project.",
+  "speak": [
+   {
+    "text": "graduation thesis",
+    "voice": "us-f"
+   },
+   {
+    "text": "graduation thesis",
+    "voice": "us-m"
+   },
+   {
+    "text": "graduation thesis",
+    "voice": "gb-f"
+   },
+   {
+    "text": "graduation thesis",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ }
+]

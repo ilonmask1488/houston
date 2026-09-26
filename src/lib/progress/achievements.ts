@@ -27,6 +27,13 @@ export type AchievementId =
   | 'words-50'
   | 'finder-10'
   | 'speedread-150'
+  | 'letter-1'
+  | 'twins-100'
+  | 'ff-20'
+  | 'episodes-6'
+  | 'boss-air'
+  | 'boss-doc'
+  | 'boss-mail'
 
 type Check = () => Promise<boolean>
 
@@ -62,6 +69,15 @@ const CHECKS: Record<AchievementId, Check> = {
   'words-50': async () => (await db.cards.where('kind').equals(1).filter((c) => /^(w|u)-/.test(c.itemId)).count()) >= 50,
   'finder-10': async () => (await db.answers.where('kind').equals('find').filter((a) => a.correct && (a.latencyMs ?? 99_999) <= 20_000).count()) >= 10,
   'speedread-150': async () => ((await db.gameRecords.get('speedread'))?.best ?? 0) >= 150,
+  // Телеграмма и Чистый сигнал
+  'letter-1': async () => (await db.answers.where('kind').equals('letter').filter((a) => a.given.trim().length > 40).count()) > 0,
+  'twins-100': async () => ((await db.gameRecords.get('twins'))?.best ?? 0) >= 100,
+  'ff-20': async () => (await db.answers.where('kind').equals('ff').filter((a) => a.correct).count()) >= 20,
+  'episodes-6': async () => (await db.episodes.where('id').anyOf(['ep-1', 'ep-2', 'ep-3', 'ep-4', 'ep-5', 'ep-6']).count()) >= 6,
+  // Боссы: созвон понят (4 из 5), в статье найдено 3 ответа из 4, письмо заказчику написано
+  'boss-air': async () => (await db.answers.where('kind').equals('passage').filter((a) => a.item === 'boss-air' && a.correct).count()) > 0,
+  'boss-doc': async () => new Set((await db.answers.where('kind').equals('find').filter((a) => a.item.startsWith('boss-doc#') && a.correct).toArray()).map((a) => a.item)).size >= 3,
+  'boss-mail': async () => (await db.answers.where('kind').equals('letter').filter((a) => a.item === 'mw-boss' && a.given.trim().length > 40).count()) > 0,
 }
 
 export const ACHIEVEMENT_IDS = Object.keys(CHECKS) as AchievementId[]

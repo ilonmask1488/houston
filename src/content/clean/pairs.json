@@ -1,0 +1,1892 @@
+[
+ {
+  "id": "mp-think-sink",
+  "module": "clean-th",
+  "a": "think",
+  "b": "sink",
+  "ipaA": "θɪŋk",
+  "ipaB": "sɪŋk",
+  "ruA": "думать",
+  "ruB": "тонуть; раковина",
+  "speak": [
+   {
+    "text": "think",
+    "voice": "us-f"
+   },
+   {
+    "text": "think",
+    "voice": "us-m"
+   },
+   {
+    "text": "think",
+    "voice": "gb-f"
+   },
+   {
+    "text": "think",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sink",
+    "voice": "us-f"
+   },
+   {
+    "text": "sink",
+    "voice": "us-m"
+   },
+   {
+    "text": "sink",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sink",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-thick-sick",
+  "module": "clean-th",
+  "a": "thick",
+  "b": "sick",
+  "ipaA": "θɪk",
+  "ipaB": "sɪk",
+  "ruA": "толстый",
+  "ruB": "больной",
+  "speak": [
+   {
+    "text": "thick",
+    "voice": "us-f"
+   },
+   {
+    "text": "thick",
+    "voice": "us-m"
+   },
+   {
+    "text": "thick",
+    "voice": "gb-f"
+   },
+   {
+    "text": "thick",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sick",
+    "voice": "us-f"
+   },
+   {
+    "text": "sick",
+    "voice": "us-m"
+   },
+   {
+    "text": "sick",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sick",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-three-free",
+  "module": "clean-th",
+  "a": "three",
+  "b": "free",
+  "ipaA": "θriː",
+  "ipaB": "friː",
+  "ruA": "три",
+  "ruB": "свободный",
+  "speak": [
+   {
+    "text": "three",
+    "voice": "us-f"
+   },
+   {
+    "text": "three",
+    "voice": "us-m"
+   },
+   {
+    "text": "three",
+    "voice": "gb-f"
+   },
+   {
+    "text": "three",
+    "voice": "gb-m"
+   },
+   {
+    "text": "free",
+    "voice": "us-f"
+   },
+   {
+    "text": "free",
+    "voice": "us-m"
+   },
+   {
+    "text": "free",
+    "voice": "gb-f"
+   },
+   {
+    "text": "free",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-thumb-sum",
+  "module": "clean-th",
+  "a": "thumb",
+  "b": "sum",
+  "ipaA": "θʌm",
+  "ipaB": "sʌm",
+  "ruA": "большой палец",
+  "ruB": "сумма",
+  "speak": [
+   {
+    "text": "thumb",
+    "voice": "us-f"
+   },
+   {
+    "text": "thumb",
+    "voice": "us-m"
+   },
+   {
+    "text": "thumb",
+    "voice": "gb-f"
+   },
+   {
+    "text": "thumb",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sum",
+    "voice": "us-f"
+   },
+   {
+    "text": "sum",
+    "voice": "us-m"
+   },
+   {
+    "text": "sum",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sum",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-path-pass",
+  "module": "clean-th",
+  "a": "path",
+  "b": "pass",
+  "ipaA": "pæθ",
+  "ipaB": "pæs",
+  "ruA": "путь",
+  "ruB": "проход; пропуск",
+  "speak": [
+   {
+    "text": "path",
+    "voice": "us-f"
+   },
+   {
+    "text": "path",
+    "voice": "us-m"
+   },
+   {
+    "text": "path",
+    "voice": "gb-f"
+   },
+   {
+    "text": "path",
+    "voice": "gb-m"
+   },
+   {
+    "text": "pass",
+    "voice": "us-f"
+   },
+   {
+    "text": "pass",
+    "voice": "us-m"
+   },
+   {
+    "text": "pass",
+    "voice": "gb-f"
+   },
+   {
+    "text": "pass",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-mouth-mouse",
+  "module": "clean-th",
+  "a": "mouth",
+  "b": "mouse",
+  "ipaA": "maʊθ",
+  "ipaB": "maʊs",
+  "ruA": "рот",
+  "ruB": "мышь",
+  "speak": [
+   {
+    "text": "mouth",
+    "voice": "us-f"
+   },
+   {
+    "text": "mouth",
+    "voice": "us-m"
+   },
+   {
+    "text": "mouth",
+    "voice": "gb-f"
+   },
+   {
+    "text": "mouth",
+    "voice": "gb-m"
+   },
+   {
+    "text": "mouse",
+    "voice": "us-f"
+   },
+   {
+    "text": "mouse",
+    "voice": "us-m"
+   },
+   {
+    "text": "mouse",
+    "voice": "gb-f"
+   },
+   {
+    "text": "mouse",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-they-day",
+  "module": "clean-th",
+  "a": "they",
+  "b": "day",
+  "ipaA": "ðeɪ",
+  "ipaB": "deɪ",
+  "ruA": "они",
+  "ruB": "день",
+  "speak": [
+   {
+    "text": "they",
+    "voice": "us-f"
+   },
+   {
+    "text": "they",
+    "voice": "us-m"
+   },
+   {
+    "text": "they",
+    "voice": "gb-f"
+   },
+   {
+    "text": "they",
+    "voice": "gb-m"
+   },
+   {
+    "text": "day",
+    "voice": "us-f"
+   },
+   {
+    "text": "day",
+    "voice": "us-m"
+   },
+   {
+    "text": "day",
+    "voice": "gb-f"
+   },
+   {
+    "text": "day",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-then-zen",
+  "module": "clean-th",
+  "a": "then",
+  "b": "zen",
+  "ipaA": "ðen",
+  "ipaB": "zen",
+  "ruA": "тогда",
+  "ruB": "дзен",
+  "speak": [
+   {
+    "text": "then",
+    "voice": "us-f"
+   },
+   {
+    "text": "then",
+    "voice": "us-m"
+   },
+   {
+    "text": "then",
+    "voice": "gb-f"
+   },
+   {
+    "text": "then",
+    "voice": "gb-m"
+   },
+   {
+    "text": "zen",
+    "voice": "us-f"
+   },
+   {
+    "text": "zen",
+    "voice": "us-m"
+   },
+   {
+    "text": "zen",
+    "voice": "gb-f"
+   },
+   {
+    "text": "zen",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-west-vest",
+  "module": "clean-wv",
+  "a": "west",
+  "b": "vest",
+  "ipaA": "west",
+  "ipaB": "vest",
+  "ruA": "запад",
+  "ruB": "жилет",
+  "speak": [
+   {
+    "text": "west",
+    "voice": "us-f"
+   },
+   {
+    "text": "west",
+    "voice": "us-m"
+   },
+   {
+    "text": "west",
+    "voice": "gb-f"
+   },
+   {
+    "text": "west",
+    "voice": "gb-m"
+   },
+   {
+    "text": "vest",
+    "voice": "us-f"
+   },
+   {
+    "text": "vest",
+    "voice": "us-m"
+   },
+   {
+    "text": "vest",
+    "voice": "gb-f"
+   },
+   {
+    "text": "vest",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-wine-vine",
+  "module": "clean-wv",
+  "a": "wine",
+  "b": "vine",
+  "ipaA": "waɪn",
+  "ipaB": "vaɪn",
+  "ruA": "вино",
+  "ruB": "лоза",
+  "speak": [
+   {
+    "text": "wine",
+    "voice": "us-f"
+   },
+   {
+    "text": "wine",
+    "voice": "us-m"
+   },
+   {
+    "text": "wine",
+    "voice": "gb-f"
+   },
+   {
+    "text": "wine",
+    "voice": "gb-m"
+   },
+   {
+    "text": "vine",
+    "voice": "us-f"
+   },
+   {
+    "text": "vine",
+    "voice": "us-m"
+   },
+   {
+    "text": "vine",
+    "voice": "gb-f"
+   },
+   {
+    "text": "vine",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-wet-vet",
+  "module": "clean-wv",
+  "a": "wet",
+  "b": "vet",
+  "ipaA": "wet",
+  "ipaB": "vet",
+  "ruA": "мокрый",
+  "ruB": "ветеринар",
+  "speak": [
+   {
+    "text": "wet",
+    "voice": "us-f"
+   },
+   {
+    "text": "wet",
+    "voice": "us-m"
+   },
+   {
+    "text": "wet",
+    "voice": "gb-f"
+   },
+   {
+    "text": "wet",
+    "voice": "gb-m"
+   },
+   {
+    "text": "vet",
+    "voice": "us-f"
+   },
+   {
+    "text": "vet",
+    "voice": "us-m"
+   },
+   {
+    "text": "vet",
+    "voice": "gb-f"
+   },
+   {
+    "text": "vet",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-worse-verse",
+  "module": "clean-wv",
+  "a": "worse",
+  "b": "verse",
+  "ipaA": "wɜːs",
+  "ipaB": "vɜːs",
+  "ruA": "хуже",
+  "ruB": "стих",
+  "speak": [
+   {
+    "text": "worse",
+    "voice": "us-f"
+   },
+   {
+    "text": "worse",
+    "voice": "us-m"
+   },
+   {
+    "text": "worse",
+    "voice": "gb-f"
+   },
+   {
+    "text": "worse",
+    "voice": "gb-m"
+   },
+   {
+    "text": "verse",
+    "voice": "us-f"
+   },
+   {
+    "text": "verse",
+    "voice": "us-m"
+   },
+   {
+    "text": "verse",
+    "voice": "gb-f"
+   },
+   {
+    "text": "verse",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-wheel-veal",
+  "module": "clean-wv",
+  "a": "wheel",
+  "b": "veal",
+  "ipaA": "wiːl",
+  "ipaB": "viːl",
+  "ruA": "колесо",
+  "ruB": "телятина",
+  "speak": [
+   {
+    "text": "wheel",
+    "voice": "us-f"
+   },
+   {
+    "text": "wheel",
+    "voice": "us-m"
+   },
+   {
+    "text": "wheel",
+    "voice": "gb-f"
+   },
+   {
+    "text": "wheel",
+    "voice": "gb-m"
+   },
+   {
+    "text": "veal",
+    "voice": "us-f"
+   },
+   {
+    "text": "veal",
+    "voice": "us-m"
+   },
+   {
+    "text": "veal",
+    "voice": "gb-f"
+   },
+   {
+    "text": "veal",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-while-vile",
+  "module": "clean-wv",
+  "a": "while",
+  "b": "vile",
+  "ipaA": "waɪl",
+  "ipaB": "vaɪl",
+  "ruA": "пока",
+  "ruB": "мерзкий",
+  "speak": [
+   {
+    "text": "while",
+    "voice": "us-f"
+   },
+   {
+    "text": "while",
+    "voice": "us-m"
+   },
+   {
+    "text": "while",
+    "voice": "gb-f"
+   },
+   {
+    "text": "while",
+    "voice": "gb-m"
+   },
+   {
+    "text": "vile",
+    "voice": "us-f"
+   },
+   {
+    "text": "vile",
+    "voice": "us-m"
+   },
+   {
+    "text": "vile",
+    "voice": "gb-f"
+   },
+   {
+    "text": "vile",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-heat-eat",
+  "module": "clean-h",
+  "a": "heat",
+  "b": "eat",
+  "ipaA": "hiːt",
+  "ipaB": "iːt",
+  "ruA": "тепло; нагрев",
+  "ruB": "есть",
+  "speak": [
+   {
+    "text": "heat",
+    "voice": "us-f"
+   },
+   {
+    "text": "heat",
+    "voice": "us-m"
+   },
+   {
+    "text": "heat",
+    "voice": "gb-f"
+   },
+   {
+    "text": "heat",
+    "voice": "gb-m"
+   },
+   {
+    "text": "eat",
+    "voice": "us-f"
+   },
+   {
+    "text": "eat",
+    "voice": "us-m"
+   },
+   {
+    "text": "eat",
+    "voice": "gb-f"
+   },
+   {
+    "text": "eat",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-hold-old",
+  "module": "clean-h",
+  "a": "hold",
+  "b": "old",
+  "ipaA": "həʊld",
+  "ipaB": "əʊld",
+  "ruA": "держать",
+  "ruB": "старый",
+  "speak": [
+   {
+    "text": "hold",
+    "voice": "us-f"
+   },
+   {
+    "text": "hold",
+    "voice": "us-m"
+   },
+   {
+    "text": "hold",
+    "voice": "gb-f"
+   },
+   {
+    "text": "hold",
+    "voice": "gb-m"
+   },
+   {
+    "text": "old",
+    "voice": "us-f"
+   },
+   {
+    "text": "old",
+    "voice": "us-m"
+   },
+   {
+    "text": "old",
+    "voice": "gb-f"
+   },
+   {
+    "text": "old",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-hear-ear",
+  "module": "clean-h",
+  "a": "hear",
+  "b": "ear",
+  "ipaA": "hɪə",
+  "ipaB": "ɪə",
+  "ruA": "слышать",
+  "ruB": "ухо",
+  "speak": [
+   {
+    "text": "hear",
+    "voice": "us-f"
+   },
+   {
+    "text": "hear",
+    "voice": "us-m"
+   },
+   {
+    "text": "hear",
+    "voice": "gb-f"
+   },
+   {
+    "text": "hear",
+    "voice": "gb-m"
+   },
+   {
+    "text": "ear",
+    "voice": "us-f"
+   },
+   {
+    "text": "ear",
+    "voice": "us-m"
+   },
+   {
+    "text": "ear",
+    "voice": "gb-f"
+   },
+   {
+    "text": "ear",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-hair-air",
+  "module": "clean-h",
+  "a": "hair",
+  "b": "air",
+  "ipaA": "heə",
+  "ipaB": "eə",
+  "ruA": "волосы",
+  "ruB": "воздух",
+  "speak": [
+   {
+    "text": "hair",
+    "voice": "us-f"
+   },
+   {
+    "text": "hair",
+    "voice": "us-m"
+   },
+   {
+    "text": "hair",
+    "voice": "gb-f"
+   },
+   {
+    "text": "hair",
+    "voice": "gb-m"
+   },
+   {
+    "text": "air",
+    "voice": "us-f"
+   },
+   {
+    "text": "air",
+    "voice": "us-m"
+   },
+   {
+    "text": "air",
+    "voice": "gb-f"
+   },
+   {
+    "text": "air",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-hill-ill",
+  "module": "clean-h",
+  "a": "hill",
+  "b": "ill",
+  "ipaA": "hɪl",
+  "ipaB": "ɪl",
+  "ruA": "холм",
+  "ruB": "больной",
+  "speak": [
+   {
+    "text": "hill",
+    "voice": "us-f"
+   },
+   {
+    "text": "hill",
+    "voice": "us-m"
+   },
+   {
+    "text": "hill",
+    "voice": "gb-f"
+   },
+   {
+    "text": "hill",
+    "voice": "gb-m"
+   },
+   {
+    "text": "ill",
+    "voice": "us-f"
+   },
+   {
+    "text": "ill",
+    "voice": "us-m"
+   },
+   {
+    "text": "ill",
+    "voice": "gb-f"
+   },
+   {
+    "text": "ill",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-heart-art",
+  "module": "clean-h",
+  "a": "heart",
+  "b": "art",
+  "ipaA": "hɑːt",
+  "ipaB": "ɑːt",
+  "ruA": "сердце",
+  "ruB": "искусство",
+  "speak": [
+   {
+    "text": "heart",
+    "voice": "us-f"
+   },
+   {
+    "text": "heart",
+    "voice": "us-m"
+   },
+   {
+    "text": "heart",
+    "voice": "gb-f"
+   },
+   {
+    "text": "heart",
+    "voice": "gb-m"
+   },
+   {
+    "text": "art",
+    "voice": "us-f"
+   },
+   {
+    "text": "art",
+    "voice": "us-m"
+   },
+   {
+    "text": "art",
+    "voice": "gb-f"
+   },
+   {
+    "text": "art",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-ship-sheep",
+  "module": "clean-vowels",
+  "a": "ship",
+  "b": "sheep",
+  "ipaA": "ʃɪp",
+  "ipaB": "ʃiːp",
+  "ruA": "корабль",
+  "ruB": "овца",
+  "speak": [
+   {
+    "text": "ship",
+    "voice": "us-f"
+   },
+   {
+    "text": "ship",
+    "voice": "us-m"
+   },
+   {
+    "text": "ship",
+    "voice": "gb-f"
+   },
+   {
+    "text": "ship",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sheep",
+    "voice": "us-f"
+   },
+   {
+    "text": "sheep",
+    "voice": "us-m"
+   },
+   {
+    "text": "sheep",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sheep",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-live-leave",
+  "module": "clean-vowels",
+  "a": "live",
+  "b": "leave",
+  "ipaA": "lɪv",
+  "ipaB": "liːv",
+  "ruA": "жить",
+  "ruB": "уходить",
+  "speak": [
+   {
+    "text": "live",
+    "voice": "us-f"
+   },
+   {
+    "text": "live",
+    "voice": "us-m"
+   },
+   {
+    "text": "live",
+    "voice": "gb-f"
+   },
+   {
+    "text": "live",
+    "voice": "gb-m"
+   },
+   {
+    "text": "leave",
+    "voice": "us-f"
+   },
+   {
+    "text": "leave",
+    "voice": "us-m"
+   },
+   {
+    "text": "leave",
+    "voice": "gb-f"
+   },
+   {
+    "text": "leave",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-fill-feel",
+  "module": "clean-vowels",
+  "a": "fill",
+  "b": "feel",
+  "ipaA": "fɪl",
+  "ipaB": "fiːl",
+  "ruA": "заполнять",
+  "ruB": "чувствовать",
+  "speak": [
+   {
+    "text": "fill",
+    "voice": "us-f"
+   },
+   {
+    "text": "fill",
+    "voice": "us-m"
+   },
+   {
+    "text": "fill",
+    "voice": "gb-f"
+   },
+   {
+    "text": "fill",
+    "voice": "gb-m"
+   },
+   {
+    "text": "feel",
+    "voice": "us-f"
+   },
+   {
+    "text": "feel",
+    "voice": "us-m"
+   },
+   {
+    "text": "feel",
+    "voice": "gb-f"
+   },
+   {
+    "text": "feel",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-full-fool",
+  "module": "clean-vowels",
+  "a": "full",
+  "b": "fool",
+  "ipaA": "fʊl",
+  "ipaB": "fuːl",
+  "ruA": "полный",
+  "ruB": "дурак",
+  "speak": [
+   {
+    "text": "full",
+    "voice": "us-f"
+   },
+   {
+    "text": "full",
+    "voice": "us-m"
+   },
+   {
+    "text": "full",
+    "voice": "gb-f"
+   },
+   {
+    "text": "full",
+    "voice": "gb-m"
+   },
+   {
+    "text": "fool",
+    "voice": "us-f"
+   },
+   {
+    "text": "fool",
+    "voice": "us-m"
+   },
+   {
+    "text": "fool",
+    "voice": "gb-f"
+   },
+   {
+    "text": "fool",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-pull-pool",
+  "module": "clean-vowels",
+  "a": "pull",
+  "b": "pool",
+  "ipaA": "pʊl",
+  "ipaB": "puːl",
+  "ruA": "тянуть",
+  "ruB": "бассейн",
+  "speak": [
+   {
+    "text": "pull",
+    "voice": "us-f"
+   },
+   {
+    "text": "pull",
+    "voice": "us-m"
+   },
+   {
+    "text": "pull",
+    "voice": "gb-f"
+   },
+   {
+    "text": "pull",
+    "voice": "gb-m"
+   },
+   {
+    "text": "pool",
+    "voice": "us-f"
+   },
+   {
+    "text": "pool",
+    "voice": "us-m"
+   },
+   {
+    "text": "pool",
+    "voice": "gb-f"
+   },
+   {
+    "text": "pool",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-bed-bad",
+  "module": "clean-vowels",
+  "a": "bed",
+  "b": "bad",
+  "ipaA": "bed",
+  "ipaB": "bæd",
+  "ruA": "кровать",
+  "ruB": "плохой",
+  "speak": [
+   {
+    "text": "bed",
+    "voice": "us-f"
+   },
+   {
+    "text": "bed",
+    "voice": "us-m"
+   },
+   {
+    "text": "bed",
+    "voice": "gb-f"
+   },
+   {
+    "text": "bed",
+    "voice": "gb-m"
+   },
+   {
+    "text": "bad",
+    "voice": "us-f"
+   },
+   {
+    "text": "bad",
+    "voice": "us-m"
+   },
+   {
+    "text": "bad",
+    "voice": "gb-f"
+   },
+   {
+    "text": "bad",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-men-man",
+  "module": "clean-vowels",
+  "a": "men",
+  "b": "man",
+  "ipaA": "men",
+  "ipaB": "mæn",
+  "ruA": "мужчины",
+  "ruB": "мужчина",
+  "speak": [
+   {
+    "text": "men",
+    "voice": "us-f"
+   },
+   {
+    "text": "men",
+    "voice": "us-m"
+   },
+   {
+    "text": "men",
+    "voice": "gb-f"
+   },
+   {
+    "text": "men",
+    "voice": "gb-m"
+   },
+   {
+    "text": "man",
+    "voice": "us-f"
+   },
+   {
+    "text": "man",
+    "voice": "us-m"
+   },
+   {
+    "text": "man",
+    "voice": "gb-f"
+   },
+   {
+    "text": "man",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-sit-seat",
+  "module": "clean-vowels",
+  "a": "sit",
+  "b": "seat",
+  "ipaA": "sɪt",
+  "ipaB": "siːt",
+  "ruA": "сидеть",
+  "ruB": "сиденье",
+  "speak": [
+   {
+    "text": "sit",
+    "voice": "us-f"
+   },
+   {
+    "text": "sit",
+    "voice": "us-m"
+   },
+   {
+    "text": "sit",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sit",
+    "voice": "gb-m"
+   },
+   {
+    "text": "seat",
+    "voice": "us-f"
+   },
+   {
+    "text": "seat",
+    "voice": "us-m"
+   },
+   {
+    "text": "seat",
+    "voice": "gb-f"
+   },
+   {
+    "text": "seat",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-bed-bet",
+  "module": "clean-final",
+  "a": "bed",
+  "b": "bet",
+  "ipaA": "bed",
+  "ipaB": "bet",
+  "ruA": "кровать",
+  "ruB": "ставка",
+  "speak": [
+   {
+    "text": "bed",
+    "voice": "us-f"
+   },
+   {
+    "text": "bed",
+    "voice": "us-m"
+   },
+   {
+    "text": "bed",
+    "voice": "gb-f"
+   },
+   {
+    "text": "bed",
+    "voice": "gb-m"
+   },
+   {
+    "text": "bet",
+    "voice": "us-f"
+   },
+   {
+    "text": "bet",
+    "voice": "us-m"
+   },
+   {
+    "text": "bet",
+    "voice": "gb-f"
+   },
+   {
+    "text": "bet",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-bag-back",
+  "module": "clean-final",
+  "a": "bag",
+  "b": "back",
+  "ipaA": "bæɡ",
+  "ipaB": "bæk",
+  "ruA": "сумка",
+  "ruB": "спина; назад",
+  "speak": [
+   {
+    "text": "bag",
+    "voice": "us-f"
+   },
+   {
+    "text": "bag",
+    "voice": "us-m"
+   },
+   {
+    "text": "bag",
+    "voice": "gb-f"
+   },
+   {
+    "text": "bag",
+    "voice": "gb-m"
+   },
+   {
+    "text": "back",
+    "voice": "us-f"
+   },
+   {
+    "text": "back",
+    "voice": "us-m"
+   },
+   {
+    "text": "back",
+    "voice": "gb-f"
+   },
+   {
+    "text": "back",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-prize-price",
+  "module": "clean-final",
+  "a": "prize",
+  "b": "price",
+  "ipaA": "praɪz",
+  "ipaB": "praɪs",
+  "ruA": "приз",
+  "ruB": "цена",
+  "speak": [
+   {
+    "text": "prize",
+    "voice": "us-f"
+   },
+   {
+    "text": "prize",
+    "voice": "us-m"
+   },
+   {
+    "text": "prize",
+    "voice": "gb-f"
+   },
+   {
+    "text": "prize",
+    "voice": "gb-m"
+   },
+   {
+    "text": "price",
+    "voice": "us-f"
+   },
+   {
+    "text": "price",
+    "voice": "us-m"
+   },
+   {
+    "text": "price",
+    "voice": "gb-f"
+   },
+   {
+    "text": "price",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-eyes-ice",
+  "module": "clean-final",
+  "a": "eyes",
+  "b": "ice",
+  "ipaA": "aɪz",
+  "ipaB": "aɪs",
+  "ruA": "глаза",
+  "ruB": "лёд",
+  "speak": [
+   {
+    "text": "eyes",
+    "voice": "us-f"
+   },
+   {
+    "text": "eyes",
+    "voice": "us-m"
+   },
+   {
+    "text": "eyes",
+    "voice": "gb-f"
+   },
+   {
+    "text": "eyes",
+    "voice": "gb-m"
+   },
+   {
+    "text": "ice",
+    "voice": "us-f"
+   },
+   {
+    "text": "ice",
+    "voice": "us-m"
+   },
+   {
+    "text": "ice",
+    "voice": "gb-f"
+   },
+   {
+    "text": "ice",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-card-cart",
+  "module": "clean-final",
+  "a": "card",
+  "b": "cart",
+  "ipaA": "kɑːd",
+  "ipaB": "kɑːt",
+  "ruA": "карта",
+  "ruB": "тележка",
+  "speak": [
+   {
+    "text": "card",
+    "voice": "us-f"
+   },
+   {
+    "text": "card",
+    "voice": "us-m"
+   },
+   {
+    "text": "card",
+    "voice": "gb-f"
+   },
+   {
+    "text": "card",
+    "voice": "gb-m"
+   },
+   {
+    "text": "cart",
+    "voice": "us-f"
+   },
+   {
+    "text": "cart",
+    "voice": "us-m"
+   },
+   {
+    "text": "cart",
+    "voice": "gb-f"
+   },
+   {
+    "text": "cart",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-wide-white",
+  "module": "clean-final",
+  "a": "wide",
+  "b": "white",
+  "ipaA": "waɪd",
+  "ipaB": "waɪt",
+  "ruA": "широкий",
+  "ruB": "белый",
+  "speak": [
+   {
+    "text": "wide",
+    "voice": "us-f"
+   },
+   {
+    "text": "wide",
+    "voice": "us-m"
+   },
+   {
+    "text": "wide",
+    "voice": "gb-f"
+   },
+   {
+    "text": "wide",
+    "voice": "gb-m"
+   },
+   {
+    "text": "white",
+    "voice": "us-f"
+   },
+   {
+    "text": "white",
+    "voice": "us-m"
+   },
+   {
+    "text": "white",
+    "voice": "gb-f"
+   },
+   {
+    "text": "white",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-leave-leaf",
+  "module": "clean-final",
+  "a": "leave",
+  "b": "leaf",
+  "ipaA": "liːv",
+  "ipaB": "liːf",
+  "ruA": "уходить",
+  "ruB": "лист",
+  "speak": [
+   {
+    "text": "leave",
+    "voice": "us-f"
+   },
+   {
+    "text": "leave",
+    "voice": "us-m"
+   },
+   {
+    "text": "leave",
+    "voice": "gb-f"
+   },
+   {
+    "text": "leave",
+    "voice": "gb-m"
+   },
+   {
+    "text": "leaf",
+    "voice": "us-f"
+   },
+   {
+    "text": "leaf",
+    "voice": "us-m"
+   },
+   {
+    "text": "leaf",
+    "voice": "gb-f"
+   },
+   {
+    "text": "leaf",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-save-safe",
+  "module": "clean-final",
+  "a": "save",
+  "b": "safe",
+  "ipaA": "seɪv",
+  "ipaB": "seɪf",
+  "ruA": "сохранять",
+  "ruB": "безопасный",
+  "speak": [
+   {
+    "text": "save",
+    "voice": "us-f"
+   },
+   {
+    "text": "save",
+    "voice": "us-m"
+   },
+   {
+    "text": "save",
+    "voice": "gb-f"
+   },
+   {
+    "text": "save",
+    "voice": "gb-m"
+   },
+   {
+    "text": "safe",
+    "voice": "us-f"
+   },
+   {
+    "text": "safe",
+    "voice": "us-m"
+   },
+   {
+    "text": "safe",
+    "voice": "gb-f"
+   },
+   {
+    "text": "safe",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-sing-sin",
+  "module": "clean-ng",
+  "a": "sing",
+  "b": "sin",
+  "ipaA": "sɪŋ",
+  "ipaB": "sɪn",
+  "ruA": "петь",
+  "ruB": "грех",
+  "speak": [
+   {
+    "text": "sing",
+    "voice": "us-f"
+   },
+   {
+    "text": "sing",
+    "voice": "us-m"
+   },
+   {
+    "text": "sing",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sing",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sin",
+    "voice": "us-f"
+   },
+   {
+    "text": "sin",
+    "voice": "us-m"
+   },
+   {
+    "text": "sin",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sin",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-thing-thin",
+  "module": "clean-ng",
+  "a": "thing",
+  "b": "thin",
+  "ipaA": "θɪŋ",
+  "ipaB": "θɪn",
+  "ruA": "вещь",
+  "ruB": "тонкий",
+  "speak": [
+   {
+    "text": "thing",
+    "voice": "us-f"
+   },
+   {
+    "text": "thing",
+    "voice": "us-m"
+   },
+   {
+    "text": "thing",
+    "voice": "gb-f"
+   },
+   {
+    "text": "thing",
+    "voice": "gb-m"
+   },
+   {
+    "text": "thin",
+    "voice": "us-f"
+   },
+   {
+    "text": "thin",
+    "voice": "us-m"
+   },
+   {
+    "text": "thin",
+    "voice": "gb-f"
+   },
+   {
+    "text": "thin",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-wing-win",
+  "module": "clean-ng",
+  "a": "wing",
+  "b": "win",
+  "ipaA": "wɪŋ",
+  "ipaB": "wɪn",
+  "ruA": "крыло",
+  "ruB": "побеждать",
+  "speak": [
+   {
+    "text": "wing",
+    "voice": "us-f"
+   },
+   {
+    "text": "wing",
+    "voice": "us-m"
+   },
+   {
+    "text": "wing",
+    "voice": "gb-f"
+   },
+   {
+    "text": "wing",
+    "voice": "gb-m"
+   },
+   {
+    "text": "win",
+    "voice": "us-f"
+   },
+   {
+    "text": "win",
+    "voice": "us-m"
+   },
+   {
+    "text": "win",
+    "voice": "gb-f"
+   },
+   {
+    "text": "win",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-rang-ran",
+  "module": "clean-ng",
+  "a": "rang",
+  "b": "ran",
+  "ipaA": "ræŋ",
+  "ipaB": "ræn",
+  "ruA": "звонил",
+  "ruB": "бежал",
+  "speak": [
+   {
+    "text": "rang",
+    "voice": "us-f"
+   },
+   {
+    "text": "rang",
+    "voice": "us-m"
+   },
+   {
+    "text": "rang",
+    "voice": "gb-f"
+   },
+   {
+    "text": "rang",
+    "voice": "gb-m"
+   },
+   {
+    "text": "ran",
+    "voice": "us-f"
+   },
+   {
+    "text": "ran",
+    "voice": "us-m"
+   },
+   {
+    "text": "ran",
+    "voice": "gb-f"
+   },
+   {
+    "text": "ran",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-sung-sun",
+  "module": "clean-ng",
+  "a": "sung",
+  "b": "sun",
+  "ipaA": "sʌŋ",
+  "ipaB": "sʌn",
+  "ruA": "спетый",
+  "ruB": "солнце",
+  "speak": [
+   {
+    "text": "sung",
+    "voice": "us-f"
+   },
+   {
+    "text": "sung",
+    "voice": "us-m"
+   },
+   {
+    "text": "sung",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sung",
+    "voice": "gb-m"
+   },
+   {
+    "text": "sun",
+    "voice": "us-f"
+   },
+   {
+    "text": "sun",
+    "voice": "us-m"
+   },
+   {
+    "text": "sun",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sun",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mp-king-kin",
+  "module": "clean-ng",
+  "a": "king",
+  "b": "kin",
+  "ipaA": "kɪŋ",
+  "ipaB": "kɪn",
+  "ruA": "король",
+  "ruB": "родня",
+  "speak": [
+   {
+    "text": "king",
+    "voice": "us-f"
+   },
+   {
+    "text": "king",
+    "voice": "us-m"
+   },
+   {
+    "text": "king",
+    "voice": "gb-f"
+   },
+   {
+    "text": "king",
+    "voice": "gb-m"
+   },
+   {
+    "text": "kin",
+    "voice": "us-f"
+   },
+   {
+    "text": "kin",
+    "voice": "us-m"
+   },
+   {
+    "text": "kin",
+    "voice": "gb-f"
+   },
+   {
+    "text": "kin",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ }
+]

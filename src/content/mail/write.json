@@ -1,0 +1,90 @@
+[
+ {
+  "id": "mw-structure-1",
+  "module": "mail-structure",
+  "task": "Напиши Тому (Австралия, лаборатория), что тебе нужны фотографии разрушенных образцов к среде для отчёта.",
+  "incoming": null,
+  "model": "Subject: Photos of the failed specimens\n\nHi Tom,\n\nI'm writing to ask for photos of the failed specimens from last week's tensile tests. Could you send them by Wednesday? I need them for the test report.\n\nThanks,\nIvan",
+  "checklist": [
+   "тема конкретная",
+   "первая фраза — зачем пишешь",
+   "просьба вопросом с could",
+   "срок — by Wednesday",
+   "подпись без «With respect»"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mw-register-1",
+  "module": "mail-register",
+  "task": "Коллега из британского офиса спросил, можно ли взять вашу термокамеру на следующей неделе. Ответь нейтрально: можно в понедельник и вторник, в среду она занята.",
+  "incoming": "Hi Ivan,\n\nWould it be possible to borrow your thermal chamber next week? We need it for about two days.\n\nThanks,\nSophie",
+  "model": "Hi Sophie,\n\nSure, you can use the chamber on Monday and Tuesday. On Wednesday it's booked for our own tests, so it would need to be back by Tuesday evening.\n\nBest regards,\nIvan",
+  "checklist": [
+   "ответ в том же регистре",
+   "ясно: какие дни можно",
+   "причина, почему в среду нельзя",
+   "без лишних извинений"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mw-apply-1",
+  "module": "mail-apply",
+  "task": "Напиши благодарность после собеседования Дане (тимлид). Упомяни одну деталь разговора — например, их вибростенд.",
+  "incoming": null,
+  "model": "Subject: Thank you\n\nHi Dana,\n\nThank you for taking the time to speak with me today. I especially enjoyed hearing about your vibration test lab — it's exactly the kind of work I'd like to do.\n\nI look forward to hearing from you.\n\nBest regards,\nIvan",
+  "checklist": [
+   "в течение суток",
+   "спасибо за время",
+   "одна конкретная деталь",
+   "интерес к работе",
+   "3–5 предложений"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mw-request-1",
+  "module": "mail-request",
+  "task": "Поставщик клапанов обещал ответить про сроки неделю назад и молчит. Напиши вежливое напоминание и повтори вопрос.",
+  "incoming": "Hi Ivan,\n\nThanks for your order. I'll check the lead time with our factory and get back to you by Monday.\n\nBest,\nArjun",
+  "model": "Hi Arjun,\n\nJust following up on the lead time for the solenoid valves. Could you let me know when you expect to ship them? We need to plan the test campaign.\n\nThanks,\nIvan",
+  "checklist": [
+   "без упрёка",
+   "вопрос повторён",
+   "объяснено, зачем нужен ответ",
+   "коротко"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mw-decline-1",
+  "module": "mail-decline",
+  "task": "Руководитель проекта из другой компании просит провести дополнительное испытание до пятницы. Стенд занят до среды следующей недели. Откажи и предложи альтернативу.",
+  "incoming": "Hi Ivan,\n\nCould your team run one more fatigue test before Friday? It would really help us with the design review.\n\nBest regards,\nGrace",
+  "model": "Hi Grace,\n\nThanks for asking. Unfortunately, our rig is fully booked until next Wednesday, so we can't run the test before Friday. We could start it on Wednesday and share first results on Thursday. Would that work for your review?\n\nBest regards,\nIvan",
+  "checklist": [
+   "поблагодарил",
+   "«нет» сказано ясно",
+   "короткая причина",
+   "альтернатива с датой",
+   "вопрос в конце"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mw-status-1",
+  "module": "mail-status",
+  "task": "Напиши Дане статус испытаний: 9 из 12 образцов испытаны, датчик силы на поверке до вторника, отчёт будет в пятницу вместо четверга.",
+  "incoming": null,
+  "model": "Subject: Status – fatigue tests\n\nHi Dana,\n\nStatus: one day behind.\nDone: 9 of 12 specimens tested.\nBlocked: the load cell is being calibrated until Tuesday.\nNext: the last three specimens on Wednesday, report on Friday instead of Thursday.\n\nBest,\nIvan",
+  "checklist": [
+   "статус первой строкой",
+   "что сделано — цифрами",
+   "что мешает",
+   "что дальше — с датами",
+   "новый срок назван честно"
+  ],
+  "reviewed": false
+ }
+]

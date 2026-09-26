@@ -73,6 +73,34 @@
   color: var(--ink-2);
 }
 
+.bankRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.tag[data-reg='formal'] {
+  color: var(--signal-ink);
+}
+
+.ff {
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.ff summary {
+  min-height: 32px;
+  cursor: pointer;
+}
+
+.ffTrap {
+  color: var(--danger);
+  font-size: var(--fs-caption);
+}
+
 .ipa {
   color: var(--ink-2);
   font-size: var(--fs-caption);

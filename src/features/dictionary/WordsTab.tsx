@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useState } from 'react'
 import { PlayButton } from '../../components/Play'
 import ui from '../../components/ui.module.css'
+import { content } from '../../content'
 import type { DictWord } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { defaultVoice } from '../../lib/audio/audio'
@@ -141,6 +142,23 @@ export function WordsTab({ query }: { query: string }) {
               ))}
           </ul>
         )}
+      </section>
+      <section className={s.group}>
+        <h2 className={s.fn}>
+          {t.falseFriends} <span className={s.note}>· {t.falseFriendsNote}</span>
+        </h2>
+        <ul className={s.list}>
+          {content.falseFriends.map((f) => (
+            <li key={f.id}>
+              <details className={s.ff}>
+                <summary>
+                  <span>{f.ru}</span> → <span lang="en">{f.options[0]}</span> <span className={s.ffTrap}>{ru.clean.ffTrap(f.trap)}</span>
+                </summary>
+                <p className={s.ru}>{f.why}</p>
+              </details>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   )

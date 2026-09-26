@@ -1,0 +1,93 @@
+[
+ {
+  "id": "mo-structure-1",
+  "module": "mail-structure",
+  "title": "Запрос протокола испытаний",
+  "blocks": [
+   "Subject: Test report for bracket B-12",
+   "Hi Tom,",
+   "I'm writing to ask about the vibration test of bracket B-12.",
+   "Could you send me the test report and the raw data?",
+   "I need them by Thursday to finish the analysis.",
+   "Thanks in advance,",
+   "Ivan"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo-register-1",
+  "module": "mail-register",
+  "title": "Официальный запрос в испытательный центр",
+  "blocks": [
+   "Subject: Request for quotation – static tests of composite panels",
+   "Dear Sir or Madam,",
+   "I am a design engineer at Orbita Lab, and we are planning static tests of six composite panels.",
+   "I would be grateful if you could provide a quotation and your earliest available dates.",
+   "The test specification is attached.",
+   "Kind regards,",
+   "Ivan Petrov"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo-apply-1",
+  "module": "mail-apply",
+  "title": "Отклик на вакансию",
+  "blocks": [
+   "Subject: Application – Junior Design Engineer",
+   "Dear Ms Clark,",
+   "I am writing to apply for the Junior Design Engineer position advertised on your website.",
+   "I am a fourth-year student in rocket and space engineering, and in my current project I designed and tested a composite bracket that was 30% lighter than the aluminium one.",
+   "I have attached my CV and a short portfolio.",
+   "I look forward to hearing from you.",
+   "Kind regards,",
+   "Ivan Petrov"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo-request-1",
+  "module": "mail-request",
+  "title": "Напоминание о чертежах",
+  "blocks": [
+   "Subject: Re: Drawings for the adapter ring",
+   "Hi Oliver,",
+   "Just following up on my email from Monday.",
+   "Could you send the updated drawings of the adapter ring?",
+   "We need them by Wednesday to order the material.",
+   "Thanks,",
+   "Ivan"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo-decline-1",
+  "module": "mail-decline",
+  "title": "Перенос созвона",
+  "blocks": [
+   "Subject: Moving our Tuesday call",
+   "Hi Grace,",
+   "Sorry for the short notice, but I need to move our call on Tuesday — the test rig is only available that morning.",
+   "Would Wednesday at 10:00 or Thursday at 15:00 work for you?",
+   "Best regards,",
+   "Ivan"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "mo-status-1",
+  "module": "mail-status",
+  "title": "Еженедельный статус",
+  "blocks": [
+   "Subject: Weekly status – panel tests",
+   "Hi Dana,",
+   "Status: on track for the Friday deadline.",
+   "Done: 12 of 15 panels tested, no unexpected failures.",
+   "Blocked: the load cell is being recalibrated until Tuesday.",
+   "Next: the last three panels on Wednesday, draft report on Friday.",
+   "Best,",
+   "Ivan"
+  ],
+  "reviewed": false
+ }
+]

@@ -280,3 +280,15 @@ export function bestAlternative(target: string, alts: string[]): { heard: string
 export function countWords(text: string): number {
   return normalizeWords(text).length
 }
+
+/**
+  Минимальная пара вслух: что услышало распознавание — нужное слово (в основном варианте или в альтернативах),
+  соседнее по паре (только в основном — альтернативы слишком щедры) или ничего из двух.
+*/
+export function judgePair(target: string, other: string, transcript: string, alts: string[]): 'right' | 'other' | 'none' {
+  const main = normalizeWords(transcript)
+  const all = [main, ...alts.map(normalizeWords)]
+  if (all.some((ws) => ws.includes(target))) return 'right'
+  if (main.includes(other)) return 'other'
+  return 'none'
+}

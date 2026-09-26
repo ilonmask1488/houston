@@ -17,7 +17,7 @@ const TABS = [
 ]
 
 /** Экраны, где нижняя навигация мешает (тест, упражнения и игры во весь экран). */
-const FULLSCREEN = ['/intake', '/run/', '/game/', '/interview', '/episode/']
+const FULLSCREEN = ['/intake', '/run/', '/game/', '/interview', '/episode/', '/boss/']
 
 export function Shell() {
   const { pathname } = useLocation()

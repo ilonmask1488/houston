@@ -75,7 +75,7 @@ export function LibraryScreen() {
           <h2 className={s.levelTitle}>{t.levels[lv]}</h2>
           <ul className={s.list}>
             {content.texts
-              .filter((x) => x.level === lv)
+              .filter((x) => x.level === lv && !x.module.startsWith('boss'))
               .map((x) => (
                 <li key={x.id}>
                   <Link to={`/library/${x.id}`} className={s.item}>

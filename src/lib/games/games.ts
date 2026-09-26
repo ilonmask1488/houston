@@ -5,14 +5,16 @@
   «Скорочтение» — технический абзац, найти предложение с ответом, пока идёт таймер.
 */
 import { content } from '../../content'
-import type { VoiceId } from '../../content/types'
+import type { MinimalPair, VoiceId } from '../../content/types'
 import type { Progress } from '../course/progress'
 import { db } from '../db/db'
 import { rng, shuffle } from '../intake/plan'
 import { localDate } from '../progress/streak'
 
-export type GameId = 'static' | 'quick' | 'speedread'
-export const GAME_IDS: GameId[] = ['static', 'quick', 'speedread']
+export type GameId = 'static' | 'quick' | 'speedread' | 'twins' | 'ff'
+export const GAME_IDS: GameId[] = ['static', 'quick', 'speedread', 'twins', 'ff']
+/** Игры на время (60 с): «Помехи», «Близнецы», «Ложные друзья». */
+export const TIMED_SECONDS = 60
 export const STATIC_SECONDS = 60
 export const QUICK_ROUNDS = 3
 
@@ -58,6 +60,24 @@ export function quickQuestions(seed: number, n = QUICK_ROUNDS) {
   return shuffle(content.questions, rng(seed)).slice(0, n)
 }
 
+/* ——— Близнецы и Ложные друзья ——— */
+
+const STD_VOICES: VoiceId[] = ['us-f', 'us-m', 'gb-f', 'gb-m']
+
+/**
+  Голос в «Близнецах»: пока серия короткая — привычный (по настройкам); с серии 4 — любой
+  из четырёх (американский и британский, мужской и женский): тот же звук разными голосами сложнее.
+*/
+export function twinsVoice(streak: number, base: VoiceId, random: () => number): VoiceId {
+  return streak < 4 ? base : STD_VOICES[Math.floor(random() * STD_VOICES.length)]!
+}
+
+/** Раунд «Близнецов»: пара и какое из двух слов прозвучит; та же пара два раза подряд не выпадает. */
+export function twinsRound(random: () => number, after?: string): { pair: MinimalPair; pick: 0 | 1 } {
+  const pool = content.pairs.filter((p) => p.id !== after)
+  return { pair: pool[Math.floor(random() * pool.length)]!, pick: random() < 0.5 ? 0 : 1 }
+}
+
 /* ——— Скорочтение ——— */
 
 export const SPEEDREAD_ROUNDS = 6
@@ -71,7 +91,7 @@ export type SpeedreadItem = { id: string; text: string; q: string; key: string; 
 */
 export function speedreadRounds(seed: number, n = SPEEDREAD_ROUNDS): SpeedreadItem[] {
   const all: SpeedreadItem[] = []
-  for (const t of content.texts)
+  for (const t of content.texts.filter((x) => !x.module.startsWith('boss')))
     t.find.forEach((f, i) => {
       const p = t.paragraphs.findIndex((x) => x.toLowerCase().includes(f.key.toLowerCase()))
       if (p < 0) return

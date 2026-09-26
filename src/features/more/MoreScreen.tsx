@@ -86,6 +86,7 @@ const LICENSES: [string, string][] = [
   ['Dexie', 'Apache-2.0'],
   ['Workbox, vite-plugin-pwa', 'MIT'],
   ['ts-fsrs (интервальное повторение)', 'MIT'],
+  ['pitchy, fft.js (график тона)', 'MIT'],
   ['IBM Plex Sans, Sans Condensed, Mono', 'SIL Open Font License 1.1'],
   ['NGSL, NAWL, BSL — Browne, Culligan, Phillips', 'CC BY-SA 4.0'],
 ]

@@ -1,0 +1,236 @@
+[
+ {
+  "id": "mr-structure-1",
+  "module": "mail-structure",
+  "situation": "Пишешь первое письмо профессору из другого университета. Обращение?",
+  "want": "formal",
+  "options": [
+   "Dear Professor Miller,",
+   "Hey Prof!",
+   "Hi,"
+  ],
+  "why": "Первое письмо незнакомому человеку — формально, с фамилией и званием.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-structure-2",
+  "module": "mail-structure",
+  "situation": "Письмо коллеге Дане, с которой каждый день на планёрке. Завершение?",
+  "want": "neutral",
+  "options": [
+   "Best,",
+   "Yours faithfully,",
+   "With respect,"
+  ],
+  "why": "«Yours faithfully» — для писем «Dear Sir or Madam», «With respect» — калька «С уважением».",
+  "reviewed": false
+ },
+ {
+  "id": "mr-structure-3",
+  "module": "mail-structure",
+  "situation": "Письмо в незнакомую компанию, имя адресата неизвестно. Обращение?",
+  "want": "formal",
+  "options": [
+   "Dear Sir or Madam,",
+   "Hi guys,",
+   "Dear friend,"
+  ],
+  "why": "Если имени нет — «Dear Sir or Madam» или «Dear Hiring Team».",
+  "reviewed": false
+ },
+ {
+  "id": "mr-register-1",
+  "module": "mail-register",
+  "situation": "Коллега из соседнего отдела, вы общались пару раз. Нужна его модель в CAD.",
+  "want": "neutral",
+  "options": [
+   "Could you send me the CAD model of the bracket, please?",
+   "Send me the CAD model.",
+   "I would be most grateful if you could kindly provide the CAD model at your earliest convenience."
+  ],
+  "why": "Нейтральная просьба — вопрос с could. Приказ звучит грубо, а слишком формально — странно для коллеги.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-register-2",
+  "module": "mail-register",
+  "situation": "Своей команде в чат после сданного отчёта.",
+  "want": "friendly",
+  "options": [
+   "Great job, everyone — thanks for the late nights!",
+   "I would like to express my gratitude to all team members.",
+   "The report is submitted."
+  ],
+  "why": "Своей команде — тепло и коротко. Официальная благодарность звучит холодно.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-register-3",
+  "module": "mail-register",
+  "situation": "Официальный запрос в испытательный центр о стоимости испытаний.",
+  "want": "formal",
+  "options": [
+   "I would be grateful if you could provide a quotation for the tests described below.",
+   "Hey, how much for the tests?",
+   "Tell me the price."
+  ],
+  "why": "Официальный запрос незнакомой организации — формально.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-apply-1",
+  "module": "mail-apply",
+  "situation": "Отклик на вакансию, первая фраза письма.",
+  "want": "formal",
+  "options": [
+   "I am writing to apply for the Junior Design Engineer position advertised on your website.",
+   "Hi! I want this job.",
+   "Hello, I saw your vacancy and I want to try."
+  ],
+  "why": "В отклике — формально и конкретно: какая позиция и где увидел.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-apply-2",
+  "module": "mail-apply",
+  "situation": "Благодарность после собеседования, завершающая фраза.",
+  "want": "neutral",
+  "options": [
+   "I look forward to hearing from you.",
+   "Waiting for your answer.",
+   "Call me."
+  ],
+  "why": "«Waiting for your answer» — калька, звучит как нетерпение.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-apply-3",
+  "module": "mail-apply",
+  "situation": "Тимлид Дана после собеседования написала: «Hi! Great to meet you today». Ответ?",
+  "want": "neutral",
+  "options": [
+   "Hi Dana, great to meet you too, and thanks again for your time!",
+   "Dear Madam, I acknowledge receipt of your message.",
+   "ok thx"
+  ],
+  "why": "Отвечай в том же регистре, что и собеседник: дружелюбно, но аккуратно.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-request-1",
+  "module": "mail-request",
+  "situation": "Поставщик, с которым уже переписывались. Спросить про срок поставки.",
+  "want": "neutral",
+  "options": [
+   "Could you let me know when the valves will be shipped?",
+   "When will you ship the valves?!",
+   "We hereby request information regarding the shipment date."
+  ],
+  "why": "Нейтральный вопрос с could. Восклицательный знак звучит как претензия.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-request-2",
+  "module": "mail-request",
+  "situation": "Напоминание коллеге, который неделю не отвечает.",
+  "want": "neutral",
+  "options": [
+   "Just following up on my email from last week — any update on the drawings?",
+   "I didn't receive any answer from you.",
+   "As I already wrote you, I need the drawings."
+  ],
+  "why": "Follow-up — мягко и без упрёка. «As I already wrote» звучит как обвинение.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-request-3",
+  "module": "mail-request",
+  "situation": "Коллега Прия, с которой вы дружите. Попросить фото стенда.",
+  "want": "friendly",
+  "options": [
+   "Hey Priya, can you snap a photo of the rig when you get a chance? Thanks!",
+   "Dear Ms Patel, I would be grateful for a photograph of the test rig.",
+   "Photo of the rig. Now."
+  ],
+  "why": "С близким коллегой — по-дружески. Формальный тон удивит.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-decline-1",
+  "module": "mail-decline",
+  "situation": "Отказать поставщику, который предлагает свои датчики.",
+  "want": "neutral",
+  "options": [
+   "Thank you for the offer. Unfortunately, it doesn't fit our needs at the moment.",
+   "No.",
+   "Your sensors are bad."
+  ],
+  "why": "Поблагодари, откажи ясно и без оценки.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-decline-2",
+  "module": "mail-decline",
+  "situation": "Перенести созвон с руководителем проекта из другой компании.",
+  "want": "neutral",
+  "options": [
+   "Would it be possible to move our call to Thursday? I'm free at 10:00 or 15:00.",
+   "I can't today. Sorry sorry sorry.",
+   "We will talk on Thursday."
+  ],
+  "why": "Одно извинение и конкретные варианты времени.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-decline-3",
+  "module": "mail-decline",
+  "situation": "Уточнить у руководителя, что именно нужно в отчёте.",
+  "want": "neutral",
+  "options": [
+   "Just to clarify — should the report include the raw data or only the summary?",
+   "What do you want?",
+   "I don't understand your task."
+  ],
+  "why": "Уточнение с вариантами: на него легко ответить одним словом.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-status-1",
+  "module": "mail-status",
+  "situation": "Еженедельный статус своей команде в чате.",
+  "want": "friendly",
+  "options": [
+   "Quick update: 12 of 15 specimens done, the rest on Wednesday 👍",
+   "Dear colleagues, I hereby inform you about the status of the tests.",
+   "tests going"
+  ],
+  "why": "В своей команде — коротко и по-дружески, но с цифрами.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-status-2",
+  "module": "mail-status",
+  "situation": "Статус заказчику: испытания задерживаются.",
+  "want": "neutral",
+  "options": [
+   "We're two days behind schedule because the load cell is being recalibrated. We expect to finish on Friday.",
+   "Tests are late. Sorry.",
+   "Due to unforeseen circumstances beyond our control, the schedule has been subject to modification."
+  ],
+  "why": "Честно, с причиной и новым сроком. Канцелярит скрывает суть.",
+  "reviewed": false
+ },
+ {
+  "id": "mr-status-3",
+  "module": "mail-status",
+  "situation": "Первая строка статуса руководителю.",
+  "want": "neutral",
+  "options": [
+   "Status: on track for the Friday deadline.",
+   "Hello! How are you? I hope you are fine. Now I will tell you about the tests.",
+   "Everything is ok probably."
+  ],
+  "why": "Главное — первой строкой: успеваем или нет.",
+  "reviewed": false
+ }
+]

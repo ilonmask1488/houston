@@ -62,6 +62,22 @@ export function readingStats(answers: AnswerRow[]): { wpm: number | null; texts:
   return { wpm, texts: reads.length, found: finds.filter((a) => a.correct).length, findTotal: finds.length, findMs }
 }
 
+/** Минимальные пары на слух по модулям Чистого сигнала (th, w/v, …): доля верных, от 3 ответов, хуже — выше. */
+export function pairsByModule(answers: AnswerRow[]): { tag: string; correct: number; total: number }[] {
+  const by = new Map<string, { correct: number; total: number }>()
+  for (const a of answers) {
+    if (a.kind !== 'pair' || !a.tag) continue
+    const x = by.get(a.tag) ?? { correct: 0, total: 0 }
+    x.total++
+    if (a.correct) x.correct++
+    by.set(a.tag, x)
+  }
+  return [...by]
+    .filter(([, x]) => x.total >= 3)
+    .map(([tag, x]) => ({ tag, ...x }))
+    .sort((a, b) => a.correct / a.total - b.correct / b.total)
+}
+
 /** Слова в карточках по полосам частотности словаря; свои слова — отдельно. */
 export function wordsByBand(itemIds: string[], bandOf: (id: string) => string | undefined): { band: string; n: number }[] {
   const by = new Map<string, number>()

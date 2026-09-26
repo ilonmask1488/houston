@@ -1,0 +1,426 @@
+[
+ {
+  "id": "cp-th-1",
+  "module": "clean-th",
+  "text": "I think the thread is three millimetres thick.",
+  "focus": "θ в think, thread, three, thick — язык у зубов",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-th-2",
+  "module": "clean-th",
+  "text": "The thermal model is worth the effort.",
+  "focus": "θ в thermal и worth, ð в the",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-th-3",
+  "module": "clean-th",
+  "text": "They say the other method is better than this one.",
+  "focus": "ð — звонкий: they, the, other, than, this",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-th-4",
+  "module": "clean-th",
+  "text": "Both of them thought it through.",
+  "focus": "θ в both, thought, through; ð в them",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-wv-1",
+  "module": "clean-wv",
+  "text": "We will verify the valve on Wednesday.",
+  "focus": "w в we, will, Wednesday; v в verify, valve",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-wv-2",
+  "module": "clean-wv",
+  "text": "The vibration was very weak.",
+  "focus": "v в vibration, very; w в was, weak",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-wv-3",
+  "module": "clean-wv",
+  "text": "Which version of the drawing do we use?",
+  "focus": "w в which, we; v в version",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-wv-4",
+  "module": "clean-wv",
+  "text": "Every wire was well insulated.",
+  "focus": "v в every; w в wire, was, well",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-h-1",
+  "module": "clean-h",
+  "text": "How high is the heat load?",
+  "focus": "h — выдох: how, high, heat",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-h-2",
+  "module": "clean-h",
+  "text": "He has half an hour.",
+  "focus": "h в he, has, half; hour — без h!",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-h-3",
+  "module": "clean-h",
+  "text": "The housing holds the heater.",
+  "focus": "h в housing, holds, heater",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-h-4",
+  "module": "clean-h",
+  "text": "Hold the handle with both hands.",
+  "focus": "h в hold, handle, hands",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-vowels-1",
+  "module": "clean-vowels",
+  "text": "Please fill in this sheet before you leave.",
+  "focus": "ɪ в fill, this; iː в please, sheet, leave",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-vowels-2",
+  "module": "clean-vowels",
+  "text": "The fuel line is full of air.",
+  "focus": "uː в fuel, ʊ в full",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-vowels-3",
+  "module": "clean-vowels",
+  "text": "The bad batch was sent back.",
+  "focus": "æ в bad, batch, back; e в sent",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-vowels-4",
+  "module": "clean-vowels",
+  "text": "We need a bigger seal for this bit.",
+  "focus": "iː в need, seal; ɪ в bigger, this, bit",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-final-1",
+  "module": "clean-final",
+  "text": "The load is too big for this bracket.",
+  "focus": "звонкие d в load и g в big",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-final-2",
+  "module": "clean-final",
+  "text": "We had to change the grade of the bolt.",
+  "focus": "звонкие d в had, grade",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-final-3",
+  "module": "clean-final",
+  "text": "The weld was good, but the plate was bad.",
+  "focus": "d в weld, good, bad — не оглушай",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-final-4",
+  "module": "clean-final",
+  "text": "Please save the file and close the tab.",
+  "focus": "v в save, z в close, b в tab",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-ng-1",
+  "module": "clean-ng",
+  "text": "The bearing is making a strange ringing sound.",
+  "focus": "ŋ в bearing, making, ringing — без «г»",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-ng-2",
+  "module": "clean-ng",
+  "text": "We are testing the wing today.",
+  "focus": "ŋ в testing, wing",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-ng-3",
+  "module": "clean-ng",
+  "text": "Something is wrong with the spring.",
+  "focus": "ŋ в something, wrong, spring",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "cp-ng-4",
+  "module": "clean-ng",
+  "text": "Bring the long fitting, please.",
+  "focus": "ŋ в bring, long, fitting",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-1",
+  "module": "clean-intonation",
+  "text": "Could you send me the drawing, please?",
+  "ru": "Не могли бы вы прислать чертёж?",
+  "focus": "вопрос да/нет — голос поднимается на конце",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-2",
+  "module": "clean-intonation",
+  "text": "Would you mind checking the numbers again?",
+  "ru": "Вы не против ещё раз проверить цифры?",
+  "focus": "мягкий подъём на again",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-3",
+  "module": "clean-intonation",
+  "text": "Sorry, could you repeat that?",
+  "ru": "Извините, можно повторить?",
+  "focus": "подъём на конце — это просьба, а не требование",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-4",
+  "module": "clean-intonation",
+  "text": "Thanks a lot, that's really helpful!",
+  "ru": "Большое спасибо, это очень помогло!",
+  "focus": "широкий размах: высоко на thanks и really",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-5",
+  "module": "clean-intonation",
+  "text": "I'm not sure that's right.",
+  "ru": "Не уверен, что это так.",
+  "focus": "вниз-вверх на right: мягкое несогласие",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-6",
+  "module": "clean-intonation",
+  "text": "That's a good point, but I see it differently.",
+  "ru": "Хорошее замечание, но я вижу это иначе.",
+  "focus": "подъём на point, спокойное падение в конце",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-7",
+  "module": "clean-intonation",
+  "text": "Do you have a minute?",
+  "ru": "Есть минутка?",
+  "focus": "подъём на конце",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ci-8",
+  "module": "clean-intonation",
+  "text": "Good morning, everyone!",
+  "ru": "Доброе утро всем!",
+  "focus": "приветствие — с размахом, не ровно",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ }
+]

@@ -7,6 +7,7 @@ import { modulesByTrack } from '../../content'
 import { TRACKS } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { currentModule, hasContent, loadProgress, moduleShare } from '../../lib/course/progress'
+import { db } from '../../lib/db/db'
 import { startModule } from '../../lib/intake/score'
 import { EpisodeList } from '../story/EpisodeScreen'
 import { useIntakeState } from '../../lib/intake/store'
@@ -15,6 +16,11 @@ import s from './tracks.module.css'
 export function TracksScreen() {
   const { last } = useIntakeState()
   const progress = useLiveQuery(() => loadProgress(), [])
+  // Пройденные боссы — по достижениям (собеседование — «interview-1»)
+  const bosses = useLiveQuery(async () => {
+    const got = new Set((await db.achievements.toArray()).map((a) => a.id))
+    return new Set((['air', 'call', 'doc', 'mail'] as const).filter((t) => got.has(t === 'call' ? 'interview-1' : `boss-${t}`)))
+  }, [])
   const t = ru.trackScreen
   return (
     <Screen title={t.title} subtitle={t.subtitle}>
@@ -64,6 +70,16 @@ export function TracksScreen() {
               {id === 'doc' && (
                 <Link to="/library" className={s.extra}>
                   {ru.doc.library} · {ru.doc.myText} →
+                </Link>
+              )}
+              {id !== 'clean' && (
+                <Link to={id === 'call' ? '/interview' : `/boss/${id}`} className={s.boss}>
+                  <span className={`${s.bossTag} mono`}>{ru.boss.title}</span>
+                  <span className={s.mTitle}>
+                    {ru.boss[id].title}
+                    {bosses?.has(id) && <span className={s.startTag}>{ru.boss.defeated}</span>}
+                  </span>
+                  <span className={s.mWhat}>{ru.boss[id].what}</span>
                 </Link>
               )}
             </section>

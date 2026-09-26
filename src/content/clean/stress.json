@@ -1,0 +1,497 @@
+[
+ {
+  "id": "st-develop",
+  "module": "clean-stress",
+  "text": "develop",
+  "syllables": [
+   "de",
+   "vel",
+   "op"
+  ],
+  "stress": 1,
+  "ipa": "dɪˈveləp",
+  "ru": "разрабатывать",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-technology",
+  "module": "clean-stress",
+  "text": "technology",
+  "syllables": [
+   "tech",
+   "nol",
+   "o",
+   "gy"
+  ],
+  "stress": 1,
+  "ipa": "tekˈnɒlədʒi",
+  "ru": "технология",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-analysis",
+  "module": "clean-stress",
+  "text": "analysis",
+  "syllables": [
+   "a",
+   "nal",
+   "y",
+   "sis"
+  ],
+  "stress": 1,
+  "ipa": "əˈnæləsɪs",
+  "ru": "анализ",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-component",
+  "module": "clean-stress",
+  "text": "component",
+  "syllables": [
+   "com",
+   "po",
+   "nent"
+  ],
+  "stress": 1,
+  "ipa": "kəmˈpəʊnənt",
+  "ru": "компонент, деталь",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-hypothesis",
+  "module": "clean-stress",
+  "text": "hypothesis",
+  "syllables": [
+   "hy",
+   "poth",
+   "e",
+   "sis"
+  ],
+  "stress": 1,
+  "ipa": "haɪˈpɒθəsɪs",
+  "ru": "гипотеза",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-mechanical",
+  "module": "clean-stress",
+  "text": "mechanical",
+  "syllables": [
+   "me",
+   "chan",
+   "i",
+   "cal"
+  ],
+  "stress": 1,
+  "ipa": "məˈkænɪkəl",
+  "ru": "механический",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-parameter",
+  "module": "clean-stress",
+  "text": "parameter",
+  "syllables": [
+   "pa",
+   "ram",
+   "e",
+   "ter"
+  ],
+  "stress": 1,
+  "ipa": "pəˈræmɪtə",
+  "ru": "параметр",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-photograph",
+  "module": "clean-stress",
+  "text": "photograph",
+  "syllables": [
+   "pho",
+   "to",
+   "graph"
+  ],
+  "stress": 0,
+  "ipa": "ˈfəʊtəɡrɑːf",
+  "ru": "фотография (снимок)",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-photography",
+  "module": "clean-stress",
+  "text": "photography",
+  "syllables": [
+   "pho",
+   "tog",
+   "ra",
+   "phy"
+  ],
+  "stress": 1,
+  "ipa": "fəˈtɒɡrəfi",
+  "ru": "фотография (занятие)",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-determine",
+  "module": "clean-stress",
+  "text": "determine",
+  "syllables": [
+   "de",
+   "ter",
+   "mine"
+  ],
+  "stress": 1,
+  "ipa": "dɪˈtɜːmɪn",
+  "ru": "определять",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-engineer",
+  "module": "clean-stress",
+  "text": "engineer",
+  "syllables": [
+   "en",
+   "gi",
+   "neer"
+  ],
+  "stress": 2,
+  "ipa": "ˌendʒɪˈnɪə",
+  "ru": "инженер",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-material",
+  "module": "clean-stress",
+  "text": "material",
+  "syllables": [
+   "ma",
+   "te",
+   "ri",
+   "al"
+  ],
+  "stress": 1,
+  "ipa": "məˈtɪəriəl",
+  "ru": "материал",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-prototype",
+  "module": "clean-stress",
+  "text": "prototype",
+  "syllables": [
+   "pro",
+   "to",
+   "type"
+  ],
+  "stress": 0,
+  "ipa": "ˈprəʊtətaɪp",
+  "ru": "прототип",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-simulation",
+  "module": "clean-stress",
+  "text": "simulation",
+  "syllables": [
+   "sim",
+   "u",
+   "la",
+   "tion"
+  ],
+  "stress": 2,
+  "ipa": "ˌsɪmjuˈleɪʃən",
+  "ru": "моделирование",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-capacity",
+  "module": "clean-stress",
+  "text": "capacity",
+  "syllables": [
+   "ca",
+   "pac",
+   "i",
+   "ty"
+  ],
+  "stress": 1,
+  "ipa": "kəˈpæsəti",
+  "ru": "ёмкость, мощность",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-accuracy",
+  "module": "clean-stress",
+  "text": "accuracy",
+  "syllables": [
+   "ac",
+   "cu",
+   "ra",
+   "cy"
+  ],
+  "stress": 0,
+  "ipa": "ˈækjərəsi",
+  "ru": "точность",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-algorithm",
+  "module": "clean-stress",
+  "text": "algorithm",
+  "syllables": [
+   "al",
+   "go",
+   "rithm"
+  ],
+  "stress": 0,
+  "ipa": "ˈælɡərɪðəm",
+  "ru": "алгоритм",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-specimen",
+  "module": "clean-stress",
+  "text": "specimen",
+  "syllables": [
+   "spec",
+   "i",
+   "men"
+  ],
+  "stress": 0,
+  "ipa": "ˈspesɪmɪn",
+  "ru": "образец",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-diameter",
+  "module": "clean-stress",
+  "text": "diameter",
+  "syllables": [
+   "di",
+   "am",
+   "e",
+   "ter"
+  ],
+  "stress": 1,
+  "ipa": "daɪˈæmɪtə",
+  "ru": "диаметр",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-geometry",
+  "module": "clean-stress",
+  "text": "geometry",
+  "syllables": [
+   "ge",
+   "om",
+   "e",
+   "try"
+  ],
+  "stress": 1,
+  "ipa": "dʒiˈɒmətri",
+  "ru": "геометрия",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-procedure",
+  "module": "clean-stress",
+  "text": "procedure",
+  "syllables": [
+   "pro",
+   "ce",
+   "dure"
+  ],
+  "stress": 1,
+  "ipa": "prəˈsiːdʒə",
+  "ru": "процедура, методика",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-manufacture",
+  "module": "clean-stress",
+  "text": "manufacture",
+  "syllables": [
+   "man",
+   "u",
+   "fac",
+   "ture"
+  ],
+  "stress": 2,
+  "ipa": "ˌmænjuˈfæktʃə",
+  "ru": "изготавливать",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-category",
+  "module": "clean-stress",
+  "text": "category",
+  "syllables": [
+   "cat",
+   "e",
+   "go",
+   "ry"
+  ],
+  "stress": 0,
+  "ipa": "ˈkætəɡəri",
+  "ru": "категория",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "st-economy",
+  "module": "clean-stress",
+  "text": "economy",
+  "syllables": [
+   "e",
+   "con",
+   "o",
+   "my"
+  ],
+  "stress": 1,
+  "ipa": "ɪˈkɒnəmi",
+  "ru": "экономика",
+  "voices": [
+   "us-f",
+   "us-m",
+   "gb-f",
+   "gb-m"
+  ],
+  "reviewed": false
+ }
+]

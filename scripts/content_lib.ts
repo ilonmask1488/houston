@@ -144,7 +144,7 @@ export function checkCourse(files: JsonFile[]): string[] {
     for (const c of q.chunks as string[]) if (!chunkIds.has(c)) errors.push(`вопрос «${String(q.id)}»: нет чанка ${c}`)
     if (typeof q.reviewed !== 'boolean') errors.push(`вопрос «${String(q.id)}»: нет флага reviewed`)
   }
-  for (const e of get('story/episodes.json')) {
+  for (const e of [...get('story/episodes.json'), ...get('story/episodes-2.json')]) {
     if (!modules.has(e.after as string)) errors.push(`эпизод ${String(e.id)}: нет модуля ${String(e.after)}`)
     for (const l of e.lines as Json[]) {
       if (l.speaker === 'me') {
@@ -159,8 +159,52 @@ export function checkCourse(files: JsonFile[]): string[] {
     if (chunkTexts.has(key)) errors.push(`чанк «${String(c.en)}» повторяется`)
     chunkTexts.add(key)
   }
-  errors.push(...checkDoc(get('doc/texts.json'), get('doc/strategies.json'), modules, ids))
+  const bosses = (files.find((f) => f.path.endsWith('boss/bosses.json'))?.data ?? null) as Json | null
+  const bossModules = new Set([...modules, 'boss-air', 'boss-doc', 'boss-mail'])
+  errors.push(...checkDoc([...get('doc/texts.json'), ...(bosses ? [bosses.doc as Json] : [])], [...get('doc/strategies.json'), ...get('content/guides.json')], bossModules, ids))
   errors.push(...checkDictionary(get('dict/words.json')))
+  errors.push(...checkPhase4(files, bossModules, ids, characters))
+  return errors
+}
+
+/** Телеграмма, Чистый сигнал, ложные друзья, боссы: связность и варианты ответов. */
+export function checkPhase4(files: JsonFile[], modules: Set<string>, ids: Map<string, string>, characters: Set<string>): string[] {
+  const errors: string[] = []
+  const get = (suffix: string) => (files.find((f) => f.path.endsWith(suffix))?.data ?? []) as Json[]
+  const bosses = (files.find((f) => f.path.endsWith('boss/bosses.json'))?.data ?? null) as Json | null
+  const bossMail = (bosses?.mail ?? { register: [], write: null }) as { register: Json[]; write: Json | null }
+  const lists: [string, Json[]][] = [
+    ['mail/register.json', [...get('mail/register.json'), ...bossMail.register]],
+    ['mail/fix.json', get('mail/fix.json')],
+    ['mail/order.json', get('mail/order.json')],
+    ['mail/write.json', [...get('mail/write.json'), ...(bossMail.write ? [bossMail.write] : [])]],
+    ['clean/pairs.json', get('clean/pairs.json')],
+    ['clean/phrases.json', get('clean/phrases.json')],
+    ['clean/stress.json', get('clean/stress.json')],
+    ['ff/false-friends.json', get('ff/false-friends.json')],
+  ]
+  for (const [file, list] of lists)
+    for (const x of list) {
+      const id = String(x.id)
+      if (ids.has(id)) errors.push(`повтор id ${id} (${file} и ${ids.get(id)})`)
+      ids.set(id, file)
+      if (x.module !== undefined && !modules.has(x.module as string)) errors.push(`${file}: ${id} — нет модуля ${String(x.module)}`)
+      if (typeof x.reviewed !== 'boolean') errors.push(`${file}: ${id} — нет флага reviewed`)
+      if (Array.isArray(x.options) && new Set(x.options as string[]).size !== (x.options as string[]).length) errors.push(`${file}: ${id} — варианты повторяются`)
+    }
+  for (const x of get('mail/fix.json')) if ((x.options as string[]).includes(x.bad as string)) errors.push(`«по-русски» ${String(x.id)}: неудачная фраза среди вариантов`)
+  for (const x of get('mail/order.json')) if (new Set(x.blocks as string[]).size !== (x.blocks as string[]).length) errors.push(`письмо ${String(x.id)}: блоки повторяются`)
+  for (const x of get('clean/pairs.json')) if (x.a === x.b) errors.push(`пара ${String(x.id)}: слова одинаковые`)
+  for (const x of get('clean/stress.json')) {
+    if ((x.syllables as string[]).join('') !== x.text) errors.push(`ударение ${String(x.id)}: слоги не складываются в слово`)
+    if ((x.stress as number) < 0 || (x.stress as number) >= (x.syllables as string[]).length) errors.push(`ударение ${String(x.id)}: индекс вне слогов`)
+  }
+  for (const f of get('ff/false-friends.json')) if (f.trap !== (f.options as string[])[1]) errors.push(`ложный друг ${String(f.id)}: ловушка должна быть вторым вариантом`)
+  const air = bosses?.air as Json | undefined
+  if (air) {
+    for (const l of air.lines as Json[]) if (!characters.has(l.speaker as string)) errors.push(`босс Эфира: нет персонажа ${String(l.speaker)}`)
+    if (ids.has('boss-air')) errors.push('повтор id boss-air')
+  }
   return errors
 }
 

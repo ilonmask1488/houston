@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bestAlternative, compareWords, countWords, normalizeWords } from './recognize'
+import { bestAlternative, compareWords, countWords, judgePair, normalizeWords } from './recognize'
 
 describe('нормализация слов', () => {
   it('регистр, пунктуация, сокращения, числа', () => {
@@ -39,5 +39,15 @@ describe('сравнение с образцом', () => {
 
   it('подсчёт слов', () => {
     expect(countWords("That's a good question, let me think.")).toBe(8)
+  })
+})
+
+describe('минимальная пара вслух', () => {
+  it('нужное слово — в основном варианте или в альтернативах; соседнее — только в основном', () => {
+    expect(judgePair('think', 'sink', 'think', [])).toBe('right')
+    expect(judgePair('think', 'sink', 'sink', ['think'])).toBe('right')
+    expect(judgePair('think', 'sink', 'sink', ['zinc'])).toBe('other')
+    expect(judgePair('think', 'sink', 'pink', ['sink'])).toBe('none')
+    expect(judgePair('west', 'vest', 'the West', [])).toBe('right')
   })
 })

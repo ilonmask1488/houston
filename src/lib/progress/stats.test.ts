@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { AnswerRow } from '../db/types'
-import { avgLatency, listeningBySpeed, minutesByDay, readingStats, weakTags, wordsByBand } from './stats'
+import { avgLatency, listeningBySpeed, minutesByDay, pairsByModule, readingStats, weakTags, wordsByBand } from './stats'
 import { addDays } from './streak'
 
 const T = '2026-09-27'
@@ -56,5 +56,14 @@ describe('чтение', () => {
       { band: 'tech', n: 1 },
       { band: 'own', n: 1 },
     ])
+  })
+})
+
+describe('произношение', () => {
+  it('пары на слух по модулям: от 3 ответов, худшие — первыми', () => {
+    const p = (tag: string, correct: boolean) => a({ kind: 'pair', track: 'clean', tag, correct })
+    const r = pairsByModule([p('clean-th', false), p('clean-th', false), p('clean-th', true), p('clean-wv', true), p('clean-wv', true), p('clean-wv', true), p('clean-h', false)])
+    expect(r.map((x) => x.tag)).toEqual(['clean-th', 'clean-wv'])
+    expect(r[0]).toMatchObject({ correct: 1, total: 3 })
   })
 })

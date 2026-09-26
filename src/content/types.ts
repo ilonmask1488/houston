@@ -175,6 +175,36 @@ export type DictWord = {
   reviewed: boolean
 }
 
+/* ——— Телеграмма ——— */
+
+export type Register = 'formal' | 'neutral' | 'friendly'
+
+/** Выбрать фразу нужного регистра. options[0] — верная (приложение перемешивает). */
+export type MailRegister = { id: string; module: string; situation: string; want: Register; options: string[]; why: string; reviewed: boolean }
+/** «Слишком по-русски»: неудачная фраза и варианты замены, options[0] — верная. */
+export type MailFix = { id: string; module: string; context: string; bad: string; options: string[]; why: string; reviewed: boolean }
+/** Собрать письмо из блоков: blocks — в верном порядке. */
+export type MailOrder = { id: string; module: string; title: string; blocks: string[]; reviewed: boolean }
+/** Написать самому → сравнить с образцом → «Проверить с Claude». */
+export type MailWrite = { id: string; module: string; task: string; incoming: string | null; model: string; checklist: string[]; reviewed: boolean }
+export type MailBankGroup = { id: string; title: string; phrases: { en: string; ru: string; reg: Register }[] }
+
+/* ——— Чистый сигнал ——— */
+
+export type MinimalPair = { id: string; module: string; a: string; b: string; ipaA: string; ipaB: string; ruA: string; ruB: string; reviewed: boolean }
+/** Фраза для постановки звука или интонации (у интонации есть перевод). */
+export type CleanPhrase = { id: string; module: string; text: string; focus: string; ru?: string; voices: VoiceId[]; reviewed: boolean }
+export type StressWord = { id: string; module: string; text: string; syllables: string[]; stress: number; ipa: string; ru: string; voices: VoiceId[]; reviewed: boolean }
+
+/** Ложный друг переводчика: options[0] — верный перевод, trap — ловушка. */
+export type FalseFriend = { id: string; ru: string; context: string; options: string[]; trap: string; why: string; reviewed: boolean }
+
+export type Bosses = {
+  air: Passage
+  doc: DocText
+  mail: { register: MailRegister[]; write: MailWrite }
+}
+
 export type Content = {
   modules: Module[]
   intake: IntakeContent
@@ -189,4 +219,14 @@ export type Content = {
   storyQuestions: StoryQuestion[]
   episodes: Episode[]
   texts: DocText[]
+  mailRegister: MailRegister[]
+  mailFix: MailFix[]
+  mailOrder: MailOrder[]
+  mailWrite: MailWrite[]
+  mailBank: MailBankGroup[]
+  pairs: MinimalPair[]
+  cleanPhrases: CleanPhrase[]
+  stress: StressWord[]
+  falseFriends: FalseFriend[]
+  bosses: Bosses | null
 }

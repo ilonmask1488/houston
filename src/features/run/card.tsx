@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { PlayButton } from '../../components/Play'
 import ui from '../../components/ui.module.css'
 import { Highlight, VoiceAnswer, VoiceReport, type VoiceResult } from '../../components/Voice'
-import { chunkById, phraseById, spokenText } from '../../content'
+import { chunkById, falseFriendById, phraseById, spokenText } from '../../content'
 import type { VoiceId } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { defaultVoice, durationOf, playText, stopAudio } from '../../lib/audio/audio'
@@ -20,7 +20,7 @@ import s from './run.module.css'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
-type ItemView = { en: string; say: string; ru: string; example?: string; exampleRu?: string; focus?: string; ipa?: string; voice: VoiceId }
+type ItemView = { en: string; say: string; ru: string; example?: string; exampleRu?: string; focus?: string; ipa?: string; context?: string; note?: string; voice: VoiceId }
 
 /** Что показывать для элемента карточки: чанк, фраза Эфира, слово словаря или своё слово. */
 function itemView(itemId: string, userWord?: UserWordRow): ItemView | null {
@@ -31,6 +31,8 @@ function itemView(itemId: string, userWord?: UserWordRow): ItemView | null {
   const w = dictById.get(itemId)
   if (w) return { en: w.text, say: w.text, ru: w.ru, ipa: w.ipa, example: userWord?.context, voice: w.voices?.includes(defaultVoice()) ? defaultVoice() : (w.voices?.[0] ?? defaultVoice()) }
   if (userWord) return { en: userWord.text, say: userWord.text, ru: userWord.ru, example: userWord.context, voice: defaultVoice() }
+  const f = falseFriendById.get(itemId)
+  if (f) return { en: f.options[0]!, say: f.options[0]!, ru: f.ru, context: f.context, note: f.why, voice: defaultVoice() }
   return null
 }
 
@@ -85,7 +87,8 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
             {v.en}
           </p>
         )}
-        {kind === 2 && <p className={s.bigRu}>{v.ru}</p>}
+        {(kind === 2 || kind === 4) && <p className={s.bigRu}>{v.ru}</p>}
+        {kind === 4 && v.context && <p className={s.hint}>«{v.context}»</p>}
         {kind === 3 && <PlayButton text={v.say} voice={v.voice} label={t.kind[3]!} size="l" />}
       </div>
       {!shown && <p className={s.hint}>{t.hint[kind]}</p>}
@@ -107,6 +110,7 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
               <PlayButton text={v.say} voice={v.voice} label={v.en} size="s" /> <Highlight text={v.en} focus={v.focus} />
             </p>
             {v.ipa && <p className={`${s.hint} mono`}>/{v.ipa}/</p>}
+            {v.note && <p className={s.hint}>{v.note}</p>}
             <p className={s.ru}>{v.ru}</p>
             {v.example && (
               <p className={s.hint}>

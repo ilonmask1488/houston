@@ -27,6 +27,17 @@ export type Step =
   | { kind: 'docSummary'; text: string; p: number }
   | { kind: 'docRetell'; text: string; p: number }
   | { kind: 'docParse'; text: string }
+  /** Телеграмма: регистр, «слишком по-русски», собрать письмо, написать самому */
+  | { kind: 'mailRegister'; item: string }
+  | { kind: 'mailFix'; item: string }
+  | { kind: 'mailOrder'; item: string }
+  | { kind: 'mailWrite'; item: string }
+  /** Чистый сигнал: пара на слух, пара вслух, фраза (и интонация), ударение; ложный друг */
+  | { kind: 'pairHear'; pair: string; pick: 0 | 1 }
+  | { kind: 'pairSay'; pair: string; pick: 0 | 1 }
+  | { kind: 'cleanSay'; phrase: string }
+  | { kind: 'stress'; word: string }
+  | { kind: 'falseFriend'; item: string }
 
 export type StepKind = Step['kind']
 
@@ -52,6 +63,15 @@ export const STEP_SECONDS: Record<StepKind, number> = {
   docSummary: 30,
   docRetell: 50,
   docParse: 45,
+  mailRegister: 30,
+  mailFix: 35,
+  mailOrder: 70,
+  mailWrite: 170,
+  pairHear: 12,
+  pairSay: 25,
+  cleanSay: 45,
+  stress: 20,
+  falseFriend: 20,
 }
 
 /** Полная тренировка своего ответа. */
@@ -70,5 +90,5 @@ export function stepsSeconds(steps: Step[]): number {
 
 /** Шаг с ответом, у которого есть «верно/неверно» (для точности в итогах). */
 export function isQuestion(s: Step): boolean {
-  return ['listen', 'dictation', 'passage', 'accents', 'docFind', 'docSummary', 'docParse'].includes(s.kind)
+  return ['listen', 'dictation', 'passage', 'accents', 'docFind', 'docSummary', 'docParse', 'mailRegister', 'mailFix', 'mailOrder', 'pairHear', 'stress', 'falseFriend'].includes(s.kind)
 }

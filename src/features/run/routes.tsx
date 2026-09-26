@@ -9,7 +9,7 @@ import { doneSet, loadProgress, startModuleRow } from '../../lib/course/progress
 import type { SessionSegment } from '../../lib/db/types'
 import { lastIntake } from '../../lib/intake/store'
 import type { Step } from '../../lib/run/steps'
-import { airSteps, callSteps, currentSpeed, docSteps, hash, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
+import { airSteps, callSteps, cleanSteps, currentSpeed, docSteps, hash, mailSteps, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
 import { Runner } from './Runner'
 
 export function SegmentRun() {
@@ -89,6 +89,53 @@ export function TextRun() {
   )
 }
 
+export type BossTrack = 'air' | 'doc' | 'mail'
+
+/** Шаги босса трека (ТЗ §7.2): длинный созвон, статья на время, письмо «сложному» заказчику. */
+export function bossSteps(track: BossTrack): Step[] {
+  if (track === 'air') return [{ kind: 'passage', passage: 'boss-air' }]
+  if (track === 'doc') {
+    const t = textById.get('boss-doc')
+    if (!t) return []
+    return [
+      ...t.find.map((_, i): Step => ({ kind: 'docFind', text: t.id, i, seconds: 25 })),
+      { kind: 'docSummary', text: t.id, p: 2 },
+      { kind: 'docRetell', text: t.id, p: 3 },
+    ]
+  }
+  return [
+    { kind: 'mailRegister', item: 'mr-boss-1' },
+    { kind: 'mailRegister', item: 'mr-boss-2' },
+    { kind: 'mailWrite', item: 'mw-boss' },
+  ]
+}
+
+export function BossRun() {
+  const id = useParams().id as BossTrack
+  const navigate = useNavigate()
+  const [round, setRound] = useState(0)
+  const steps = useMemo(() => (['air', 'doc', 'mail'].includes(id) ? bossSteps(id).filter(stepAlive) : []), [id])
+  if (!steps.length) return <Screen title={ru.run.notFound} back />
+  return (
+    <Runner
+      key={round}
+      steps={steps}
+      source="drill"
+      onExit={() => navigate('/tracks')}
+      actions={() => (
+        <>
+          <button type="button" className={ui.signalButton} onClick={() => navigate('/tracks')}>
+            {ru.boss.back}
+          </button>
+          <button type="button" className={ui.secondary} onClick={() => setRound((n) => n + 1)}>
+            {ru.run.summary.again}
+          </button>
+        </>
+      )}
+    />
+  )
+}
+
 /** Свободная тренировка модуля из «Треков»: один круг минут на пять. */
 export function ModuleRun() {
   const id = useParams().id ?? ''
@@ -107,6 +154,8 @@ export function ModuleRun() {
       if (m.track === 'air') out = airSteps({ module: m, done, started: progress.has(id) && round > 0, speed: await currentSpeed(intake), seed }, 300).flatMap((x) => x.steps)
       else if (m.track === 'call') out = callSteps({ module: m, done, seed, quickGame: false }, 360).flatMap((x) => x.steps ?? [])
       else if (m.track === 'doc') out = docSteps({ module: m, done, started: progress.has(id) && round > 0, seed }, 360)
+      else if (m.track === 'mail') out = mailSteps({ module: m, done, started: progress.has(id) && round > 0, seed }, 360)
+      else if (m.track === 'clean') out = cleanSteps({ module: m, done, started: progress.has(id) && round > 0, seed }, 300)
       await startModuleRow(id)
       setSteps(out)
     })()

@@ -1,0 +1,713 @@
+[
+ {
+  "id": "ep-4",
+  "n": 4,
+  "title": "Испытания и отчёт",
+  "place": "Лаборатория, стенд статических испытаний",
+  "after": "doc-structure",
+  "intro": "Первые испытания композитной панели. Прия ведёт испытание, Том отвечает за стенд, а потом Дана спрашивает про результаты.",
+  "lines": [
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Okay, the panel is mounted and the strain gauges are connected. Can you check the readings before we start loading?",
+    "ru": "Так, панель закреплена, тензодатчики подключены. Проверишь показания, прежде чем начнём нагружать?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+      "ru": "Конечно. Все каналы около нуля, кроме четвёртого — он немного плывёт.",
+      "why": null
+     },
+     {
+      "text": "Everything is normal, I think, maybe.",
+      "ru": "Всё нормально, думаю, может быть.",
+      "why": "Слишком расплывчато. Назови, что именно проверил."
+     },
+     {
+      "text": "Channel four is broken, the test is cancelled.",
+      "ru": "Четвёртый канал сломан, испытание отменяется.",
+      "why": "Слишком резко: сначала опиши, что видишь, решение принимает руководитель испытания."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Drifting? Let me re-seat the connector. Right, try now.",
+    "ru": "Плывёт? Сейчас переткну разъём. Так, попробуй теперь."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "That fixed it. Channel four is stable now.",
+      "ru": "Помогло. Четвёртый канал теперь стабилен.",
+      "why": null
+     },
+     {
+      "text": "Now is good.",
+      "ru": "Сейчас хорошо.",
+      "why": "Понятно, но неуклюже. «That fixed it» — естественнее."
+     },
+     {
+      "text": "I don't know.",
+      "ru": "Не знаю.",
+      "why": "Проверь и скажи результат — от тебя этого ждут."
+     }
+    ],
+    "speak": [
+     {
+      "text": "That fixed it. Channel four is stable now.",
+      "voice": "us-f"
+     },
+     {
+      "text": "That fixed it. Channel four is stable now.",
+      "voice": "us-m"
+     },
+     {
+      "text": "That fixed it. Channel four is stable now.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "That fixed it. Channel four is stable now.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Great. We'll load in steps of two kilonewtons and hold each step for thirty seconds.",
+    "ru": "Отлично. Нагружаем ступенями по два килоньютона, каждую держим тридцать секунд."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Got it. Should I stop at the design limit load or go all the way to failure?",
+      "ru": "Понял. Останавливаемся на расчётной эксплуатационной нагрузке или идём до разрушения?",
+      "why": null
+     },
+     {
+      "text": "Okay, go.",
+      "ru": "Ладно, поехали.",
+      "why": "Уточни, до какой нагрузки идём: это важно для безопасности и для отчёта."
+     },
+     {
+      "text": "Why thirty seconds?",
+      "ru": "Почему тридцать секунд?",
+      "why": "Вопрос допустим, но важнее уточнить, где останавливаемся."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Got it. Should I stop at the design limit load or go all the way to failure?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Got it. Should I stop at the design limit load or go all the way to failure?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Got it. Should I stop at the design limit load or go all the way to failure?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Got it. Should I stop at the design limit load or go all the way to failure?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Limit load today. Failure test is next week.",
+    "ru": "Сегодня — до эксплуатационной. Испытание до разрушения — на следующей неделе."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "So, how did it go? Anything I should worry about?",
+    "ru": "Ну как прошло? Есть о чём беспокоиться?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.",
+      "ru": "Всё прошло хорошо. Панель дошла до эксплуатационной нагрузки без повреждений, деформации примерно на восемь процентов ниже расчётных.",
+      "why": null
+     },
+     {
+      "text": "It was good test. Very good.",
+      "ru": "Было хорошее испытание. Очень хорошее.",
+      "why": "Без цифр руководителю не на что опереться. И нужен артикль: «a good test»."
+     },
+     {
+      "text": "Tom broke the connector.",
+      "ru": "Том сломал разъём.",
+      "why": "Не так было, и не с этого начинают. Сначала главное: результат."
+     }
+    ],
+    "speak": [
+     {
+      "text": "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.",
+      "voice": "us-f"
+     },
+     {
+      "text": "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.",
+      "voice": "us-m"
+     },
+     {
+      "text": "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Nice. Can you put that in a short report by Friday?",
+    "ru": "Отлично. Сможешь оформить короткий отчёт к пятнице?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+      "ru": "Конечно. Добавлю графики нагрузка–деформация и сравнение с расчётом МКЭ.",
+      "why": null
+     },
+     {
+      "text": "Friday is impossible.",
+      "ru": "Пятница — невозможно.",
+      "why": "Если срок нереален — объясни почему и предложи другой, а не просто «невозможно»."
+     },
+     {
+      "text": "Yes, I will make a report.",
+      "ru": "Да, я сделаю отчёт.",
+      "why": "Можно, но лучше сразу сказать, что будет в отчёте. И «write a report», не «make»."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  ],
+  "culture": {
+   "title": "Плохие новости и цифры",
+   "text": "В англоязычных командах ценят, когда о проблеме говорят сразу и спокойно: «Channel four is drifting a bit» лучше, чем молчать или драматизировать. А результат руководителю — с главным и цифрой в первом предложении: «It went well. The strains were 8% below the prediction»."
+  },
+  "reviewed": false
+ },
+ {
+  "id": "ep-5",
+  "n": 5,
+  "title": "Письмо поставщику",
+  "place": "Офис, потом звонок в Индию",
+  "after": "mail-request",
+  "intro": "Датчики давления от поставщика опаздывают. Дана просит тебя написать поставщику, а потом перезванивает Арджун из отдела продаж.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "The pressure sensors were supposed to arrive last week. Could you write to the supplier and find out what's going on?",
+    "ru": "Датчики давления должны были прийти на прошлой неделе. Напишешь поставщику, узнаешь, что происходит?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Sure. Do you want me to ask for a new delivery date or to cancel the order?",
+      "ru": "Конечно. Спросить новую дату поставки или отменить заказ?",
+      "why": null
+     },
+     {
+      "text": "Okay.",
+      "ru": "Ладно.",
+      "why": "Лучше сразу уточнить цель письма: от этого зависит тон."
+     },
+     {
+      "text": "Why me?",
+      "ru": "Почему я?",
+      "why": "Звучит как нежелание. Уточни задачу, а не спорь."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Sure. Do you want me to ask for a new delivery date or to cancel the order?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sure. Do you want me to ask for a new delivery date or to cancel the order?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sure. Do you want me to ask for a new delivery date or to cancel the order?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sure. Do you want me to ask for a new delivery date or to cancel the order?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Just a new date for now. We still need them.",
+    "ru": "Пока только новую дату. Они нам всё ещё нужны."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.",
+      "ru": "Тема: Заказ 4471 — дата поставки. Здравствуйте, Арджун, пишу по поводу нашего заказа 4471 на двенадцать датчиков давления.",
+      "why": null
+     },
+     {
+      "text": "Subject: URGENT!!! Where are our sensors?",
+      "ru": "Тема: СРОЧНО!!! Где наши датчики?",
+      "why": "Капс и восклицательные знаки звучат как крик. Тема — конкретная и спокойная."
+     },
+     {
+      "text": "Subject: Question. Dear Sir, I am writing to you with the purpose to know about sensors.",
+      "ru": "Тема: Вопрос. Уважаемый господин, пишу вам с целью узнать о датчиках.",
+      "why": "Тема ничего не говорит, а фраза — калька. Номер заказа в теме экономит время обеим сторонам."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "They were due last week and we haven't received them yet. Could you let me know the new delivery date?",
+      "ru": "Они должны были прийти на прошлой неделе, но мы их пока не получили. Сообщите, пожалуйста, новую дату поставки.",
+      "why": null
+     },
+     {
+      "text": "You didn't send them and we are very angry.",
+      "ru": "Вы их не отправили, и мы очень злы.",
+      "why": "Эмоции не помогут получить дату. Факт + вопрос."
+     },
+     {
+      "text": "Please send them immediately until tomorrow.",
+      "ru": "Пожалуйста, немедленно отправьте их до завтра.",
+      "why": "Приказ и ошибка: срок — by, не until. И просьба должна быть реальной."
+     }
+    ],
+    "speak": [
+     {
+      "text": "They were due last week and we haven't received them yet. Could you let me know the new delivery date?",
+      "voice": "us-f"
+     },
+     {
+      "text": "They were due last week and we haven't received them yet. Could you let me know the new delivery date?",
+      "voice": "us-m"
+     },
+     {
+      "text": "They were due last week and we haven't received them yet. Could you let me know the new delivery date?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "They were due last week and we haven't received them yet. Could you let me know the new delivery date?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "arjun",
+    "voice": "in-m",
+    "text": "Hello, this is Arjun from Sensotech. I got your email. I'm so sorry about the delay — there was a problem with the calibration certificates.",
+    "ru": "Здравствуйте, это Арджун из Sensotech. Получил ваше письмо. Приношу извинения за задержку — была проблема с сертификатами калибровки."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Thanks for calling. When do you expect to ship them?",
+      "ru": "Спасибо, что позвонили. Когда вы рассчитываете их отправить?",
+      "why": null
+     },
+     {
+      "text": "It's okay, no problem, take your time.",
+      "ru": "Ничего, без проблем, не торопитесь.",
+      "why": "Слишком мягко: сроки вам важны. Поблагодари и спроси дату."
+     },
+     {
+      "text": "Your company always makes problems.",
+      "ru": "Ваша компания всегда создаёт проблемы.",
+      "why": "Обобщение и обвинение испортят отношения с поставщиком."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Thanks for calling. When do you expect to ship them?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Thanks for calling. When do you expect to ship them?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Thanks for calling. When do you expect to ship them?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Thanks for calling. When do you expect to ship them?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "arjun",
+    "voice": "in-m",
+    "text": "We can ship on Thursday, so you should have them by Monday.",
+    "ru": "Можем отправить в четверг, так что к понедельнику они у вас будут."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+      "ru": "Отлично, понедельник подходит. Пришлёте номер отслеживания, когда отправите?",
+      "why": null
+     },
+     {
+      "text": "Monday. Okay. Bye.",
+      "ru": "Понедельник. Ладно. Пока.",
+      "why": "Слишком сухо. И стоит попросить номер отслеживания."
+     },
+     {
+      "text": "Monday is too late, we need them yesterday.",
+      "ru": "Понедельник — поздно, нам нужно было вчера.",
+      "why": "Если действительно поздно — объясни почему и спроси, можно ли ускорить."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "arjun",
+    "voice": "in-m",
+    "text": "Of course. I'll email it to you on Thursday. Thanks for your patience.",
+    "ru": "Конечно. Пришлю письмом в четверг. Спасибо за терпение."
+   }
+  ],
+  "culture": {
+   "title": "Номер заказа в теме",
+   "text": "В деловой переписке тема — это поиск: по ней письмо найдут через месяц. «Order 4471 – delivery date» лучше, чем «Question» или «URGENT». А звонок индийского коллеги с извинений — вежливость, а не признание вины: поблагодари и переходи к делу."
+  },
+  "reviewed": false
+ },
+ {
+  "id": "ep-6",
+  "n": 6,
+  "title": "Презентация результатов",
+  "place": "Переговорная, созвон с заказчиком",
+  "after": "call-explain",
+  "intro": "Ты показываешь заказчику результаты испытаний панелей. Грейс из отдела качества заказчика задаёт неудобные вопросы, Оливер помогает.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Over to you. Can you walk us through the results?",
+    "ru": "Передаю тебе слово. Расскажешь о результатах?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.",
+      "ru": "Конечно. Начну с главного, потом детали. Коротко: все шесть панелей прошли эксплуатационную нагрузку с запасом.",
+      "why": null
+     },
+     {
+      "text": "So... first slide... here we have... many graphs.",
+      "ru": "Так... первый слайд... тут у нас... много графиков.",
+      "why": "Начни с главного вывода, а не с графиков: слушателю нужен ориентир."
+     },
+     {
+      "text": "I will read the report now.",
+      "ru": "Сейчас я прочитаю отчёт.",
+      "why": "Читать отчёт вслух — худший вариант. Расскажи главное своими словами."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "Sorry to interrupt. Panel three failed at a lower load than the others. Why is that?",
+    "ru": "Простите, что перебиваю. Панель три разрушилась при меньшей нагрузке, чем остальные. Почему?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.",
+      "ru": "Хороший вопрос. У панели три была небольшая пора возле закладной — мы нашли её на КТ ещё до испытания.",
+      "why": null
+     },
+     {
+      "text": "I don't know. It just failed.",
+      "ru": "Не знаю. Просто разрушилась.",
+      "why": "Даже если причина неясна, скажи, что известно и как будете выяснять."
+     },
+     {
+      "text": "It is not our fault.",
+      "ru": "Это не наша вина.",
+      "why": "Оборонительный ответ вызывает недоверие. Объясни факты."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "And is that acceptable?",
+    "ru": "И это допустимо?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.",
+      "ru": "Она всё равно превысила разрушающую нагрузку на шесть процентов, так что требование выполнено. Но мы добавили КТ-контроль каждой закладной.",
+      "why": null
+     },
+     {
+      "text": "Yes. Next slide.",
+      "ru": "Да. Следующий слайд.",
+      "why": "Звучит так, будто уходишь от вопроса. Обоснуй цифрой."
+     },
+     {
+      "text": "Maybe yes, maybe no.",
+      "ru": "Может да, может нет.",
+      "why": "Неуверенность без фактов тревожит заказчика."
+     }
+    ],
+    "speak": [
+     {
+      "text": "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.",
+      "voice": "us-f"
+     },
+     {
+      "text": "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.",
+      "voice": "us-m"
+     },
+     {
+      "text": "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "If I can add something — the void was within the size allowed by the process spec.",
+    "ru": "Если позволите добавить — пора была в пределах размера, допустимого техпроцессом."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.",
+      "ru": "Спасибо, Оливер. Верно — в пределах допуска, но мы хотим уменьшить разброс.",
+      "why": null
+     },
+     {
+      "text": "Oliver, please don't interrupt.",
+      "ru": "Оливер, пожалуйста, не перебивай.",
+      "why": "Коллега помогает — поблагодари и используй его слова."
+     },
+     {
+      "text": "Yes yes yes.",
+      "ru": "Да-да-да.",
+      "why": "Звучит нетерпеливо. Поблагодари и продолжи мысль."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "Okay, that makes sense. Can you send us the CT images?",
+    "ru": "Хорошо, это логично. Пришлёте нам снимки КТ?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Of course. I'll send them today together with the updated report.",
+      "ru": "Конечно. Пришлю сегодня вместе с обновлённым отчётом.",
+      "why": null
+     },
+     {
+      "text": "They are secret.",
+      "ru": "Они секретные.",
+      "why": "Если есть ограничения — объясни и предложи, что можно показать."
+     },
+     {
+      "text": "Maybe later.",
+      "ru": "Может, позже.",
+      "why": "Неопределённо. Назови конкретный срок."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Of course. I'll send them today together with the updated report.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Of course. I'll send them today together with the updated report.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Of course. I'll send them today together with the updated report.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Of course. I'll send them today together with the updated report.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  ],
+  "culture": {
+   "title": "Вопросы — это не нападение",
+   "text": "На англоязычных презентациях перебивать вопросом нормально, и «Sorry to interrupt» — вежливая формула. «Good question» даёт секунду подумать. Отвечай фактом и цифрой, а если чего-то не знаешь — «I'll check and get back to you» лучше, чем догадки."
+  },
+  "reviewed": false
+ }
+]

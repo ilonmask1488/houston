@@ -4,7 +4,7 @@ import { currentModule, moduleItems, type Progress } from '../course/progress'
 import type { CardRow } from '../db/types'
 import { STEP_SECONDS, stepsSeconds } from '../run/steps'
 import { newCard } from '../srs/srs'
-import { airSteps, callSteps, chunkSteps, docSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments, rotationTrack, stepAlive } from './session'
+import { airSteps, callSteps, chunkSteps, cleanSteps, docSteps, mailSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments, rotationTrack, stepAlive } from './session'
 
 const cards = (n: number): CardRow[] => Array.from({ length: n }, (_, i) => newCard(`c-intro-${String(i + 1).padStart(2, '0')}`, 1, 0))
 
@@ -109,14 +109,50 @@ describe('Техдок в сеансе', () => {
     expect(n('clean')).toBe(n('doc'))
   })
 
-  it('в сеансе ротация — Техдок, сегменты ≤ 3 минут, все шаги живые', () => {
-    const segs = planSegments({ minutes: 30, date: '2026-09-27', due: [], progress: new Map(), speed: 1 })
-    const rot = segs.filter((s) => s.block === 'rotation')
-    expect(rot.length).toBeGreaterThan(0)
-    expect(rot.every((s) => s.track === 'doc')).toBe(true)
-    for (const s of rot) {
-      expect(stepsSeconds(s.steps!)).toBeLessThanOrEqual(MAX_SEGMENT_SECONDS)
-      expect(s.steps!.every(stepAlive)).toBe(true)
+  it('ротация по дням: Техдок, Телеграмма, Чистый сигнал; сегменты ≤ 3 минут, все шаги живые', () => {
+    const seen = new Set<string>()
+    for (let d = 1; d <= 9; d++) {
+      const segs = planSegments({ minutes: 30, date: `2026-10-0${d}`, due: [], progress: new Map(), speed: 1 })
+      const rot = segs.filter((s) => s.block === 'rotation')
+      expect(rot.length).toBeGreaterThan(0)
+      expect(new Set(rot.map((s) => s.track)).size).toBe(1)
+      seen.add(rot[0]!.track!)
+      for (const s of rot) {
+        expect(stepsSeconds(s.steps!)).toBeLessThanOrEqual(MAX_SEGMENT_SECONDS)
+        expect(s.steps!.every(stepAlive)).toBe(true)
+      }
     }
+    expect([...seen].sort()).toEqual(['clean', 'doc', 'mail'])
+  })
+})
+
+describe('Телеграмма и Чистый сигнал в сеансе', () => {
+  const mod = (id: string) => moduleById.get(id)!
+
+  it('письма: регистр и «по-русски» по два, потом одно большое упражнение; несделанное — первым', () => {
+    const steps = mailSteps({ module: mod('mail-structure'), done: new Set(), started: true, seed: 2 }, 360)
+    expect(steps.filter((s) => s.kind === 'mailRegister')).toHaveLength(2)
+    expect(steps.filter((s) => s.kind === 'mailFix')).toHaveLength(2)
+    expect(steps.filter((s) => s.kind === 'mailOrder' || s.kind === 'mailWrite')).toHaveLength(1)
+    const orderDone = new Set(moduleItems('mail-structure').filter((id) => id.startsWith('mo-')))
+    const next = mailSteps({ module: mod('mail-structure'), done: orderDone, started: true, seed: 3 }, 360)
+    expect(next.at(-1)!.kind).toBe('mailWrite')
+  })
+
+  it('произношение: пары на слух → вслух → фразы, в конце ложные друзья; ударение и интонация — свои шаги', () => {
+    const th = cleanSteps({ module: mod('clean-th'), done: new Set(), started: false, seed: 1 }, 360)
+    expect(th[0]!.kind).toBe('intro')
+    const kinds = th.map((s) => s.kind)
+    expect(kinds.indexOf('pairHear')).toBeLessThan(kinds.indexOf('pairSay'))
+    expect(kinds.indexOf('pairSay')).toBeLessThan(kinds.indexOf('cleanSay'))
+    expect(kinds.slice(-2)).toEqual(['falseFriend', 'falseFriend'])
+    expect(cleanSteps({ module: mod('clean-stress'), done: new Set(), started: true, seed: 1 }, 300).some((s) => s.kind === 'stress')).toBe(true)
+    expect(cleanSteps({ module: mod('clean-intonation'), done: new Set(), started: true, seed: 1 }, 300).filter((s) => s.kind === 'cleanSay').length).toBeGreaterThan(2)
+    for (const s of th) expect(stepAlive(s)).toBe(true)
+  })
+
+  it('каждый модуль Телеграммы и Чистого сигнала можно закрыть: у всех упражнений есть шаги', () => {
+    for (const id of ['mail-structure', 'mail-register', 'mail-apply', 'mail-request', 'mail-decline', 'mail-status', 'clean-th', 'clean-wv', 'clean-h', 'clean-vowels', 'clean-final', 'clean-ng', 'clean-stress', 'clean-intonation'])
+      expect(moduleItems(id).length, id).toBeGreaterThan(0)
   })
 })

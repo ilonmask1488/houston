@@ -1,0 +1,235 @@
+[
+ {
+  "id": "bank-1",
+  "title": "Начать письмо",
+  "phrases": [
+   {
+    "en": "I'm writing to ask about…",
+    "ru": "Пишу, чтобы спросить о…",
+    "reg": "neutral"
+   },
+   {
+    "en": "I'm writing regarding…",
+    "ru": "Пишу по поводу…",
+    "reg": "formal"
+   },
+   {
+    "en": "Following our call on Monday, …",
+    "ru": "По итогам нашего созвона в понедельник…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Thanks for your email.",
+    "ru": "Спасибо за письмо.",
+    "reg": "neutral"
+   },
+   {
+    "en": "I hope you're doing well.",
+    "ru": "Надеюсь, у вас всё хорошо.",
+    "reg": "neutral"
+   },
+   {
+    "en": "Quick question: …",
+    "ru": "Короткий вопрос: …",
+    "reg": "friendly"
+   }
+  ]
+ },
+ {
+  "id": "bank-2",
+  "title": "Попросить",
+  "phrases": [
+   {
+    "en": "Could you send me…?",
+    "ru": "Не могли бы вы прислать…?",
+    "reg": "neutral"
+   },
+   {
+    "en": "Would you mind checking…?",
+    "ru": "Вы не против проверить…?",
+    "reg": "neutral"
+   },
+   {
+    "en": "I would be grateful if you could…",
+    "ru": "Буду признателен, если вы…",
+    "reg": "formal"
+   },
+   {
+    "en": "Could you let me know by Friday?",
+    "ru": "Сообщите, пожалуйста, до пятницы.",
+    "reg": "neutral"
+   },
+   {
+    "en": "Can you take a look when you get a chance?",
+    "ru": "Глянь, когда будет минутка.",
+    "reg": "friendly"
+   }
+  ]
+ },
+ {
+  "id": "bank-3",
+  "title": "Напомнить",
+  "phrases": [
+   {
+    "en": "Just following up on my email from Monday.",
+    "ru": "Возвращаюсь к моему письму от понедельника.",
+    "reg": "neutral"
+   },
+   {
+    "en": "Just checking in on…",
+    "ru": "Хотел уточнить, как там…",
+    "reg": "friendly"
+   },
+   {
+    "en": "I wanted to follow up on…",
+    "ru": "Хотел вернуться к…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Any update on…?",
+    "ru": "Есть новости по…?",
+    "reg": "friendly"
+   }
+  ]
+ },
+ {
+  "id": "bank-4",
+  "title": "Уточнить",
+  "phrases": [
+   {
+    "en": "Just to clarify, …",
+    "ru": "Чтобы уточнить: …",
+    "reg": "neutral"
+   },
+   {
+    "en": "Do you mean… or…?",
+    "ru": "Вы имеете в виду… или…?",
+    "reg": "neutral"
+   },
+   {
+    "en": "Could you confirm that…?",
+    "ru": "Подтвердите, пожалуйста, что…",
+    "reg": "neutral"
+   },
+   {
+    "en": "If I understand correctly, …",
+    "ru": "Если я правильно понимаю, …",
+    "reg": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "bank-5",
+  "title": "Отказать и перенести",
+  "phrases": [
+   {
+    "en": "Unfortunately, that won't be possible this week.",
+    "ru": "К сожалению, на этой неделе не получится.",
+    "reg": "neutral"
+   },
+   {
+    "en": "I'm afraid we can't…",
+    "ru": "Боюсь, мы не сможем…",
+    "reg": "neutral"
+   },
+   {
+    "en": "However, we could…",
+    "ru": "Однако мы могли бы…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Could we move our meeting to…?",
+    "ru": "Можем перенести встречу на…?",
+    "reg": "neutral"
+   },
+   {
+    "en": "Sorry for the short notice.",
+    "ru": "Извините, что так поздно предупреждаю.",
+    "reg": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "bank-6",
+  "title": "Вложения",
+  "phrases": [
+   {
+    "en": "Please find attached…",
+    "ru": "Во вложении…",
+    "reg": "formal"
+   },
+   {
+    "en": "I've attached…",
+    "ru": "Прикладываю…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Here's the file.",
+    "ru": "Вот файл.",
+    "reg": "friendly"
+   },
+   {
+    "en": "The link is below.",
+    "ru": "Ссылка ниже.",
+    "reg": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "bank-7",
+  "title": "Статус",
+  "phrases": [
+   {
+    "en": "Status: on track.",
+    "ru": "Статус: успеваем.",
+    "reg": "neutral"
+   },
+   {
+    "en": "We're two days behind because…",
+    "ru": "Отстаём на два дня, потому что…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Blocked by…",
+    "ru": "Задерживается из-за…",
+    "reg": "neutral"
+   },
+   {
+    "en": "Next steps: …",
+    "ru": "Дальнейшие шаги: …",
+    "reg": "neutral"
+   }
+  ]
+ },
+ {
+  "id": "bank-8",
+  "title": "Завершить",
+  "phrases": [
+   {
+    "en": "Let me know if you have any questions.",
+    "ru": "Если есть вопросы — пишите.",
+    "reg": "neutral"
+   },
+   {
+    "en": "I look forward to hearing from you.",
+    "ru": "Жду вашего ответа.",
+    "reg": "formal"
+   },
+   {
+    "en": "Thanks in advance.",
+    "ru": "Заранее спасибо.",
+    "reg": "neutral"
+   },
+   {
+    "en": "Best regards, / Kind regards,",
+    "ru": "С уважением,",
+    "reg": "neutral"
+   },
+   {
+    "en": "Thanks! / Cheers,",
+    "ru": "Спасибо! / Пока,",
+    "reg": "friendly"
+   }
+  ]
+ }
+]

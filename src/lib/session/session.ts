@@ -3,7 +3,21 @@
   повторение 7, Эфир 6, Позывной 8, ротация 6). Блоки режутся на сегменты не длиннее ~3 минут
   одного формата и чередуются. Говорение есть каждый день; слабый трек получает ротацию.
 */
-import { chunkById, content, itemsByModule, phraseById, textById } from '../../content'
+import {
+  chunkById,
+  cleanPhraseById,
+  content,
+  falseFriendById,
+  itemsByModule,
+  mailFixById,
+  mailOrderById,
+  mailRegisterById,
+  mailWriteById,
+  pairById,
+  phraseById,
+  stressById,
+  textById,
+} from '../../content'
 import type { Module, TrackId } from '../../content/types'
 import { currentModule, doneSet, type Progress } from '../course/progress'
 import { db } from '../db/db'
@@ -177,6 +191,62 @@ export function docSteps(d: DocInput, seconds: number): Step[] {
   return steps
 }
 
+/**
+  Телеграмма (ТЗ §6.4): регистр и «слишком по-русски» — по два, потом одно большое: собрать письмо
+  или написать самому (сначала то, что ещё не сделано).
+*/
+export function mailSteps(d: DocInput, seconds: number): Step[] {
+  const items = itemsByModule.get(d.module.id)
+  if (!items) return []
+  const reg = freshFirst(items.mailRegister, d.done, d.seed)
+  const fix = freshFirst(items.mailFix, d.done, d.seed + 1)
+  const order = freshFirst(items.mailOrder, d.done, d.seed)[0]
+  const write = freshFirst(items.mailWrite, d.done, d.seed)[0]
+  const big: Step[] = []
+  const orderFresh = order && !d.done.has(order.id)
+  const writeFresh = write && !d.done.has(write.id)
+  const useWrite = write && (writeFresh && !orderFresh ? true : orderFresh && !writeFresh ? false : d.seed % 2 === 0)
+  if (useWrite) big.push({ kind: 'mailWrite', item: write.id })
+  else if (order) big.push({ kind: 'mailOrder', item: order.id })
+  const small: Step[] = [
+    ...reg.slice(0, 2).map((x): Step => ({ kind: 'mailRegister', item: x.id })),
+    ...fix.slice(0, 2).map((x): Step => ({ kind: 'mailFix', item: x.id })),
+  ]
+  const intro: Step[] = d.started ? [] : [{ kind: 'intro', module: d.module.id }]
+  return [...intro, ...take(small, Math.max(60, seconds - stepsSeconds(big) - stepsSeconds(intro))), ...big]
+}
+
+/** Какое слово пары прозвучит: детерминированно от дня, чтобы план не менялся при перезагрузке. */
+function pickOf(id: string, seed: number): 0 | 1 {
+  return (hash(`${id}:${seed}`) % 2) as 0 | 1
+}
+
+/**
+  Чистый сигнал (ТЗ §6.5): пары на слух → пары вслух → фразы; ударение и интонация — свои упражнения.
+  В конце — пара ложных друзей переводчика.
+*/
+export function cleanSteps(d: DocInput, seconds: number): Step[] {
+  const items = itemsByModule.get(d.module.id)
+  if (!items) return []
+  const intro: Step[] = d.started ? [] : [{ kind: 'intro', module: d.module.id }]
+  const ff = shuffle(content.falseFriends, rng(d.seed + 3))
+    .slice(0, 2)
+    .map((x): Step => ({ kind: 'falseFriend', item: x.id }))
+  let main: Step[]
+  if (items.stress.length) main = freshFirst(items.stress, d.done, d.seed).map((x): Step => ({ kind: 'stress', word: x.id }))
+  else if (!items.pairs.length) main = freshFirst(items.cleanPhrases, d.done, d.seed).map((x): Step => ({ kind: 'cleanSay', phrase: x.id }))
+  else {
+    const pairs = freshFirst(items.pairs, d.done, d.seed)
+    const phrases = freshFirst(items.cleanPhrases, d.done, d.seed)
+    main = [
+      ...pairs.slice(0, 6).map((p): Step => ({ kind: 'pairHear', pair: p.id, pick: pickOf(p.id, d.seed) })),
+      ...pairs.slice(0, 2).map((p): Step => ({ kind: 'pairSay', pair: p.id, pick: pickOf(p.id, d.seed + 1) })),
+      ...phrases.slice(0, 2).map((x): Step => ({ kind: 'cleanSay', phrase: x.id })),
+    ]
+  }
+  return [...intro, ...take(main, seconds - stepsSeconds(intro) - stepsSeconds(ff)), ...ff]
+}
+
 export type PlanInput = {
   minutes: number
   date: string
@@ -262,9 +332,11 @@ function rotationSegments(input: PlanInput, seconds: number, seed: number, airMo
     input.intake?.tracks,
   )
   const mod = track && mods.get(track)
-  if (track === 'doc' && mod) {
-    const steps = docSteps({ module: mod, done: doneSet(input.progress, mod.id), started: input.progress.has(mod.id), seed }, seconds)
-    if (steps.length) return chunkSteps(steps).map((st, i) => seg(`rotation-${i + 1}`, 'rotation', i === 0 ? 'read' : 'readTasks', { steps: st, track: 'doc', module: mod.id }))
+  if (track && mod) {
+    const d: DocInput = { module: mod, done: doneSet(input.progress, mod.id), started: input.progress.has(mod.id), seed }
+    const steps = track === 'doc' ? docSteps(d, seconds) : track === 'mail' ? mailSteps(d, seconds) : cleanSteps(d, seconds)
+    const labels = { doc: ['read', 'readTasks'], mail: ['mail', 'mailBig'], clean: ['clean', 'cleanMore'] }[track as 'doc' | 'mail' | 'clean']
+    if (steps.length) return chunkSteps(steps).map((st, i) => seg(`rotation-${i + 1}`, 'rotation', labels[Math.min(i, 1)]!, { steps: st, track, module: mod.id }))
   }
   return legacyRotation(input, seconds, seed, airMod, callMod)
 }
@@ -374,6 +446,23 @@ export function stepAlive(s: Step): boolean {
     case 'docSummary':
     case 'docRetell':
       return !!textById.get(s.text)?.paragraphs[s.p]
+    case 'mailRegister':
+      return mailRegisterById.has(s.item)
+    case 'mailFix':
+      return mailFixById.has(s.item)
+    case 'mailOrder':
+      return mailOrderById.has(s.item)
+    case 'mailWrite':
+      return mailWriteById.has(s.item)
+    case 'pairHear':
+    case 'pairSay':
+      return pairById.has(s.pair)
+    case 'cleanSay':
+      return cleanPhraseById.has(s.phrase)
+    case 'stress':
+      return stressById.has(s.word)
+    case 'falseFriend':
+      return falseFriendById.has(s.item)
     default:
       return true
   }

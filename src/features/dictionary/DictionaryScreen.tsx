@@ -11,9 +11,10 @@ import { defaultVoice } from '../../lib/audio/audio'
 import { db } from '../../lib/db/db'
 import { addChunkCards } from '../../lib/srs/cards'
 import s from './DictionaryScreen.module.css'
+import { MailBankTab } from './MailBankTab'
 import { WordsTab } from './WordsTab'
 
-type Tab = 'chunks' | 'words' | 'phrases'
+type Tab = 'chunks' | 'words' | 'mail' | 'phrases'
 
 function norm(x: string): string {
   return x.toLowerCase().replace(/[’']/g, "'").replace(/ё/g, 'е')
@@ -49,23 +50,26 @@ export function DictionaryScreen() {
     return [...m]
   }, [chunks])
 
+  const placeholder = tab === 'words' ? t.wordsSearch : tab === 'mail' ? ru.mail.bankSearch : t.search
+
   return (
     <Screen title={t.title}>
       <input
         className={s.search}
         type="search"
-        placeholder={tab === 'words' ? t.wordsSearch : t.search}
+        placeholder={placeholder}
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        aria-label={tab === 'words' ? t.wordsSearch : t.search}
+        aria-label={placeholder}
       />
       <Segmented
         label={t.title}
         value={tab}
-        options={(['chunks', 'words', 'phrases'] as const).map((v) => ({ value: v, label: t.tabs[v]! }))}
+        options={(['chunks', 'words', 'mail', 'phrases'] as const).map((v) => ({ value: v, label: t.tabs[v]! }))}
         onChange={setTab}
       />
       {tab === 'words' && <WordsTab query={q} />}
+      {tab === 'mail' && <MailBankTab query={q} />}
       {tab === 'chunks' &&
         (groups.length ? (
           groups.map(([fn, list]) => (

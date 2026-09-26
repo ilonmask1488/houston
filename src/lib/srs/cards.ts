@@ -3,7 +3,7 @@
   Чанк после изучения даёт карточки 1 (текст → значение) и 3 (на слух → значение);
   фраза Эфира, которую не поймал, — карточку 3: слабые места возвращаются чаще.
 */
-import { chunkById, phraseById } from '../../content'
+import { chunkById, falseFriendById, phraseById } from '../../content'
 import { dictById, dictionaryLoaded, loadDictionary } from '../dict/dict'
 import { db, type AppDB } from '../db/db'
 import type { CardRow } from '../db/types'
@@ -20,7 +20,7 @@ const userWordIds = new Set<string>()
 export function itemExists(itemId: string): boolean {
   if (itemId.startsWith('w-')) return !dictionaryLoaded() || dictById.has(itemId)
   if (itemId.startsWith('u-')) return userWordIds.has(itemId)
-  return chunkById.has(itemId) || phraseById.has(itemId)
+  return chunkById.has(itemId) || phraseById.has(itemId) || falseFriendById.has(itemId)
 }
 
 /** Загрузить словарь и список своих слов, если в карточках есть слова. */
@@ -59,6 +59,11 @@ export async function addChunkCards(chunkId: string, database: AppDB = db, now =
     if (await ensure(database, chunkId, 3, now, UNLOCK_DELAY_MS)) n++
   })
   return n
+}
+
+/** Ложный друг встретился — карточка «русское слово → верный перевод» к следующему занятию. */
+export async function addFalseFriendCard(ffId: string, database: AppDB = db, now = Date.now()): Promise<boolean> {
+  return ensure(database, ffId, 4, now, UNLOCK_DELAY_MS)
 }
 
 /** Фразу не поймал на слух — она вернётся карточкой «на слух → понять». */

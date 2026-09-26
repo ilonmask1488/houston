@@ -9,6 +9,8 @@ test('тема, длительность и вариант языка сохра
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
   await page.getByRole('radio', { name: '45 мин' }).click()
   await page.getByRole('radio', { name: 'Британский' }).click()
+  await expect(page.getByRole('radio', { name: 'Британский' })).toHaveAttribute('aria-checked', 'true')
+  await page.waitForTimeout(300)
 
   await page.reload()
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')

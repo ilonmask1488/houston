@@ -1,0 +1,236 @@
+[
+ {
+  "id": "mf-structure-1",
+  "module": "mail-structure",
+  "context": "Начало письма всей группе",
+  "bad": "Dear colleagues!",
+  "options": [
+   "Hi all,",
+   "Dear colleagues!!!",
+   "Hello, dear colleagues!"
+  ],
+  "why": "В английском обращение заканчивается запятой, восклицательный знак — русская привычка. Для команды — «Hi all,» или «Hi everyone,».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-structure-2",
+  "module": "mail-structure",
+  "context": "Подпись в конце письма",
+  "bad": "With respect, Ivan",
+  "options": [
+   "Best regards, Ivan",
+   "Respectfully yours, Ivan",
+   "With big respect, Ivan"
+  ],
+  "why": "«With respect» — калька «С уважением». Стандарт — «Best regards» или «Kind regards».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-structure-3",
+  "module": "mail-structure",
+  "context": "Первая фраза письма",
+  "bad": "I am writing to you with the purpose to ask about the delivery.",
+  "options": [
+   "I'm writing to ask about the delivery.",
+   "I write you for asking about the delivery.",
+   "The purpose of my letter is asking about the delivery."
+  ],
+  "why": "Коротко: «I'm writing to ask about…».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-register-1",
+  "module": "mail-register",
+  "context": "Просьба коллеге",
+  "bad": "Give me please the drawings of the bracket.",
+  "options": [
+   "Could you send me the drawings of the bracket, please?",
+   "Give me the drawings of the bracket, please!",
+   "You must give me the drawings of the bracket."
+  ],
+  "why": "Повелительное наклонение звучит как приказ даже с please. Просьба — это вопрос.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-register-2",
+  "module": "mail-register",
+  "context": "Просьба руководителю",
+  "bad": "It is necessary to send the report.",
+  "options": [
+   "Could you send the report by Friday?",
+   "It is needed to send the report.",
+   "The report must be sent."
+  ],
+  "why": "Безличное «необходимо» — русский канцелярит. Скажи прямо, кто и что должен сделать.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-register-3",
+  "module": "mail-register",
+  "context": "Начало письма незнакомому инженеру",
+  "bad": "Sorry for disturbing you.",
+  "options": [
+   "I hope you don't mind me reaching out.",
+   "Sorry for disturbing you very much.",
+   "Excuse me for my disturbing."
+  ],
+  "why": "Извиняться за само письмо не нужно. Если хочется смягчить — «I hope you don't mind me reaching out».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-apply-1",
+  "module": "mail-apply",
+  "context": "Отклик на вакансию",
+  "bad": "I am interested in the vacancy of engineer.",
+  "options": [
+   "I'm interested in the Design Engineer position.",
+   "I am interested in the vacancy of the engineer.",
+   "I have interest to the engineer vacancy."
+  ],
+  "why": "«Vacancy of engineer» — калька. Позиция называется «the … position» с точным названием.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-apply-2",
+  "module": "mail-apply",
+  "context": "Отклик на вакансию",
+  "bad": "I have big experience in CAD.",
+  "options": [
+   "I have solid experience with CAD, mainly SolidWorks.",
+   "I have a big experience in CAD.",
+   "My experience in CAD is big."
+  ],
+  "why": "Experience не бывает big. Говори «solid / hands-on experience with…» и уточняй.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-apply-3",
+  "module": "mail-apply",
+  "context": "После собеседования",
+  "bad": "Thank you for the interview, it was very pleasant for me.",
+  "options": [
+   "Thank you for taking the time to speak with me today — I really enjoyed our conversation.",
+   "Thank you for the interview, it was very pleasant to me.",
+   "The interview was pleasant for me, thank you."
+  ],
+  "why": "«Pleasant for me» — калька. «I really enjoyed…» звучит естественно.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-request-1",
+  "module": "mail-request",
+  "context": "Срок в запросе",
+  "bad": "Can you send me the report until Friday?",
+  "options": [
+   "Could you send me the report by Friday?",
+   "Can you send me the report till Friday?",
+   "Can you send me the report before Friday until?"
+  ],
+  "why": "Срок — by («не позже»). Until — «пока длится»: «I'll be in the lab until Friday».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-request-2",
+  "module": "mail-request",
+  "context": "Напоминание",
+  "bad": "I didn't receive any answer from you.",
+  "options": [
+   "Just checking in — have you had a chance to look at my question?",
+   "I didn't get any answer from you yet!",
+   "Why didn't you answer?"
+  ],
+  "why": "Звучит как обвинение. Follow-up — мягкий: «Just checking in…».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-request-3",
+  "module": "mail-request",
+  "context": "Вопрос коллеге",
+  "bad": "I have a question to you.",
+  "options": [
+   "I have a question for you.",
+   "I have a question at you.",
+   "I have to you a question."
+  ],
+  "why": "Вопрос — for someone, не to.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-decline-1",
+  "module": "mail-decline",
+  "context": "Предложить время встречи",
+  "bad": "I propose you to meet on Monday.",
+  "options": [
+   "How about meeting on Monday?",
+   "I propose you meeting on Monday.",
+   "I offer you to meet on Monday."
+  ],
+  "why": "После propose/suggest не бывает «you to». Проще: «How about…?» или «I suggest meeting…».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-decline-2",
+  "module": "mail-decline",
+  "context": "Отказ на просьбу срочно провести испытание",
+  "bad": "It is impossible.",
+  "options": [
+   "Unfortunately, that won't be possible this week, but we could run it on Tuesday.",
+   "It is absolutely impossible.",
+   "Impossible, sorry."
+  ],
+  "why": "Голое «impossible» звучит резко. Смягчи «unfortunately» и предложи альтернативу.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-decline-3",
+  "module": "mail-decline",
+  "context": "Перенос встречи",
+  "bad": "Sorry, sorry, I can't come, I'm so sorry.",
+  "options": [
+   "Sorry for the short notice — could we move our meeting to Thursday?",
+   "Sorry, sorry, I can't come.",
+   "I am very very sorry that I can't come."
+  ],
+  "why": "Одно извинение и сразу предложение. Много «sorry» звучит неуверенно.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-status-1",
+  "module": "mail-status",
+  "context": "Отчёт о статусе",
+  "bad": "We made the test yesterday.",
+  "options": [
+   "We ran the test yesterday.",
+   "We did make the test yesterday.",
+   "We have made the test yesterday."
+  ],
+  "why": "Испытания проводят (run / carry out / do), а не make. И с yesterday — Past Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "mf-status-2",
+  "module": "mail-status",
+  "context": "Отчёт о статусе",
+  "bad": "The deadline is burning.",
+  "options": [
+   "The deadline is very close.",
+   "The deadline is on fire.",
+   "The deadline burns."
+  ],
+  "why": "«Горит» — русская метафора. По-английски: «very close», «tight», «we're running out of time».",
+  "reviewed": false
+ },
+ {
+  "id": "mf-status-3",
+  "module": "mail-status",
+  "context": "Отчёт о статусе",
+  "bad": "The results will be sent to you additionally.",
+  "options": [
+   "I'll send you the results separately.",
+   "The results will be additionally sent.",
+   "Additionally I will send you results additionally."
+  ],
+  "why": "«Дополнительно» здесь — «отдельно» или «позже»: separately / later.",
+  "reviewed": false
+ }
+]

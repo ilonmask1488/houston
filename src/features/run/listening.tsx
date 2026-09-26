@@ -8,7 +8,7 @@ import { Highlight, WordDiff } from '../../components/Voice'
 import { characterById, connectedByModule, itemsByModule, moduleById, passageById, phraseById, spokenText } from '../../content'
 import { accentOf, type Phrase } from '../../content/types'
 import { pick, ru } from '../../i18n/ru'
-import { playText, stopAudio, wait } from '../../lib/audio/audio'
+import { defaultVoice, playText, stopAudio, wait } from '../../lib/audio/audio'
 import { sfx } from '../../lib/audio/sfx'
 import { rng, shuffle } from '../../lib/intake/plan'
 import type { Step } from '../../lib/run/steps'
@@ -27,6 +27,7 @@ export function IntroStep({ step, onDone }: StepProps<S<'intro'>>) {
   const m = moduleById.get(step.module)
   const c = connectedByModule.get(step.module)
   const examples = (itemsByModule.get(step.module)?.phrases ?? []).slice(0, 3)
+  const pairs = (itemsByModule.get(step.module)?.pairs ?? []).slice(0, 3)
   return (
     <section className={s.body}>
       <p className={s.kicker}>{m ? ru.tracks[m.track].channel : ''}</p>
@@ -64,6 +65,20 @@ export function IntroStep({ step, onDone }: StepProps<S<'intro'>>) {
               <li key={p.id}>
                 <PlayButton text={spokenText(p)} voice={p.voice} label={p.text} size="s" />
                 <Highlight text={p.text} focus={p.focus} />
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {pairs.length > 0 && (
+        <>
+          <h2 className={s.h2}>{t.examples}</h2>
+          <ul className={s.examples}>
+            {pairs.map((p) => (
+              <li key={p.id} lang="en">
+                <PlayButton text={p.a} voice={defaultVoice()} label={p.a} size="s" /> {p.a}
+                <span className={s.hint}> — </span>
+                <PlayButton text={p.b} voice={defaultVoice()} label={p.b} size="s" /> {p.b}
               </li>
             ))}
           </ul>

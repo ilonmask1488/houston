@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { Fragment, useEffect, type ReactNode } from 'react'
+import { HashRouter, Navigate, Route, Routes, useParams } from 'react-router-dom'
 import { CheckScreen } from '../features/check/CheckScreen'
 import { DictionaryScreen } from '../features/dictionary/DictionaryScreen'
 import { GameRoute } from '../features/games/GameScreen'
@@ -7,7 +7,7 @@ import { IntakeScreen } from '../features/intake/IntakeScreen'
 import { ProfileScreen } from '../features/intake/ProfileScreen'
 import { AboutScreen, AchievementsScreen, GamesScreen, MoreScreen } from '../features/more/MoreScreen'
 import { LibraryScreen, LibraryText, MyTexts, MyTextView } from '../features/library/LibraryScreen'
-import { ModuleRun, SegmentRun, TextRun } from '../features/run/routes'
+import { BossRun, ModuleRun, SegmentRun, TextRun } from '../features/run/routes'
 import { HomeScreen } from '../features/session/HomeScreen'
 import { SessionScreen } from '../features/session/SessionScreen'
 import { SettingsScreen } from '../features/settings/SettingsScreen'
@@ -20,6 +20,12 @@ import { configureAudio } from '../lib/audio/audio'
 import { configureFeedback } from '../lib/audio/sfx'
 import { applyAppearance, useSettings } from '../lib/settings/settings'
 import { Shell } from './Shell'
+
+/** Экран упражнения с новым :id — новый экземпляр: переход из модуля прямо в модуль не тянет за собой прошлый шаг. */
+function Remount({ children }: { children: ReactNode }) {
+  const { id } = useParams()
+  return <Fragment key={id}>{children}</Fragment>
+}
 
 /*
   HashRouter: адреса вида …/#/tracks работают на GitHub Pages без серверных перенаправлений
@@ -46,13 +52,14 @@ export function App() {
         <Route element={<Shell />}>
           <Route index element={<HomeScreen />} />
           <Route path="session" element={<SessionScreen />} />
-          <Route path="run/seg/:id" element={<SegmentRun />} />
-          <Route path="run/module/:id" element={<ModuleRun />} />
-          <Route path="run/text/:id" element={<TextRun />} />
+          <Route path="run/seg/:id" element={<Remount><SegmentRun /></Remount>} />
+          <Route path="run/module/:id" element={<Remount><ModuleRun /></Remount>} />
+          <Route path="run/text/:id" element={<Remount><TextRun /></Remount>} />
+          <Route path="boss/:id" element={<Remount><BossRun /></Remount>} />
           <Route path="library" element={<LibraryScreen />} />
-          <Route path="library/:id" element={<LibraryText />} />
+          <Route path="library/:id" element={<Remount><LibraryText /></Remount>} />
           <Route path="mytext" element={<MyTexts />} />
-          <Route path="mytext/:id" element={<MyTextView />} />
+          <Route path="mytext/:id" element={<Remount><MyTextView /></Remount>} />
           <Route path="game/:id" element={<GameRoute />} />
           <Route path="games" element={<GamesScreen />} />
           <Route path="intake" element={<IntakeScreen />} />
@@ -63,7 +70,7 @@ export function App() {
           <Route path="story/:id/train" element={<StoryTrain />} />
           <Route path="story/:id/432" element={<Fluency432 />} />
           <Route path="interview" element={<InterviewScreen />} />
-          <Route path="episode/:id" element={<EpisodeScreen />} />
+          <Route path="episode/:id" element={<Remount><EpisodeScreen /></Remount>} />
           <Route path="dictionary" element={<DictionaryScreen />} />
           <Route path="more" element={<MoreScreen />} />
           <Route path="stats" element={<StatsScreen />} />

@@ -335,6 +335,14 @@
     "ms": 780
    }
   ],
+  "And is that acceptable?": [
+   {
+    "voice": "au-f",
+    "file": "story-episodes-2/au-f-ad5c302c15-6a630324.mp3",
+    "source": "edge-au-f",
+    "ms": 1260
+   }
+  ],
   "And what was the most difficult part?": [
    {
     "voice": "us-f",
@@ -473,12 +481,64 @@
     "ms": 3400
    }
   ],
+  "Both of them thought it through.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-7184575474-aee98254.mp3",
+    "source": "edge-gb-f",
+    "ms": 1650
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-7184575474-8331493a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1370
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-7184575474-12b18d0f.mp3",
+    "source": "edge-us-f",
+    "ms": 1410
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-7184575474-77143db6.mp3",
+    "source": "edge-us-m",
+    "ms": 1210
+   }
+  ],
   "Brilliant. So, where are you from originally?": [
    {
     "voice": "au-m",
     "file": "story-episodes/au-m-5b72dff7bc-beeab337.mp3",
     "source": "edge-au-m",
     "ms": 3140
+   }
+  ],
+  "Bring the long fitting, please.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-75d818ac12-71460a63.mp3",
+    "source": "edge-gb-f",
+    "ms": 2090
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-75d818ac12-da825e3d.mp3",
+    "source": "edge-gb-m",
+    "ms": 1820
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-75d818ac12-49aa24cd.mp3",
+    "source": "edge-us-f",
+    "ms": 1660
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-75d818ac12-33d8e8a1.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
    }
   ],
   "Can I get you anything?": [
@@ -709,6 +769,32 @@
     "file": "call-chunks/us-m-8edfd3281a-edd723fa.mp3",
     "source": "edge-us-m",
     "ms": 1500
+   }
+  ],
+  "Could you send me the drawing, please?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-dcd57e497c-89fc72d7.mp3",
+    "source": "edge-gb-f",
+    "ms": 2280
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-dcd57e497c-cea5d8ff.mp3",
+    "source": "edge-gb-m",
+    "ms": 1940
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-dcd57e497c-20029332.mp3",
+    "source": "edge-us-f",
+    "ms": 1640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-dcd57e497c-a48e6eba.mp3",
+    "source": "edge-us-m",
+    "ms": 1810
    }
   ],
   "Could you send me the drawings by Friday?": [
@@ -1019,6 +1105,84 @@
     "ms": 990
    }
   ],
+  "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel.": [
+   {
+    "voice": "gb-f",
+    "file": "boss-bosses/gb-f-73f7cfd2a1-56902834.mp3",
+    "source": "edge-gb-f",
+    "ms": 5820
+   },
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-73f7cfd2a1-69740d27.mp3",
+    "source": "edge-gb-m",
+    "ms": 4840
+   },
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-73f7cfd2a1-dd18eb89.mp3",
+    "source": "edge-us-f",
+    "ms": 5890
+   },
+   {
+    "voice": "us-m",
+    "file": "boss-bosses/us-m-73f7cfd2a1-b34d5925.mp3",
+    "source": "edge-us-m",
+    "ms": 5930
+   }
+  ],
+  "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.": [
+   {
+    "voice": "gb-f",
+    "file": "boss-bosses/gb-f-dec7fff82f-e43edf64.mp3",
+    "source": "edge-gb-f",
+    "ms": 7290
+   },
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-dec7fff82f-3ab99bdc.mp3",
+    "source": "edge-gb-m",
+    "ms": 6660
+   },
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-dec7fff82f-29e95cb8.mp3",
+    "source": "edge-us-f",
+    "ms": 8029
+   },
+   {
+    "voice": "us-m",
+    "file": "boss-bosses/us-m-dec7fff82f-58076a2a.mp3",
+    "source": "edge-us-m",
+    "ms": 7500
+   }
+  ],
+  "Do you have a minute?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-addf80ef66-c9cb3f15.mp3",
+    "source": "edge-gb-f",
+    "ms": 1200
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-addf80ef66-09dea8b6.mp3",
+    "source": "edge-gb-m",
+    "ms": 960
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-addf80ef66-be14e514.mp3",
+    "source": "edge-us-f",
+    "ms": 780
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-addf80ef66-74f9c330.mp3",
+    "source": "edge-us-m",
+    "ms": 810
+   }
+  ],
   "Do you have any questions for us?": [
    {
     "voice": "in-m",
@@ -1239,6 +1403,14 @@
     "ms": 1370
    }
   ],
+  "Drifting? Let me re-seat the connector. Right, try now.": [
+   {
+    "voice": "au-m",
+    "file": "story-episodes-2/au-m-8906bd22a5-1bedfa60.mp3",
+    "source": "edge-au-m",
+    "ms": 4450
+   }
+  ],
   "During my first lab project, I ran a whole series of tests before checking the calibration of the load cell. When I analyzed the data, the numbers looked wrong, and I had to repeat everything. It cost us a week. Since then, I always do a short check with a known weight before any test, and I added this step to our lab procedure.": [
    {
     "voice": "gb-f",
@@ -1271,6 +1443,32 @@
     "file": "doc-texts/us-m-3ed2b05110-18094f5a.mp3",
     "source": "edge-us-m",
     "ms": 5320
+   }
+  ],
+  "Every wire was well insulated.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-8619f634f8-8f267d31.mp3",
+    "source": "edge-gb-f",
+    "ms": 2240
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-8619f634f8-96250c35.mp3",
+    "source": "edge-gb-m",
+    "ms": 1890
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-8619f634f8-8897b1e6.mp3",
+    "source": "edge-us-f",
+    "ms": 1810
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-8619f634f8-872ad3ad.mp3",
+    "source": "edge-us-m",
+    "ms": 1720
    }
   ],
   "Fair point.": [
@@ -1469,12 +1667,116 @@
     "ms": 1430
    }
   ],
+  "Good morning, everyone!": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-31bac17eb9-f39d5697.mp3",
+    "source": "edge-gb-f",
+    "ms": 1630
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-31bac17eb9-63c408ae.mp3",
+    "source": "edge-gb-m",
+    "ms": 1540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-31bac17eb9-7c64b926.mp3",
+    "source": "edge-us-f",
+    "ms": 1180
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-31bac17eb9-43d530b6.mp3",
+    "source": "edge-us-m",
+    "ms": 1160
+   }
+  ],
+  "Good question. Panel three had a small void near the insert, which we found in the CT scan before the test.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-9457aaa21f-a58adb02.mp3",
+    "source": "edge-gb-f",
+    "ms": 6870
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-9457aaa21f-815e9c3d.mp3",
+    "source": "edge-gb-m",
+    "ms": 6620
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-9457aaa21f-da2e3166.mp3",
+    "source": "edge-us-f",
+    "ms": 6420
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-9457aaa21f-0fcb08eb.mp3",
+    "source": "edge-us-m",
+    "ms": 6440
+   }
+  ],
   "Good. Any blockers?": [
    {
     "voice": "us-f",
     "file": "air-passages/us-f-5fcf2d674e-0da28f40.mp3",
     "source": "edge-us-f",
     "ms": 1620
+   }
+  ],
+  "Got it. Should I stop at the design limit load or go all the way to failure?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-e9b2dadcd6-af40f88b.mp3",
+    "source": "edge-gb-f",
+    "ms": 4750
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-e9b2dadcd6-7fe6e72a.mp3",
+    "source": "edge-gb-m",
+    "ms": 4640
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-e9b2dadcd6-7f73406e.mp3",
+    "source": "edge-us-f",
+    "ms": 4320
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-e9b2dadcd6-c495a28f.mp3",
+    "source": "edge-us-m",
+    "ms": 4230
+   }
+  ],
+  "Great, Monday works. Could you send me the tracking number once they ship?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-62a0283841-9995839a.mp3",
+    "source": "edge-gb-f",
+    "ms": 4830
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-62a0283841-703efbb7.mp3",
+    "source": "edge-gb-m",
+    "ms": 4780
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-62a0283841-d7349e38.mp3",
+    "source": "edge-us-f",
+    "ms": 3850
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-62a0283841-cc7adfcc.mp3",
+    "source": "edge-us-m",
+    "ms": 3730
    }
   ],
   "Great. And the bad news?": [
@@ -1501,12 +1803,54 @@
     "ms": 5440
    }
   ],
+  "Great. We'll load in steps of two kilonewtons and hold each step for thirty seconds.": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes-2/in-f-e923b76833-82a09180.mp3",
+    "source": "edge-in-f",
+    "ms": 6200
+   }
+  ],
+  "He has half an hour.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-0f99d18838-25971e55.mp3",
+    "source": "edge-gb-f",
+    "ms": 1300
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-0f99d18838-63b79417.mp3",
+    "source": "edge-gb-m",
+    "ms": 1100
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-0f99d18838-721d27d4.mp3",
+    "source": "edge-us-f",
+    "ms": 1140
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-0f99d18838-d83a9e86.mp3",
+    "source": "edge-us-m",
+    "ms": 1010
+   }
+  ],
   "He's finished the model.": [
    {
     "voice": "gb-f",
     "file": "air-phrases/gb-f-8c422ac58b-1b4f0325.mp3",
     "source": "edge-gb-f",
     "ms": 1360
+   }
+  ],
+  "Hello, this is Arjun from Sensotech. I got your email. I'm so sorry about the delay — there was a problem with the calibration certificates.": [
+   {
+    "voice": "in-m",
+    "file": "story-episodes-2/in-m-bd7ce9a022-2712d2a8.mp3",
+    "source": "edge-in-m",
+    "ms": 11020
    }
   ],
   "Hey Priya, have you got a sec? It's about tomorrow's design review.": [
@@ -1547,6 +1891,32 @@
     "file": "air-phrases/us-m-619524d672-88e452dd.mp3",
     "source": "edge-us-m",
     "ms": 1640
+   }
+  ],
+  "Hold the handle with both hands.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-44a563f239-92454676.mp3",
+    "source": "edge-gb-f",
+    "ms": 2060
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-44a563f239-73679c55.mp3",
+    "source": "edge-gb-m",
+    "ms": 1840
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-44a563f239-851e9b30.mp3",
+    "source": "edge-us-f",
+    "ms": 1770
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-44a563f239-aced1e2f.mp3",
+    "source": "edge-us-m",
+    "ms": 1680
    }
   ],
   "Houston, can you hear me?": [
@@ -1641,6 +2011,32 @@
     "file": "call-questions/in-m-b83e408397-514e36ef.mp3",
     "source": "edge-in-m",
     "ms": 3400
+   }
+  ],
+  "How high is the heat load?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-67bf70ff18-e5f74512.mp3",
+    "source": "edge-gb-f",
+    "ms": 1640
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-67bf70ff18-2925163f.mp3",
+    "source": "edge-gb-m",
+    "ms": 1610
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-67bf70ff18-bf78e9fc.mp3",
+    "source": "edge-us-f",
+    "ms": 1340
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-67bf70ff18-2a528c7f.mp3",
+    "source": "edge-us-m",
+    "ms": 1270
    }
   ],
   "How is the team structured?": [
@@ -2145,6 +2541,32 @@
     "file": "call-chunks/us-m-b480ede5c6-6e4a3b00.mp3",
     "source": "edge-us-m",
     "ms": 2080
+   }
+  ],
+  "I think the thread is three millimetres thick.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-375e64efae-3b3cfb47.mp3",
+    "source": "edge-gb-f",
+    "ms": 2600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-375e64efae-8d0ca458.mp3",
+    "source": "edge-gb-m",
+    "ms": 2250
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-375e64efae-273e5171.mp3",
+    "source": "edge-us-f",
+    "ms": 2670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-375e64efae-55b81102.mp3",
+    "source": "edge-us-m",
+    "ms": 2310
    }
   ],
   "I think we're running a bit behind schedule.": [
@@ -2799,6 +3221,32 @@
     "ms": 2910
    }
   ],
+  "I'm not sure that's right.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-0a24831c15-4bb789e2.mp3",
+    "source": "edge-gb-f",
+    "ms": 1610
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-0a24831c15-67659e83.mp3",
+    "source": "edge-gb-m",
+    "ms": 1290
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-0a24831c15-636b5d47.mp3",
+    "source": "edge-us-f",
+    "ms": 1270
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-0a24831c15-d57b6f85.mp3",
+    "source": "edge-us-m",
+    "ms": 1000
+   }
+  ],
   "I'm particularly interested in": [
    {
     "voice": "gb-f",
@@ -3221,6 +3669,14 @@
     "file": "call-chunks/us-m-bf1d5cba18-2eadab46.mp3",
     "source": "edge-us-m",
     "ms": 3210
+   }
+  ],
+  "If I can add something — the void was within the size allowed by the process spec.": [
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-a05ce6ac49-94134f9f.mp3",
+    "source": "edge-gb-m",
+    "ms": 4019
    }
   ],
   "If I understand the question correctly": [
@@ -3761,6 +4217,58 @@
     "ms": 1610
    }
   ],
+  "It still exceeded ultimate load by six percent, so it meets the requirement. But we've added a CT check for every insert.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-38b11af32c-702ea872.mp3",
+    "source": "edge-gb-f",
+    "ms": 8020
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-38b11af32c-d3c8e087.mp3",
+    "source": "edge-gb-m",
+    "ms": 7550
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-38b11af32c-972c4ab4.mp3",
+    "source": "edge-us-f",
+    "ms": 7380
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-38b11af32c-f15af179.mp3",
+    "source": "edge-us-m",
+    "ms": 7540
+   }
+  ],
+  "It went well. The panel reached limit load with no damage, and the strains were about eight percent below the prediction.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-4325ed6ae8-35393c40.mp3",
+    "source": "edge-gb-f",
+    "ms": 7150
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-4325ed6ae8-bf11da64.mp3",
+    "source": "edge-gb-m",
+    "ms": 6850
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-4325ed6ae8-a0b83ce4.mp3",
+    "source": "edge-us-f",
+    "ms": 7090
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-4325ed6ae8-7f578154.mp3",
+    "source": "edge-us-m",
+    "ms": 6610
+   }
+  ],
   "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen.": [
    {
     "voice": "gb-f",
@@ -3903,6 +4411,14 @@
     "file": "doc-texts/us-m-0617d4a1c3-3cd33bd7.mp3",
     "source": "edge-us-m",
     "ms": 5340
+   }
+  ],
+  "Just a new date for now. We still need them.": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-a6a9fbe563-2cdbd07c.mp3",
+    "source": "edge-us-f",
+    "ms": 2750
    }
   ],
   "Just one. I still don't have the updated material data from the supplier.": [
@@ -4175,6 +4691,14 @@
     "file": "air-phrases/us-f-9681e7e7eb-c1143e6f.mp3",
     "source": "edge-us-f",
     "ms": 2750
+   }
+  ],
+  "Limit load today. Failure test is next week.": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes-2/in-f-b3d1efd0d8-7550a46a.mp3",
+    "source": "edge-in-f",
+    "ms": 3930
    }
   ],
   "Looking back, I would": [
@@ -4555,6 +5079,14 @@
     "ms": 4630
    }
   ],
+  "Nice. Can you put that in a short report by Friday?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-976b0f94d2-ef2d8ed1.mp3",
+    "source": "edge-us-f",
+    "ms": 3320
+   }
+  ],
   "Nice. What would you do differently next time?": [
    {
     "voice": "us-m",
@@ -4595,6 +5127,40 @@
     "file": "air-passages/in-f-876fed46d8-22ce77ee.mp3",
     "source": "edge-in-f",
     "ms": 4430
+   }
+  ],
+  "Of course. I'll email it to you on Thursday. Thanks for your patience.": [
+   {
+    "voice": "in-m",
+    "file": "story-episodes-2/in-m-cdab8a847c-da063e16.mp3",
+    "source": "edge-in-m",
+    "ms": 6290
+   }
+  ],
+  "Of course. I'll send them today together with the updated report.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-94e7143420-dd773394.mp3",
+    "source": "edge-gb-f",
+    "ms": 4390
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-94e7143420-8349b63f.mp3",
+    "source": "edge-gb-m",
+    "ms": 4330
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-94e7143420-a7cd28c7.mp3",
+    "source": "edge-us-f",
+    "ms": 3700
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-94e7143420-d46206c3.mp3",
+    "source": "edge-us-m",
+    "ms": 3540
    }
   ],
   "Off the top of my head, I'd say": [
@@ -4735,12 +5301,44 @@
     "ms": 4980
    }
   ],
+  "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first.": [
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-a18c561f78-94072396.mp3",
+    "source": "edge-us-f",
+    "ms": 6830
+   }
+  ],
   "Okay, let's get you set up. Your first task is to review the bracket drawing and check the tolerances. Any questions?": [
    {
     "voice": "in-f",
     "file": "story-episodes/in-f-a26d0529ff-7024d439.mp3",
     "source": "edge-in-f",
     "ms": 9270
+   }
+  ],
+  "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?": [
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-4924a7ad4f-736dc1c5.mp3",
+    "source": "edge-us-f",
+    "ms": 13650
+   }
+  ],
+  "Okay, that makes sense. Can you send us the CT images?": [
+   {
+    "voice": "au-f",
+    "file": "story-episodes-2/au-f-40d67ed1bc-f3d5fef4.mp3",
+    "source": "edge-au-f",
+    "ms": 4560
+   }
+  ],
+  "Okay, the panel is mounted and the strain gauges are connected. Can you check the readings before we start loading?": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes-2/in-f-cf9c1d48aa-44d11185.mp3",
+    "source": "edge-in-f",
+    "ms": 7660
    }
   ],
   "Only the critical ones for now. They're marked in red. No rush, take your time.": [
@@ -4759,12 +5357,72 @@
     "ms": 4290
    }
   ],
+  "Over to you. Can you walk us through the results?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-763573733f-e8140f34.mp3",
+    "source": "edge-us-f",
+    "ms": 2570
+   }
+  ],
   "Pick it up at eight.": [
    {
     "voice": "gb-f",
     "file": "air-phrases/gb-f-48c2aafecb-0406e137.mp3",
     "source": "edge-gb-f",
     "ms": 1240
+   }
+  ],
+  "Please fill in this sheet before you leave.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-1a9f371947-ff9a3d02.mp3",
+    "source": "edge-gb-f",
+    "ms": 2310
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-1a9f371947-49ba79dd.mp3",
+    "source": "edge-gb-m",
+    "ms": 1980
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-1a9f371947-fd355c4c.mp3",
+    "source": "edge-us-f",
+    "ms": 1780
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-1a9f371947-4abb9f46.mp3",
+    "source": "edge-us-m",
+    "ms": 1990
+   }
+  ],
+  "Please save the file and close the tab.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-875243e4af-3b903283.mp3",
+    "source": "edge-gb-f",
+    "ms": 2320
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-875243e4af-f1c071cf.mp3",
+    "source": "edge-gb-m",
+    "ms": 1990
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-875243e4af-12393474.mp3",
+    "source": "edge-us-f",
+    "ms": 2210
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-875243e4af-bee36798.mp3",
+    "source": "edge-us-m",
+    "ms": 2080
    }
   ],
   "Poisson's ratio": [
@@ -4849,6 +5507,40 @@
     "file": "air-passages/gb-m-99892ba97e-6d2a80cb.mp3",
     "source": "edge-gb-m",
     "ms": 6040
+   }
+  ],
+  "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday.": [
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-2b6dc07b54-c7da9083.mp3",
+    "source": "edge-gb-m",
+    "ms": 9280
+   }
+  ],
+  "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.": [
+   {
+    "voice": "gb-f",
+    "file": "boss-bosses/gb-f-76afed212e-a2aa6ef8.mp3",
+    "source": "edge-gb-f",
+    "ms": 7610
+   },
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-76afed212e-0abf692b.mp3",
+    "source": "edge-gb-m",
+    "ms": 7150
+   },
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-76afed212e-f037ba46.mp3",
+    "source": "edge-us-f",
+    "ms": 7920
+   },
+   {
+    "voice": "us-m",
+    "file": "boss-bosses/us-m-76afed212e-678f2c14.mp3",
+    "source": "edge-us-m",
+    "ms": 7630
    }
   ],
   "See you next week.": [
@@ -4997,6 +5689,14 @@
     "ms": 1630
    }
   ],
+  "So, how did it go? Anything I should worry about?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-fd9d09a90b-760492cf.mp3",
+    "source": "edge-us-f",
+    "ms": 2990
+   }
+  ],
   "So, if I understand correctly": [
    {
     "voice": "gb-f",
@@ -5073,6 +5773,40 @@
     "ms": 5040
    }
   ],
+  "Something is wrong with the spring.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-d33b3e8ed9-0dfd94f7.mp3",
+    "source": "edge-gb-f",
+    "ms": 1840
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-d33b3e8ed9-c19595fa.mp3",
+    "source": "edge-gb-m",
+    "ms": 1700
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-d33b3e8ed9-a662e579.mp3",
+    "source": "edge-us-f",
+    "ms": 1700
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-d33b3e8ed9-22531778.mp3",
+    "source": "edge-us-m",
+    "ms": 1430
+   }
+  ],
+  "Sorry to interrupt. Panel three failed at a lower load than the others. Why is that?": [
+   {
+    "voice": "au-f",
+    "file": "story-episodes-2/au-f-63c5c47548-c08a7f49.mp3",
+    "source": "edge-au-f",
+    "ms": 6630
+   }
+  ],
   "Sorry, I didn't catch that.": [
    {
     "voice": "gb-f",
@@ -5105,6 +5839,40 @@
     "file": "story-episodes/gb-m-ec5f60dcea-5cf6ebd9.mp3",
     "source": "edge-gb-m",
     "ms": 6360
+   }
+  ],
+  "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday.": [
+   {
+    "voice": "in-f",
+    "file": "boss-bosses/in-f-e5afe84e34-6aa73edf.mp3",
+    "source": "edge-in-f",
+    "ms": 10800
+   }
+  ],
+  "Sorry, could you repeat that?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-53b279a787-394d3df6.mp3",
+    "source": "edge-gb-f",
+    "ms": 2020
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-53b279a787-7e596061.mp3",
+    "source": "edge-gb-m",
+    "ms": 1770
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-53b279a787-d42948b8.mp3",
+    "source": "edge-us-f",
+    "ms": 1590
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-53b279a787-25154f76.mp3",
+    "source": "edge-us-m",
+    "ms": 1480
    }
   ],
   "Sorry, you're on mute.": [
@@ -5185,6 +5953,32 @@
     "ms": 5760
    }
   ],
+  "Subject: Order 4471 – delivery date. Hi Arjun, I'm writing about our order 4471 for twelve pressure sensors.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-dbeaebc931-1258ccdb.mp3",
+    "source": "edge-gb-f",
+    "ms": 10800
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-dbeaebc931-21759c85.mp3",
+    "source": "edge-gb-m",
+    "ms": 10150
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-dbeaebc931-73edae83.mp3",
+    "source": "edge-us-f",
+    "ms": 9840
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-dbeaebc931-7e11572a.mp3",
+    "source": "edge-us-m",
+    "ms": 9770
+   }
+  ],
   "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.": [
    {
     "voice": "gb-f",
@@ -5243,6 +6037,110 @@
     "file": "air-passages/in-f-bc9a7a1c1a-99f949c0.mp3",
     "source": "edge-in-f",
     "ms": 1420
+   }
+  ],
+  "Sure. All channels read close to zero, except channel four — it's drifting a bit.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-096a78a1d2-436625de.mp3",
+    "source": "edge-gb-f",
+    "ms": 5610
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-096a78a1d2-a5f04c7f.mp3",
+    "source": "edge-gb-m",
+    "ms": 5770
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-096a78a1d2-8442db0c.mp3",
+    "source": "edge-us-f",
+    "ms": 5190
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-096a78a1d2-766a1d93.mp3",
+    "source": "edge-us-m",
+    "ms": 5270
+   }
+  ],
+  "Sure. Do you want me to ask for a new delivery date or to cancel the order?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-74e20248ca-5f714d89.mp3",
+    "source": "edge-gb-f",
+    "ms": 4750
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-74e20248ca-a0c20a62.mp3",
+    "source": "edge-gb-m",
+    "ms": 4690
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-74e20248ca-8235bb94.mp3",
+    "source": "edge-us-f",
+    "ms": 4210
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-74e20248ca-eedf37da.mp3",
+    "source": "edge-us-m",
+    "ms": 3950
+   }
+  ],
+  "Sure. I'll include the load–strain curves and a comparison with the FEA.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-92e6fc15fd-a7ab1b1c.mp3",
+    "source": "edge-gb-f",
+    "ms": 5110
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-92e6fc15fd-00aee50c.mp3",
+    "source": "edge-gb-m",
+    "ms": 5020
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-92e6fc15fd-98307ee4.mp3",
+    "source": "edge-us-f",
+    "ms": 5240
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-92e6fc15fd-9ba99ce9.mp3",
+    "source": "edge-us-m",
+    "ms": 4790
+   }
+  ],
+  "Sure. I'll start with the main result, then show the details. In short: all six panels passed limit load with margin.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-01e544f743-8f112e93.mp3",
+    "source": "edge-gb-f",
+    "ms": 8330
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-01e544f743-8465a2fb.mp3",
+    "source": "edge-gb-m",
+    "ms": 8560
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-01e544f743-73ea3cac.mp3",
+    "source": "edge-us-f",
+    "ms": 8080
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-01e544f743-d61658a7.mp3",
+    "source": "edge-us-m",
+    "ms": 7500
    }
   ],
   "Sure. Last year I worked on a small satellite for a university team. I was responsible for the thermal design.": [
@@ -5393,12 +6291,90 @@
     "ms": 2410
    }
   ],
+  "Thanks a lot, that's really helpful!": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-f4214ddd16-0347b2d6.mp3",
+    "source": "edge-gb-f",
+    "ms": 2350
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-f4214ddd16-045ede5b.mp3",
+    "source": "edge-gb-m",
+    "ms": 2140
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-f4214ddd16-3a46c69a.mp3",
+    "source": "edge-us-f",
+    "ms": 2160
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-f4214ddd16-5ee1663c.mp3",
+    "source": "edge-us-m",
+    "ms": 1880
+   }
+  ],
+  "Thanks for calling. When do you expect to ship them?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-935e011ade-a84e830f.mp3",
+    "source": "edge-gb-f",
+    "ms": 3320
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-935e011ade-de9a1fd3.mp3",
+    "source": "edge-gb-m",
+    "ms": 3220
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-935e011ade-c6272b40.mp3",
+    "source": "edge-us-f",
+    "ms": 2860
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-935e011ade-26bb1021.mp3",
+    "source": "edge-us-m",
+    "ms": 2390
+   }
+  ],
   "Thanks for your time. We'll be in touch by the end of next week.": [
    {
     "voice": "us-m",
     "file": "story-episodes/us-m-b86385f986-bb9e5f2c.mp3",
     "source": "edge-us-m",
     "ms": 3170
+   }
+  ],
+  "Thanks, Oliver. That's right — it was within the allowed size, but we want to reduce the scatter.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-40f431510c-c631aaec.mp3",
+    "source": "edge-gb-f",
+    "ms": 6300
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-40f431510c-df6d44e8.mp3",
+    "source": "edge-gb-m",
+    "ms": 6090
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-40f431510c-10ad02a6.mp3",
+    "source": "edge-us-f",
+    "ms": 5490
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-40f431510c-5a8d8e8a.mp3",
+    "source": "edge-us-m",
+    "ms": 5490
    }
   ],
   "Thanks, bye!": [
@@ -5433,6 +6409,32 @@
     "file": "air-passages/in-f-db2e558622-47b3a663.mp3",
     "source": "edge-in-f",
     "ms": 7240
+   }
+  ],
+  "That fixed it. Channel four is stable now.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-6aa6ca7ad0-d0d7b2c4.mp3",
+    "source": "edge-gb-f",
+    "ms": 3310
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-6aa6ca7ad0-6ae03b53.mp3",
+    "source": "edge-gb-m",
+    "ms": 3150
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-6aa6ca7ad0-a6e42c84.mp3",
+    "source": "edge-us-f",
+    "ms": 2830
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-6aa6ca7ad0-e9a5262a.mp3",
+    "source": "edge-us-m",
+    "ms": 2520
    }
   ],
   "That makes sense, thanks for explaining.": [
@@ -5503,6 +6505,32 @@
     "ms": 1000
    }
   ],
+  "That's a good point, but I see it differently.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-bdc8f736f0-870556ee.mp3",
+    "source": "edge-gb-f",
+    "ms": 2760
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-bdc8f736f0-eddcd87f.mp3",
+    "source": "edge-gb-m",
+    "ms": 2290
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-bdc8f736f0-7ae5161f.mp3",
+    "source": "edge-us-f",
+    "ms": 2580
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-bdc8f736f0-2f6d0f85.mp3",
+    "source": "edge-us-m",
+    "ms": 2300
+   }
+  ],
   "That's a good question, let me think.": [
    {
     "voice": "gb-f",
@@ -5553,6 +6581,14 @@
     "file": "story-episodes/us-m-12b53565ad-d0c97bc7.mp3",
     "source": "edge-us-m",
     "ms": 6960
+   }
+  ],
+  "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day.": [
+   {
+    "voice": "au-f",
+    "file": "boss-bosses/au-f-bb36563602-610d080d.mp3",
+    "source": "edge-au-f",
+    "ms": 12020
    }
   ],
   "That's outside my area, to be honest.": [
@@ -5719,6 +6755,58 @@
     "ms": 4160
    }
   ],
+  "The bad batch was sent back.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-0863754670-83ec0ad1.mp3",
+    "source": "edge-gb-f",
+    "ms": 1750
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-0863754670-5fc6e61a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1560
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-0863754670-f8f92f45.mp3",
+    "source": "edge-us-f",
+    "ms": 1670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-0863754670-ef8a9275.mp3",
+    "source": "edge-us-m",
+    "ms": 1480
+   }
+  ],
+  "The bearing is making a strange ringing sound.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-e3903d9c78-e65dab0b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2780
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-e3903d9c78-f7b3d8f7.mp3",
+    "source": "edge-gb-m",
+    "ms": 2510
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-e3903d9c78-e5d737ae.mp3",
+    "source": "edge-us-f",
+    "ms": 2500
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-e3903d9c78-bcda7fd3.mp3",
+    "source": "edge-us-m",
+    "ms": 2420
+   }
+  ],
   "The bracket was vibrated in three axes, 3 dB above the expected flight levels.": [
    {
     "voice": "gb-f",
@@ -5837,6 +6925,32 @@
     "ms": 2490
    }
   ],
+  "The fuel line is full of air.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-4863fa0f25-4537962e.mp3",
+    "source": "edge-gb-f",
+    "ms": 1930
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-4863fa0f25-5e535c8f.mp3",
+    "source": "edge-gb-m",
+    "ms": 1650
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-4863fa0f25-cfb4438d.mp3",
+    "source": "edge-us-f",
+    "ms": 1830
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-4863fa0f25-3d29ec29.mp3",
+    "source": "edge-us-m",
+    "ms": 1460
+   }
+  ],
   "The goal of the project was to": [
    {
     "voice": "gb-f",
@@ -5921,6 +7035,32 @@
     "file": "doc-texts/us-m-a0b9892ba5-4825b7f1.mp3",
     "source": "edge-us-m",
     "ms": 4160
+   }
+  ],
+  "The housing holds the heater.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-6755c1d579-8d4cbc73.mp3",
+    "source": "edge-gb-f",
+    "ms": 1810
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-6755c1d579-ba01b23f.mp3",
+    "source": "edge-gb-m",
+    "ms": 1490
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-6755c1d579-3f9339c8.mp3",
+    "source": "edge-us-f",
+    "ms": 1600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-6755c1d579-6b46bc98.mp3",
+    "source": "edge-us-m",
+    "ms": 1320
    }
   ],
   "The idea is pretty simple": [
@@ -6025,6 +7165,32 @@
     "file": "call-chunks/us-m-f0cbf906f4-20dc81b5.mp3",
     "source": "edge-us-m",
     "ms": 2480
+   }
+  ],
+  "The load is too big for this bracket.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-737ab6c2fc-48ea12a2.mp3",
+    "source": "edge-gb-f",
+    "ms": 2260
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-737ab6c2fc-4adf8344.mp3",
+    "source": "edge-gb-m",
+    "ms": 1940
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-737ab6c2fc-dcf718b9.mp3",
+    "source": "edge-us-f",
+    "ms": 2160
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-737ab6c2fc-87b48a1e.mp3",
+    "source": "edge-us-m",
+    "ms": 1940
    }
   ],
   "The main challenge was": [
@@ -6217,6 +7383,14 @@
     "ms": 5280
    }
   ],
+  "The pressure sensors were supposed to arrive last week. Could you write to the supplier and find out what's going on?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-f7cfa0d9fa-4bd172cd.mp3",
+    "source": "edge-us-f",
+    "ms": 5680
+   }
+  ],
   "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.": [
    {
     "voice": "gb-f",
@@ -6381,6 +7555,32 @@
     "ms": 2560
    }
   ],
+  "The thermal model is worth the effort.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-713aa11e2f-9c2d605e.mp3",
+    "source": "edge-gb-f",
+    "ms": 2280
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-713aa11e2f-f046bce9.mp3",
+    "source": "edge-gb-m",
+    "ms": 1880
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-713aa11e2f-48b47e68.mp3",
+    "source": "edge-us-f",
+    "ms": 2090
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-713aa11e2f-8e3f644c.mp3",
+    "source": "edge-us-m",
+    "ms": 1930
+   }
+  ],
   "The titanium fasteners are delayed. Our supplier had a problem with the heat treatment, so we're looking at two weeks, maybe three.": [
    {
     "voice": "gb-f",
@@ -6397,12 +7597,142 @@
     "ms": 6830
    }
   ],
+  "The vibration was very weak.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-662e40aae3-b33026d3.mp3",
+    "source": "edge-gb-f",
+    "ms": 1950
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-662e40aae3-72a95d1c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1700
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-662e40aae3-923dff84.mp3",
+    "source": "edge-us-f",
+    "ms": 1710
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-662e40aae3-c5bf186d.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
+   }
+  ],
+  "The weld was good, but the plate was bad.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-a768bd87c9-c3bd2400.mp3",
+    "source": "edge-gb-f",
+    "ms": 2600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-a768bd87c9-e20f8bc2.mp3",
+    "source": "edge-gb-m",
+    "ms": 2280
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-a768bd87c9-1db55a22.mp3",
+    "source": "edge-us-f",
+    "ms": 2400
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-a768bd87c9-d0a9f687.mp3",
+    "source": "edge-us-m",
+    "ms": 2260
+   }
+  ],
+  "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.": [
+   {
+    "voice": "gb-f",
+    "file": "boss-bosses/gb-f-08f4bfb94a-3e1ea7a2.mp3",
+    "source": "edge-gb-f",
+    "ms": 6150
+   },
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-08f4bfb94a-fd0e7fdd.mp3",
+    "source": "edge-gb-m",
+    "ms": 5480
+   },
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-08f4bfb94a-db1db834.mp3",
+    "source": "edge-us-f",
+    "ms": 6110
+   },
+   {
+    "voice": "us-m",
+    "file": "boss-bosses/us-m-08f4bfb94a-06c6a7c9.mp3",
+    "source": "edge-us-m",
+    "ms": 5990
+   }
+  ],
+  "They say the other method is better than this one.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-1102531143-34ac2dfa.mp3",
+    "source": "edge-gb-f",
+    "ms": 2690
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-1102531143-db665494.mp3",
+    "source": "edge-gb-m",
+    "ms": 2270
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-1102531143-0a64faed.mp3",
+    "source": "edge-us-f",
+    "ms": 2460
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-1102531143-a0fb4368.mp3",
+    "source": "edge-us-m",
+    "ms": 2360
+   }
+  ],
   "They should have told us earlier.": [
    {
     "voice": "us-m",
     "file": "air-phrases/us-m-bb7b3fe0ec-babb98f4.mp3",
     "source": "edge-us-m",
     "ms": 1250
+   }
+  ],
+  "They were due last week and we haven't received them yet. Could you let me know the new delivery date?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes-2/gb-f-538ae835aa-1e0bcaa9.mp3",
+    "source": "edge-gb-f",
+    "ms": 5670
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes-2/gb-m-538ae835aa-70e88625.mp3",
+    "source": "edge-gb-m",
+    "ms": 5440
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes-2/us-f-538ae835aa-f50e7463.mp3",
+    "source": "edge-us-f",
+    "ms": 4720
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes-2/us-m-538ae835aa-c38feb01.mp3",
+    "source": "edge-us-m",
+    "ms": 4680
    }
   ],
   "They'd already left when we called.": [
@@ -6569,6 +7899,14 @@
     "ms": 2230
    }
   ],
+  "Three days if nothing goes wrong, so realistically we're looking at the end of next week.": [
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-828e868382-4ba68e9e.mp3",
+    "source": "edge-gb-m",
+    "ms": 4550
+   }
+  ],
   "Three weeks is a problem for us. Is there any way to split the order and send part of it earlier?": [
    {
     "voice": "us-f",
@@ -6627,12 +7965,54 @@
     "ms": 20590
    }
   ],
+  "We are testing the wing today.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-ae70c79437-5a8ea0d7.mp3",
+    "source": "edge-gb-f",
+    "ms": 1820
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-ae70c79437-c552f38c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-ae70c79437-e8234525.mp3",
+    "source": "edge-us-f",
+    "ms": 1560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-ae70c79437-e7ff932e.mp3",
+    "source": "edge-us-m",
+    "ms": 1370
+   }
+  ],
   "We asked her to send the drawings.": [
    {
     "voice": "gb-m",
     "file": "air-phrases/gb-m-5708d6aae7-2c3ec693.mp3",
     "source": "edge-gb-m",
     "ms": 1900
+   }
+  ],
+  "We can ship on Thursday, so you should have them by Monday.": [
+   {
+    "voice": "in-m",
+    "file": "story-episodes-2/in-m-723d1b524f-181d42aa.mp3",
+    "source": "edge-in-m",
+    "ms": 4050
+   }
+  ],
+  "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality.": [
+   {
+    "voice": "au-m",
+    "file": "boss-bosses/au-m-fec9e576f1-93eb7ea4.mp3",
+    "source": "edge-au-m",
+    "ms": 7700
    }
   ],
   "We had a tight deadline, so": [
@@ -6687,6 +8067,32 @@
     "ms": 3320
    }
   ],
+  "We had to change the grade of the bolt.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-67b24901b6-6624a68c.mp3",
+    "source": "edge-gb-f",
+    "ms": 2210
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-67b24901b6-e0516725.mp3",
+    "source": "edge-gb-m",
+    "ms": 1890
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-67b24901b6-3af69336.mp3",
+    "source": "edge-us-f",
+    "ms": 1970
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-67b24901b6-2f96e476.mp3",
+    "source": "edge-us-m",
+    "ms": 1660
+   }
+  ],
   "We have to check it for leaks.": [
    {
     "voice": "gb-m",
@@ -6727,6 +8133,32 @@
     "file": "doc-texts/us-m-f673b28293-2eb917b6.mp3",
     "source": "edge-us-m",
     "ms": 4620
+   }
+  ],
+  "We need a bigger seal for this bit.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-29c7463d1c-17f01e30.mp3",
+    "source": "edge-gb-f",
+    "ms": 1980
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-29c7463d1c-028e431b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1720
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-29c7463d1c-86fbf047.mp3",
+    "source": "edge-us-f",
+    "ms": 1710
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-29c7463d1c-7ae24cfd.mp3",
+    "source": "edge-us-m",
+    "ms": 1540
    }
   ],
   "We need a new idea for the test rig.": [
@@ -6847,6 +8279,32 @@
     "ms": 5430
    }
   ],
+  "We will verify the valve on Wednesday.": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-e5e9944acf-21712e06.mp3",
+    "source": "edge-gb-f",
+    "ms": 2420
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-e5e9944acf-fbd45aef.mp3",
+    "source": "edge-gb-m",
+    "ms": 2009
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-e5e9944acf-85a210b6.mp3",
+    "source": "edge-us-f",
+    "ms": 2110
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-e5e9944acf-21a1b4b1.mp3",
+    "source": "edge-us-m",
+    "ms": 2070
+   }
+  ],
   "We'll see what they say.": [
    {
     "voice": "gb-m",
@@ -6869,6 +8327,14 @@
     "file": "air-phrases/us-f-fd718c7502-df5bb7fa.mp3",
     "source": "edge-us-f",
     "ms": 1170
+   }
+  ],
+  "Wednesday. And how long do the vibration tests take once it's back?": [
+   {
+    "voice": "us-f",
+    "file": "boss-bosses/us-f-3c4909d428-dabc64b9.mp3",
+    "source": "edge-us-f",
+    "ms": 3620
    }
   ],
   "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be your mentor.": [
@@ -7523,6 +8989,32 @@
     "ms": 1850
    }
   ],
+  "Which version of the drawing do we use?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-c260ee097e-c304f2db.mp3",
+    "source": "edge-gb-f",
+    "ms": 2350
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-c260ee097e-e03019f4.mp3",
+    "source": "edge-gb-m",
+    "ms": 2080
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-c260ee097e-8a9b378f.mp3",
+    "source": "edge-us-f",
+    "ms": 1790
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-c260ee097e-ea7986fa.mp3",
+    "source": "edge-us-m",
+    "ms": 2080
+   }
+  ],
   "Why are composites used in aircraft?": [
    {
     "voice": "us-f",
@@ -7615,6 +9107,14 @@
     "ms": 2400
    }
   ],
+  "Works for me.": [
+   {
+    "voice": "in-f",
+    "file": "boss-bosses/in-f-7049980562-0fca32be.mp3",
+    "source": "edge-in-f",
+    "ms": 1020
+   }
+  ],
   "Worst case is safe but expensive, so the root sum square method combines them statistically.": [
    {
     "voice": "gb-f",
@@ -7649,6 +9149,32 @@
     "ms": 1640
    }
   ],
+  "Would you mind checking the numbers again?": [
+   {
+    "voice": "gb-f",
+    "file": "clean-phrases/gb-f-45e712abe5-d46a6605.mp3",
+    "source": "edge-gb-f",
+    "ms": 2310
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-phrases/gb-m-45e712abe5-07a53370.mp3",
+    "source": "edge-gb-m",
+    "ms": 1700
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-phrases/us-f-45e712abe5-6ca87ef0.mp3",
+    "source": "edge-us-f",
+    "ms": 1630
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-phrases/us-m-45e712abe5-e3091f0b.mp3",
+    "source": "edge-us-m",
+    "ms": 1680
+   }
+  ],
   "X-ray inspection": [
    {
     "voice": "gb-f",
@@ -7673,6 +9199,14 @@
     "file": "dict-words/us-m-033158f512-a45246d6.mp3",
     "source": "edge-us-m",
     "ms": 1040
+   }
+  ],
+  "Yep, I'll chase the supplier and let you know if Wednesday slips.": [
+   {
+    "voice": "gb-m",
+    "file": "boss-bosses/gb-m-b749990cf8-5732633b.mp3",
+    "source": "edge-gb-m",
+    "ms": 3460
    }
   ],
   "Yes, a couple. What does a typical day look like for someone in this role? And what would you expect from me in the first three months?": [
@@ -7902,25 +9436,25 @@
   "accuracy": [
    {
     "voice": "gb-f",
-    "file": "dict-words/gb-f-26de05a44d-e5bc46cf.mp3",
+    "file": "clean-stress/gb-f-26de05a44d-e5bc46cf.mp3",
     "source": "edge-gb-f",
     "ms": 930
    },
    {
     "voice": "gb-m",
-    "file": "dict-words/gb-m-26de05a44d-e03c37a3.mp3",
+    "file": "clean-stress/gb-m-26de05a44d-e03c37a3.mp3",
     "source": "edge-gb-m",
     "ms": 800
    },
    {
     "voice": "us-f",
-    "file": "dict-words/us-f-26de05a44d-26be7036.mp3",
+    "file": "clean-stress/us-f-26de05a44d-26be7036.mp3",
     "source": "edge-us-f",
     "ms": 850
    },
    {
     "voice": "us-m",
-    "file": "dict-words/us-m-26de05a44d-d3aea0bc.mp3",
+    "file": "clean-stress/us-m-26de05a44d-d3aea0bc.mp3",
     "source": "edge-us-m",
     "ms": 700
    }
@@ -8029,6 +9563,58 @@
     "ms": 840
    }
   ],
+  "air": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d1d9b9355f-b4cd0cc8.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d1d9b9355f-a9f3f834.mp3",
+    "source": "edge-gb-m",
+    "ms": 440
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d1d9b9355f-ae160fbc.mp3",
+    "source": "edge-us-f",
+    "ms": 490
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d1d9b9355f-fd9ff0d0.mp3",
+    "source": "edge-us-m",
+    "ms": 400
+   }
+  ],
+  "algorithm": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-9a53b0819e-69ddfa1e.mp3",
+    "source": "edge-gb-f",
+    "ms": 930
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-9a53b0819e-719e50a4.mp3",
+    "source": "edge-gb-m",
+    "ms": 760
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-9a53b0819e-8190ac5b.mp3",
+    "source": "edge-us-f",
+    "ms": 840
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-9a53b0819e-07607a22.mp3",
+    "source": "edge-us-m",
+    "ms": 650
+   }
+  ],
   "alloy": [
    {
     "voice": "gb-f",
@@ -8105,6 +9691,32 @@
     "file": "dict-words/us-m-cfd190d2b1-98757fc6.mp3",
     "source": "edge-us-m",
     "ms": 740
+   }
+  ],
+  "analysis": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-36847a298b-626fdc5b.mp3",
+    "source": "edge-gb-f",
+    "ms": 1010
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-36847a298b-1dbb0a53.mp3",
+    "source": "edge-gb-m",
+    "ms": 930
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-36847a298b-2370dcad.mp3",
+    "source": "edge-us-f",
+    "ms": 920
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-36847a298b-6fa77432.mp3",
+    "source": "edge-us-m",
+    "ms": 810
    }
   ],
   "angle of attack": [
@@ -8315,6 +9927,32 @@
     "ms": 590
    }
   ],
+  "art": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-4f468a6824-0fa0db38.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-4f468a6824-b736147c.mp3",
+    "source": "edge-gb-m",
+    "ms": 490
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-4f468a6824-bdf682b6.mp3",
+    "source": "edge-us-f",
+    "ms": 500
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-4f468a6824-3cff97e7.mp3",
+    "source": "edge-us-m",
+    "ms": 410
+   }
+  ],
   "assembly": [
    {
     "voice": "gb-f",
@@ -8471,6 +10109,84 @@
     "ms": 830
    }
   ],
+  "back": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-61bb8d29b5-5b150e96.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-61bb8d29b5-e26e7343.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-61bb8d29b5-38bdee51.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-61bb8d29b5-bef40f21.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
+  "bad": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-1902e3d6fc-5992bdf4.mp3",
+    "source": "edge-gb-f",
+    "ms": 540
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-1902e3d6fc-db171097.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-1902e3d6fc-f6fa976b.mp3",
+    "source": "edge-us-f",
+    "ms": 520
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-1902e3d6fc-056d66dc.mp3",
+    "source": "edge-us-m",
+    "ms": 440
+   }
+  ],
+  "bag": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-9b4e473e4d-82ef00d6.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-9b4e473e4d-bdd57347.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-9b4e473e4d-52e34a7b.mp3",
+    "source": "edge-us-f",
+    "ms": 570
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-9b4e473e4d-2b40932d.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
   "bandwidth": [
    {
     "voice": "gb-f",
@@ -8551,10 +10267,28 @@
   ],
   "bed": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-fefe2393a7-75e3b04b.mp3",
+    "source": "edge-gb-f",
+    "ms": 510
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-fefe2393a7-799d2057.mp3",
+    "source": "edge-gb-m",
+    "ms": 450
+   },
+   {
     "voice": "us-f",
-    "file": "intake/us-f-fefe2393a7-9f80271f.mp3",
+    "file": "clean-pairs/us-f-fefe2393a7-9f80271f.mp3",
     "source": "edge-us-f",
     "ms": 470
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-fefe2393a7-cda6961e.mp3",
+    "source": "edge-us-m",
+    "ms": 390
    }
   ],
   "bending": [
@@ -8585,10 +10319,28 @@
   ],
   "bet": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-c033816b54-cc36f072.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-c033816b54-3fa774a3.mp3",
+    "source": "edge-gb-m",
+    "ms": 470
+   },
+   {
     "voice": "us-f",
-    "file": "intake/us-f-c033816b54-8df35164.mp3",
+    "file": "clean-pairs/us-f-c033816b54-8df35164.mp3",
     "source": "edge-us-f",
     "ms": 490
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-c033816b54-e5382c0c.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "bill of materials": [
@@ -8929,6 +10681,32 @@
     "ms": 700
    }
   ],
+  "capacity": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-7cb1f56d3f-31ff0359.mp3",
+    "source": "edge-gb-f",
+    "ms": 900
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-7cb1f56d3f-9b19aead.mp3",
+    "source": "edge-gb-m",
+    "ms": 860
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-7cb1f56d3f-d3279dcf.mp3",
+    "source": "edge-us-f",
+    "ms": 850
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-7cb1f56d3f-69c7b00f.mp3",
+    "source": "edge-us-m",
+    "ms": 730
+   }
+  ],
   "carbon fiber": [
    {
     "voice": "gb-f",
@@ -8955,6 +10733,58 @@
     "ms": 820
    }
   ],
+  "card": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-2ab0591dbc-55024989.mp3",
+    "source": "edge-gb-f",
+    "ms": 630
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-2ab0591dbc-68297a57.mp3",
+    "source": "edge-gb-m",
+    "ms": 560
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-2ab0591dbc-21b25138.mp3",
+    "source": "edge-us-f",
+    "ms": 540
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-2ab0591dbc-16ee9781.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
+  "cart": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-8bfb4e1aa5-80015c70.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-8bfb4e1aa5-136602ae.mp3",
+    "source": "edge-gb-m",
+    "ms": 610
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-8bfb4e1aa5-612389c4.mp3",
+    "source": "edge-us-f",
+    "ms": 510
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-8bfb4e1aa5-c25aeb07.mp3",
+    "source": "edge-us-m",
+    "ms": 420
+   }
+  ],
   "casting": [
    {
     "voice": "gb-f",
@@ -8979,6 +10809,32 @@
     "file": "dict-words/us-m-cb840f5948-c78fe326.mp3",
     "source": "edge-us-m",
     "ms": 570
+   }
+  ],
+  "category": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-5ccbf9c9c5-847f3c75.mp3",
+    "source": "edge-gb-f",
+    "ms": 820
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-5ccbf9c9c5-32d245bc.mp3",
+    "source": "edge-gb-m",
+    "ms": 750
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-5ccbf9c9c5-b0d021b9.mp3",
+    "source": "edge-us-f",
+    "ms": 850
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-5ccbf9c9c5-f0df3b57.mp3",
+    "source": "edge-us-m",
+    "ms": 670
    }
   ],
   "chamber pressure": [
@@ -9057,6 +10913,32 @@
     "file": "dict-words/us-m-09f35ac56c-abf83ed8.mp3",
     "source": "edge-us-m",
     "ms": 710
+   }
+  ],
+  "chuck": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-9406619cfc-89bacc29.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-9406619cfc-e4b35eff.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-9406619cfc-7990bc67.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-9406619cfc-d618644a.mp3",
+    "source": "edge-us-m",
+    "ms": 420
    }
   ],
   "clearance": [
@@ -9239,6 +11121,32 @@
     "file": "dict-words/us-m-036cb735c6-aec68121.mp3",
     "source": "edge-us-m",
     "ms": 760
+   }
+  ],
+  "component": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-335c4c1e2f-aae617a2.mp3",
+    "source": "edge-gb-f",
+    "ms": 930
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-335c4c1e2f-64898b8a.mp3",
+    "source": "edge-gb-m",
+    "ms": 850
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-335c4c1e2f-1726ff0a.mp3",
+    "source": "edge-us-f",
+    "ms": 820
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-335c4c1e2f-9d75257c.mp3",
+    "source": "edge-us-m",
+    "ms": 640
    }
   ],
   "composite": [
@@ -9657,6 +11565,32 @@
     "ms": 490
    }
   ],
+  "cylinder": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-24a1ee5802-2f40c7bf.mp3",
+    "source": "edge-gb-f",
+    "ms": 830
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-24a1ee5802-039382e6.mp3",
+    "source": "edge-gb-m",
+    "ms": 720
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-24a1ee5802-216cd577.mp3",
+    "source": "edge-us-f",
+    "ms": 700
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-24a1ee5802-6a26e27a.mp3",
+    "source": "edge-us-m",
+    "ms": 620
+   }
+  ],
   "damping": [
    {
     "voice": "gb-f",
@@ -9759,6 +11693,32 @@
     "file": "dict-words/us-m-34117b8ea5-711aefec.mp3",
     "source": "edge-us-m",
     "ms": 440
+   }
+  ],
+  "day": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-a2620cbc10-fbee30d1.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-a2620cbc10-74c19a95.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-a2620cbc10-12853878.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-a2620cbc10-f326e165.mp3",
+    "source": "edge-us-m",
+    "ms": 390
    }
   ],
   "debonding": [
@@ -9969,6 +11929,58 @@
     "ms": 670
    }
   ],
+  "design": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-056f118278-1e7a1895.mp3",
+    "source": "edge-gb-f",
+    "ms": 750
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-056f118278-2de4192b.mp3",
+    "source": "edge-gb-m",
+    "ms": 670
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-056f118278-513be7aa.mp3",
+    "source": "edge-us-f",
+    "ms": 710
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-056f118278-c76f6f2e.mp3",
+    "source": "edge-us-m",
+    "ms": 570
+   }
+  ],
+  "design engineer": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-64b1ca0fe5-59e6b89f.mp3",
+    "source": "edge-gb-f",
+    "ms": 1350
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-64b1ca0fe5-0b1ef328.mp3",
+    "source": "edge-gb-m",
+    "ms": 1130
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-64b1ca0fe5-f7f0f15a.mp3",
+    "source": "edge-us-f",
+    "ms": 1140
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-64b1ca0fe5-9606199d.mp3",
+    "source": "edge-us-m",
+    "ms": 1040
+   }
+  ],
   "design load": [
    {
     "voice": "gb-f",
@@ -10021,6 +12033,58 @@
     "ms": 880
    }
   ],
+  "determine": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-df9d6bd175-baa36b3e.mp3",
+    "source": "edge-gb-f",
+    "ms": 820
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-df9d6bd175-51ddf893.mp3",
+    "source": "edge-gb-m",
+    "ms": 690
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-df9d6bd175-fe1a7e4f.mp3",
+    "source": "edge-us-f",
+    "ms": 790
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-df9d6bd175-03aa73ec.mp3",
+    "source": "edge-us-m",
+    "ms": 570
+   }
+  ],
+  "develop": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-418a6bc4de-b73a88f2.mp3",
+    "source": "edge-gb-f",
+    "ms": 740
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-418a6bc4de-f56615c2.mp3",
+    "source": "edge-gb-m",
+    "ms": 670
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-418a6bc4de-d5beea62.mp3",
+    "source": "edge-us-f",
+    "ms": 710
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-418a6bc4de-58d6fc27.mp3",
+    "source": "edge-us-m",
+    "ms": 570
+   }
+  ],
   "deviation": [
    {
     "voice": "gb-f",
@@ -10045,6 +12109,58 @@
     "file": "dict-words/us-m-4283c5d33e-6c4bb8e8.mp3",
     "source": "edge-us-m",
     "ms": 760
+   }
+  ],
+  "diagram": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-8737093597-8fad7287.mp3",
+    "source": "edge-gb-f",
+    "ms": 870
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-8737093597-d5e6f5e2.mp3",
+    "source": "edge-gb-m",
+    "ms": 710
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-8737093597-f279e428.mp3",
+    "source": "edge-us-f",
+    "ms": 860
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-8737093597-a04884a0.mp3",
+    "source": "edge-us-m",
+    "ms": 660
+   }
+  ],
+  "diameter": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-2bde05bb8f-5df7c235.mp3",
+    "source": "edge-gb-f",
+    "ms": 910
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-2bde05bb8f-923da6bf.mp3",
+    "source": "edge-gb-m",
+    "ms": 770
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-2bde05bb8f-7e05d1a5.mp3",
+    "source": "edge-us-f",
+    "ms": 760
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-2bde05bb8f-81eec994.mp3",
+    "source": "edge-us-m",
+    "ms": 720
    }
   ],
   "dimension": [
@@ -10255,6 +12371,84 @@
     "ms": 500
    }
   ],
+  "ear": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-ddbc618820-9aa8a75c.mp3",
+    "source": "edge-gb-f",
+    "ms": 500
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ddbc618820-963548d6.mp3",
+    "source": "edge-gb-m",
+    "ms": 440
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ddbc618820-2a4fe018.mp3",
+    "source": "edge-us-f",
+    "ms": 490
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ddbc618820-d7cca4c5.mp3",
+    "source": "edge-us-m",
+    "ms": 420
+   }
+  ],
+  "eat": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d89455758e-5da4e7f1.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d89455758e-acd1fcac.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d89455758e-cc2c43ea.mp3",
+    "source": "edge-us-f",
+    "ms": 450
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d89455758e-d97b1fe8.mp3",
+    "source": "edge-us-m",
+    "ms": 380
+   }
+  ],
+  "economy": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-8ec4382b31-37f236c0.mp3",
+    "source": "edge-gb-f",
+    "ms": 810
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-8ec4382b31-eb5bb175.mp3",
+    "source": "edge-gb-m",
+    "ms": 710
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-8ec4382b31-d0291c11.mp3",
+    "source": "edge-us-f",
+    "ms": 810
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-8ec4382b31-c13971bc.mp3",
+    "source": "edge-us-m",
+    "ms": 650
+   }
+  ],
   "elastic": [
    {
     "voice": "gb-f",
@@ -10305,6 +12499,32 @@
     "file": "dict-words/us-m-66c6131f81-725b5a51.mp3",
     "source": "edge-us-m",
     "ms": 800
+   }
+  ],
+  "engineer": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-8d7050ffcf-1a373596.mp3",
+    "source": "edge-gb-f",
+    "ms": 890
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-8d7050ffcf-37c0b1b4.mp3",
+    "source": "edge-gb-m",
+    "ms": 780
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-8d7050ffcf-2172e298.mp3",
+    "source": "edge-us-f",
+    "ms": 790
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-8d7050ffcf-98eaa397.mp3",
+    "source": "edge-us-m",
+    "ms": 670
    }
   ],
   "epoxy": [
@@ -10411,6 +12631,32 @@
     "ms": 1160
    }
   ],
+  "expert review": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-404c082e56-d4ac6841.mp3",
+    "source": "edge-gb-f",
+    "ms": 1330
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-404c082e56-714c244c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1050
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-404c082e56-b78add77.mp3",
+    "source": "edge-us-f",
+    "ms": 1050
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-404c082e56-5f59ce68.mp3",
+    "source": "edge-us-m",
+    "ms": 930
+   }
+  ],
   "extensometer": [
    {
     "voice": "gb-f",
@@ -10461,6 +12707,32 @@
     "file": "dict-words/us-m-db7c5c40c4-c8b02b7f.mp3",
     "source": "edge-us-m",
     "ms": 670
+   }
+  ],
+  "eyes": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-577edc67ce-b3326029.mp3",
+    "source": "edge-gb-f",
+    "ms": 640
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-577edc67ce-388a3d00.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-577edc67ce-7fd09f3a.mp3",
+    "source": "edge-us-f",
+    "ms": 670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-577edc67ce-e9c4a07a.mp3",
+    "source": "edge-us-m",
+    "ms": 510
    }
   ],
   "face sheet": [
@@ -10671,6 +12943,32 @@
     "ms": 730
    }
   ],
+  "feel": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-ccfcd3664e-6597e50e.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ccfcd3664e-163d34d7.mp3",
+    "source": "edge-gb-m",
+    "ms": 530
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ccfcd3664e-c0cdea99.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ccfcd3664e-1c11b5e9.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
   "fiber orientation": [
    {
     "voice": "gb-f",
@@ -10747,6 +13045,32 @@
     "file": "dict-words/us-m-f85bdc67e8-20fd091b.mp3",
     "source": "edge-us-m",
     "ms": 460
+   }
+  ],
+  "fill": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-7aec9744ba-cce8750f.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-7aec9744ba-de791962.mp3",
+    "source": "edge-gb-m",
+    "ms": 490
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-7aec9744ba-0f4e00ae.mp3",
+    "source": "edge-us-f",
+    "ms": 450
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-7aec9744ba-28f40280.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "fillet": [
@@ -10985,10 +13309,28 @@
   ],
   "fool": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-33655e63ca-0f15ef10.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
     "voice": "gb-m",
-    "file": "intake/gb-m-33655e63ca-b755020c.mp3",
+    "file": "clean-pairs/gb-m-33655e63ca-b755020c.mp3",
     "source": "edge-gb-m",
     "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-33655e63ca-dba248cc.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-33655e63ca-ba99a655.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "fracture": [
@@ -11015,6 +13357,32 @@
     "file": "dict-words/us-m-b03727da75-ffcc107e.mp3",
     "source": "edge-us-m",
     "ms": 530
+   }
+  ],
+  "free": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-4ff88aaddb-a00af96e.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-4ff88aaddb-db0fff31.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-4ff88aaddb-47954bf0.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-4ff88aaddb-21f24b32.mp3",
+    "source": "edge-us-m",
+    "ms": 390
    }
   ],
   "free-body diagram": [
@@ -11097,10 +13465,28 @@
   ],
   "full": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-52e6d8ab88-f28a687d.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
     "voice": "gb-m",
-    "file": "intake/gb-m-52e6d8ab88-8407e1cf.mp3",
+    "file": "clean-pairs/gb-m-52e6d8ab88-8407e1cf.mp3",
     "source": "edge-gb-m",
     "ms": 500
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-52e6d8ab88-52631906.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-52e6d8ab88-bd42e3ec.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "full scale": [
@@ -11207,6 +13593,32 @@
     "ms": 1310
    }
   ],
+  "geometry": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-ff63fac407-5f3263ca.mp3",
+    "source": "edge-gb-f",
+    "ms": 910
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-ff63fac407-4fb77832.mp3",
+    "source": "edge-gb-m",
+    "ms": 860
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-ff63fac407-c7884725.mp3",
+    "source": "edge-us-f",
+    "ms": 970
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-ff63fac407-8ded3576.mp3",
+    "source": "edge-us-m",
+    "ms": 780
+   }
+  ],
   "geostationary": [
    {
     "voice": "gb-f",
@@ -11283,6 +13695,32 @@
     "file": "dict-words/us-m-ece765c2be-11af077f.mp3",
     "source": "edge-us-m",
     "ms": 870
+   }
+  ],
+  "graduation thesis": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-42ff39e570-99da047c.mp3",
+    "source": "edge-gb-f",
+    "ms": 1640
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-42ff39e570-dc834fa2.mp3",
+    "source": "edge-gb-m",
+    "ms": 1440
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-42ff39e570-80eaa6a9.mp3",
+    "source": "edge-us-f",
+    "ms": 1510
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-42ff39e570-747d586a.mp3",
+    "source": "edge-us-m",
+    "ms": 1280
    }
   ],
   "grain": [
@@ -11415,6 +13853,32 @@
     "ms": 730
    }
   ],
+  "hair": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-bc70b0511b-3a822531.mp3",
+    "source": "edge-gb-f",
+    "ms": 540
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-bc70b0511b-819f44bd.mp3",
+    "source": "edge-gb-m",
+    "ms": 470
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-bc70b0511b-48019480.mp3",
+    "source": "edge-us-f",
+    "ms": 460
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-bc70b0511b-58274c11.mp3",
+    "source": "edge-us-m",
+    "ms": 440
+   }
+  ],
   "hardness": [
    {
     "voice": "gb-f",
@@ -11439,6 +13903,84 @@
     "file": "dict-words/us-m-f2b63abcfa-f921167d.mp3",
     "source": "edge-us-m",
     "ms": 600
+   }
+  ],
+  "hear": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-ca607cf696-03e58190.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ca607cf696-c9f85cb2.mp3",
+    "source": "edge-gb-m",
+    "ms": 430
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ca607cf696-a0d8d9f6.mp3",
+    "source": "edge-us-f",
+    "ms": 450
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ca607cf696-f42b783a.mp3",
+    "source": "edge-us-m",
+    "ms": 410
+   }
+  ],
+  "heart": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-ef8201e13a-6c654cf6.mp3",
+    "source": "edge-gb-f",
+    "ms": 650
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ef8201e13a-5a088147.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ef8201e13a-e98e6a33.mp3",
+    "source": "edge-us-f",
+    "ms": 540
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ef8201e13a-9f88f797.mp3",
+    "source": "edge-us-m",
+    "ms": 400
+   }
+  ],
+  "heat": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-853911dc66-c9e2ff15.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-853911dc66-738c507b.mp3",
+    "source": "edge-gb-m",
+    "ms": 460
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-853911dc66-7e44ebfb.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-853911dc66-b02d3ecd.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "heat flux": [
@@ -11519,6 +14061,32 @@
     "ms": 800
    }
   ],
+  "hill": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-5ce9c4dfa8-328bcd95.mp3",
+    "source": "edge-gb-f",
+    "ms": 480
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-5ce9c4dfa8-f5a78bdd.mp3",
+    "source": "edge-gb-m",
+    "ms": 430
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-5ce9c4dfa8-56aca649.mp3",
+    "source": "edge-us-f",
+    "ms": 450
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-5ce9c4dfa8-9498f862.mp3",
+    "source": "edge-us-m",
+    "ms": 390
+   }
+  ],
   "hinge": [
    {
     "voice": "gb-f",
@@ -11543,6 +14111,32 @@
     "file": "dict-words/us-m-fecf06d591-0806ca78.mp3",
     "source": "edge-us-m",
     "ms": 480
+   }
+  ],
+  "hold": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-43c88f6f2c-a201ac82.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-43c88f6f2c-49c94e53.mp3",
+    "source": "edge-gb-m",
+    "ms": 590
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-43c88f6f2c-483b5386.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-43c88f6f2c-e5789f4e.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "honeycomb core": [
@@ -11600,25 +14194,25 @@
   "hypothesis": [
    {
     "voice": "gb-f",
-    "file": "dict-words/gb-f-ed4b436c75-1dc54cce.mp3",
+    "file": "clean-stress/gb-f-ed4b436c75-1dc54cce.mp3",
     "source": "edge-gb-f",
     "ms": 1110
    },
    {
     "voice": "gb-m",
-    "file": "dict-words/gb-m-ed4b436c75-1adc8733.mp3",
+    "file": "clean-stress/gb-m-ed4b436c75-1adc8733.mp3",
     "source": "edge-gb-m",
     "ms": 1040
    },
    {
     "voice": "us-f",
-    "file": "dict-words/us-f-ed4b436c75-0bc3a417.mp3",
+    "file": "clean-stress/us-f-ed4b436c75-0bc3a417.mp3",
     "source": "edge-us-f",
     "ms": 1010
    },
    {
     "voice": "us-m",
-    "file": "dict-words/us-m-ed4b436c75-5d005111.mp3",
+    "file": "clean-stress/us-m-ed4b436c75-5d005111.mp3",
     "source": "edge-us-m",
     "ms": 880
    }
@@ -11647,6 +14241,32 @@
     "file": "dict-words/us-m-de0fbf716c-0e3d2d24.mp3",
     "source": "edge-us-m",
     "ms": 860
+   }
+  ],
+  "ice": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d53b257ba8-d87b3e7f.mp3",
+    "source": "edge-gb-f",
+    "ms": 630
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d53b257ba8-6bfd5c99.mp3",
+    "source": "edge-gb-m",
+    "ms": 560
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d53b257ba8-9d831a7d.mp3",
+    "source": "edge-us-f",
+    "ms": 670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d53b257ba8-dc85f13a.mp3",
+    "source": "edge-us-m",
+    "ms": 460
    }
   ],
   "igniter": [
@@ -11701,6 +14321,32 @@
     "ms": 640
    }
   ],
+  "ill": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-e233f08439-933f7de6.mp3",
+    "source": "edge-gb-f",
+    "ms": 460
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-e233f08439-b3c33ed6.mp3",
+    "source": "edge-gb-m",
+    "ms": 410
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-e233f08439-13e0cba1.mp3",
+    "source": "edge-us-f",
+    "ms": 460
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-e233f08439-ddf271a9.mp3",
+    "source": "edge-us-m",
+    "ms": 390
+   }
+  ],
   "inclination": [
    {
     "voice": "gb-f",
@@ -11751,6 +14397,32 @@
     "file": "dict-words/us-m-14187a7368-612b82de.mp3",
     "source": "edge-us-m",
     "ms": 670
+   }
+  ],
+  "installation": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-e1e2b96438-4e0fbbb8.mp3",
+    "source": "edge-gb-f",
+    "ms": 1080
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-e1e2b96438-f4ff6b46.mp3",
+    "source": "edge-gb-m",
+    "ms": 890
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-e1e2b96438-1b9a62b6.mp3",
+    "source": "edge-us-f",
+    "ms": 940
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-e1e2b96438-b89e4d7f.mp3",
+    "source": "edge-us-m",
+    "ms": 820
    }
   ],
   "interference fit": [
@@ -11909,6 +14581,58 @@
     "ms": 670
    }
   ],
+  "kin": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-2453f80431-cb09d9f4.mp3",
+    "source": "edge-gb-f",
+    "ms": 500
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-2453f80431-4f229cc0.mp3",
+    "source": "edge-gb-m",
+    "ms": 510
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-2453f80431-a7bcc8af.mp3",
+    "source": "edge-us-f",
+    "ms": 520
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-2453f80431-2dd10f53.mp3",
+    "source": "edge-us-m",
+    "ms": 410
+   }
+  ],
+  "king": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-481902ec14-6d982742.mp3",
+    "source": "edge-gb-f",
+    "ms": 480
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-481902ec14-a87372bc.mp3",
+    "source": "edge-gb-m",
+    "ms": 470
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-481902ec14-dc29be65.mp3",
+    "source": "edge-us-f",
+    "ms": 510
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-481902ec14-24ac93f9.mp3",
+    "source": "edge-us-m",
+    "ms": 400
+   }
+  ],
   "laminate": [
    {
     "voice": "gb-f",
@@ -12039,6 +14763,32 @@
     "ms": 630
    }
   ],
+  "leaf": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-9879824174-e70717f8.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-9879824174-fdde70e5.mp3",
+    "source": "edge-gb-m",
+    "ms": 540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-9879824174-10686617.mp3",
+    "source": "edge-us-f",
+    "ms": 670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-9879824174-f0242f72.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
   "leak test": [
    {
     "voice": "gb-f",
@@ -12063,6 +14813,32 @@
     "file": "dict-words/us-m-f303117819-02030eef.mp3",
     "source": "edge-us-m",
     "ms": 760
+   }
+  ],
+  "leave": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-31aed9e37e-6f16e294.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-31aed9e37e-3bdf4e89.mp3",
+    "source": "edge-gb-m",
+    "ms": 640
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-31aed9e37e-e2363eb6.mp3",
+    "source": "edge-us-f",
+    "ms": 710
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-31aed9e37e-a8b55eb1.mp3",
+    "source": "edge-us-m",
+    "ms": 480
    }
   ],
   "liftoff": [
@@ -12195,6 +14971,32 @@
     "ms": 970
    }
   ],
+  "live": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-98aadb3708-5af4565e.mp3",
+    "source": "edge-gb-f",
+    "ms": 650
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-98aadb3708-a1dbc134.mp3",
+    "source": "edge-gb-m",
+    "ms": 640
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-98aadb3708-e9b8537b.mp3",
+    "source": "edge-us-f",
+    "ms": 630
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-98aadb3708-b8cd63c4.mp3",
+    "source": "edge-us-m",
+    "ms": 490
+   }
+  ],
   "load": [
    {
     "voice": "gb-f",
@@ -12325,6 +15127,32 @@
     "ms": 610
    }
   ],
+  "man": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-8175e3c875-9236b1bc.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-8175e3c875-340bf7e8.mp3",
+    "source": "edge-gb-m",
+    "ms": 560
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-8175e3c875-6446ce32.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-8175e3c875-422d006a.mp3",
+    "source": "edge-us-m",
+    "ms": 470
+   }
+  ],
   "manifold": [
    {
     "voice": "gb-f",
@@ -12349,6 +15177,32 @@
     "file": "dict-words/us-m-68520dd38b-c8e32fac.mp3",
     "source": "edge-us-m",
     "ms": 640
+   }
+  ],
+  "manufacture": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-e6c5b8f134-95e73012.mp3",
+    "source": "edge-gb-f",
+    "ms": 1120
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-e6c5b8f134-58746601.mp3",
+    "source": "edge-gb-m",
+    "ms": 1060
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-e6c5b8f134-38ed7902.mp3",
+    "source": "edge-us-f",
+    "ms": 950
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-e6c5b8f134-f1eb37c6.mp3",
+    "source": "edge-us-m",
+    "ms": 860
    }
   ],
   "margin of safety": [
@@ -12429,6 +15283,32 @@
     "ms": 360
    }
   ],
+  "material": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-97912524f3-643d59bd.mp3",
+    "source": "edge-gb-f",
+    "ms": 890
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-97912524f3-2d1665fe.mp3",
+    "source": "edge-gb-m",
+    "ms": 800
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-97912524f3-482e7468.mp3",
+    "source": "edge-us-f",
+    "ms": 790
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-97912524f3-ded75318.mp3",
+    "source": "edge-us-m",
+    "ms": 640
+   }
+  ],
   "matrix": [
    {
     "voice": "gb-f",
@@ -12505,6 +15385,58 @@
     "file": "dict-words/us-m-32b4e6318e-a6c47ac4.mp3",
     "source": "edge-us-m",
     "ms": 740
+   }
+  ],
+  "mechanical": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-c2b37ef88f-57140934.mp3",
+    "source": "edge-gb-f",
+    "ms": 950
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-c2b37ef88f-8a5ffc60.mp3",
+    "source": "edge-gb-m",
+    "ms": 790
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-c2b37ef88f-9f80ca5c.mp3",
+    "source": "edge-us-f",
+    "ms": 820
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-c2b37ef88f-a9dc9c25.mp3",
+    "source": "edge-us-m",
+    "ms": 690
+   }
+  ],
+  "men": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6711b9ebf5-ad94ad79.mp3",
+    "source": "edge-gb-f",
+    "ms": 550
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6711b9ebf5-97e4752d.mp3",
+    "source": "edge-gb-m",
+    "ms": 500
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6711b9ebf5-0fb8f220.mp3",
+    "source": "edge-us-f",
+    "ms": 580
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6711b9ebf5-08b2290a.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "mesh": [
@@ -12819,6 +15751,84 @@
     "ms": 1110
    }
   ],
+  "more efficient": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-102e3b5b2d-c490076d.mp3",
+    "source": "edge-gb-f",
+    "ms": 1120
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-102e3b5b2d-0d96ffed.mp3",
+    "source": "edge-gb-m",
+    "ms": 950
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-102e3b5b2d-29ad6981.mp3",
+    "source": "edge-us-f",
+    "ms": 980
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-102e3b5b2d-a99f2267.mp3",
+    "source": "edge-us-m",
+    "ms": 780
+   }
+  ],
+  "mouse": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-9e05e6832c-5f1f31f1.mp3",
+    "source": "edge-gb-f",
+    "ms": 650
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-9e05e6832c-90c3037f.mp3",
+    "source": "edge-gb-m",
+    "ms": 680
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-9e05e6832c-1ac89e56.mp3",
+    "source": "edge-us-f",
+    "ms": 750
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-9e05e6832c-e8181cf4.mp3",
+    "source": "edge-us-m",
+    "ms": 580
+   }
+  ],
+  "mouth": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-87d1782579-ed41df64.mp3",
+    "source": "edge-gb-f",
+    "ms": 600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-87d1782579-dec269ac.mp3",
+    "source": "edge-gb-m",
+    "ms": 630
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-87d1782579-28a7930f.mp3",
+    "source": "edge-us-f",
+    "ms": 580
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-87d1782579-930e6c65.mp3",
+    "source": "edge-us-m",
+    "ms": 430
+   }
+  ],
   "multilayer insulation": [
    {
     "voice": "gb-f",
@@ -12869,6 +15879,32 @@
     "file": "dict-words/us-m-93cc56f3ee-3e4dede8.mp3",
     "source": "edge-us-m",
     "ms": 1150
+   }
+  ],
+  "neat": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-4a95dcc4d0-fc8835d7.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-4a95dcc4d0-e7bd273c.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-4a95dcc4d0-8120abe5.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-4a95dcc4d0-6532e733.mp3",
+    "source": "edge-us-m",
+    "ms": 440
    }
   ],
   "nickel superalloy": [
@@ -13053,6 +16089,32 @@
     "ms": 330
    }
   ],
+  "office": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-e642745749-9787b6d0.mp3",
+    "source": "edge-gb-f",
+    "ms": 690
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-e642745749-3f44f551.mp3",
+    "source": "edge-gb-m",
+    "ms": 650
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-e642745749-bf8517d9.mp3",
+    "source": "edge-us-f",
+    "ms": 740
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-e642745749-cd56626c.mp3",
+    "source": "edge-us-m",
+    "ms": 590
+   }
+  ],
   "offset": [
    {
     "voice": "gb-f",
@@ -13077,6 +16139,32 @@
     "file": "dict-words/us-m-53a610e925-56135f47.mp3",
     "source": "edge-us-m",
     "ms": 590
+   }
+  ],
+  "old": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-c00dbbc9da-f76895e9.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-c00dbbc9da-4a6a0487.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-c00dbbc9da-a3d5a2ca.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-c00dbbc9da-be45972c.mp3",
+    "source": "edge-us-m",
+    "ms": 410
    }
   ],
   "operating temperature": [
@@ -13235,6 +16323,32 @@
     "ms": 780
    }
   ],
+  "parameter": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-b75381f004-29d4ed1e.mp3",
+    "source": "edge-gb-f",
+    "ms": 880
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-b75381f004-d7e65172.mp3",
+    "source": "edge-gb-m",
+    "ms": 760
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-b75381f004-3cca38eb.mp3",
+    "source": "edge-us-f",
+    "ms": 740
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-b75381f004-f5e77932.mp3",
+    "source": "edge-us-m",
+    "ms": 660
+   }
+  ],
   "parametric": [
    {
     "voice": "gb-f",
@@ -13285,6 +16399,58 @@
     "file": "dict-words/us-m-3fc88b8376-f7b4a8e6.mp3",
     "source": "edge-us-m",
     "ms": 400
+   }
+  ],
+  "pass": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-9d4e1e23bd-91dca5eb.mp3",
+    "source": "edge-gb-f",
+    "ms": 650
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-9d4e1e23bd-a62b8ccb.mp3",
+    "source": "edge-gb-m",
+    "ms": 670
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-9d4e1e23bd-3736f502.mp3",
+    "source": "edge-us-f",
+    "ms": 580
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-9d4e1e23bd-c914f748.mp3",
+    "source": "edge-us-m",
+    "ms": 560
+   }
+  ],
+  "path": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-3150ecd5e0-0e50f458.mp3",
+    "source": "edge-gb-f",
+    "ms": 630
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-3150ecd5e0-5ffcaf9d.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-3150ecd5e0-cea09fa6.mp3",
+    "source": "edge-us-f",
+    "ms": 460
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-3150ecd5e0-4e237668.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "payload": [
@@ -13365,6 +16531,32 @@
     "ms": 720
    }
   ],
+  "performer": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-3ccbb3ae68-1c604fa8.mp3",
+    "source": "edge-gb-f",
+    "ms": 770
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-3ccbb3ae68-8e5bf39f.mp3",
+    "source": "edge-gb-m",
+    "ms": 760
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-3ccbb3ae68-aa023307.mp3",
+    "source": "edge-us-f",
+    "ms": 770
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-3ccbb3ae68-5608b1f6.mp3",
+    "source": "edge-us-m",
+    "ms": 610
+   }
+  ],
   "perigee": [
    {
     "voice": "gb-f",
@@ -13389,6 +16581,58 @@
     "file": "dict-words/us-m-742dbec072-554d5218.mp3",
     "source": "edge-us-m",
     "ms": 570
+   }
+  ],
+  "photograph": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-5df588cdf6-f4f9349e.mp3",
+    "source": "edge-gb-f",
+    "ms": 1020
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-5df588cdf6-4636b167.mp3",
+    "source": "edge-gb-m",
+    "ms": 890
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-5df588cdf6-ef13f8c4.mp3",
+    "source": "edge-us-f",
+    "ms": 770
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-5df588cdf6-2a63fed5.mp3",
+    "source": "edge-us-m",
+    "ms": 640
+   }
+  ],
+  "photography": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-9aa15b5bf5-b70690c3.mp3",
+    "source": "edge-gb-f",
+    "ms": 990
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-9aa15b5bf5-5015accc.mp3",
+    "source": "edge-gb-m",
+    "ms": 890
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-9aa15b5bf5-2c019206.mp3",
+    "source": "edge-us-f",
+    "ms": 930
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-9aa15b5bf5-a188f66a.mp3",
+    "source": "edge-us-m",
+    "ms": 740
    }
   ],
   "plastic deformation": [
@@ -13441,6 +16685,32 @@
     "file": "dict-words/us-m-261313d89f-2a626824.mp3",
     "source": "edge-us-m",
     "ms": 450
+   }
+  ],
+  "pool": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-51a4b13bc7-10ed9030.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-51a4b13bc7-4b7f73ef.mp3",
+    "source": "edge-gb-m",
+    "ms": 450
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-51a4b13bc7-37a0fe10.mp3",
+    "source": "edge-us-f",
+    "ms": 590
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-51a4b13bc7-c1da4dce.mp3",
+    "source": "edge-us-m",
+    "ms": 440
    }
   ],
   "porosity": [
@@ -13651,6 +16921,84 @@
     "ms": 890
    }
   ],
+  "price": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-2097c33723-64e9a8fb.mp3",
+    "source": "edge-gb-f",
+    "ms": 680
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-2097c33723-b81afe6c.mp3",
+    "source": "edge-gb-m",
+    "ms": 630
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-2097c33723-92b7f87c.mp3",
+    "source": "edge-us-f",
+    "ms": 590
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-2097c33723-9900d5b5.mp3",
+    "source": "edge-us-m",
+    "ms": 550
+   }
+  ],
+  "prize": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-92969bb9ea-8727bdf5.mp3",
+    "source": "edge-gb-f",
+    "ms": 710
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-92969bb9ea-95c288c7.mp3",
+    "source": "edge-gb-m",
+    "ms": 670
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-92969bb9ea-6064d9d1.mp3",
+    "source": "edge-us-f",
+    "ms": 610
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-92969bb9ea-557726c0.mp3",
+    "source": "edge-us-m",
+    "ms": 580
+   }
+  ],
+  "procedure": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-d0b5fd3479-0976c15d.mp3",
+    "source": "edge-gb-f",
+    "ms": 860
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-d0b5fd3479-f5010cee.mp3",
+    "source": "edge-gb-m",
+    "ms": 780
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-d0b5fd3479-7a7eca2a.mp3",
+    "source": "edge-us-f",
+    "ms": 810
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-d0b5fd3479-0493e407.mp3",
+    "source": "edge-us-m",
+    "ms": 670
+   }
+  ],
   "proof test": [
    {
     "voice": "gb-f",
@@ -13732,27 +17080,53 @@
   "prototype": [
    {
     "voice": "gb-f",
-    "file": "dict-words/gb-f-7c257c6a8c-aac297b8.mp3",
+    "file": "clean-stress/gb-f-7c257c6a8c-aac297b8.mp3",
     "source": "edge-gb-f",
     "ms": 970
    },
    {
     "voice": "gb-m",
-    "file": "dict-words/gb-m-7c257c6a8c-d427611f.mp3",
+    "file": "clean-stress/gb-m-7c257c6a8c-d427611f.mp3",
     "source": "edge-gb-m",
     "ms": 930
    },
    {
     "voice": "us-f",
-    "file": "dict-words/us-f-7c257c6a8c-437affe8.mp3",
+    "file": "clean-stress/us-f-7c257c6a8c-437affe8.mp3",
     "source": "edge-us-f",
     "ms": 680
    },
    {
     "voice": "us-m",
-    "file": "dict-words/us-m-7c257c6a8c-dd8bc309.mp3",
+    "file": "clean-stress/us-m-7c257c6a8c-dd8bc309.mp3",
     "source": "edge-us-m",
     "ms": 620
+   }
+  ],
+  "pull": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-c872d55645-eb90c2e9.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-c872d55645-578a7a57.mp3",
+    "source": "edge-gb-m",
+    "ms": 420
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-c872d55645-24c9306a.mp3",
+    "source": "edge-us-f",
+    "ms": 500
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-c872d55645-d9dea7bc.mp3",
+    "source": "edge-us-m",
+    "ms": 360
    }
   ],
   "qualification": [
@@ -13807,6 +17181,32 @@
     "ms": 700
    }
   ],
+  "ran": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-24765b4c90-8bb39a27.mp3",
+    "source": "edge-gb-f",
+    "ms": 550
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-24765b4c90-436647ab.mp3",
+    "source": "edge-gb-m",
+    "ms": 580
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-24765b4c90-76900abf.mp3",
+    "source": "edge-us-f",
+    "ms": 590
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-24765b4c90-9f365267.mp3",
+    "source": "edge-us-m",
+    "ms": 470
+   }
+  ],
   "random vibration": [
    {
     "voice": "gb-f",
@@ -13831,6 +17231,32 @@
     "file": "dict-words/us-m-074bd72c8f-f48c284f.mp3",
     "source": "edge-us-m",
     "ms": 1050
+   }
+  ],
+  "rang": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d7d0e4d685-2bb4a6a8.mp3",
+    "source": "edge-gb-f",
+    "ms": 540
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d7d0e4d685-48adafa0.mp3",
+    "source": "edge-gb-m",
+    "ms": 580
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d7d0e4d685-458f5d4b.mp3",
+    "source": "edge-us-f",
+    "ms": 530
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d7d0e4d685-300fc881.mp3",
+    "source": "edge-us-m",
+    "ms": 470
    }
   ],
   "range": [
@@ -13883,6 +17309,32 @@
     "file": "dict-words/us-m-7f98f50211-ed7114db.mp3",
     "source": "edge-us-m",
     "ms": 890
+   }
+  ],
+  "reasonable": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-759cc80a77-8a28e374.mp3",
+    "source": "edge-gb-f",
+    "ms": 910
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-759cc80a77-e6eeb7d4.mp3",
+    "source": "edge-gb-m",
+    "ms": 770
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-759cc80a77-96e111bc.mp3",
+    "source": "edge-us-f",
+    "ms": 780
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-759cc80a77-58c91920.mp3",
+    "source": "edge-us-m",
+    "ms": 680
    }
   ],
   "reentry": [
@@ -13961,6 +17413,32 @@
     "file": "dict-words/us-m-eb93dc5a13-46ea2fdd.mp3",
     "source": "edge-us-m",
     "ms": 1170
+   }
+  ],
+  "relevant": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-5360447a42-4f6baa58.mp3",
+    "source": "edge-gb-f",
+    "ms": 860
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-5360447a42-f2251854.mp3",
+    "source": "edge-gb-m",
+    "ms": 750
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-5360447a42-3e6add1c.mp3",
+    "source": "edge-us-f",
+    "ms": 810
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-5360447a42-50282f2f.mp3",
+    "source": "edge-us-m",
+    "ms": 590
    }
   ],
   "repeatability": [
@@ -14275,6 +17753,58 @@
     "ms": 710
    }
   ],
+  "rubber": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-386a231f3d-9f0404c2.mp3",
+    "source": "edge-gb-f",
+    "ms": 640
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-386a231f3d-def6cb33.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-386a231f3d-dcfd3917.mp3",
+    "source": "edge-us-f",
+    "ms": 620
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-386a231f3d-a5caf9a7.mp3",
+    "source": "edge-us-m",
+    "ms": 460
+   }
+  ],
+  "safe": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-bf31c52c32-99bfefe5.mp3",
+    "source": "edge-gb-f",
+    "ms": 660
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-bf31c52c32-3a49d688.mp3",
+    "source": "edge-gb-m",
+    "ms": 600
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-bf31c52c32-2df95110.mp3",
+    "source": "edge-us-f",
+    "ms": 620
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-bf31c52c32-cd83946f.mp3",
+    "source": "edge-us-m",
+    "ms": 480
+   }
+  ],
   "safety factor": [
    {
     "voice": "gb-f",
@@ -14379,6 +17909,32 @@
     "ms": 610
    }
   ],
+  "save": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-13a4a11319-608c7dbe.mp3",
+    "source": "edge-gb-f",
+    "ms": 690
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-13a4a11319-dc4044f5.mp3",
+    "source": "edge-gb-m",
+    "ms": 710
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-13a4a11319-0ce62054.mp3",
+    "source": "edge-us-f",
+    "ms": 670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-13a4a11319-3ed78b01.mp3",
+    "source": "edge-us-m",
+    "ms": 470
+   }
+  ],
   "scatter": [
    {
     "voice": "gb-f",
@@ -14403,6 +17959,58 @@
     "file": "dict-words/us-m-3bf7e63ecf-823efd8a.mp3",
     "source": "edge-us-m",
     "ms": 560
+   }
+  ],
+  "schedule": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-11e9ba26c9-56a34a14.mp3",
+    "source": "edge-gb-f",
+    "ms": 730
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-11e9ba26c9-665069a3.mp3",
+    "source": "edge-gb-m",
+    "ms": 660
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-11e9ba26c9-d0417a2e.mp3",
+    "source": "edge-us-f",
+    "ms": 760
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-11e9ba26c9-1c4e915f.mp3",
+    "source": "edge-us-m",
+    "ms": 580
+   }
+  ],
+  "seat": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-ac814ccccb-fed452e8.mp3",
+    "source": "edge-gb-f",
+    "ms": 640
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ac814ccccb-a260c739.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ac814ccccb-21e42ea5.mp3",
+    "source": "edge-us-f",
+    "ms": 650
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ac814ccccb-647c1178.mp3",
+    "source": "edge-us-m",
+    "ms": 450
    }
   ],
   "section view": [
@@ -14481,6 +18089,32 @@
     "file": "dict-words/us-m-f7c13f20ca-32798ae5.mp3",
     "source": "edge-us-m",
     "ms": 760
+   }
+  ],
+  "service life": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-1ac998f593-d69687dc.mp3",
+    "source": "edge-gb-f",
+    "ms": 1180
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-1ac998f593-26c9b10f.mp3",
+    "source": "edge-gb-m",
+    "ms": 1030
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-1ac998f593-870f500e.mp3",
+    "source": "edge-us-f",
+    "ms": 990
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-1ac998f593-f1cabc55.mp3",
+    "source": "edge-us-m",
+    "ms": 790
    }
   ],
   "shaft": [
@@ -14590,9 +18224,27 @@
   "sheep": [
    {
     "voice": "gb-f",
-    "file": "intake/gb-f-6525f2e663-2918d8ca.mp3",
+    "file": "clean-pairs/gb-f-6525f2e663-2918d8ca.mp3",
     "source": "edge-gb-f",
     "ms": 610
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6525f2e663-6387747b.mp3",
+    "source": "edge-gb-m",
+    "ms": 580
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6525f2e663-7d5d5f37.mp3",
+    "source": "edge-us-f",
+    "ms": 680
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6525f2e663-8c8b1121.mp3",
+    "source": "edge-us-m",
+    "ms": 380
    }
   ],
   "sheet metal": [
@@ -14650,9 +18302,27 @@
   "ship": [
    {
     "voice": "gb-f",
-    "file": "intake/gb-f-ed43a8a09e-166cd5db.mp3",
+    "file": "clean-pairs/gb-f-ed43a8a09e-166cd5db.mp3",
     "source": "edge-gb-f",
     "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-ed43a8a09e-ec30228c.mp3",
+    "source": "edge-gb-m",
+    "ms": 530
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-ed43a8a09e-4bbb500d.mp3",
+    "source": "edge-us-f",
+    "ms": 580
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-ed43a8a09e-a4f3824b.mp3",
+    "source": "edge-us-m",
+    "ms": 370
    }
   ],
   "shock test": [
@@ -14679,6 +18349,32 @@
     "file": "dict-words/us-m-35b752cfd3-54b6e9d1.mp3",
     "source": "edge-us-m",
     "ms": 770
+   }
+  ],
+  "shop": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-5042d14666-3c3009f9.mp3",
+    "source": "edge-gb-f",
+    "ms": 600
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-5042d14666-3c18dbbc.mp3",
+    "source": "edge-gb-m",
+    "ms": 560
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-5042d14666-c4c5913a.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-5042d14666-e0437487.mp3",
+    "source": "edge-us-m",
+    "ms": 500
    }
   ],
   "should": [
@@ -14731,6 +18427,32 @@
     "file": "dict-words/us-m-53669f193b-2c462482.mp3",
     "source": "edge-us-m",
     "ms": 620
+   }
+  ],
+  "sick": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6de7382d33-e5f9787b.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6de7382d33-7bf3b9a1.mp3",
+    "source": "edge-gb-m",
+    "ms": 540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6de7382d33-84a40634.mp3",
+    "source": "edge-us-f",
+    "ms": 640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6de7382d33-42130c6a.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "sign off": [
@@ -14811,10 +18533,54 @@
     "ms": 1230
    }
   ],
-  "sin": [
+  "simulation": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-81c0e8e986-1dd229aa.mp3",
+    "source": "edge-gb-f",
+    "ms": 1080
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-81c0e8e986-724036a1.mp3",
+    "source": "edge-gb-m",
+    "ms": 910
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-81c0e8e986-44006be5.mp3",
+    "source": "edge-us-f",
+    "ms": 980
+   },
    {
     "voice": "us-m",
-    "file": "intake/us-m-7d14c04a71-313e5df5.mp3",
+    "file": "clean-stress/us-m-81c0e8e986-f6ff3c4d.mp3",
+    "source": "edge-us-m",
+    "ms": 780
+   }
+  ],
+  "sin": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-7d14c04a71-d98ba435.mp3",
+    "source": "edge-gb-f",
+    "ms": 600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-7d14c04a71-c656c573.mp3",
+    "source": "edge-gb-m",
+    "ms": 540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-7d14c04a71-425abd8c.mp3",
+    "source": "edge-us-f",
+    "ms": 540
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-7d14c04a71-313e5df5.mp3",
     "source": "edge-us-m",
     "ms": 460
    }
@@ -14847,18 +18613,80 @@
   ],
   "sing": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-f9bef9c232-0181be3a.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-f9bef9c232-94607347.mp3",
+    "source": "edge-gb-m",
+    "ms": 510
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-f9bef9c232-454ad6d9.mp3",
+    "source": "edge-us-f",
+    "ms": 570
+   },
+   {
     "voice": "us-m",
-    "file": "intake/us-m-f9bef9c232-44fb2ad4.mp3",
+    "file": "clean-pairs/us-m-f9bef9c232-44fb2ad4.mp3",
     "source": "edge-us-m",
     "ms": 450
    }
   ],
   "sink": [
    {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6f2b835632-123b4799.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6f2b835632-b5963060.mp3",
+    "source": "edge-gb-m",
+    "ms": 580
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6f2b835632-d68a2dc8.mp3",
+    "source": "edge-us-f",
+    "ms": 630
+   },
+   {
     "voice": "us-m",
-    "file": "intake/us-m-6f2b835632-8e1568e9.mp3",
+    "file": "clean-pairs/us-m-6f2b835632-8e1568e9.mp3",
     "source": "edge-us-m",
     "ms": 490
+   }
+  ],
+  "sit": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-abdcde66d6-12fd402a.mp3",
+    "source": "edge-gb-f",
+    "ms": 600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-abdcde66d6-379c4cb2.mp3",
+    "source": "edge-gb-m",
+    "ms": 510
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-abdcde66d6-cd2d4b05.mp3",
+    "source": "edge-us-f",
+    "ms": 530
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-abdcde66d6-cf5ffd12.mp3",
+    "source": "edge-us-m",
+    "ms": 370
    }
   ],
   "sketch": [
@@ -15020,25 +18848,25 @@
   "specimen": [
    {
     "voice": "gb-f",
-    "file": "dict-words/gb-f-e28ae40d23-7d3b7427.mp3",
+    "file": "clean-stress/gb-f-e28ae40d23-7d3b7427.mp3",
     "source": "edge-gb-f",
     "ms": 900
    },
    {
     "voice": "gb-m",
-    "file": "dict-words/gb-m-e28ae40d23-96bc7b83.mp3",
+    "file": "clean-stress/gb-m-e28ae40d23-96bc7b83.mp3",
     "source": "edge-gb-m",
     "ms": 710
    },
    {
     "voice": "us-f",
-    "file": "dict-words/us-f-e28ae40d23-5ba03736.mp3",
+    "file": "clean-stress/us-f-e28ae40d23-5ba03736.mp3",
     "source": "edge-us-f",
     "ms": 860
    },
    {
     "voice": "us-m",
-    "file": "dict-words/us-m-e28ae40d23-5d34c600.mp3",
+    "file": "clean-stress/us-m-e28ae40d23-5d34c600.mp3",
     "source": "edge-us-m",
     "ms": 600
    }
@@ -15303,6 +19131,32 @@
     "ms": 910
    }
   ],
+  "strength": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-57a4e7ca7f-171b1541.mp3",
+    "source": "edge-gb-f",
+    "ms": 800
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-57a4e7ca7f-ae3aaece.mp3",
+    "source": "edge-gb-m",
+    "ms": 670
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-57a4e7ca7f-62637c47.mp3",
+    "source": "edge-us-f",
+    "ms": 530
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-57a4e7ca7f-8d0c0dd5.mp3",
+    "source": "edge-us-m",
+    "ms": 490
+   }
+  ],
   "stress": [
    {
     "voice": "gb-f",
@@ -15381,6 +19235,84 @@
     "ms": 760
    }
   ],
+  "sum": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-e9dff3557d-3eae3a2d.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-e9dff3557d-9539d7ae.mp3",
+    "source": "edge-gb-m",
+    "ms": 540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-e9dff3557d-f431cbdd.mp3",
+    "source": "edge-us-f",
+    "ms": 620
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-e9dff3557d-3b0479f0.mp3",
+    "source": "edge-us-m",
+    "ms": 460
+   }
+  ],
+  "sun": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-22fa6121da-4e67ca78.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-22fa6121da-7f5003cc.mp3",
+    "source": "edge-gb-m",
+    "ms": 540
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-22fa6121da-33d1e7fb.mp3",
+    "source": "edge-us-f",
+    "ms": 640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-22fa6121da-d6290301.mp3",
+    "source": "edge-us-m",
+    "ms": 470
+   }
+  ],
+  "sung": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-301af102e4-b3ba4747.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-301af102e4-a9a4614e.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-301af102e4-e8d4770a.mp3",
+    "source": "edge-us-f",
+    "ms": 660
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-301af102e4-833736e8.mp3",
+    "source": "edge-us-m",
+    "ms": 460
+   }
+  ],
   "supersonic": [
    {
     "voice": "gb-f",
@@ -15431,6 +19363,32 @@
     "file": "dict-words/us-m-8ccccb7fcc-1da4d8b3.mp3",
     "source": "edge-us-m",
     "ms": 1040
+   }
+  ],
+  "surname": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-81854c9771-aa2d4a8a.mp3",
+    "source": "edge-gb-f",
+    "ms": 750
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-81854c9771-59f54513.mp3",
+    "source": "edge-gb-m",
+    "ms": 720
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-81854c9771-d27f6f6d.mp3",
+    "source": "edge-us-f",
+    "ms": 750
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-81854c9771-7f614d87.mp3",
+    "source": "edge-us-m",
+    "ms": 530
    }
   ],
   "sweep": [
@@ -15509,6 +19467,32 @@
     "file": "dict-words/us-m-9c73469cc2-8fc2697f.mp3",
     "source": "edge-us-m",
     "ms": 900
+   }
+  ],
+  "technology": [
+   {
+    "voice": "gb-f",
+    "file": "clean-stress/gb-f-30f7a16c51-b3959037.mp3",
+    "source": "edge-gb-f",
+    "ms": 970
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-stress/gb-m-30f7a16c51-1f7e5e7f.mp3",
+    "source": "edge-gb-m",
+    "ms": 840
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-stress/us-f-30f7a16c51-af8b4a5a.mp3",
+    "source": "edge-us-f",
+    "ms": 900
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-stress/us-m-30f7a16c51-45d43966.mp3",
+    "source": "edge-us-m",
+    "ms": 770
    }
   ],
   "telemetry": [
@@ -15615,6 +19599,32 @@
     "ms": 870
    }
   ],
+  "test": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-a94a8fe5cc-2ed58240.mp3",
+    "source": "edge-gb-f",
+    "ms": 650
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-a94a8fe5cc-2914058a.mp3",
+    "source": "edge-gb-m",
+    "ms": 590
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-a94a8fe5cc-ff251f01.mp3",
+    "source": "edge-us-f",
+    "ms": 570
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-a94a8fe5cc-e1daf8e8.mp3",
+    "source": "edge-us-m",
+    "ms": 530
+   }
+  ],
   "test article": [
    {
     "voice": "gb-f",
@@ -15717,6 +19727,58 @@
     "file": "dict-words/us-m-a4e6e36e60-16bba9c4.mp3",
     "source": "edge-us-m",
     "ms": 660
+   }
+  ],
+  "the first ten days": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-7c62dbaeff-ae408911.mp3",
+    "source": "edge-gb-f",
+    "ms": 1480
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-7c62dbaeff-386ffb27.mp3",
+    "source": "edge-gb-m",
+    "ms": 1390
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-7c62dbaeff-1d5642ab.mp3",
+    "source": "edge-us-f",
+    "ms": 1240
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-7c62dbaeff-eba0e3dd.mp3",
+    "source": "edge-us-m",
+    "ms": 1180
+   }
+  ],
+  "then": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6f8f8e9f76-0592c99d.mp3",
+    "source": "edge-gb-f",
+    "ms": 500
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6f8f8e9f76-9dcd704a.mp3",
+    "source": "edge-gb-m",
+    "ms": 440
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6f8f8e9f76-49c6507e.mp3",
+    "source": "edge-us-f",
+    "ms": 520
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6f8f8e9f76-2b3ce80a.mp3",
+    "source": "edge-us-m",
+    "ms": 410
    }
   ],
   "thermal control": [
@@ -15875,10 +19937,132 @@
     "ms": 690
    }
   ],
-  "think": [
+  "they": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-f1fdd46d8d-0b53d435.mp3",
+    "source": "edge-gb-f",
+    "ms": 510
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-f1fdd46d8d-38502e00.mp3",
+    "source": "edge-gb-m",
+    "ms": 440
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-f1fdd46d8d-d28eae34.mp3",
+    "source": "edge-us-f",
+    "ms": 470
+   },
    {
     "voice": "us-m",
-    "file": "intake/us-m-b7c61c80ab-70fc0229.mp3",
+    "file": "clean-pairs/us-m-f1fdd46d8d-c91db0ab.mp3",
+    "source": "edge-us-m",
+    "ms": 390
+   }
+  ],
+  "thick": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-8fb4cd183e-fbb959b5.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-8fb4cd183e-f6467a72.mp3",
+    "source": "edge-gb-m",
+    "ms": 450
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-8fb4cd183e-f084c2c2.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-8fb4cd183e-be4fbd16.mp3",
+    "source": "edge-us-m",
+    "ms": 380
+   }
+  ],
+  "thin": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6ca0fa2674-adc228a0.mp3",
+    "source": "edge-gb-f",
+    "ms": 570
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6ca0fa2674-811e86ea.mp3",
+    "source": "edge-gb-m",
+    "ms": 460
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6ca0fa2674-84c6ccc9.mp3",
+    "source": "edge-us-f",
+    "ms": 520
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6ca0fa2674-c71c5c14.mp3",
+    "source": "edge-us-m",
+    "ms": 390
+   }
+  ],
+  "thing": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-863cc374e6-07e30cd9.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-863cc374e6-cc548e82.mp3",
+    "source": "edge-gb-m",
+    "ms": 410
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-863cc374e6-fdf01691.mp3",
+    "source": "edge-us-f",
+    "ms": 510
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-863cc374e6-de32b1e5.mp3",
+    "source": "edge-us-m",
+    "ms": 370
+   }
+  ],
+  "think": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-b7c61c80ab-941cd940.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-b7c61c80ab-73632a85.mp3",
+    "source": "edge-gb-m",
+    "ms": 500
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-b7c61c80ab-35924309.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-b7c61c80ab-70fc0229.mp3",
     "source": "edge-us-m",
     "ms": 390
    }
@@ -15907,6 +20091,32 @@
     "file": "dict-words/us-m-f46ee2cfeb-2253ab29.mp3",
     "source": "edge-us-m",
     "ms": 680
+   }
+  ],
+  "three": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-b802f38430-401f29e0.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-b802f38430-a600875f.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-b802f38430-b608f4a0.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-b802f38430-05388ff7.mp3",
+    "source": "edge-us-m",
+    "ms": 410
    }
   ],
   "three-point bending": [
@@ -16089,6 +20299,32 @@
     "file": "dict-words/us-m-09d73ac6fb-ec71e7ac.mp3",
     "source": "edge-us-m",
     "ms": 560
+   }
+  ],
+  "thumb": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d28d2b77fa-37bc80f1.mp3",
+    "source": "edge-gb-f",
+    "ms": 550
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d28d2b77fa-652458ee.mp3",
+    "source": "edge-gb-m",
+    "ms": 480
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d28d2b77fa-28678213.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d28d2b77fa-22d68dab.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "titanium": [
@@ -16533,6 +20769,32 @@
     "ms": 870
    }
   ],
+  "unit": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-0df9eea0ba-53c626e6.mp3",
+    "source": "edge-gb-f",
+    "ms": 690
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-0df9eea0ba-fa42ea83.mp3",
+    "source": "edge-gb-m",
+    "ms": 590
+   },
+   {
+    "voice": "us-f",
+    "file": "ff-false-friends/us-f-0df9eea0ba-c8df2434.mp3",
+    "source": "edge-us-f",
+    "ms": 650
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-0df9eea0ba-7bb93777.mp3",
+    "source": "edge-us-m",
+    "ms": 430
+   }
+  ],
   "upper stage": [
    {
     "voice": "gb-f",
@@ -16611,12 +20873,108 @@
     "ms": 460
    }
   ],
-  "vest": [
+  "veal": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6bbdad6f7c-bd92299f.mp3",
+    "source": "edge-gb-f",
+    "ms": 530
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6bbdad6f7c-d4188637.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
    {
     "voice": "us-f",
-    "file": "intake/us-f-7703ba73d7-451de929.mp3",
+    "file": "clean-pairs/us-f-6bbdad6f7c-d97357da.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6bbdad6f7c-07de6db0.mp3",
+    "source": "edge-us-m",
+    "ms": 480
+   }
+  ],
+  "verse": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-28146f20ff-d2e93366.mp3",
+    "source": "edge-gb-f",
+    "ms": 680
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-28146f20ff-a2ad4328.mp3",
+    "source": "edge-gb-m",
+    "ms": 680
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-28146f20ff-320ab149.mp3",
+    "source": "edge-us-f",
+    "ms": 670
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-28146f20ff-617d972d.mp3",
+    "source": "edge-us-m",
+    "ms": 510
+   }
+  ],
+  "vest": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-7703ba73d7-7ddbba34.mp3",
+    "source": "edge-gb-f",
+    "ms": 680
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-7703ba73d7-55fdfbed.mp3",
+    "source": "edge-gb-m",
+    "ms": 620
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-7703ba73d7-451de929.mp3",
     "source": "edge-us-f",
     "ms": 620
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-7703ba73d7-1a9a194e.mp3",
+    "source": "edge-us-m",
+    "ms": 560
+   }
+  ],
+  "vet": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-cd57239bd6-d1d3beca.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-cd57239bd6-5a6d7d69.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-cd57239bd6-1e6bf674.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-cd57239bd6-dce18b11.mp3",
+    "source": "edge-us-m",
+    "ms": 400
    }
   ],
   "vibration test": [
@@ -16643,6 +21001,58 @@
     "file": "dict-words/us-m-5bae466a24-dc71077f.mp3",
     "source": "edge-us-m",
     "ms": 1040
+   }
+  ],
+  "vile": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-297d499ddf-5354cd6f.mp3",
+    "source": "edge-gb-f",
+    "ms": 600
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-297d499ddf-edf843d7.mp3",
+    "source": "edge-gb-m",
+    "ms": 570
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-297d499ddf-d7d24b94.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-297d499ddf-0940ee32.mp3",
+    "source": "edge-us-m",
+    "ms": 440
+   }
+  ],
+  "vine": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-37ef056290-4cc29c44.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-37ef056290-c6e5c2a6.mp3",
+    "source": "edge-gb-m",
+    "ms": 610
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-37ef056290-a75f9729.mp3",
+    "source": "edge-us-f",
+    "ms": 640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-37ef056290-06cbec91.mp3",
+    "source": "edge-us-m",
+    "ms": 470
    }
   ],
   "void content": [
@@ -16775,12 +21185,264 @@
     "ms": 480
    }
   ],
-  "west": [
+  "well-educated and cultured": [
+   {
+    "voice": "gb-f",
+    "file": "ff-false-friends/gb-f-013a3021da-dd663a41.mp3",
+    "source": "edge-gb-f",
+    "ms": 1950
+   },
+   {
+    "voice": "gb-m",
+    "file": "ff-false-friends/gb-m-013a3021da-8bcad1d5.mp3",
+    "source": "edge-gb-m",
+    "ms": 1570
+   },
    {
     "voice": "us-f",
-    "file": "intake/us-f-d63eba28af-41ae720c.mp3",
+    "file": "ff-false-friends/us-f-013a3021da-67d1e41b.mp3",
+    "source": "edge-us-f",
+    "ms": 1670
+   },
+   {
+    "voice": "us-m",
+    "file": "ff-false-friends/us-m-013a3021da-917b31ab.mp3",
+    "source": "edge-us-m",
+    "ms": 1560
+   }
+  ],
+  "west": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-d63eba28af-7458a379.mp3",
+    "source": "edge-gb-f",
+    "ms": 640
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-d63eba28af-a6382b3d.mp3",
+    "source": "edge-gb-m",
+    "ms": 590
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-d63eba28af-41ae720c.mp3",
     "source": "edge-us-f",
     "ms": 640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-d63eba28af-79b7f10e.mp3",
+    "source": "edge-us-m",
+    "ms": 560
+   }
+  ],
+  "wet": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-c8e275e6d1-c9efd915.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-c8e275e6d1-64c3ebd9.mp3",
+    "source": "edge-gb-m",
+    "ms": 500
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-c8e275e6d1-65e6e410.mp3",
+    "source": "edge-us-f",
+    "ms": 570
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-c8e275e6d1-9a12754d.mp3",
+    "source": "edge-us-m",
+    "ms": 410
+   }
+  ],
+  "wheel": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-3a7195d99b-b4f0ea01.mp3",
+    "source": "edge-gb-f",
+    "ms": 540
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-3a7195d99b-94d234e4.mp3",
+    "source": "edge-gb-m",
+    "ms": 500
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-3a7195d99b-e1bdabae.mp3",
+    "source": "edge-us-f",
+    "ms": 560
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-3a7195d99b-c94927a6.mp3",
+    "source": "edge-us-m",
+    "ms": 430
+   }
+  ],
+  "while": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-6517f89c46-d1101523.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-6517f89c46-d303762a.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-6517f89c46-ec9108c1.mp3",
+    "source": "edge-us-f",
+    "ms": 600
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-6517f89c46-885d5778.mp3",
+    "source": "edge-us-m",
+    "ms": 440
+   }
+  ],
+  "white": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-528cef87d0-2bfafdfe.mp3",
+    "source": "edge-gb-f",
+    "ms": 620
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-528cef87d0-221ed5b9.mp3",
+    "source": "edge-gb-m",
+    "ms": 580
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-528cef87d0-96a0bf7c.mp3",
+    "source": "edge-us-f",
+    "ms": 570
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-528cef87d0-dc852caa.mp3",
+    "source": "edge-us-m",
+    "ms": 350
+   }
+  ],
+  "wide": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-414768af9d-463e6abf.mp3",
+    "source": "edge-gb-f",
+    "ms": 630
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-414768af9d-2db62356.mp3",
+    "source": "edge-gb-m",
+    "ms": 630
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-414768af9d-72e990ec.mp3",
+    "source": "edge-us-f",
+    "ms": 640
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-414768af9d-3b45be2c.mp3",
+    "source": "edge-us-m",
+    "ms": 490
+   }
+  ],
+  "win": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-c76ac2e9cd-4e945814.mp3",
+    "source": "edge-gb-f",
+    "ms": 510
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-c76ac2e9cd-eb51680f.mp3",
+    "source": "edge-gb-m",
+    "ms": 550
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-c76ac2e9cd-41da9e96.mp3",
+    "source": "edge-us-f",
+    "ms": 520
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-c76ac2e9cd-1b38fa57.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
+  "wine": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-e4fd69b08a-efb8b2a9.mp3",
+    "source": "edge-gb-f",
+    "ms": 580
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-e4fd69b08a-50c30142.mp3",
+    "source": "edge-gb-m",
+    "ms": 620
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-e4fd69b08a-fd1b71fe.mp3",
+    "source": "edge-us-f",
+    "ms": 630
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-e4fd69b08a-66f0ae84.mp3",
+    "source": "edge-us-m",
+    "ms": 490
+   }
+  ],
+  "wing": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-bd6658dc07-b80f75ac.mp3",
+    "source": "edge-gb-f",
+    "ms": 520
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-bd6658dc07-42a591d8.mp3",
+    "source": "edge-gb-m",
+    "ms": 490
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-bd6658dc07-83e35fe2.mp3",
+    "source": "edge-us-f",
+    "ms": 550
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-bd6658dc07-4ef880d6.mp3",
+    "source": "edge-us-m",
+    "ms": 430
    }
   ],
   "wiring": [
@@ -16861,6 +21523,32 @@
     "ms": 510
    }
   ],
+  "worse": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-4f8180239c-491e6920.mp3",
+    "source": "edge-gb-f",
+    "ms": 690
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-4f8180239c-1a2bd958.mp3",
+    "source": "edge-gb-m",
+    "ms": 650
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-4f8180239c-a74f78bd.mp3",
+    "source": "edge-us-f",
+    "ms": 680
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-4f8180239c-111fa623.mp3",
+    "source": "edge-us-m",
+    "ms": 520
+   }
+  ],
   "woven fabric": [
    {
     "voice": "gb-f",
@@ -16911,6 +21599,32 @@
     "file": "dict-words/us-m-e52cdd778d-130ba042.mp3",
     "source": "edge-us-m",
     "ms": 710
+   }
+  ],
+  "zen": [
+   {
+    "voice": "gb-f",
+    "file": "clean-pairs/gb-f-3fb05a163b-ad2b03e6.mp3",
+    "source": "edge-gb-f",
+    "ms": 590
+   },
+   {
+    "voice": "gb-m",
+    "file": "clean-pairs/gb-m-3fb05a163b-32f4a839.mp3",
+    "source": "edge-gb-m",
+    "ms": 590
+   },
+   {
+    "voice": "us-f",
+    "file": "clean-pairs/us-f-3fb05a163b-a716078b.mp3",
+    "source": "edge-us-f",
+    "ms": 590
+   },
+   {
+    "voice": "us-m",
+    "file": "clean-pairs/us-m-3fb05a163b-79bc1095.mp3",
+    "source": "edge-us-m",
+    "ms": 470
    }
   ]
  }

@@ -11,7 +11,8 @@ async function visible(page: Page, name: string | RegExp, exact = true): Promise
 }
 
 async function click(page: Page, name: string | RegExp, exact = true) {
-  await page.getByRole('button', { name, exact: typeof name === 'string' ? exact : undefined }).first().click()
+  // Шаг мог смениться между проверкой и кликом — не ждём вечно, цикл посмотрит заново.
+  await page.getByRole('button', { name, exact: typeof name === 'string' ? exact : undefined }).first().click({ timeout: 5000 }).catch(() => {})
 }
 
 /** «Дальше», если он есть: на последнем шаге после ответа могут сразу открыться итоги. */
@@ -51,9 +52,32 @@ export async function runSegment(page: Page, maxSteps = 80): Promise<void> {
       await click(page, 'Прочитал')
       continue
     }
-    // Что прозвучало / акценты / Техдок (найти ответ, краткое содержание, разбор): первый вариант
+    // Телеграмма: написать письмо и сравнить с образцом
+    if (await visible(page, 'Сравнить с образцом')) {
+      await page.locator('textarea').fill('Hi Tom,\n\nCould you send me the photos by Wednesday?\n\nThanks,\nIvan')
+      await click(page, 'Сравнить с образцом')
+      await next(page)
+      continue
+    }
+    // Телеграмма: собрать письмо из блоков
+    const pool = page.getByRole('group', { name: 'Собери письмо' })
+    if (await pool.isVisible().catch(() => false)) {
+      while (await pool.isVisible().catch(() => false)) await pool.getByRole('button').first().click()
+      await click(page, 'Проверить')
+      await next(page)
+      continue
+    }
+    // Чистый сигнал: распознавание не разобрало слово — самооценка
+    if (await visible(page, 'Похоже')) {
+      await click(page, 'Похоже')
+      await next(page)
+      continue
+    }
+    // Что прозвучало / акценты / Техдок / письма / пары / ударение / ложные друзья: первый вариант
     const choice = page
-      .getByRole('group', { name: /Что прозвучало\?|Что сказали\?|нажми на предложение с ответом|краткое содержание|Разбор: выбери/ })
+      .getByRole('group', {
+        name: /Что прозвучало\?|Что сказали\?|нажми на предложение с ответом|краткое содержание|Разбор: выбери|Выбери вариант|Как сказать естественно|Какое слово прозвучало|Варианты перевода|^Слоги$/,
+      })
       .getByRole('button')
       .first()
     if ((await choice.isVisible().catch(() => false)) && (await choice.isEnabled({ timeout: 300 }).catch(() => false))) {
@@ -61,9 +85,9 @@ export async function runSegment(page: Page, maxSteps = 80): Promise<void> {
       await next(page)
       continue
     }
-    // Диктант
+    // Диктант (у письма тоже textarea, но без «Проверить»)
     const input = page.locator('textarea')
-    if ((await input.isVisible().catch(() => false)) && (await input.isEnabled({ timeout: 300 }).catch(() => false))) {
+    if ((await input.isVisible().catch(() => false)) && (await input.isEnabled({ timeout: 300 }).catch(() => false)) && (await visible(page, 'Проверить'))) {
       await input.fill('the test')
       await click(page, 'Проверить')
       await next(page)

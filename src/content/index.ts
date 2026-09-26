@@ -10,6 +10,14 @@ import type {
   Content,
   DocText,
   Episode,
+  FalseFriend,
+  MailFix,
+  MailOrder,
+  MailRegister,
+  MailWrite,
+  MinimalPair,
+  CleanPhrase,
+  StressWord,
   StoryQuestion,
   IntakeContent,
   Module,
@@ -35,9 +43,27 @@ export const content: Content = {
   storyQuestions: [],
   episodes: [],
   texts: [],
+  mailRegister: [],
+  mailFix: [],
+  mailOrder: [],
+  mailWrite: [],
+  mailBank: [],
+  pairs: [],
+  cleanPhrases: [],
+  stress: [],
+  falseFriends: [],
+  bosses: null,
 }
 
 export const textById = new Map<string, DocText>()
+export const mailRegisterById = new Map<string, MailRegister>()
+export const mailFixById = new Map<string, MailFix>()
+export const mailOrderById = new Map<string, MailOrder>()
+export const mailWriteById = new Map<string, MailWrite>()
+export const pairById = new Map<string, MinimalPair>()
+export const cleanPhraseById = new Map<string, CleanPhrase>()
+export const stressById = new Map<string, StressWord>()
+export const falseFriendById = new Map<string, FalseFriend>()
 
 export const storyQuestionById = new Map<string, StoryQuestion>()
 export const episodeById = new Map<string, Episode>()
@@ -62,6 +88,13 @@ export type ModuleItems = {
   translate: TranslateItem[]
   substitution: Substitution[]
   texts: DocText[]
+  mailRegister: MailRegister[]
+  mailFix: MailFix[]
+  mailOrder: MailOrder[]
+  mailWrite: MailWrite[]
+  pairs: MinimalPair[]
+  cleanPhrases: CleanPhrase[]
+  stress: StressWord[]
 }
 export const itemsByModule = new Map<string, ModuleItems>()
 
@@ -85,7 +118,22 @@ export function fill(raw: Content): void {
   for (const m of [...raw.modules].sort((a, b) => a.order - b.order)) {
     moduleById.set(m.id, m)
     modulesByTrack.set(m.track, [...(modulesByTrack.get(m.track) ?? []), m])
-    itemsByModule.set(m.id, { phrases: [], passages: [], chunks: [], questions: [], translate: [], substitution: [], texts: [] })
+    itemsByModule.set(m.id, {
+      phrases: [],
+      passages: [],
+      chunks: [],
+      questions: [],
+      translate: [],
+      substitution: [],
+      texts: [],
+      mailRegister: [],
+      mailFix: [],
+      mailOrder: [],
+      mailWrite: [],
+      pairs: [],
+      cleanPhrases: [],
+      stress: [],
+    })
   }
   connectedByModule.clear()
   for (const c of raw.connected) connectedByModule.set(c.module, c)
@@ -99,6 +147,14 @@ export function fill(raw: Content): void {
   index(storyQuestionById, raw.storyQuestions)
   index(episodeById, raw.episodes)
   index(textById, raw.texts)
+  index(mailRegisterById, raw.mailRegister)
+  index(mailFixById, raw.mailFix)
+  index(mailOrderById, raw.mailOrder)
+  index(mailWriteById, raw.mailWrite)
+  index(pairById, raw.pairs)
+  index(cleanPhraseById, raw.cleanPhrases)
+  index(stressById, raw.stress)
+  index(falseFriendById, raw.falseFriends)
   content.episodes = [...raw.episodes].sort((a, b) => a.n - b.n)
   const put = <K extends keyof ModuleItems>(key: K, list: ModuleItems[K]) => {
     for (const x of list) itemsByModule.get(x.module)?.[key].push(x as never)
@@ -110,6 +166,13 @@ export function fill(raw: Content): void {
   put('translate', raw.translate)
   put('substitution', raw.substitution)
   put('texts', raw.texts)
+  put('mailRegister', raw.mailRegister)
+  put('mailFix', raw.mailFix)
+  put('mailOrder', raw.mailOrder)
+  put('mailWrite', raw.mailWrite)
+  put('pairs', raw.pairs)
+  put('cleanPhrases', raw.cleanPhrases)
+  put('stress', raw.stress)
 }
 
 export function intake(): IntakeContent {

@@ -8,7 +8,7 @@ import { formatSeconds, ru } from '../../i18n/ru'
 import { hasContent, loadProgress } from '../../lib/course/progress'
 import { db } from '../../lib/db/db'
 import { dictById } from '../../lib/dict/dict'
-import { avgLatency, listeningBySpeed, minutesByDay, readingStats, weakTags, wordsByBand } from '../../lib/progress/stats'
+import { avgLatency, listeningBySpeed, minutesByDay, pairsByModule, readingStats, weakTags, wordsByBand } from '../../lib/progress/stats'
 import { AIR_DAY_SECONDS, computeStreak, localDate } from '../../lib/progress/streak'
 import { useSettings } from '../../lib/settings/settings'
 import { prepareItems, retentionStats } from '../../lib/srs/cards'
@@ -34,6 +34,7 @@ export function StatsScreen() {
       cards: await db.cards.count(),
       retention: await retentionStats(),
       reading: readingStats(answers),
+      pairs: pairsByModule(answers),
       words: await (async () => {
         await prepareItems()
         const ids = (await db.cards.where('kind').equals(1).toArray()).map((c) => c.itemId).filter((id) => /^(w|u)-/.test(id))
@@ -132,6 +133,25 @@ export function StatsScreen() {
           </ul>
         ) : (
           <p className={s.note}>{t.wordsEmpty}</p>
+        )}
+      </section>
+
+      <section className={s.section}>
+        <h2>{t.pairs}</h2>
+        {data.pairs.length ? (
+          <ul className={s.speeds}>
+            {data.pairs.map((p) => (
+              <li key={p.tag}>
+                <span>{moduleById.get(p.tag)?.title ?? p.tag}</span>
+                <ScoreBar value={(100 * p.correct) / p.total} label={`${moduleById.get(p.tag)?.title ?? p.tag}: ${p.correct} из ${p.total}`} marker={80} />
+                <span className="mono">
+                  {p.correct}/{p.total}
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className={s.note}>{t.pairsEmpty}</p>
         )}
       </section>
 

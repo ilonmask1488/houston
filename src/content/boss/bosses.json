@@ -1,0 +1,307 @@
+{
+ "air": {
+  "id": "boss-air",
+  "module": "boss-air",
+  "title": "Созвон по срыву сроков",
+  "kind": "созвон",
+  "situation": "Пятничный созвон: четверо из разных стран обсуждают, почему испытания сдвигаются. Говорят быстро и перебивают друг друга.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Wednesday. And how long do the vibration tests take once it's back?"
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Three days if nothing goes wrong, so realistically we're looking at the end of next week."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday."
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality."
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?"
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Works for me."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Yep, I'll chase the supplier and let you know if Wednesday slips."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What exactly is broken?",
+    "options": [
+     "The amplifier",
+     "The shaker table itself",
+     "The thermal chamber"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When can the replacement arrive at the earliest?",
+    "options": [
+     "On Wednesday",
+     "On Monday",
+     "At the end of next week"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Priya suggest?",
+    "options": [
+     "Doing thermal cycling before vibration",
+     "Cancelling the vibration tests",
+     "Buying a new shaker table"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Grace need before she approves the change?",
+    "options": [
+     "A short note explaining why the order doesn't matter",
+     "New test results",
+     "A call with the supplier"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who will write the note?",
+    "options": [
+     "Priya",
+     "Grace",
+     "Oliver"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ "doc": {
+  "id": "boss-doc",
+  "module": "boss-doc",
+  "level": 3,
+  "topic": "test",
+  "kind": "статья на время",
+  "title": "Effect of manufacturing defects on the compressive strength of sandwich panels",
+  "paragraphs": [
+   "Honeycomb sandwich panels are widely used in spacecraft structures because they combine high bending stiffness with low mass. However, their compressive strength is sensitive to manufacturing defects such as core crushing, skin wrinkles and disbonds between the skin and the core. This study quantifies the effect of these defects on the edgewise compressive strength of aluminium honeycomb panels with carbon fibre skins.",
+   "Forty-eight panels measuring 300 by 200 millimetres were manufactured in four groups: pristine panels and panels with artificial core crushing, skin wrinkles or disbonds. Disbonds were introduced by placing a 25-millimetre PTFE film between the skin and the core before curing. All panels were inspected by ultrasonic C-scan and then loaded to failure in edgewise compression at a rate of 0.5 millimetres per minute.",
+   "Pristine panels failed at a mean load of 86 kilonewtons with a coefficient of variation of 4 percent. Core crushing reduced the strength by only 3 percent, which is within the scatter of the pristine group. Skin wrinkles reduced the strength by 11 percent, while disbonds caused the largest reduction of 27 percent. In all disbonded panels, failure started with local skin buckling over the disbond.",
+   "The results suggest that disbonds are the most critical defect for compressive loading and should be given priority in inspection. Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every flight panel, whereas visual inspection is considered sufficient for core crushing."
+  ],
+  "summaries": [
+   [
+    "Sandwich panels are light and stiff, but defects may reduce their compressive strength, which this study measures.",
+    "Sandwich panels are always made without defects.",
+    "Honeycomb panels are heavier than solid aluminium plates."
+   ],
+   [
+    "Four groups of panels, with and without artificial defects, were inspected and compressed to failure.",
+    "The panels were tested in bending at high temperature.",
+    "Only pristine panels were tested."
+   ],
+   [
+    "Disbonds reduced strength the most, wrinkles moderately, and core crushing hardly at all.",
+    "All defects reduced strength by about the same amount.",
+    "Core crushing was the most dangerous defect."
+   ],
+   [
+    "Disbonds are the most critical defect, so every flight panel should be checked by C-scan.",
+    "Visual inspection is enough for all defects.",
+    "C-scan cannot detect disbonds."
+   ]
+  ],
+  "retell": [
+   "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+   "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+   "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+   "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel."
+  ],
+  "parse": {
+   "sentence": "Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every flight panel, whereas visual inspection is considered sufficient for core crushing.",
+   "parts": [
+    [
+     "Because a 25-millimetre disbond is reliably detected by C-scan,",
+     "причина: отслоение 25 мм надёжно видно на C-скане (пассив: is detected)"
+    ],
+    [
+     "the authors recommend C-scan inspection of every flight panel,",
+     "главное: авторы рекомендуют C-скан каждой лётной панели"
+    ],
+    [
+     "whereas visual inspection is considered sufficient for core crushing.",
+     "противопоставление (whereas — тогда как): для смятия сот достаточно осмотра"
+    ]
+   ],
+   "q": "What do the authors recommend for core crushing?",
+   "options": [
+    "Visual inspection",
+    "C-scan of every panel",
+    "No inspection at all"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What was the mean failure load of the pristine panels?",
+    "key": "mean load of 86 kilonewtons"
+   },
+   {
+    "q": "How were disbonds introduced?",
+    "key": "PTFE film"
+   },
+   {
+    "q": "By how much did skin wrinkles reduce the strength?",
+    "key": "reduced the strength by 11 percent"
+   },
+   {
+    "q": "How do the authors suggest checking for core crushing?",
+    "key": "visual inspection is considered sufficient"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+    "voice": "us-f"
+   },
+   {
+    "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+    "voice": "us-m"
+   },
+   {
+    "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every flight panel.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ "mail": {
+  "register": [
+   {
+    "id": "mr-boss-1",
+    "module": "boss-mail",
+    "situation": "Заказчик в ярости из-за задержки. Первая фраза ответа?",
+    "want": "neutral",
+    "options": [
+     "Thank you for your email, and I understand your frustration about the delay.",
+     "Calm down, please.",
+     "It is not our fault."
+    ],
+    "why": "Признай чувства и поблагодари — это снижает накал. Оправдания и «успокойтесь» только злят.",
+    "reviewed": false
+   },
+   {
+    "id": "mr-boss-2",
+    "module": "boss-mail",
+    "situation": "Как сообщить новый срок?",
+    "want": "neutral",
+    "options": [
+     "We will deliver the report by 14 March, and I will send you a short progress update every Friday until then.",
+     "The report will be ready when it is ready.",
+     "Maybe in March, we will see."
+    ],
+    "why": "Конкретная дата и регулярные новости возвращают доверие.",
+    "reviewed": false
+   }
+  ],
+  "write": {
+   "id": "mw-boss",
+   "module": "boss-mail",
+   "task": "Ответь заказчику. Отчёт задерживается на неделю из-за повторного испытания (первый образец был повреждён при установке). Новый срок — 14 марта. Предложи еженедельные апдейты.",
+   "incoming": "Dear Ivan,\n\nThis is the second time the report has been delayed. We had a design review planned based on your data, and now we have to postpone it. I need to understand what is going on and when we will actually get the results.\n\nRegards,\nGrace Walker\nQuality Manager",
+   "model": "Dear Grace,\n\nThank you for your email, and I understand your frustration — I'm sorry the delay affects your design review.\n\nThe first specimen was damaged during installation, so we had to repeat the test to make sure the results are valid. The repeat test was completed yesterday, and the data look consistent.\n\nWe will deliver the final report by 14 March. Until then, I will send you a short progress update every Friday. If it helps, I can also share the preliminary results this week so that you can prepare for the review.\n\nKind regards,\nIvan Petrov",
+   "checklist": [
+    "признал проблему и извинился один раз",
+    "объяснил причину фактами, без оправданий",
+    "назвал конкретный новый срок",
+    "предложил, как держать в курсе",
+    "формальный, но тёплый тон"
+   ],
+   "reviewed": false
+  }
+ }
+}

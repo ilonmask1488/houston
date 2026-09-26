@@ -2,7 +2,8 @@ import Dexie from 'dexie'
 import { describe, expect, it } from 'vitest'
 import { moduleItems } from '../course/progress'
 import { db } from '../db/db'
-import { quickPoints, saveRecord, speedreadPoints, speedreadRounds, speedreadSeconds, staticNoise, staticPool, staticSpeed, weekStart } from './games'
+import { quickPoints, saveRecord, speedreadPoints, speedreadRounds, speedreadSeconds, staticNoise, staticPool, staticSpeed, twinsRound, twinsVoice, weekStart } from './games'
+import { rng } from '../intake/plan'
 
 describe('Помехи', () => {
   it('скорость растёт с серией и упирается в 1.5', () => {
@@ -59,5 +60,25 @@ describe('Скорочтение', () => {
     expect(speedreadSeconds(20)).toBe(15)
     expect(speedreadPoints(0, 1)).toBe(10)
     expect(speedreadPoints(20, 2)).toBe(100)
+  })
+})
+
+describe('Близнецы', () => {
+  it('пара не повторяется два раза подряд, звучит одно из двух слов', () => {
+    const r = rng(7)
+    let prev: string | undefined
+    for (let i = 0; i < 50; i++) {
+      const { pair, pick } = twinsRound(r, prev)
+      expect(pair.id).not.toBe(prev)
+      expect([0, 1]).toContain(pick)
+      prev = pair.id
+    }
+  })
+
+  it('голос: сначала привычный, с серии 4 — разные', () => {
+    const r = rng(1)
+    expect(twinsVoice(0, 'us-f', r)).toBe('us-f')
+    const voices = new Set(Array.from({ length: 40 }, () => twinsVoice(5, 'us-f', r)))
+    expect(voices.size).toBeGreaterThan(1)
   })
 })

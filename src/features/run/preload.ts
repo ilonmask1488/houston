@@ -1,5 +1,18 @@
 /* Какие звуки понадобятся шагу — чтобы скачать заранее и играть без задержки. */
-import { chunkById, passageById, phraseById, questionById, spokenText, substById, textById, translateById } from '../../content'
+import {
+  chunkById,
+  cleanPhraseById,
+  falseFriendById,
+  pairById,
+  passageById,
+  phraseById,
+  questionById,
+  spokenText,
+  stressById,
+  substById,
+  textById,
+  translateById,
+} from '../../content'
 import type { VoiceId } from '../../content/types'
 import { defaultVoice } from '../../lib/audio/audio'
 import type { Step } from '../../lib/run/steps'
@@ -46,6 +59,23 @@ export function preloadFor(s: Step): T[] {
       if (c) return [{ text: c.en, voice: defaultVoice() }]
       const w = dictById.get(itemId)
       return w?.voices?.length ? [{ text: w.text, voice: w.voices.includes(defaultVoice()) ? defaultVoice() : w.voices[0] }] : []
+    }
+    case 'pairHear':
+    case 'pairSay': {
+      const p = pairById.get(s.pair)
+      return p ? [p.a, p.b].map((text) => ({ text, voice: defaultVoice() })) : []
+    }
+    case 'cleanSay': {
+      const x = cleanPhraseById.get(s.phrase)
+      return x ? [{ text: x.text, voice: defaultVoice() }] : []
+    }
+    case 'stress': {
+      const w = stressById.get(s.word)
+      return w ? [{ text: w.text, voice: defaultVoice() }] : []
+    }
+    case 'falseFriend': {
+      const f = falseFriendById.get(s.item)
+      return f ? [{ text: f.options[0]!, voice: defaultVoice() }] : []
     }
     case 'docRetell': {
       const t = textById.get(s.text)

@@ -24,7 +24,9 @@ import s from './run.module.css'
 import { ChunkStep, QuickStep, SubstituteStep, TranslateStep } from './speaking'
 import { preloadFor } from './preload'
 import { StoryColdStep, StoryKeysStep, StoryListenStep, StoryShadowStep } from '../story/steps'
+import { CleanSayStep, FalseFriendStep, PairHearStep, PairSayStep, StressStep } from './clean'
 import { DocFindStep, DocParseStep, DocReadStep, DocRetellStep, DocSummaryStep } from './doc'
+import { MailFixStep, MailOrderStep, MailRegisterStep, MailWriteStep } from './mail'
 
 export type RunSummary = {
   seconds: number
@@ -195,6 +197,24 @@ export function StepView({ step, onDone }: { step: Step; onDone: (r: StepResult)
       return <DocRetellStep step={step} onDone={onDone} />
     case 'docParse':
       return <DocParseStep step={step} onDone={onDone} />
+    case 'mailRegister':
+      return <MailRegisterStep step={step} onDone={onDone} />
+    case 'mailFix':
+      return <MailFixStep step={step} onDone={onDone} />
+    case 'mailOrder':
+      return <MailOrderStep step={step} onDone={onDone} />
+    case 'mailWrite':
+      return <MailWriteStep step={step} onDone={onDone} />
+    case 'pairHear':
+      return <PairHearStep step={step} onDone={onDone} />
+    case 'pairSay':
+      return <PairSayStep step={step} onDone={onDone} />
+    case 'cleanSay':
+      return <CleanSayStep step={step} onDone={onDone} />
+    case 'stress':
+      return <StressStep step={step} onDone={onDone} />
+    case 'falseFriend':
+      return <FalseFriendStep step={step} onDone={onDone} />
   }
 }
 
