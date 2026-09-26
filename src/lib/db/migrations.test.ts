@@ -38,6 +38,22 @@ const FIXTURES: Record<number, Record<string, unknown[]>> = {
   },
 }
 
+FIXTURES[2] = {
+  ...FIXTURES[1]!,
+  sessions: [
+    {
+      date: '2026-09-27',
+      segments: [{ id: 'air-1', block: 'air', kind: 'steps', label: 'x', steps: [{ kind: 'listen', phrase: 'l-weak-01', speed: 1 }], minutes: 3, status: 'done' }],
+      startedAt: 1,
+      seconds: 300,
+      signal: 40,
+      correct: 3,
+      total: 4,
+      spokenMs: 20_000,
+    },
+  ],
+}
+
 let counter = 0
 const names: string[] = []
 function freshName(): string {

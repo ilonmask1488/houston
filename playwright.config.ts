@@ -5,6 +5,8 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   testDir: 'e2e',
   fullyParallel: true,
+  // Больше трёх браузеров сразу — и vite preview на слабой машине перестаёт отвечать.
+  workers: process.env.CI ? 2 : 3,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? 'github' : 'list',

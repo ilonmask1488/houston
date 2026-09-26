@@ -1,0 +1,224 @@
+[
+ {
+  "module": "air-weak",
+  "intro": [
+   "В беглой речи служебные слова — to, and, can, for, of, you, them, have, was — почти теряют гласную. Громкость и ударение уходят на смысловые слова.",
+   "Если ждать чёткого «ту» и «энд», фраза пролетает мимо. Ловить нужно ударные слова, а безударные — узнавать по короткому «э»."
+  ],
+  "rules": [
+   [
+    "to",
+    "/tuː/ → /tə/",
+    "I need to go → ai-NEED-tə-GO"
+   ],
+   [
+    "and",
+    "/ænd/ → /ən/, /n/",
+    "rock and roll → rock-n-roll"
+   ],
+   [
+    "can",
+    "/kæn/ → /kən/",
+    "I can do it → ai-kən-DO-it"
+   ],
+   [
+    "for",
+    "/fɔːr/ → /fə/",
+    "for a week → fə-rə-WEEK"
+   ],
+   [
+    "of",
+    "/ɒv/ → /əv/, /ə/",
+    "a lot of work → ə-LOT-ə-WORK"
+   ],
+   [
+    "them",
+    "/ðem/ → /ðəm/, /əm/",
+    "tell them → TELL-əm"
+   ],
+   [
+    "have",
+    "/hæv/ → /əv/",
+    "should have → SHOULD-əv"
+   ]
+  ],
+  "tip": "can и can't: в утверждении can слабое /kən/, а can't ударное, с полной гласной. Различай по гласной и ударению, а не по звуку t — его часто не слышно."
+ },
+ {
+  "module": "air-link",
+  "intro": [
+   "Конечная согласная «прилипает» к следующей гласной: turn it off звучит как tur-ni-toff, an apple — как a-napple.",
+   "Между двумя гласными вставляется лёгкое /j/ или /w/: I agree → I-y-agree, go on → go-w-on. В британском r на конце слова слышно, если дальше гласная: far away → fa-raway."
+  ],
+  "rules": [
+   [
+    "согласная + гласная",
+    "слово цепляется за следующее",
+    "pick it up → pi-ki-tup"
+   ],
+   [
+    "гласная + гласная",
+    "вставка /j/ или /w/",
+    "I agree → aj-ə-GREE, do it → doo-w-it"
+   ],
+   [
+    "британское r",
+    "звучит перед гласной",
+    "far away → faa-rə-WAY"
+   ],
+   [
+    "одинаковые звуки",
+    "сливаются в один, чуть длиннее",
+    "big game → bi-GAME"
+   ]
+  ],
+  "tip": "Если слышишь незнакомое «длинное слово» — попробуй разрезать его по-другому: tur-ni-toff — это turn it off."
+ },
+ {
+  "module": "air-elision",
+  "intro": [
+   "Звуки t и d между согласными часто пропадают: next day → nex day, last time → las time, must be → mus be.",
+   "В середине фразы he, him, her, his теряют h: tell him → TELL-im, asked her → ASK-ter."
+  ],
+  "rules": [
+   [
+    "t между согласными",
+    "выпадает",
+    "next week → nex week, just thought → jus thought"
+   ],
+   [
+    "d между согласными",
+    "выпадает",
+    "old man → ol man, handbag → hanbag"
+   ],
+   [
+    "h в местоимениях",
+    "не слышно без ударения",
+    "did he → DID-ee, tell her → TELL-er"
+   ],
+   [
+    "and",
+    "превращается в n",
+    "black and white → black-n-white"
+   ]
+  ],
+  "tip": "Отсутствие звука не значит отсутствие слова: пропавший t часто слышен как короткая пауза-«зажим» перед следующим звуком."
+ },
+ {
+  "module": "air-assim",
+  "intro": [
+   "Соседние звуки влияют друг на друга. d + you даёт «джу»: did you → didja, would you → wouldja. t + you — «чу»: don't you → doncha, got you → gotcha.",
+   "Частые связки сжимаются: want to → wanna, going to → gonna, have to → hafta, got to → gotta, let me → lemme, give me → gimme. В письме так не пишут, но говорят так почти все."
+  ],
+  "rules": [
+   [
+    "d + you",
+    "→ «джу»",
+    "did you → DID-jə, would you → WOOD-jə"
+   ],
+   [
+    "t + you",
+    "→ «чу»",
+    "don't you → DOHN-chə, what you → WHA-chə"
+   ],
+   [
+    "want to / going to",
+    "→ wanna / gonna",
+    "I'm going to call → aim-gənə-CALL"
+   ],
+   [
+    "have to / got to",
+    "→ hafta / gotta",
+    "we have to go → wee-HAF-tə-GO"
+   ],
+   [
+    "let me / give me",
+    "→ lemme / gimme",
+    "let me see → LEM-mee-SEE"
+   ]
+  ],
+  "tip": "Сам так говорить не обязан — но узнавать на слух нужно: в созвонах и на собеседованиях иначе почти не говорят."
+ },
+ {
+  "module": "air-contract",
+  "intro": [
+   "Сокращения на слух — это короткий призвук перед глаголом: I'd go, I'll go и I go различаются одним звуком d или l.",
+   "would have, should have, could have сжимаются до would've, should've, could've — «вудэв», «шудэв». Бывает даже shouldn't've."
+  ],
+  "rules": [
+   [
+    "I'd",
+    "I would / I had",
+    "I'd go → I would go; I'd gone → I had gone"
+   ],
+   [
+    "I'll",
+    "I will",
+    "I'll send it → ail SEND it"
+   ],
+   [
+    "he's / she's",
+    "he is / he has",
+    "he's finished → he has finished"
+   ],
+   [
+    "would've / should've",
+    "would have / should have",
+    "you should've asked → SHOOD-əv"
+   ],
+   [
+    "-n't",
+    "не: слышно по гласной",
+    "can't /kɑːnt/ vs can /kən/"
+   ]
+  ],
+  "tip": "he's + причастие (he's finished) — это has, he's + прилагательное или -ing (he's busy, he's working) — это is. Смысл подскажет, если звук не разобрал."
+ },
+ {
+  "module": "air-accents",
+  "intro": [
+   "На работе собеседники будут из разных стран. Британцы не произносят r на конце слога (car → kaa), американцы часто превращают t между гласными в быстрое d (water → wa-der).",
+   "В индийском английском t и d твёрже, ритм ровнее, гласные чище. Австралийцы тянут гласные и «поднимают» их: day звучит ближе к «дай»."
+  ],
+  "rules": [
+   [
+    "US",
+    "r слышно всегда, t → «d» между гласными",
+    "better → BED-er"
+   ],
+   [
+    "UK",
+    "r на конце не слышно, t чёткое",
+    "better → BET-ə"
+   ],
+   [
+    "Индия",
+    "твёрдые t и d, ровный ритм",
+    "data → DAA-ta"
+   ],
+   [
+    "Австралия",
+    "гласные ползут вверх",
+    "mate → «майт», no → «нау»"
+   ]
+  ],
+  "tip": "Не пытайся понять каждое слово: сначала — кто что делает и когда, детали потом."
+ },
+ {
+  "module": "air-long",
+  "intro": [
+   "Длинный отрывок слушаем в два захода. Первый — только суть: кто говорит, о чём договорились, что дальше.",
+   "Второй — с текстом: где именно потерялся и почему. Не останавливай запись на каждом незнакомом слове — в жизни паузы тоже никто не сделает."
+  ],
+  "rules": [],
+  "tip": "Вопросы по-русски — чтобы проверять понимание, а не английский выбор слов."
+ },
+ {
+  "module": "air-fast",
+  "intro": [
+   "Всё, что уже знакомо, — на скорости 1.25. Это быстрее, чем обычно говорят на работе: если понимаешь здесь, созвоны покажутся медленными."
+  ],
+  "rules": [],
+  "tip": "Сначала прослушай на 1.0, потом сразу на 1.25 — мозг быстро подстраивается."
+ }
+]

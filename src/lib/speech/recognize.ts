@@ -216,7 +216,26 @@ export function normalizeWords(text: string): string[] {
 export type WordMatch = { word: string; ok: boolean }
 
 /** Какие слова образца нашлись в распознанном (по наибольшей общей подпоследовательности). */
-export function compareWords(target: string, heard: string): { words: WordMatch[]; ok: number; total: number } {
+/** Расстояние Левенштейна (для опечаток в диктанте). */
+export function editDistance(a: string, b: string): number {
+  const prev = Array.from({ length: b.length + 1 }, (_, j) => j)
+  for (let i = 1; i <= a.length; i++) {
+    let diag = prev[0]!
+    prev[0] = i
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = prev[j]!
+      prev[j] = Math.min(prev[j]! + 1, prev[j - 1]! + 1, diag + (a[i - 1] === b[j - 1] ? 0 : 1))
+      diag = tmp
+    }
+  }
+  return prev[b.length]!
+}
+
+/**
+  Какие слова образца нашлись в ответе. fuzzy — для диктанта: опечатка в одну букву
+  в слове от 5 букв (recieve) не считается ошибкой.
+*/
+export function compareWords(target: string, heard: string, fuzzy = false): { words: WordMatch[]; ok: number; total: number } {
   const shown = target.split(/\s+/).filter(Boolean)
   const a = shown.map((w) => normalizeWords(w).join(' ')).filter(Boolean)
   const shownFiltered = shown.filter((w) => normalizeWords(w).length)
@@ -224,14 +243,15 @@ export function compareWords(target: string, heard: string): { words: WordMatch[
   // Цель — последовательность «единиц» (слово образца может раскрыться в два: I'm → i am).
   const units = a.map((u) => u.split(' '))
   const flat = units.flat()
+  const eq = (x: string, y: string) => x === y || (fuzzy && x.length >= 5 && Math.abs(x.length - y.length) <= 1 && editDistance(x, y) <= 1)
   const dp = Array.from({ length: flat.length + 1 }, () => new Array<number>(b.length + 1).fill(0))
   for (let i = flat.length - 1; i >= 0; i--)
-    for (let j = b.length - 1; j >= 0; j--) dp[i]![j] = flat[i] === b[j] ? dp[i + 1]![j + 1]! + 1 : Math.max(dp[i + 1]![j]!, dp[i]![j + 1]!)
+    for (let j = b.length - 1; j >= 0; j--) dp[i]![j] = eq(flat[i]!, b[j]!) ? dp[i + 1]![j + 1]! + 1 : Math.max(dp[i + 1]![j]!, dp[i]![j + 1]!)
   const hit: boolean[] = new Array(flat.length).fill(false)
   let i = 0
   let j = 0
   while (i < flat.length && j < b.length) {
-    if (flat[i] === b[j]) {
+    if (eq(flat[i]!, b[j]!)) {
       hit[i] = true
       i++
       j++

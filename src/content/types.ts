@@ -57,7 +57,56 @@ export type IntakeContent = {
   micPhrase: string
 }
 
+/* ——— Эфир ——— */
+
+/** Фраза для аудирования. options[0] — верная расшифровка, остальные — ловушки. say — как произносит синтез (gonna). */
+export type Phrase = {
+  id: string
+  module: string
+  text: string
+  say?: string
+  options: string[]
+  ru: string
+  /** фрагмент, где живёт явление связной речи */
+  focus: string
+  voice: VoiceId
+  /** для «Акцентов»: одна фраза разными голосами */
+  voices?: VoiceId[]
+  reviewed: boolean
+}
+
+export type Connected = { module: string; intro: string[]; rules: [string, string, string][]; tip: string }
+
+export type Character = { id: string; name: string; role: string; voice: VoiceId }
+
+export type Passage = {
+  id: string
+  module: string
+  title: string
+  kind: string
+  situation: string
+  lines: { speaker: string; voice: VoiceId; text: string }[]
+  /** answer — индекс верного варианта (в данных всегда 0, приложение перемешивает) */
+  questions: { q: string; options: string[]; answer: number }[]
+  reviewed: boolean
+}
+
+/* ——— Позывной ——— */
+
+export type Chunk = { id: string; module: string; fn: string; en: string; ru: string; example?: string; exampleRu?: string; reviewed: boolean }
+export type QuickQuestion = { id: string; module: string; q: string; ru: string; voice: VoiceId; reviewed: boolean }
+export type TranslateItem = { id: string; module: string; ru: string; en: string; reviewed: boolean }
+export type Substitution = { id: string; module: string; base: string; ru: string; swaps: { cue: string; en: string }[]; reviewed: boolean }
+
 export type Content = {
   modules: Module[]
   intake: IntakeContent
+  connected: Connected[]
+  phrases: Phrase[]
+  passages: Passage[]
+  characters: Character[]
+  chunks: Chunk[]
+  questions: QuickQuestion[]
+  translate: TranslateItem[]
+  substitution: Substitution[]
 }

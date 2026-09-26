@@ -1,0 +1,50 @@
+[
+ {
+  "id": "dana",
+  "name": "Dana Walsh",
+  "role": "тимлид, строгая и точная",
+  "voice": "us-f"
+ },
+ {
+  "id": "tom",
+  "name": "Tom Baker",
+  "role": "коллега-болтун, вечно шутит",
+  "voice": "au-m"
+ },
+ {
+  "id": "oliver",
+  "name": "Oliver Hughes",
+  "role": "британец, говорит очень быстро",
+  "voice": "gb-m"
+ },
+ {
+  "id": "priya",
+  "name": "Priya Nair",
+  "role": "инженер-наставница из Бангалора",
+  "voice": "in-f"
+ },
+ {
+  "id": "arjun",
+  "name": "Arjun Mehta",
+  "role": "инженер-испытатель",
+  "voice": "in-m"
+ },
+ {
+  "id": "sophie",
+  "name": "Sophie Clarke",
+  "role": "менеджер поставщика",
+  "voice": "gb-f"
+ },
+ {
+  "id": "mike",
+  "name": "Mike Chen",
+  "role": "интервьюер, HR",
+  "voice": "us-m"
+ },
+ {
+  "id": "grace",
+  "name": "Grace Kelly",
+  "role": "специалист по качеству из Сиднея",
+  "voice": "au-f"
+ }
+]

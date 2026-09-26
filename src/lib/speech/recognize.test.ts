@@ -31,6 +31,12 @@ describe('сравнение с образцом', () => {
     expect(best?.heard).toBe('think')
   })
 
+  it('диктант прощает опечатку в длинном слове, но не в коротком', () => {
+    expect(compareWords('We tested the pressure sensor.', 'we tested the presure sensor', true).ok).toBe(5)
+    expect(compareWords('We tested the pressure sensor.', 'we tested the presure sensor').ok).toBe(4)
+    expect(compareWords('Can you send it?', 'can you sand it', true).ok).toBe(3)
+  })
+
   it('подсчёт слов', () => {
     expect(countWords("That's a good question, let me think.")).toBe(8)
   })

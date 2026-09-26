@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "s-intro-01",
+  "module": "call-intro",
+  "base": "I'm particularly interested in structural analysis.",
+  "ru": "Меня особенно интересует прочностной анализ.",
+  "swaps": [
+   {
+    "cue": "двигатели",
+    "en": "I'm particularly interested in propulsion."
+   },
+   {
+    "cue": "материалы",
+    "en": "I'm particularly interested in materials."
+   },
+   {
+    "cue": "системы управления",
+    "en": "I'm particularly interested in control systems."
+   }
+  ],
+  "speak": [
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm particularly interested in propulsion.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in propulsion.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in propulsion.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in propulsion.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm particularly interested in materials.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in materials.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in materials.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in materials.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm particularly interested in control systems.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in control systems.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in control systems.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in control systems.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-intro-02",
+  "module": "call-intro",
+  "base": "My background is in rocket and space engineering.",
+  "ru": "По специальности я инженер ракетно-космической техники.",
+  "swaps": [
+   {
+    "cue": "машиностроение",
+    "en": "My background is in mechanical engineering."
+   },
+   {
+    "cue": "материаловедение",
+    "en": "My background is in materials science."
+   },
+   {
+    "cue": "прикладная математика",
+    "en": "My background is in applied mathematics."
+   }
+  ],
+  "speak": [
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-time-01",
+  "module": "call-time",
+  "base": "Off the top of my head, I'd say about two weeks.",
+  "ru": "Навскидку — около двух недель.",
+  "swaps": [
+   {
+    "cue": "около ста килограммов",
+    "en": "Off the top of my head, I'd say about a hundred kilograms."
+   },
+   {
+    "cue": "примерно пять процентов",
+    "en": "Off the top of my head, I'd say about five percent."
+   },
+   {
+    "cue": "три-четыре человека",
+    "en": "Off the top of my head, I'd say three or four people."
+   }
+  ],
+  "speak": [
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about a hundred kilograms.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about a hundred kilograms.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about a hundred kilograms.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about a hundred kilograms.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about five percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about five percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about five percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about five percent.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say three or four people.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say three or four people.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say three or four people.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say three or four people.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-clarify-01",
+  "module": "call-clarify",
+  "base": "Could you send me the drawings by Friday?",
+  "ru": "Можешь прислать чертежи до пятницы?",
+  "swaps": [
+   {
+    "cue": "отчёт / к среде",
+    "en": "Could you send me the report by Wednesday?"
+   },
+   {
+    "cue": "данные испытаний / к завтрашнему дню",
+    "en": "Could you send me the test data by tomorrow?"
+   },
+   {
+    "cue": "обновлённый график / к концу недели",
+    "en": "Could you send me the updated schedule by the end of the week?"
+   }
+  ],
+  "speak": [
+   {
+    "text": "Could you send me the drawings by Friday?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you send me the drawings by Friday?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you send me the drawings by Friday?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you send me the drawings by Friday?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Could you send me the report by Wednesday?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you send me the report by Wednesday?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you send me the report by Wednesday?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you send me the report by Wednesday?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Could you send me the test data by tomorrow?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you send me the test data by tomorrow?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you send me the test data by tomorrow?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you send me the test data by tomorrow?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Could you send me the updated schedule by the end of the week?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you send me the updated schedule by the end of the week?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you send me the updated schedule by the end of the week?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you send me the updated schedule by the end of the week?",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-clarify-02",
+  "module": "call-clarify",
+  "base": "Do you mean the first version or the second one?",
+  "ru": "Ты про первую версию или вторую?",
+  "swaps": [
+   {
+    "cue": "старый чертёж / новый",
+    "en": "Do you mean the old drawing or the new one?"
+   },
+   {
+    "cue": "этот датчик / тот",
+    "en": "Do you mean this sensor or that one?"
+   },
+   {
+    "cue": "понедельник / вторник",
+    "en": "Do you mean Monday or Tuesday?"
+   }
+  ],
+  "speak": [
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Do you mean the old drawing or the new one?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean the old drawing or the new one?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean the old drawing or the new one?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean the old drawing or the new one?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Do you mean this sensor or that one?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean this sensor or that one?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean this sensor or that one?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean this sensor or that one?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Do you mean Monday or Tuesday?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean Monday or Tuesday?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean Monday or Tuesday?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean Monday or Tuesday?",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-project-01",
+  "module": "call-project",
+  "base": "I've been working on composite testing for two months.",
+  "ru": "Я уже два месяца занимаюсь испытаниями композитов.",
+  "swaps": [
+   {
+    "cue": "CAD-модель / три недели",
+    "en": "I've been working on the CAD model for three weeks."
+   },
+   {
+    "cue": "тепловой расчёт / полгода",
+    "en": "I've been working on the thermal analysis for six months."
+   },
+   {
+    "cue": "испытательный стенд / год",
+    "en": "I've been working on the test rig for a year."
+   }
+  ],
+  "speak": [
+   {
+    "text": "I've been working on composite testing for two months.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've been working on composite testing for two months.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've been working on composite testing for two months.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've been working on composite testing for two months.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I've been working on the CAD model for three weeks.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've been working on the CAD model for three weeks.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've been working on the CAD model for three weeks.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've been working on the CAD model for three weeks.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I've been working on the thermal analysis for six months.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've been working on the thermal analysis for six months.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've been working on the thermal analysis for six months.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've been working on the thermal analysis for six months.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I've been working on the test rig for a year.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've been working on the test rig for a year.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've been working on the test rig for a year.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've been working on the test rig for a year.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-project-02",
+  "module": "call-project",
+  "base": "I'm responsible for the thermal design.",
+  "ru": "Я отвечаю за тепловое проектирование.",
+  "swaps": [
+   {
+    "cue": "расчёт на прочность",
+    "en": "I'm responsible for the stress analysis."
+   },
+   {
+    "cue": "закупки",
+    "en": "I'm responsible for procurement."
+   },
+   {
+    "cue": "документация",
+    "en": "I'm responsible for the documentation."
+   }
+  ],
+  "speak": [
+   {
+    "text": "I'm responsible for the thermal design.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm responsible for the thermal design.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm responsible for the thermal design.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm responsible for the thermal design.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm responsible for the stress analysis.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm responsible for the stress analysis.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm responsible for the stress analysis.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm responsible for the stress analysis.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm responsible for procurement.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm responsible for procurement.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm responsible for procurement.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm responsible for procurement.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm responsible for the documentation.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm responsible for the documentation.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm responsible for the documentation.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm responsible for the documentation.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-project-03",
+  "module": "call-project",
+  "base": "The main challenge was the weight.",
+  "ru": "Главной трудностью был вес.",
+  "swaps": [
+   {
+    "cue": "сроки",
+    "en": "The main challenge was the deadline."
+   },
+   {
+    "cue": "вибрация",
+    "en": "The main challenge was vibration."
+   },
+   {
+    "cue": "бюджет",
+    "en": "The main challenge was the budget."
+   }
+  ],
+  "speak": [
+   {
+    "text": "The main challenge was the weight.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was the weight.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was the weight.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was the weight.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The main challenge was the deadline.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was the deadline.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was the deadline.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was the deadline.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The main challenge was vibration.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was vibration.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was vibration.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was vibration.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The main challenge was the budget.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was the budget.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was the budget.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was the budget.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-explain-01",
+  "module": "call-explain",
+  "base": "Think of it as a very stiff spring.",
+  "ru": "Представь это как очень жёсткую пружину.",
+  "swaps": [
+   {
+    "cue": "очень тонкая мембрана",
+    "en": "Think of it as a very thin membrane."
+   },
+   {
+    "cue": "большой термос",
+    "en": "Think of it as a big thermos."
+   },
+   {
+    "cue": "рычаг",
+    "en": "Think of it as a lever."
+   }
+  ],
+  "speak": [
+   {
+    "text": "Think of it as a very stiff spring.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as a very stiff spring.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as a very stiff spring.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as a very stiff spring.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Think of it as a very thin membrane.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as a very thin membrane.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as a very thin membrane.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as a very thin membrane.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Think of it as a big thermos.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as a big thermos.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as a big thermos.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as a big thermos.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Think of it as a lever.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as a lever.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as a lever.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as a lever.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-disagree-01",
+  "module": "call-disagree",
+  "base": "I see your point, but we're short on time.",
+  "ru": "Понимаю, но у нас мало времени.",
+  "swaps": [
+   {
+    "cue": "у нас нет данных",
+    "en": "I see your point, but we don't have the data."
+   },
+   {
+    "cue": "это дороже",
+    "en": "I see your point, but it's more expensive."
+   },
+   {
+    "cue": "это рискованно",
+    "en": "I see your point, but it's risky."
+   }
+  ],
+  "speak": [
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I see your point, but we don't have the data.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but we don't have the data.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but we don't have the data.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but we don't have the data.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I see your point, but it's more expensive.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but it's more expensive.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but it's more expensive.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but it's more expensive.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I see your point, but it's risky.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but it's risky.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but it's risky.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but it's risky.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-disagree-02",
+  "module": "call-disagree",
+  "base": "I don't know, but I'll find out by tomorrow.",
+  "ru": "Не знаю, но выясню к завтра.",
+  "swaps": [
+   {
+    "cue": "к обеду",
+    "en": "I don't know, but I'll find out by lunch."
+   },
+   {
+    "cue": "на этой неделе",
+    "en": "I don't know, but I'll find out this week."
+   },
+   {
+    "cue": "после созвона",
+    "en": "I don't know, but I'll find out after the call."
+   }
+  ],
+  "speak": [
+   {
+    "text": "I don't know, but I'll find out by tomorrow.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I don't know, but I'll find out by tomorrow.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I don't know, but I'll find out by tomorrow.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I don't know, but I'll find out by tomorrow.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I don't know, but I'll find out by lunch.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I don't know, but I'll find out by lunch.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I don't know, but I'll find out by lunch.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I don't know, but I'll find out by lunch.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I don't know, but I'll find out this week.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I don't know, but I'll find out this week.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I don't know, but I'll find out this week.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I don't know, but I'll find out this week.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I don't know, but I'll find out after the call.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I don't know, but I'll find out after the call.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I don't know, but I'll find out after the call.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I don't know, but I'll find out after the call.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "s-questions-01",
+  "module": "call-questions",
+  "base": "What does a typical day look like in this role?",
+  "ru": "Как выглядит обычный день на этой позиции?",
+  "swaps": [
+   {
+    "cue": "в вашей команде",
+    "en": "What does a typical day look like in your team?"
+   },
+   {
+    "cue": "для стажёра",
+    "en": "What does a typical day look like for an intern?"
+   },
+   {
+    "cue": "на испытательной площадке",
+    "en": "What does a typical day look like at the test site?"
+   }
+  ],
+  "speak": [
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "What does a typical day look like in your team?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What does a typical day look like in your team?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What does a typical day look like in your team?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What does a typical day look like in your team?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "What does a typical day look like for an intern?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What does a typical day look like for an intern?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What does a typical day look like for an intern?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What does a typical day look like for an intern?",
+    "voice": "gb-m"
+   },
+   {
+    "text": "What does a typical day look like at the test site?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What does a typical day look like at the test site?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What does a typical day look like at the test site?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What does a typical day look like at the test site?",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ }
+]

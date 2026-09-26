@@ -1,0 +1,80 @@
+.segments {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.segment {
+  display: grid;
+  grid-template-columns: 3.5em 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 60px;
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) dashed var(--line);
+}
+
+.segment[data-status='done'],
+.segment[data-status='skipped'] {
+  color: var(--ink-2);
+}
+
+.segment[data-current] {
+  box-shadow: inset 3px 0 0 var(--signal);
+  padding-left: var(--space-2);
+}
+
+.mark {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.segment[data-status='done'] .mark {
+  color: var(--ok);
+  font-size: var(--fs-lead);
+}
+
+.text {
+  display: grid;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.min {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+  font-weight: 400;
+}
+
+.what {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.honest {
+  margin-top: var(--space-3);
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.launch {
+  position: sticky;
+  bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--space-2));
+  display: grid;
+  gap: var(--space-1);
+  justify-items: center;
+  margin-top: var(--space-5);
+  padding-top: var(--space-2);
+  background: linear-gradient(to bottom, transparent, var(--paper) 30%);
+}
+
+.done {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+  margin-top: var(--space-5);
+  text-align: center;
+}

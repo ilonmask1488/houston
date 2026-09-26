@@ -96,14 +96,19 @@ def main() -> int:
 
     manifest = {"version": 1, "sources": sources(), "texts": {}}
     review: list[str] = []
+    reviewed_texts: set[str] = set()
     tmp = CACHE / "tmp.mp3"
     for text, voice_key in pairs:
         tmp.write_bytes(raw[(text, voice_key)])
         file, ms = encode(process(decode(tmp)), AUDIO / needs[(text, voice_key)], f"{voice_key}-{text_stem(text)}")
         manifest["texts"].setdefault(text, []).append({"voice": voice_key, "file": file, "source": f"edge-{voice_key}", "ms": ms})
+        # На проверку — только фразы для аудирования (Эфир и вводный тест): там связная речь и есть предмет урока.
+        if not (needs[(text, voice_key)].startswith("air") or needs[(text, voice_key)] == "intake") or text in reviewed_texts:
+            continue
         for rx, what in CONNECTED:
             if rx.search(text):
                 review.append(f"| {text} | {voice_key} | {what} |")
+                reviewed_texts.add(text)
                 break
 
     AUDIO.mkdir(parents=True, exist_ok=True)

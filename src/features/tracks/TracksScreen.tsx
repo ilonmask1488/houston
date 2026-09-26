@@ -1,15 +1,19 @@
+import { useLiveQuery } from 'dexie-react-hooks'
+import { Link } from 'react-router-dom'
 import { ScoreBar } from '../../components/Instruments'
 import { Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
 import { modulesByTrack } from '../../content'
 import { TRACKS } from '../../content/types'
 import { ru } from '../../i18n/ru'
+import { currentModule, hasContent, loadProgress, moduleShare } from '../../lib/course/progress'
 import { startModule } from '../../lib/intake/score'
 import { useIntakeState } from '../../lib/intake/store'
 import s from './tracks.module.css'
 
 export function TracksScreen() {
   const { last } = useIntakeState()
+  const progress = useLiveQuery(() => loadProgress(), [])
   const t = ru.trackScreen
   return (
     <Screen title={t.title} subtitle={t.subtitle}>
@@ -18,7 +22,8 @@ export function TracksScreen() {
         {TRACKS.map((id) => {
           const modules = modulesByTrack.get(id) ?? []
           const score = last?.tracks[id]
-          const start = last ? startModule(modules, score!, last.result.weakTags) : undefined
+          const start = last ? startModule(modules, last.tracks[id], last.result.weakTags) : undefined
+          const current = progress ? currentModule(id, progress, last) : undefined
           return (
             <section key={id} className={s.track} aria-labelledby={`track-${id}`}>
               <header className={s.head}>
@@ -29,18 +34,31 @@ export function TracksScreen() {
               <p className={s.what}>{ru.tracks[id].what}</p>
               {score !== undefined && <ScoreBar value={score} label={`${ru.tracks[id].title}: ${score}`} />}
               <ol className={s.modules}>
-                {modules.map((m) => (
-                  <li key={m.id} className={s.module} data-start={m.id === start?.id || undefined}>
-                    <span className={`${s.order} mono`}>{String(m.order).padStart(2, '0')}</span>
-                    <span>
-                      <span className={s.mTitle}>
-                        {m.title}
-                        {m.id === start?.id && <span className={s.startTag}>{t.start}</span>}
+                {modules.map((m) => {
+                  const ready = hasContent(m.id)
+                  const row = progress?.get(m.id)
+                  const share = progress ? Math.round(moduleShare(progress, m.id) * 100) : 0
+                  return (
+                    <li key={m.id} className={s.module} data-start={m.id === start?.id || undefined} data-current={m.id === current?.id || undefined} data-done={row?.completedAt ? true : undefined}>
+                      <span className={`${s.order} mono`}>{row?.completedAt ? '✓' : String(m.order).padStart(2, '0')}</span>
+                      <span>
+                        <span className={s.mTitle}>
+                          {m.title}
+                          {m.id === start?.id && <span className={s.startTag}>{t.start}</span>}
+                        </span>
+                        <span className={s.mWhat}>{m.what}</span>
+                        {ready && share > 0 && !row?.completedAt && <span className={`${s.share} mono`}>{t.share(share)}</span>}
                       </span>
-                      <span className={s.mWhat}>{m.what}</span>
-                    </span>
-                  </li>
-                ))}
+                      {ready ? (
+                        <Link to={`/run/module/${m.id}`} className={s.open} aria-label={`${t.open}: ${m.title}`}>
+                          {t.open}
+                        </Link>
+                      ) : (
+                        <span className={s.soon}>{t.soon}</span>
+                      )}
+                    </li>
+                  )
+                })}
               </ol>
             </section>
           )

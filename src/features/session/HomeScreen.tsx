@@ -29,7 +29,8 @@ export function HomeScreen() {
     return { days: streak.days, reserve: streak.reserveUsed, signal: days.reduce((sum, d) => sum + d.signal, 0) }
   }, [])
   const [greeting] = useState(() => ru.greetings[dayOfYear() % ru.greetings.length]!)
-  const [soon, setSoon] = useState(false)
+  const today = useLiveQuery(() => db.sessions.get(localDate()), [])
+  const doneSegs = today?.segments.filter((x) => x.status !== 'pending').length ?? 0
   const signal = telemetry?.signal ?? 0
 
   return (
@@ -117,11 +118,13 @@ export function HomeScreen() {
       )}
 
       <div className={s.launch}>
-        {soon && <p className={s.soon}>{ru.placeholder.session}</p>}
+        {today && doneSegs > 0 && (
+          <p className={`${s.today} mono`}>{today.finishedAt ? ru.home.todayDone : ru.home.today(doneSegs, today.segments.length)}</p>
+        )}
         {intake.loaded &&
           (intake.last ? (
-            <button type="button" className={ui.signalButton} onClick={() => setSoon(true)}>
-              {ru.home.start}
+            <button type="button" className={ui.signalButton} onClick={() => navigate('/session')}>
+              {today?.finishedAt ? ru.home.again : doneSegs > 0 ? ru.home.continue : ru.home.start}
             </button>
           ) : (
             <button type="button" className={ui.signalButton} onClick={() => navigate('/intake')}>

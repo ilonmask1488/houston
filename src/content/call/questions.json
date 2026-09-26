@@ -1,0 +1,226 @@
+[
+ {
+  "id": "q-intro-01",
+  "module": "call-intro",
+  "q": "Tell me about yourself.",
+  "ru": "Расскажи о себе.",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-02",
+  "module": "call-intro",
+  "q": "What are you studying at the moment?",
+  "ru": "Что ты сейчас изучаешь?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-03",
+  "module": "call-intro",
+  "q": "Why did you choose engineering?",
+  "ru": "Почему ты выбрал инженерию?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-04",
+  "module": "call-intro",
+  "q": "What do you do in your free time?",
+  "ru": "Чем занимаешься в свободное время?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-05",
+  "module": "call-intro",
+  "q": "Where do you see yourself in five years?",
+  "ru": "Где ты видишь себя через пять лет?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-01",
+  "module": "call-time",
+  "q": "What's your biggest weakness?",
+  "ru": "Какая твоя главная слабость?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-02",
+  "module": "call-time",
+  "q": "How would you explain your thesis to a ten-year-old?",
+  "ru": "Как бы ты объяснил свою дипломную работу десятилетнему ребёнку?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-03",
+  "module": "call-time",
+  "q": "If you could work on any space mission, which one would it be?",
+  "ru": "Если бы можно было работать над любой космической миссией — какой?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-04",
+  "module": "call-time",
+  "q": "What's the most interesting thing you've learned this year?",
+  "ru": "Что самое интересное ты узнал в этом году?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-01",
+  "module": "call-clarify",
+  "q": "Could you tell me about your experience with the V and V process?",
+  "ru": "Расскажи о своём опыте с процессом верификации и валидации. (Если непонятно — переспроси!)",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-02",
+  "module": "call-clarify",
+  "q": "How would you handle an NCR on the line?",
+  "ru": "Как бы ты поступил с актом о несоответствии на производстве? (Переспроси, что такое NCR.)",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-03",
+  "module": "call-clarify",
+  "q": "What's your take on MBSE for small teams?",
+  "ru": "Что думаешь о модельно-ориентированном системном проектировании для малых команд? (Можно уточнить.)",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-01",
+  "module": "call-project",
+  "q": "Tell me about a project you're proud of.",
+  "ru": "Расскажи о проекте, которым гордишься.",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-02",
+  "module": "call-project",
+  "q": "What was the hardest technical problem you've solved?",
+  "ru": "Какую самую сложную техническую задачу ты решил?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-03",
+  "module": "call-project",
+  "q": "Describe a time you made a mistake. What did you learn?",
+  "ru": "Расскажи об ошибке, которую ты совершил. Чему научился?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-04",
+  "module": "call-project",
+  "q": "What was your role in your last team project?",
+  "ru": "Какая была твоя роль в последнем командном проекте?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-05",
+  "module": "call-project",
+  "q": "Tell me about a time you worked under pressure.",
+  "ru": "Расскажи, как работал в условиях давления и сжатых сроков.",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-01",
+  "module": "call-explain",
+  "q": "Can you explain what finite element analysis is?",
+  "ru": "Объясни, что такое метод конечных элементов.",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-02",
+  "module": "call-explain",
+  "q": "How does a rocket engine work, in simple terms?",
+  "ru": "Как работает ракетный двигатель, если просто?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-03",
+  "module": "call-explain",
+  "q": "What's the difference between strength and stiffness?",
+  "ru": "В чём разница между прочностью и жёсткостью?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-04",
+  "module": "call-explain",
+  "q": "Why are composites used in aircraft?",
+  "ru": "Почему в самолётах используют композиты?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-05",
+  "module": "call-explain",
+  "q": "What is a strain gauge, and why do we need it?",
+  "ru": "Что такое тензодатчик и зачем он нужен?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-01",
+  "module": "call-disagree",
+  "q": "Some people say simulation will replace testing. What do you think?",
+  "ru": "Некоторые говорят, что моделирование заменит испытания. Что думаешь?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-02",
+  "module": "call-disagree",
+  "q": "Our team thinks deadlines matter more than documentation. Do you agree?",
+  "ru": "Наша команда считает, что сроки важнее документации. Согласен?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-03",
+  "module": "call-disagree",
+  "q": "What would you do if you disagreed with your manager?",
+  "ru": "Что будешь делать, если не согласен с руководителем?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-04",
+  "module": "call-disagree",
+  "q": "Do you know how our production line is organized?",
+  "ru": "Знаешь, как устроена наша производственная линия? (Можно честно сказать, что нет.)",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-01",
+  "module": "call-questions",
+  "q": "Do you have any questions for us?",
+  "ru": "У тебя есть вопросы к нам?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-02",
+  "module": "call-questions",
+  "q": "Is there anything else you'd like to know about the role?",
+  "ru": "Хочешь ещё что-нибудь узнать о позиции?",
+  "voice": "au-f",
+  "reviewed": false
+ }
+]

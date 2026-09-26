@@ -51,12 +51,482 @@
   }
  },
  "texts": {
+  "About forty seconds in, the accelerometer on the bracket started showing a spike at around a hundred and twenty hertz.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-9fbe93c31f-da6109df.mp3",
+    "source": "edge-gb-m",
+    "ms": 6090
+   }
+  ],
+  "All the data goes to this computer at a thousand samples per second. The whole setup took us about three months to build, mostly because of the safety enclosure.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-56bc1b6e1f-e9439a85.mp3",
+    "source": "edge-us-f",
+    "ms": 9430
+   }
+  ],
+  "And did it work?": [
+   {
+    "voice": "us-m",
+    "file": "air-passages/us-m-1d73882569-8a4a914f.mp3",
+    "source": "edge-us-m",
+    "ms": 780
+   }
+  ],
+  "As a result": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6e323a3b6f-12d4b0b9.mp3",
+    "source": "edge-gb-f",
+    "ms": 1100
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6e323a3b6f-deb7e24b.mp3",
+    "source": "edge-gb-m",
+    "ms": 860
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6e323a3b6f-69d80d40.mp3",
+    "source": "edge-us-f",
+    "ms": 920
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6e323a3b6f-3ec5472c.mp3",
+    "source": "edge-us-m",
+    "ms": 780
+   }
+  ],
+  "As a result, the mass dropped by fifteen percent.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-3adcc54340-d6f861b8.mp3",
+    "source": "edge-gb-f",
+    "ms": 3270
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-3adcc54340-2557b766.mp3",
+    "source": "edge-gb-m",
+    "ms": 3020
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-3adcc54340-ae157f0e.mp3",
+    "source": "edge-us-f",
+    "ms": 3510
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-3adcc54340-09a066d7.mp3",
+    "source": "edge-us-m",
+    "ms": 3040
+   }
+  ],
+  "Basically, it's a way to": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-e1b473ff0d-54c30dc9.mp3",
+    "source": "edge-gb-f",
+    "ms": 1880
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-e1b473ff0d-e0d3e820.mp3",
+    "source": "edge-gb-m",
+    "ms": 1710
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-e1b473ff0d-f7b230cd.mp3",
+    "source": "edge-us-f",
+    "ms": 1710
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-e1b473ff0d-23db979f.mp3",
+    "source": "edge-us-m",
+    "ms": 1360
+   }
+  ],
+  "Basically, it's a way to find weak spots before we build anything.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-d823207097-7b5f620a.mp3",
+    "source": "edge-gb-f",
+    "ms": 3930
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-d823207097-944e7f6c.mp3",
+    "source": "edge-gb-m",
+    "ms": 3690
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-d823207097-b93cf39c.mp3",
+    "source": "edge-us-f",
+    "ms": 3760
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-d823207097-345f69c2.mp3",
+    "source": "edge-us-m",
+    "ms": 3400
+   }
+  ],
+  "Can I get you anything?": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-cb951cab8e-60b8a11e.mp3",
+    "source": "edge-gb-m",
+    "ms": 1120
+   }
+  ],
+  "Can everyone see the latest version?": [
+   {
+    "voice": "au-m",
+    "file": "air-phrases/au-m-b9dad5ed14-f011d6d5.mp3",
+    "source": "edge-au-m",
+    "ms": 2130
+   },
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-b9dad5ed14-b658e5bc.mp3",
+    "source": "edge-gb-m",
+    "ms": 1810
+   },
+   {
+    "voice": "in-f",
+    "file": "air-phrases/in-f-b9dad5ed14-b6e09578.mp3",
+    "source": "edge-in-f",
+    "ms": 2220
+   },
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-b9dad5ed14-a4e030e3.mp3",
+    "source": "edge-us-f",
+    "ms": 1680
+   }
+  ],
+  "Can you explain what finite element analysis is?": [
+   {
+    "voice": "gb-f",
+    "file": "call-questions/gb-f-6efa946514-66d8a86f.mp3",
+    "source": "edge-gb-f",
+    "ms": 3350
+   }
+  ],
+  "Can you send me the file by Friday?": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-73e8bc9f4f-8e350862.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   }
+  ],
   "Can you turn it off for a second?": [
    {
     "voice": "us-m",
     "file": "intake/us-m-6afe531089-c27b3590.mp3",
     "source": "edge-us-m",
     "ms": 1380
+   }
+  ],
+  "Check it out when you have a minute.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-ef63937195-e83fe0bd.mp3",
+    "source": "edge-us-f",
+    "ms": 1420
+   }
+  ],
+  "Could you give me an example?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-81d0873b4c-22d1c171.mp3",
+    "source": "edge-gb-f",
+    "ms": 1660
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-81d0873b4c-f06145a6.mp3",
+    "source": "edge-gb-m",
+    "ms": 1290
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-81d0873b4c-e0a662e4.mp3",
+    "source": "edge-us-f",
+    "ms": 1300
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-81d0873b4c-ce6567f3.mp3",
+    "source": "edge-us-m",
+    "ms": 1200
+   }
+  ],
+  "Could you say that again, please?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-8edfd3281a-fe4b27ed.mp3",
+    "source": "edge-gb-f",
+    "ms": 2110
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-8edfd3281a-e2deb641.mp3",
+    "source": "edge-gb-m",
+    "ms": 1820
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-8edfd3281a-bc9d9786.mp3",
+    "source": "edge-us-f",
+    "ms": 1540
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-8edfd3281a-edd723fa.mp3",
+    "source": "edge-us-m",
+    "ms": 1500
+   }
+  ],
+  "Could you send me the drawings by Friday?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-5d3ad913d7-24f1265f.mp3",
+    "source": "edge-gb-f",
+    "ms": 2390
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-5d3ad913d7-11c74124.mp3",
+    "source": "edge-gb-m",
+    "ms": 2029
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-5d3ad913d7-bbc9a5a7.mp3",
+    "source": "edge-us-f",
+    "ms": 1880
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-5d3ad913d7-c83bcbf1.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
+   }
+  ],
+  "Could you send me the report by Wednesday?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-a8489dc695-8b44c8ed.mp3",
+    "source": "edge-gb-f",
+    "ms": 2460
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-a8489dc695-16546438.mp3",
+    "source": "edge-gb-m",
+    "ms": 1880
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-a8489dc695-856b48b2.mp3",
+    "source": "edge-us-f",
+    "ms": 1910
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-a8489dc695-50579ce4.mp3",
+    "source": "edge-us-m",
+    "ms": 1770
+   }
+  ],
+  "Could you send me the test data by tomorrow?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-c3f6fca8dd-2800fa42.mp3",
+    "source": "edge-gb-f",
+    "ms": 2640
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-c3f6fca8dd-ebb3e349.mp3",
+    "source": "edge-gb-m",
+    "ms": 2170
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-c3f6fca8dd-ca3bdd58.mp3",
+    "source": "edge-us-f",
+    "ms": 1990
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-c3f6fca8dd-a42fdf39.mp3",
+    "source": "edge-us-m",
+    "ms": 2000
+   }
+  ],
+  "Could you send me the updated schedule by the end of the week?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-ad013a808b-b8a4c13f.mp3",
+    "source": "edge-gb-f",
+    "ms": 3350
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-ad013a808b-f79967ce.mp3",
+    "source": "edge-gb-m",
+    "ms": 2750
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-ad013a808b-eadd196c.mp3",
+    "source": "edge-us-f",
+    "ms": 2640
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-ad013a808b-af558e5f.mp3",
+    "source": "edge-us-m",
+    "ms": 2610
+   }
+  ],
+  "Could you share your screen, please?": [
+   {
+    "voice": "au-f",
+    "file": "air-phrases/au-f-80ee560589-4a883c8c.mp3",
+    "source": "edge-au-f",
+    "ms": 1860
+   },
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-80ee560589-790f0d6b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2160
+   },
+   {
+    "voice": "in-m",
+    "file": "air-phrases/in-m-80ee560589-f96cc547.mp3",
+    "source": "edge-in-m",
+    "ms": 2130
+   },
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-80ee560589-d28a6750.mp3",
+    "source": "edge-us-m",
+    "ms": 1800
+   }
+  ],
+  "Could you speak a bit more slowly?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a5c06fadd4-8e824479.mp3",
+    "source": "edge-gb-f",
+    "ms": 1910
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a5c06fadd4-4588c403.mp3",
+    "source": "edge-gb-m",
+    "ms": 1590
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a5c06fadd4-825c9dc3.mp3",
+    "source": "edge-us-f",
+    "ms": 1690
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a5c06fadd4-086de9ce.mp3",
+    "source": "edge-us-m",
+    "ms": 1460
+   }
+  ],
+  "Could you spell that, please?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-7488b54bcb-8fccb241.mp3",
+    "source": "edge-gb-f",
+    "ms": 1860
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-7488b54bcb-55aba8af.mp3",
+    "source": "edge-gb-m",
+    "ms": 1550
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-7488b54bcb-3ee8d3f9.mp3",
+    "source": "edge-us-f",
+    "ms": 1350
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-7488b54bcb-7abe3b32.mp3",
+    "source": "edge-us-m",
+    "ms": 1430
+   }
+  ],
+  "Could you tell me about your experience with the V and V process?": [
+   {
+    "voice": "gb-f",
+    "file": "call-questions/gb-f-e775b46ad9-920794fd.mp3",
+    "source": "edge-gb-f",
+    "ms": 3690
+   }
+  ],
+  "Could you walk me through it?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f9411aeb17-01dbda03.mp3",
+    "source": "edge-gb-f",
+    "ms": 1520
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f9411aeb17-c993b86a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1270
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f9411aeb17-cc48908b.mp3",
+    "source": "edge-us-f",
+    "ms": 1090
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f9411aeb17-d2205b44.mp3",
+    "source": "edge-us-m",
+    "ms": 1090
+   }
+  ],
+  "Describe a time you made a mistake. What did you learn?": [
+   {
+    "voice": "in-f",
+    "file": "call-questions/in-f-b4840a5feb-adbd62f0.mp3",
+    "source": "edge-in-f",
+    "ms": 4120
+   }
+  ],
+  "Did he get the message?": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-f9be02f081-4a70e57f.mp3",
+    "source": "edge-us-f",
+    "ms": 1100
    }
   ],
   "Did you get a chance to look at it?": [
@@ -67,12 +537,1170 @@
     "ms": 1620
    }
   ],
+  "Did you see the email?": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-543ec406a7-2c304b9d.mp3",
+    "source": "edge-us-m",
+    "ms": 990
+   }
+  ],
+  "Do you have any questions for us?": [
+   {
+    "voice": "in-m",
+    "file": "call-questions/in-m-13fb390e5c-a8084047.mp3",
+    "source": "edge-in-m",
+    "ms": 2240
+   }
+  ],
+  "Do you know how our production line is organized?": [
+   {
+    "voice": "gb-f",
+    "file": "call-questions/gb-f-f184a2c462-8fb88e0d.mp3",
+    "source": "edge-gb-f",
+    "ms": 2760
+   }
+  ],
+  "Do you mean": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-bc64fddefd-82a97e1a.mp3",
+    "source": "edge-gb-f",
+    "ms": 870
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-bc64fddefd-8e934575.mp3",
+    "source": "edge-gb-m",
+    "ms": 760
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-bc64fddefd-d1866655.mp3",
+    "source": "edge-us-f",
+    "ms": 660
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-bc64fddefd-d535ad4c.mp3",
+    "source": "edge-us-m",
+    "ms": 650
+   }
+  ],
+  "Do you mean Monday or Tuesday?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-03a9c78013-5cbf1039.mp3",
+    "source": "edge-gb-f",
+    "ms": 2029
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-03a9c78013-c69b3779.mp3",
+    "source": "edge-gb-m",
+    "ms": 1720
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-03a9c78013-17a98c1b.mp3",
+    "source": "edge-us-f",
+    "ms": 1770
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-03a9c78013-9269a171.mp3",
+    "source": "edge-us-m",
+    "ms": 1570
+   }
+  ],
+  "Do you mean the first version or the second one?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a1a4d8644a-b9524b98.mp3",
+    "source": "edge-gb-f",
+    "ms": 2670
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a1a4d8644a-16f8f341.mp3",
+    "source": "edge-gb-m",
+    "ms": 2250
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a1a4d8644a-01dbbe26.mp3",
+    "source": "edge-us-f",
+    "ms": 2420
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a1a4d8644a-89038e37.mp3",
+    "source": "edge-us-m",
+    "ms": 2130
+   }
+  ],
+  "Do you mean the first version?": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-3fac7773f2-d5af1a2d.mp3",
+    "source": "edge-gb-f",
+    "ms": 1670
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-3fac7773f2-9bceeb69.mp3",
+    "source": "edge-gb-m",
+    "ms": 1420
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-3fac7773f2-e9775389.mp3",
+    "source": "edge-us-f",
+    "ms": 1230
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-3fac7773f2-8eda276a.mp3",
+    "source": "edge-us-m",
+    "ms": 1180
+   }
+  ],
+  "Do you mean the old drawing or the new one?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-4d7e9282f1-ef328f0a.mp3",
+    "source": "edge-gb-f",
+    "ms": 2390
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-4d7e9282f1-d472fe48.mp3",
+    "source": "edge-gb-m",
+    "ms": 2130
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-4d7e9282f1-65a457ea.mp3",
+    "source": "edge-us-f",
+    "ms": 1990
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-4d7e9282f1-9a379835.mp3",
+    "source": "edge-us-m",
+    "ms": 2120
+   }
+  ],
+  "Do you mean this sensor or that one?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-4f32477036-0fd0f8cf.mp3",
+    "source": "edge-gb-f",
+    "ms": 2160
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-4f32477036-028c2e4c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1830
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-4f32477036-60590a61.mp3",
+    "source": "edge-us-f",
+    "ms": 1830
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-4f32477036-8ed03d9e.mp3",
+    "source": "edge-us-m",
+    "ms": 1640
+   }
+  ],
+  "Do you wanna join the call?": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-cc852b0c3b-5defa8d9.mp3",
+    "source": "edge-us-f",
+    "ms": 1060
+   }
+  ],
+  "Does that make sense?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-4e83dd6734-3a6a48ba.mp3",
+    "source": "edge-gb-f",
+    "ms": 1390
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-4e83dd6734-b85d324b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1160
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-4e83dd6734-d5e12b52.mp3",
+    "source": "edge-us-f",
+    "ms": 1110
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-4e83dd6734-15029178.mp3",
+    "source": "edge-us-m",
+    "ms": 1000
+   }
+  ],
+  "Don't you think it's too early?": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-a55ed74f90-b003a418.mp3",
+    "source": "edge-us-f",
+    "ms": 1370
+   }
+  ],
+  "Fair point.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-573093421c-58c98691.mp3",
+    "source": "edge-gb-f",
+    "ms": 950
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-573093421c-889c9abb.mp3",
+    "source": "edge-gb-m",
+    "ms": 860
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-573093421c-eae8d334.mp3",
+    "source": "edge-us-f",
+    "ms": 760
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-573093421c-f54531c7.mp3",
+    "source": "edge-us-m",
+    "ms": 610
+   }
+  ],
+  "Four should be fine. I'll send an updated invite.": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-5b9e077089-b2d832ff.mp3",
+    "source": "edge-au-m",
+    "ms": 3500
+   }
+  ],
+  "Gimme a minute.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-a38e0d119d-389b5b39.mp3",
+    "source": "edge-us-m",
+    "ms": 770
+   }
+  ],
+  "Give me a moment to gather my thoughts.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-d1c5b230ea-1ee74dde.mp3",
+    "source": "edge-gb-f",
+    "ms": 2220
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-d1c5b230ea-b8d2a0fa.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-d1c5b230ea-1d5be7e8.mp3",
+    "source": "edge-us-f",
+    "ms": 2070
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-d1c5b230ea-82c18e33.mp3",
+    "source": "edge-us-m",
+    "ms": 1900
+   }
+  ],
+  "Go on, I'm listening.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-02614de6a6-f44fecac.mp3",
+    "source": "edge-us-f",
+    "ms": 1430
+   }
+  ],
+  "Good. Any blockers?": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-5fcf2d674e-0da28f40.mp3",
+    "source": "edge-us-f",
+    "ms": 1620
+   }
+  ],
+  "Great. And the bad news?": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-5818a89439-492be9d1.mp3",
+    "source": "edge-us-f",
+    "ms": 1990
+   }
+  ],
+  "He's finished the model.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-8c422ac58b-1b4f0325.mp3",
+    "source": "edge-gb-f",
+    "ms": 1360
+   }
+  ],
+  "Hey Priya, have you got a sec? It's about tomorrow's design review.": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-7e4b6564d1-ea522ac7.mp3",
+    "source": "edge-au-m",
+    "ms": 4270
+   }
+  ],
+  "Hi Dana, thanks for making time. I've got some good news and some not-so-good news.": [
+   {
+    "voice": "gb-f",
+    "file": "air-passages/gb-f-61d6ff27b8-ac89ed0e.mp3",
+    "source": "edge-gb-f",
+    "ms": 5570
+   }
+  ],
+  "Hold on a second, I'll get it.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-619524d672-88e452dd.mp3",
+    "source": "edge-us-m",
+    "ms": 1640
+   }
+  ],
   "Houston, can you hear me?": [
    {
     "voice": "us-f",
     "file": "intake/us-f-1116753c56-e7160f11.mp3",
     "source": "edge-us-f",
     "ms": 1390
+   }
+  ],
+  "How can I put it": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-88018798db-f7125137.mp3",
+    "source": "edge-gb-f",
+    "ms": 1190
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-88018798db-04a05629.mp3",
+    "source": "edge-gb-m",
+    "ms": 1040
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-88018798db-5917b808.mp3",
+    "source": "edge-us-f",
+    "ms": 940
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-88018798db-65b71e19.mp3",
+    "source": "edge-us-m",
+    "ms": 740
+   }
+  ],
+  "How can I put it... it's more of a process than a tool.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6adc4a8c6e-54c53505.mp3",
+    "source": "edge-gb-f",
+    "ms": 3210
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6adc4a8c6e-89a6171c.mp3",
+    "source": "edge-gb-m",
+    "ms": 2830
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6adc4a8c6e-074f713d.mp3",
+    "source": "edge-us-f",
+    "ms": 2980
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6adc4a8c6e-8d32e3bd.mp3",
+    "source": "edge-us-m",
+    "ms": 2810
+   }
+  ],
+  "How do you measure success in this position?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-216d9c8dc5-a6931996.mp3",
+    "source": "edge-gb-f",
+    "ms": 2430
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-216d9c8dc5-0adf3451.mp3",
+    "source": "edge-gb-m",
+    "ms": 2040
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-216d9c8dc5-edbdb728.mp3",
+    "source": "edge-us-f",
+    "ms": 1900
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-216d9c8dc5-fb2fdb70.mp3",
+    "source": "edge-us-m",
+    "ms": 2029
+   }
+  ],
+  "How does a rocket engine work, in simple terms?": [
+   {
+    "voice": "in-m",
+    "file": "call-questions/in-m-b83e408397-514e36ef.mp3",
+    "source": "edge-in-m",
+    "ms": 3400
+   }
+  ],
+  "How is the team structured?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-71371857e6-d33409ac.mp3",
+    "source": "edge-gb-f",
+    "ms": 1630
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-71371857e6-e24c7c9c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1420
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-71371857e6-24f4e70a.mp3",
+    "source": "edge-us-f",
+    "ms": 1350
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-71371857e6-1e9ce9e8.mp3",
+    "source": "edge-us-m",
+    "ms": 1310
+   }
+  ],
+  "How long have you been working on it?": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-9f812cf72f-b5f9cf79.mp3",
+    "source": "edge-gb-f",
+    "ms": 2020
+   }
+  ],
+  "How would you explain your thesis to a ten-year-old?": [
+   {
+    "voice": "in-f",
+    "file": "call-questions/in-f-4d3f84f81e-1a20b31c.mp3",
+    "source": "edge-in-f",
+    "ms": 2760
+   }
+  ],
+  "How would you handle an NCR on the line?": [
+   {
+    "voice": "in-m",
+    "file": "call-questions/in-m-158e020af7-6cf3597e.mp3",
+    "source": "edge-in-m",
+    "ms": 2770
+   }
+  ],
+  "I agree with all of it.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-c52e5c2b0c-e36174bc.mp3",
+    "source": "edge-gb-f",
+    "ms": 1480
+   }
+  ],
+  "I can check. If they have fifty in stock, I could send those by express.": [
+   {
+    "voice": "gb-f",
+    "file": "air-passages/gb-f-8623a8011a-ca2b7543.mp3",
+    "source": "edge-gb-f",
+    "ms": 4950
+   }
+  ],
+  "I can do it, but I can't do it today.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-ce1bf01ffd-271243bb.mp3",
+    "source": "edge-us-m",
+    "ms": 2070
+   }
+  ],
+  "I didn't know he was on the call.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-d119de3b35-c283dab1.mp3",
+    "source": "edge-gb-f",
+    "ms": 1900
+   }
+  ],
+  "I don't know, but I'll find out after the call.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-3ab34f34c6-ee8c4d43.mp3",
+    "source": "edge-gb-f",
+    "ms": 2900
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-3ab34f34c6-423f2f9e.mp3",
+    "source": "edge-gb-m",
+    "ms": 2470
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-3ab34f34c6-061b8570.mp3",
+    "source": "edge-us-f",
+    "ms": 2710
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-3ab34f34c6-37c3f28e.mp3",
+    "source": "edge-us-m",
+    "ms": 2270
+   }
+  ],
+  "I don't know, but I'll find out by lunch.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-40a6b4df37-7a695a00.mp3",
+    "source": "edge-gb-f",
+    "ms": 2670
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-40a6b4df37-a9a67e6f.mp3",
+    "source": "edge-gb-m",
+    "ms": 2360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-40a6b4df37-bbe5da6a.mp3",
+    "source": "edge-us-f",
+    "ms": 2660
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-40a6b4df37-182444e5.mp3",
+    "source": "edge-us-m",
+    "ms": 2180
+   }
+  ],
+  "I don't know, but I'll find out by tomorrow.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-ee3b4b69b2-db728b2b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2800
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-ee3b4b69b2-f2b72276.mp3",
+    "source": "edge-gb-m",
+    "ms": 2450
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-ee3b4b69b2-0dcdefeb.mp3",
+    "source": "edge-us-f",
+    "ms": 2700
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-ee3b4b69b2-15113755.mp3",
+    "source": "edge-us-m",
+    "ms": 2240
+   }
+  ],
+  "I don't know, but I'll find out this week.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-a1fe65d95e-bd2344db.mp3",
+    "source": "edge-gb-f",
+    "ms": 2590
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-a1fe65d95e-411f0964.mp3",
+    "source": "edge-gb-m",
+    "ms": 2210
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-a1fe65d95e-ee73e1d1.mp3",
+    "source": "edge-us-f",
+    "ms": 2320
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-a1fe65d95e-f25eaf3d.mp3",
+    "source": "edge-us-m",
+    "ms": 2050
+   }
+  ],
+  "I don't know, but I'll find out.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a42c10106e-3631cb77.mp3",
+    "source": "edge-gb-f",
+    "ms": 2220
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a42c10106e-a4e0dcb4.mp3",
+    "source": "edge-gb-m",
+    "ms": 1830
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a42c10106e-15ab3d88.mp3",
+    "source": "edge-us-f",
+    "ms": 1950
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a42c10106e-f0f577de.mp3",
+    "source": "edge-us-m",
+    "ms": 1700
+   }
+  ],
+  "I have experience with SolidWorks.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-add017b459-f840ebbb.mp3",
+    "source": "edge-gb-f",
+    "ms": 2340
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-add017b459-3b859881.mp3",
+    "source": "edge-gb-m",
+    "ms": 2100
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-add017b459-a625cd18.mp3",
+    "source": "edge-us-f",
+    "ms": 2000
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-add017b459-edf49729.mp3",
+    "source": "edge-us-m",
+    "ms": 1830
+   }
+  ],
+  "I haven't thought about it that way before.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6a2ff9118d-acf680b6.mp3",
+    "source": "edge-gb-f",
+    "ms": 2330
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6a2ff9118d-7cce796a.mp3",
+    "source": "edge-gb-m",
+    "ms": 2029
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6a2ff9118d-8f54dbe2.mp3",
+    "source": "edge-us-f",
+    "ms": 1920
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6a2ff9118d-622d26d6.mp3",
+    "source": "edge-us-m",
+    "ms": 1780
+   }
+  ],
+  "I just thought it might help.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-65c265ea2b-3f5c66cf.mp3",
+    "source": "edge-gb-m",
+    "ms": 1380
+   }
+  ],
+  "I kept the old version just in case.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-78395a888c-f68d9533.mp3",
+    "source": "edge-gb-f",
+    "ms": 2370
+   }
+  ],
+  "I might be wrong, but": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-5177878c7f-63e62d64.mp3",
+    "source": "edge-gb-f",
+    "ms": 1720
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-5177878c7f-bc624e22.mp3",
+    "source": "edge-gb-m",
+    "ms": 1510
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-5177878c7f-fc40dcd7.mp3",
+    "source": "edge-us-f",
+    "ms": 1320
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-5177878c7f-76882a7f.mp3",
+    "source": "edge-us-m",
+    "ms": 1300
+   }
+  ],
+  "I might be wrong, but I think it's the sensor.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-7554bb1e4c-e195be84.mp3",
+    "source": "edge-gb-f",
+    "ms": 2760
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-7554bb1e4c-cfed8cb1.mp3",
+    "source": "edge-gb-m",
+    "ms": 2400
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-7554bb1e4c-8eb3a9dc.mp3",
+    "source": "edge-us-f",
+    "ms": 2690
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-7554bb1e4c-2ef55e16.mp3",
+    "source": "edge-us-m",
+    "ms": 2320
+   }
+  ],
+  "I need to talk to them about the budget.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-ce5919849f-262df4d4.mp3",
+    "source": "edge-us-f",
+    "ms": 1790
+   }
+  ],
+  "I reviewed the sensor wiring. Two connectors were swapped, so I've corrected the drawing and sent it to the workshop.": [
+   {
+    "voice": "in-f",
+    "file": "air-passages/in-f-ed7428ce88-6d863fce.mp3",
+    "source": "edge-in-f",
+    "ms": 7360
+   }
+  ],
+  "I see your point, but": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-0a5c373df3-807b81f7.mp3",
+    "source": "edge-gb-f",
+    "ms": 1870
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-0a5c373df3-59418095.mp3",
+    "source": "edge-gb-m",
+    "ms": 1570
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-0a5c373df3-cd4597f4.mp3",
+    "source": "edge-us-f",
+    "ms": 1310
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-0a5c373df3-e571a71c.mp3",
+    "source": "edge-us-m",
+    "ms": 1120
+   }
+  ],
+  "I see your point, but it's more expensive.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-754e1616a0-c1ac9b9c.mp3",
+    "source": "edge-gb-f",
+    "ms": 2740
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-754e1616a0-e4c7f736.mp3",
+    "source": "edge-gb-m",
+    "ms": 2440
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-754e1616a0-078b0542.mp3",
+    "source": "edge-us-f",
+    "ms": 2600
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-754e1616a0-2e44727c.mp3",
+    "source": "edge-us-m",
+    "ms": 2170
+   }
+  ],
+  "I see your point, but it's risky.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-51c9f2704e-2e1af8ef.mp3",
+    "source": "edge-gb-f",
+    "ms": 2280
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-51c9f2704e-1ef8211d.mp3",
+    "source": "edge-gb-m",
+    "ms": 2020
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-51c9f2704e-47098459.mp3",
+    "source": "edge-us-f",
+    "ms": 2150
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-51c9f2704e-00e1ac9c.mp3",
+    "source": "edge-us-m",
+    "ms": 1750
+   }
+  ],
+  "I see your point, but we don't have the data.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-3180a9f63b-76366cad.mp3",
+    "source": "edge-gb-f",
+    "ms": 2880
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-3180a9f63b-b65afc94.mp3",
+    "source": "edge-gb-m",
+    "ms": 2420
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-3180a9f63b-5998e184.mp3",
+    "source": "edge-us-f",
+    "ms": 2300
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-3180a9f63b-20279b48.mp3",
+    "source": "edge-us-m",
+    "ms": 2280
+   }
+  ],
+  "I see your point, but we're short on time.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-b480ede5c6-e5a21f7a.mp3",
+    "source": "edge-gb-f",
+    "ms": 2710
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-b480ede5c6-ddd85b2c.mp3",
+    "source": "edge-gb-m",
+    "ms": 2490
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-b480ede5c6-9e006bb3.mp3",
+    "source": "edge-us-f",
+    "ms": 2530
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-b480ede5c6-6e4a3b00.mp3",
+    "source": "edge-us-m",
+    "ms": 2080
+   }
+  ],
+  "I think we're running a bit behind schedule.": [
+   {
+    "voice": "au-m",
+    "file": "air-phrases/au-m-187a2c5b32-83c34b43.mp3",
+    "source": "edge-au-m",
+    "ms": 2240
+   },
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-187a2c5b32-50104213.mp3",
+    "source": "edge-gb-m",
+    "ms": 2110
+   },
+   {
+    "voice": "in-f",
+    "file": "air-phrases/in-f-187a2c5b32-f736814d.mp3",
+    "source": "edge-in-f",
+    "ms": 2660
+   },
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-187a2c5b32-bdffa4a0.mp3",
+    "source": "edge-us-f",
+    "ms": 2160
+   }
+  ],
+  "I was responsible for": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-c64366fbde-19e4d5c3.mp3",
+    "source": "edge-gb-f",
+    "ms": 1620
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-c64366fbde-7ee96965.mp3",
+    "source": "edge-gb-m",
+    "ms": 1490
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-c64366fbde-7fe9e4b7.mp3",
+    "source": "edge-us-f",
+    "ms": 1530
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-c64366fbde-d53ee500.mp3",
+    "source": "edge-us-m",
+    "ms": 1340
+   }
+  ],
+  "I was responsible for the stress analysis.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f74e2694d7-9bfac35c.mp3",
+    "source": "edge-gb-f",
+    "ms": 2710
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f74e2694d7-07a8e68a.mp3",
+    "source": "edge-gb-m",
+    "ms": 2290
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f74e2694d7-d1859f93.mp3",
+    "source": "edge-us-f",
+    "ms": 2400
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f74e2694d7-c001ee4d.mp3",
+    "source": "edge-us-m",
+    "ms": 2160
+   }
+  ],
+  "I was responsible for the thermal analysis.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-185d279303-f130781f.mp3",
+    "source": "edge-gb-f",
+    "ms": 2810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-185d279303-7b72325f.mp3",
+    "source": "edge-gb-m",
+    "ms": 2360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-185d279303-1198dad0.mp3",
+    "source": "edge-us-f",
+    "ms": 2520
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-185d279303-dfc8fc55.mp3",
+    "source": "edge-us-m",
+    "ms": 2180
+   }
+  ],
+  "I worked closely with": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a37a9810ca-82faade3.mp3",
+    "source": "edge-gb-f",
+    "ms": 1550
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a37a9810ca-e2364bc9.mp3",
+    "source": "edge-gb-m",
+    "ms": 1240
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a37a9810ca-09801201.mp3",
+    "source": "edge-us-f",
+    "ms": 1350
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a37a9810ca-71d002bd.mp3",
+    "source": "edge-us-m",
+    "ms": 1160
+   }
+  ],
+  "I worked closely with the test engineers.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-1eef0960d2-cf69f667.mp3",
+    "source": "edge-gb-f",
+    "ms": 2560
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-1eef0960d2-825b703f.mp3",
+    "source": "edge-gb-m",
+    "ms": 2260
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-1eef0960d2-31629a69.mp3",
+    "source": "edge-us-f",
+    "ms": 2400
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-1eef0960d2-6d49494d.mp3",
+    "source": "edge-us-m",
+    "ms": 2190
+   }
+  ],
+  "I wouldn't have noticed it.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-5acafa62c5-d313f503.mp3",
+    "source": "edge-us-f",
+    "ms": 1360
+   }
+  ],
+  "I'd go with the lighter design.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-cbf1acbba9-003e4ab2.mp3",
+    "source": "edge-gb-m",
+    "ms": 1600
+   }
+  ],
+  "I'd look at it a bit differently.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-eaed042043-cb9a3e09.mp3",
+    "source": "edge-gb-f",
+    "ms": 1860
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-eaed042043-d0c97c2a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1530
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-eaed042043-ea15ca79.mp3",
+    "source": "edge-us-f",
+    "ms": 1620
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-eaed042043-38364b52.mp3",
+    "source": "edge-us-m",
+    "ms": 1370
+   }
+  ],
+  "I'd rather not change it now.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-80f9d4f5d1-1db724b8.mp3",
+    "source": "edge-gb-f",
+    "ms": 1710
+   }
+  ],
+  "I'd start the thermal analysis earlier. We found the problem quite late, and it cost us a few weeks.": [
+   {
+    "voice": "au-f",
+    "file": "air-passages/au-f-c6853f898a-538ef0b7.mp3",
+    "source": "edge-au-f",
+    "ms": 6830
+   }
+  ],
+  "I'll chase them after this call. Thanks, everyone.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-5905f9d1e0-0d60fdd2.mp3",
+    "source": "edge-us-f",
+    "ms": 2910
+   }
+  ],
+  "I'll get back to you by the end of the week.": [
+   {
+    "voice": "au-m",
+    "file": "air-phrases/au-m-73e7e613d2-a5f0b5b3.mp3",
+    "source": "edge-au-m",
+    "ms": 2000
+   },
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-73e7e613d2-3ed67dde.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   },
+   {
+    "voice": "in-f",
+    "file": "air-phrases/in-f-73e7e613d2-cfe12654.mp3",
+    "source": "edge-in-f",
+    "ms": 2500
+   },
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-73e7e613d2-97e697de.mp3",
+    "source": "edge-us-f",
+    "ms": 1900
    }
   ],
   "I'll send it over by the end of the day.": [
@@ -83,12 +1711,1242 @@
     "ms": 1810
    }
   ],
+  "I'm a fourth-year student": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-397867dbf1-e50573ad.mp3",
+    "source": "edge-gb-f",
+    "ms": 1560
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-397867dbf1-116d8bfc.mp3",
+    "source": "edge-gb-m",
+    "ms": 1490
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-397867dbf1-d2ae5075.mp3",
+    "source": "edge-us-f",
+    "ms": 1560
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-397867dbf1-72123f5c.mp3",
+    "source": "edge-us-m",
+    "ms": 1240
+   }
+  ],
+  "I'm a fourth-year student in aerospace engineering.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-9be0c04af4-4bf637bb.mp3",
+    "source": "edge-gb-f",
+    "ms": 3080
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-9be0c04af4-3e52123e.mp3",
+    "source": "edge-gb-m",
+    "ms": 2700
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-9be0c04af4-034a9e23.mp3",
+    "source": "edge-us-f",
+    "ms": 3020
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-9be0c04af4-9f1923a0.mp3",
+    "source": "edge-us-m",
+    "ms": 2710
+   }
+  ],
+  "I'm a fourth-year student studying rocket engineering.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-2d84c9791e-9862585f.mp3",
+    "source": "edge-gb-f",
+    "ms": 3070
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-2d84c9791e-4225bcc2.mp3",
+    "source": "edge-gb-m",
+    "ms": 2810
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-2d84c9791e-91d9bd8f.mp3",
+    "source": "edge-us-f",
+    "ms": 2830
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-2d84c9791e-4205b109.mp3",
+    "source": "edge-us-m",
+    "ms": 2580
+   }
+  ],
+  "I'm currently working on": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-aaeb162339-144e8550.mp3",
+    "source": "edge-gb-f",
+    "ms": 1610
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-aaeb162339-1a02fe4b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-aaeb162339-77e6b16a.mp3",
+    "source": "edge-us-f",
+    "ms": 1490
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-aaeb162339-bcfca5d1.mp3",
+    "source": "edge-us-m",
+    "ms": 1170
+   }
+  ],
+  "I'm currently working on a project about composite testing.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-542f7a29ca-8919573c.mp3",
+    "source": "edge-gb-f",
+    "ms": 3460
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-542f7a29ca-1b7e495b.mp3",
+    "source": "edge-gb-m",
+    "ms": 2860
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-542f7a29ca-67f4d0b1.mp3",
+    "source": "edge-us-f",
+    "ms": 3290
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-542f7a29ca-4fed6746.mp3",
+    "source": "edge-us-m",
+    "ms": 2910
+   }
+  ],
+  "I'm currently working on my thesis.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-2ede061fc0-a398a0e0.mp3",
+    "source": "edge-gb-f",
+    "ms": 2250
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-2ede061fc0-74f52546.mp3",
+    "source": "edge-gb-m",
+    "ms": 1960
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-2ede061fc0-59ea1027.mp3",
+    "source": "edge-us-f",
+    "ms": 2070
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-2ede061fc0-ecb372e6.mp3",
+    "source": "edge-us-m",
+    "ms": 1740
+   }
+  ],
   "I'm gonna call them tomorrow.": [
    {
     "voice": "us-f",
     "file": "intake/us-f-acb6f6c939-8bb32c26.mp3",
     "source": "edge-us-f",
     "ms": 1450
+   }
+  ],
+  "I'm gonna test it tomorrow.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-490c6e378c-d2dbf298.mp3",
+    "source": "edge-us-m",
+    "ms": 1290
+   }
+  ],
+  "I'm looking for a position where I can": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-bdaedcdce7-45951867.mp3",
+    "source": "edge-gb-f",
+    "ms": 2270
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-bdaedcdce7-3ba10de5.mp3",
+    "source": "edge-gb-m",
+    "ms": 1910
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-bdaedcdce7-6f75df7f.mp3",
+    "source": "edge-us-f",
+    "ms": 1840
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-bdaedcdce7-9175d7ee.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
+   }
+  ],
+  "I'm looking for a position where I can grow as an engineer.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-998eb70647-f03a2899.mp3",
+    "source": "edge-gb-f",
+    "ms": 3370
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-998eb70647-62440e88.mp3",
+    "source": "edge-gb-m",
+    "ms": 2700
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-998eb70647-8d00b00e.mp3",
+    "source": "edge-us-f",
+    "ms": 2940
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-998eb70647-aeff9089.mp3",
+    "source": "edge-us-m",
+    "ms": 2910
+   }
+  ],
+  "I'm looking for a summer internship.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-1439e25336-08e29555.mp3",
+    "source": "edge-gb-f",
+    "ms": 2050
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-1439e25336-a47a0862.mp3",
+    "source": "edge-gb-m",
+    "ms": 1790
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-1439e25336-adb2522a.mp3",
+    "source": "edge-us-f",
+    "ms": 1530
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-1439e25336-16d88b83.mp3",
+    "source": "edge-us-m",
+    "ms": 1500
+   }
+  ],
+  "I'm not sure I agree with that.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-9b9d6e3679-d2b914fd.mp3",
+    "source": "edge-gb-f",
+    "ms": 1870
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-9b9d6e3679-ad7a3379.mp3",
+    "source": "edge-gb-m",
+    "ms": 1640
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-9b9d6e3679-1b49b34d.mp3",
+    "source": "edge-us-f",
+    "ms": 1410
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-9b9d6e3679-6b803100.mp3",
+    "source": "edge-us-m",
+    "ms": 1470
+   }
+  ],
+  "I'm not sure I agree.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-a8b780fcd6-08b13fd5.mp3",
+    "source": "edge-gb-f",
+    "ms": 1460
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-a8b780fcd6-26e63f69.mp3",
+    "source": "edge-gb-m",
+    "ms": 1320
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-a8b780fcd6-038ab4e6.mp3",
+    "source": "edge-us-f",
+    "ms": 1370
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-a8b780fcd6-7bcccd83.mp3",
+    "source": "edge-us-m",
+    "ms": 1050
+   }
+  ],
+  "I'm not sure off the top of my head. Can I get back to you?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-8caa56fe7c-1b30c202.mp3",
+    "source": "edge-gb-f",
+    "ms": 3810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-8caa56fe7c-89acd968.mp3",
+    "source": "edge-gb-m",
+    "ms": 3750
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-8caa56fe7c-c7f76551.mp3",
+    "source": "edge-us-f",
+    "ms": 3140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-8caa56fe7c-1f7789a5.mp3",
+    "source": "edge-us-m",
+    "ms": 2910
+   }
+  ],
+  "I'm particularly interested in": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-d1285a7535-7f92bd0a.mp3",
+    "source": "edge-gb-f",
+    "ms": 1970
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-d1285a7535-8e0f2043.mp3",
+    "source": "edge-gb-m",
+    "ms": 1650
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-d1285a7535-00e54967.mp3",
+    "source": "edge-us-f",
+    "ms": 1700
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-d1285a7535-59b8f395.mp3",
+    "source": "edge-us-m",
+    "ms": 1500
+   }
+  ],
+  "I'm particularly interested in composites.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-fad0b85a6e-9128e19c.mp3",
+    "source": "edge-gb-f",
+    "ms": 2730
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-fad0b85a6e-306e7ecb.mp3",
+    "source": "edge-gb-m",
+    "ms": 2380
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-fad0b85a6e-d0af1c3a.mp3",
+    "source": "edge-us-f",
+    "ms": 2330
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-fad0b85a6e-b1bb7885.mp3",
+    "source": "edge-us-m",
+    "ms": 2210
+   }
+  ],
+  "I'm particularly interested in control systems.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-f08df45d34-da3f7916.mp3",
+    "source": "edge-gb-f",
+    "ms": 2930
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-f08df45d34-dd9d7401.mp3",
+    "source": "edge-gb-m",
+    "ms": 2620
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-f08df45d34-c1a3b952.mp3",
+    "source": "edge-us-f",
+    "ms": 2750
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-f08df45d34-4d782d01.mp3",
+    "source": "edge-us-m",
+    "ms": 2450
+   }
+  ],
+  "I'm particularly interested in materials.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-8689653dea-dcccf142.mp3",
+    "source": "edge-gb-f",
+    "ms": 2580
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-8689653dea-bf3004f3.mp3",
+    "source": "edge-gb-m",
+    "ms": 2320
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-8689653dea-00ab047e.mp3",
+    "source": "edge-us-f",
+    "ms": 2340
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-8689653dea-f8dd7627.mp3",
+    "source": "edge-us-m",
+    "ms": 2130
+   }
+  ],
+  "I'm particularly interested in propulsion.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-99a93120f8-320daac6.mp3",
+    "source": "edge-gb-f",
+    "ms": 2530
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-99a93120f8-8dd2d10c.mp3",
+    "source": "edge-gb-m",
+    "ms": 2120
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-99a93120f8-3741dd7e.mp3",
+    "source": "edge-us-f",
+    "ms": 2270
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-99a93120f8-4cc2da75.mp3",
+    "source": "edge-us-m",
+    "ms": 2000
+   }
+  ],
+  "I'm particularly interested in structural analysis.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6caaaf1a16-3df9eaba.mp3",
+    "source": "edge-gb-f",
+    "ms": 3250
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6caaaf1a16-e29536cc.mp3",
+    "source": "edge-gb-m",
+    "ms": 2840
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6caaaf1a16-db4f1450.mp3",
+    "source": "edge-us-f",
+    "ms": 3060
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6caaaf1a16-50dd73fa.mp3",
+    "source": "edge-us-m",
+    "ms": 2660
+   }
+  ],
+  "I'm responsible for procurement.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-d13073f348-a20c3d1b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2050
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-d13073f348-8ecbd698.mp3",
+    "source": "edge-gb-m",
+    "ms": 1690
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-d13073f348-e674b53d.mp3",
+    "source": "edge-us-f",
+    "ms": 1900
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-d13073f348-87817632.mp3",
+    "source": "edge-us-m",
+    "ms": 1630
+   }
+  ],
+  "I'm responsible for the documentation.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-8b1daaec2d-8a484914.mp3",
+    "source": "edge-gb-f",
+    "ms": 2400
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-8b1daaec2d-675902ba.mp3",
+    "source": "edge-gb-m",
+    "ms": 2090
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-8b1daaec2d-abc567bb.mp3",
+    "source": "edge-us-f",
+    "ms": 2200
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-8b1daaec2d-60f85304.mp3",
+    "source": "edge-us-m",
+    "ms": 1970
+   }
+  ],
+  "I'm responsible for the stress analysis.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-e44deb78e0-15b1acd3.mp3",
+    "source": "edge-gb-f",
+    "ms": 2610
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-e44deb78e0-0b9b0000.mp3",
+    "source": "edge-gb-m",
+    "ms": 2190
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-e44deb78e0-76950b47.mp3",
+    "source": "edge-us-f",
+    "ms": 2250
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-e44deb78e0-3b21a814.mp3",
+    "source": "edge-us-m",
+    "ms": 2060
+   }
+  ],
+  "I'm responsible for the thermal design.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-55b6e8220e-0ad68ac2.mp3",
+    "source": "edge-gb-f",
+    "ms": 2400
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-55b6e8220e-33afaf02.mp3",
+    "source": "edge-gb-m",
+    "ms": 2029
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-55b6e8220e-9a4a720d.mp3",
+    "source": "edge-us-f",
+    "ms": 2140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-55b6e8220e-48647a8f.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
+   }
+  ],
+  "I've been working on composite testing for two months.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-c9ee56589d-7355738d.mp3",
+    "source": "edge-gb-f",
+    "ms": 3140
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-c9ee56589d-9ba970dd.mp3",
+    "source": "edge-gb-m",
+    "ms": 2630
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-c9ee56589d-07601bbf.mp3",
+    "source": "edge-us-f",
+    "ms": 2610
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-c9ee56589d-908c45e4.mp3",
+    "source": "edge-us-m",
+    "ms": 2680
+   }
+  ],
+  "I've been working on the CAD model for three weeks.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-3d77a257ba-73c539a0.mp3",
+    "source": "edge-gb-f",
+    "ms": 3100
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-3d77a257ba-bccc45e9.mp3",
+    "source": "edge-gb-m",
+    "ms": 2770
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-3d77a257ba-2a3f5d5d.mp3",
+    "source": "edge-us-f",
+    "ms": 2660
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-3d77a257ba-c71d784f.mp3",
+    "source": "edge-us-m",
+    "ms": 2540
+   }
+  ],
+  "I've been working on the test rig for a year.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-4e62f00fc1-27fc91d9.mp3",
+    "source": "edge-gb-f",
+    "ms": 2500
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-4e62f00fc1-5746c440.mp3",
+    "source": "edge-gb-m",
+    "ms": 2200
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-4e62f00fc1-1af0745c.mp3",
+    "source": "edge-us-f",
+    "ms": 2240
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-4e62f00fc1-3b4d3caa.mp3",
+    "source": "edge-us-m",
+    "ms": 1940
+   }
+  ],
+  "I've been working on the thermal analysis for six months.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-bd574539fd-86e66fd6.mp3",
+    "source": "edge-gb-f",
+    "ms": 3360
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-bd574539fd-63965956.mp3",
+    "source": "edge-gb-m",
+    "ms": 2840
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-bd574539fd-6796696e.mp3",
+    "source": "edge-us-f",
+    "ms": 2960
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-bd574539fd-86f7e03b.mp3",
+    "source": "edge-us-m",
+    "ms": 2830
+   }
+  ],
+  "I've gotta go, I'm late.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-6a5f26fa1f-c1ead627.mp3",
+    "source": "edge-gb-f",
+    "ms": 1830
+   }
+  ],
+  "I've had some hands-on experience with": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ecad2ebcfa-9e9995fb.mp3",
+    "source": "edge-gb-f",
+    "ms": 2260
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ecad2ebcfa-810e0d0b.mp3",
+    "source": "edge-gb-m",
+    "ms": 2110
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ecad2ebcfa-60721c77.mp3",
+    "source": "edge-us-f",
+    "ms": 1870
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ecad2ebcfa-9c2be4d0.mp3",
+    "source": "edge-us-m",
+    "ms": 1810
+   }
+  ],
+  "I've had some hands-on experience with CAD and FEA.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-bf1d5cba18-49fb7357.mp3",
+    "source": "edge-gb-f",
+    "ms": 3730
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-bf1d5cba18-3da08645.mp3",
+    "source": "edge-gb-m",
+    "ms": 3340
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-bf1d5cba18-fd67505a.mp3",
+    "source": "edge-us-f",
+    "ms": 3210
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-bf1d5cba18-2eadab46.mp3",
+    "source": "edge-us-m",
+    "ms": 3210
+   }
+  ],
+  "If I understand the question correctly": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-c22d55d5d4-6c085bc8.mp3",
+    "source": "edge-gb-f",
+    "ms": 2430
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-c22d55d5d4-cecb321b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1960
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-c22d55d5d4-90a23c24.mp3",
+    "source": "edge-us-f",
+    "ms": 2020
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-c22d55d5d4-ad572c00.mp3",
+    "source": "edge-us-m",
+    "ms": 1840
+   }
+  ],
+  "If I understand the question correctly, you're asking about the timeline.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-4511ce599c-6b4528a7.mp3",
+    "source": "edge-gb-f",
+    "ms": 4140
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-4511ce599c-8562adc8.mp3",
+    "source": "edge-gb-m",
+    "ms": 3680
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-4511ce599c-d99a9e49.mp3",
+    "source": "edge-us-f",
+    "ms": 3750
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-4511ce599c-566807a4.mp3",
+    "source": "edge-us-m",
+    "ms": 3350
+   }
+  ],
+  "If it happens again, we'll need to look at the bracket design itself.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-46375a3dc2-611ea428.mp3",
+    "source": "edge-gb-m",
+    "ms": 3330
+   }
+  ],
+  "If you could work on any space mission, which one would it be?": [
+   {
+    "voice": "au-m",
+    "file": "call-questions/au-m-3ef890f144-98ff4212.mp3",
+    "source": "edge-au-m",
+    "ms": 3230
+   }
+  ],
+  "Imagine you have": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-500d3afd99-68b33ff5.mp3",
+    "source": "edge-gb-f",
+    "ms": 1300
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-500d3afd99-930de09a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1130
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-500d3afd99-7e80ee4f.mp3",
+    "source": "edge-us-f",
+    "ms": 1020
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-500d3afd99-35e5b817.mp3",
+    "source": "edge-us-m",
+    "ms": 920
+   }
+  ],
+  "Imagine you have a long beam fixed at one end.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-30bb1d9ef1-e1338ff6.mp3",
+    "source": "edge-gb-f",
+    "ms": 2810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-30bb1d9ef1-160829d0.mp3",
+    "source": "edge-gb-m",
+    "ms": 2520
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-30bb1d9ef1-aa135a30.mp3",
+    "source": "edge-us-f",
+    "ms": 2790
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-30bb1d9ef1-44d58a77.mp3",
+    "source": "edge-us-m",
+    "ms": 2490
+   }
+  ],
+  "Imagine you have a long beam.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-024fa66e99-56f417b5.mp3",
+    "source": "edge-gb-f",
+    "ms": 1810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-024fa66e99-f1524aa9.mp3",
+    "source": "edge-gb-m",
+    "ms": 1610
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-024fa66e99-690e58c7.mp3",
+    "source": "edge-us-f",
+    "ms": 1660
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-024fa66e99-348b3fed.mp3",
+    "source": "edge-us-m",
+    "ms": 1520
+   }
+  ],
+  "In my free time, I": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-e123424c65-ce415780.mp3",
+    "source": "edge-gb-f",
+    "ms": 1740
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-e123424c65-9ad05f00.mp3",
+    "source": "edge-gb-m",
+    "ms": 1650
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-e123424c65-67b87584.mp3",
+    "source": "edge-us-f",
+    "ms": 1300
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-e123424c65-f5d3cc15.mp3",
+    "source": "edge-us-m",
+    "ms": 1080
+   }
+  ],
+  "In my free time, I like to read about space missions.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ac2d2cdeee-6d0f6bec.mp3",
+    "source": "edge-gb-f",
+    "ms": 3420
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ac2d2cdeee-449f9d50.mp3",
+    "source": "edge-gb-m",
+    "ms": 3160
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ac2d2cdeee-11381157.mp3",
+    "source": "edge-us-f",
+    "ms": 3140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ac2d2cdeee-1d6767db.mp3",
+    "source": "edge-us-m",
+    "ms": 2980
+   }
+  ],
+  "In other words": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6f076fce81-515ab9cf.mp3",
+    "source": "edge-gb-f",
+    "ms": 1070
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6f076fce81-2967c52c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1030
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6f076fce81-9558a6e7.mp3",
+    "source": "edge-us-f",
+    "ms": 1060
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6f076fce81-e777f4c5.mp3",
+    "source": "edge-us-m",
+    "ms": 830
+   }
+  ],
+  "In other words, we're checking the strength.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-43e52979fe-f91b15ec.mp3",
+    "source": "edge-gb-f",
+    "ms": 2340
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-43e52979fe-7097218a.mp3",
+    "source": "edge-gb-m",
+    "ms": 2160
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-43e52979fe-a9458add.mp3",
+    "source": "edge-us-f",
+    "ms": 2250
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-43e52979fe-d95561d0.mp3",
+    "source": "edge-us-m",
+    "ms": 1910
+   }
+  ],
+  "In simple terms": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-59f34205a5-69789a95.mp3",
+    "source": "edge-gb-f",
+    "ms": 1330
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-59f34205a5-804c2f0a.mp3",
+    "source": "edge-gb-m",
+    "ms": 1190
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-59f34205a5-c86e747a.mp3",
+    "source": "edge-us-f",
+    "ms": 1320
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-59f34205a5-1210d7d7.mp3",
+    "source": "edge-us-m",
+    "ms": 1070
+   }
+  ],
+  "In simple terms, it's a very stiff spring.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-775028b109-d62d56aa.mp3",
+    "source": "edge-gb-f",
+    "ms": 2790
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-775028b109-0c22ced7.mp3",
+    "source": "edge-gb-m",
+    "ms": 2500
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-775028b109-c96994cb.mp3",
+    "source": "edge-us-f",
+    "ms": 3170
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-775028b109-3eac59b0.mp3",
+    "source": "edge-us-m",
+    "ms": 2410
+   }
+  ],
+  "In the end, we managed to": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ac7af840b7-c0df6c4a.mp3",
+    "source": "edge-gb-f",
+    "ms": 1980
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ac7af840b7-711318c4.mp3",
+    "source": "edge-gb-m",
+    "ms": 1690
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ac7af840b7-fdbde3fa.mp3",
+    "source": "edge-us-f",
+    "ms": 2140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ac7af840b7-39bc0dd6.mp3",
+    "source": "edge-us-m",
+    "ms": 1750
+   }
+  ],
+  "In the end, we managed to meet the deadline.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-8eed08ca73-6ee7e565.mp3",
+    "source": "edge-gb-f",
+    "ms": 2790
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-8eed08ca73-61d17077.mp3",
+    "source": "edge-gb-m",
+    "ms": 2430
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-8eed08ca73-410b770e.mp3",
+    "source": "edge-us-f",
+    "ms": 3130
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-8eed08ca73-8f28cfd7.mp3",
+    "source": "edge-us-m",
+    "ms": 2510
+   }
+  ],
+  "In the end, we met the deadline.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-e2094010ee-ca30d8b9.mp3",
+    "source": "edge-gb-f",
+    "ms": 2200
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-e2094010ee-113ccaf7.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-e2094010ee-135bb777.mp3",
+    "source": "edge-us-f",
+    "ms": 2210
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-e2094010ee-3d409b56.mp3",
+    "source": "edge-us-m",
+    "ms": 1880
+   }
+  ],
+  "In this video I'll walk you through our new test rig. On the left you can see the hydraulic actuator.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-830f3b7cbe-4ec13143.mp3",
+    "source": "edge-us-f",
+    "ms": 5470
+   }
+  ],
+  "Is it on or off?": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-880b600c1f-c671ef73.mp3",
+    "source": "edge-gb-f",
+    "ms": 1270
+   }
+  ],
+  "Is that what you meant?": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-892c9434e2-1a1429b4.mp3",
+    "source": "edge-gb-f",
+    "ms": 1360
+   }
+  ],
+  "Is there anything else you'd like to know about the role?": [
+   {
+    "voice": "au-f",
+    "file": "call-questions/au-f-596ff4505a-f63d240b.mp3",
+    "source": "edge-au-f",
+    "ms": 2900
+   }
+  ],
+  "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-9882cb6064-9d117ee9.mp3",
+    "source": "edge-us-f",
+    "ms": 5120
+   }
+  ],
+  "It could've been worse.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-5235e023e2-c31a5b88.mp3",
+    "source": "edge-us-m",
+    "ms": 1100
+   }
+  ],
+  "It depends on the load.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-51097404f6-b75b6631.mp3",
+    "source": "edge-gb-f",
+    "ms": 1450
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-51097404f6-72880ab1.mp3",
+    "source": "edge-gb-m",
+    "ms": 1360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-51097404f6-9b7fe8e5.mp3",
+    "source": "edge-us-f",
+    "ms": 1150
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-51097404f6-9631be16.mp3",
+    "source": "edge-us-m",
+    "ms": 1050
+   }
+  ],
+  "It did. The peak temperature dropped by about twelve degrees, and we stayed within the mass budget.": [
+   {
+    "voice": "au-f",
+    "file": "air-passages/au-f-f35d1324b2-7354a7b0.mp3",
+    "source": "edge-au-f",
+    "ms": 6310
+   }
+  ],
+  "It must be the pressure sensor.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-9090bce66d-3c8a4115.mp3",
+    "source": "edge-us-f",
+    "ms": 1610
+   }
+  ],
+  "It'll take about two weeks.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-eeff573442-de1a4148.mp3",
+    "source": "edge-us-m",
+    "ms": 1410
+   }
+  ],
+  "It's a lot of work for a small team.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-86b1b976ae-0dad8a32.mp3",
+    "source": "edge-us-f",
+    "ms": 1950
    }
   ],
   "It's an old engine, but it still works.": [
@@ -99,12 +2957,948 @@
     "ms": 2560
    }
   ],
+  "It's an old issue in our system.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-aa29b88980-55e96d2b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1780
+   }
+  ],
+  "It's similar to": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ff130e0017-9d174093.mp3",
+    "source": "edge-gb-f",
+    "ms": 1170
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ff130e0017-8c914ec7.mp3",
+    "source": "edge-gb-m",
+    "ms": 900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ff130e0017-718d107f.mp3",
+    "source": "edge-us-f",
+    "ms": 1010
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ff130e0017-497f8d95.mp3",
+    "source": "edge-us-m",
+    "ms": 880
+   }
+  ],
+  "It's similar to a spring, but it works both ways.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-88823b4115-12f24746.mp3",
+    "source": "edge-gb-f",
+    "ms": 3170
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-88823b4115-077afb21.mp3",
+    "source": "edge-gb-m",
+    "ms": 2800
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-88823b4115-e9a78ec2.mp3",
+    "source": "edge-us-f",
+    "ms": 2960
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-88823b4115-51dfd5ce.mp3",
+    "source": "edge-us-m",
+    "ms": 2920
+   }
+  ],
+  "Just one. I still don't have the updated material data from the supplier.": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-4be41ac00c-c210e13c.mp3",
+    "source": "edge-au-m",
+    "ms": 4490
+   }
+  ],
+  "Just to make sure I understand": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f455082fff-01838eaa.mp3",
+    "source": "edge-gb-f",
+    "ms": 2000
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f455082fff-f99107f0.mp3",
+    "source": "edge-gb-m",
+    "ms": 1740
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f455082fff-35cbe8cb.mp3",
+    "source": "edge-us-f",
+    "ms": 1630
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f455082fff-60b64d3b.mp3",
+    "source": "edge-us-m",
+    "ms": 1490
+   }
+  ],
+  "Just to make sure I understand, you need the report by Friday?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-e439139437-18bbad2b.mp3",
+    "source": "edge-gb-f",
+    "ms": 3830
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-e439139437-c41411a4.mp3",
+    "source": "edge-gb-m",
+    "ms": 3320
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-e439139437-41177f63.mp3",
+    "source": "edge-us-f",
+    "ms": 3310
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-e439139437-9a04ab1c.mp3",
+    "source": "edge-us-m",
+    "ms": 3130
+   }
+  ],
+  "Keep the sensor far away from the engine.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-ed0bf7bf4b-e5271204.mp3",
+    "source": "edge-gb-m",
+    "ms": 2029
+   }
+  ],
+  "Last time it worked fine.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-218dd0edb3-07fd7779.mp3",
+    "source": "edge-us-m",
+    "ms": 1220
+   }
+  ],
+  "Let me briefly introduce myself.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a700e41bdf-2db31a8f.mp3",
+    "source": "edge-gb-f",
+    "ms": 2230
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a700e41bdf-2710d65d.mp3",
+    "source": "edge-gb-m",
+    "ms": 2060
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a700e41bdf-1c939014.mp3",
+    "source": "edge-us-f",
+    "ms": 1950
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a700e41bdf-911d5f6a.mp3",
+    "source": "edge-us-m",
+    "ms": 1720
+   }
+  ],
+  "Let me give you an example.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-eac7e8b036-5a53f79d.mp3",
+    "source": "edge-gb-f",
+    "ms": 1680
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-eac7e8b036-d8edab33.mp3",
+    "source": "edge-gb-m",
+    "ms": 1360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-eac7e8b036-d9809741.mp3",
+    "source": "edge-us-f",
+    "ms": 1400
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-eac7e8b036-bbd6f208.mp3",
+    "source": "edge-us-m",
+    "ms": 1230
+   }
+  ],
+  "Let me know if you need anything.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-d3d6fafd79-aaddd604.mp3",
+    "source": "edge-us-m",
+    "ms": 1330
+   }
+  ],
+  "Let me look into it after lunch.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-029a8a982d-c5ab3037.mp3",
+    "source": "edge-us-m",
+    "ms": 1600
+   }
+  ],
+  "Let me put it another way.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-7b475bb728-0979fd3c.mp3",
+    "source": "edge-gb-f",
+    "ms": 1570
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-7b475bb728-98bff58c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1360
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-7b475bb728-26ba5377.mp3",
+    "source": "edge-us-f",
+    "ms": 1340
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-7b475bb728-196df337.mp3",
+    "source": "edge-us-m",
+    "ms": 1140
+   }
+  ],
+  "Let me think about that for a second.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-634651893e-6829ae6a.mp3",
+    "source": "edge-gb-f",
+    "ms": 2140
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-634651893e-05ffde38.mp3",
+    "source": "edge-gb-m",
+    "ms": 1790
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-634651893e-0c19b126.mp3",
+    "source": "edge-us-f",
+    "ms": 1720
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-634651893e-7475047c.mp3",
+    "source": "edge-us-m",
+    "ms": 1540
+   }
+  ],
+  "Let's grab a coffee and go over the plan.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-047e780c90-8f1bc4de.mp3",
+    "source": "edge-us-f",
+    "ms": 2410
+   }
+  ],
+  "Let's start with the good news.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-69e7cad4ec-df81d036.mp3",
+    "source": "edge-us-f",
+    "ms": 1370
+   }
+  ],
+  "Let's take this offline and discuss it tomorrow.": [
+   {
+    "voice": "au-m",
+    "file": "air-phrases/au-m-9681e7e7eb-48edebb7.mp3",
+    "source": "edge-au-m",
+    "ms": 2540
+   },
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-9681e7e7eb-d1f7c984.mp3",
+    "source": "edge-gb-m",
+    "ms": 2310
+   },
+   {
+    "voice": "in-f",
+    "file": "air-phrases/in-f-9681e7e7eb-02b1dc34.mp3",
+    "source": "edge-in-f",
+    "ms": 2910
+   },
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-9681e7e7eb-c1143e6f.mp3",
+    "source": "edge-us-f",
+    "ms": 2750
+   }
+  ],
+  "Looking back, I would": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ee92f03f7b-be015f37.mp3",
+    "source": "edge-gb-f",
+    "ms": 1730
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ee92f03f7b-2e3d4548.mp3",
+    "source": "edge-gb-m",
+    "ms": 1460
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ee92f03f7b-2d3d3edc.mp3",
+    "source": "edge-us-f",
+    "ms": 1260
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ee92f03f7b-849691ba.mp3",
+    "source": "edge-us-m",
+    "ms": 1210
+   }
+  ],
+  "Looking back, I would start testing earlier.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-773bb42203-aaf3f876.mp3",
+    "source": "edge-gb-f",
+    "ms": 2760
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-773bb42203-47c5b5af.mp3",
+    "source": "edge-gb-m",
+    "ms": 2500
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-773bb42203-9e39fb20.mp3",
+    "source": "edge-us-f",
+    "ms": 2420
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-773bb42203-9506b6ae.mp3",
+    "source": "edge-us-m",
+    "ms": 2320
+   }
+  ],
   "Loud and clear. Go ahead.": [
    {
     "voice": "gb-m",
     "file": "intake/gb-m-743e93c631-7327be38.mp3",
     "source": "edge-gb-m",
     "ms": 2560
+   }
+  ],
+  "Morning, everyone. Let's keep this short. Tom, you first.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-b23ebc9176-aba27bfe.mp3",
+    "source": "edge-us-f",
+    "ms": 4210
+   }
+  ],
+  "Most people prefer the second option.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-c131637798-54381fef.mp3",
+    "source": "edge-us-m",
+    "ms": 1870
+   }
+  ],
+  "My background is in": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-44464443f5-386e3953.mp3",
+    "source": "edge-gb-f",
+    "ms": 1450
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-44464443f5-82b82e4b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1290
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-44464443f5-ee8e4e6f.mp3",
+    "source": "edge-us-f",
+    "ms": 1240
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-44464443f5-007e662f.mp3",
+    "source": "edge-us-m",
+    "ms": 1160
+   }
+  ],
+  "My background is in applied mathematics.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-0e83fce926-7f528424.mp3",
+    "source": "edge-gb-f",
+    "ms": 2660
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-0e83fce926-d1e187a8.mp3",
+    "source": "edge-gb-m",
+    "ms": 2350
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-0e83fce926-b558011c.mp3",
+    "source": "edge-us-f",
+    "ms": 2380
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-0e83fce926-a80bb0f0.mp3",
+    "source": "edge-us-m",
+    "ms": 2200
+   }
+  ],
+  "My background is in materials science.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-aed6336bea-9477ed11.mp3",
+    "source": "edge-gb-f",
+    "ms": 2570
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-aed6336bea-6fef066c.mp3",
+    "source": "edge-gb-m",
+    "ms": 2370
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-aed6336bea-833233a2.mp3",
+    "source": "edge-us-f",
+    "ms": 2370
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-aed6336bea-513ba311.mp3",
+    "source": "edge-us-m",
+    "ms": 2060
+   }
+  ],
+  "My background is in mechanical engineering.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-17890f4921-ddba5c92.mp3",
+    "source": "edge-gb-f",
+    "ms": 2660
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-17890f4921-752d7b99.mp3",
+    "source": "edge-gb-m",
+    "ms": 2380
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-17890f4921-2f6bb830.mp3",
+    "source": "edge-us-f",
+    "ms": 2630
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-17890f4921-fc612682.mp3",
+    "source": "edge-us-m",
+    "ms": 2170
+   }
+  ],
+  "My background is in rocket and space engineering.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-cf40c68c02-0b9def3c.mp3",
+    "source": "edge-gb-f",
+    "ms": 3080
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-cf40c68c02-246a08fa.mp3",
+    "source": "edge-gb-m",
+    "ms": 2710
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-cf40c68c02-fde1f77f.mp3",
+    "source": "edge-us-f",
+    "ms": 2970
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-cf40c68c02-a627a157.mp3",
+    "source": "edge-us-m",
+    "ms": 2540
+   }
+  ],
+  "My role was to": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6af17c4e02-d1aa7ad6.mp3",
+    "source": "edge-gb-f",
+    "ms": 1260
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6af17c4e02-bbb2f0c5.mp3",
+    "source": "edge-gb-m",
+    "ms": 1060
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6af17c4e02-68b0f2cf.mp3",
+    "source": "edge-us-f",
+    "ms": 1070
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6af17c4e02-540993b0.mp3",
+    "source": "edge-us-m",
+    "ms": 990
+   }
+  ],
+  "My role was to prepare the test plan.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-9182747126-3621e529.mp3",
+    "source": "edge-gb-f",
+    "ms": 2370
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-9182747126-475d2d69.mp3",
+    "source": "edge-gb-m",
+    "ms": 2100
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-9182747126-edd6bc02.mp3",
+    "source": "edge-us-f",
+    "ms": 2150
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-9182747126-831af263.mp3",
+    "source": "edge-us-m",
+    "ms": 1830
+   }
+  ],
+  "Nice. What would you do differently next time?": [
+   {
+    "voice": "us-m",
+    "file": "air-passages/us-m-17f27eef42-76484d86.mp3",
+    "source": "edge-us-m",
+    "ms": 2480
+   }
+  ],
+  "No problem. I'll prepare something, ten minutes max.": [
+   {
+    "voice": "in-f",
+    "file": "air-passages/in-f-876fed46d8-22ce77ee.mp3",
+    "source": "edge-in-f",
+    "ms": 4430
+   }
+  ],
+  "Off the top of my head, I'd say": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-128f48be00-fd76d7ba.mp3",
+    "source": "edge-gb-f",
+    "ms": 2170
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-128f48be00-1a80f59e.mp3",
+    "source": "edge-gb-m",
+    "ms": 1940
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-128f48be00-b7670d48.mp3",
+    "source": "edge-us-f",
+    "ms": 1800
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-128f48be00-6f23ef28.mp3",
+    "source": "edge-us-m",
+    "ms": 1900
+   }
+  ],
+  "Off the top of my head, I'd say about a hundred kilograms.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-aa75d963c7-d584d012.mp3",
+    "source": "edge-gb-f",
+    "ms": 3510
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-aa75d963c7-c6e5f6cf.mp3",
+    "source": "edge-gb-m",
+    "ms": 3330
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-aa75d963c7-83f2f099.mp3",
+    "source": "edge-us-f",
+    "ms": 3730
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-aa75d963c7-d20977fe.mp3",
+    "source": "edge-us-m",
+    "ms": 3290
+   }
+  ],
+  "Off the top of my head, I'd say about five percent.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-6fe6e49515-914a24a0.mp3",
+    "source": "edge-gb-f",
+    "ms": 3080
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-6fe6e49515-e5d84479.mp3",
+    "source": "edge-gb-m",
+    "ms": 2900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-6fe6e49515-9358abf6.mp3",
+    "source": "edge-us-f",
+    "ms": 2890
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-6fe6e49515-6f42ec4b.mp3",
+    "source": "edge-us-m",
+    "ms": 2880
+   }
+  ],
+  "Off the top of my head, I'd say about two weeks.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-ae1589b471-e9b4ba32.mp3",
+    "source": "edge-gb-f",
+    "ms": 3010
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-ae1589b471-2cb52f3b.mp3",
+    "source": "edge-gb-m",
+    "ms": 2780
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-ae1589b471-12340117.mp3",
+    "source": "edge-us-f",
+    "ms": 2760
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-ae1589b471-4b1ad7f5.mp3",
+    "source": "edge-us-m",
+    "ms": 2760
+   }
+  ],
+  "Off the top of my head, I'd say three or four people.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-ee2b49ce1c-22982842.mp3",
+    "source": "edge-gb-f",
+    "ms": 3160
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-ee2b49ce1c-77e0022f.mp3",
+    "source": "edge-gb-m",
+    "ms": 3110
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-ee2b49ce1c-4640fe8e.mp3",
+    "source": "edge-us-f",
+    "ms": 3610
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-ee2b49ce1c-8b0f3d2d.mp3",
+    "source": "edge-us-m",
+    "ms": 3190
+   }
+  ],
+  "Our team thinks deadlines matter more than documentation. Do you agree?": [
+   {
+    "voice": "au-m",
+    "file": "call-questions/au-m-ce324c39bb-3df85851.mp3",
+    "source": "edge-au-m",
+    "ms": 4290
+   }
+  ],
+  "Pick it up at eight.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-48c2aafecb-0406e137.mp3",
+    "source": "edge-gb-f",
+    "ms": 1240
+   }
+  ],
+  "Put it on the table over there.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-4e65478233-4ab608af.mp3",
+    "source": "edge-us-f",
+    "ms": 1400
+   }
+  ],
+  "Right, quick one from me. The vibration table's booked for Thursday, not Wednesday, so we've got an extra day to fix the mounting plate.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-02f7e73913-7a66fb18.mp3",
+    "source": "edge-gb-m",
+    "ms": 8320
+   }
+  ],
+  "Right, so here's what happened on Friday. We ran the random vibration test at full level.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-99892ba97e-6d2a80cb.mp3",
+    "source": "edge-gb-m",
+    "ms": 6040
+   }
+  ],
+  "See you next week.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-da65d3332c-63e51bb0.mp3",
+    "source": "edge-gb-f",
+    "ms": 1310
+   }
+  ],
+  "She's been here since eight.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-a02325b99a-c1142f18.mp3",
+    "source": "edge-us-f",
+    "ms": 1490
+   }
+  ],
+  "So you need the report by Friday?": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-2223f26515-b0638f98.mp3",
+    "source": "edge-gb-f",
+    "ms": 2220
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-2223f26515-7bb1aef7.mp3",
+    "source": "edge-gb-m",
+    "ms": 1790
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-2223f26515-96ff119f.mp3",
+    "source": "edge-us-f",
+    "ms": 1790
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-2223f26515-17dffd57.mp3",
+    "source": "edge-us-m",
+    "ms": 1630
+   }
+  ],
+  "So, if I understand correctly": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-59e7ec8eff-d0221e2a.mp3",
+    "source": "edge-gb-f",
+    "ms": 2410
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-59e7ec8eff-c1ad924d.mp3",
+    "source": "edge-gb-m",
+    "ms": 2009
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-59e7ec8eff-d2ac7974.mp3",
+    "source": "edge-us-f",
+    "ms": 2220
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-59e7ec8eff-9a6c6d67.mp3",
+    "source": "edge-us-m",
+    "ms": 1850
+   }
+  ],
+  "So, if I understand correctly, the test is on Thursday.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-cea6c364ea-02178da8.mp3",
+    "source": "edge-gb-f",
+    "ms": 3870
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-cea6c364ea-5dd338d6.mp3",
+    "source": "edge-gb-m",
+    "ms": 3470
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-cea6c364ea-1c1d7124.mp3",
+    "source": "edge-us-f",
+    "ms": 3600
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-cea6c364ea-f8589570.mp3",
+    "source": "edge-us-m",
+    "ms": 3290
+   }
+  ],
+  "So, tell me about a project you're proud of.": [
+   {
+    "voice": "us-m",
+    "file": "air-passages/us-m-d5b56d5d78-85b034bf.mp3",
+    "source": "edge-us-m",
+    "ms": 2250
+   }
+  ],
+  "Some of them are still in the box.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-fc9cddd355-1382b451.mp3",
+    "source": "edge-us-m",
+    "ms": 1510
+   }
+  ],
+  "Some people say simulation will replace testing. What do you think?": [
+   {
+    "voice": "in-f",
+    "file": "call-questions/in-f-2619c6a119-4f64e2ca.mp3",
+    "source": "edge-in-f",
+    "ms": 5040
+   }
+  ],
+  "Sorry, I didn't catch that.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-6b1b1860c4-2bc1eb5d.mp3",
+    "source": "edge-gb-f",
+    "ms": 2040
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-6b1b1860c4-a32b18a8.mp3",
+    "source": "edge-gb-m",
+    "ms": 1740
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-6b1b1860c4-aa75516c.mp3",
+    "source": "edge-us-f",
+    "ms": 1510
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-6b1b1860c4-4eb68b3a.mp3",
+    "source": "edge-us-m",
+    "ms": 1540
+   }
+  ],
+  "Sorry, you're on mute.": [
+   {
+    "voice": "au-f",
+    "file": "air-phrases/au-f-ce598facef-b653066d.mp3",
+    "source": "edge-au-f",
+    "ms": 1540
+   },
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-ce598facef-76f13906.mp3",
+    "source": "edge-gb-f",
+    "ms": 1720
+   },
+   {
+    "voice": "in-m",
+    "file": "air-phrases/in-m-ce598facef-ee664037.mp3",
+    "source": "edge-in-m",
+    "ms": 1780
+   },
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-ce598facef-00144ee1.mp3",
+    "source": "edge-us-m",
+    "ms": 1360
+   }
+  ],
+  "Sure, what's up?": [
+   {
+    "voice": "in-f",
+    "file": "air-passages/in-f-bc9a7a1c1a-99f949c0.mp3",
+    "source": "edge-in-f",
+    "ms": 1420
+   }
+  ],
+  "Sure. Last year I worked on a small satellite for a university team. I was responsible for the thermal design.": [
+   {
+    "voice": "au-f",
+    "file": "air-passages/au-f-7e1e9eb8b5-4ac3c54a.mp3",
+    "source": "edge-au-f",
+    "ms": 8650
+   }
+  ],
+  "Sure. So yesterday I finished the bracket redesign, and I'm gonna run the stress analysis today. Should be done by lunch, unless the mesh gives me trouble again.": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-5f89f28e59-e64a22f7.mp3",
+    "source": "edge-au-m",
+    "ms": 9530
+   }
+  ],
+  "Tell him we'll be there at ten.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-4df670e547-f9545c2c.mp3",
+    "source": "edge-us-m",
+    "ms": 1550
    }
   ],
   "Tell me a little about yourself and your studies.": [
@@ -115,12 +3909,1002 @@
     "ms": 2490
    }
   ],
+  "Tell me about a project you're proud of.": [
+   {
+    "voice": "us-f",
+    "file": "call-questions/us-f-4fc2337451-cb3b6c08.mp3",
+    "source": "edge-us-f",
+    "ms": 1780
+   }
+  ],
+  "Tell me about a time you worked under pressure.": [
+   {
+    "voice": "us-m",
+    "file": "call-questions/us-m-6aed52b641-36151130.mp3",
+    "source": "edge-us-m",
+    "ms": 2040
+   }
+  ],
+  "Tell me about yourself.": [
+   {
+    "voice": "us-m",
+    "file": "call-questions/us-m-27fde5f9e6-c1369a5a.mp3",
+    "source": "edge-us-m",
+    "ms": 1090
+   }
+  ],
+  "Thanks. And could you attach the latest drawings? The ones from last week are out of date.": [
+   {
+    "voice": "in-f",
+    "file": "air-passages/in-f-db2e558622-47b3a663.mp3",
+    "source": "edge-in-f",
+    "ms": 7240
+   }
+  ],
+  "That makes sense, thanks for explaining.": [
+   {
+    "voice": "au-m",
+    "file": "air-phrases/au-m-7916e4699c-ad8dbb2b.mp3",
+    "source": "edge-au-m",
+    "ms": 2350
+   },
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-7916e4699c-6ba7f48e.mp3",
+    "source": "edge-gb-m",
+    "ms": 2250
+   },
+   {
+    "voice": "in-f",
+    "file": "air-phrases/in-f-7916e4699c-f0b9cd28.mp3",
+    "source": "edge-in-f",
+    "ms": 2640
+   },
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-7916e4699c-046c4e91.mp3",
+    "source": "edge-us-f",
+    "ms": 2260
+   }
+  ],
+  "That would help a lot. Please let me know by Wednesday.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-9230ecddc1-0d037210.mp3",
+    "source": "edge-us-f",
+    "ms": 3000
+   }
+  ],
+  "That's a bit about me.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a57c6dca04-a1df7eb0.mp3",
+    "source": "edge-gb-f",
+    "ms": 1340
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a57c6dca04-b4fad389.mp3",
+    "source": "edge-gb-m",
+    "ms": 1100
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a57c6dca04-fe1b89ba.mp3",
+    "source": "edge-us-f",
+    "ms": 1230
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a57c6dca04-90dbf480.mp3",
+    "source": "edge-us-m",
+    "ms": 1000
+   }
+  ],
+  "That's a good question, let me think.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f3b90708ea-a5f428f8.mp3",
+    "source": "edge-gb-f",
+    "ms": 2300
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f3b90708ea-9ee434d3.mp3",
+    "source": "edge-gb-m",
+    "ms": 2009
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f3b90708ea-cd54454d.mp3",
+    "source": "edge-us-f",
+    "ms": 1960
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f3b90708ea-89e257c8.mp3",
+    "source": "edge-us-m",
+    "ms": 1960
+   }
+  ],
+  "That's outside my area, to be honest.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-d97e7566bf-52f52059.mp3",
+    "source": "edge-gb-f",
+    "ms": 2530
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-d97e7566bf-bad03afb.mp3",
+    "source": "edge-gb-m",
+    "ms": 2430
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-d97e7566bf-1f76d291.mp3",
+    "source": "edge-us-f",
+    "ms": 2350
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-d97e7566bf-8f96673c.mp3",
+    "source": "edge-us-m",
+    "ms": 2050
+   }
+  ],
+  "That's true, but have we considered": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-686d8de252-146d1a11.mp3",
+    "source": "edge-gb-f",
+    "ms": 2280
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-686d8de252-e9faa0aa.mp3",
+    "source": "edge-gb-m",
+    "ms": 1860
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-686d8de252-47e9a600.mp3",
+    "source": "edge-us-f",
+    "ms": 1920
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-686d8de252-c24983d5.mp3",
+    "source": "edge-us-m",
+    "ms": 2029
+   }
+  ],
+  "That's true, but have we considered the cost?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-fd4f457db3-f0602388.mp3",
+    "source": "edge-gb-f",
+    "ms": 2860
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-fd4f457db3-053cb7fe.mp3",
+    "source": "edge-gb-m",
+    "ms": 2300
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-fd4f457db3-40aa7dd0.mp3",
+    "source": "edge-us-f",
+    "ms": 2350
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-fd4f457db3-bcf82101.mp3",
+    "source": "edge-us-m",
+    "ms": 2390
+   }
+  ],
+  "That's what I'd have done too.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-c679538d7d-3e50b8e7.mp3",
+    "source": "edge-us-m",
+    "ms": 1230
+   }
+  ],
+  "The carbon fiber panels passed inspection, so they'll ship on Monday.": [
+   {
+    "voice": "gb-f",
+    "file": "air-passages/gb-f-657d15da08-b021a2a6.mp3",
+    "source": "edge-gb-f",
+    "ms": 4050
+   }
+  ],
+  "The client wants to move it to Thursday afternoon. Does that work for you?": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-35e12cbe21-5e7d2260.mp3",
+    "source": "edge-au-m",
+    "ms": 4160
+   }
+  ],
+  "The data was sent to the lab on Monday.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-d1198ca5f5-454c5dba.mp3",
+    "source": "edge-gb-f",
+    "ms": 2460
+   }
+  ],
+  "The electronics kept overheating in our simulations. We couldn't add a radiator because of the mass limit, so I suggested moving the battery closer to the panel and using a thermal strap instead.": [
+   {
+    "voice": "au-f",
+    "file": "air-passages/au-f-3bb4996b14-417fc549.mp3",
+    "source": "edge-au-f",
+    "ms": 12170
+   }
+  ],
+  "The first test failed, the second passed.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-f63fd9aace-ef0fad38.mp3",
+    "source": "edge-us-f",
+    "ms": 2490
+   }
+  ],
+  "The goal of the project was to": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-42811a33a8-ebb6ad28.mp3",
+    "source": "edge-gb-f",
+    "ms": 2009
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-42811a33a8-d256f293.mp3",
+    "source": "edge-gb-m",
+    "ms": 1490
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-42811a33a8-348ce2db.mp3",
+    "source": "edge-us-f",
+    "ms": 1680
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-42811a33a8-5de4b9ce.mp3",
+    "source": "edge-us-m",
+    "ms": 1690
+   }
+  ],
+  "The goal of the project was to reduce the weight of the bracket.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-d754f5491d-c14f59d4.mp3",
+    "source": "edge-gb-f",
+    "ms": 3430
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-d754f5491d-b43a2a14.mp3",
+    "source": "edge-gb-m",
+    "ms": 2710
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-d754f5491d-1d1b1fe7.mp3",
+    "source": "edge-us-f",
+    "ms": 3020
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-d754f5491d-f767bbae.mp3",
+    "source": "edge-us-m",
+    "ms": 3140
+   }
+  ],
+  "The idea is pretty simple": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a4129a7c40-99694789.mp3",
+    "source": "edge-gb-f",
+    "ms": 1880
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a4129a7c40-53650530.mp3",
+    "source": "edge-gb-m",
+    "ms": 1690
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a4129a7c40-edc8298b.mp3",
+    "source": "edge-us-f",
+    "ms": 1880
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a4129a7c40-f01a021f.mp3",
+    "source": "edge-us-m",
+    "ms": 1590
+   }
+  ],
+  "The idea is pretty simple: we split the part into small pieces.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-4616e7c5a9-f656076f.mp3",
+    "source": "edge-gb-f",
+    "ms": 4130
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-4616e7c5a9-eed991ae.mp3",
+    "source": "edge-gb-m",
+    "ms": 3880
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-4616e7c5a9-8cd562d3.mp3",
+    "source": "edge-us-f",
+    "ms": 4140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-4616e7c5a9-c5dd26cb.mp3",
+    "source": "edge-us-m",
+    "ms": 3730
+   }
+  ],
+  "The key point is that": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a97a9f1a5b-b13b74d7.mp3",
+    "source": "edge-gb-f",
+    "ms": 1460
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a97a9f1a5b-a05b4b65.mp3",
+    "source": "edge-gb-m",
+    "ms": 1240
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a97a9f1a5b-9c9e54e4.mp3",
+    "source": "edge-us-f",
+    "ms": 1130
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a97a9f1a5b-b704e15e.mp3",
+    "source": "edge-us-m",
+    "ms": 1070
+   }
+  ],
+  "The key point is that the part must not deform.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f0cbf906f4-bec87bd4.mp3",
+    "source": "edge-gb-f",
+    "ms": 2810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f0cbf906f4-736e5321.mp3",
+    "source": "edge-gb-m",
+    "ms": 2410
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f0cbf906f4-1c9e78ab.mp3",
+    "source": "edge-us-f",
+    "ms": 2680
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f0cbf906f4-20dc81b5.mp3",
+    "source": "edge-us-m",
+    "ms": 2480
+   }
+  ],
+  "The main challenge was": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-9034f28e0e-36cf7f91.mp3",
+    "source": "edge-gb-f",
+    "ms": 1490
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-9034f28e0e-f90d037e.mp3",
+    "source": "edge-gb-m",
+    "ms": 1320
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-9034f28e0e-191b1b4c.mp3",
+    "source": "edge-us-f",
+    "ms": 1430
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-9034f28e0e-63676527.mp3",
+    "source": "edge-us-m",
+    "ms": 1140
+   }
+  ],
+  "The main challenge was the budget.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-e250ca009b-0ef85651.mp3",
+    "source": "edge-gb-f",
+    "ms": 1970
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-e250ca009b-434e8fdd.mp3",
+    "source": "edge-gb-m",
+    "ms": 1690
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-e250ca009b-d0eabe43.mp3",
+    "source": "edge-us-f",
+    "ms": 1860
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-e250ca009b-07b1eb72.mp3",
+    "source": "edge-us-m",
+    "ms": 1480
+   }
+  ],
+  "The main challenge was the deadline.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-faee11f434-5e4d5bcd.mp3",
+    "source": "edge-gb-f",
+    "ms": 2050
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-faee11f434-669f7d2c.mp3",
+    "source": "edge-gb-m",
+    "ms": 1760
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-faee11f434-c9e1bb40.mp3",
+    "source": "edge-us-f",
+    "ms": 2040
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-faee11f434-df11e72c.mp3",
+    "source": "edge-us-m",
+    "ms": 1600
+   }
+  ],
+  "The main challenge was the vibration at launch.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f4493c4c90-bbc58d0b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2810
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f4493c4c90-d5b86794.mp3",
+    "source": "edge-gb-m",
+    "ms": 2320
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f4493c4c90-768e4131.mp3",
+    "source": "edge-us-f",
+    "ms": 2660
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f4493c4c90-ef8f5bd8.mp3",
+    "source": "edge-us-m",
+    "ms": 2390
+   }
+  ],
+  "The main challenge was the weight.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-c5a1f36e1c-fe9feae7.mp3",
+    "source": "edge-gb-f",
+    "ms": 1880
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-c5a1f36e1c-5c000b2e.mp3",
+    "source": "edge-gb-m",
+    "ms": 1580
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-c5a1f36e1c-d91ff08b.mp3",
+    "source": "edge-us-f",
+    "ms": 1630
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-c5a1f36e1c-d34e6133.mp3",
+    "source": "edge-us-m",
+    "ms": 1320
+   }
+  ],
+  "The main challenge was vibration.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-f189067577-730206f5.mp3",
+    "source": "edge-gb-f",
+    "ms": 2060
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-f189067577-62602ac1.mp3",
+    "source": "edge-gb-m",
+    "ms": 1820
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-f189067577-e0705a1d.mp3",
+    "source": "edge-us-f",
+    "ms": 2040
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-f189067577-c4e83326.mp3",
+    "source": "edge-us-m",
+    "ms": 1680
+   }
+  ],
   "The next day we ran the test again.": [
    {
     "voice": "us-m",
     "file": "intake/us-m-50a2ec542a-c759a9c2.mp3",
     "source": "edge-us-m",
     "ms": 1910
+   }
+  ],
+  "The short answer is yes, but": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-bcfa29220f-96a5ea79.mp3",
+    "source": "edge-gb-f",
+    "ms": 2210
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-bcfa29220f-c4114bf4.mp3",
+    "source": "edge-gb-m",
+    "ms": 1880
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-bcfa29220f-f8579723.mp3",
+    "source": "edge-us-f",
+    "ms": 1750
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-bcfa29220f-66290b75.mp3",
+    "source": "edge-us-m",
+    "ms": 1910
+   }
+  ],
+  "The short answer is yes, but there's a catch.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-aa3249e142-a93fb742.mp3",
+    "source": "edge-gb-f",
+    "ms": 2720
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-aa3249e142-23823ce5.mp3",
+    "source": "edge-gb-m",
+    "ms": 2470
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-aa3249e142-4362e501.mp3",
+    "source": "edge-us-f",
+    "ms": 2600
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-aa3249e142-700bdaba.mp3",
+    "source": "edge-us-m",
+    "ms": 2490
+   }
+  ],
+  "The specimen sits in these wedge grips, and the load cell above it measures the force.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-3227186545-c2561304.mp3",
+    "source": "edge-us-f",
+    "ms": 4680
+   }
+  ],
+  "The supplier hasn't confirmed the delivery date yet.": [
+   {
+    "voice": "au-f",
+    "file": "air-phrases/au-f-4963c3851a-f85d900b.mp3",
+    "source": "edge-au-f",
+    "ms": 2920
+   },
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-4963c3851a-a5ee64a0.mp3",
+    "source": "edge-gb-f",
+    "ms": 3250
+   },
+   {
+    "voice": "in-m",
+    "file": "air-phrases/in-m-4963c3851a-98c69dc4.mp3",
+    "source": "edge-in-m",
+    "ms": 3200
+   },
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-4963c3851a-b2bc157b.mp3",
+    "source": "edge-us-m",
+    "ms": 2560
+   }
+  ],
+  "The titanium fasteners are delayed. Our supplier had a problem with the heat treatment, so we're looking at two weeks, maybe three.": [
+   {
+    "voice": "gb-f",
+    "file": "air-passages/gb-f-b491738f9b-0491048f.mp3",
+    "source": "edge-gb-f",
+    "ms": 7880
+   }
+  ],
+  "The torque was probably too low, so we're going to re-torque everything to spec, add thread locker, and repeat the test on Tuesday.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-32e821d29a-b08479fb.mp3",
+    "source": "edge-gb-m",
+    "ms": 6830
+   }
+  ],
+  "They should have told us earlier.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-bb7b3fe0ec-babb98f4.mp3",
+    "source": "edge-us-m",
+    "ms": 1250
+   }
+  ],
+  "They'd already left when we called.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-0fd8ac89a2-38e74f9e.mp3",
+    "source": "edge-gb-f",
+    "ms": 1970
+   }
+  ],
+  "Think of it as": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-876b2579c4-bdc76fa4.mp3",
+    "source": "edge-gb-f",
+    "ms": 1160
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-876b2579c4-771b892d.mp3",
+    "source": "edge-gb-m",
+    "ms": 850
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-876b2579c4-9fa33654.mp3",
+    "source": "edge-us-f",
+    "ms": 840
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-876b2579c4-6707f561.mp3",
+    "source": "edge-us-m",
+    "ms": 750
+   }
+  ],
+  "Think of it as a big thermos.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-78ccf970b4-dc3256ab.mp3",
+    "source": "edge-gb-f",
+    "ms": 1860
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-78ccf970b4-14322a4b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1550
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-78ccf970b4-32a87273.mp3",
+    "source": "edge-us-f",
+    "ms": 1760
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-78ccf970b4-7667b6ee.mp3",
+    "source": "edge-us-m",
+    "ms": 1440
+   }
+  ],
+  "Think of it as a lever.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-2b946c61c4-2cb94705.mp3",
+    "source": "edge-gb-f",
+    "ms": 1510
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-2b946c61c4-f1445982.mp3",
+    "source": "edge-gb-m",
+    "ms": 1180
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-2b946c61c4-7723914f.mp3",
+    "source": "edge-us-f",
+    "ms": 1170
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-2b946c61c4-909b1d72.mp3",
+    "source": "edge-us-m",
+    "ms": 1060
+   }
+  ],
+  "Think of it as a thermos for electronics.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-f06e481dd7-a7d75672.mp3",
+    "source": "edge-gb-f",
+    "ms": 2630
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-f06e481dd7-5b7d0e7c.mp3",
+    "source": "edge-gb-m",
+    "ms": 2110
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-f06e481dd7-1babeadd.mp3",
+    "source": "edge-us-f",
+    "ms": 2430
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-f06e481dd7-af4d2bd6.mp3",
+    "source": "edge-us-m",
+    "ms": 2260
+   }
+  ],
+  "Think of it as a very stiff spring.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-e84c655004-d1e846a8.mp3",
+    "source": "edge-gb-f",
+    "ms": 2180
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-e84c655004-f49c899e.mp3",
+    "source": "edge-gb-m",
+    "ms": 1810
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-e84c655004-a9aeeefe.mp3",
+    "source": "edge-us-f",
+    "ms": 2100
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-e84c655004-2fc55aef.mp3",
+    "source": "edge-us-m",
+    "ms": 1860
+   }
+  ],
+  "Think of it as a very thin membrane.": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-7c308cae57-d5811386.mp3",
+    "source": "edge-gb-f",
+    "ms": 2270
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-7c308cae57-a738adb7.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-7c308cae57-ac349676.mp3",
+    "source": "edge-us-f",
+    "ms": 2260
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-7c308cae57-c6290712.mp3",
+    "source": "edge-us-m",
+    "ms": 2230
+   }
+  ],
+  "Three weeks is a problem for us. Is there any way to split the order and send part of it earlier?": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-15a7b4bd5b-828df696.mp3",
+    "source": "edge-us-f",
+    "ms": 5120
+   }
+  ],
+  "Thursday afternoon. I have the lab until three. Could we do four o'clock?": [
+   {
+    "voice": "in-f",
+    "file": "air-passages/in-f-99a4761468-a8fbb7cf.mp3",
+    "source": "edge-in-f",
+    "ms": 6600
+   }
+  ],
+  "To be honest, that's outside my area.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-3a4294ddb3-58852e3e.mp3",
+    "source": "edge-gb-f",
+    "ms": 2650
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-3a4294ddb3-ecd926f2.mp3",
+    "source": "edge-gb-m",
+    "ms": 2430
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-3a4294ddb3-fd9da8aa.mp3",
+    "source": "edge-us-f",
+    "ms": 2530
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-3a4294ddb3-4b9e8ac1.mp3",
+    "source": "edge-us-m",
+    "ms": 2290
+   }
+  ],
+  "Turn it off and on again.": [
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-6eae96292c-ec955373.mp3",
+    "source": "edge-us-m",
+    "ms": 1410
+   }
+  ],
+  "We asked her to send the drawings.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-5708d6aae7-2c3ec693.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   }
+  ],
+  "We had a tight deadline, so": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-afff3856fc-c88c10be.mp3",
+    "source": "edge-gb-f",
+    "ms": 2100
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-afff3856fc-6e8b24a9.mp3",
+    "source": "edge-gb-m",
+    "ms": 1840
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-afff3856fc-ef48732e.mp3",
+    "source": "edge-us-f",
+    "ms": 1570
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-afff3856fc-26b5989b.mp3",
+    "source": "edge-us-m",
+    "ms": 1420
+   }
+  ],
+  "We had a tight deadline, so we split the work into two teams.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-5394f0de18-c6e116bd.mp3",
+    "source": "edge-gb-f",
+    "ms": 3820
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-5394f0de18-54a66b64.mp3",
+    "source": "edge-gb-m",
+    "ms": 3610
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-5394f0de18-521d0fef.mp3",
+    "source": "edge-us-f",
+    "ms": 3360
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-5394f0de18-90c9f131.mp3",
+    "source": "edge-us-m",
+    "ms": 3320
+   }
+  ],
+  "We have to check it for leaks.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-aab3adc374-8337fe06.mp3",
+    "source": "edge-gb-m",
+    "ms": 1570
+   }
+  ],
+  "We have to finish the report.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-860050b4aa-61bdb4b2.mp3",
+    "source": "edge-gb-m",
+    "ms": 1550
+   }
+  ],
+  "We need a new idea for the test rig.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-8733810506-a5c01779.mp3",
+    "source": "edge-gb-m",
+    "ms": 2120
+   }
+  ],
+  "We need to double-check the tolerances.": [
+   {
+    "voice": "au-f",
+    "file": "air-phrases/au-f-93614b7984-2a0339fc.mp3",
+    "source": "edge-au-f",
+    "ms": 2120
+   },
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-93614b7984-b287ecc2.mp3",
+    "source": "edge-gb-f",
+    "ms": 2330
+   },
+   {
+    "voice": "in-m",
+    "file": "air-phrases/in-m-93614b7984-d0583dab.mp3",
+    "source": "edge-in-m",
+    "ms": 2500
+   },
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-93614b7984-67a8b485.mp3",
+    "source": "edge-us-m",
+    "ms": 1890
    }
   ],
   "We should've checked the data first.": [
@@ -131,12 +4915,542 @@
     "ms": 2070
    }
   ],
+  "We solved it by": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-019e4cd252-4e7c345d.mp3",
+    "source": "edge-gb-f",
+    "ms": 1310
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-019e4cd252-c178a2db.mp3",
+    "source": "edge-gb-m",
+    "ms": 1130
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-019e4cd252-53e2086a.mp3",
+    "source": "edge-us-f",
+    "ms": 1240
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-019e4cd252-621cf16a.mp3",
+    "source": "edge-us-m",
+    "ms": 930
+   }
+  ],
+  "We solved it by changing the material.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-666fb979e3-044e6159.mp3",
+    "source": "edge-gb-f",
+    "ms": 2380
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-666fb979e3-11ab9fe4.mp3",
+    "source": "edge-gb-m",
+    "ms": 2150
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-666fb979e3-56bc827f.mp3",
+    "source": "edge-us-f",
+    "ms": 2140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-666fb979e3-1ceb4012.mp3",
+    "source": "edge-us-m",
+    "ms": 1910
+   }
+  ],
+  "We stopped the test, had a look, and found that two of the four bolts had loosened. Nothing's cracked, which is the good news.": [
+   {
+    "voice": "gb-m",
+    "file": "air-passages/gb-m-3b4646d02f-5fcb332a.mp3",
+    "source": "edge-gb-m",
+    "ms": 7520
+   }
+  ],
+  "We tested the pump and the valve.": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-9555e51054-5c48721b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2070
+   }
+  ],
+  "We use two strain gauges on each specimen, one on each side, so we can check for bending.": [
+   {
+    "voice": "us-f",
+    "file": "air-passages/us-f-185730110d-2a59ef9f.mp3",
+    "source": "edge-us-f",
+    "ms": 5430
+   }
+  ],
+  "We'll see what they say.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-f9b8c8ccab-6c0913a6.mp3",
+    "source": "edge-gb-m",
+    "ms": 1430
+   }
+  ],
+  "We'll start on Monday and finish by Friday.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-ccad787480-dc297bc0.mp3",
+    "source": "edge-gb-m",
+    "ms": 2560
+   }
+  ],
+  "We've already sent it.": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-fd718c7502-df5bb7fa.mp3",
+    "source": "edge-us-f",
+    "ms": 1170
+   }
+  ],
+  "Well, it depends on": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-fc012ae262-782019b9.mp3",
+    "source": "edge-gb-f",
+    "ms": 1640
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-fc012ae262-213f3b57.mp3",
+    "source": "edge-gb-m",
+    "ms": 1480
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-fc012ae262-0c94ee06.mp3",
+    "source": "edge-us-f",
+    "ms": 1820
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-fc012ae262-97d892dd.mp3",
+    "source": "edge-us-m",
+    "ms": 1020
+   }
+  ],
+  "Well, it depends on the requirements.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-47c651ddbf-f81d50e3.mp3",
+    "source": "edge-gb-f",
+    "ms": 2460
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-47c651ddbf-06b063eb.mp3",
+    "source": "edge-gb-m",
+    "ms": 2190
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-47c651ddbf-cd38fe97.mp3",
+    "source": "edge-us-f",
+    "ms": 2470
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-47c651ddbf-d112c131.mp3",
+    "source": "edge-us-m",
+    "ms": 2140
+   }
+  ],
+  "What I enjoy most is": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-645238ebaa-8f6b26ff.mp3",
+    "source": "edge-gb-f",
+    "ms": 1610
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-645238ebaa-935a3401.mp3",
+    "source": "edge-gb-m",
+    "ms": 1410
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-645238ebaa-3c5a4dd3.mp3",
+    "source": "edge-us-f",
+    "ms": 1420
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-645238ebaa-8314e667.mp3",
+    "source": "edge-us-m",
+    "ms": 1330
+   }
+  ],
+  "What I enjoy most is hands-on work.": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-5476a44801-49a346ea.mp3",
+    "source": "edge-gb-f",
+    "ms": 2400
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-5476a44801-2142ea6d.mp3",
+    "source": "edge-gb-m",
+    "ms": 2160
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-5476a44801-02c627dc.mp3",
+    "source": "edge-us-f",
+    "ms": 2140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-5476a44801-95de3e3c.mp3",
+    "source": "edge-us-m",
+    "ms": 2020
+   }
+  ],
+  "What I enjoy most is solving practical problems.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-da4a23cbdd-aec593dd.mp3",
+    "source": "edge-gb-f",
+    "ms": 3190
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-da4a23cbdd-e347f353.mp3",
+    "source": "edge-gb-m",
+    "ms": 2810
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-da4a23cbdd-d145af33.mp3",
+    "source": "edge-us-f",
+    "ms": 2850
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-da4a23cbdd-29f85b73.mp3",
+    "source": "edge-us-m",
+    "ms": 2770
+   }
+  ],
+  "What are the biggest challenges the team is facing right now?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-7066761a01-92415dcf.mp3",
+    "source": "edge-gb-f",
+    "ms": 3200
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-7066761a01-cf820289.mp3",
+    "source": "edge-gb-m",
+    "ms": 2880
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-7066761a01-e65658ce.mp3",
+    "source": "edge-us-f",
+    "ms": 2970
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-7066761a01-a10bda88.mp3",
+    "source": "edge-us-m",
+    "ms": 3070
+   }
+  ],
+  "What are the next steps in the process?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-5967107cba-33ff1fdc.mp3",
+    "source": "edge-gb-f",
+    "ms": 2330
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-5967107cba-c81919ae.mp3",
+    "source": "edge-gb-m",
+    "ms": 1960
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-5967107cba-8b82bdbe.mp3",
+    "source": "edge-us-f",
+    "ms": 1690
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-5967107cba-4da8449b.mp3",
+    "source": "edge-us-m",
+    "ms": 1780
+   }
+  ],
+  "What are the next steps?": [
+   {
+    "voice": "gb-f",
+    "file": "call-translate/gb-f-a07ac758f3-63c8915a.mp3",
+    "source": "edge-gb-f",
+    "ms": 1500
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-translate/gb-m-a07ac758f3-c4a20a85.mp3",
+    "source": "edge-gb-m",
+    "ms": 1330
+   },
+   {
+    "voice": "us-f",
+    "file": "call-translate/us-f-a07ac758f3-2498484b.mp3",
+    "source": "edge-us-f",
+    "ms": 1150
+   },
+   {
+    "voice": "us-m",
+    "file": "call-translate/us-m-a07ac758f3-a2b6260e.mp3",
+    "source": "edge-us-m",
+    "ms": 1030
+   }
+  ],
+  "What are you studying at the moment?": [
+   {
+    "voice": "gb-f",
+    "file": "call-questions/gb-f-61bb6c5828-5df01443.mp3",
+    "source": "edge-gb-f",
+    "ms": 1980
+   }
+  ],
+  "What did you do last weekend?": [
+   {
+    "voice": "us-f",
+    "file": "air-phrases/us-f-93c2458e6f-e374c501.mp3",
+    "source": "edge-us-f",
+    "ms": 1490
+   }
+  ],
+  "What do you do in your free time?": [
+   {
+    "voice": "au-f",
+    "file": "call-questions/au-f-86cbe77572-927806a5.mp3",
+    "source": "edge-au-f",
+    "ms": 1710
+   }
+  ],
+  "What do you think of the results?": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-5c868add36-1800ab6b.mp3",
+    "source": "edge-gb-m",
+    "ms": 1440
+   }
+  ],
   "What do you want to do next?": [
    {
     "voice": "us-f",
     "file": "intake/us-f-8ac6c6201a-dcb7aaff.mp3",
     "source": "edge-us-f",
     "ms": 1080
+   }
+  ],
+  "What does a typical day look like at the test site?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-9c6ee2e182-fd4512d2.mp3",
+    "source": "edge-gb-f",
+    "ms": 2890
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-9c6ee2e182-a94d5226.mp3",
+    "source": "edge-gb-m",
+    "ms": 2520
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-9c6ee2e182-cdcc844b.mp3",
+    "source": "edge-us-f",
+    "ms": 2320
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-9c6ee2e182-2d52a262.mp3",
+    "source": "edge-us-m",
+    "ms": 2340
+   }
+  ],
+  "What does a typical day look like for an intern?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-5abf13ab99-e72a592a.mp3",
+    "source": "edge-gb-f",
+    "ms": 2760
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-5abf13ab99-ddd5458d.mp3",
+    "source": "edge-gb-m",
+    "ms": 2260
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-5abf13ab99-b35876bb.mp3",
+    "source": "edge-us-f",
+    "ms": 2270
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-5abf13ab99-70092690.mp3",
+    "source": "edge-us-m",
+    "ms": 2220
+   }
+  ],
+  "What does a typical day look like in this role?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-0ef6de0e17-2a7c983f.mp3",
+    "source": "edge-gb-f",
+    "ms": 2630
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-0ef6de0e17-b3c3f0e9.mp3",
+    "source": "edge-gb-m",
+    "ms": 2290
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-0ef6de0e17-e48bf85b.mp3",
+    "source": "edge-us-f",
+    "ms": 2240
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-0ef6de0e17-3573ab73.mp3",
+    "source": "edge-us-m",
+    "ms": 2090
+   }
+  ],
+  "What does a typical day look like in your team?": [
+   {
+    "voice": "gb-f",
+    "file": "call-substitution/gb-f-49f2b6b908-acbc58c4.mp3",
+    "source": "edge-gb-f",
+    "ms": 2660
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-substitution/gb-m-49f2b6b908-69d6fccd.mp3",
+    "source": "edge-gb-m",
+    "ms": 2350
+   },
+   {
+    "voice": "us-f",
+    "file": "call-substitution/us-f-49f2b6b908-f6c32021.mp3",
+    "source": "edge-us-f",
+    "ms": 2140
+   },
+   {
+    "voice": "us-m",
+    "file": "call-substitution/us-m-49f2b6b908-676c9db6.mp3",
+    "source": "edge-us-m",
+    "ms": 2080
+   }
+  ],
+  "What exactly do you mean by": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-795240c2be-e7e5e8fe.mp3",
+    "source": "edge-gb-f",
+    "ms": 1850
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-795240c2be-62db8bcc.mp3",
+    "source": "edge-gb-m",
+    "ms": 1780
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-795240c2be-d61618f0.mp3",
+    "source": "edge-us-f",
+    "ms": 1540
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-795240c2be-b5a25862.mp3",
+    "source": "edge-us-m",
+    "ms": 1460
+   }
+  ],
+  "What exactly do you mean by critical?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-a0298a2df9-4da50236.mp3",
+    "source": "edge-gb-f",
+    "ms": 2320
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-a0298a2df9-0880e4ad.mp3",
+    "source": "edge-gb-m",
+    "ms": 2080
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-a0298a2df9-e131c437.mp3",
+    "source": "edge-us-f",
+    "ms": 1880
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-a0298a2df9-9a4be4f5.mp3",
+    "source": "edge-us-m",
+    "ms": 1790
+   }
+  ],
+  "What is a strain gauge, and why do we need it?": [
+   {
+    "voice": "gb-m",
+    "file": "call-questions/gb-m-0e6fa97b52-cea10697.mp3",
+    "source": "edge-gb-m",
+    "ms": 2680
+   }
+  ],
+  "What opportunities are there for learning and growth?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-b115521b73-e592568b.mp3",
+    "source": "edge-gb-f",
+    "ms": 2940
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-b115521b73-84281a41.mp3",
+    "source": "edge-gb-m",
+    "ms": 2370
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-b115521b73-39d7793d.mp3",
+    "source": "edge-us-f",
+    "ms": 2330
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-b115521b73-fffa29ef.mp3",
+    "source": "edge-us-m",
+    "ms": 2390
    }
   ],
   "What project are you working on right now?": [
@@ -147,12 +5461,254 @@
     "ms": 1810
    }
   ],
+  "What software does the team use?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-953f1a6c04-8b371b73.mp3",
+    "source": "edge-gb-f",
+    "ms": 2050
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-953f1a6c04-57267eea.mp3",
+    "source": "edge-gb-m",
+    "ms": 1900
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-953f1a6c04-0f3f64d4.mp3",
+    "source": "edge-us-f",
+    "ms": 1680
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-953f1a6c04-7896041b.mp3",
+    "source": "edge-us-m",
+    "ms": 1560
+   }
+  ],
+  "What was the hardest technical problem you've solved?": [
+   {
+    "voice": "gb-m",
+    "file": "call-questions/gb-m-afa67bc4ee-9924bac3.mp3",
+    "source": "edge-gb-m",
+    "ms": 2530
+   }
+  ],
+  "What was the main challenge?": [
+   {
+    "voice": "us-m",
+    "file": "air-passages/us-m-3c074a375a-d67953ff.mp3",
+    "source": "edge-us-m",
+    "ms": 1290
+   }
+  ],
+  "What was your role in your last team project?": [
+   {
+    "voice": "au-m",
+    "file": "call-questions/au-m-8619919ca4-75031a22.mp3",
+    "source": "edge-au-m",
+    "ms": 2400
+   }
+  ],
+  "What would you do if you disagreed with your manager?": [
+   {
+    "voice": "us-m",
+    "file": "call-questions/us-m-024cf522d0-bdc4943a.mp3",
+    "source": "edge-us-m",
+    "ms": 2260
+   }
+  ],
+  "What would you expect from me in the first three months?": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-5a2117c72e-c24499a1.mp3",
+    "source": "edge-gb-f",
+    "ms": 3040
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-5a2117c72e-65897152.mp3",
+    "source": "edge-gb-m",
+    "ms": 2550
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-5a2117c72e-5c8e9359.mp3",
+    "source": "edge-us-f",
+    "ms": 2420
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-5a2117c72e-7728d05e.mp3",
+    "source": "edge-us-m",
+    "ms": 2700
+   }
+  ],
+  "What's the difference between strength and stiffness?": [
+   {
+    "voice": "au-f",
+    "file": "call-questions/au-f-f5db30d2ac-689e4f97.mp3",
+    "source": "edge-au-f",
+    "ms": 2680
+   }
+  ],
+  "What's the most interesting thing you've learned this year?": [
+   {
+    "voice": "us-m",
+    "file": "call-questions/us-m-5263815f1b-19effded.mp3",
+    "source": "edge-us-m",
+    "ms": 2350
+   }
+  ],
+  "What's the status on the thermal test?": [
+   {
+    "voice": "au-f",
+    "file": "air-phrases/au-f-042c7900d1-f7658017.mp3",
+    "source": "edge-au-f",
+    "ms": 2140
+   },
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-042c7900d1-67ad7e77.mp3",
+    "source": "edge-gb-f",
+    "ms": 2380
+   },
+   {
+    "voice": "in-m",
+    "file": "air-phrases/in-m-042c7900d1-2c422bf5.mp3",
+    "source": "edge-in-m",
+    "ms": 2330
+   },
+   {
+    "voice": "us-m",
+    "file": "air-phrases/us-m-042c7900d1-580e7154.mp3",
+    "source": "edge-us-m",
+    "ms": 1760
+   }
+  ],
+  "What's your biggest weakness?": [
+   {
+    "voice": "gb-m",
+    "file": "call-questions/gb-m-45f3580405-61ba63d2.mp3",
+    "source": "edge-gb-m",
+    "ms": 1470
+   }
+  ],
+  "What's your take on MBSE for small teams?": [
+   {
+    "voice": "au-f",
+    "file": "call-questions/au-f-767b7b869d-1a3af79f.mp3",
+    "source": "edge-au-f",
+    "ms": 2800
+   }
+  ],
+  "Where do you see yourself in five years?": [
+   {
+    "voice": "us-f",
+    "file": "call-questions/us-f-b49c0f4472-c8a473d2.mp3",
+    "source": "edge-us-f",
+    "ms": 1820
+   }
+  ],
+  "Why are composites used in aircraft?": [
+   {
+    "voice": "us-f",
+    "file": "call-questions/us-f-4e3c2b7b08-8e22755d.mp3",
+    "source": "edge-us-f",
+    "ms": 2009
+   }
+  ],
+  "Why did you choose engineering?": [
+   {
+    "voice": "in-m",
+    "file": "call-questions/in-m-6690256939-e0756133.mp3",
+    "source": "edge-in-m",
+    "ms": 1830
+   }
+  ],
   "Why do you want to work in the space industry?": [
    {
     "voice": "us-f",
     "file": "intake/us-f-86a26cab61-66f8b79d.mp3",
     "source": "edge-us-f",
     "ms": 1870
+   }
+  ],
+  "Will do. Oh, and they'd like a short demo of the test rig, if possible.": [
+   {
+    "voice": "au-m",
+    "file": "air-passages/au-m-ed511a6017-6d420362.mp3",
+    "source": "edge-au-m",
+    "ms": 4750
+   }
+  ],
+  "With respect, I think": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-9af3d6da8b-ac5ab283.mp3",
+    "source": "edge-gb-f",
+    "ms": 1780
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-9af3d6da8b-340bc559.mp3",
+    "source": "edge-gb-m",
+    "ms": 1630
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-9af3d6da8b-e3f7091f.mp3",
+    "source": "edge-us-f",
+    "ms": 1530
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-9af3d6da8b-53503c8d.mp3",
+    "source": "edge-us-m",
+    "ms": 1380
+   }
+  ],
+  "With respect, I think we need more data first.": [
+   {
+    "voice": "gb-f",
+    "file": "call-chunks/gb-f-65b317d804-681e046f.mp3",
+    "source": "edge-gb-f",
+    "ms": 3070
+   },
+   {
+    "voice": "gb-m",
+    "file": "call-chunks/gb-m-65b317d804-d1b87465.mp3",
+    "source": "edge-gb-m",
+    "ms": 2660
+   },
+   {
+    "voice": "us-f",
+    "file": "call-chunks/us-f-65b317d804-2beb5755.mp3",
+    "source": "edge-us-f",
+    "ms": 2990
+   },
+   {
+    "voice": "us-m",
+    "file": "call-chunks/us-m-65b317d804-fb1e069c.mp3",
+    "source": "edge-us-m",
+    "ms": 2400
+   }
+  ],
+  "Would you like me to check it?": [
+   {
+    "voice": "gb-f",
+    "file": "air-phrases/gb-f-d76dd6e3f6-bc249315.mp3",
+    "source": "edge-gb-f",
+    "ms": 1640
+   }
+  ],
+  "You should've asked me first.": [
+   {
+    "voice": "gb-m",
+    "file": "air-phrases/gb-m-3977ca4c8f-79602ed2.mp3",
+    "source": "edge-gb-m",
+    "ms": 1550
    }
   ],
   "bed": [

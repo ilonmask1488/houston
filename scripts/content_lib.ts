@@ -95,6 +95,58 @@ export function loadWordLists(root: string): WordLists {
   return { ngslRank, nawl, bsl, allForms }
 }
 
+type Json = Record<string, unknown>
+
+/**
+  Связность контента фаз 1+: модули существуют, id уникальны, у фраз первый вариант — верный,
+  у отрывков ответы в пределах вариантов и говорящие есть среди персонажей, чанки не повторяются.
+*/
+export function checkCourse(files: JsonFile[]): string[] {
+  const errors: string[] = []
+  const get = (suffix: string) => (files.find((f) => f.path.endsWith(suffix))?.data ?? []) as Json[]
+  const modules = new Set(get('content/modules.json').map((m) => m.id as string))
+  const characters = new Set(get('content/characters.json').map((c) => c.id as string))
+  const ids = new Map<string, string>()
+  const collections: [string, Json[]][] = [
+    ['air/phrases.json', get('air/phrases.json')],
+    ['air/passages.json', get('air/passages.json')],
+    ['call/chunks.json', get('call/chunks.json')],
+    ['call/questions.json', get('call/questions.json')],
+    ['call/translate.json', get('call/translate.json')],
+    ['call/substitution.json', get('call/substitution.json')],
+  ]
+  for (const [file, list] of collections) {
+    for (const x of list) {
+      const id = x.id as string
+      if (ids.has(id)) errors.push(`повтор id ${id} (${file} и ${ids.get(id)})`)
+      ids.set(id, file)
+      if (!modules.has(x.module as string)) errors.push(`${file}: ${id} — нет модуля ${String(x.module)}`)
+      if (typeof x.reviewed !== 'boolean') errors.push(`${file}: ${id} — нет флага reviewed`)
+    }
+  }
+  for (const p of get('air/phrases.json')) {
+    const opts = p.options as string[]
+    if (opts[0] !== p.text) errors.push(`фраза ${String(p.id)}: первый вариант должен совпадать с текстом`)
+    if (new Set(opts).size !== opts.length) errors.push(`фраза ${String(p.id)}: варианты повторяются`)
+    const focus = String(p.focus ?? '').split('→')[0]!.split('…')[0]!.trim().toLowerCase()
+    if (focus && !String(p.text).toLowerCase().includes(focus)) errors.push(`фраза ${String(p.id)}: фокус «${focus}» не найден в тексте`)
+  }
+  for (const p of get('air/passages.json')) {
+    for (const l of p.lines as Json[]) if (!characters.has(l.speaker as string)) errors.push(`отрывок ${String(p.id)}: нет персонажа ${String(l.speaker)}`)
+    for (const q of p.questions as Json[]) {
+      const n = (q.options as string[]).length
+      if ((q.answer as number) < 0 || (q.answer as number) >= n) errors.push(`отрывок ${String(p.id)}: индекс ответа вне вариантов`)
+    }
+  }
+  const chunkTexts = new Set<string>()
+  for (const c of get('call/chunks.json')) {
+    const key = String(c.en).toLowerCase()
+    if (chunkTexts.has(key)) errors.push(`чанк «${String(c.en)}» повторяется`)
+    chunkTexts.add(key)
+  }
+  return errors
+}
+
 type IntakeJson = {
   bands: { id: string; source: string; from?: number; to?: number }[]
   words: { w: string; ru: string; band: string }[]

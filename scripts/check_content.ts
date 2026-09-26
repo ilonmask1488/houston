@@ -5,7 +5,7 @@
 */
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { audioNeeds, checkIntake, loadContentFiles, loadWordLists, reviewedStats } from './content_lib.ts'
+import { audioNeeds, checkCourse, checkIntake, loadContentFiles, loadWordLists, reviewedStats } from './content_lib.ts'
 
 const root = join(import.meta.dirname, '..')
 const files = loadContentFiles(root)
@@ -32,6 +32,9 @@ const lists = loadWordLists(root)
 const intake = files.find((f) => f.path.endsWith('content/intake.json'))
 if (intake) errors.push(...checkIntake(intake.data as Parameters<typeof checkIntake>[0], lists))
 else errors.push('нет src/content/intake.json')
+
+// Курс: модули, id, варианты ответов, персонажи, повторы чанков.
+errors.push(...checkCourse(files))
 
 // Доля непроверенного.
 let total = 0

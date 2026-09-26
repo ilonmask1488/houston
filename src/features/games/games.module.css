@@ -1,0 +1,161 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: 100dvh;
+  padding: calc(var(--safe-top) + var(--space-2)) calc(var(--gutter) + var(--safe-right)) calc(var(--safe-bottom) + var(--space-5))
+    calc(var(--gutter) + var(--safe-left));
+  background:
+    radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--signal) 8%, transparent), transparent 60%),
+    var(--paper);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.close {
+  display: grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  margin-left: calc(var(--space-3) * -1);
+  border: 0;
+  background: none;
+}
+
+.gameTitle {
+  font-family: var(--font-cond);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.intro {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.rules {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+  margin-top: auto;
+}
+
+.intro > button:last-child {
+  margin-top: auto;
+}
+
+.bigScore {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.record {
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-s);
+  background: var(--signal);
+  color: var(--on-signal);
+  font-family: var(--font-cond);
+  font-weight: 600;
+}
+
+.play {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--lcd);
+}
+
+.score {
+  font-size: var(--fs-lead);
+  font-weight: 500;
+}
+
+.combo {
+  color: var(--signal-ink);
+  font-size: var(--fs-small);
+}
+
+.speed {
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.replay {
+  align-self: center;
+  border: 0;
+  background: none;
+}
+
+.options {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.option {
+  min-height: 56px;
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  text-align: left;
+  line-height: 1.35;
+}
+
+.option[data-state='right'] {
+  border-color: var(--ok);
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.option[data-state='wrong'] {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.question {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+  font-size: var(--fs-phrase);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.selfCheck {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.points {
+  color: var(--signal-ink);
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+.mark {
+  padding: 0 2px;
+  border-bottom: 2px solid var(--signal);
+  border-radius: 1px;
+  background: color-mix(in srgb, var(--signal) 22%, transparent);
+  color: inherit;
+}
+
+.diff {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+}
+
+.diff span {
+  border-bottom: 2px solid var(--danger);
+  color: var(--ink-2);
+}
+
+.diff span[data-ok] {
+  border-bottom-color: var(--ok);
+  color: var(--ink);
+}
+
+.voice {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: stretch;
+}
+
+.explain {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+  font-size: var(--fs-small);
+}
+
+.status {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+  text-align: center;
+}
+
+.rec {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+}
+
+.countdown {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--signal-ink);
+  min-height: 1.4em;
+}
+
+.countdown[data-talking] {
+  color: var(--ok);
+}
+
+.stop {
+  background: var(--danger);
+  color: #fff;
+}
+
+.report {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: var(--hairline) dashed var(--line-strong);
+  border-radius: var(--radius-s);
+  font-size: var(--fs-small);
+}

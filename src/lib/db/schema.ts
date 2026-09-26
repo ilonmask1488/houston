@@ -37,6 +37,13 @@ export const SCHEMA_VERSIONS: SchemaVersion[] = [
       moduleProgress: 'moduleId',
     },
   },
+  {
+    // Фаза 1: ежедневный «Сеанс связи» из сегментов. Новая пустая таблица — миграция данных не нужна.
+    version: 2,
+    stores: {
+      sessions: 'date',
+    },
+  },
 ]
 
 export const CURRENT_SCHEMA_VERSION = SCHEMA_VERSIONS[SCHEMA_VERSIONS.length - 1]!.version

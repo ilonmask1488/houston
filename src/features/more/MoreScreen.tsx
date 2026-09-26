@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import { IconChevron } from '../../components/Icons'
 import { Mascot } from '../../components/Mascot'
-import { Placeholder, Screen } from '../../components/ui'
+import { Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
 import { formatDate, ru } from '../../i18n/ru'
 import { manifest } from '../../lib/audio/manifest'
@@ -10,7 +10,7 @@ import { db } from '../../lib/db/db'
 import { ACHIEVEMENT_IDS } from '../../lib/progress/achievements'
 import s from './MoreScreen.module.css'
 
-const ITEMS = ['profile', 'stats', 'achievements', 'check', 'settings', 'about'] as const
+const ITEMS = ['profile', 'stats', 'games', 'achievements', 'check', 'settings', 'about'] as const
 
 export function MoreScreen() {
   return (
@@ -32,10 +32,25 @@ export function MoreScreen() {
   )
 }
 
-export function StatsScreen() {
+export function GamesScreen() {
+  const records = useLiveQuery(async () => new Map((await db.gameRecords.toArray()).map((r) => [r.game, r])), [])
+  const t = ru.games
   return (
-    <Screen title={ru.stats.title} back>
-      <Placeholder text={ru.stats.empty} />
+    <Screen title={t.list} back>
+      <ul className={ui.list}>
+        {(['static', 'quick'] as const).map((g) => (
+          <li key={g}>
+            <Link to={`/game/${g}`} className={ui.item}>
+              <span>
+                <span className={ui.itemTitle}>{t[g].title}</span>
+                <span className={ui.itemWhat}>{t[g].what}</span>
+                {records?.get(g) && <span className={`${ui.itemWhat} mono`}>{t.best(records.get(g)!.best)}</span>}
+              </span>
+              <IconChevron />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Screen>
   )
 }

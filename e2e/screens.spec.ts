@@ -60,5 +60,51 @@ for (const scheme of ['light', 'dark'] as const) {
       await expect(page.locator('main').first()).toBeAttached()
       await shoot(page, name, scheme, p)
     }
+    if (phase === 'phase0') return
+
+    // ——— Фаза 1: сеанс, упражнения Эфира и Позывного, игры, статистика ———
+    await page.goto('./#/session')
+    await expect(page.getByText(/игра «Помехи»/)).toBeVisible()
+    await shoot(page, 'p1-session', scheme, p)
+    await page.goto('./#/run/seg/air-1')
+    await shoot(page, 'p1-intro', scheme, p)
+    await page.getByRole('button', { name: 'Понятно, поехали' }).click()
+    await expect(page.getByRole('group', { name: 'Что прозвучало?' })).toBeVisible()
+    await shoot(page, 'p1-listen', scheme, p)
+    await page.getByRole('group', { name: 'Что прозвучало?' }).getByRole('button').nth(1).click()
+    await shoot(page, 'p1-listen-feedback', scheme, p)
+    await page.goto('./#/run/module/air-elision')
+    await page.waitForTimeout(300)
+    for (const [name, path, act] of [
+      ['p1-tracks', '/tracks', null],
+      ['p1-dictionary', '/dictionary', null],
+      ['p1-games', '/games', null],
+      ['p1-game-static', '/game/static', 'Старт'],
+      ['p1-game-quick', '/game/quick', null],
+    ] as const) {
+      await page.goto(`./#${path}`)
+      await expect(page.locator('main').first()).toBeAttached()
+      if (act) {
+        await page.getByRole('button', { name: act }).click()
+        await page.getByRole('group', { name: 'Что прозвучало?' }).waitFor()
+      }
+      await shoot(page, name, scheme, p)
+    }
+    // Позывной: чанк и перевод на лету
+    await page.goto('./#/run/module/call-intro')
+    await expect(page.getByText(/функция: представиться/)).toBeVisible()
+    await shoot(page, 'p1-chunk', scheme, p)
+    // Длинный отрывок после ответа
+    await page.goto('./#/run/module/air-long')
+    const intro = page.getByRole('button', { name: 'Понятно, поехали' })
+    const listen = page.getByRole('button', { name: 'Слушать отрывок' })
+    await expect(intro.or(listen).first()).toBeVisible()
+    if (await intro.isVisible()) await intro.click()
+    await listen.click()
+    for (const g of await page.getByRole('group').all()) await g.getByRole('button').first().click()
+    await page.getByRole('button', { name: 'Проверить ответы' }).click()
+    await shoot(page, 'p1-passage', scheme, p)
+    await page.goto('./#/stats')
+    await shoot(page, 'p1-stats', scheme, p)
   })
 }

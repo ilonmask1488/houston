@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "l-weak-01",
+  "module": "air-weak",
+  "text": "I need to talk to them about the budget.",
+  "options": [
+   "I need to talk to them about the budget.",
+   "I need to talk to him about the budget.",
+   "I needed to talk to them about the budget."
+  ],
+  "ru": "Мне нужно поговорить с ними о бюджете.",
+  "focus": "to talk to them",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-02",
+  "module": "air-weak",
+  "text": "Can you send me the file by Friday?",
+  "options": [
+   "Can you send me the file by Friday?",
+   "Can't you send me the file by Friday?",
+   "Could you send me the file by Friday?"
+  ],
+  "ru": "Можешь прислать мне файл до пятницы?",
+  "focus": "Can you",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-03",
+  "module": "air-weak",
+  "text": "I can do it, but I can't do it today.",
+  "options": [
+   "I can do it, but I can't do it today.",
+   "I can't do it, but I can do it today.",
+   "I can do it, but I can do it today."
+  ],
+  "ru": "Я могу это сделать, но не сегодня.",
+  "focus": "can … can't",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-04",
+  "module": "air-weak",
+  "text": "We tested the pump and the valve.",
+  "options": [
+   "We tested the pump and the valve.",
+   "We tested the pump in the valve.",
+   "We tested the pumps and the valve."
+  ],
+  "ru": "Мы проверили насос и клапан.",
+  "focus": "and the",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-05",
+  "module": "air-weak",
+  "text": "It's a lot of work for a small team.",
+  "options": [
+   "It's a lot of work for a small team.",
+   "It's a lot of work for the small team.",
+   "It's a lot of work from a small team."
+  ],
+  "ru": "Это много работы для маленькой команды.",
+  "focus": "a lot of … for a",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-06",
+  "module": "air-weak",
+  "text": "What do you think of the results?",
+  "options": [
+   "What do you think of the results?",
+   "What did you think of the results?",
+   "What do you think about the results?"
+  ],
+  "ru": "Что думаешь о результатах?",
+  "focus": "of the",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-07",
+  "module": "air-weak",
+  "text": "They should have told us earlier.",
+  "options": [
+   "They should have told us earlier.",
+   "They should tell us earlier.",
+   "They should've told them earlier."
+  ],
+  "ru": "Им стоило сказать нам раньше.",
+  "focus": "should have",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-08",
+  "module": "air-weak",
+  "text": "The data was sent to the lab on Monday.",
+  "options": [
+   "The data was sent to the lab on Monday.",
+   "The data was sent to a lab on Monday.",
+   "The data was sent to the lab by Monday."
+  ],
+  "ru": "Данные отправили в лабораторию в понедельник.",
+  "focus": "was sent to the",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-09",
+  "module": "air-weak",
+  "text": "Let's grab a coffee and go over the plan.",
+  "options": [
+   "Let's grab a coffee and go over the plan.",
+   "Let's grab a coffee and go over the plans.",
+   "Let's get a coffee and go over the plan."
+  ],
+  "ru": "Давай возьмём кофе и пройдёмся по плану.",
+  "focus": "and go over",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-10",
+  "module": "air-weak",
+  "text": "We have to check it for leaks.",
+  "options": [
+   "We have to check it for leaks.",
+   "We had to check it for leaks.",
+   "We have to check it for leaks again."
+  ],
+  "ru": "Нам нужно проверить его на утечки.",
+  "focus": "have to … for",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-11",
+  "module": "air-weak",
+  "text": "Some of them are still in the box.",
+  "options": [
+   "Some of them are still in the box.",
+   "Some of them are still in a box.",
+   "Some of it is still in the box."
+  ],
+  "ru": "Часть из них всё ещё в коробке.",
+  "focus": "Some of them",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-weak-12",
+  "module": "air-weak",
+  "text": "How long have you been working on it?",
+  "options": [
+   "How long have you been working on it?",
+   "How long have you worked on it?",
+   "How long are you working on it?"
+  ],
+  "ru": "Сколько ты уже над этим работаешь?",
+  "focus": "have you been",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-01",
+  "module": "air-link",
+  "text": "Turn it off and on again.",
+  "options": [
+   "Turn it off and on again.",
+   "Turn it on and off again.",
+   "Turn them off and on again."
+  ],
+  "ru": "Выключи и включи снова.",
+  "focus": "Turn it off and on",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-02",
+  "module": "air-link",
+  "text": "Pick it up at eight.",
+  "options": [
+   "Pick it up at eight.",
+   "Pick them up at eight.",
+   "Picked it up at eight."
+  ],
+  "ru": "Забери его в восемь.",
+  "focus": "Pick it up at eight",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-03",
+  "module": "air-link",
+  "text": "Check it out when you have a minute.",
+  "options": [
+   "Check it out when you have a minute.",
+   "Check them out when you have a minute.",
+   "Check it out when you had a minute."
+  ],
+  "ru": "Глянь, когда будет минутка.",
+  "focus": "Check it out",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-04",
+  "module": "air-link",
+  "text": "It's an old issue in our system.",
+  "options": [
+   "It's an old issue in our system.",
+   "It's a whole issue in our system.",
+   "It's an old issue in the system."
+  ],
+  "ru": "Это старая проблема в нашей системе.",
+  "focus": "an old issue in",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-05",
+  "module": "air-link",
+  "text": "Let me look into it after lunch.",
+  "options": [
+   "Let me look into it after lunch.",
+   "Let me look at it after lunch.",
+   "Let me look into it before lunch."
+  ],
+  "ru": "Дай мне разобраться с этим после обеда.",
+  "focus": "look into it after",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-06",
+  "module": "air-link",
+  "text": "I agree with all of it.",
+  "options": [
+   "I agree with all of it.",
+   "I agreed with all of it.",
+   "I agree with all of them."
+  ],
+  "ru": "Я согласен со всем этим.",
+  "focus": "I agree … all of it",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-07",
+  "module": "air-link",
+  "text": "Go on, I'm listening.",
+  "options": [
+   "Go on, I'm listening.",
+   "Go on, I was listening.",
+   "Come on, I'm listening."
+  ],
+  "ru": "Продолжай, я слушаю.",
+  "focus": "Go on",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-08",
+  "module": "air-link",
+  "text": "We need a new idea for the test rig.",
+  "options": [
+   "We need a new idea for the test rig.",
+   "We need an idea for the test rig.",
+   "We need a new idea for the test room."
+  ],
+  "ru": "Нам нужна новая идея для стенда.",
+  "focus": "a new idea",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-09",
+  "module": "air-link",
+  "text": "Hold on a second, I'll get it.",
+  "options": [
+   "Hold on a second, I'll get it.",
+   "Hold on a second, I got it.",
+   "Hold on a sec, I'll get them."
+  ],
+  "ru": "Секунду, сейчас возьму.",
+  "focus": "Hold on a",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-10",
+  "module": "air-link",
+  "text": "Is it on or off?",
+  "options": [
+   "Is it on or off?",
+   "Is it on or not?",
+   "Was it on or off?"
+  ],
+  "ru": "Он включён или выключен?",
+  "focus": "Is it on or off",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-11",
+  "module": "air-link",
+  "text": "Keep the sensor far away from the engine.",
+  "options": [
+   "Keep the sensor far away from the engine.",
+   "Keep the sensors far away from the engine.",
+   "Keep the sensor away from the engine."
+  ],
+  "ru": "Держи датчик подальше от двигателя.",
+  "focus": "far away",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-link-12",
+  "module": "air-link",
+  "text": "Put it on the table over there.",
+  "options": [
+   "Put it on the table over there.",
+   "Put it on the table over here.",
+   "Put them on the table over there."
+  ],
+  "ru": "Положи это на тот стол.",
+  "focus": "Put it on",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-01",
+  "module": "air-elision",
+  "text": "See you next week.",
+  "options": [
+   "See you next week.",
+   "See you next weekend.",
+   "See you this week."
+  ],
+  "ru": "До встречи на следующей неделе.",
+  "focus": "next week",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-02",
+  "module": "air-elision",
+  "text": "Last time it worked fine.",
+  "options": [
+   "Last time it worked fine.",
+   "Last time it went fine.",
+   "This time it worked fine."
+  ],
+  "ru": "В прошлый раз всё работало.",
+  "focus": "Last time",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-03",
+  "module": "air-elision",
+  "text": "I just thought it might help.",
+  "options": [
+   "I just thought it might help.",
+   "I just thought it would help.",
+   "I just taught it might help."
+  ],
+  "ru": "Я просто подумал, что это может помочь.",
+  "focus": "just thought",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-04",
+  "module": "air-elision",
+  "text": "It must be the pressure sensor.",
+  "options": [
+   "It must be the pressure sensor.",
+   "It must've been the pressure sensor.",
+   "It might be the pressure sensor."
+  ],
+  "ru": "Наверное, дело в датчике давления.",
+  "focus": "must be",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-05",
+  "module": "air-elision",
+  "text": "I didn't know he was on the call.",
+  "options": [
+   "I didn't know he was on the call.",
+   "I didn't know you were on the call.",
+   "I don't know if he was on the call."
+  ],
+  "ru": "Я не знал, что он на созвоне.",
+  "focus": "didn't know he",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-06",
+  "module": "air-elision",
+  "text": "Tell him we'll be there at ten.",
+  "options": [
+   "Tell him we'll be there at ten.",
+   "Tell them we'll be there at ten.",
+   "Tell him we were there at ten."
+  ],
+  "ru": "Скажи ему, что мы будем в десять.",
+  "focus": "Tell him",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-07",
+  "module": "air-elision",
+  "text": "We asked her to send the drawings.",
+  "options": [
+   "We asked her to send the drawings.",
+   "We asked them to send the drawings.",
+   "We ask her to send the drawings."
+  ],
+  "ru": "Мы попросили её прислать чертежи.",
+  "focus": "asked her",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-08",
+  "module": "air-elision",
+  "text": "The first test failed, the second passed.",
+  "options": [
+   "The first test failed, the second passed.",
+   "The first test failed, the second one passed.",
+   "The first tests failed, the second passed."
+  ],
+  "ru": "Первый тест провалился, второй прошёл.",
+  "focus": "first test",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-09",
+  "module": "air-elision",
+  "text": "I kept the old version just in case.",
+  "options": [
+   "I kept the old version just in case.",
+   "I kept the whole version just in case.",
+   "I keep the old version just in case."
+  ],
+  "ru": "Я сохранил старую версию на всякий случай.",
+  "focus": "kept the old … just in",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-10",
+  "module": "air-elision",
+  "text": "Most people prefer the second option.",
+  "options": [
+   "Most people prefer the second option.",
+   "Most people prefer a second option.",
+   "Some people prefer the second option."
+  ],
+  "ru": "Большинство предпочитает второй вариант.",
+  "focus": "Most people",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-11",
+  "module": "air-elision",
+  "text": "We'll start on Monday and finish by Friday.",
+  "options": [
+   "We'll start on Monday and finish by Friday.",
+   "We'll start on Monday and finish on Friday.",
+   "We started on Monday and finished by Friday."
+  ],
+  "ru": "Начнём в понедельник и закончим к пятнице.",
+  "focus": "and finish",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-elision-12",
+  "module": "air-elision",
+  "text": "Did he get the message?",
+  "options": [
+   "Did he get the message?",
+   "Did they get the message?",
+   "Did he get a message?"
+  ],
+  "ru": "Он получил сообщение?",
+  "focus": "Did he",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-01",
+  "module": "air-assim",
+  "text": "Did you see the email?",
+  "options": [
+   "Did you see the email?",
+   "Do you see the email?",
+   "Did you send the email?"
+  ],
+  "ru": "Ты видел письмо?",
+  "focus": "Did you",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-02",
+  "module": "air-assim",
+  "text": "Would you like me to check it?",
+  "options": [
+   "Would you like me to check it?",
+   "Would you like to check it?",
+   "Do you want me to check it?"
+  ],
+  "ru": "Хочешь, я проверю?",
+  "focus": "Would you",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-03",
+  "module": "air-assim",
+  "text": "Don't you think it's too early?",
+  "options": [
+   "Don't you think it's too early?",
+   "Don't you think it's too late?",
+   "Do you think it's too early?"
+  ],
+  "ru": "Тебе не кажется, что рано?",
+  "focus": "Don't you",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-04",
+  "module": "air-assim",
+  "text": "I'm going to test it tomorrow.",
+  "options": [
+   "I'm going to test it tomorrow.",
+   "I'm going to test it today.",
+   "I was going to test it tomorrow."
+  ],
+  "ru": "Я собираюсь проверить это завтра.",
+  "focus": "going to → gonna",
+  "voice": "us-m",
+  "reviewed": false,
+  "say": "I'm gonna test it tomorrow."
+ },
+ {
+  "id": "l-assim-05",
+  "module": "air-assim",
+  "text": "Do you want to join the call?",
+  "options": [
+   "Do you want to join the call?",
+   "Do you want to join the team?",
+   "Did you want to join the call?"
+  ],
+  "ru": "Хочешь подключиться к созвону?",
+  "focus": "want to → wanna",
+  "voice": "us-f",
+  "reviewed": false,
+  "say": "Do you wanna join the call?"
+ },
+ {
+  "id": "l-assim-06",
+  "module": "air-assim",
+  "text": "We have to finish the report.",
+  "options": [
+   "We have to finish the report.",
+   "We had to finish the report.",
+   "We have to finish the reports."
+  ],
+  "ru": "Нам надо закончить отчёт.",
+  "focus": "have to → hafta",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-07",
+  "module": "air-assim",
+  "text": "Let me know if you need anything.",
+  "options": [
+   "Let me know if you need anything.",
+   "Let me know if you need something.",
+   "Let me know if you needed anything."
+  ],
+  "ru": "Дай знать, если что-то понадобится.",
+  "focus": "Let me → lemme",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-08",
+  "module": "air-assim",
+  "text": "I've got to go, I'm late.",
+  "options": [
+   "I've got to go, I'm late.",
+   "I've got to go, it's late.",
+   "I've got a goal, I'm late."
+  ],
+  "ru": "Мне пора, я опаздываю.",
+  "focus": "got to → gotta",
+  "voice": "gb-f",
+  "reviewed": false,
+  "say": "I've gotta go, I'm late."
+ },
+ {
+  "id": "l-assim-09",
+  "module": "air-assim",
+  "text": "What did you do last weekend?",
+  "options": [
+   "What did you do last weekend?",
+   "What do you do on weekends?",
+   "What did you do last week?"
+  ],
+  "ru": "Что делал в прошлые выходные?",
+  "focus": "did you",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-10",
+  "module": "air-assim",
+  "text": "Can I get you anything?",
+  "options": [
+   "Can I get you anything?",
+   "Can I get you something?",
+   "Can I give you anything?"
+  ],
+  "ru": "Тебе что-нибудь принести?",
+  "focus": "get you",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-assim-11",
+  "module": "air-assim",
+  "text": "Give me a minute.",
+  "options": [
+   "Give me a minute.",
+   "Give me a moment.",
+   "Give them a minute."
+  ],
+  "ru": "Дай мне минуту.",
+  "focus": "Give me → gimme",
+  "voice": "us-m",
+  "reviewed": false,
+  "say": "Gimme a minute."
+ },
+ {
+  "id": "l-assim-12",
+  "module": "air-assim",
+  "text": "Is that what you meant?",
+  "options": [
+   "Is that what you meant?",
+   "Is that what you mean?",
+   "Was that what you meant?"
+  ],
+  "ru": "Ты это имел в виду?",
+  "focus": "what you",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-01",
+  "module": "air-contract",
+  "text": "I'd go with the lighter design.",
+  "options": [
+   "I'd go with the lighter design.",
+   "I'll go with the lighter design.",
+   "I go with the lighter design."
+  ],
+  "ru": "Я бы выбрал более лёгкую конструкцию.",
+  "focus": "I'd",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-02",
+  "module": "air-contract",
+  "text": "We've already sent it.",
+  "options": [
+   "We've already sent it.",
+   "We already sent it.",
+   "We'd already sent it."
+  ],
+  "ru": "Мы уже отправили.",
+  "focus": "We've",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-03",
+  "module": "air-contract",
+  "text": "He's finished the model.",
+  "options": [
+   "He's finished the model.",
+   "He finished the model.",
+   "He'd finished the model."
+  ],
+  "ru": "Он закончил модель.",
+  "focus": "He's finished",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-04",
+  "module": "air-contract",
+  "text": "It'll take about two weeks.",
+  "options": [
+   "It'll take about two weeks.",
+   "It'd take about two weeks.",
+   "It took about two weeks."
+  ],
+  "ru": "Это займёт около двух недель.",
+  "focus": "It'll",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-05",
+  "module": "air-contract",
+  "text": "You should've asked me first.",
+  "options": [
+   "You should've asked me first.",
+   "You should ask me first.",
+   "You shouldn't have asked me first."
+  ],
+  "ru": "Тебе стоило сначала спросить меня.",
+  "focus": "should've",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-06",
+  "module": "air-contract",
+  "text": "I wouldn't have noticed it.",
+  "options": [
+   "I wouldn't have noticed it.",
+   "I wouldn't notice it.",
+   "I would have noticed it."
+  ],
+  "ru": "Я бы этого не заметил.",
+  "focus": "wouldn't have",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-07",
+  "module": "air-contract",
+  "text": "They'd already left when we called.",
+  "options": [
+   "They'd already left when we called.",
+   "They already left when we called.",
+   "They'd already left when he called."
+  ],
+  "ru": "Они уже ушли, когда мы позвонили.",
+  "focus": "They'd",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-08",
+  "module": "air-contract",
+  "text": "It could've been worse.",
+  "options": [
+   "It could've been worse.",
+   "It couldn't have been worse.",
+   "It could be worse."
+  ],
+  "ru": "Могло быть и хуже.",
+  "focus": "could've",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-09",
+  "module": "air-contract",
+  "text": "We'll see what they say.",
+  "options": [
+   "We'll see what they say.",
+   "We'd see what they say.",
+   "We see what they say."
+  ],
+  "ru": "Посмотрим, что скажут.",
+  "focus": "We'll",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-10",
+  "module": "air-contract",
+  "text": "She's been here since eight.",
+  "options": [
+   "She's been here since eight.",
+   "She was here since eight.",
+   "She's here since eight."
+  ],
+  "ru": "Она здесь с восьми.",
+  "focus": "She's been",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-11",
+  "module": "air-contract",
+  "text": "I'd rather not change it now.",
+  "options": [
+   "I'd rather not change it now.",
+   "I'd rather change it now.",
+   "I'd rather not change it yet."
+  ],
+  "ru": "Я бы не стал это сейчас менять.",
+  "focus": "I'd rather not",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "l-contract-12",
+  "module": "air-contract",
+  "text": "That's what I'd have done too.",
+  "options": [
+   "That's what I'd have done too.",
+   "That's what I've done too.",
+   "That's what I did too."
+  ],
+  "ru": "Я бы тоже так сделал.",
+  "focus": "I'd have",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-01",
+  "module": "air-accents",
+  "text": "Could you share your screen, please?",
+  "options": [
+   "Could you share your screen, please?",
+   "Could you share your scheme, please?",
+   "Could you show your screen, please?"
+  ],
+  "ru": "Можешь показать свой экран?",
+  "focus": "share your screen",
+  "voice": "us-m",
+  "voices": [
+   "us-m",
+   "gb-f",
+   "in-m",
+   "au-f"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-02",
+  "module": "air-accents",
+  "text": "I think we're running a bit behind schedule.",
+  "options": [
+   "I think we're running a bit behind schedule.",
+   "I think we're running a bit ahead of schedule.",
+   "I think we're running behind the schedule."
+  ],
+  "ru": "Кажется, мы немного отстаём от графика.",
+  "focus": "behind schedule",
+  "voice": "us-f",
+  "voices": [
+   "us-f",
+   "gb-m",
+   "in-f",
+   "au-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-03",
+  "module": "air-accents",
+  "text": "The supplier hasn't confirmed the delivery date yet.",
+  "options": [
+   "The supplier hasn't confirmed the delivery date yet.",
+   "The supplier has confirmed the delivery date.",
+   "The supplier hasn't confirmed the delivery yet."
+  ],
+  "ru": "Поставщик ещё не подтвердил дату поставки.",
+  "focus": "hasn't confirmed",
+  "voice": "us-m",
+  "voices": [
+   "us-m",
+   "gb-f",
+   "in-m",
+   "au-f"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-04",
+  "module": "air-accents",
+  "text": "Let's take this offline and discuss it tomorrow.",
+  "options": [
+   "Let's take this offline and discuss it tomorrow.",
+   "Let's take it offline and discuss it today.",
+   "Let's take this online and discuss it tomorrow."
+  ],
+  "ru": "Давай обсудим это отдельно завтра.",
+  "focus": "take this offline",
+  "voice": "us-f",
+  "voices": [
+   "us-f",
+   "gb-m",
+   "in-f",
+   "au-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-05",
+  "module": "air-accents",
+  "text": "Sorry, you're on mute.",
+  "options": [
+   "Sorry, you're on mute.",
+   "Sorry, you were on mute.",
+   "Sorry, I'm on mute."
+  ],
+  "ru": "Извини, у тебя выключен микрофон.",
+  "focus": "on mute",
+  "voice": "us-m",
+  "voices": [
+   "us-m",
+   "gb-f",
+   "in-m",
+   "au-f"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-06",
+  "module": "air-accents",
+  "text": "Can everyone see the latest version?",
+  "options": [
+   "Can everyone see the latest version?",
+   "Can anyone see the latest version?",
+   "Can everyone see the last version?"
+  ],
+  "ru": "Всем видна последняя версия?",
+  "focus": "latest version",
+  "voice": "us-f",
+  "voices": [
+   "us-f",
+   "gb-m",
+   "in-f",
+   "au-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-07",
+  "module": "air-accents",
+  "text": "We need to double-check the tolerances.",
+  "options": [
+   "We need to double-check the tolerances.",
+   "We need to check the tolerances.",
+   "We need to double-check the temperatures."
+  ],
+  "ru": "Надо перепроверить допуски.",
+  "focus": "double-check the tolerances",
+  "voice": "us-m",
+  "voices": [
+   "us-m",
+   "gb-f",
+   "in-m",
+   "au-f"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-08",
+  "module": "air-accents",
+  "text": "I'll get back to you by the end of the week.",
+  "options": [
+   "I'll get back to you by the end of the week.",
+   "I'll get back to you at the end of the week.",
+   "I'll get back to you by the end of the day."
+  ],
+  "ru": "Отвечу тебе до конца недели.",
+  "focus": "get back to you",
+  "voice": "us-f",
+  "voices": [
+   "us-f",
+   "gb-m",
+   "in-f",
+   "au-m"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-09",
+  "module": "air-accents",
+  "text": "What's the status on the thermal test?",
+  "options": [
+   "What's the status on the thermal test?",
+   "What's the status on the vibration test?",
+   "What was the status on the thermal test?"
+  ],
+  "ru": "Что с тепловыми испытаниями?",
+  "focus": "status on",
+  "voice": "us-m",
+  "voices": [
+   "us-m",
+   "gb-f",
+   "in-m",
+   "au-f"
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "l-accents-10",
+  "module": "air-accents",
+  "text": "That makes sense, thanks for explaining.",
+  "options": [
+   "That makes sense, thanks for explaining.",
+   "That doesn't make sense, thanks for explaining.",
+   "That makes sense, thanks for explaining it again."
+  ],
+  "ru": "Понятно, спасибо, что объяснил.",
+  "focus": "makes sense",
+  "voice": "us-f",
+  "voices": [
+   "us-f",
+   "gb-m",
+   "in-f",
+   "au-m"
+  ],
+  "reviewed": false
+ }
+]

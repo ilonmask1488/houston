@@ -122,6 +122,42 @@ export type IntakeRow = {
   result: unknown
 }
 
+/* ——— Схема v2 (фаза 1): ежедневный «Сеанс связи» ——— */
+
+export type SessionBlock = 'warmup' | 'review' | 'air' | 'call' | 'rotation'
+
+/** Сегмент сеанса — не длиннее ~3 минут одного формата. */
+export type SessionSegment = {
+  id: string
+  block: SessionBlock
+  kind: 'steps' | 'game'
+  /** какой трек и модуль (для подписи и прогресса) */
+  track?: TrackId
+  module?: string
+  /** подпись формата: «Лестница скоростей», «Перевод на лету»… */
+  label: string
+  game?: 'static' | 'quick'
+  steps?: import('../run/steps').Step[]
+  minutes: number
+  status: 'pending' | 'done' | 'skipped'
+  /** место внутри сегмента, если прервался */
+  pos?: number
+  /** пропущен автоматически (не было материала) */
+  auto?: boolean
+}
+
+export type SessionRow = {
+  date: string
+  segments: SessionSegment[]
+  startedAt: number
+  finishedAt?: number
+  seconds: number
+  signal: number
+  correct: number
+  total: number
+  spokenMs: number
+}
+
 /** Прогресс модуля трека. */
 export type ModuleProgressRow = {
   moduleId: string

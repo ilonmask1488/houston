@@ -1,20 +1,24 @@
 /*
   Интервальное повторение FSRS (ts-fsrs). В базе — только числа (мс), здесь — перевод в Date и обратно.
-  Типы карточек (ТЗ §9.2), открываются постепенно:
-    1 — аудио → значение (первой, когда слово встретилось в уроке);
-    2 — иероглифы + пиньинь → значение (после первого успешного повторения типа 1);
-    4 — тоны: слово → тоновый рисунок (тогда же, что и тип 2);
-    3 — значение → скажи вслух (после первого успешного повторения типа 2);
-    5 — иероглифы без пиньиня → значение (фаза 4).
+  Типы карточек (ТЗ §9.1):
+    1 — чанк или слово → значение (текст);
+    2 — значение → скажи вслух (самооценка после образца) — открывается после успешной карточки типа 1;
+    3 — на слух → понять (аудио без текста);
+    4 — ложный друг → правильный выбор (фаза 4).
 */
 import { createEmptyCard, fsrs, generatorParameters, Rating, type Card, type Grade } from 'ts-fsrs'
 import type { CardRow } from '../db/types'
 
-export type CardKind = 1 | 2 | 3 | 4 | 5
+export type CardKind = 1 | 2 | 3 | 4
 export type Grade14 = 1 | 2 | 3 | 4
 
 export function cardId(itemId: string, kind: CardKind): string {
   return `${itemId}:${kind}`
+}
+
+export function parseCardId(id: string): { itemId: string; kind: CardKind } {
+  const i = id.lastIndexOf(':')
+  return { itemId: id.slice(0, i), kind: Number(id.slice(i + 1)) as CardKind }
 }
 
 const schedulers = new Map<number, ReturnType<typeof fsrs>>()
@@ -62,13 +66,11 @@ export function newCard(itemId: string, kind: CardKind, now = Date.now()): CardR
   return toRow({ id: cardId(itemId, kind), itemId, kind, createdAt: now }, createEmptyCard(new Date(now)))
 }
 
-/** Ответ на карточку: новая запись карточки. */
 export function review(row: CardRow, grade: Grade14, now = Date.now(), retention = 0.9): CardRow {
   const { card } = scheduler(retention).next(toCard(row), new Date(now), grade as Grade)
   return toRow(row, card)
 }
 
-/** Через сколько карточка вернётся при каждой из четырёх оценок (для подписей кнопок). */
 export function previewIntervals(row: CardRow, now = Date.now(), retention = 0.9): Record<Grade14, number> {
   const p = scheduler(retention).repeat(toCard(row), new Date(now))
   return {
@@ -91,11 +93,9 @@ export function formatInterval(ms: number): string {
   return `${Math.round(d / 30)} мес`
 }
 
-/** Какие карточки открываются после ответа (постепенное открытие типов). */
-export function unlocksAfter(row: CardRow, grade: Grade14, hanziOnly = false): CardKind[] {
+/** Какие карточки открываются после ответа: «понял значение» → «скажи сам». */
+export function unlocksAfter(row: CardRow, grade: Grade14): CardKind[] {
   if (grade < 3) return []
-  if (row.kind === 1) return [2, 4]
-  // Тип 5 «иероглифы без пиньиня» — со второй ступени или по настройке.
-  if (row.kind === 2) return hanziOnly ? [3, 5] : [3]
+  if (row.kind === 1 && row.itemId.startsWith('c-')) return [2]
   return []
 }

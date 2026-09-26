@@ -1,0 +1,441 @@
+[
+ {
+  "id": "p-standup",
+  "module": "air-long",
+  "title": "Утренняя планёрка",
+  "kind": "планёрка",
+  "situation": "Команда Даны коротко отчитывается перед началом дня.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Morning, everyone. Let's keep this short. Tom, you first."
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Sure. So yesterday I finished the bracket redesign, and I'm gonna run the stress analysis today. Should be done by lunch, unless the mesh gives me trouble again."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Right, quick one from me. The vibration table's booked for Thursday, not Wednesday, so we've got an extra day to fix the mounting plate."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "I reviewed the sensor wiring. Two connectors were swapped, so I've corrected the drawing and sent it to the workshop."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Good. Any blockers?"
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Just one. I still don't have the updated material data from the supplier."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "I'll chase them after this call. Thanks, everyone."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Когда вибростенд?",
+    "options": [
+     "В четверг",
+     "В среду",
+     "В пятницу"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что мешает Тому?",
+    "options": [
+     "Нет свежих данных о материале от поставщика",
+     "Сетка расчётной модели не строится",
+     "Вибростенд занят"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что сделала Прия?",
+    "options": [
+     "Исправила чертёж проводки и отправила в цех",
+     "Заказала новые разъёмы",
+     "Провела расчёт на прочность"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "p-supplier",
+  "module": "air-long",
+  "title": "Созвон с поставщиком",
+  "kind": "созвон",
+  "situation": "Софи из компании-поставщика сообщает новости по заказу.",
+  "lines": [
+   {
+    "speaker": "sophie",
+    "voice": "gb-f",
+    "text": "Hi Dana, thanks for making time. I've got some good news and some not-so-good news."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Let's start with the good news."
+   },
+   {
+    "speaker": "sophie",
+    "voice": "gb-f",
+    "text": "The carbon fiber panels passed inspection, so they'll ship on Monday."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Great. And the bad news?"
+   },
+   {
+    "speaker": "sophie",
+    "voice": "gb-f",
+    "text": "The titanium fasteners are delayed. Our supplier had a problem with the heat treatment, so we're looking at two weeks, maybe three."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Three weeks is a problem for us. Is there any way to split the order and send part of it earlier?"
+   },
+   {
+    "speaker": "sophie",
+    "voice": "gb-f",
+    "text": "I can check. If they have fifty in stock, I could send those by express."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "That would help a lot. Please let me know by Wednesday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Что отправят в понедельник?",
+    "options": [
+     "Панели из углепластика",
+     "Титановый крепёж",
+     "Весь заказ сразу"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Почему задерживается крепёж?",
+    "options": [
+     "У их поставщика проблема с термообработкой",
+     "Крепёж не прошёл инспекцию",
+     "Его нет на складе совсем"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "О чём просит Дана?",
+    "options": [
+     "Разделить заказ и прислать часть раньше",
+     "Отменить заказ",
+     "Заменить титан сталью"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "p-interview",
+  "module": "air-long",
+  "title": "Собеседование: вопрос о проекте",
+  "kind": "собеседование",
+  "situation": "Майк спрашивает кандидатку Грейс о её проекте. Так звучит хороший ответ по методу STAR.",
+  "lines": [
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "So, tell me about a project you're proud of."
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "Sure. Last year I worked on a small satellite for a university team. I was responsible for the thermal design."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "What was the main challenge?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "The electronics kept overheating in our simulations. We couldn't add a radiator because of the mass limit, so I suggested moving the battery closer to the panel and using a thermal strap instead."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "And did it work?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "It did. The peak temperature dropped by about twelve degrees, and we stayed within the mass budget."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Nice. What would you do differently next time?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "I'd start the thermal analysis earlier. We found the problem quite late, and it cost us a few weeks."
+   }
+  ],
+  "questions": [
+   {
+    "q": "За что отвечала Грейс?",
+    "options": [
+     "За тепловой расчёт",
+     "За электронику",
+     "За батареи"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Как решили проблему?",
+    "options": [
+     "Переставили батарею и поставили тепловой мост",
+     "Добавили радиатор",
+     "Убрали часть электроники"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что она сделала бы иначе?",
+    "options": [
+     "Начала бы тепловой расчёт раньше",
+     "Выбрала бы другой спутник",
+     "Увеличила бы массу"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "p-debrief",
+  "module": "air-long",
+  "title": "Разбор испытаний",
+  "kind": "видеоразбор",
+  "situation": "Оливер быстро рассказывает, что случилось на вибростенде в пятницу.",
+  "lines": [
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Right, so here's what happened on Friday. We ran the random vibration test at full level."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "About forty seconds in, the accelerometer on the bracket started showing a spike at around a hundred and twenty hertz."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "We stopped the test, had a look, and found that two of the four bolts had loosened. Nothing's cracked, which is the good news."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "The torque was probably too low, so we're going to re-torque everything to spec, add thread locker, and repeat the test on Tuesday."
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "If it happens again, we'll need to look at the bracket design itself."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Что обнаружили после остановки?",
+    "options": [
+     "Ослабли два болта из четырёх",
+     "Треснул кронштейн",
+     "Сломался акселерометр"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что сделают дальше?",
+    "options": [
+     "Затянут болты по моменту, добавят фиксатор резьбы и повторят тест",
+     "Сразу изменят конструкцию кронштейна",
+     "Отменят испытания"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Когда повтор?",
+    "options": [
+     "Во вторник",
+     "В пятницу",
+     "Через месяц"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "p-reschedule",
+  "module": "air-long",
+  "title": "Перенос ревью",
+  "kind": "созвон",
+  "situation": "Том звонит Прие: клиент просит перенести ревью проекта.",
+  "lines": [
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Hey Priya, have you got a sec? It's about tomorrow's design review."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Sure, what's up?"
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "The client wants to move it to Thursday afternoon. Does that work for you?"
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Thursday afternoon. I have the lab until three. Could we do four o'clock?"
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Four should be fine. I'll send an updated invite."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Thanks. And could you attach the latest drawings? The ones from last week are out of date."
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Will do. Oh, and they'd like a short demo of the test rig, if possible."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "No problem. I'll prepare something, ten minutes max."
+   }
+  ],
+  "questions": [
+   {
+    "q": "На когда переносят ревью?",
+    "options": [
+     "На четверг, 16:00",
+     "На четверг, 15:00",
+     "На пятницу"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что просит приложить Прия?",
+    "options": [
+     "Свежие чертежи",
+     "Отчёт об испытаниях",
+     "Фото стенда"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что ещё хочет клиент?",
+    "options": [
+     "Короткую демонстрацию стенда",
+     "Скидку",
+     "Новый график работ"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "p-rig",
+  "module": "air-long",
+  "title": "Экскурсия по стенду",
+  "kind": "видеоразбор",
+  "situation": "Дана записала видео о новом испытательном стенде для команды поставщика.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "In this video I'll walk you through our new test rig. On the left you can see the hydraulic actuator."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "The specimen sits in these wedge grips, and the load cell above it measures the force."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "We use two strain gauges on each specimen, one on each side, so we can check for bending."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "All the data goes to this computer at a thousand samples per second. The whole setup took us about three months to build, mostly because of the safety enclosure."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Какую нагрузку даёт привод?",
+    "options": [
+     "До 50 кН",
+     "До 5 кН",
+     "До 500 кН"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Зачем два тензодатчика на образце?",
+    "options": [
+     "Чтобы проверять изгиб",
+     "Чтобы измерять температуру",
+     "Про запас, если один сломается"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Почему сборка заняла три месяца?",
+    "options": [
+     "Из-за защитного кожуха",
+     "Из-за гидравлического привода",
+     "Из-за программы сбора данных"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false
+ }
+]

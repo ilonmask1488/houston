@@ -25,6 +25,40 @@ function audioCtx(): AudioContext | null {
   return ctx
 }
 
+/**
+  Радиошум для игры «Помехи»: белый шум через полосовой фильтр (как в эфире), тихо.
+  Возвращает функцию «выключить». При выключенных эффектах — ничего не играет.
+*/
+export function startStatic(volume: number): () => void {
+  if (!enabled.sfx) return () => {}
+  const c = audioCtx()
+  if (!c) return () => {}
+  const len = c.sampleRate * 2
+  const buf = c.createBuffer(1, len, c.sampleRate)
+  const data = buf.getChannelData(0)
+  for (let i = 0; i < len; i++) data[i] = Math.random() * 2 - 1
+  const src = c.createBufferSource()
+  src.buffer = buf
+  src.loop = true
+  const band = c.createBiquadFilter()
+  band.type = 'bandpass'
+  band.frequency.value = 1800
+  band.Q.value = 0.7
+  const g = c.createGain()
+  g.gain.setValueAtTime(0, c.currentTime)
+  g.gain.linearRampToValueAtTime(volume, c.currentTime + 0.15)
+  src.connect(band).connect(g).connect(c.destination)
+  src.start()
+  return () => {
+    try {
+      g.gain.linearRampToValueAtTime(0, c.currentTime + 0.15)
+      src.stop(c.currentTime + 0.2)
+    } catch {
+      /* уже остановлен */
+    }
+  }
+}
+
 function tone(c: AudioContext, freq: number, start: number, dur: number, type: OscillatorType = 'sine', vol = 0.12) {
   const o = c.createOscillator()
   const g = c.createGain()

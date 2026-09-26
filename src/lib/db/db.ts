@@ -11,6 +11,7 @@ import type {
   MetaRow,
   ModuleProgressRow,
   ReviewRow,
+  SessionRow,
   SettingsRow,
 } from './types'
 
@@ -25,6 +26,7 @@ export class AppDB extends Dexie {
   answers!: EntityTable<AnswerRow, 'id'>
   intake!: EntityTable<IntakeRow, 'id'>
   moduleProgress!: EntityTable<ModuleProgressRow, 'moduleId'>
+  sessions!: EntityTable<SessionRow, 'date'>
 
   constructor(name = DB_NAME) {
     super(name)
@@ -50,7 +52,7 @@ export class AppDB extends Dexie {
 export const db = new AppDB()
 
 /** Таблицы прогресса — то, что стирает «Сбросить прогресс». Настройки остаются. */
-export const PROGRESS_TABLES = ['cards', 'reviews', 'days', 'achievements', 'gameRecords', 'answers', 'intake', 'moduleProgress'] as const
+export const PROGRESS_TABLES = ['cards', 'reviews', 'days', 'achievements', 'gameRecords', 'answers', 'intake', 'moduleProgress', 'sessions'] as const
 
 export async function resetProgress(database: AppDB = db): Promise<void> {
   await database.transaction('rw', [...PROGRESS_TABLES, 'meta'], async () => {

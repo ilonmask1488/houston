@@ -1,0 +1,2472 @@
+[
+ {
+  "id": "c-intro-01",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "Let me briefly introduce myself.",
+  "ru": "Позвольте коротко представиться.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Let me briefly introduce myself.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Let me briefly introduce myself.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Let me briefly introduce myself.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Let me briefly introduce myself.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-02",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "I'm a fourth-year student",
+  "ru": "Я студент четвёртого курса",
+  "reviewed": false,
+  "example": "I'm a fourth-year student in aerospace engineering.",
+  "exampleRu": "Я студент четвёртого курса, аэрокосмическая инженерия.",
+  "speak": [
+   {
+    "text": "I'm a fourth-year student",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm a fourth-year student",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm a fourth-year student",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm a fourth-year student",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm a fourth-year student in aerospace engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm a fourth-year student in aerospace engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm a fourth-year student in aerospace engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm a fourth-year student in aerospace engineering.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-03",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "I'm currently working on",
+  "ru": "Сейчас я работаю над",
+  "reviewed": false,
+  "example": "I'm currently working on a project about composite testing.",
+  "exampleRu": "Сейчас я работаю над проектом по испытаниям композитов.",
+  "speak": [
+   {
+    "text": "I'm currently working on",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm currently working on",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm currently working on",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm currently working on",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm currently working on a project about composite testing.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm currently working on a project about composite testing.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm currently working on a project about composite testing.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm currently working on a project about composite testing.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-04",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "My background is in",
+  "ru": "Моя специальность — / я по образованию",
+  "reviewed": false,
+  "example": "My background is in rocket and space engineering.",
+  "exampleRu": "По специальности я инженер ракетно-космической техники.",
+  "speak": [
+   {
+    "text": "My background is in",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in rocket and space engineering.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-05",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "I'm particularly interested in",
+  "ru": "Меня особенно интересует",
+  "reviewed": false,
+  "example": "I'm particularly interested in structural analysis.",
+  "exampleRu": "Меня особенно интересует прочностной анализ.",
+  "speak": [
+   {
+    "text": "I'm particularly interested in",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm particularly interested in structural analysis.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-06",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "I've had some hands-on experience with",
+  "ru": "У меня есть практический опыт с",
+  "reviewed": false,
+  "example": "I've had some hands-on experience with CAD and FEA.",
+  "exampleRu": "У меня есть практический опыт с CAD и МКЭ.",
+  "speak": [
+   {
+    "text": "I've had some hands-on experience with",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've had some hands-on experience with",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've had some hands-on experience with",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've had some hands-on experience with",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I've had some hands-on experience with CAD and FEA.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I've had some hands-on experience with CAD and FEA.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I've had some hands-on experience with CAD and FEA.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I've had some hands-on experience with CAD and FEA.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-07",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "What I enjoy most is",
+  "ru": "Больше всего мне нравится",
+  "reviewed": false,
+  "example": "What I enjoy most is solving practical problems.",
+  "exampleRu": "Больше всего мне нравится решать практические задачи.",
+  "speak": [
+   {
+    "text": "What I enjoy most is",
+    "voice": "us-f"
+   },
+   {
+    "text": "What I enjoy most is",
+    "voice": "us-m"
+   },
+   {
+    "text": "What I enjoy most is",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What I enjoy most is",
+    "voice": "gb-m"
+   },
+   {
+    "text": "What I enjoy most is solving practical problems.",
+    "voice": "us-f"
+   },
+   {
+    "text": "What I enjoy most is solving practical problems.",
+    "voice": "us-m"
+   },
+   {
+    "text": "What I enjoy most is solving practical problems.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What I enjoy most is solving practical problems.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-08",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "In my free time, I",
+  "ru": "В свободное время я",
+  "reviewed": false,
+  "example": "In my free time, I like to read about space missions.",
+  "exampleRu": "В свободное время я люблю читать о космических миссиях.",
+  "speak": [
+   {
+    "text": "In my free time, I",
+    "voice": "us-f"
+   },
+   {
+    "text": "In my free time, I",
+    "voice": "us-m"
+   },
+   {
+    "text": "In my free time, I",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In my free time, I",
+    "voice": "gb-m"
+   },
+   {
+    "text": "In my free time, I like to read about space missions.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In my free time, I like to read about space missions.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In my free time, I like to read about space missions.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In my free time, I like to read about space missions.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-09",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "That's a bit about me.",
+  "ru": "Вот немного обо мне.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "That's a bit about me.",
+    "voice": "us-f"
+   },
+   {
+    "text": "That's a bit about me.",
+    "voice": "us-m"
+   },
+   {
+    "text": "That's a bit about me.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "That's a bit about me.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-intro-10",
+  "module": "call-intro",
+  "fn": "представиться",
+  "en": "I'm looking for a position where I can",
+  "ru": "Я ищу позицию, где смогу",
+  "reviewed": false,
+  "example": "I'm looking for a position where I can grow as an engineer.",
+  "exampleRu": "Я ищу позицию, где смогу расти как инженер.",
+  "speak": [
+   {
+    "text": "I'm looking for a position where I can",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm looking for a position where I can",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm looking for a position where I can",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm looking for a position where I can",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I'm looking for a position where I can grow as an engineer.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm looking for a position where I can grow as an engineer.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm looking for a position where I can grow as an engineer.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm looking for a position where I can grow as an engineer.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-01",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "That's a good question, let me think.",
+  "ru": "Хороший вопрос, дайте подумать.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "That's a good question, let me think.",
+    "voice": "us-f"
+   },
+   {
+    "text": "That's a good question, let me think.",
+    "voice": "us-m"
+   },
+   {
+    "text": "That's a good question, let me think.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "That's a good question, let me think.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-02",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "Let me think about that for a second.",
+  "ru": "Дайте секунду подумать.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Let me think about that for a second.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Let me think about that for a second.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Let me think about that for a second.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Let me think about that for a second.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-03",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "How can I put it",
+  "ru": "Как бы это сказать",
+  "reviewed": false,
+  "example": "How can I put it... it's more of a process than a tool.",
+  "exampleRu": "Как бы это сказать… это скорее процесс, чем инструмент.",
+  "speak": [
+   {
+    "text": "How can I put it",
+    "voice": "us-f"
+   },
+   {
+    "text": "How can I put it",
+    "voice": "us-m"
+   },
+   {
+    "text": "How can I put it",
+    "voice": "gb-f"
+   },
+   {
+    "text": "How can I put it",
+    "voice": "gb-m"
+   },
+   {
+    "text": "How can I put it... it's more of a process than a tool.",
+    "voice": "us-f"
+   },
+   {
+    "text": "How can I put it... it's more of a process than a tool.",
+    "voice": "us-m"
+   },
+   {
+    "text": "How can I put it... it's more of a process than a tool.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "How can I put it... it's more of a process than a tool.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-04",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "Well, it depends on",
+  "ru": "Ну, это зависит от",
+  "reviewed": false,
+  "example": "Well, it depends on the requirements.",
+  "exampleRu": "Ну, это зависит от требований.",
+  "speak": [
+   {
+    "text": "Well, it depends on",
+    "voice": "us-f"
+   },
+   {
+    "text": "Well, it depends on",
+    "voice": "us-m"
+   },
+   {
+    "text": "Well, it depends on",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Well, it depends on",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Well, it depends on the requirements.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Well, it depends on the requirements.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Well, it depends on the requirements.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Well, it depends on the requirements.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-05",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "Off the top of my head, I'd say",
+  "ru": "Навскидку я бы сказал",
+  "reviewed": false,
+  "example": "Off the top of my head, I'd say about two weeks.",
+  "exampleRu": "Навскидку — около двух недель.",
+  "speak": [
+   {
+    "text": "Off the top of my head, I'd say",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Off the top of my head, I'd say about two weeks.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-06",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "Give me a moment to gather my thoughts.",
+  "ru": "Дайте мне собраться с мыслями.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Give me a moment to gather my thoughts.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Give me a moment to gather my thoughts.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Give me a moment to gather my thoughts.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Give me a moment to gather my thoughts.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-07",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "Let me put it another way.",
+  "ru": "Скажу по-другому.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Let me put it another way.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Let me put it another way.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Let me put it another way.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Let me put it another way.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-08",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "If I understand the question correctly",
+  "ru": "Если я правильно понял вопрос",
+  "reviewed": false,
+  "example": "If I understand the question correctly, you're asking about the timeline.",
+  "exampleRu": "Если я правильно понял вопрос, вы спрашиваете о сроках.",
+  "speak": [
+   {
+    "text": "If I understand the question correctly",
+    "voice": "us-f"
+   },
+   {
+    "text": "If I understand the question correctly",
+    "voice": "us-m"
+   },
+   {
+    "text": "If I understand the question correctly",
+    "voice": "gb-f"
+   },
+   {
+    "text": "If I understand the question correctly",
+    "voice": "gb-m"
+   },
+   {
+    "text": "If I understand the question correctly, you're asking about the timeline.",
+    "voice": "us-f"
+   },
+   {
+    "text": "If I understand the question correctly, you're asking about the timeline.",
+    "voice": "us-m"
+   },
+   {
+    "text": "If I understand the question correctly, you're asking about the timeline.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "If I understand the question correctly, you're asking about the timeline.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-09",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "The short answer is yes, but",
+  "ru": "Если коротко — да, но",
+  "reviewed": false,
+  "example": "The short answer is yes, but there's a catch.",
+  "exampleRu": "Если коротко — да, но есть нюанс.",
+  "speak": [
+   {
+    "text": "The short answer is yes, but",
+    "voice": "us-f"
+   },
+   {
+    "text": "The short answer is yes, but",
+    "voice": "us-m"
+   },
+   {
+    "text": "The short answer is yes, but",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The short answer is yes, but",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The short answer is yes, but there's a catch.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The short answer is yes, but there's a catch.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The short answer is yes, but there's a catch.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The short answer is yes, but there's a catch.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-time-10",
+  "module": "call-time",
+  "fn": "выиграть время",
+  "en": "I haven't thought about it that way before.",
+  "ru": "Я раньше не смотрел на это с такой стороны.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "I haven't thought about it that way before.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I haven't thought about it that way before.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I haven't thought about it that way before.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I haven't thought about it that way before.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-01",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Could you say that again, please?",
+  "ru": "Можете повторить, пожалуйста?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Could you say that again, please?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you say that again, please?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you say that again, please?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you say that again, please?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-02",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Sorry, I didn't catch that.",
+  "ru": "Извините, я не расслышал.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Sorry, I didn't catch that.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Sorry, I didn't catch that.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Sorry, I didn't catch that.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Sorry, I didn't catch that.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-03",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Could you speak a bit more slowly?",
+  "ru": "Можете говорить чуть медленнее?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Could you speak a bit more slowly?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you speak a bit more slowly?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you speak a bit more slowly?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you speak a bit more slowly?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-04",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Do you mean",
+  "ru": "Вы имеете в виду",
+  "reviewed": false,
+  "example": "Do you mean the first version or the second one?",
+  "exampleRu": "Вы имеете в виду первую версию или вторую?",
+  "speak": [
+   {
+    "text": "Do you mean",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Do you mean the first version or the second one?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-05",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Just to make sure I understand",
+  "ru": "Чтобы убедиться, что я правильно понял",
+  "reviewed": false,
+  "example": "Just to make sure I understand, you need the report by Friday?",
+  "exampleRu": "Чтобы убедиться, что я правильно понял: отчёт нужен к пятнице?",
+  "speak": [
+   {
+    "text": "Just to make sure I understand",
+    "voice": "us-f"
+   },
+   {
+    "text": "Just to make sure I understand",
+    "voice": "us-m"
+   },
+   {
+    "text": "Just to make sure I understand",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Just to make sure I understand",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Just to make sure I understand, you need the report by Friday?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Just to make sure I understand, you need the report by Friday?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Just to make sure I understand, you need the report by Friday?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Just to make sure I understand, you need the report by Friday?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-06",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Could you walk me through it?",
+  "ru": "Можете объяснить по шагам?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Could you walk me through it?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you walk me through it?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you walk me through it?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you walk me through it?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-07",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "What exactly do you mean by",
+  "ru": "Что именно вы имеете в виду под",
+  "reviewed": false,
+  "example": "What exactly do you mean by critical?",
+  "exampleRu": "Что именно вы имеете в виду под «критичным»?",
+  "speak": [
+   {
+    "text": "What exactly do you mean by",
+    "voice": "us-f"
+   },
+   {
+    "text": "What exactly do you mean by",
+    "voice": "us-m"
+   },
+   {
+    "text": "What exactly do you mean by",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What exactly do you mean by",
+    "voice": "gb-m"
+   },
+   {
+    "text": "What exactly do you mean by critical?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What exactly do you mean by critical?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What exactly do you mean by critical?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What exactly do you mean by critical?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-08",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Could you give me an example?",
+  "ru": "Можете привести пример?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Could you give me an example?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you give me an example?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you give me an example?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you give me an example?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-09",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "So, if I understand correctly",
+  "ru": "То есть, если я правильно понял",
+  "reviewed": false,
+  "example": "So, if I understand correctly, the test is on Thursday.",
+  "exampleRu": "То есть, если я правильно понял, испытание в четверг.",
+  "speak": [
+   {
+    "text": "So, if I understand correctly",
+    "voice": "us-f"
+   },
+   {
+    "text": "So, if I understand correctly",
+    "voice": "us-m"
+   },
+   {
+    "text": "So, if I understand correctly",
+    "voice": "gb-f"
+   },
+   {
+    "text": "So, if I understand correctly",
+    "voice": "gb-m"
+   },
+   {
+    "text": "So, if I understand correctly, the test is on Thursday.",
+    "voice": "us-f"
+   },
+   {
+    "text": "So, if I understand correctly, the test is on Thursday.",
+    "voice": "us-m"
+   },
+   {
+    "text": "So, if I understand correctly, the test is on Thursday.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "So, if I understand correctly, the test is on Thursday.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-clarify-10",
+  "module": "call-clarify",
+  "fn": "переспросить",
+  "en": "Could you spell that, please?",
+  "ru": "Можете продиктовать по буквам?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Could you spell that, please?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Could you spell that, please?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Could you spell that, please?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Could you spell that, please?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-01",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "The goal of the project was to",
+  "ru": "Цель проекта была",
+  "reviewed": false,
+  "example": "The goal of the project was to reduce the weight of the bracket.",
+  "exampleRu": "Цель проекта — снизить массу кронштейна.",
+  "speak": [
+   {
+    "text": "The goal of the project was to",
+    "voice": "us-f"
+   },
+   {
+    "text": "The goal of the project was to",
+    "voice": "us-m"
+   },
+   {
+    "text": "The goal of the project was to",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The goal of the project was to",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The goal of the project was to reduce the weight of the bracket.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The goal of the project was to reduce the weight of the bracket.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The goal of the project was to reduce the weight of the bracket.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The goal of the project was to reduce the weight of the bracket.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-02",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "I was responsible for",
+  "ru": "Я отвечал за",
+  "reviewed": false,
+  "example": "I was responsible for the stress analysis.",
+  "exampleRu": "Я отвечал за расчёт на прочность.",
+  "speak": [
+   {
+    "text": "I was responsible for",
+    "voice": "us-f"
+   },
+   {
+    "text": "I was responsible for",
+    "voice": "us-m"
+   },
+   {
+    "text": "I was responsible for",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I was responsible for",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I was responsible for the stress analysis.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I was responsible for the stress analysis.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I was responsible for the stress analysis.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I was responsible for the stress analysis.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-03",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "We had a tight deadline, so",
+  "ru": "Сроки были жёсткие, поэтому",
+  "reviewed": false,
+  "example": "We had a tight deadline, so we split the work into two teams.",
+  "exampleRu": "Сроки были жёсткие, поэтому мы разделились на две команды.",
+  "speak": [
+   {
+    "text": "We had a tight deadline, so",
+    "voice": "us-f"
+   },
+   {
+    "text": "We had a tight deadline, so",
+    "voice": "us-m"
+   },
+   {
+    "text": "We had a tight deadline, so",
+    "voice": "gb-f"
+   },
+   {
+    "text": "We had a tight deadline, so",
+    "voice": "gb-m"
+   },
+   {
+    "text": "We had a tight deadline, so we split the work into two teams.",
+    "voice": "us-f"
+   },
+   {
+    "text": "We had a tight deadline, so we split the work into two teams.",
+    "voice": "us-m"
+   },
+   {
+    "text": "We had a tight deadline, so we split the work into two teams.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "We had a tight deadline, so we split the work into two teams.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-04",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "The main challenge was",
+  "ru": "Главной трудностью было",
+  "reviewed": false,
+  "example": "The main challenge was the vibration at launch.",
+  "exampleRu": "Главной трудностью была вибрация при старте.",
+  "speak": [
+   {
+    "text": "The main challenge was",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The main challenge was the vibration at launch.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The main challenge was the vibration at launch.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The main challenge was the vibration at launch.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The main challenge was the vibration at launch.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-05",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "We solved it by",
+  "ru": "Мы решили это тем, что",
+  "reviewed": false,
+  "example": "We solved it by changing the material.",
+  "exampleRu": "Мы решили это, поменяв материал.",
+  "speak": [
+   {
+    "text": "We solved it by",
+    "voice": "us-f"
+   },
+   {
+    "text": "We solved it by",
+    "voice": "us-m"
+   },
+   {
+    "text": "We solved it by",
+    "voice": "gb-f"
+   },
+   {
+    "text": "We solved it by",
+    "voice": "gb-m"
+   },
+   {
+    "text": "We solved it by changing the material.",
+    "voice": "us-f"
+   },
+   {
+    "text": "We solved it by changing the material.",
+    "voice": "us-m"
+   },
+   {
+    "text": "We solved it by changing the material.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "We solved it by changing the material.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-06",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "As a result",
+  "ru": "В результате",
+  "reviewed": false,
+  "example": "As a result, the mass dropped by fifteen percent.",
+  "exampleRu": "В результате масса снизилась на пятнадцать процентов.",
+  "speak": [
+   {
+    "text": "As a result",
+    "voice": "us-f"
+   },
+   {
+    "text": "As a result",
+    "voice": "us-m"
+   },
+   {
+    "text": "As a result",
+    "voice": "gb-f"
+   },
+   {
+    "text": "As a result",
+    "voice": "gb-m"
+   },
+   {
+    "text": "As a result, the mass dropped by fifteen percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "As a result, the mass dropped by fifteen percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "As a result, the mass dropped by fifteen percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "As a result, the mass dropped by fifteen percent.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-07",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "I worked closely with",
+  "ru": "Я тесно работал с",
+  "reviewed": false,
+  "example": "I worked closely with the test engineers.",
+  "exampleRu": "Я тесно работал с испытателями.",
+  "speak": [
+   {
+    "text": "I worked closely with",
+    "voice": "us-f"
+   },
+   {
+    "text": "I worked closely with",
+    "voice": "us-m"
+   },
+   {
+    "text": "I worked closely with",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I worked closely with",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I worked closely with the test engineers.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I worked closely with the test engineers.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I worked closely with the test engineers.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I worked closely with the test engineers.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-08",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "My role was to",
+  "ru": "Моя роль была",
+  "reviewed": false,
+  "example": "My role was to prepare the test plan.",
+  "exampleRu": "Моя задача была подготовить программу испытаний.",
+  "speak": [
+   {
+    "text": "My role was to",
+    "voice": "us-f"
+   },
+   {
+    "text": "My role was to",
+    "voice": "us-m"
+   },
+   {
+    "text": "My role was to",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My role was to",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My role was to prepare the test plan.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My role was to prepare the test plan.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My role was to prepare the test plan.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My role was to prepare the test plan.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-09",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "In the end, we managed to",
+  "ru": "В итоге нам удалось",
+  "reviewed": false,
+  "example": "In the end, we managed to meet the deadline.",
+  "exampleRu": "В итоге нам удалось уложиться в срок.",
+  "speak": [
+   {
+    "text": "In the end, we managed to",
+    "voice": "us-f"
+   },
+   {
+    "text": "In the end, we managed to",
+    "voice": "us-m"
+   },
+   {
+    "text": "In the end, we managed to",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In the end, we managed to",
+    "voice": "gb-m"
+   },
+   {
+    "text": "In the end, we managed to meet the deadline.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In the end, we managed to meet the deadline.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In the end, we managed to meet the deadline.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In the end, we managed to meet the deadline.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-project-10",
+  "module": "call-project",
+  "fn": "о проекте",
+  "en": "Looking back, I would",
+  "ru": "Сейчас я бы",
+  "reviewed": false,
+  "example": "Looking back, I would start testing earlier.",
+  "exampleRu": "Сейчас я бы начал испытания раньше.",
+  "speak": [
+   {
+    "text": "Looking back, I would",
+    "voice": "us-f"
+   },
+   {
+    "text": "Looking back, I would",
+    "voice": "us-m"
+   },
+   {
+    "text": "Looking back, I would",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Looking back, I would",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Looking back, I would start testing earlier.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Looking back, I would start testing earlier.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Looking back, I would start testing earlier.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Looking back, I would start testing earlier.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-01",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "In simple terms",
+  "ru": "Проще говоря",
+  "reviewed": false,
+  "example": "In simple terms, it's a very stiff spring.",
+  "exampleRu": "Проще говоря, это очень жёсткая пружина.",
+  "speak": [
+   {
+    "text": "In simple terms",
+    "voice": "us-f"
+   },
+   {
+    "text": "In simple terms",
+    "voice": "us-m"
+   },
+   {
+    "text": "In simple terms",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In simple terms",
+    "voice": "gb-m"
+   },
+   {
+    "text": "In simple terms, it's a very stiff spring.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In simple terms, it's a very stiff spring.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In simple terms, it's a very stiff spring.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In simple terms, it's a very stiff spring.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-02",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "Think of it as",
+  "ru": "Представь это как",
+  "reviewed": false,
+  "example": "Think of it as a thermos for electronics.",
+  "exampleRu": "Представь это как термос для электроники.",
+  "speak": [
+   {
+    "text": "Think of it as",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Think of it as a thermos for electronics.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Think of it as a thermos for electronics.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Think of it as a thermos for electronics.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Think of it as a thermos for electronics.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-03",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "Basically, it's a way to",
+  "ru": "По сути, это способ",
+  "reviewed": false,
+  "example": "Basically, it's a way to find weak spots before we build anything.",
+  "exampleRu": "По сути, это способ найти слабые места до того, как что-то построено.",
+  "speak": [
+   {
+    "text": "Basically, it's a way to",
+    "voice": "us-f"
+   },
+   {
+    "text": "Basically, it's a way to",
+    "voice": "us-m"
+   },
+   {
+    "text": "Basically, it's a way to",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Basically, it's a way to",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Basically, it's a way to find weak spots before we build anything.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Basically, it's a way to find weak spots before we build anything.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Basically, it's a way to find weak spots before we build anything.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Basically, it's a way to find weak spots before we build anything.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-04",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "The idea is pretty simple",
+  "ru": "Идея довольно простая",
+  "reviewed": false,
+  "example": "The idea is pretty simple: we split the part into small pieces.",
+  "exampleRu": "Идея простая: мы делим деталь на маленькие кусочки.",
+  "speak": [
+   {
+    "text": "The idea is pretty simple",
+    "voice": "us-f"
+   },
+   {
+    "text": "The idea is pretty simple",
+    "voice": "us-m"
+   },
+   {
+    "text": "The idea is pretty simple",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The idea is pretty simple",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The idea is pretty simple: we split the part into small pieces.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The idea is pretty simple: we split the part into small pieces.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The idea is pretty simple: we split the part into small pieces.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The idea is pretty simple: we split the part into small pieces.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-05",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "Let me give you an example.",
+  "ru": "Приведу пример.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Let me give you an example.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Let me give you an example.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Let me give you an example.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Let me give you an example.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-06",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "Imagine you have",
+  "ru": "Представь, что у тебя есть",
+  "reviewed": false,
+  "example": "Imagine you have a long beam fixed at one end.",
+  "exampleRu": "Представь, что у тебя есть длинная балка, закреплённая с одного конца.",
+  "speak": [
+   {
+    "text": "Imagine you have",
+    "voice": "us-f"
+   },
+   {
+    "text": "Imagine you have",
+    "voice": "us-m"
+   },
+   {
+    "text": "Imagine you have",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Imagine you have",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Imagine you have a long beam fixed at one end.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Imagine you have a long beam fixed at one end.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Imagine you have a long beam fixed at one end.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Imagine you have a long beam fixed at one end.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-07",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "It's similar to",
+  "ru": "Это похоже на",
+  "reviewed": false,
+  "example": "It's similar to a spring, but it works both ways.",
+  "exampleRu": "Это похоже на пружину, но работает в обе стороны.",
+  "speak": [
+   {
+    "text": "It's similar to",
+    "voice": "us-f"
+   },
+   {
+    "text": "It's similar to",
+    "voice": "us-m"
+   },
+   {
+    "text": "It's similar to",
+    "voice": "gb-f"
+   },
+   {
+    "text": "It's similar to",
+    "voice": "gb-m"
+   },
+   {
+    "text": "It's similar to a spring, but it works both ways.",
+    "voice": "us-f"
+   },
+   {
+    "text": "It's similar to a spring, but it works both ways.",
+    "voice": "us-m"
+   },
+   {
+    "text": "It's similar to a spring, but it works both ways.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "It's similar to a spring, but it works both ways.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-08",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "The key point is that",
+  "ru": "Главное, что",
+  "reviewed": false,
+  "example": "The key point is that the part must not deform.",
+  "exampleRu": "Главное, что деталь не должна деформироваться.",
+  "speak": [
+   {
+    "text": "The key point is that",
+    "voice": "us-f"
+   },
+   {
+    "text": "The key point is that",
+    "voice": "us-m"
+   },
+   {
+    "text": "The key point is that",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The key point is that",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The key point is that the part must not deform.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The key point is that the part must not deform.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The key point is that the part must not deform.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The key point is that the part must not deform.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-09",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "In other words",
+  "ru": "Другими словами",
+  "reviewed": false,
+  "example": "In other words, we're checking the strength.",
+  "exampleRu": "Другими словами, мы проверяем прочность.",
+  "speak": [
+   {
+    "text": "In other words",
+    "voice": "us-f"
+   },
+   {
+    "text": "In other words",
+    "voice": "us-m"
+   },
+   {
+    "text": "In other words",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In other words",
+    "voice": "gb-m"
+   },
+   {
+    "text": "In other words, we're checking the strength.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In other words, we're checking the strength.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In other words, we're checking the strength.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In other words, we're checking the strength.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-explain-10",
+  "module": "call-explain",
+  "fn": "объяснить просто",
+  "en": "Does that make sense?",
+  "ru": "Понятно объясняю?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Does that make sense?",
+    "voice": "us-f"
+   },
+   {
+    "text": "Does that make sense?",
+    "voice": "us-m"
+   },
+   {
+    "text": "Does that make sense?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Does that make sense?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-01",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I see your point, but",
+  "ru": "Я понимаю вашу точку зрения, но",
+  "reviewed": false,
+  "example": "I see your point, but we're short on time.",
+  "exampleRu": "Понимаю, но у нас мало времени.",
+  "speak": [
+   {
+    "text": "I see your point, but",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I see your point, but we're short on time.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-02",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I'm not sure I agree with that.",
+  "ru": "Не уверен, что с этим согласен.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "I'm not sure I agree with that.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm not sure I agree with that.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm not sure I agree with that.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm not sure I agree with that.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-03",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "That's true, but have we considered",
+  "ru": "Это так, но мы учли",
+  "reviewed": false,
+  "example": "That's true, but have we considered the cost?",
+  "exampleRu": "Это так, но мы учли стоимость?",
+  "speak": [
+   {
+    "text": "That's true, but have we considered",
+    "voice": "us-f"
+   },
+   {
+    "text": "That's true, but have we considered",
+    "voice": "us-m"
+   },
+   {
+    "text": "That's true, but have we considered",
+    "voice": "gb-f"
+   },
+   {
+    "text": "That's true, but have we considered",
+    "voice": "gb-m"
+   },
+   {
+    "text": "That's true, but have we considered the cost?",
+    "voice": "us-f"
+   },
+   {
+    "text": "That's true, but have we considered the cost?",
+    "voice": "us-m"
+   },
+   {
+    "text": "That's true, but have we considered the cost?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "That's true, but have we considered the cost?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-04",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I'd look at it a bit differently.",
+  "ru": "Я бы посмотрел на это немного иначе.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "I'd look at it a bit differently.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'd look at it a bit differently.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'd look at it a bit differently.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'd look at it a bit differently.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-05",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I don't know, but I'll find out.",
+  "ru": "Не знаю, но выясню.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "I don't know, but I'll find out.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I don't know, but I'll find out.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I don't know, but I'll find out.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I don't know, but I'll find out.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-06",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I'm not sure off the top of my head. Can I get back to you?",
+  "ru": "Навскидку не скажу. Можно я отвечу позже?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "I'm not sure off the top of my head. Can I get back to you?",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm not sure off the top of my head. Can I get back to you?",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm not sure off the top of my head. Can I get back to you?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm not sure off the top of my head. Can I get back to you?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-07",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "That's outside my area, to be honest.",
+  "ru": "Честно говоря, это не моя область.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "That's outside my area, to be honest.",
+    "voice": "us-f"
+   },
+   {
+    "text": "That's outside my area, to be honest.",
+    "voice": "us-m"
+   },
+   {
+    "text": "That's outside my area, to be honest.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "That's outside my area, to be honest.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-08",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "I might be wrong, but",
+  "ru": "Могу ошибаться, но",
+  "reviewed": false,
+  "example": "I might be wrong, but I think it's the sensor.",
+  "exampleRu": "Могу ошибаться, но, кажется, дело в датчике.",
+  "speak": [
+   {
+    "text": "I might be wrong, but",
+    "voice": "us-f"
+   },
+   {
+    "text": "I might be wrong, but",
+    "voice": "us-m"
+   },
+   {
+    "text": "I might be wrong, but",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I might be wrong, but",
+    "voice": "gb-m"
+   },
+   {
+    "text": "I might be wrong, but I think it's the sensor.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I might be wrong, but I think it's the sensor.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I might be wrong, but I think it's the sensor.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I might be wrong, but I think it's the sensor.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-09",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "Fair point.",
+  "ru": "Справедливо.",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "Fair point.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Fair point.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Fair point.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Fair point.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-disagree-10",
+  "module": "call-disagree",
+  "fn": "возразить / не знаю",
+  "en": "With respect, I think",
+  "ru": "При всём уважении, я думаю",
+  "reviewed": false,
+  "example": "With respect, I think we need more data first.",
+  "exampleRu": "При всём уважении, думаю, сначала нужно больше данных.",
+  "speak": [
+   {
+    "text": "With respect, I think",
+    "voice": "us-f"
+   },
+   {
+    "text": "With respect, I think",
+    "voice": "us-m"
+   },
+   {
+    "text": "With respect, I think",
+    "voice": "gb-f"
+   },
+   {
+    "text": "With respect, I think",
+    "voice": "gb-m"
+   },
+   {
+    "text": "With respect, I think we need more data first.",
+    "voice": "us-f"
+   },
+   {
+    "text": "With respect, I think we need more data first.",
+    "voice": "us-m"
+   },
+   {
+    "text": "With respect, I think we need more data first.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "With respect, I think we need more data first.",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-01",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What does a typical day look like in this role?",
+  "ru": "Как выглядит обычный день на этой позиции?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What does a typical day look like in this role?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-02",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What would you expect from me in the first three months?",
+  "ru": "Чего вы ждёте от меня в первые три месяца?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What would you expect from me in the first three months?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What would you expect from me in the first three months?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What would you expect from me in the first three months?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What would you expect from me in the first three months?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-03",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "How is the team structured?",
+  "ru": "Как устроена команда?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "How is the team structured?",
+    "voice": "us-f"
+   },
+   {
+    "text": "How is the team structured?",
+    "voice": "us-m"
+   },
+   {
+    "text": "How is the team structured?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "How is the team structured?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-04",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What are the biggest challenges the team is facing right now?",
+  "ru": "С какими главными трудностями команда сталкивается сейчас?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What are the biggest challenges the team is facing right now?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What are the biggest challenges the team is facing right now?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What are the biggest challenges the team is facing right now?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What are the biggest challenges the team is facing right now?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-05",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "How do you measure success in this position?",
+  "ru": "Как вы оцениваете успех на этой позиции?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "How do you measure success in this position?",
+    "voice": "us-f"
+   },
+   {
+    "text": "How do you measure success in this position?",
+    "voice": "us-m"
+   },
+   {
+    "text": "How do you measure success in this position?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "How do you measure success in this position?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-06",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What opportunities are there for learning and growth?",
+  "ru": "Какие есть возможности учиться и расти?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What opportunities are there for learning and growth?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What opportunities are there for learning and growth?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What opportunities are there for learning and growth?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What opportunities are there for learning and growth?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-07",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What software does the team use?",
+  "ru": "Какими программами пользуется команда?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What software does the team use?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What software does the team use?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What software does the team use?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What software does the team use?",
+    "voice": "gb-m"
+   }
+  ]
+ },
+ {
+  "id": "c-questions-08",
+  "module": "call-questions",
+  "fn": "вопросы работодателю",
+  "en": "What are the next steps in the process?",
+  "ru": "Какие дальше шаги?",
+  "reviewed": false,
+  "speak": [
+   {
+    "text": "What are the next steps in the process?",
+    "voice": "us-f"
+   },
+   {
+    "text": "What are the next steps in the process?",
+    "voice": "us-m"
+   },
+   {
+    "text": "What are the next steps in the process?",
+    "voice": "gb-f"
+   },
+   {
+    "text": "What are the next steps in the process?",
+    "voice": "gb-m"
+   }
+  ]
+ }
+]
