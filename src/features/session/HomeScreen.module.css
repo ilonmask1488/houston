@@ -1,0 +1,217 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  min-height: 100dvh;
+  padding: calc(var(--safe-top) + var(--space-3)) calc(var(--gutter) + var(--safe-right))
+    calc(var(--nav-h) + var(--safe-bottom) + var(--space-4)) calc(var(--gutter) + var(--safe-left));
+}
+
+.telemetry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  padding-bottom: var(--space-3);
+  font-size: var(--fs-small);
+}
+
+.brand {
+  flex-basis: 100%;
+  font-family: var(--font-cond);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.freq {
+  color: var(--ink-2);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.days {
+  font-family: var(--font-cond);
+  font-weight: 500;
+}
+
+.days strong {
+  font-size: var(--fs-lead);
+  font-weight: 500;
+}
+
+.signal {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.signalLabel {
+  color: var(--ink-2);
+}
+
+.banners {
+  display: grid;
+  gap: var(--space-2);
+}
+
+/* ——— Вводный тест ——— */
+.intake {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-left: 3px solid var(--signal);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+}
+
+.intake p {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.parts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1) var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-caption);
+}
+
+.parts li::before {
+  content: '▸ ';
+  color: var(--signal-ink);
+}
+
+/* ——— Профиль ——— */
+.profile {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: start;
+}
+
+.profileHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.cefr {
+  display: grid;
+  justify-items: end;
+  font-size: var(--fs-lead);
+  font-weight: 500;
+}
+
+.cefrHint {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+}
+
+.trackBars {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trackBars li {
+  display: grid;
+  grid-template-columns: 7.5em 1fr 2.2em;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-small);
+}
+
+.trackBars li > .mono {
+  text-align: right;
+  color: var(--ink-2);
+}
+
+.trackName {
+  font-family: var(--font-cond);
+  font-weight: 500;
+}
+
+/* ——— Циклограмма ——— */
+.timeline h2 {
+  margin-bottom: var(--space-3);
+}
+
+.bar {
+  display: flex;
+  gap: 3px;
+  height: 10px;
+  margin-bottom: var(--space-3);
+}
+
+.segment {
+  border-radius: 1px;
+  background: var(--line-strong);
+}
+
+.segment[data-block='air'],
+.segment[data-block='call'] {
+  background: var(--ink);
+}
+
+.rows {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 3.5em 1fr auto;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) dashed var(--line);
+}
+
+.t,
+.min {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.blockTitle {
+  display: block;
+  font-weight: 600;
+}
+
+.blockWhat {
+  display: block;
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+/* ——— Кнопка в зоне большого пальца ——— */
+.launch {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: center;
+  margin-top: auto;
+  padding-top: var(--space-3);
+}
+
+.launchHint {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+}
+
+.soon {
+  padding: var(--space-3);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+  font-size: var(--fs-small);
+}

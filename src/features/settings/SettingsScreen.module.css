@@ -1,0 +1,75 @@
+.section {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4) 0 var(--space-5);
+  border-top: 1.5px solid var(--ink);
+}
+
+.section + .section {
+  margin-top: var(--space-2);
+}
+
+.section h2 {
+  font-size: var(--fs-body);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+
+.hint {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+  line-height: 1.45;
+}
+
+.preview {
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.message {
+  min-height: 1.5em;
+  font-size: var(--fs-small);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.dialog {
+  width: min(420px, calc(100vw - 2 * var(--gutter)));
+  padding: var(--space-5);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.dialog::backdrop {
+  background: var(--scrim);
+}
+
+.dialog p {
+  margin: var(--space-3) 0 var(--space-5);
+  font-size: var(--fs-small);
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}

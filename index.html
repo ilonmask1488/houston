@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Houston — английский</title>
+    <meta name="description" content="Ежедневный сеанс связи с английским: быстрая речь на слух, говорение с таймером, собеседования, письма и техническое чтение." />
+    <meta name="theme-color" content="#e9ece8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1215" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Houston" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" href="./icon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" />
+    <script>
+      // Тема до первой отрисовки — без вспышки светлого фона в тёмной теме.
+      try {
+        var a = JSON.parse(localStorage.getItem('houston:appearance') || '{}')
+        if (a.theme === 'light' || a.theme === 'dark') document.documentElement.dataset.theme = a.theme
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Для работы приложения нужен JavaScript.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

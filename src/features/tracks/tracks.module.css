@@ -1,0 +1,92 @@
+.noProfile {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+}
+
+.tracks {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.track {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.head h2 {
+  flex: 1;
+}
+
+.channel {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+}
+
+.what {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.modules {
+  display: grid;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--hairline) solid var(--line);
+}
+
+.module {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.module[data-start] {
+  box-shadow: inset 3px 0 0 var(--signal);
+  padding-left: var(--space-2);
+}
+
+.order {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.mTitle {
+  display: block;
+  font-weight: 600;
+}
+
+.mWhat {
+  display: block;
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.startTag {
+  margin-left: var(--space-2);
+  padding: 0 var(--space-1);
+  border-radius: var(--radius-s);
+  background: var(--signal);
+  color: var(--on-signal);
+  font-family: var(--font-cond);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+}
+
+.story {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1.5px solid var(--ink);
+}

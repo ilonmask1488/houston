@@ -1,0 +1,179 @@
+/* ——— Уровень сигнала ——— */
+.meter {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+
+.s {
+  height: 14px;
+  gap: 2px;
+}
+
+.l {
+  height: 40px;
+  gap: 4px;
+}
+
+.bar {
+  width: 5px;
+  border-radius: 1px;
+  background: var(--line-strong);
+  opacity: 0.55;
+}
+
+.l .bar {
+  width: 9px;
+}
+
+.s .bar {
+  width: 3px;
+}
+
+.bar[data-on] {
+  background: var(--signal);
+  opacity: 1;
+}
+
+/* ——— Табло ——— */
+.readout {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: var(--space-2) var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--lcd);
+}
+
+.readoutLabel {
+  color: var(--ink-2);
+  font-family: var(--font-cond);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+}
+
+.readoutValue {
+  font-family: var(--font-mono);
+  font-size: 1.375rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.unit {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.readoutHint {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+}
+
+/* ——— Громкость микрофона ——— */
+.level {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 3px;
+  width: 100%;
+  max-width: 320px;
+  height: 18px;
+}
+
+.level span {
+  border-radius: 1px;
+  background: var(--line);
+}
+
+.level span[data-on] {
+  background: var(--ink);
+}
+
+.level span[data-on][data-hot] {
+  background: var(--signal);
+}
+
+/* ——— Шкала скоростей ——— */
+.scale {
+  display: grid;
+  gap: var(--space-1);
+  width: 100%;
+  max-width: 320px;
+}
+
+.scaleTrack {
+  position: relative;
+  height: 18px;
+  border-bottom: var(--hairline) solid var(--ink);
+}
+
+.needle {
+  position: absolute;
+  bottom: -1px;
+  width: 3px;
+  height: 22px;
+  margin-left: -1.5px;
+  border-radius: 1px;
+  background: var(--signal);
+  transition: left var(--dur-med) var(--ease-out);
+}
+
+.scaleLabels {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  text-align: center;
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.scaleLabels span[data-on] {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ——— Деления прогресса ——— */
+.ticks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 3px;
+  width: 100%;
+  height: 6px;
+}
+
+.ticks span {
+  border-radius: 1px;
+  background: var(--line);
+}
+
+.ticks span[data-on] {
+  background: var(--ink);
+}
+
+/* ——— Шкала балла ——— */
+.scoreBar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.scoreFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--signal);
+}
+
+.scoreMarker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--ink);
+}

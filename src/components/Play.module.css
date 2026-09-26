@@ -1,0 +1,57 @@
+.play {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+  transition:
+    background var(--dur-fast),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.play:active {
+  transform: scale(0.94);
+}
+
+.play[data-playing] {
+  border-color: var(--signal);
+  background: var(--signal);
+  color: var(--on-signal);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--signal) 25%, transparent);
+}
+
+.s {
+  width: 44px;
+  height: 44px;
+}
+
+.m {
+  width: 52px;
+  height: 52px;
+}
+
+.l {
+  width: 76px;
+  height: 76px;
+}
+
+.chip {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 58px;
+  min-height: 64px;
+  padding: var(--space-2) var(--space-2);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  line-height: 1.15;
+  transition: border-color var(--dur-fast);
+}
+
+.chip[data-playing] {
+  border-color: var(--signal);
+  box-shadow: inset 0 0 0 1px var(--signal);
+}

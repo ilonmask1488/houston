@@ -1,0 +1,42 @@
+[
+  { "id": "air-weak", "track": "air", "order": 1, "level": 1, "title": "Слабые формы", "what": "to → /tə/, and → /ən/, can → /kən/: служебные слова почти исчезают" },
+  { "id": "air-link", "track": "air", "order": 2, "level": 1, "title": "Слияние слов", "what": "an_apple, turn_it_off: слова сливаются в одно" },
+  { "id": "air-elision", "track": "air", "order": 3, "level": 2, "title": "Выпадение звуков", "what": "next day → nex day, last time → las time" },
+  { "id": "air-assim", "track": "air", "order": 4, "level": 2, "title": "Уподобление", "what": "did you → didja, want to → wanna, going to → gonna" },
+  { "id": "air-contract", "track": "air", "order": 5, "level": 3, "title": "Сокращения", "what": "I'd, would've, shouldn't've — сжатые формы на слух" },
+  { "id": "air-accents", "track": "air", "order": 6, "level": 3, "title": "Акценты", "what": "одна фраза голосами US, UK, Индии и Австралии" },
+  { "id": "air-long", "track": "air", "order": 7, "level": 4, "title": "Планёрка и созвон", "what": "длинные отрывки: сначала понять суть, потом детали" },
+  { "id": "air-fast", "track": "air", "order": 8, "level": 5, "title": "Настоящая скорость", "what": "всё то же на 1.25 — быстрее, чем говорят на работе" },
+
+  { "id": "call-intro", "track": "call", "order": 1, "level": 1, "title": "Представиться", "what": "кто ты, где учишься, чем занимаешься — без запинок" },
+  { "id": "call-time", "track": "call", "order": 2, "level": 1, "title": "Выиграть время", "what": "That's a good question, let me think… — пауза без паники" },
+  { "id": "call-clarify", "track": "call", "order": 3, "level": 2, "title": "Переспросить и уточнить", "what": "Could you say that again? Do you mean…?" },
+  { "id": "call-project", "track": "call", "order": 4, "level": 2, "title": "Рассказать о проекте", "what": "задача, твоя роль, результат — за минуту" },
+  { "id": "call-explain", "track": "call", "order": 5, "level": 3, "title": "Объяснить просто", "what": "техническая вещь для нетехнического собеседника" },
+  { "id": "call-disagree", "track": "call", "order": 6, "level": 4, "title": "Не согласиться и не знать", "what": "вежливо возразить и честно сказать «не знаю, но выясню»" },
+  { "id": "call-questions", "track": "call", "order": 7, "level": 4, "title": "Вопросы работодателю", "what": "что спросить в конце собеседования" },
+  { "id": "call-432", "track": "call", "order": 8, "level": 5, "title": "4/3/2", "what": "одна история за 4, 3 и 2 минуты — упражнение на беглость" },
+
+  { "id": "doc-structure", "track": "doc", "order": 1, "level": 1, "title": "Как устроена статья", "what": "abstract, introduction, methods, results, discussion" },
+  { "id": "doc-abstract", "track": "doc", "order": 2, "level": 2, "title": "Суть по аннотации", "what": "понять статью за 30 секунд по аннотации и выводам" },
+  { "id": "doc-grammar", "track": "doc", "order": 3, "level": 2, "title": "Пассив и длинные цепочки", "what": "«carbon fiber reinforced polymer specimen failure mode» — разбор справа налево" },
+  { "id": "doc-docs", "track": "doc", "order": 4, "level": 3, "title": "Документация и datasheet", "what": "где в документации искать нужное и не читать лишнее" },
+  { "id": "doc-standard", "track": "doc", "order": 5, "level": 4, "title": "Стандарты и отчёты", "what": "shall / should / may, отчёт об испытаниях" },
+  { "id": "doc-speed", "track": "doc", "order": 6, "level": 5, "title": "Статья на время", "what": "найти ответ в длинном тексте, пока идёт таймер" },
+
+  { "id": "mail-structure", "track": "mail", "order": 1, "level": 1, "title": "Структура письма", "what": "тема, обращение, суть, просьба, подпись" },
+  { "id": "mail-register", "track": "mail", "order": 2, "level": 2, "title": "Регистр", "what": "формально, нейтрально, по-дружески — и где что уместно" },
+  { "id": "mail-apply", "track": "mail", "order": 3, "level": 2, "title": "Отклик и благодарность", "what": "отклик на вакансию и письмо после собеседования" },
+  { "id": "mail-request", "track": "mail", "order": 4, "level": 3, "title": "Запрос и напоминание", "what": "попросить информацию и вежливо напомнить (follow-up)" },
+  { "id": "mail-decline", "track": "mail", "order": 5, "level": 4, "title": "Уточнить, отказать, перенести", "what": "сложные письма без лишней резкости и лишних извинений" },
+  { "id": "mail-status", "track": "mail", "order": 6, "level": 5, "title": "Отчёт о статусе", "what": "что сделано, что мешает, что дальше" },
+
+  { "id": "clean-th", "track": "clean", "order": 1, "level": 1, "title": "th", "what": "think — sink, then — zen: язык между зубами" },
+  { "id": "clean-wv", "track": "clean", "order": 2, "level": 1, "title": "w и v", "what": "west — vest, wine — vine" },
+  { "id": "clean-h", "track": "clean", "order": 3, "level": 1, "title": "h — это не «х»", "what": "hat, house: просто выдох" },
+  { "id": "clean-vowels", "track": "clean", "order": 4, "level": 2, "title": "Долгие и краткие гласные", "what": "ship — sheep, full — fool, bed — bad" },
+  { "id": "clean-final", "track": "clean", "order": 5, "level": 2, "title": "Звонкие на конце", "what": "bed — bet, bag — back: не оглушай" },
+  { "id": "clean-ng", "track": "clean", "order": 6, "level": 3, "title": "Звук ŋ", "what": "sing — sin: без «г» на конце" },
+  { "id": "clean-stress", "track": "clean", "order": 7, "level": 3, "title": "Ударение", "what": "deVELop, techNOLogy и технические термины" },
+  { "id": "clean-intonation", "track": "clean", "order": 8, "level": 4, "title": "Вежливая интонация", "what": "ровная русская интонация по-английски звучит резко" }
+]

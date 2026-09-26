@@ -1,0 +1,238 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: 100dvh;
+  padding: calc(var(--safe-top) + var(--space-2)) calc(var(--gutter) + var(--safe-right)) calc(var(--safe-bottom) + var(--space-5))
+    calc(var(--gutter) + var(--safe-left));
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  margin-left: calc(var(--space-3) * -1);
+  border: 0;
+  background: none;
+  border-radius: var(--radius-m);
+}
+
+.topMain {
+  display: grid;
+  flex: 1;
+  gap: var(--space-1);
+}
+
+.stepName {
+  font-family: var(--font-cond);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.plan {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--lcd);
+  list-style: none;
+  font-size: var(--fs-small);
+}
+
+.plan li::before {
+  content: '▸ ';
+  color: var(--signal-ink);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.counter {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.word {
+  margin: var(--space-6) 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.options {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.prompt {
+  font-weight: 600;
+}
+
+.option {
+  min-height: 52px;
+  padding: var(--space-2) var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  text-align: left;
+  line-height: 1.35;
+  transition: border-color var(--dur-fast);
+}
+
+.option[data-quiet] {
+  color: var(--ink-2);
+  border-style: dashed;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option[data-state='right'] {
+  border: 2px solid var(--ok);
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.option[data-state='right']::after {
+  content: ' ✓';
+}
+
+.option[data-state='wrong'] {
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.option[data-state='picked'] {
+  border: 2px solid var(--ink);
+  font-weight: 600;
+}
+
+.big {
+  min-height: 72px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.listenHead {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+}
+
+.center {
+  display: grid;
+  justify-items: center;
+  min-height: 80px;
+  align-content: center;
+}
+
+.feedback {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-left: 3px solid var(--danger);
+  background: var(--surface);
+  font-size: var(--fs-small);
+}
+
+.feedback[data-ok] {
+  border-left-color: var(--ok);
+}
+
+.article {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.hint {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.question {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-left: 3px solid var(--signal);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+}
+
+.qText {
+  font-size: var(--fs-phrase);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.explain {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+  font-size: var(--fs-small);
+}
+
+.recording {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  margin-top: auto;
+}
+
+.recording button[data-rec] {
+  background: var(--danger);
+  color: #fff;
+}
+
+.countdown {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--signal-ink);
+  min-height: 1.3em;
+}
+
+.transcript {
+  padding: var(--space-2) var(--space-3);
+  border: var(--hairline) dashed var(--line-strong);
+  border-radius: var(--radius-s);
+  font-size: var(--fs-small);
+}

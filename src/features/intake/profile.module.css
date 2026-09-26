@@ -1,0 +1,86 @@
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.section {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.tracks {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.trackHead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.channel {
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+}
+
+.trackTitle {
+  flex: 1;
+  font-family: var(--font-cond);
+  font-weight: 600;
+}
+
+.trackStart {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.trackStart strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.details {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: var(--fs-small);
+}
+
+.weakTitle {
+  font-size: var(--fs-small);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tags span {
+  padding: 2px var(--space-2);
+  border: var(--hairline) solid var(--signal-ink);
+  border-radius: var(--radius-s);
+  color: var(--signal-ink);
+  font-size: var(--fs-small);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: stretch;
+  margin-top: var(--space-6);
+}

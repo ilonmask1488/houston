@@ -1,0 +1,178 @@
+{
+  "reviewed": false,
+  "bands": [
+    { "id": "ngsl1", "label": "самые частые 500 слов", "source": "ngsl", "from": 1, "to": 500, "size": 500 },
+    { "id": "ngsl2", "label": "слова 501–1000", "source": "ngsl", "from": 501, "to": 1000, "size": 500 },
+    { "id": "ngsl3", "label": "слова 1001–2000", "source": "ngsl", "from": 1001, "to": 2000, "size": 1000 },
+    { "id": "ngsl4", "label": "слова 2001–2809", "source": "ngsl", "from": 2001, "to": 2809, "size": 809 },
+    { "id": "nawl", "label": "академические слова (NAWL)", "source": "nawl", "size": 959 },
+    { "id": "bsl", "label": "деловые слова (BSL)", "source": "bsl", "size": 1000 }
+  ],
+  "words": [
+    { "w": "country", "ru": "страна", "band": "ngsl1" },
+    { "w": "choose", "ru": "выбирать", "band": "ngsl1" },
+    { "w": "difficult", "ru": "трудный", "band": "ngsl1" },
+    { "w": "believe", "ru": "верить", "band": "ngsl1" },
+    { "w": "describe", "ru": "описывать", "band": "ngsl1" },
+    { "w": "remain", "ru": "оставаться", "band": "ngsl1" },
+    { "w": "require", "ru": "требовать", "band": "ngsl1" },
+    { "w": "research", "ru": "исследование", "band": "ngsl1" },
+    { "w": "agree", "ru": "соглашаться", "band": "ngsl1" },
+    { "w": "expect", "ru": "ожидать", "band": "ngsl1" },
+    { "w": "young", "ru": "молодой", "band": "ngsl1" },
+    { "w": "return", "ru": "возвращаться", "band": "ngsl1" },
+
+    { "w": "contain", "ru": "содержать", "band": "ngsl2" },
+    { "w": "enjoy", "ru": "получать удовольствие", "band": "ngsl2" },
+    { "w": "knowledge", "ru": "знание", "band": "ngsl2" },
+    { "w": "doubt", "ru": "сомнение", "band": "ngsl2" },
+    { "w": "benefit", "ru": "польза", "band": "ngsl2" },
+    { "w": "imagine", "ru": "представлять себе", "band": "ngsl2" },
+    { "w": "resource", "ru": "ресурс", "band": "ngsl2" },
+    { "w": "affect", "ru": "влиять", "band": "ngsl2" },
+    { "w": "environment", "ru": "окружающая среда", "band": "ngsl2" },
+    { "w": "degree", "ru": "степень", "band": "ngsl2" },
+    { "w": "loss", "ru": "потеря", "band": "ngsl2" },
+    { "w": "determine", "ru": "определять", "band": "ngsl2" },
+
+    { "w": "compete", "ru": "соревноваться", "band": "ngsl3" },
+    { "w": "rely", "ru": "полагаться", "band": "ngsl3" },
+    { "w": "surface", "ru": "поверхность", "band": "ngsl3" },
+    { "w": "temperature", "ru": "температура", "band": "ngsl3" },
+    { "w": "delay", "ru": "задержка", "band": "ngsl3" },
+    { "w": "expand", "ru": "расширять", "band": "ngsl3" },
+    { "w": "permit", "ru": "разрешать", "band": "ngsl3" },
+    { "w": "calculate", "ru": "вычислять", "band": "ngsl3" },
+    { "w": "outcome", "ru": "результат, исход", "band": "ngsl3" },
+    { "w": "wheel", "ru": "колесо", "band": "ngsl3" },
+    { "w": "considerable", "ru": "значительный", "band": "ngsl3" },
+    { "w": "slightly", "ru": "слегка, немного", "band": "ngsl3" },
+
+    { "w": "withdraw", "ru": "отзывать, изымать", "band": "ngsl4" },
+    { "w": "inquiry", "ru": "запрос, расследование", "band": "ngsl4" },
+    { "w": "regulate", "ru": "регулировать", "band": "ngsl4" },
+    { "w": "visible", "ru": "видимый", "band": "ngsl4" },
+    { "w": "vessel", "ru": "сосуд; судно", "band": "ngsl4" },
+    { "w": "hypothesis", "ru": "гипотеза", "band": "ngsl4" },
+    { "w": "supplier", "ru": "поставщик", "band": "ngsl4" },
+    { "w": "pump", "ru": "насос", "band": "ngsl4" },
+    { "w": "rapid", "ru": "быстрый", "band": "ngsl4" },
+    { "w": "persuade", "ru": "убеждать", "band": "ngsl4" },
+    { "w": "depth", "ru": "глубина", "band": "ngsl4" },
+    { "w": "framework", "ru": "структура, каркас", "band": "ngsl4" },
+
+    { "w": "obtain", "ru": "получать", "band": "nawl" },
+    { "w": "particle", "ru": "частица", "band": "nawl" },
+    { "w": "simulation", "ru": "моделирование", "band": "nawl" },
+    { "w": "optimum", "ru": "оптимальный", "band": "nawl" },
+    { "w": "finite", "ru": "конечный (не бесконечный)", "band": "nawl" },
+    { "w": "turbulent", "ru": "турбулентный", "band": "nawl" },
+    { "w": "layout", "ru": "компоновка, расположение", "band": "nawl" },
+    { "w": "variant", "ru": "вариант", "band": "nawl" },
+    { "w": "stimulus", "ru": "стимул, раздражитель", "band": "nawl" },
+    { "w": "intensive", "ru": "интенсивный", "band": "nawl" },
+    { "w": "correction", "ru": "исправление", "band": "nawl" },
+    { "w": "deadline", "ru": "крайний срок", "band": "nawl" },
+
+    { "w": "refund", "ru": "возврат денег", "band": "bsl" },
+    { "w": "notify", "ru": "уведомлять", "band": "bsl" },
+    { "w": "shortfall", "ru": "дефицит, нехватка", "band": "bsl" },
+    { "w": "ongoing", "ru": "продолжающийся, текущий", "band": "bsl" },
+    { "w": "wholesale", "ru": "оптовый", "band": "bsl" },
+    { "w": "payroll", "ru": "платёжная ведомость", "band": "bsl" },
+    { "w": "subscribe", "ru": "подписываться", "band": "bsl" },
+    { "w": "quarterly", "ru": "ежеквартальный", "band": "bsl" },
+    { "w": "vendor", "ru": "продавец, поставщик", "band": "bsl" },
+    { "w": "compliance", "ru": "соответствие требованиям", "band": "bsl" },
+    { "w": "negotiable", "ru": "обсуждаемый (о цене, условиях)", "band": "bsl" },
+    { "w": "supervise", "ru": "руководить, контролировать", "band": "bsl" }
+  ],
+  "pseudo": ["plarest", "brondle", "mulvent", "sprote", "clendish", "vashment", "prestulate", "fondrous", "haltmire", "crindle", "ventorous", "obstrate"],
+
+  "listening": [
+    {
+      "id": "il-01", "voice": "us-f", "tag": "weak",
+      "text": "What do you want to do next?",
+      "options": ["What do you want to do next?", "What did you want to do next?", "What would you want to do next?"]
+    },
+    {
+      "id": "il-02", "voice": "gb-m", "tag": "contraction",
+      "text": "I'll send it over by the end of the day.",
+      "options": ["I'll send it over by the end of the day.", "I sent it over by the end of the day.", "I'd send it over by the end of the day."]
+    },
+    {
+      "id": "il-03", "voice": "us-m", "tag": "linking",
+      "text": "Can you turn it off for a second?",
+      "options": ["Can you turn it off for a second?", "Can you turn it on for a second?", "Could you turn it off for a second?"]
+    },
+    {
+      "id": "il-04", "voice": "gb-f", "tag": "contraction",
+      "text": "We should've checked the data first.",
+      "options": ["We should've checked the data first.", "We should check the data first.", "We shouldn't have checked the data first."]
+    },
+    {
+      "id": "il-05", "voice": "us-f", "tag": "assimilation",
+      "text": "I'm going to call them tomorrow.", "say": "I'm gonna call them tomorrow.",
+      "options": ["I'm going to call them tomorrow.", "I'm calling them tomorrow.", "I wanted to call them tomorrow."]
+    },
+    {
+      "id": "il-06", "voice": "gb-m", "tag": "assimilation",
+      "text": "Did you get a chance to look at it?",
+      "options": ["Did you get a chance to look at it?", "Do you get a chance to look at it?", "Did you have a chance to look at it?"]
+    },
+    {
+      "id": "il-07", "voice": "us-m", "tag": "elision",
+      "text": "The next day we ran the test again.",
+      "options": ["The next day we ran the test again.", "That next day we ran the test again.", "The next day we run the test again."]
+    },
+    {
+      "id": "il-08", "voice": "gb-f", "tag": "linking",
+      "text": "It's an old engine, but it still works.",
+      "options": ["It's an old engine, but it still works.", "It's a whole engine, but it still works.", "It's an old engine, but it doesn't work."]
+    }
+  ],
+
+  "pairs": [
+    { "id": "ip-01", "voice": "us-m", "tag": "th", "answer": "think", "options": ["think", "sink"] },
+    { "id": "ip-02", "voice": "us-f", "tag": "wv", "answer": "vest", "options": ["west", "vest"] },
+    { "id": "ip-03", "voice": "gb-f", "tag": "vowels", "answer": "ship", "options": ["ship", "sheep"] },
+    { "id": "ip-04", "voice": "us-f", "tag": "final", "answer": "bed", "options": ["bed", "bet"] },
+    { "id": "ip-05", "voice": "gb-m", "tag": "vowels", "answer": "fool", "options": ["full", "fool"] },
+    { "id": "ip-06", "voice": "us-m", "tag": "ng", "answer": "sing", "options": ["sing", "sin"] }
+  ],
+
+  "reading": [
+    {
+      "id": "ir-1", "level": 1, "title": "A static fire test",
+      "source": "Houston (собственный текст)", "license": "собственный текст приложения",
+      "text": "Before a new rocket flies, engineers test its engines on the ground. This is called a static fire test. The rocket is held down by strong clamps, so it cannot move. The engines run for a few seconds while hundreds of sensors measure pressure, temperature and vibration. After the test, the team compares the data with the computer model. If the numbers match, the rocket is ready for the next step. If they do not match, engineers look for the reason before they continue. A short test on the ground is much cheaper than a failure in flight.",
+      "questions": [
+        { "q": "Why can't the rocket move during the test?", "options": ["It is held down by clamps.", "The engines are too weak.", "It has no fuel on board."], "answer": 0 },
+        { "q": "What do the sensors measure?", "options": ["Speed and altitude.", "Pressure, temperature and vibration.", "Only the fuel level."], "answer": 1 },
+        { "q": "What happens if the data does not match the model?", "options": ["The rocket flies anyway.", "The model is thrown away.", "Engineers look for the reason first."], "answer": 2 }
+      ]
+    },
+    {
+      "id": "ir-2", "level": 2, "title": "Why composite specimens fail",
+      "source": "Houston (собственный текст)", "license": "собственный текст приложения",
+      "text": "Carbon fiber reinforced polymers are widely used in aerospace structures because they combine high stiffness with low weight. However, their failure behavior is more complex than that of metals. In a standard tensile test, a flat specimen is loaded until it breaks, while strain gauges record its elongation. Unlike aluminum, which yields gradually, a composite laminate often fails with little warning. Damage usually begins as small cracks in the matrix, which then grow along the interfaces between plies. This process, known as delamination, can significantly reduce compressive strength even when the surface appears undamaged. For this reason, engineers combine mechanical tests with non-destructive inspection methods, such as ultrasonic scanning, to detect hidden damage before it becomes critical.",
+      "questions": [
+        { "q": "What is the main idea of the paragraph?", "options": ["Composites are always stronger than aluminum.", "Composites fail differently from metals, so hidden damage has to be checked.", "Tensile tests are no longer needed in aerospace."], "answer": 1 },
+        { "q": "What is delamination?", "options": ["Cracks growing between the plies.", "Gradual yielding of the matrix.", "A method of ultrasonic inspection."], "answer": 0 },
+        { "q": "Why do engineers use ultrasonic scanning?", "options": ["To measure the elongation of the specimen.", "To make the laminate stiffer.", "To find damage that is not visible on the surface."], "answer": 2 }
+      ]
+    }
+  ],
+
+  "speaking": [
+    { "id": "is-1", "voice": "us-f", "q": "Tell me a little about yourself and your studies.", "ru": "Расскажи немного о себе и об учёбе." },
+    { "id": "is-2", "voice": "us-m", "q": "What project are you working on right now?", "ru": "Над каким проектом ты сейчас работаешь?" },
+    { "id": "is-3", "voice": "us-f", "q": "Why do you want to work in the space industry?", "ru": "Почему ты хочешь работать в космической отрасли?" }
+  ],
+
+  "soundCheck": [
+    { "voice": "us-f", "text": "Houston, can you hear me?" },
+    { "voice": "gb-m", "text": "Loud and clear. Go ahead." }
+  ],
+  "micPhrase": "Houston, we have a problem."
+}

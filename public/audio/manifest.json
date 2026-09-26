@@ -1,0 +1,255 @@
+{
+ "version": 1,
+ "sources": {
+  "edge-us-f": {
+   "name": "Синтез речи Microsoft Edge, голос en-US-AvaNeural (американский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-us-m": {
+   "name": "Синтез речи Microsoft Edge, голос en-US-AndrewNeural (американский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-gb-f": {
+   "name": "Синтез речи Microsoft Edge, голос en-GB-SoniaNeural (британский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-gb-m": {
+   "name": "Синтез речи Microsoft Edge, голос en-GB-RyanNeural (британский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-in-f": {
+   "name": "Синтез речи Microsoft Edge, голос en-IN-NeerjaNeural (индийский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-in-m": {
+   "name": "Синтез речи Microsoft Edge, голос en-IN-PrabhatNeural (индийский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-au-f": {
+   "name": "Синтез речи Microsoft Edge, голос en-AU-NatashaNeural (австралийский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  },
+  "edge-au-m": {
+   "name": "Синтез речи Microsoft Edge, голос en-AU-WilliamMultilingualNeural (австралийский)",
+   "url": "https://github.com/rany2/edge-tts",
+   "license": "синтез для личного использования",
+   "credit": "Microsoft"
+  }
+ },
+ "texts": {
+  "Can you turn it off for a second?": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-6afe531089-c27b3590.mp3",
+    "source": "edge-us-m",
+    "ms": 1380
+   }
+  ],
+  "Did you get a chance to look at it?": [
+   {
+    "voice": "gb-m",
+    "file": "intake/gb-m-655f199baa-5b2377c7.mp3",
+    "source": "edge-gb-m",
+    "ms": 1620
+   }
+  ],
+  "Houston, can you hear me?": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-1116753c56-e7160f11.mp3",
+    "source": "edge-us-f",
+    "ms": 1390
+   }
+  ],
+  "I'll send it over by the end of the day.": [
+   {
+    "voice": "gb-m",
+    "file": "intake/gb-m-f9f371db35-feac7566.mp3",
+    "source": "edge-gb-m",
+    "ms": 1810
+   }
+  ],
+  "I'm gonna call them tomorrow.": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-acb6f6c939-8bb32c26.mp3",
+    "source": "edge-us-f",
+    "ms": 1450
+   }
+  ],
+  "It's an old engine, but it still works.": [
+   {
+    "voice": "gb-f",
+    "file": "intake/gb-f-7eef76ff3e-ede2223c.mp3",
+    "source": "edge-gb-f",
+    "ms": 2560
+   }
+  ],
+  "Loud and clear. Go ahead.": [
+   {
+    "voice": "gb-m",
+    "file": "intake/gb-m-743e93c631-7327be38.mp3",
+    "source": "edge-gb-m",
+    "ms": 2560
+   }
+  ],
+  "Tell me a little about yourself and your studies.": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-90af3440bb-010a483c.mp3",
+    "source": "edge-us-f",
+    "ms": 2490
+   }
+  ],
+  "The next day we ran the test again.": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-50a2ec542a-c759a9c2.mp3",
+    "source": "edge-us-m",
+    "ms": 1910
+   }
+  ],
+  "We should've checked the data first.": [
+   {
+    "voice": "gb-f",
+    "file": "intake/gb-f-8e76a6bb21-ab2e5ebf.mp3",
+    "source": "edge-gb-f",
+    "ms": 2070
+   }
+  ],
+  "What do you want to do next?": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-8ac6c6201a-dcb7aaff.mp3",
+    "source": "edge-us-f",
+    "ms": 1080
+   }
+  ],
+  "What project are you working on right now?": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-0d92c33b71-b11e2eb2.mp3",
+    "source": "edge-us-m",
+    "ms": 1810
+   }
+  ],
+  "Why do you want to work in the space industry?": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-86a26cab61-66f8b79d.mp3",
+    "source": "edge-us-f",
+    "ms": 1870
+   }
+  ],
+  "bed": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-fefe2393a7-9f80271f.mp3",
+    "source": "edge-us-f",
+    "ms": 470
+   }
+  ],
+  "bet": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-c033816b54-8df35164.mp3",
+    "source": "edge-us-f",
+    "ms": 490
+   }
+  ],
+  "fool": [
+   {
+    "voice": "gb-m",
+    "file": "intake/gb-m-33655e63ca-b755020c.mp3",
+    "source": "edge-gb-m",
+    "ms": 520
+   }
+  ],
+  "full": [
+   {
+    "voice": "gb-m",
+    "file": "intake/gb-m-52e6d8ab88-8407e1cf.mp3",
+    "source": "edge-gb-m",
+    "ms": 500
+   }
+  ],
+  "sheep": [
+   {
+    "voice": "gb-f",
+    "file": "intake/gb-f-6525f2e663-2918d8ca.mp3",
+    "source": "edge-gb-f",
+    "ms": 610
+   }
+  ],
+  "ship": [
+   {
+    "voice": "gb-f",
+    "file": "intake/gb-f-ed43a8a09e-166cd5db.mp3",
+    "source": "edge-gb-f",
+    "ms": 560
+   }
+  ],
+  "sin": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-7d14c04a71-313e5df5.mp3",
+    "source": "edge-us-m",
+    "ms": 460
+   }
+  ],
+  "sing": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-f9bef9c232-44fb2ad4.mp3",
+    "source": "edge-us-m",
+    "ms": 450
+   }
+  ],
+  "sink": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-6f2b835632-8e1568e9.mp3",
+    "source": "edge-us-m",
+    "ms": 490
+   }
+  ],
+  "think": [
+   {
+    "voice": "us-m",
+    "file": "intake/us-m-b7c61c80ab-70fc0229.mp3",
+    "source": "edge-us-m",
+    "ms": 390
+   }
+  ],
+  "vest": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-7703ba73d7-451de929.mp3",
+    "source": "edge-us-f",
+    "ms": 620
+   }
+  ],
+  "west": [
+   {
+    "voice": "us-f",
+    "file": "intake/us-f-d63eba28af-41ae720c.mp3",
+    "source": "edge-us-f",
+    "ms": 640
+   }
+  ]
+ }
+}

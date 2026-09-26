@@ -1,0 +1,353 @@
+/* ——— Экран ——— */
+.screen {
+  min-height: 100dvh;
+  padding: calc(var(--safe-top) + var(--space-5)) calc(var(--gutter) + var(--safe-right))
+    calc(var(--nav-h) + var(--safe-bottom) + var(--space-6)) calc(var(--gutter) + var(--safe-left));
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+}
+
+.subtitle {
+  margin-top: var(--space-2);
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+  max-width: 34em;
+}
+
+.backButton {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  margin: calc(var(--space-3) * -1) 0 0 calc(var(--space-3) * -1);
+  border: 0;
+  background: none;
+  border-radius: var(--radius-m);
+}
+
+/* ——— Кнопки ——— */
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: 56px;
+  padding: 0 var(--space-5);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--ink);
+  color: var(--on-ink);
+  font-family: var(--font-cond);
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.primary:active {
+  transform: scale(0.985);
+}
+
+.primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Главное действие экрана в эфире — янтарное */
+.signalButton {
+  composes: primary;
+  background: var(--signal);
+  color: var(--on-signal);
+  box-shadow: inset 0 -3px 0 rgb(0 0 0 / 0.18);
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--tap);
+  padding: 0 var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  font-weight: 500;
+  text-align: center;
+}
+
+.secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap);
+  padding: 0 var(--space-4);
+  border: var(--hairline) solid currentColor;
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.link {
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  border: 0;
+  background: none;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.row > * {
+  flex: 1 1 auto;
+}
+
+/* ——— Баннер ——— */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-left: 3px solid var(--signal);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  font-size: var(--fs-small);
+  line-height: 1.4;
+}
+
+.banner p {
+  flex: 1;
+}
+
+.iconButton {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  border-radius: var(--radius-m);
+}
+
+/* ——— Сегментный переключатель ——— */
+.segmented {
+  display: flex;
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.segment {
+  flex: 1;
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  border: 0;
+  border-left: var(--hairline) solid var(--line);
+  background: none;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+}
+
+.segment:first-child {
+  border-left: 0;
+}
+
+.segment[aria-checked='true'] {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+/* ——— Выключатель ——— */
+.switchRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 56px;
+  padding: var(--space-2) 0;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+.switchRow:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.switchText {
+  flex: 1;
+}
+
+.switchHint {
+  display: block;
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+  margin-top: 2px;
+}
+
+.switchTrack {
+  position: relative;
+  flex: none;
+  width: 46px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1.5px solid var(--ink);
+  background: var(--surface);
+  transition: background var(--dur-fast);
+}
+
+.switchTrack::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--ink);
+  transition: transform var(--dur-med) var(--ease-out);
+}
+
+[aria-checked='true'] > .switchTrack {
+  border-color: var(--signal);
+  background: var(--signal);
+}
+
+[aria-checked='true'] > .switchTrack::after {
+  background: var(--on-signal);
+  transform: translateX(18px);
+}
+
+/* ——— Заглушка и реплика маскота ——— */
+.placeholder {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  padding-top: var(--space-6);
+  text-align: center;
+}
+
+.placeholder p {
+  color: var(--ink-2);
+  max-width: 28em;
+}
+
+.says {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.says svg {
+  flex: none;
+}
+
+.bubble {
+  position: relative;
+  flex: 1;
+  padding: var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m) var(--radius-m) var(--radius-m) 0;
+  background: var(--surface);
+  font-size: var(--fs-small);
+  line-height: 1.45;
+}
+
+/* ——— Диалог подтверждения ——— */
+.dialog {
+  width: min(420px, calc(100vw - 2 * var(--gutter)));
+  padding: var(--space-5);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.dialog::backdrop {
+  background: var(--scrim);
+}
+
+.dialog p {
+  margin: var(--space-3) 0 var(--space-5);
+  font-size: var(--fs-small);
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* ——— Список-меню ——— */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--hairline) solid var(--line);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--line);
+  text-decoration: none;
+}
+
+.item > span {
+  display: grid;
+}
+
+.item svg {
+  flex: none;
+  color: var(--ink-2);
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.itemWhat {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.note {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.error {
+  color: var(--danger);
+  font-size: var(--fs-small);
+}
