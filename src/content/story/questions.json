@@ -1,0 +1,207 @@
+[
+ {
+  "id": "about",
+  "q": "Tell me about yourself.",
+  "ru": "Расскажи о себе.",
+  "tip": "Настоящее → прошлое → будущее: кто ты сейчас, что уже сделал, почему ты здесь. 60–90 секунд. Не пересказывай резюме по пунктам и не начинай с даты рождения.",
+  "star": false,
+  "example": "I'm a fourth-year student in rocket and space engineering. At the moment I'm working on a project about composite testing: we run tensile tests on carbon fiber specimens and compare the results with finite element models. Before that, I spent a summer at a test lab, where I got hands-on experience with strain gauges and data acquisition. What I enjoy most is the link between simulation and real hardware. I'm looking for a position where I can work on flight structures and learn from experienced engineers.",
+  "chunks": [
+   "c-intro-02",
+   "c-intro-03",
+   "c-intro-06",
+   "c-intro-10"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "I'm a fourth-year student in rocket and space engineering. At the moment I'm working on a project about composite testing: we run tensile tests on carbon fiber specimens and compare the results with finite element models. Before that, I spent a summer at a test lab, where I got hands-on experience with strain gauges and data acquisition. What I enjoy most is the link between simulation and real hardware. I'm looking for a position where I can work on flight structures and learn from experienced engineers.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "project",
+  "q": "Tell me about a project you worked on.",
+  "ru": "Расскажи о проекте, над которым работал.",
+  "tip": "Цель → твоя роль → что сделал → результат в цифрах. Говори «I», а не только «we»: интервьюеру важен твой вклад.",
+  "star": false,
+  "example": "The goal of the project was to reduce the weight of a satellite bracket. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be machined. As a result, the mass dropped by about eighteen percent, and the bracket passed the vibration test on the first try.",
+  "chunks": [
+   "c-project-01",
+   "c-project-02",
+   "c-project-07",
+   "c-project-06"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "The goal of the project was to reduce the weight of a satellite bracket. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be machined. As a result, the mass dropped by about eighteen percent, and the bracket passed the vibration test on the first try.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "why",
+  "q": "Why do you want to work for us?",
+  "ru": "Почему ты хочешь работать у нас?",
+  "tip": "Две-три конкретные причины про компанию (продукт, команда, технологии) и мостик к твоему опыту. Похвалы вообще («вы лидер рынка») не работают.",
+  "star": false,
+  "example": "Two reasons. First, your team builds and tests hardware, not only models, and that's exactly the kind of work I enjoy. Second, I read about your work on composite structures for small launchers, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about flight qualification.",
+  "chunks": [
+   "c-intro-05",
+   "c-intro-07"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "Two reasons. First, your team builds and tests hardware, not only models, and that's exactly the kind of work I enjoy. Second, I read about your work on composite structures for small launchers, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about flight qualification.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "strengths",
+  "q": "What are your strengths?",
+  "ru": "Какие у тебя сильные стороны?",
+  "tip": "Одна-две сильные стороны с примером из жизни. Без примера это просто прилагательные.",
+  "star": false,
+  "example": "I'd say I'm good at finding the root cause of a problem. For example, when our test results didn't match the simulation, I didn't just adjust the model; I checked the specimens and found that the grips were causing early failures. I'm also quite careful with documentation, which helps the whole team.",
+  "chunks": [
+   "c-time-01",
+   "c-explain-05"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "I'd say I'm good at finding the root cause of a problem. For example, when our test results didn't match the simulation, I didn't just adjust the model; I checked the specimens and found that the grips were causing early failures. I'm also quite careful with documentation, which helps the whole team.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "weakness",
+  "q": "What is your greatest weakness?",
+  "ru": "Какая твоя главная слабость?",
+  "tip": "Реальная, но не критичная для работы слабость + что ты с ней делаешь. «Я перфекционист» звучит как уклонение.",
+  "star": false,
+  "example": "My spoken English is still slower than my technical reading. I understand documentation well, but in fast meetings I sometimes need a moment. So I practice every day with listening and speaking exercises, and I'm not afraid to ask people to repeat something. It's getting better quickly.",
+  "chunks": [
+   "c-clarify-02",
+   "c-time-02"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "My spoken English is still slower than my technical reading. I understand documentation well, but in fast meetings I sometimes need a moment. So I practice every day with listening and speaking exercises, and I'm not afraid to ask people to repeat something. It's getting better quickly.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "problem",
+  "q": "Tell me about a difficult problem you solved.",
+  "ru": "Расскажи о сложной задаче, которую ты решил.",
+  "tip": "Метод STAR: Situation — ситуация, Task — задача, Action — что сделал ты, Result — результат. Больше всего времени — на Action.",
+  "star": true,
+  "example": "In our composite project, the specimens kept breaking at the grips instead of in the middle, so the results were useless. My task was to find out why before the next test campaign. I compared the failure surfaces, checked the clamping pressure, and suggested adding tabs to the ends of the specimens. I also changed the test procedure so the grips were tightened in steps. After that, almost all specimens failed in the gauge section, and our strength values became consistent within five percent.",
+  "chunks": [
+   "c-project-04",
+   "c-project-05",
+   "c-project-06"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "In our composite project, the specimens kept breaking at the grips instead of in the middle, so the results were useless. My task was to find out why before the next test campaign. I compared the failure surfaces, checked the clamping pressure, and suggested adding tabs to the ends of the specimens. I also changed the test procedure so the grips were tightened in steps. After that, almost all specimens failed in the gauge section, and our strength values became consistent within five percent.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "teamwork",
+  "q": "Tell me about a time you worked in a team.",
+  "ru": "Расскажи о работе в команде.",
+  "tip": "STAR: команда, общая цель, твоя роль, конфликт или сложность, чем закончилось.",
+  "star": true,
+  "example": "Last year four of us designed a small rocket engine test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.",
+  "chunks": [
+   "c-project-07",
+   "c-project-09"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "Last year four of us designed a small rocket engine test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "failure",
+  "q": "Tell me about a time you failed.",
+  "ru": "Расскажи о своей неудаче.",
+  "tip": "STAR + чему научился. Честная неудача с выводом ценнее «я никогда не ошибаюсь».",
+  "star": true,
+  "example": "During my first lab project, I ran a whole series of tests before checking the calibration of the load cell. When I analyzed the data, the numbers looked wrong, and I had to repeat everything. It cost us a week. Since then, I always do a short check with a known weight before any test, and I added this step to our lab procedure.",
+  "chunks": [
+   "c-project-10",
+   "c-disagree-05"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "During my first lab project, I ran a whole series of tests before checking the calibration of the load cell. When I analyzed the data, the numbers looked wrong, and I had to repeat everything. It cost us a week. Since then, I always do a short check with a known weight before any test, and I added this step to our lab procedure.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "future",
+  "q": "Where do you see yourself in five years?",
+  "ru": "Где ты видишь себя через пять лет?",
+  "tip": "Рост внутри профессии, связанный с этой позицией. Не «на вашем месте» и не «в другой стране».",
+  "star": false,
+  "example": "In five years, I'd like to be a structural engineer who can take a part from design to qualification test on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see something I worked on actually fly.",
+  "chunks": [
+   "c-intro-10"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "In five years, I'd like to be a structural engineer who can take a part from design to qualification test on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see something I worked on actually fly.",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ask",
+  "q": "Do you have any questions for us?",
+  "ru": "У тебя есть вопросы к нам?",
+  "tip": "Всегда задавай 1–2 вопроса о работе и команде. «Нет вопросов» звучит как отсутствие интереса. О зарплате — не первым вопросом.",
+  "star": false,
+  "example": "Yes, a couple. What does a typical day look like for someone in this role? And what would you expect from me in the first three months?",
+  "chunks": [
+   "c-questions-01",
+   "c-questions-02",
+   "c-questions-04"
+  ],
+  "voice": "us-m",
+  "speak": [
+   {
+    "text": "Yes, a couple. What does a typical day look like for someone in this role? And what would you expect from me in the first three months?",
+    "voice": "gb-f"
+   }
+  ],
+  "reviewed": false
+ }
+]

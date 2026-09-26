@@ -24,7 +24,7 @@ async function next(page: Page) {
 }
 
 /** Ответить голосом: с поддельным микрофоном (Android) — запись, без него — «Сказал». */
-async function speak(page: Page) {
+export async function speak(page: Page) {
   const allow = page.getByRole('button', { name: 'Понятно, записать', exact: true })
   const done = page.getByRole('button', { name: 'Готово', exact: true })
   const said = page.getByRole('button', { name: 'Сказал', exact: true })
@@ -87,7 +87,7 @@ export async function runSegment(page: Page, maxSteps = 80): Promise<void> {
       continue
     }
     // Говорение
-    for (const name of ['Записать себя', 'Ответить вслух', 'Послушать']) {
+    for (const name of ['Записать себя', 'Ответить вслух', 'Послушать', 'Скажи это вслух']) {
       if (await visible(page, name)) {
         await click(page, name)
         await speak(page)
@@ -121,7 +121,7 @@ export async function playStatic(page: Page): Promise<void> {
   for (let i = 0; i < 60; i++) {
     if (await page.getByRole('heading', { name: 'Раунд окончен' }).isVisible().catch(() => false)) return
     const opt = page.getByRole('group', { name: 'Что прозвучало?' }).getByRole('button').first()
-    if (await opt.isVisible().catch(() => false)) await opt.click().catch(() => {})
+    if (await opt.isVisible().catch(() => false)) await opt.click({ timeout: 1000 }).catch(() => {})
     await page.waitForTimeout(400)
   }
   await expect(page.getByRole('heading', { name: 'Раунд окончен' })).toBeVisible({ timeout: 15_000 })

@@ -12,7 +12,23 @@ import translate from './call/translate.json'
 import characters from './characters.json'
 import intakeJson from './intake.json'
 import modulesJson from './modules.json'
-import type { Character, Chunk, Connected, Content, IntakeContent, Module, Passage, Phrase, QuickQuestion, Substitution, TranslateItem } from './types'
+import episodes from './story/episodes.json'
+import storyQuestions from './story/questions.json'
+import type {
+  Character,
+  Chunk,
+  Connected,
+  Content,
+  Episode,
+  IntakeContent,
+  Module,
+  Passage,
+  Phrase,
+  QuickQuestion,
+  StoryQuestion,
+  Substitution,
+  TranslateItem,
+} from './types'
 
 export const raw: Content = {
   modules: modulesJson as Module[],
@@ -25,4 +41,6 @@ export const raw: Content = {
   questions: questions as QuickQuestion[],
   translate: translate as TranslateItem[],
   substitution: substitution as Substitution[],
+  storyQuestions: storyQuestions as StoryQuestion[],
+  episodes: episodes as Episode[],
 }

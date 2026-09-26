@@ -104,10 +104,27 @@ export function airSteps(a: AirInput, seconds: number): { label: string; steps: 
   ]
 }
 
-export type CallInput = { module: Module; done: Set<string>; seed: number; quickGame: boolean }
+export type CallInput = {
+  module: Module
+  done: Set<string>
+  seed: number
+  quickGame: boolean
+  /** твои ответы «Моего рассказа», готовые к тренировке */
+  stories?: { id: string; trained: number }[]
+}
 
 /** Шаги Позывного: новые чанки, перевод на лету, быстрый ответ (или игра «Быстрый ответ»). */
 export function callSteps(c: CallInput, seconds: number): { label: string; steps?: Step[]; game?: 'quick' }[] {
+  const parts = callParts(c, seconds)
+  // «Мой рассказ» (ТЗ §8): свой ответ вслух — по опорным словам, пока тренировок мало, потом без подсказок.
+  if (c.stories?.length) {
+    const st = c.stories[c.seed % c.stories.length]!
+    parts.push({ label: 'story', steps: [{ kind: st.trained < 2 ? 'storyKeys' : 'storyCold', story: st.id }] })
+  }
+  return parts
+}
+
+function callParts(c: CallInput, seconds: number): { label: string; steps?: Step[]; game?: 'quick' }[] {
   const items = itemsByModule.get(c.module.id)
   const out: { label: string; steps?: Step[]; game?: 'quick' }[] = []
   const chunks = (items?.chunks ?? []).filter((x) => !c.done.has(x.id))
@@ -141,6 +158,7 @@ export type PlanInput = {
   intake?: Pick<IntakeRecord, 'tracks' | 'result'>
   /** скорость, на которой сейчас ловишь фразы (0.75 или 1) */
   speed: number
+  stories?: { id: string; trained: number }[]
 }
 
 function seg(id: string, block: SessionBlock, label: string, x: Partial<SessionSegment>): SessionSegment {
@@ -175,7 +193,7 @@ export function planSegments(input: PlanInput): SessionSegment[] {
 
   const callMod = currentModule('call', progress, intake)
   const call: SessionSegment[] = callMod
-    ? callSteps({ module: callMod, done: doneSet(progress, callMod.id), seed, quickGame: seed % 3 === 0 }, min.call * 60).map((x, i) =>
+    ? callSteps({ module: callMod, done: doneSet(progress, callMod.id), seed, quickGame: seed % 3 === 0, stories: input.stories }, min.call * 60).map((x, i) =>
         seg(`call-${i + 1}`, 'call', x.label, x.game ? { kind: 'game', game: x.game, minutes: 3, track: 'call', module: callMod.id } : { steps: x.steps, track: 'call', module: callMod.id }),
       )
     : []

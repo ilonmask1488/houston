@@ -98,6 +98,44 @@ export type QuickQuestion = { id: string; module: string; q: string; ru: string;
 export type TranslateItem = { id: string; module: string; ru: string; en: string; reviewed: boolean }
 export type Substitution = { id: string; module: string; base: string; ru: string; swaps: { cue: string; en: string }[]; reviewed: boolean }
 
+/* ——— «Мой рассказ» и сюжет ——— */
+
+export type StoryQuestion = {
+  id: string
+  q: string
+  ru: string
+  tip: string
+  /** ответ по методу STAR */
+  star: boolean
+  /** образец ответа студента-инженера */
+  example: string
+  /** подходящие чанки */
+  chunks: string[]
+  voice: VoiceId
+  reviewed: boolean
+}
+
+export type CharacterLine = { speaker: string; voice: VoiceId; text: string; ru: string }
+export type MyLine = { speaker: 'me'; options: { text: string; ru: string; why: string | null }[] }
+export type EpisodeLine = CharacterLine | MyLine
+
+export function isMyLine(l: EpisodeLine): l is MyLine {
+  return 'options' in l
+}
+
+export type Episode = {
+  id: string
+  n: number
+  title: string
+  place: string
+  /** после какого модуля лучше смотреть */
+  after: string
+  intro: string
+  lines: EpisodeLine[]
+  culture: { title: string; text: string }
+  reviewed: boolean
+}
+
 export type Content = {
   modules: Module[]
   intake: IntakeContent
@@ -109,4 +147,6 @@ export type Content = {
   questions: QuickQuestion[]
   translate: TranslateItem[]
   substitution: Substitution[]
+  storyQuestions: StoryQuestion[]
+  episodes: Episode[]
 }

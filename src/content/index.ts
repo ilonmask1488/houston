@@ -8,6 +8,8 @@ import type {
   Chunk,
   Connected,
   Content,
+  Episode,
+  StoryQuestion,
   IntakeContent,
   Module,
   Passage,
@@ -29,7 +31,12 @@ export const content: Content = {
   questions: [],
   translate: [],
   substitution: [],
+  storyQuestions: [],
+  episodes: [],
 }
+
+export const storyQuestionById = new Map<string, StoryQuestion>()
+export const episodeById = new Map<string, Episode>()
 
 export const moduleById = new Map<string, Module>()
 export const modulesByTrack = new Map<TrackId, Module[]>()
@@ -77,6 +84,9 @@ export function fill(raw: Content): void {
   index(questionById, raw.questions)
   index(translateById, raw.translate)
   index(substById, raw.substitution)
+  index(storyQuestionById, raw.storyQuestions)
+  index(episodeById, raw.episodes)
+  content.episodes = [...raw.episodes].sort((a, b) => a.n - b.n)
   const put = <K extends keyof ModuleItems>(key: K, list: ModuleItems[K]) => {
     for (const x of list) itemsByModule.get(x.module)?.[key].push(x as never)
   }

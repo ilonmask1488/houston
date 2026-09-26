@@ -158,6 +158,32 @@ export type SessionRow = {
   spokenMs: number
 }
 
+/* ——— Схема v3 (фаза 2): «Мой рассказ», пробные собеседования, эпизоды ——— */
+
+/** Твой ответ на вопрос собеседования. id — id вопроса из «Моего рассказа». */
+export type StoryRow = {
+  id: string
+  text: string
+  updatedAt: number
+  /** сколько раз тренировал ответ */
+  trained: number
+  lastTrainedAt?: number
+}
+
+export type InterviewItem = {
+  q: string
+  qid: string
+  transcript: string
+  latencyMs?: number
+  speechMs?: number
+  longPauses?: number
+  recorded: boolean
+}
+
+export type InterviewRow = { id?: number; at: number; seconds: number; items: InterviewItem[] }
+
+export type EpisodeRow = { id: string; completedAt: number; best: number; times: number }
+
 /** Прогресс модуля трека. */
 export type ModuleProgressRow = {
   moduleId: string

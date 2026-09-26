@@ -44,6 +44,15 @@ export const SCHEMA_VERSIONS: SchemaVersion[] = [
       sessions: 'date',
     },
   },
+  {
+    // Фаза 2: твои ответы для собеседований, пробные собеседования, эпизоды сюжета. Новые пустые таблицы.
+    version: 3,
+    stores: {
+      stories: 'id',
+      interviews: '++id, at',
+      episodes: 'id',
+    },
+  },
 ]
 
 export const CURRENT_SCHEMA_VERSION = SCHEMA_VERSIONS[SCHEMA_VERSIONS.length - 1]!.version

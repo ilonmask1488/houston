@@ -19,6 +19,10 @@ export type AchievementId =
   | 'static-100'
   | 'module-first'
   | 'talk-60min'
+  | 'story-3'
+  | 'interview-1'
+  | 'fluency-432'
+  | 'episodes-3'
 
 type Check = () => Promise<boolean>
 
@@ -45,6 +49,10 @@ const CHECKS: Record<AchievementId, Check> = {
   'static-100': async () => ((await db.gameRecords.get('static'))?.best ?? 0) >= 100,
   'module-first': async () => (await db.moduleProgress.filter((m) => !!m.completedAt).count()) > 0,
   'talk-60min': async () => (await db.days.toArray()).reduce((s, d) => s + d.spokenSeconds, 0) >= 3600,
+  'story-3': async () => (await db.stories.filter((s) => s.text.trim().split(/\s+/).length >= 15).count()) >= 3,
+  'interview-1': async () => (await db.interviews.count()) > 0,
+  'fluency-432': async () => (await db.answers.where('kind').equals('432').count()) >= 3,
+  'episodes-3': async () => (await db.episodes.where('id').anyOf(['ep-1', 'ep-2', 'ep-3']).count()) >= 3,
 }
 
 export const ACHIEVEMENT_IDS = Object.keys(CHECKS) as AchievementId[]

@@ -75,6 +75,14 @@
     "ms": 780
    }
   ],
+  "And what was the most difficult part?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-eabc65bd9a-39a6ac36.mp3",
+    "source": "edge-us-f",
+    "ms": 2190
+   }
+  ],
   "As a result": [
    {
     "voice": "gb-f",
@@ -179,6 +187,14 @@
     "ms": 3400
    }
   ],
+  "Brilliant. So, where are you from originally?": [
+   {
+    "voice": "au-m",
+    "file": "story-episodes/au-m-5b72dff7bc-beeab337.mp3",
+    "source": "edge-au-m",
+    "ms": 3140
+   }
+  ],
   "Can I get you anything?": [
    {
     "voice": "gb-m",
@@ -243,6 +259,14 @@
     "file": "air-phrases/us-f-ef63937195-e83fe0bd.mp3",
     "source": "edge-us-f",
     "ms": 1420
+   }
+  ],
+  "Composite testing, interesting. What exactly are you testing?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-d2422bfcce-dc618c3a.mp3",
+    "source": "edge-us-f",
+    "ms": 3900
    }
   ],
   "Could you give me an example?": [
@@ -537,6 +561,14 @@
     "ms": 1620
    }
   ],
+  "Did you get all that?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-653520e1e3-f42c6064.mp3",
+    "source": "edge-us-f",
+    "ms": 850
+   }
+  ],
   "Did you see the email?": [
    {
     "voice": "us-m",
@@ -551,6 +583,12 @@
     "file": "call-questions/in-m-13fb390e5c-a8084047.mp3",
     "source": "edge-in-m",
     "ms": 2240
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-13fb390e5c-73296caf.mp3",
+    "source": "edge-us-m",
+    "ms": 1420
    }
   ],
   "Do you know how our production line is organized?": [
@@ -759,6 +797,14 @@
     "ms": 1370
    }
   ],
+  "During my first lab project, I ran a whole series of tests before checking the calibration of the load cell. When I analyzed the data, the numbers looked wrong, and I had to repeat everything. It cost us a week. Since then, I always do a short check with a known weight before any test, and I added this step to our lab procedure.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-794b399033-6467f9e2.mp3",
+    "source": "edge-gb-f",
+    "ms": 19640
+   }
+  ],
   "Fair point.": [
    {
     "voice": "gb-f",
@@ -791,6 +837,22 @@
     "file": "air-passages/au-m-5b9e077089-b2d832ff.mp3",
     "source": "edge-au-m",
     "ms": 3500
+   }
+  ],
+  "From my side, the new strain gauges have arrived. I will install them tomorrow, and we can start the static test on Wednesday.": [
+   {
+    "voice": "in-m",
+    "file": "story-episodes/in-m-c04de8ae76-2e6f4a0e.mp3",
+    "source": "edge-in-m",
+    "ms": 9350
+   }
+  ],
+  "G'day! I'm Tom. Don't worry, the coffee machine is the most complicated system in this building. Fancy a coffee?": [
+   {
+    "voice": "au-m",
+    "file": "story-episodes/au-m-81382a80fa-00b4d864.mp3",
+    "source": "edge-au-m",
+    "ms": 7570
    }
   ],
   "Gimme a minute.": [
@@ -851,6 +913,22 @@
     "ms": 1990
    }
   ],
+  "Great. Anything else? No? Okay, thanks, everyone. Talk tomorrow.": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-033e65fba6-7eaaedf8.mp3",
+    "source": "edge-us-f",
+    "ms": 5750
+   }
+  ],
+  "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structures team.": [
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-71c7e3bf76-b6c65fab.mp3",
+    "source": "edge-us-m",
+    "ms": 5440
+   }
+  ],
   "He's finished the model.": [
    {
     "voice": "gb-f",
@@ -873,6 +951,22 @@
     "file": "air-passages/gb-f-61d6ff27b8-ac89ed0e.mp3",
     "source": "edge-gb-f",
     "ms": 5570
+   }
+  ],
+  "Hi, great to have you here. How are you settling in?": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes/in-f-629a463797-a220ac1c.mp3",
+    "source": "edge-in-f",
+    "ms": 4070
+   }
+  ],
+  "Hi, thanks for coming in. Did you find us okay?": [
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-42c1c357fd-aba186ad.mp3",
+    "source": "edge-us-m",
+    "ms": 2890
    }
   ],
   "Hold on a second, I'll get it.": [
@@ -1041,6 +1135,32 @@
     "file": "air-passages/gb-f-8623a8011a-ca2b7543.mp3",
     "source": "edge-gb-f",
     "ms": 4950
+   }
+  ],
+  "I can collect the certificates from the supplier and send them to you by Tuesday.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-38697d18eb-5f12e4ab.mp3",
+    "source": "edge-gb-f",
+    "ms": 4390
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-38697d18eb-ba201ecc.mp3",
+    "source": "edge-gb-m",
+    "ms": 3800
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-38697d18eb-b5e8b849.mp3",
+    "source": "edge-us-f",
+    "ms": 3900
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-38697d18eb-30d951e4.mp3",
+    "source": "edge-us-m",
+    "ms": 3990
    }
   ],
   "I can do it, but I can't do it today.": [
@@ -1661,6 +1781,14 @@
     "ms": 1710
    }
   ],
+  "I'd say I'm good at finding the root cause of a problem. For example, when our test results didn't match the simulation, I didn't just adjust the model; I checked the specimens and found that the grips were causing early failures. I'm also quite careful with documentation, which helps the whole team.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-38d359a3a9-5655b64a.mp3",
+    "source": "edge-gb-f",
+    "ms": 17210
+   }
+  ],
   "I'd start the thermal analysis earlier. We found the problem quite late, and it cost us a few weeks.": [
    {
     "voice": "au-f",
@@ -1761,6 +1889,40 @@
     "file": "call-chunks/us-m-9be0c04af4-9f1923a0.mp3",
     "source": "edge-us-m",
     "ms": 2710
+   }
+  ],
+  "I'm a fourth-year student in rocket and space engineering. At the moment I'm working on a project about composite testing: we run tensile tests on carbon fiber specimens and compare the results with finite element models. Before that, I spent a summer at a test lab, where I got hands-on experience with strain gauges and data acquisition. What I enjoy most is the link between simulation and real hardware. I'm looking for a position where I can work on flight structures and learn from experienced engineers.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-e3dca6bb3a-b33d1492.mp3",
+    "source": "edge-gb-f",
+    "ms": 30260
+   }
+  ],
+  "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-b72b4933eb-25cea700.mp3",
+    "source": "edge-gb-f",
+    "ms": 7080
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-b72b4933eb-10159a4c.mp3",
+    "source": "edge-gb-m",
+    "ms": 6670
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-b72b4933eb-f9c08df4.mp3",
+    "source": "edge-us-f",
+    "ms": 6910
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-b72b4933eb-176f648b.mp3",
+    "source": "edge-us-m",
+    "ms": 6030
    }
   ],
   "I'm a fourth-year student studying rocket engineering.": [
@@ -1865,6 +2027,32 @@
     "file": "call-translate/us-m-2ede061fc0-ecb372e6.mp3",
     "source": "edge-us-m",
     "ms": 1740
+   }
+  ],
+  "I'm from Russia, from Moscow. I moved here for the internship.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-26ab3358d5-23fd2e9a.mp3",
+    "source": "edge-gb-f",
+    "ms": 4270
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-26ab3358d5-5396ac3e.mp3",
+    "source": "edge-gb-m",
+    "ms": 4380
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-26ab3358d5-5a26b8f2.mp3",
+    "source": "edge-us-f",
+    "ms": 3640
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-26ab3358d5-448493b5.mp3",
+    "source": "edge-us-m",
+    "ms": 3410
    }
   ],
   "I'm gonna call them tomorrow.": [
@@ -2609,6 +2797,14 @@
     "ms": 1520
    }
   ],
+  "In five years, I'd like to be a structural engineer who can take a part from design to qualification test on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see something I worked on actually fly.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-b3a1199635-ee4b1835.mp3",
+    "source": "edge-gb-f",
+    "ms": 15810
+   }
+  ],
   "In my free time, I": [
    {
     "voice": "gb-f",
@@ -2711,6 +2907,14 @@
     "file": "call-chunks/us-m-43e52979fe-d95561d0.mp3",
     "source": "edge-us-m",
     "ms": 1910
+   }
+  ],
+  "In our composite project, the specimens kept breaking at the grips instead of in the middle, so the results were useless. My task was to find out why before the next test campaign. I compared the failure surfaces, checked the clamping pressure, and suggested adding tabs to the ends of the specimens. I also changed the test procedure so the grips were tightened in steps. After that, almost all specimens failed in the gauge section, and our strength values became consistent within five percent.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-f17ac820be-fe620e3e.mp3",
+    "source": "edge-gb-f",
+    "ms": 30170
    }
   ],
   "In simple terms": [
@@ -2949,6 +3153,14 @@
     "ms": 1950
    }
   ],
+  "It's a mix: some design work in CAD, some time in the lab, and a short stand-up every morning. You'd be working with Priya.": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-4bb8b67280-d546b42a.mp3",
+    "source": "edge-us-f",
+    "ms": 7930
+   }
+  ],
   "It's an old engine, but it still works.": [
    {
     "voice": "gb-f",
@@ -3051,6 +3263,32 @@
     "ms": 1490
    }
   ],
+  "Just to make sure I understand, should I check all the dimensions or only the critical ones?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-986da5db5f-40eee5ed.mp3",
+    "source": "edge-gb-f",
+    "ms": 5350
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-986da5db5f-495a7c48.mp3",
+    "source": "edge-gb-m",
+    "ms": 4890
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-986da5db5f-d68ccc5d.mp3",
+    "source": "edge-us-f",
+    "ms": 5320
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-986da5db5f-1f7e9dd6.mp3",
+    "source": "edge-us-m",
+    "ms": 5020
+   }
+  ],
   "Just to make sure I understand, you need the report by Friday?": [
    {
     "voice": "gb-f",
@@ -3091,6 +3329,14 @@
     "file": "air-phrases/us-m-218dd0edb3-07fd7779.mp3",
     "source": "edge-us-m",
     "ms": 1220
+   }
+  ],
+  "Last year four of us designed a small rocket engine test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-43458e6bd4-e378b914.mp3",
+    "source": "edge-gb-f",
+    "ms": 26510
    }
   ],
   "Let me briefly introduce myself.": [
@@ -3331,6 +3577,58 @@
     "ms": 1870
    }
   ],
+  "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-484a8cfafa-6288cfc7.mp3",
+    "source": "edge-gb-f",
+    "ms": 6240
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-484a8cfafa-76e6bed3.mp3",
+    "source": "edge-gb-m",
+    "ms": 5780
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-484a8cfafa-e8efe338.mp3",
+    "source": "edge-us-f",
+    "ms": 5760
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-484a8cfafa-a055d6fa.mp3",
+    "source": "edge-us-m",
+    "ms": 5740
+   }
+  ],
+  "Mostly. Sorry, could you repeat the part about the first run?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-7e9b901e40-cea84eee.mp3",
+    "source": "edge-gb-f",
+    "ms": 4220
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-7e9b901e40-339bc45c.mp3",
+    "source": "edge-gb-m",
+    "ms": 4140
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-7e9b901e40-989b7db3.mp3",
+    "source": "edge-us-f",
+    "ms": 3900
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-7e9b901e40-167bf56b.mp3",
+    "source": "edge-us-m",
+    "ms": 3420
+   }
+  ],
   "My background is in": [
    {
     "voice": "gb-f",
@@ -3513,6 +3811,22 @@
     "ms": 1830
    }
   ],
+  "My spoken English is still slower than my technical reading. I understand documentation well, but in fast meetings I sometimes need a moment. So I practice every day with listening and speaking exercises, and I'm not afraid to ask people to repeat something. It's getting better quickly.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-85a5ba3b49-a104d51d.mp3",
+    "source": "edge-gb-f",
+    "ms": 17860
+   }
+  ],
+  "Nice to meet you. So, let's start easy. Tell me a little about yourself.": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-82806a33fc-eb7bf48b.mp3",
+    "source": "edge-us-f",
+    "ms": 4630
+   }
+  ],
   "Nice. What would you do differently next time?": [
    {
     "voice": "us-m",
@@ -3659,6 +3973,30 @@
     "ms": 3190
    }
   ],
+  "Okay, everyone's here. Oliver, can you give us a quick update on the vibration test?": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-0a3e5266b2-1769d05d.mp3",
+    "source": "edge-us-f",
+    "ms": 4980
+   }
+  ],
+  "Okay, let's get you set up. Your first task is to review the bracket drawing and check the tolerances. Any questions?": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes/in-f-a26d0529ff-7024d439.mp3",
+    "source": "edge-in-f",
+    "ms": 9270
+   }
+  ],
+  "Only the critical ones for now. They're marked in red. No rush, take your time.": [
+   {
+    "voice": "in-f",
+    "file": "story-episodes/in-f-7e1f3d2aad-01860f36.mp3",
+    "source": "edge-in-f",
+    "ms": 6850
+   }
+  ],
   "Our team thinks deadlines matter more than documentation. Do you agree?": [
    {
     "voice": "au-m",
@@ -3681,6 +4019,14 @@
     "file": "air-phrases/us-f-4e65478233-4ab608af.mp3",
     "source": "edge-us-f",
     "ms": 1400
+   }
+  ],
+  "Quick one from quality: we need the calibration certificates before Wednesday, otherwise we can't sign off on the results.": [
+   {
+    "voice": "au-f",
+    "file": "story-episodes/au-f-4691a18e2d-76dda5bc.mp3",
+    "source": "edge-au-f",
+    "ms": 7240
    }
   ],
   "Right, quick one from me. The vibration table's booked for Thursday, not Wednesday, so we've got an extra day to fix the mounting plate.": [
@@ -3713,6 +4059,32 @@
     "file": "air-phrases/us-f-a02325b99a-c1142f18.mp3",
     "source": "edge-us-f",
     "ms": 1490
+   }
+  ],
+  "So far so good, thanks. Everyone's been really helpful.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-1985135b87-e7860497.mp3",
+    "source": "edge-gb-f",
+    "ms": 4210
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-1985135b87-42ccbddb.mp3",
+    "source": "edge-gb-m",
+    "ms": 4440
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-1985135b87-7c15fbb5.mp3",
+    "source": "edge-us-f",
+    "ms": 4010
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-1985135b87-7f3e0ead.mp3",
+    "source": "edge-us-m",
+    "ms": 3490
    }
   ],
   "So you need the report by Friday?": [
@@ -3843,6 +4215,14 @@
     "ms": 1540
    }
   ],
+  "Sorry, I'll slow down. The first test this morning went well. No problems.": [
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-ec5f60dcea-5cf6ebd9.mp3",
+    "source": "edge-gb-m",
+    "ms": 6360
+   }
+  ],
   "Sorry, you're on mute.": [
    {
     "voice": "au-f",
@@ -3869,6 +4249,32 @@
     "ms": 1360
    }
   ],
+  "Sure, that sounds great.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-e07ed598c8-98f8937b.mp3",
+    "source": "edge-gb-f",
+    "ms": 1870
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-e07ed598c8-d3424be0.mp3",
+    "source": "edge-gb-m",
+    "ms": 1570
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-e07ed598c8-16f35ed0.mp3",
+    "source": "edge-us-f",
+    "ms": 1630
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-e07ed598c8-e379c7aa.mp3",
+    "source": "edge-us-m",
+    "ms": 1070
+   }
+  ],
   "Sure, what's up?": [
    {
     "voice": "in-f",
@@ -3883,6 +4289,14 @@
     "file": "air-passages/au-f-7e1e9eb8b5-4ac3c54a.mp3",
     "source": "edge-au-f",
     "ms": 8650
+   }
+  ],
+  "Sure. Right, so, the table's back up and running, we re-torqued the bolts on Friday, and the first run this morning looked clean, no resonance issues whatsoever.": [
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-e4914ca1de-8b40c01e.mp3",
+    "source": "edge-gb-m",
+    "ms": 9910
    }
   ],
   "Sure. So yesterday I finished the bracket redesign, and I'm gonna run the stress analysis today. Should be done by lunch, unless the mesh gives me trouble again.": [
@@ -3909,12 +4323,44 @@
     "ms": 2490
    }
   ],
+  "Tell me about a difficult problem you solved.": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-57f4d0f850-a8c1da5c.mp3",
+    "source": "edge-us-m",
+    "ms": 1990
+   }
+  ],
+  "Tell me about a project you worked on.": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-35cad8f52b-b4f10070.mp3",
+    "source": "edge-us-m",
+    "ms": 1660
+   }
+  ],
   "Tell me about a project you're proud of.": [
    {
     "voice": "us-f",
     "file": "call-questions/us-f-4fc2337451-cb3b6c08.mp3",
     "source": "edge-us-f",
     "ms": 1780
+   }
+  ],
+  "Tell me about a time you failed.": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-acc1211dd8-00e05e2c.mp3",
+    "source": "edge-us-m",
+    "ms": 1380
+   }
+  ],
+  "Tell me about a time you worked in a team.": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-7aa711b164-67cfc367.mp3",
+    "source": "edge-us-m",
+    "ms": 1860
    }
   ],
   "Tell me about a time you worked under pressure.": [
@@ -3931,6 +4377,66 @@
     "file": "call-questions/us-m-27fde5f9e6-c1369a5a.mp3",
     "source": "edge-us-m",
     "ms": 1090
+   }
+  ],
+  "Thank you, I really enjoyed the conversation.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-1e9128aec6-65c0e5c2.mp3",
+    "source": "edge-gb-f",
+    "ms": 2770
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-1e9128aec6-702f4407.mp3",
+    "source": "edge-gb-m",
+    "ms": 2410
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-1e9128aec6-f04909fc.mp3",
+    "source": "edge-us-f",
+    "ms": 2510
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-1e9128aec6-e97227ab.mp3",
+    "source": "edge-us-m",
+    "ms": 2410
+   }
+  ],
+  "Thanks for your time. We'll be in touch by the end of next week.": [
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-b86385f986-bb9e5f2c.mp3",
+    "source": "edge-us-m",
+    "ms": 3170
+   }
+  ],
+  "Thanks, bye!": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-759476cc7f-5903aaa4.mp3",
+    "source": "edge-gb-f",
+    "ms": 1110
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-759476cc7f-7185bad5.mp3",
+    "source": "edge-gb-m",
+    "ms": 1180
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-759476cc7f-fc14cd57.mp3",
+    "source": "edge-us-f",
+    "ms": 950
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-759476cc7f-fdcff5e8.mp3",
+    "source": "edge-us-m",
+    "ms": 590
    }
   ],
   "Thanks. And could you attach the latest drawings? The ones from last week are out of date.": [
@@ -3973,6 +4479,14 @@
     "file": "air-passages/us-f-9230ecddc1-0d037210.mp3",
     "source": "edge-us-f",
     "ms": 3000
+   }
+  ],
+  "That'd be brilliant, thanks.": [
+   {
+    "voice": "au-f",
+    "file": "story-episodes/au-f-5b5819cbf5-25cf9ddb.mp3",
+    "source": "edge-au-f",
+    "ms": 1900
    }
   ],
   "That's a bit about me.": [
@@ -4025,6 +4539,32 @@
     "file": "call-chunks/us-m-f3b90708ea-89e257c8.mp3",
     "source": "edge-us-m",
     "ms": 1960
+   }
+  ],
+  "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-12b53565ad-8206d53f.mp3",
+    "source": "edge-gb-f",
+    "ms": 7650
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-12b53565ad-7bdc01f2.mp3",
+    "source": "edge-gb-m",
+    "ms": 7040
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-12b53565ad-62436f97.mp3",
+    "source": "edge-us-f",
+    "ms": 7040
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-12b53565ad-d0c97bc7.mp3",
+    "source": "edge-us-m",
+    "ms": 6960
    }
   ],
   "That's outside my area, to be honest.": [
@@ -4177,6 +4717,14 @@
     "file": "call-chunks/us-m-42811a33a8-5de4b9ce.mp3",
     "source": "edge-us-m",
     "ms": 1690
+   }
+  ],
+  "The goal of the project was to reduce the weight of a satellite bracket. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be machined. As a result, the mass dropped by about eighteen percent, and the bracket passed the vibration test on the first try.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-68012a5cfe-5f609c7e.mp3",
+    "source": "edge-gb-f",
+    "ms": 24830
    }
   ],
   "The goal of the project was to reduce the weight of the bracket.": [
@@ -4797,6 +5345,14 @@
     "ms": 1410
    }
   ],
+  "Two reasons. First, your team builds and tests hardware, not only models, and that's exactly the kind of work I enjoy. Second, I read about your work on composite structures for small launchers, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about flight qualification.": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-afbf0a0707-a215a6a6.mp3",
+    "source": "edge-gb-f",
+    "ms": 20590
+   }
+  ],
   "We asked her to send the drawings.": [
    {
     "voice": "gb-m",
@@ -5015,6 +5571,14 @@
     "ms": 1170
    }
   ],
+  "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be your mentor.": [
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-0b2dd7b09c-939288bb.mp3",
+    "source": "edge-us-f",
+    "ms": 5260
+   }
+  ],
   "Well, it depends on": [
    {
     "voice": "gb-f",
@@ -5231,6 +5795,14 @@
     "ms": 1980
    }
   ],
+  "What are your strengths?": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-e966f1207c-5f540437.mp3",
+    "source": "edge-us-m",
+    "ms": 1000
+   }
+  ],
   "What did you do last weekend?": [
    {
     "voice": "us-f",
@@ -5427,6 +5999,14 @@
     "ms": 2680
    }
   ],
+  "What is your greatest weakness?": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-65a85e6549-cd3a7b21.mp3",
+    "source": "edge-us-m",
+    "ms": 1530
+   }
+  ],
   "What opportunities are there for learning and growth?": [
    {
     "voice": "gb-f",
@@ -5609,6 +6189,12 @@
     "file": "call-questions/us-f-b49c0f4472-c8a473d2.mp3",
     "source": "edge-us-f",
     "ms": 1820
+   },
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-b49c0f4472-eea71e7e.mp3",
+    "source": "edge-us-m",
+    "ms": 1850
    }
   ],
   "Why are composites used in aircraft?": [
@@ -5625,6 +6211,14 @@
     "file": "call-questions/in-m-6690256939-e0756133.mp3",
     "source": "edge-in-m",
     "ms": 1830
+   }
+  ],
+  "Why do you want to work for us?": [
+   {
+    "voice": "us-m",
+    "file": "story-questions/us-m-7259fe5b1f-d8773132.mp3",
+    "source": "edge-us-m",
+    "ms": 1250
    }
   ],
   "Why do you want to work in the space industry?": [
@@ -5701,6 +6295,66 @@
     "file": "air-phrases/gb-f-d76dd6e3f6-bc249315.mp3",
     "source": "edge-gb-f",
     "ms": 1640
+   }
+  ],
+  "Yes, a couple. What does a typical day look like for someone in this role? And what would you expect from me in the first three months?": [
+   {
+    "voice": "gb-f",
+    "file": "story-questions/gb-f-84890df541-f5eab082.mp3",
+    "source": "edge-gb-f",
+    "ms": 8370
+   }
+  ],
+  "Yes, thanks. The directions were really clear.": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-4e22d5b5f2-c63b23eb.mp3",
+    "source": "edge-gb-f",
+    "ms": 3640
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-4e22d5b5f2-2cb4a3ed.mp3",
+    "source": "edge-gb-m",
+    "ms": 3890
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-4e22d5b5f2-d62274f4.mp3",
+    "source": "edge-us-f",
+    "ms": 3460
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-4e22d5b5f2-ca30d349.mp3",
+    "source": "edge-us-m",
+    "ms": 2960
+   }
+  ],
+  "Yes, what does a typical day look like for an intern in your team?": [
+   {
+    "voice": "gb-f",
+    "file": "story-episodes/gb-f-8dca6f3c47-4f83c7e5.mp3",
+    "source": "edge-gb-f",
+    "ms": 3970
+   },
+   {
+    "voice": "gb-m",
+    "file": "story-episodes/gb-m-8dca6f3c47-96745f78.mp3",
+    "source": "edge-gb-m",
+    "ms": 3480
+   },
+   {
+    "voice": "us-f",
+    "file": "story-episodes/us-f-8dca6f3c47-955077e2.mp3",
+    "source": "edge-us-f",
+    "ms": 3660
+   },
+   {
+    "voice": "us-m",
+    "file": "story-episodes/us-m-8dca6f3c47-97f131ac.mp3",
+    "source": "edge-us-m",
+    "ms": 3320
    }
   ],
   "You should've asked me first.": [

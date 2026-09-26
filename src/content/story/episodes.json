@@ -1,0 +1,673 @@
+[
+ {
+  "id": "ep-1",
+  "n": 1,
+  "title": "Собеседование",
+  "place": "Офис компании, переговорная",
+  "after": "call-intro",
+  "intro": "Ты пришёл на собеседование на стажировку в команду конструкторов. Тебя встречает Майк из HR, потом подключается тимлид Дана.",
+  "lines": [
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Hi, thanks for coming in. Did you find us okay?",
+    "ru": "Привет, спасибо, что пришёл. Легко нашёл нас?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Yes, thanks. The directions were really clear.",
+      "ru": "Да, спасибо. Всё было очень понятно объяснено.",
+      "why": null
+     },
+     {
+      "text": "No, I am finding you with difficulty.",
+      "ru": "Нет, я находил вас с трудностью.",
+      "why": "Калька с русского — так не говорят. Короткое «Yes, thanks» здесь уместнее."
+     },
+     {
+      "text": "Yes. Where is the toilet?",
+      "ru": "Да. Где туалет?",
+      "why": "Слишком резко для первой фразы. Сначала поблагодари."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Yes, thanks. The directions were really clear.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Yes, thanks. The directions were really clear.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Yes, thanks. The directions were really clear.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Yes, thanks. The directions were really clear.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structures team.",
+    "ru": "Отлично. Я Майк, занимаюсь наймом, а это Дана — она руководит группой конструкций."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Nice to meet you. So, let's start easy. Tell me a little about yourself.",
+    "ru": "Приятно познакомиться. Начнём с простого: расскажи немного о себе."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.",
+      "ru": "Я студент четвёртого курса, ракетно-космическая техника. Сейчас работаю над проектом по испытаниям композитов.",
+      "why": null
+     },
+     {
+      "text": "I was born in a small town, and I have a cat.",
+      "ru": "Я родился в маленьком городе, и у меня есть кот.",
+      "why": "Не по делу: на собеседовании начинают с учёбы и работы."
+     },
+     {
+      "text": "I am student. I study rockets.",
+      "ru": "Я студент. Я учу ракеты.",
+      "why": "Слишком коротко и с ошибкой: «a student». Добавь, чем занимаешься сейчас."
+     }
+    ],
+    "speak": [
+     {
+      "text": "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.",
+      "voice": "us-f"
+     },
+     {
+      "text": "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.",
+      "voice": "us-m"
+     },
+     {
+      "text": "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "I'm a fourth-year student in rocket and space engineering. I'm currently working on a project about composite testing.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Composite testing, interesting. What exactly are you testing?",
+    "ru": "Испытания композитов — интересно. Что именно вы испытываете?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+      "ru": "В основном растяжение и изгиб образцов из углепластика, и я сравниваю результаты с расчётом МКЭ.",
+      "why": null
+     },
+     {
+      "text": "It's a secret.",
+      "ru": "Это секрет.",
+      "why": "Звучит грубо. Если есть ограничения — скажи «I can't share the details, but in general…»."
+     },
+     {
+      "text": "Everything.",
+      "ru": "Всё.",
+      "why": "Слишком расплывчато. Назови конкретные испытания."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "And what was the most difficult part?",
+    "ru": "А что было самым сложным?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+      "ru": "Хороший вопрос, дайте подумать. Пожалуй, получить стабильные результаты: образцы всё время разрушались в захватах.",
+      "why": null
+     },
+     {
+      "text": "Nothing was difficult.",
+      "ru": "Ничего сложного не было.",
+      "why": "Не верят никогда. Лучше честная трудность и как ты её решал."
+     },
+     {
+      "text": "The difficult part was difficult.",
+      "ru": "Сложная часть была сложной.",
+      "why": "Пустой ответ. Возьми паузу чанком «Let me think…» и назови конкретику."
+     }
+    ],
+    "speak": [
+     {
+      "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+      "voice": "us-f"
+     },
+     {
+      "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+      "voice": "us-m"
+     },
+     {
+      "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Do you have any questions for us?",
+    "ru": "У тебя есть вопросы к нам?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Yes, what does a typical day look like for an intern in your team?",
+      "ru": "Да: как выглядит обычный день стажёра в вашей команде?",
+      "why": null
+     },
+     {
+      "text": "What is the salary?",
+      "ru": "Какая зарплата?",
+      "why": "Не первым вопросом: сначала покажи интерес к работе."
+     },
+     {
+      "text": "No.",
+      "ru": "Нет.",
+      "why": "«Нет вопросов» звучит как отсутствие интереса."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Yes, what does a typical day look like for an intern in your team?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Yes, what does a typical day look like for an intern in your team?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Yes, what does a typical day look like for an intern in your team?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Yes, what does a typical day look like for an intern in your team?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "It's a mix: some design work in CAD, some time in the lab, and a short stand-up every morning. You'd be working with Priya.",
+    "ru": "Всего понемногу: проектирование в CAD, работа в лаборатории и короткая планёрка каждое утро. Работать будешь с Прией."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Thanks for your time. We'll be in touch by the end of next week.",
+    "ru": "Спасибо за время. Мы свяжемся с тобой до конца следующей недели."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Thank you, I really enjoyed the conversation.",
+      "ru": "Спасибо, мне очень понравился разговор.",
+      "why": null
+     },
+     {
+      "text": "Okay, bye.",
+      "ru": "Ладно, пока.",
+      "why": "Слишком коротко для завершения собеседования."
+     },
+     {
+      "text": "Please call me tomorrow.",
+      "ru": "Позвоните мне завтра, пожалуйста.",
+      "why": "Давит на интервьюера — сроки они уже назвали."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Thank you, I really enjoyed the conversation.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Thank you, I really enjoyed the conversation.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Thank you, I really enjoyed the conversation.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Thank you, I really enjoyed the conversation.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  ],
+  "culture": {
+   "title": "Small talk и вопросы в конце",
+   "text": "«Did you find us okay?» в начале собеседования — не проверка, а способ расслабиться: отвечай коротко и дружелюбно. В конце всегда задавай вопрос о работе — «вопросов нет» звучит как отсутствие интереса. О зарплате — не первым вопросом, лучше на следующем этапе."
+  },
+  "reviewed": false
+ },
+ {
+  "id": "ep-2",
+  "n": 2,
+  "title": "Первый день",
+  "place": "Опен-спейс команды, кухня",
+  "after": "call-clarify",
+  "intro": "Тебя взяли! Первый день: Дана знакомит с командой, болтливый Том зовёт на кофе, наставница Прия выдаёт первую задачу.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be your mentor.",
+    "ru": "Добро пожаловать в команду! Давай познакомлю. Это Прия, она будет твоей наставницей."
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Hi, great to have you here. How are you settling in?",
+    "ru": "Привет, рада, что ты с нами. Как осваиваешься?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "So far so good, thanks. Everyone's been really helpful.",
+      "ru": "Пока всё хорошо, спасибо. Все очень помогают.",
+      "why": null
+     },
+     {
+      "text": "I am settling in the chair.",
+      "ru": "Я устраиваюсь в кресле.",
+      "why": "Буквальное понимание: settling in — «осваиваться на новом месте»."
+     },
+     {
+      "text": "Bad. I didn't sleep at all.",
+      "ru": "Плохо. Я совсем не спал.",
+      "why": "На «How are you…» отвечают коротко и позитивно, особенно в первый день."
+     }
+    ],
+    "speak": [
+     {
+      "text": "So far so good, thanks. Everyone's been really helpful.",
+      "voice": "us-f"
+     },
+     {
+      "text": "So far so good, thanks. Everyone's been really helpful.",
+      "voice": "us-m"
+     },
+     {
+      "text": "So far so good, thanks. Everyone's been really helpful.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "So far so good, thanks. Everyone's been really helpful.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "G'day! I'm Tom. Don't worry, the coffee machine is the most complicated system in this building. Fancy a coffee?",
+    "ru": "Привет! Я Том. Не бойся, кофемашина — самая сложная система в этом здании. Хочешь кофе?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Sure, that sounds great.",
+      "ru": "Конечно, с удовольствием.",
+      "why": null
+     },
+     {
+      "text": "What is fancy?",
+      "ru": "Что такое fancy?",
+      "why": "Можно переспросить, но вежливее: «Sorry, what do you mean?» Fancy a coffee? = «Хочешь кофе?»."
+     },
+     {
+      "text": "I don't drink.",
+      "ru": "Я не пью.",
+      "why": "Звучит резко. Можно: «No thanks, but I'll join you for a chat.»"
+     }
+    ],
+    "speak": [
+     {
+      "text": "Sure, that sounds great.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sure, that sounds great.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sure, that sounds great.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sure, that sounds great.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "tom",
+    "voice": "au-m",
+    "text": "Brilliant. So, where are you from originally?",
+    "ru": "Отлично. А ты откуда родом?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+      "ru": "Я из России, из Москвы. Переехал сюда ради стажировки.",
+      "why": null
+     },
+     {
+      "text": "From the university.",
+      "ru": "Из университета.",
+      "why": "Originally — про родной город или страну."
+     },
+     {
+      "text": "Why do you ask?",
+      "ru": "А зачем спрашиваешь?",
+      "why": "Звучит настороженно. Это обычный small talk."
+     }
+    ],
+    "speak": [
+     {
+      "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+      "voice": "us-f"
+     },
+     {
+      "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+      "voice": "us-m"
+     },
+     {
+      "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Okay, let's get you set up. Your first task is to review the bracket drawing and check the tolerances. Any questions?",
+    "ru": "Так, давай тебя настроим. Первая задача — просмотреть чертёж кронштейна и проверить допуски. Есть вопросы?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Just to make sure I understand, should I check all the dimensions or only the critical ones?",
+      "ru": "Чтобы убедиться, что я правильно понял: проверять все размеры или только критичные?",
+      "why": null
+     },
+     {
+      "text": "No questions.",
+      "ru": "Вопросов нет.",
+      "why": "Упущенный шанс уточнить объём работы."
+     },
+     {
+      "text": "Tolerances of what?",
+      "ru": "Допуски чего?",
+      "why": "Слишком резко. Переспроси через «Could you…» или «Just to make sure…»."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Just to make sure I understand, should I check all the dimensions or only the critical ones?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Just to make sure I understand, should I check all the dimensions or only the critical ones?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Just to make sure I understand, should I check all the dimensions or only the critical ones?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Just to make sure I understand, should I check all the dimensions or only the critical ones?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "priya",
+    "voice": "in-f",
+    "text": "Only the critical ones for now. They're marked in red. No rush, take your time.",
+    "ru": "Пока только критичные — они отмечены красным. Не торопись."
+   }
+  ],
+  "culture": {
+   "title": "«How are you?» и обращение по имени",
+   "text": "«How are you?» и «How are you settling in?» — приветствие, а не вопрос о здоровье: «Good, thanks. You?» Коллег, включая руководителя, зовут по имени — «Dana», а не «Mrs. Walsh». Переспросить «Just to make sure I understand…» — признак профессионализма, а не слабости."
+  },
+  "reviewed": false
+ },
+ {
+  "id": "ep-3",
+  "n": 3,
+  "title": "Созвон с разными акцентами",
+  "place": "Видеосозвон команды",
+  "after": "air-accents",
+  "intro": "Еженедельный созвон: британец Оливер говорит очень быстро, Арджун из Индии докладывает про датчики, Грейс из Сиднея — от отдела качества.",
+  "lines": [
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Okay, everyone's here. Oliver, can you give us a quick update on the vibration test?",
+    "ru": "Так, все на месте. Оливер, коротко — что с вибрационными испытаниями?"
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Sure. Right, so, the table's back up and running, we re-torqued the bolts on Friday, and the first run this morning looked clean, no resonance issues whatsoever.",
+    "ru": "Конечно. Значит, стенд снова работает, болты перетянули в пятницу, первый прогон утром прошёл чисто, никаких резонансов."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Did you get all that?",
+    "ru": "Всё уловил?"
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Mostly. Sorry, could you repeat the part about the first run?",
+      "ru": "В основном. Извините, можно повторить про первый прогон?",
+      "why": null
+     },
+     {
+      "text": "Yes.",
+      "ru": "Да.",
+      "why": "Если не понял — не делай вид, что понял. Переспросить на созвоне нормально."
+     },
+     {
+      "text": "No, he speaks too fast.",
+      "ru": "Нет, он говорит слишком быстро.",
+      "why": "Правда, но звучит как упрёк. Лучше попросить повторить конкретную часть."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Mostly. Sorry, could you repeat the part about the first run?",
+      "voice": "us-f"
+     },
+     {
+      "text": "Mostly. Sorry, could you repeat the part about the first run?",
+      "voice": "us-m"
+     },
+     {
+      "text": "Mostly. Sorry, could you repeat the part about the first run?",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Mostly. Sorry, could you repeat the part about the first run?",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "oliver",
+    "voice": "gb-m",
+    "text": "Sorry, I'll slow down. The first test this morning went well. No problems.",
+    "ru": "Извини, помедленнее. Первый тест утром прошёл хорошо. Проблем нет."
+   },
+   {
+    "speaker": "arjun",
+    "voice": "in-m",
+    "text": "From my side, the new strain gauges have arrived. I will install them tomorrow, and we can start the static test on Wednesday.",
+    "ru": "С моей стороны: новые тензодатчики пришли. Завтра установлю, и в среду можно начинать статические испытания."
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "Quick one from quality: we need the calibration certificates before Wednesday, otherwise we can't sign off on the results.",
+    "ru": "Коротко от отдела качества: нужны сертификаты калибровки до среды, иначе мы не сможем утвердить результаты."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+      "ru": "Я могу забрать сертификаты у поставщика и прислать до вторника.",
+      "why": null
+     },
+     {
+      "text": "It's not my job.",
+      "ru": "Это не моя работа.",
+      "why": "Звучит как отказ помогать. Если не знаешь, кто отвечает, спроси: «Who's handling that?»"
+     },
+     {
+      "text": "Okay.",
+      "ru": "Ладно.",
+      "why": "Пассивно: непонятно, кто что делает. Возьми задачу или спроси, кто её возьмёт."
+     }
+    ],
+    "speak": [
+     {
+      "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+      "voice": "us-f"
+     },
+     {
+      "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+      "voice": "us-m"
+     },
+     {
+      "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+      "voice": "gb-m"
+     }
+    ]
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "That'd be brilliant, thanks.",
+    "ru": "Было бы отлично, спасибо."
+   },
+   {
+    "speaker": "dana",
+    "voice": "us-f",
+    "text": "Great. Anything else? No? Okay, thanks, everyone. Talk tomorrow.",
+    "ru": "Отлично. Что-нибудь ещё? Нет? Всем спасибо, до завтра."
+   },
+   {
+    "speaker": "me",
+    "options": [
+     {
+      "text": "Thanks, bye!",
+      "ru": "Спасибо, пока!",
+      "why": null
+     },
+     {
+      "text": "Goodbye, I wish you all the best in your important work.",
+      "ru": "До свидания, желаю вам всего наилучшего в вашей важной работе.",
+      "why": "Слишком торжественно для ежедневного созвона."
+     },
+     {
+      "text": "Wait, what about my question?",
+      "ru": "Подождите, а мой вопрос?",
+      "why": "Вопрос надо было задать на «Anything else?»."
+     }
+    ],
+    "speak": [
+     {
+      "text": "Thanks, bye!",
+      "voice": "us-f"
+     },
+     {
+      "text": "Thanks, bye!",
+      "voice": "us-m"
+     },
+     {
+      "text": "Thanks, bye!",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Thanks, bye!",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  ],
+  "culture": {
+   "title": "Акценты и «Brilliant!»",
+   "text": "На созвонах с разными акцентами нормально переспрашивать: «Sorry, could you repeat the part about…» лучше, чем делать вид, что понял. Британцы и австралийцы часто говорят «Brilliant!» и «Cheers» вместо «Great» и «Thanks». Sign off (on) — утвердить, подписать результат."
+  },
+  "reviewed": false
+ }
+]

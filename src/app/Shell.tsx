@@ -17,11 +17,11 @@ const TABS = [
 ]
 
 /** Экраны, где нижняя навигация мешает (тест, упражнения и игры во весь экран). */
-const FULLSCREEN = ['/intake', '/run/', '/game/']
+const FULLSCREEN = ['/intake', '/run/', '/game/', '/interview', '/episode/']
 
 export function Shell() {
   const { pathname } = useLocation()
-  const fullscreen = FULLSCREEN.some((p) => pathname.startsWith(p))
+  const fullscreen = FULLSCREEN.some((p) => pathname.startsWith(p)) || pathname.endsWith('/train')
   const audioError = useAudioError()
   useEffect(() => {
     window.scrollTo(0, 0)

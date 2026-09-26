@@ -1,0 +1,242 @@
+.q {
+  font-size: var(--fs-lead);
+  font-weight: 500;
+}
+
+.text {
+  padding: var(--space-3);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  line-height: 1.6;
+}
+
+.text span[data-on] {
+  background: color-mix(in srgb, var(--signal) 25%, transparent);
+  box-shadow: 0 2px 0 var(--signal);
+}
+
+.shadow {
+  display: grid;
+  place-items: center;
+  gap: var(--space-2);
+  min-height: 140px;
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--lcd);
+  text-align: center;
+}
+
+.turn {
+  color: var(--ink-2);
+}
+
+.turn[data-on] {
+  color: var(--signal-ink);
+  font-size: var(--fs-lead);
+  font-weight: 500;
+}
+
+.sentence {
+  font-size: var(--fs-lead);
+  line-height: 1.4;
+}
+
+.keys {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: var(--space-3) var(--space-3) var(--space-3) 2em;
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--lcd);
+  font-family: var(--font-mono);
+}
+
+/* ——— Экран «Мой рассказ» ——— */
+.card {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-left: 3px solid var(--signal);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+}
+
+.card p {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.list {
+  display: grid;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--hairline) solid var(--line);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+  text-decoration: none;
+}
+
+.itemMain {
+  display: grid;
+  min-width: 0;
+}
+
+.itemQ {
+  font-weight: 600;
+}
+
+.itemMeta {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.itemMeta[data-empty] {
+  font-style: italic;
+}
+
+.badge {
+  padding: 0 var(--space-1);
+  border: var(--hairline) solid var(--signal-ink);
+  border-radius: var(--radius-s);
+  color: var(--signal-ink);
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+}
+
+.section {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.h2 {
+  font-size: var(--fs-body);
+}
+
+.editor {
+  width: 100%;
+  min-height: 220px;
+  padding: var(--space-3);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.editor:focus {
+  border-color: var(--signal);
+  outline: none;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.warn {
+  color: var(--danger);
+  font-size: var(--fs-small);
+}
+
+.chunkList {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chunkList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-size: var(--fs-small);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+details.example {
+  padding: var(--space-3);
+  border: var(--hairline) dashed var(--line-strong);
+  border-radius: var(--radius-s);
+}
+
+details.example summary {
+  min-height: 32px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ——— 4/3/2 и собеседование ——— */
+.timer {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.rounds {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-small);
+}
+
+.rounds th,
+.rounds td {
+  padding: var(--space-2);
+  border-bottom: var(--hairline) solid var(--line);
+  text-align: right;
+}
+
+.rounds th:first-child,
+.rounds td:first-child {
+  text-align: left;
+}
+
+.transcript {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.transcript li {
+  display: grid;
+  gap: var(--space-1);
+  padding-bottom: var(--space-3);
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.transcript b {
+  font-weight: 600;
+}
+
+.transcript .said {
+  color: var(--ink-2);
+}

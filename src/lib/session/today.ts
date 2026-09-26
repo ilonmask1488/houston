@@ -5,6 +5,7 @@ import type { SessionRow } from '../db/types'
 import { lastIntake } from '../intake/store'
 import { localDate } from '../progress/streak'
 import { reviewQueue } from '../srs/cards'
+import { readyStories } from '../story/store'
 import { currentSpeed, planSegments, refreshSegments } from './session'
 
 export async function getTodaySession(minutes: number): Promise<SessionRow> {
@@ -13,7 +14,8 @@ export async function getTodaySession(minutes: number): Promise<SessionRow> {
   const progress = await loadProgress()
   const queue = await reviewQueue(200)
   const speed = await currentSpeed(intake)
-  const fresh = planSegments({ minutes, date, due: queue.cards, progress, intake, speed })
+  const stories = (await readyStories()).map((x) => ({ id: x.id, trained: x.trained }))
+  const fresh = planSegments({ minutes, date, due: queue.cards, progress, intake, speed, stories })
   const existing = await db.sessions.get(date)
   if (existing) {
     const segments = refreshSegments(existing.segments, fresh)

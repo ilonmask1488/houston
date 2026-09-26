@@ -106,5 +106,35 @@ for (const scheme of ['light', 'dark'] as const) {
     await shoot(page, 'p1-passage', scheme, p)
     await page.goto('./#/stats')
     await shoot(page, 'p1-stats', scheme, p)
+    if (phase === 'phase1') return
+
+    // ——— Фаза 2: «Мой рассказ», собеседование, эпизоды ———
+    await page.goto('./#/story')
+    await shoot(page, 'p2-story', scheme, p)
+    await page.goto('./#/story/problem')
+    await page
+      .getByLabel('Твой ответ по-английски')
+      .fill(
+        'In our composite project, the specimens kept breaking at the grips, so the results were useless. My task was to find out why. I compared the failure surfaces and suggested adding tabs. After that, almost all specimens failed in the middle, and the results became consistent.',
+      )
+    await page.getByText('Сохранено').waitFor()
+    await shoot(page, 'p2-editor', scheme, p)
+    await page.goto('./#/story/problem/train')
+    await page.getByRole('button', { name: 'Дальше' }).click()
+    await page.getByRole('button', { name: 'Дальше' }).click()
+    await expect(page.getByText('Ответь по опорным словам')).toBeVisible()
+    await shoot(page, 'p2-keys', scheme, p)
+    await page.goto('./#/interview')
+    await shoot(page, 'p2-interview', scheme, p)
+    await page.goto('./#/tracks')
+    await page.getByRole('link', { name: 'Эпизод 2: Первый день' }).scrollIntoViewIfNeeded()
+    await shoot(page, 'p2-episodes', scheme, p)
+    await page.goto('./#/episode/ep-2')
+    await shoot(page, 'p2-episode-intro', scheme, p)
+    await page.getByRole('button', { name: 'Дальше' }).click()
+    await page.getByRole('button', { name: 'Дальше' }).click()
+    await page.getByRole('button', { name: 'Дальше' }).click()
+    await page.getByRole('group', { name: 'Что ответишь?' }).getByRole('button', { name: /settling in the chair/ }).click()
+    await shoot(page, 'p2-episode-choice', scheme, p)
   })
 }

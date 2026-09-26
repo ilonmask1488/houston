@@ -16,6 +16,11 @@ export type Step =
   | { kind: 'translate'; item: string }
   | { kind: 'substitute'; item: string; swap: number }
   | { kind: 'card'; card: string }
+  /** «Мой рассказ»: твой ответ — послушать, шэдоуинг, по опорным словам, без подсказок */
+  | { kind: 'storyListen'; story: string }
+  | { kind: 'storyShadow'; story: string }
+  | { kind: 'storyKeys'; story: string }
+  | { kind: 'storyCold'; story: string }
 
 export type StepKind = Step['kind']
 
@@ -32,6 +37,20 @@ export const STEP_SECONDS: Record<StepKind, number> = {
   translate: 25,
   substitute: 40,
   card: 15,
+  storyListen: 60,
+  storyShadow: 100,
+  storyKeys: 90,
+  storyCold: 100,
+}
+
+/** Полная тренировка своего ответа. */
+export function storyTraining(story: string): Step[] {
+  return [
+    { kind: 'storyListen', story },
+    { kind: 'storyShadow', story },
+    { kind: 'storyKeys', story },
+    { kind: 'storyCold', story },
+  ]
 }
 
 export function stepsSeconds(steps: Step[]): number {

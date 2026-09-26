@@ -54,6 +54,13 @@ FIXTURES[2] = {
   ],
 }
 
+FIXTURES[3] = {
+  ...FIXTURES[2]!,
+  stories: [{ id: 'about', text: "I'm a fourth-year student.", updatedAt: 1, trained: 2 }],
+  interviews: [{ id: 1, at: 1, seconds: 400, items: [{ q: 'Tell me about yourself.', qid: 'about', transcript: 'I am a student', recorded: true, speechMs: 30_000 }] }],
+  episodes: [{ id: 'ep-1', completedAt: 1, best: 0.8, times: 1 }],
+}
+
 let counter = 0
 const names: string[] = []
 function freshName(): string {

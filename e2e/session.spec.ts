@@ -3,7 +3,7 @@ import { seedIntake } from './helpers.ts'
 import { playStatic, runSegment } from './run.ts'
 
 test('сеанс связи: разминка-игра, Эфир и Позывной проходятся, прогресс сохраняется', async ({ page }) => {
-  test.setTimeout(240_000)
+  test.setTimeout(420_000)
   await seedIntake(page)
   await page.getByRole('button', { name: 'Начать сеанс' }).click()
   await expect(page.getByRole('heading', { level: 1, name: 'Сеанс связи' })).toBeVisible()

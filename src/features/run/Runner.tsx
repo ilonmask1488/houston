@@ -23,6 +23,7 @@ import type { StepResult } from './result'
 import s from './run.module.css'
 import { ChunkStep, QuickStep, SubstituteStep, TranslateStep } from './speaking'
 import { preloadFor } from './preload'
+import { StoryColdStep, StoryKeysStep, StoryListenStep, StoryShadowStep } from '../story/steps'
 
 export type RunSummary = {
   seconds: number
@@ -175,6 +176,14 @@ export function StepView({ step, onDone }: { step: Step; onDone: (r: StepResult)
       return <SubstituteStep step={step} onDone={onDone} />
     case 'card':
       return <CardStep step={step} onDone={onDone} />
+    case 'storyListen':
+      return <StoryListenStep step={step} onDone={onDone} />
+    case 'storyShadow':
+      return <StoryShadowStep step={step} onDone={onDone} />
+    case 'storyKeys':
+      return <StoryKeysStep step={step} onDone={onDone} />
+    case 'storyCold':
+      return <StoryColdStep step={step} onDone={onDone} />
   }
 }
 

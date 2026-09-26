@@ -138,6 +138,20 @@ export function checkCourse(files: JsonFile[]): string[] {
       if ((q.answer as number) < 0 || (q.answer as number) >= n) errors.push(`отрывок ${String(p.id)}: индекс ответа вне вариантов`)
     }
   }
+  const chunkIds = new Set(get('call/chunks.json').map((c) => c.id as string))
+  for (const q of get('story/questions.json')) {
+    for (const c of q.chunks as string[]) if (!chunkIds.has(c)) errors.push(`вопрос «${String(q.id)}»: нет чанка ${c}`)
+    if (typeof q.reviewed !== 'boolean') errors.push(`вопрос «${String(q.id)}»: нет флага reviewed`)
+  }
+  for (const e of get('story/episodes.json')) {
+    if (!modules.has(e.after as string)) errors.push(`эпизод ${String(e.id)}: нет модуля ${String(e.after)}`)
+    for (const l of e.lines as Json[]) {
+      if (l.speaker === 'me') {
+        const opts = l.options as Json[]
+        if (opts[0]?.why !== null || opts.slice(1).some((o) => !o.why)) errors.push(`эпизод ${String(e.id)}: у верного варианта why = null, у неверных — объяснение`)
+      } else if (!characters.has(l.speaker as string)) errors.push(`эпизод ${String(e.id)}: нет персонажа ${String(l.speaker)}`)
+    }
+  }
   const chunkTexts = new Set<string>()
   for (const c of get('call/chunks.json')) {
     const key = String(c.en).toLowerCase()

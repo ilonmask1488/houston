@@ -51,6 +51,14 @@ describe('сеанс связи', () => {
     expect(learned.map((p) => p.label)).toEqual(['translate', 'quickGame'])
   })
 
+  it('«Мой рассказ»: свой ответ в Позывном — по опорным словам, потом без подсказок', () => {
+    const m = moduleById.get('call-intro')!
+    const fresh = callSteps({ module: m, done: new Set(), seed: 1, quickGame: false, stories: [{ id: 'about', trained: 0 }] }, 480)
+    expect(fresh.at(-1)).toEqual({ label: 'story', steps: [{ kind: 'storyKeys', story: 'about' }] })
+    const trained = callSteps({ module: m, done: new Set(), seed: 1, quickGame: false, stories: [{ id: 'about', trained: 3 }] }, 480)
+    expect(trained.at(-1)!.steps![0]!.kind).toBe('storyCold')
+  })
+
   it('пройденный модуль уступает место следующему', () => {
     const progress: Progress = new Map([['air-weak', { moduleId: 'air-weak', startedAt: 1, completedAt: 2, done: moduleItems('air-weak') }]])
     expect(currentModule('air', progress)?.id).toBe('air-link')

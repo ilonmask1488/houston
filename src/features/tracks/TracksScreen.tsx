@@ -8,6 +8,7 @@ import { TRACKS } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { currentModule, hasContent, loadProgress, moduleShare } from '../../lib/course/progress'
 import { startModule } from '../../lib/intake/score'
+import { EpisodeList } from '../story/EpisodeScreen'
 import { useIntakeState } from '../../lib/intake/store'
 import s from './tracks.module.css'
 
@@ -64,10 +65,9 @@ export function TracksScreen() {
           )
         })}
       </div>
-      <section className={s.story}>
-        <h2>{t.story}</h2>
-        <p className={ui.note}>{t.storySoon}</p>
-      </section>
+      <div className={s.story}>
+        <EpisodeList />
+      </div>
     </Screen>
   )
 }

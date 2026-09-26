@@ -5,7 +5,10 @@ import type {
   AnswerRow,
   CardRow,
   DayRow,
+  EpisodeRow,
   GameRecordRow,
+  InterviewRow,
+  StoryRow,
   IntakeRow,
   MetaKey,
   MetaRow,
@@ -27,6 +30,9 @@ export class AppDB extends Dexie {
   intake!: EntityTable<IntakeRow, 'id'>
   moduleProgress!: EntityTable<ModuleProgressRow, 'moduleId'>
   sessions!: EntityTable<SessionRow, 'date'>
+  stories!: EntityTable<StoryRow, 'id'>
+  interviews!: EntityTable<InterviewRow, 'id'>
+  episodes!: EntityTable<EpisodeRow, 'id'>
 
   constructor(name = DB_NAME) {
     super(name)
@@ -51,8 +57,11 @@ export class AppDB extends Dexie {
 
 export const db = new AppDB()
 
-/** Таблицы прогресса — то, что стирает «Сбросить прогресс». Настройки остаются. */
-export const PROGRESS_TABLES = ['cards', 'reviews', 'days', 'achievements', 'gameRecords', 'answers', 'intake', 'moduleProgress', 'sessions'] as const
+/**
+  Таблицы прогресса — то, что стирает «Сбросить прогресс». Настройки и твои тексты («Мой рассказ») остаются:
+  это не прогресс, а твоя работа — её удаляют отдельно, в редакторе ответа.
+*/
+export const PROGRESS_TABLES = ['cards', 'reviews', 'days', 'achievements', 'gameRecords', 'answers', 'intake', 'moduleProgress', 'sessions', 'interviews', 'episodes'] as const
 
 export async function resetProgress(database: AppDB = db): Promise<void> {
   await database.transaction('rw', [...PROGRESS_TABLES, 'meta'], async () => {

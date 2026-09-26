@@ -11,7 +11,9 @@ import { HomeScreen } from '../features/session/HomeScreen'
 import { SessionScreen } from '../features/session/SessionScreen'
 import { SettingsScreen } from '../features/settings/SettingsScreen'
 import { StatsScreen } from '../features/stats/StatsScreen'
-import { StoryScreen } from '../features/story/StoryScreen'
+import { EpisodeScreen } from '../features/story/EpisodeScreen'
+import { InterviewScreen } from '../features/story/InterviewScreen'
+import { Fluency432, StoryEditor, StoryScreen, StoryTrain } from '../features/story/StoryScreen'
 import { TracksScreen } from '../features/tracks/TracksScreen'
 import { configureAudio } from '../lib/audio/audio'
 import { configureFeedback } from '../lib/audio/sfx'
@@ -51,6 +53,11 @@ export function App() {
           <Route path="profile" element={<ProfileScreen />} />
           <Route path="tracks" element={<TracksScreen />} />
           <Route path="story" element={<StoryScreen />} />
+          <Route path="story/:id" element={<StoryEditor />} />
+          <Route path="story/:id/train" element={<StoryTrain />} />
+          <Route path="story/:id/432" element={<Fluency432 />} />
+          <Route path="interview" element={<InterviewScreen />} />
+          <Route path="episode/:id" element={<EpisodeScreen />} />
           <Route path="dictionary" element={<DictionaryScreen />} />
           <Route path="more" element={<MoreScreen />} />
           <Route path="stats" element={<StatsScreen />} />
