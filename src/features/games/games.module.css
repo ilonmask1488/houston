@@ -155,6 +155,22 @@
   gap: var(--space-2);
 }
 
+.speedText {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.nextRound {
+  position: sticky;
+  bottom: calc(var(--safe-bottom) + var(--space-3));
+  min-height: var(--tap);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 600;
+}
+
 .points {
   color: var(--signal-ink);
   text-align: center;

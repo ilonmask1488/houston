@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { AnswerRow } from '../db/types'
-import { avgLatency, listeningBySpeed, minutesByDay, weakTags } from './stats'
+import { avgLatency, listeningBySpeed, minutesByDay, readingStats, weakTags, wordsByBand } from './stats'
 import { addDays } from './streak'
 
 const T = '2026-09-27'
@@ -31,5 +31,30 @@ describe('статистика', () => {
     expect(avgLatency([a({ track: 'call', latencyMs: 2000 }), a({ track: 'call', latencyMs: 4000 }), a({})])).toBe(3000)
     const w = weakTags([...Array.from({ length: 4 }, (_, i) => a({ tag: 'air-assim', correct: i === 0 })), ...Array.from({ length: 4 }, () => a({ tag: 'air-weak' }))])
     expect(w).toEqual([{ tag: 'air-assim', errorRate: 0.75, total: 4 }])
+  })
+})
+
+describe('чтение', () => {
+  it('скорость — медиана последних текстов, короткие замеры не считаются', () => {
+    const r = (words: number, sec: number) => a({ kind: 'read', track: 'doc', expected: String(words), given: String(sec) })
+    const s = readingStats([r(200, 60), r(200, 120), r(200, 80), r(200, 5)])
+    expect(s.wpm).toBe(150)
+    expect(s.texts).toBe(3)
+  })
+
+  it('поиск ответа: доля и среднее время верных', () => {
+    const f = (correct: boolean, ms: number) => a({ kind: 'find', track: 'doc', correct, latencyMs: ms })
+    expect(readingStats([f(true, 10_000), f(true, 20_000), f(false, 40_000)])).toMatchObject({ found: 2, findTotal: 3, findMs: 15_000 })
+    expect(readingStats([]).wpm).toBeNull()
+  })
+
+  it('слова по полосам частотности, свои — отдельно', () => {
+    const bands: Record<string, string> = { 'w-test': 'ngsl1', 'w-strain': 'tech', 'w-yield': 'nawl' }
+    expect(wordsByBand(['w-strain', 'w-test', 'u-foo', 'w-yield', 'w-test'], (id) => bands[id])).toEqual([
+      { band: 'ngsl1', n: 1 },
+      { band: 'nawl', n: 1 },
+      { band: 'tech', n: 1 },
+      { band: 'own', n: 1 },
+    ])
   })
 })

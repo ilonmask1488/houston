@@ -2,7 +2,9 @@ import Dexie from 'dexie'
 import { afterEach, describe, expect, it } from 'vitest'
 import { AppDB } from '../db/db'
 import type { CardRow } from '../db/types'
-import { addChunkCards, addPhraseCard, answerCard, mixKinds, retentionStats, reviewQueue, UNLOCK_DELAY_MS } from './cards'
+import { loadDictionary } from '../dict/dict'
+import { addChunkCards, addPhraseCard, addWordCards, answerCard, mixKinds, retentionStats, reviewQueue, UNLOCK_DELAY_MS } from './cards'
+await loadDictionary()
 import { formatInterval, newCard, parseCardId, previewIntervals, review } from './srs'
 
 const DAY = 24 * 60 * 60 * 1000
@@ -76,6 +78,17 @@ describe('карточки в базе', () => {
     const q = await reviewQueue(50, d, T0 + DAY)
     expect(q.cards.map((c) => c.id)).toEqual(['l-weak-01:3'])
     expect(q.totalDue).toBe(1)
+  })
+
+  it('слово из словаря и своё слово: карточки, «скажи сам» после «понял», очередь их видит', async () => {
+    const d = freshDb()
+    expect(await addWordCards('w-nozzle', d, T0)).toBe(2) // технический термин со звуком: 1 и 3
+    expect(await addWordCards('w-take', d, T0)).toBe(1) // общее слово без звука: только 1
+    await d.userWords.put({ id: 'u-outgas', text: 'outgas', ru: 'газовыделение', createdAt: T0 })
+    await d.cards.put(newCard('u-outgas', 1, T0))
+    expect(await answerCard('w-take:1', 3, 1000, 0.9, d, T0)).toEqual([2])
+    const q = await reviewQueue(50, d, T0 + DAY)
+    expect(q.cards.map((c) => c.itemId)).toEqual(expect.arrayContaining(['w-nozzle', 'u-outgas', 'w-take']))
   })
 
   it('типы в очереди перемешаны: не больше 3 одного типа подряд', () => {

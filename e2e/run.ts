@@ -46,8 +46,16 @@ export async function runSegment(page: Page, maxSteps = 80): Promise<void> {
       await click(page, 'Понятно, поехали')
       continue
     }
-    // Что прозвучало / акценты: первый вариант
-    const choice = page.getByRole('group', { name: /Что прозвучало\?|Что сказали\?/ }).getByRole('button').first()
+    // Техдок: прочитал
+    if (await visible(page, 'Прочитал')) {
+      await click(page, 'Прочитал')
+      continue
+    }
+    // Что прозвучало / акценты / Техдок (найти ответ, краткое содержание, разбор): первый вариант
+    const choice = page
+      .getByRole('group', { name: /Что прозвучало\?|Что сказали\?|нажми на предложение с ответом|краткое содержание|Разбор: выбери/ })
+      .getByRole('button')
+      .first()
     if ((await choice.isVisible().catch(() => false)) && (await choice.isEnabled({ timeout: 300 }).catch(() => false))) {
       await choice.click()
       await next(page)

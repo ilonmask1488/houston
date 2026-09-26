@@ -61,6 +61,11 @@ export function TracksScreen() {
                   )
                 })}
               </ol>
+              {id === 'doc' && (
+                <Link to="/library" className={s.extra}>
+                  {ru.doc.library} · {ru.doc.myText} →
+                </Link>
+              )}
             </section>
           )
         })}

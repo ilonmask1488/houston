@@ -23,6 +23,10 @@ export type AchievementId =
   | 'interview-1'
   | 'fluency-432'
   | 'episodes-3'
+  | 'retell-10'
+  | 'words-50'
+  | 'finder-10'
+  | 'speedread-150'
 
 type Check = () => Promise<boolean>
 
@@ -53,6 +57,11 @@ const CHECKS: Record<AchievementId, Check> = {
   'interview-1': async () => (await db.interviews.count()) > 0,
   'fluency-432': async () => (await db.answers.where('kind').equals('432').count()) >= 3,
   'episodes-3': async () => (await db.episodes.where('id').anyOf(['ep-1', 'ep-2', 'ep-3']).count()) >= 3,
+  // Техдок: пересказы абзацев вслух, слова в карточках, ответы, найденные быстрее 20 секунд, рекорд «Скорочтения»
+  'retell-10': async () => (await db.answers.where('kind').equals('retell').count()) >= 10,
+  'words-50': async () => (await db.cards.where('kind').equals(1).filter((c) => /^(w|u)-/.test(c.itemId)).count()) >= 50,
+  'finder-10': async () => (await db.answers.where('kind').equals('find').filter((a) => a.correct && (a.latencyMs ?? 99_999) <= 20_000).count()) >= 10,
+  'speedread-150': async () => ((await db.gameRecords.get('speedread'))?.best ?? 0) >= 150,
 }
 
 export const ACHIEVEMENT_IDS = Object.keys(CHECKS) as AchievementId[]

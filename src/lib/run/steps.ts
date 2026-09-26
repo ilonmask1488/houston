@@ -21,6 +21,12 @@ export type Step =
   | { kind: 'storyShadow'; story: string }
   | { kind: 'storyKeys'; story: string }
   | { kind: 'storyCold'; story: string }
+  /** Техдок: прочитать, найти ответ (на время), краткое содержание абзаца, пересказ вслух, разбор предложения */
+  | { kind: 'docRead'; text: string }
+  | { kind: 'docFind'; text: string; i: number; seconds?: number }
+  | { kind: 'docSummary'; text: string; p: number }
+  | { kind: 'docRetell'; text: string; p: number }
+  | { kind: 'docParse'; text: string }
 
 export type StepKind = Step['kind']
 
@@ -41,6 +47,11 @@ export const STEP_SECONDS: Record<StepKind, number> = {
   storyShadow: 100,
   storyKeys: 90,
   storyCold: 100,
+  docRead: 90,
+  docFind: 40,
+  docSummary: 30,
+  docRetell: 50,
+  docParse: 45,
 }
 
 /** Полная тренировка своего ответа. */
@@ -59,5 +70,5 @@ export function stepsSeconds(steps: Step[]): number {
 
 /** Шаг с ответом, у которого есть «верно/неверно» (для точности в итогах). */
 export function isQuestion(s: Step): boolean {
-  return s.kind === 'listen' || s.kind === 'dictation' || s.kind === 'passage' || s.kind === 'accents'
+  return ['listen', 'dictation', 'passage', 'accents', 'docFind', 'docSummary', 'docParse'].includes(s.kind)
 }

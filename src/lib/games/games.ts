@@ -2,6 +2,7 @@
   Мини-игры (ТЗ §7.2): короткие, с личным рекордом и комбо.
   «Помехи» — быстрая фраза, что сказали? Скорость растёт с серией.
   «Быстрый ответ» — вопрос, 5 секунд на начало, очки за вовремя начатый ответ и речь без долгих пауз.
+  «Скорочтение» — технический абзац, найти предложение с ответом, пока идёт таймер.
 */
 import { content } from '../../content'
 import type { VoiceId } from '../../content/types'
@@ -10,7 +11,8 @@ import { db } from '../db/db'
 import { rng, shuffle } from '../intake/plan'
 import { localDate } from '../progress/streak'
 
-export type GameId = 'static' | 'quick'
+export type GameId = 'static' | 'quick' | 'speedread'
+export const GAME_IDS: GameId[] = ['static', 'quick', 'speedread']
 export const STATIC_SECONDS = 60
 export const QUICK_ROUNDS = 3
 
@@ -54,6 +56,44 @@ export function quickPoints(r: { onTime: boolean; speechMs: number; longPauses: 
 
 export function quickQuestions(seed: number, n = QUICK_ROUNDS) {
   return shuffle(content.questions, rng(seed)).slice(0, n)
+}
+
+/* ——— Скорочтение ——— */
+
+export const SPEEDREAD_ROUNDS = 6
+
+/** Раунд «Скорочтения»: вопрос и абзац(ы) текста, где спрятан ответ. */
+export type SpeedreadItem = { id: string; text: string; q: string; key: string; paragraphs: string[] }
+
+/**
+  Раунды: вопросы «найди ответ» из текстов Техдока. На первом уровне — один абзац с ответом,
+  дальше — абзац с ответом и соседний: искать приходится в большем тексте.
+*/
+export function speedreadRounds(seed: number, n = SPEEDREAD_ROUNDS): SpeedreadItem[] {
+  const all: SpeedreadItem[] = []
+  for (const t of content.texts)
+    t.find.forEach((f, i) => {
+      const p = t.paragraphs.findIndex((x) => x.toLowerCase().includes(f.key.toLowerCase()))
+      if (p < 0) return
+      const other = p + 1 < t.paragraphs.length ? p + 1 : p - 1
+      const paragraphs = t.level === 1 || other < 0 ? [t.paragraphs[p]!] : [t.paragraphs[Math.min(p, other)]!, t.paragraphs[Math.max(p, other)]!]
+      all.push({ id: `${t.id}#${i}`, text: t.id, q: f.q, key: f.key, paragraphs })
+    })
+  // Не больше одного вопроса на текст за игру
+  const seen = new Set<string>()
+  return shuffle(all, rng(seed))
+    .filter((x) => !seen.has(x.text) && seen.add(x.text))
+    .slice(0, n)
+}
+
+/** Время на раунд: 40 секунд, с каждым верным подряд на 4 меньше, не меньше 15. */
+export function speedreadSeconds(streak: number): number {
+  return Math.max(15, 40 - 4 * streak)
+}
+
+/** Очки: 10 за верный ответ плюс по 2 за каждую оставшуюся секунду, умножить на комбо. */
+export function speedreadPoints(left: number, multiplier: number): number {
+  return (10 + 2 * left) * multiplier
 }
 
 /** Сохранить рекорд (за всё время и за неделю). Возвращает, побит ли рекорд. */

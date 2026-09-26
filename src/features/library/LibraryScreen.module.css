@@ -1,0 +1,131 @@
+.mine {
+  display: grid;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px dashed var(--line-strong);
+  border-radius: var(--radius-m);
+  color: inherit;
+  text-decoration: none;
+}
+
+.mineTitle {
+  font-weight: 600;
+}
+
+.mineWhat,
+.note,
+.itemMeta {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.level {
+  margin-top: var(--space-5);
+}
+
+.levelTitle {
+  margin-bottom: var(--space-2);
+  color: var(--signal-ink);
+  font-size: var(--fs-small);
+}
+
+.list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--hairline) solid var(--line);
+}
+
+.item {
+  display: grid;
+  gap: 2px;
+  padding: var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.itemTitle {
+  font-weight: 500;
+}
+
+.title {
+  margin: var(--space-2) 0;
+  font-size: var(--fs-title);
+  line-height: 1.25;
+}
+
+.note {
+  margin: var(--space-3) 0;
+}
+
+.sentence[data-on] {
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--signal) 18%, transparent);
+}
+
+.paraTools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+.listen {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 36px;
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: var(--fs-small);
+}
+
+.listen[data-playing] {
+  border-color: var(--signal);
+  background: var(--signal);
+  color: var(--on-signal);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.label {
+  display: grid;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-small);
+}
+
+.input,
+.area {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  font-size: 1rem;
+}
+
+.input {
+  min-height: var(--tap);
+}
+
+.area {
+  min-height: 10rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.input:focus,
+.area:focus {
+  border-color: var(--signal);
+  outline: none;
+}

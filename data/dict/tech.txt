@@ -1,0 +1,356 @@
+# Технический словарь. Формат: термин|МФА (US, ˈ — ударение)|перевод|тема. Сгенерировано, reviewed: false.
+# Темы: space — аэрокосмическая техника, prop — двигатели, mat — материалы и композиты,
+# test — прочность и испытания, cad — CAD и конструирование, sens — измерения и датчики.
+spacecraft|ˈspeɪskræft|космический аппарат|space
+satellite|ˈsætəlaɪt|спутник|space
+launch vehicle|ˈlɔːntʃ ˌviːəkəl|ракета-носитель|space
+payload|ˈpeɪloʊd|полезная нагрузка|space
+orbit|ˈɔːrbɪt|орбита|space
+orbital|ˈɔːrbɪtəl|орбитальный|space
+low Earth orbit|ˌloʊ ˈɜːrθ ˈɔːrbɪt|низкая околоземная орбита|space
+geostationary|ˌdʒiːoʊˈsteɪʃəneri|геостационарный|space
+apogee|ˈæpədʒiː|апогей|space
+perigee|ˈperɪdʒiː|перигей|space
+inclination|ˌɪnklɪˈneɪʃən|наклонение (орбиты)|space
+trajectory|trəˈdʒektəri|траектория|space
+reentry|riˈentri|вход в атмосферу|space
+heat shield|ˈhiːt ʃiːld|теплозащитный экран|space
+fairing|ˈferɪŋ|обтекатель|space
+payload adapter|ˈpeɪloʊd əˈdæptər|переходник полезной нагрузки|space
+separation|ˌsepəˈreɪʃən|отделение, разделение|space
+stage|steɪdʒ|ступень|space
+booster|ˈbuːstər|ускоритель|space
+upper stage|ˈʌpər steɪdʒ|верхняя ступень|space
+interstage|ˈɪntərsteɪdʒ|межступенчатый отсек|space
+avionics|ˌeɪviˈɑːnɪks|бортовое радиоэлектронное оборудование|space
+attitude control|ˈætɪtuːd kənˈtroʊl|управление ориентацией|space
+reaction wheel|riˈækʃən wiːl|маховик (системы ориентации)|space
+star tracker|ˈstɑːr ˌtrækər|звёздный датчик|space
+thruster|ˈθrʌstər|двигатель ориентации|space
+solar array|ˈsoʊlər əˈreɪ|солнечная батарея|space
+deployment|dɪˈplɔɪmənt|раскрытие, развёртывание|space
+antenna|ænˈtenə|антенна|space
+telemetry|təˈlemətri|телеметрия|space
+ground station|ˈɡraʊnd ˌsteɪʃən|наземная станция|space
+mission control|ˈmɪʃən kənˈtroʊl|центр управления полётами|space
+thermal control|ˈθɜːrməl kənˈtroʊl|система терморегулирования|space
+radiator|ˈreɪdieɪtər|радиатор|space
+multilayer insulation|ˌmʌltiˈleɪər ˌɪnsəˈleɪʃən|экранно-вакуумная теплоизоляция|space
+vacuum|ˈvækjuːm|вакуум|space
+outgassing|ˈaʊtɡæsɪŋ|газовыделение|space
+microgravity|ˌmaɪkroʊˈɡrævəti|микрогравитация|space
+debris|dəˈbriː|мусор, обломки|space
+CubeSat|ˈkjuːbsæt|кубсат|space
+launch pad|ˈlɔːntʃ pæd|стартовый стол|space
+countdown|ˈkaʊntdaʊn|обратный отсчёт|space
+liftoff|ˈlɪftɔːf|отрыв от стола, старт|space
+docking|ˈdɑːkɪŋ|стыковка|space
+aerodynamic|ˌeroʊdaɪˈnæmɪk|аэродинамический|space
+drag coefficient|ˈdræɡ ˌkoʊɪˈfɪʃənt|коэффициент лобового сопротивления|space
+angle of attack|ˈæŋɡəl əv əˈtæk|угол атаки|space
+Mach number|ˈmɑːk ˌnʌmbər|число Маха|space
+supersonic|ˌsuːpərˈsɑːnɪk|сверхзвуковой|space
+propulsion|prəˈpʌlʃən|двигательная установка|prop
+rocket engine|ˈrɑːkɪt ˌendʒɪn|ракетный двигатель|prop
+liquid propellant|ˈlɪkwɪd prəˈpelənt|жидкое ракетное топливо|prop
+solid rocket motor|ˈsɑːlɪd ˈrɑːkɪt ˈmoʊtər|ракетный двигатель твёрдого топлива|prop
+propellant|prəˈpelənt|ракетное топливо|prop
+oxidizer|ˈɑːksɪdaɪzər|окислитель|prop
+fuel|ˈfjuːəl|горючее, топливо|prop
+liquid oxygen|ˈlɪkwɪd ˈɑːksɪdʒən|жидкий кислород|prop
+kerosene|ˈkerəsiːn|керосин|prop
+methane|ˈmeθeɪn|метан|prop
+combustion chamber|kəmˈbʌstʃən ˈtʃeɪmbər|камера сгорания|prop
+combustion|kəmˈbʌstʃən|горение, сгорание|prop
+injector|ɪnˈdʒektər|форсунка; смесительная головка|prop
+nozzle|ˈnɑːzəl|сопло|prop
+throat|θroʊt|критическое сечение сопла|prop
+expansion ratio|ɪkˈspænʃən ˌreɪʃioʊ|степень расширения сопла|prop
+thrust|θrʌst|тяга|prop
+specific impulse|spəˈsɪfɪk ˈɪmpʌls|удельный импульс|prop
+chamber pressure|ˈtʃeɪmbər ˈpreʃər|давление в камере|prop
+mixture ratio|ˈmɪkstʃər ˌreɪʃioʊ|соотношение компонентов|prop
+turbopump|ˈtɜːrboʊpʌmp|турбонасосный агрегат|prop
+turbine|ˈtɜːrbaɪn|турбина|prop
+gas generator|ˈɡæs ˈdʒenəreɪtər|газогенератор|prop
+preburner|ˈpriːbɜːrnər|предкамера (газогенератор)|prop
+staged combustion|ˈsteɪdʒd kəmˈbʌstʃən|схема с дожиганием|prop
+regenerative cooling|rɪˈdʒenərətɪv ˈkuːlɪŋ|регенеративное охлаждение|prop
+film cooling|ˈfɪlm ˈkuːlɪŋ|плёночное (завесное) охлаждение|prop
+ablative|æbˈleɪtɪv|абляционный|prop
+ignition|ɪɡˈnɪʃən|зажигание|prop
+igniter|ɪɡˈnaɪtər|воспламенитель|prop
+shutdown|ˈʃʌtdaʊn|выключение (двигателя)|prop
+throttle|ˈθrɑːtəl|дросселировать; дроссель|prop
+gimbal|ˈdʒɪmbəl|карданный подвес|prop
+thrust vector control|ˈθrʌst ˈvektər kənˈtroʊl|управление вектором тяги|prop
+static fire|ˈstætɪk ˈfaɪər|огневые стендовые испытания|prop
+hot fire test|ˈhɑːt ˈfaɪər test|огневое испытание|prop
+combustion instability|kəmˈbʌstʃən ˌɪnstəˈbɪləti|неустойчивость горения|prop
+feed system|ˈfiːd ˌsɪstəm|система подачи|prop
+pressurization|ˌpreʃəraɪˈzeɪʃən|наддув|prop
+tank|tæŋk|бак|prop
+valve|vælv|клапан|prop
+check valve|ˈtʃek vælv|обратный клапан|prop
+manifold|ˈmænɪfoʊld|коллектор|prop
+flow rate|ˈfloʊ reɪt|расход|prop
+mass flow|ˈmæs floʊ|массовый расход|prop
+heat flux|ˈhiːt flʌks|тепловой поток|prop
+additive manufacturing|ˈædətɪv ˌmænjəˈfæktʃərɪŋ|аддитивное производство|prop
+composite|kəmˈpɑːzɪt|композит; составной|mat
+carbon fiber|ˈkɑːrbən ˌfaɪbər|углеродное волокно|mat
+glass fiber|ˈɡlæs ˌfaɪbər|стекловолокно|mat
+matrix|ˈmeɪtrɪks|матрица (связующее)|mat
+resin|ˈrezɪn|смола|mat
+epoxy|ɪˈpɑːksi|эпоксидная смола|mat
+prepreg|ˈpriːpreɡ|препрег|mat
+ply|plaɪ|слой (монослой)|mat
+laminate|ˈlæmɪnət|ламинат, слоистый пластик|mat
+layup|ˈleɪʌp|схема укладки; выкладка|mat
+fiber orientation|ˈfaɪbər ˌɔːriənˈteɪʃən|ориентация волокон|mat
+unidirectional|ˌjuːnɪdəˈrekʃənəl|однонаправленный|mat
+woven fabric|ˈwoʊvən ˈfæbrɪk|тканый материал|mat
+autoclave|ˈɔːtəkleɪv|автоклав|mat
+cure|kjʊr|отверждение; отверждать|mat
+curing cycle|ˈkjʊrɪŋ ˌsaɪkəl|режим отверждения|mat
+void content|ˈvɔɪd ˌkɑːntent|пористость|mat
+fiber volume fraction|ˈfaɪbər ˈvɑːljuːm ˈfrækʃən|объёмная доля волокна|mat
+sandwich panel|ˈsændwɪtʃ ˈpænəl|трёхслойная (сотовая) панель|mat
+honeycomb core|ˈhʌnikoʊm kɔːr|сотовый заполнитель|mat
+face sheet|ˈfeɪs ʃiːt|обшивка (несущий слой)|mat
+delamination|diːˌlæmɪˈneɪʃən|расслоение|mat
+debonding|diːˈbɑːndɪŋ|отслоение|mat
+adhesive|ədˈhiːsɪv|клей; клеевой|mat
+bonded joint|ˈbɑːndɪd dʒɔɪnt|клеевое соединение|mat
+aluminum alloy|əˈluːmɪnəm ˈæləɪ|алюминиевый сплав|mat
+titanium|taɪˈteɪniəm|титан|mat
+stainless steel|ˈsteɪnləs ˈstiːl|нержавеющая сталь|mat
+nickel superalloy|ˈnɪkəl ˈsuːpərˌæləɪ|никелевый жаропрочный сплав|mat
+alloy|ˈæləɪ|сплав|mat
+heat treatment|ˈhiːt ˌtriːtmənt|термообработка|mat
+anneal|əˈniːl|отжигать|mat
+hardness|ˈhɑːrdnəs|твёрдость|mat
+ductile|ˈdʌktəl|пластичный|mat
+brittle|ˈbrɪtəl|хрупкий|mat
+toughness|ˈtʌfnəs|вязкость (разрушения)|mat
+corrosion|kəˈroʊʒən|коррозия|mat
+coating|ˈkoʊtɪŋ|покрытие|mat
+anodizing|ˈænədaɪzɪŋ|анодирование|mat
+isotropic|ˌaɪsəˈtrɑːpɪk|изотропный|mat
+anisotropic|ˌænaɪsəˈtrɑːpɪk|анизотропный|mat
+thermal expansion|ˈθɜːrməl ɪkˈspænʃən|тепловое расширение|mat
+coefficient of thermal expansion|ˌkoʊɪˈfɪʃənt əv ˈθɜːrməl ɪkˈspænʃən|коэффициент теплового расширения|mat
+density|ˈdensəti|плотность|mat
+porosity|pəˈrɑːsəti|пористость|mat
+grain|ɡreɪn|зерно (структуры)|mat
+microstructure|ˈmaɪkroʊˌstrʌktʃər|микроструктура|mat
+specimen|ˈspesəmən|образец|test
+stress|stres|механическое напряжение|test
+strain|streɪn|деформация (относительная)|test
+load|loʊd|нагрузка|test
+tensile|ˈtensəl|растягивающий, на растяжение|test
+compressive|kəmˈpresɪv|сжимающий, на сжатие|test
+shear|ʃɪr|сдвиг, срез|test
+bending|ˈbendɪŋ|изгиб|test
+torsion|ˈtɔːrʃən|кручение|test
+buckling|ˈbʌklɪŋ|потеря устойчивости|test
+fatigue|fəˈtiːɡ|усталость|test
+creep|kriːp|ползучесть|test
+yield strength|ˈjiːld ˌstreŋkθ|предел текучести|test
+ultimate strength|ˈʌltɪmət ˈstreŋkθ|предел прочности|test
+tensile strength|ˈtensəl ˈstreŋkθ|предел прочности при растяжении|test
+Young's modulus|ˈjʌŋz ˈmɑːdʒələs|модуль Юнга|test
+modulus of elasticity|ˈmɑːdʒələs əv ɪˌlæˈstɪsəti|модуль упругости|test
+Poisson's ratio|pwɑːˈsoʊnz ˈreɪʃioʊ|коэффициент Пуассона|test
+stiffness|ˈstɪfnəs|жёсткость|test
+elongation|ˌiːlɔːŋˈɡeɪʃən|удлинение|test
+deformation|ˌdiːfɔːrˈmeɪʃən|деформация|test
+elastic|ɪˈlæstɪk|упругий|test
+plastic deformation|ˈplæstɪk ˌdiːfɔːrˈmeɪʃən|пластическая деформация|test
+fracture|ˈfræktʃər|разрушение; излом|test
+crack growth|ˈkræk ɡroʊθ|рост трещины|test
+stress concentration|ˈstres ˌkɑːnsənˈtreɪʃən|концентрация напряжений|test
+safety factor|ˈseɪfti ˌfæktər|коэффициент безопасности|test
+margin of safety|ˈmɑːrdʒɪn əv ˈseɪfti|запас прочности|test
+failure mode|ˈfeɪljər moʊd|вид (характер) разрушения|test
+failure load|ˈfeɪljər loʊd|разрушающая нагрузка|test
+limit load|ˈlɪmɪt loʊd|эксплуатационная (предельная) нагрузка|test
+design load|dɪˈzaɪn loʊd|расчётная нагрузка|test
+test rig|ˈtest rɪɡ|испытательный стенд|test
+test article|ˈtest ˌɑːrtɪkəl|объект испытаний|test
+fixture|ˈfɪkstʃər|приспособление, оснастка|test
+grip|ɡrɪp|захват|test
+actuator|ˈæktʃueɪtər|привод, актуатор|test
+load cell|ˈloʊd sel|датчик силы (динамометр)|test
+tensile test|ˈtensəl test|испытание на растяжение|test
+three-point bending|ˈθriː pɔɪnt ˈbendɪŋ|трёхточечный изгиб|test
+vibration test|vaɪˈbreɪʃən test|вибрационное испытание|test
+random vibration|ˈrændəm vaɪˈbreɪʃən|случайная вибрация|test
+sine sweep|ˈsaɪn swiːp|синусоидальная развёртка|test
+shaker|ˈʃeɪkər|вибростенд|test
+resonance|ˈrezənəns|резонанс|test
+natural frequency|ˈnætʃərəl ˈfriːkwənsi|собственная частота|test
+mode shape|ˈmoʊd ʃeɪp|форма колебаний|test
+damping|ˈdæmpɪŋ|демпфирование|test
+shock test|ˈʃɑːk test|испытание на удар|test
+thermal vacuum test|ˈθɜːrməl ˈvækjuːm test|термовакуумное испытание|test
+thermal cycling|ˈθɜːrməl ˈsaɪklɪŋ|термоциклирование|test
+proof test|ˈpruːf test|испытание пробным давлением|test
+burst pressure|ˈbɜːrst ˌpreʃər|разрушающее давление|test
+leak test|ˈliːk test|испытание на герметичность|test
+qualification|ˌkwɑːlɪfɪˈkeɪʃən|квалификация (испытания)|test
+acceptance test|əkˈseptəns test|приёмочное испытание|test
+non-destructive testing|ˌnɑːn dɪˈstrʌktɪv ˈtestɪŋ|неразрушающий контроль|test
+ultrasonic inspection|ˌʌltrəˈsɑːnɪk ɪnˈspekʃən|ультразвуковой контроль|test
+X-ray inspection|ˈeks reɪ ɪnˈspekʃən|рентгеновский контроль|test
+finite element analysis|ˈfaɪnaɪt ˈelɪmənt əˈnæləsɪs|метод конечных элементов, МКЭ|test
+mesh|meʃ|сетка (конечных элементов)|test
+boundary condition|ˈbaʊndri kənˈdɪʃən|граничное условие|test
+convergence|kənˈvɜːrdʒəns|сходимость|test
+von Mises stress|fɑːn ˈmiːzəz stres|напряжение по Мизесу|test
+free-body diagram|ˌfriː ˈbɑːdi ˈdaɪəɡræm|расчётная схема с силами|test
+moment of inertia|ˈmoʊmənt əv ɪˈnɜːrʃə|момент инерции|test
+cross section|ˈkrɔːs ˌsekʃən|поперечное сечение|test
+beam|biːm|балка|test
+cantilever|ˈkæntɪliːvər|консоль|test
+deflection|dɪˈflekʃən|прогиб|test
+torque|tɔːrk|крутящий момент; момент затяжки|test
+preload|ˈpriːloʊd|предварительная затяжка|test
+drawing|ˈdrɔːɪŋ|чертёж|cad
+technical drawing|ˈteknɪkəl ˈdrɔːɪŋ|технический чертёж|cad
+assembly drawing|əˈsembli ˈdrɔːɪŋ|сборочный чертёж|cad
+part|pɑːrt|деталь|cad
+assembly|əˈsembli|сборка, сборочная единица|cad
+subassembly|ˈsʌbəˌsembli|подсборка|cad
+bill of materials|ˌbɪl əv məˈtɪriəlz|спецификация (перечень)|cad
+dimension|daɪˈmenʃən|размер|cad
+tolerance|ˈtɑːlərəns|допуск|cad
+fit|fɪt|посадка|cad
+clearance|ˈklɪrəns|зазор|cad
+interference fit|ˌɪntərˈfɪrəns fɪt|посадка с натягом|cad
+tolerance stack-up|ˈtɑːlərəns ˈstækʌp|размерная цепь|cad
+datum|ˈdeɪtəm|база (на чертеже)|cad
+geometric tolerance|ˌdʒiːəˈmetrɪk ˈtɑːlərəns|допуск формы и расположения|cad
+flatness|ˈflætnəs|плоскостность|cad
+surface roughness|ˈsɜːrfɪs ˈrʌfnəs|шероховатость поверхности|cad
+chamfer|ˈtʃæmfər|фаска|cad
+fillet|ˈfɪlɪt|скругление; галтель|cad
+rib|rɪb|ребро|cad
+boss|bɔːs|бобышка|cad
+through hole|ˈθruː hoʊl|сквозное отверстие|cad
+threaded hole|ˈθredɪd hoʊl|резьбовое отверстие|cad
+countersink|ˈkaʊntərsɪŋk|зенковка|cad
+bolt|boʊlt|болт|cad
+nut|nʌt|гайка|cad
+washer|ˈwɑːʃər|шайба|cad
+rivet|ˈrɪvɪt|заклёпка|cad
+fastener|ˈfæsənər|крепёж|cad
+bracket|ˈbrækɪt|кронштейн|cad
+flange|flændʒ|фланец|cad
+shaft|ʃæft|вал|cad
+bearing|ˈberɪŋ|подшипник|cad
+hinge|hɪndʒ|шарнир, петля|cad
+sketch|sketʃ|эскиз|cad
+extrude|ɪkˈstruːd|выдавливать|cad
+revolve|rɪˈvɑːlv|вращать (операция вращения)|cad
+sweep|swiːp|протягивание (по траектории)|cad
+loft|lɔːft|по сечениям (операция)|cad
+parametric|ˌpærəˈmetrɪk|параметрический|cad
+constraint|kənˈstreɪnt|привязка; ограничение|cad
+feature tree|ˈfiːtʃər triː|дерево построения|cad
+mate|meɪt|сопряжение|cad
+section view|ˈsekʃən vjuː|разрез (вид)|cad
+isometric view|ˌaɪsəˈmetrɪk vjuː|изометрия|cad
+title block|ˈtaɪtəl blɑːk|основная надпись (штамп)|cad
+revision|rɪˈvɪʒən|ревизия, изменение|cad
+design review|dɪˈzaɪn rɪˈvjuː|рассмотрение проекта|cad
+requirement|rɪˈkwaɪrmənt|требование|cad
+specification|ˌspesɪfɪˈkeɪʃən|технические условия, спецификация|cad
+trade-off|ˈtreɪd ɔːf|компромисс (выбор)|cad
+prototype|ˈproʊtətaɪp|прототип|cad
+machining|məˈʃiːnɪŋ|механообработка|cad
+milling|ˈmɪlɪŋ|фрезерование|cad
+turning|ˈtɜːrnɪŋ|токарная обработка|cad
+drilling|ˈdrɪlɪŋ|сверление|cad
+welding|ˈweldɪŋ|сварка|cad
+casting|ˈkæstɪŋ|литьё; отливка|cad
+sheet metal|ˈʃiːt ˌmetəl|листовой металл|cad
+workshop|ˈwɜːrkʃɑːp|цех, мастерская|cad
+lead time|ˈliːd taɪm|срок изготовления/поставки|cad
+sensor|ˈsensər|датчик|sens
+transducer|trænzˈduːsər|преобразователь|sens
+strain gauge|ˈstreɪn ɡeɪdʒ|тензодатчик|sens
+Wheatstone bridge|ˈwiːtstoʊn brɪdʒ|мост Уитстона|sens
+gauge factor|ˈɡeɪdʒ ˌfæktər|коэффициент тензочувствительности|sens
+accelerometer|əkˌseləˈrɑːmɪtər|акселерометр|sens
+thermocouple|ˈθɜːrmoʊˌkʌpəl|термопара|sens
+thermistor|θərˈmɪstər|терморезистор|sens
+pressure transducer|ˈpreʃər trænzˈduːsər|датчик давления|sens
+flow meter|ˈfloʊ ˌmiːtər|расходомер|sens
+gyroscope|ˈdʒaɪrəskoʊp|гироскоп|sens
+extensometer|ˌekstenˈsɑːmɪtər|экстензометр|sens
+data acquisition|ˈdeɪtə ˌækwɪˈzɪʃən|сбор данных|sens
+sampling rate|ˈsæmplɪŋ reɪt|частота дискретизации|sens
+signal conditioning|ˈsɪɡnəl kənˈdɪʃənɪŋ|нормирование сигнала|sens
+amplifier|ˈæmplɪfaɪər|усилитель|sens
+excitation voltage|ˌeksaɪˈteɪʃən ˈvoʊltɪdʒ|напряжение питания (возбуждения)|sens
+calibration|ˌkælɪˈbreɪʃən|калибровка|sens
+calibration certificate|ˌkælɪˈbreɪʃən sərˈtɪfɪkət|сертификат калибровки|sens
+accuracy|ˈækjərəsi|точность|sens
+precision|prɪˈsɪʒən|прецизионность, воспроизводимость|sens
+resolution|ˌrezəˈluːʃən|разрешение|sens
+uncertainty|ʌnˈsɜːrtənti|неопределённость измерения|sens
+repeatability|rɪˌpiːtəˈbɪləti|повторяемость|sens
+drift|drɪft|дрейф|sens
+offset|ˈɔːfset|смещение нуля|sens
+noise|nɔɪz|шум|sens
+full scale|ˌfʊl ˈskeɪl|полная шкала|sens
+range|reɪndʒ|диапазон|sens
+linearity|ˌlɪniˈærəti|линейность|sens
+hysteresis|ˌhɪstəˈriːsɪs|гистерезис|sens
+bandwidth|ˈbændwɪdθ|полоса пропускания|sens
+frequency response|ˈfriːkwənsi rɪˈspɑːns|частотная характеристика|sens
+output signal|ˈaʊtpʊt ˈsɪɡnəl|выходной сигнал|sens
+voltage|ˈvoʊltɪdʒ|напряжение (электрическое)|sens
+current|ˈkɜːrənt|ток|sens
+resistance|rɪˈzɪstəns|сопротивление|sens
+connector|kəˈnektər|разъём|sens
+wiring|ˈwaɪərɪŋ|проводка|sens
+shielding|ˈʃiːldɪŋ|экранирование|sens
+ground loop|ˈɡraʊnd luːp|контур заземления|sens
+datasheet|ˈdeɪtəʃiːt|техническое описание (даташит)|sens
+operating temperature|ˈɑːpəreɪtɪŋ ˈtemprətʃər|рабочая температура|sens
+power supply|ˈpaʊər səˈplaɪ|источник питания|sens
+abstract|ˈæbstrækt|аннотация (статьи)|doc
+introduction|ˌɪntrəˈdʌkʃən|введение|doc
+methodology|ˌmeθəˈdɑːlədʒi|методика|doc
+results|rɪˈzʌlts|результаты|doc
+discussion|dɪˈskʌʃən|обсуждение|doc
+conclusion|kənˈkluːʒən|выводы, заключение|doc
+references|ˈrefərənsəz|список литературы|doc
+peer review|ˈpɪr rɪˈvjuː|рецензирование|doc
+test report|ˈtest rɪˌpɔːrt|отчёт об испытаниях|doc
+test procedure|ˈtest prəˌsiːdʒər|программа-методика испытаний|doc
+standard|ˈstændərd|стандарт|doc
+shall|ʃæl|должен (обязательное требование)|doc
+should|ʃʊd|следует (рекомендация)|doc
+may|meɪ|допускается|doc
+compliance|kəmˈplaɪəns|соответствие требованиям|doc
+nonconformance|ˌnɑːnkənˈfɔːrməns|несоответствие|doc
+deviation|ˌdiːviˈeɪʃən|отклонение|doc
+approval|əˈpruːvəl|утверждение|doc
+sign off|ˌsaɪn ˈɔːf|утвердить, подписать|doc
+deliverable|dɪˈlɪvərəbəl|результат работ (сдаваемый)|doc
+milestone|ˈmaɪlstoʊn|контрольная точка|doc
+work package|ˈwɜːrk ˈpækɪdʒ|пакет работ|doc
+figure|ˈfɪɡjər|рисунок (в статье)|doc
+equation|ɪˈkweɪʒən|уравнение|doc
+appendix|əˈpendɪks|приложение|doc
+nomenclature|ˈnoʊmənkleɪtʃər|список обозначений|doc
+assumption|əˈsʌmpʃən|допущение|doc
+hypothesis|haɪˈpɑːθəsɪs|гипотеза|doc
+correlation|ˌkɔːrəˈleɪʃən|корреляция; сходимость расчёта с испытанием|doc
+scatter|ˈskætər|разброс|doc
+mean value|ˈmiːn ˈvæljuː|среднее значение|doc
+standard deviation|ˈstændərd ˌdiːviˈeɪʃən|среднеквадратическое отклонение|doc
+significant figures|sɪɡˈnɪfɪkənt ˈfɪɡjərz|значащие цифры|doc

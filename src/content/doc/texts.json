@@ -1,0 +1,2188 @@
+[
+ {
+  "id": "t-sat-bus",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "space",
+  "kind": "статья",
+  "title": "What a satellite bus does",
+  "paragraphs": [
+   "Every satellite has two main parts: the payload and the bus. The payload is the reason the satellite exists, for example a camera or a radio transmitter. The bus is everything else that keeps the payload working.",
+   "The bus provides electrical power from solar arrays and batteries. It controls the attitude, so that the antennas and the camera point in the right direction. It also keeps the temperature inside a safe range, because electronics do not like to be too hot or too cold. Engineers often reuse the same bus design for different missions, which saves time and money."
+  ],
+  "summaries": [
+   [
+    "A satellite consists of a payload, which does the mission, and a bus, which supports it.",
+    "A satellite bus is a vehicle that carries astronauts to orbit.",
+    "The payload provides power and controls the temperature."
+   ],
+   [
+    "The bus supplies power, controls attitude and temperature, and is often reused.",
+    "Electronics work best at very low temperatures.",
+    "Each mission needs a completely new bus design."
+   ]
+  ],
+  "retell": [
+   "A satellite has a payload that does the job and a bus that supports it.",
+   "The bus gives power, points the satellite and keeps the temperature right, and it can be reused."
+  ],
+  "parse": {
+   "sentence": "It also keeps the temperature inside a safe range, because electronics do not like to be too hot or too cold.",
+   "parts": [
+    [
+     "It also keeps the temperature",
+     "главное: «Он (бус) также поддерживает температуру»"
+    ],
+    [
+     "inside a safe range",
+     "в безопасных пределах"
+    ],
+    [
+     "because electronics do not like…",
+     "причина: электроника не любит перегрева и переохлаждения"
+    ]
+   ],
+   "q": "What keeps the temperature in a safe range?",
+   "options": [
+    "The bus",
+    "The electronics",
+    "The camera"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "Where does the electrical power come from?",
+    "key": "solar arrays and batteries"
+   },
+   {
+    "q": "Why do engineers reuse the same bus design?",
+    "key": "saves time and money"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A satellite has a payload that does the job and a bus that supports it.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A satellite has a payload that does the job and a bus that supports it.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A satellite has a payload that does the job and a bus that supports it.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A satellite has a payload that does the job and a bus that supports it.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The bus gives power, points the satellite and keeps the temperature right, and it can be reused.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The bus gives power, points the satellite and keeps the temperature right, and it can be reused.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The bus gives power, points the satellite and keeps the temperature right, and it can be reused.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The bus gives power, points the satellite and keeps the temperature right, and it can be reused.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-liquid-engine",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "prop",
+  "kind": "статья",
+  "title": "How a liquid rocket engine works",
+  "paragraphs": [
+   "A liquid rocket engine burns a fuel and an oxidizer, for example kerosene and liquid oxygen. Pumps push both liquids into the combustion chamber, where they mix and burn at a very high temperature.",
+   "The hot gas then flows through the nozzle. The narrow part of the nozzle is called the throat. After the throat, the nozzle becomes wider, and the gas accelerates to a very high speed. This fast jet of gas pushes the rocket forward. The force it creates is called thrust."
+  ],
+  "summaries": [
+   [
+    "Fuel and oxidizer are pumped into a chamber where they burn.",
+    "Liquid oxygen is used as fuel in all rockets.",
+    "The chamber keeps the liquids cold."
+   ],
+   [
+    "The gas speeds up in the nozzle and creates thrust.",
+    "The throat is the widest part of the nozzle.",
+    "Thrust is the temperature of the gas."
+   ]
+  ],
+  "retell": [
+   "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+   "The hot gas speeds up in the nozzle, and the fast jet creates thrust."
+  ],
+  "parse": {
+   "sentence": "After the throat, the nozzle becomes wider, and the gas accelerates to a very high speed.",
+   "parts": [
+    [
+     "After the throat",
+     "обстоятельство: после критического сечения"
+    ],
+    [
+     "the nozzle becomes wider",
+     "сопло расширяется"
+    ],
+    [
+     "and the gas accelerates",
+     "и газ разгоняется"
+    ]
+   ],
+   "q": "What happens to the gas after the throat?",
+   "options": [
+    "It accelerates",
+    "It burns again",
+    "It cools down and stops"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the narrow part of the nozzle called?",
+    "key": "is called the throat"
+   },
+   {
+    "q": "What pushes the liquids into the combustion chamber?",
+    "key": "Pumps push both liquids"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-composites",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "mat",
+  "kind": "статья",
+  "title": "Why engineers like composites",
+  "paragraphs": [
+   "A composite material is made of two or more materials that work together. In aerospace, the most common composite is carbon fiber in an epoxy matrix. The fibers carry the load, and the matrix holds the fibers together.",
+   "Composites are popular because they are stiff and light. A carbon fiber part can be much lighter than the same part made of aluminum. However, composites are also more expensive, and they can hide damage inside, where it is difficult to see. For this reason, they need careful inspection."
+  ],
+  "summaries": [
+   [
+    "In a composite, fibers carry the load and a matrix holds them together.",
+    "Composites are made of a single metal.",
+    "The matrix carries most of the load."
+   ],
+   [
+    "Composites are light and stiff but expensive and need careful inspection.",
+    "Composites are always cheaper than aluminum.",
+    "Damage in composites is easy to see."
+   ]
+  ],
+  "retell": [
+   "A composite combines materials: the fibers carry the load and the matrix holds them.",
+   "Composites are light and stiff, but they cost more and can hide damage, so they need inspection."
+  ],
+  "parse": {
+   "sentence": "However, composites are also more expensive, and they can hide damage inside, where it is difficult to see.",
+   "parts": [
+    [
+     "However",
+     "однако — противопоставление предыдущему"
+    ],
+    [
+     "composites are also more expensive",
+     "композиты к тому же дороже"
+    ],
+    [
+     "they can hide damage inside, where it is difficult to see",
+     "могут скрывать повреждения внутри, где их трудно увидеть"
+    ]
+   ],
+   "q": "What is difficult to see?",
+   "options": [
+    "Damage inside the part",
+    "The price",
+    "The fibers on the surface"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What holds the fibers together?",
+    "key": "the matrix holds the fibers together"
+   },
+   {
+    "q": "Why do composites need careful inspection?",
+    "key": "hide damage inside"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A composite combines materials: the fibers carry the load and the matrix holds them.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A composite combines materials: the fibers carry the load and the matrix holds them.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A composite combines materials: the fibers carry the load and the matrix holds them.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A composite combines materials: the fibers carry the load and the matrix holds them.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Composites are light and stiff, but they cost more and can hide damage, so they need inspection.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Composites are light and stiff, but they cost more and can hide damage, so they need inspection.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Composites are light and stiff, but they cost more and can hide damage, so they need inspection.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Composites are light and stiff, but they cost more and can hide damage, so they need inspection.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-tensile",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "test",
+  "kind": "статья",
+  "title": "A simple tensile test",
+  "paragraphs": [
+   "A tensile test shows how strong a material is. A flat or round specimen is held in two grips. The machine pulls the grips apart slowly, and the specimen becomes longer until it breaks.",
+   "During the test, a load cell measures the force, and an extensometer or a strain gauge measures how much the specimen stretches. From these data, engineers draw a stress-strain curve. The highest point of the curve shows the tensile strength, and the slope at the beginning shows the stiffness of the material."
+  ],
+  "summaries": [
+   [
+    "In a tensile test, a specimen is pulled until it breaks.",
+    "In a tensile test, a specimen is heated in an oven.",
+    "The grips measure the temperature of the specimen."
+   ],
+   [
+    "Force and stretch are measured to build a stress-strain curve.",
+    "The load cell measures how much the specimen stretches.",
+    "The curve only shows the color of the material."
+   ]
+  ],
+  "retell": [
+   "In a tensile test, a machine pulls a specimen until it breaks.",
+   "We measure force and stretch and get a curve that shows the strength and the stiffness."
+  ],
+  "parse": {
+   "sentence": "The highest point of the curve shows the tensile strength, and the slope at the beginning shows the stiffness of the material.",
+   "parts": [
+    [
+     "The highest point of the curve",
+     "подлежащее 1: наивысшая точка кривой"
+    ],
+    [
+     "shows the tensile strength",
+     "показывает предел прочности"
+    ],
+    [
+     "the slope at the beginning shows the stiffness",
+     "наклон в начале показывает жёсткость"
+    ]
+   ],
+   "q": "What shows the stiffness?",
+   "options": [
+    "The slope at the beginning",
+    "The highest point",
+    "The load cell"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What measures the force?",
+    "key": "a load cell measures the force"
+   },
+   {
+    "q": "What does the slope at the beginning of the curve show?",
+    "key": "slope at the beginning shows the stiffness"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "In a tensile test, a machine pulls a specimen until it breaks.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In a tensile test, a machine pulls a specimen until it breaks.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In a tensile test, a machine pulls a specimen until it breaks.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In a tensile test, a machine pulls a specimen until it breaks.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+    "voice": "us-f"
+   },
+   {
+    "text": "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+    "voice": "us-m"
+   },
+   {
+    "text": "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-cad",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "cad",
+  "kind": "статья",
+  "title": "From sketch to 3D model",
+  "paragraphs": [
+   "Most CAD models start with a 2D sketch. The designer draws lines and circles on a plane and adds dimensions and constraints, for example that two lines are parallel.",
+   "Then the sketch becomes a 3D feature. The most common features are extrude, which pulls the sketch into a solid, and revolve, which turns it around an axis. The designer adds holes, fillets and chamfers, one feature at a time. Because the model is parametric, changing one dimension later updates the whole part."
+  ],
+  "summaries": [
+   [
+    "A CAD model usually starts with a dimensioned 2D sketch.",
+    "CAD models always start as 3D solids.",
+    "Constraints are only used in drawings."
+   ],
+   [
+    "Features like extrude and revolve turn sketches into a parametric solid.",
+    "A parametric model cannot be changed after it is built.",
+    "Revolve pulls the sketch in a straight line."
+   ]
+  ],
+  "retell": [
+   "A CAD model starts with a 2D sketch with dimensions and constraints.",
+   "Features like extrude and revolve make it 3D, and because it is parametric, one change updates the part."
+  ],
+  "parse": {
+   "sentence": "Because the model is parametric, changing one dimension later updates the whole part.",
+   "parts": [
+    [
+     "Because the model is parametric",
+     "причина: модель параметрическая"
+    ],
+    [
+     "changing one dimension later",
+     "подлежащее: изменение одного размера позже"
+    ],
+    [
+     "updates the whole part",
+     "обновляет всю деталь"
+    ]
+   ],
+   "q": "What updates the whole part?",
+   "options": [
+    "Changing one dimension",
+    "Adding a new sketch plane",
+    "Printing the drawing"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "Which feature turns a sketch around an axis?",
+    "key": "revolve, which turns it around an axis"
+   },
+   {
+    "q": "What happens when you change one dimension later?",
+    "key": "updates the whole part"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A CAD model starts with a 2D sketch with dimensions and constraints.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A CAD model starts with a 2D sketch with dimensions and constraints.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A CAD model starts with a 2D sketch with dimensions and constraints.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A CAD model starts with a 2D sketch with dimensions and constraints.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Features like extrude and revolve make it 3D, and because it is parametric, one change updates the part.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Features like extrude and revolve make it 3D, and because it is parametric, one change updates the part.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Features like extrude and revolve make it 3D, and because it is parametric, one change updates the part.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Features like extrude and revolve make it 3D, and because it is parametric, one change updates the part.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-strain-gauge",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "sens",
+  "kind": "статья",
+  "title": "How a strain gauge measures strain",
+  "paragraphs": [
+   "A strain gauge is a thin metal pattern on a plastic film. It is glued to the surface of a part. When the part stretches, the gauge stretches too, and its electrical resistance changes a little.",
+   "The change is very small, so the gauge is usually connected in a Wheatstone bridge. The bridge turns the small change of resistance into a voltage that an amplifier can measure. Temperature can also change the resistance, so good installations compensate for it with a second gauge."
+  ],
+  "summaries": [
+   [
+    "A glued strain gauge changes its resistance when the part stretches.",
+    "A strain gauge is a large metal block bolted to the part.",
+    "The gauge changes color under load."
+   ],
+   [
+    "A bridge converts the tiny change into a voltage, and temperature must be compensated.",
+    "The amplifier heats the gauge to measure strain.",
+    "Temperature has no effect on the gauge."
+   ]
+  ],
+  "retell": [
+   "A strain gauge is glued to a part, and its resistance changes when the part stretches.",
+   "A Wheatstone bridge turns this small change into a voltage, and a second gauge compensates for temperature."
+  ],
+  "parse": {
+   "sentence": "The bridge turns the small change of resistance into a voltage that an amplifier can measure.",
+   "parts": [
+    [
+     "The bridge turns",
+     "мост превращает"
+    ],
+    [
+     "the small change of resistance",
+     "малое изменение сопротивления"
+    ],
+    [
+     "into a voltage that an amplifier can measure",
+     "в напряжение, которое может измерить усилитель"
+    ]
+   ],
+   "q": "What does the bridge produce?",
+   "options": [
+    "A voltage",
+    "A new resistance",
+    "A temperature"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the strain gauge glued to?",
+    "key": "glued to the surface of a part"
+   },
+   {
+    "q": "How do good installations deal with temperature?",
+    "key": "compensate for it with a second gauge"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A strain gauge is glued to a part, and its resistance changes when the part stretches.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A strain gauge is glued to a part, and its resistance changes when the part stretches.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A strain gauge is glued to a part, and its resistance changes when the part stretches.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A strain gauge is glued to a part, and its resistance changes when the part stretches.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "A Wheatstone bridge turns this small change into a voltage, and a second gauge compensates for temperature.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A Wheatstone bridge turns this small change into a voltage, and a second gauge compensates for temperature.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A Wheatstone bridge turns this small change into a voltage, and a second gauge compensates for temperature.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A Wheatstone bridge turns this small change into a voltage, and a second gauge compensates for temperature.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-cubesat-strap",
+  "module": "doc-abstract",
+  "level": 2,
+  "topic": "space",
+  "kind": "аннотация",
+  "title": "Passive thermal control of a 3U CubeSat",
+  "paragraphs": [
+   "Small satellites have very limited power and mass budgets, which makes active thermal control difficult. In this work, we present a passive thermal strap made of pyrolytic graphite sheets that connects the on-board computer to an external radiator panel.",
+   "The strap was tested in a thermal vacuum chamber under hot-case conditions, and the results were compared with a finite element model. The measured peak temperature of the computer board decreased by 12 °C, while the added mass was only 38 g. The model predicted the steady-state temperatures within 3 °C.",
+   "The results suggest that graphite straps can replace heaters and fans in low-power CubeSat missions, especially when the internal layout does not allow a direct path to the radiator."
+  ],
+  "summaries": [
+   [
+    "The authors propose a light passive strap to cool the computer of a small satellite.",
+    "The authors design a new solar panel for large satellites.",
+    "The paper compares fans from different suppliers."
+   ],
+   [
+    "In vacuum tests, the strap lowered the peak temperature by 12 °C with little added mass.",
+    "The strap increased the temperature of the computer board.",
+    "The model disagreed with the tests by more than 20 °C."
+   ],
+   [
+    "Graphite straps may replace active systems in low-power CubeSats.",
+    "Graphite straps should never be used in space.",
+    "Heaters are always better than passive straps."
+   ]
+  ],
+  "retell": [
+   "The paper presents a passive graphite strap that moves heat from the computer to a radiator.",
+   "In vacuum tests, the peak temperature dropped by 12 degrees, and the model agreed within 3 degrees.",
+   "So straps like this can replace heaters and fans in small, low-power satellites."
+  ],
+  "parse": {
+   "sentence": "In this work, we present a passive thermal strap made of pyrolytic graphite sheets that connects the on-board computer to an external radiator panel.",
+   "parts": [
+    [
+     "we present a passive thermal strap",
+     "главное: мы представляем пассивный тепловой мост"
+    ],
+    [
+     "made of pyrolytic graphite sheets",
+     "из листов пиролитического графита (причастный оборот)"
+    ],
+    [
+     "that connects the on-board computer to an external radiator panel",
+     "который соединяет бортовой компьютер с внешней панелью радиатора"
+    ]
+   ],
+   "q": "What does the strap connect?",
+   "options": [
+    "The computer and the radiator",
+    "The graphite sheets and the fans",
+    "Two solar panels"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "How much mass did the strap add?",
+    "key": "added mass was only 38 g"
+   },
+   {
+    "q": "How accurate was the model?",
+    "key": "within 3 °C"
+   },
+   {
+    "q": "What is the strap made of?",
+    "key": "pyrolytic graphite sheets"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The paper presents a passive graphite strap that moves heat from the computer to a radiator.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The paper presents a passive graphite strap that moves heat from the computer to a radiator.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The paper presents a passive graphite strap that moves heat from the computer to a radiator.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The paper presents a passive graphite strap that moves heat from the computer to a radiator.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "In vacuum tests, the peak temperature dropped by 12 degrees, and the model agreed within 3 degrees.",
+    "voice": "us-f"
+   },
+   {
+    "text": "In vacuum tests, the peak temperature dropped by 12 degrees, and the model agreed within 3 degrees.",
+    "voice": "us-m"
+   },
+   {
+    "text": "In vacuum tests, the peak temperature dropped by 12 degrees, and the model agreed within 3 degrees.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "In vacuum tests, the peak temperature dropped by 12 degrees, and the model agreed within 3 degrees.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "So straps like this can replace heaters and fans in small, low-power satellites.",
+    "voice": "us-f"
+   },
+   {
+    "text": "So straps like this can replace heaters and fans in small, low-power satellites.",
+    "voice": "us-m"
+   },
+   {
+    "text": "So straps like this can replace heaters and fans in small, low-power satellites.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "So straps like this can replace heaters and fans in small, low-power satellites.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-am-injector",
+  "module": "doc-abstract",
+  "level": 2,
+  "topic": "prop",
+  "kind": "аннотация",
+  "title": "An additively manufactured injector for a small methane engine",
+  "paragraphs": [
+   "Injectors for small liquid rocket engines are traditionally assembled from many machined and brazed parts, which increases cost and lead time. This paper describes a one-piece coaxial injector for a 2 kN methane–oxygen engine, produced by laser powder bed fusion from a nickel superalloy.",
+   "Before hot fire testing, the internal channels were inspected by computed tomography, and cold flow tests with water were used to check the pressure drop. In twelve hot fire tests with a total duration of 140 seconds, the engine reached a combustion efficiency of 96 percent, and no damage to the injector face was observed.",
+   "The one-piece design reduced the number of parts from 34 to 1 and the manufacturing time from eight weeks to ten days. Further work will focus on surface roughness inside the channels, which caused a 7 percent higher pressure drop than predicted."
+  ],
+  "summaries": [
+   [
+    "The paper presents a 3D-printed one-piece injector for a small methane engine.",
+    "The paper compares kerosene and methane for large engines.",
+    "The paper describes how to braze 34 injector parts."
+   ],
+   [
+    "After inspection and cold flow tests, hot fire tests showed high efficiency and no damage.",
+    "The injector was destroyed during the first hot fire test.",
+    "Only computer simulations were performed."
+   ],
+   [
+    "Printing cut parts and time sharply, but rough channels raised the pressure drop.",
+    "The printed injector took longer to make than the old one.",
+    "Surface roughness reduced the pressure drop."
+   ]
+  ],
+  "retell": [
+   "The authors printed a one-piece injector for a small methane-oxygen engine.",
+   "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+   "Printing cut 34 parts to one and eight weeks to ten days, but rough channels increased the pressure drop."
+  ],
+  "parse": {
+   "sentence": "Before hot fire testing, the internal channels were inspected by computed tomography, and cold flow tests with water were used to check the pressure drop.",
+   "parts": [
+    [
+     "Before hot fire testing",
+     "перед огневыми испытаниями"
+    ],
+    [
+     "the internal channels were inspected by computed tomography",
+     "пассив: внутренние каналы проверили с помощью КТ"
+    ],
+    [
+     "cold flow tests with water were used to check the pressure drop",
+     "пассив: для проверки перепада давления использовали проливки водой"
+    ]
+   ],
+   "q": "How was the pressure drop checked?",
+   "options": [
+    "With cold flow tests using water",
+    "With computed tomography",
+    "During the hot fire tests only"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "How many hot fire tests were performed?",
+    "key": "In twelve hot fire tests"
+   },
+   {
+    "q": "How long did manufacturing take with the new design?",
+    "key": "ten days"
+   },
+   {
+    "q": "What caused the higher pressure drop?",
+    "key": "surface roughness inside the channels"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The authors printed a one-piece injector for a small methane-oxygen engine.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The authors printed a one-piece injector for a small methane-oxygen engine.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The authors printed a one-piece injector for a small methane-oxygen engine.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The authors printed a one-piece injector for a small methane-oxygen engine.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+    "voice": "us-f"
+   },
+   {
+    "text": "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+    "voice": "us-m"
+   },
+   {
+    "text": "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Printing cut 34 parts to one and eight weeks to ten days, but rough channels increased the pressure drop.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Printing cut 34 parts to one and eight weeks to ten days, but rough channels increased the pressure drop.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Printing cut 34 parts to one and eight weeks to ten days, but rough channels increased the pressure drop.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Printing cut 34 parts to one and eight weeks to ten days, but rough channels increased the pressure drop.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-moisture-cfrp",
+  "module": "doc-abstract",
+  "level": 2,
+  "topic": "mat",
+  "kind": "аннотация",
+  "title": "Effect of moisture on the interlaminar strength of CFRP",
+  "paragraphs": [
+   "Carbon fiber reinforced polymers absorb moisture from the air, which can reduce the strength of the matrix and of the fiber–matrix interface. This study investigates how moisture affects the interlaminar shear strength of a unidirectional carbon/epoxy laminate.",
+   "Short beam specimens were conditioned at 70 °C and 85 percent relative humidity for up to 60 days and then tested at room temperature and at 90 °C. The weight gain of the specimens was measured every five days.",
+   "After saturation, the interlaminar shear strength decreased by 9 percent at room temperature and by 27 percent at 90 °C. Microscopy showed that wet specimens failed mainly at the interface, whereas dry specimens failed within the matrix. These results indicate that hot and wet conditions should be considered in the design of composite structures."
+  ],
+  "summaries": [
+   [
+    "The study checks how absorbed moisture changes the interlaminar strength of CFRP.",
+    "The study measures how fast carbon fibers are produced.",
+    "The study compares epoxy with aluminum."
+   ],
+   [
+    "Specimens were kept in hot, humid air and then tested at two temperatures.",
+    "Specimens were tested only in a dry state.",
+    "The specimens were weighed once at the end."
+   ],
+   [
+    "Moisture lowered strength, especially at high temperature, and changed the failure location.",
+    "Moisture increased the strength by 27 percent.",
+    "Wet and dry specimens failed in exactly the same way."
+   ]
+  ],
+  "retell": [
+   "The study looks at how moisture reduces the interlaminar strength of a carbon/epoxy laminate.",
+   "Specimens were kept in hot, humid air for up to 60 days and tested at room temperature and at 90 degrees.",
+   "The strength dropped by 9 percent cold and 27 percent hot, so designers must consider hot and wet conditions."
+  ],
+  "parse": {
+   "sentence": "Microscopy showed that wet specimens failed mainly at the interface, whereas dry specimens failed within the matrix.",
+   "parts": [
+    [
+     "Microscopy showed that",
+     "микроскопия показала, что"
+    ],
+    [
+     "wet specimens failed mainly at the interface",
+     "влажные образцы разрушались в основном по границе раздела"
+    ],
+    [
+     "whereas dry specimens failed within the matrix",
+     "тогда как сухие — внутри матрицы (whereas — противопоставление)"
+    ]
+   ],
+   "q": "Where did the dry specimens fail?",
+   "options": [
+    "Within the matrix",
+    "At the interface",
+    "In the grips"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "How much did the strength decrease at 90 °C?",
+    "key": "by 27 percent at 90 °C"
+   },
+   {
+    "q": "Where did the wet specimens fail?",
+    "key": "failed mainly at the interface"
+   },
+   {
+    "q": "How often was the weight gain measured?",
+    "key": "every five days"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The study looks at how moisture reduces the interlaminar strength of a carbon/epoxy laminate.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The study looks at how moisture reduces the interlaminar strength of a carbon/epoxy laminate.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The study looks at how moisture reduces the interlaminar strength of a carbon/epoxy laminate.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The study looks at how moisture reduces the interlaminar strength of a carbon/epoxy laminate.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Specimens were kept in hot, humid air for up to 60 days and tested at room temperature and at 90 degrees.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Specimens were kept in hot, humid air for up to 60 days and tested at room temperature and at 90 degrees.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Specimens were kept in hot, humid air for up to 60 days and tested at room temperature and at 90 degrees.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Specimens were kept in hot, humid air for up to 60 days and tested at room temperature and at 90 degrees.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The strength dropped by 9 percent cold and 27 percent hot, so designers must consider hot and wet conditions.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The strength dropped by 9 percent cold and 27 percent hot, so designers must consider hot and wet conditions.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The strength dropped by 9 percent cold and 27 percent hot, so designers must consider hot and wet conditions.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The strength dropped by 9 percent cold and 27 percent hot, so designers must consider hot and wet conditions.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-vibration-bracket",
+  "module": "doc-grammar",
+  "level": 2,
+  "topic": "test",
+  "kind": "методика",
+  "title": "Random vibration testing of an electronics bracket",
+  "paragraphs": [
+   "An aluminum bracket that supports an electronics box was subjected to random vibration testing in three perpendicular axes. The test levels were derived from the launch vehicle user's manual, with a qualification margin of 3 dB above the expected flight levels.",
+   "Before and after each random run, a low-level sine sweep from 5 to 2000 Hz was performed to detect any change in the natural frequencies. A shift of more than 5 percent in the first natural frequency was defined as a failure criterion, because it usually indicates loosened fasteners or structural damage.",
+   "Three triaxial accelerometers were bonded to the bracket and to the electronics box, and one control accelerometer was mounted on the shaker table."
+  ],
+  "summaries": [
+   [
+    "The bracket was vibrated in three axes at levels above the expected flight levels.",
+    "The bracket was tested only in one axis at flight level.",
+    "The test levels were chosen randomly by the operator."
+   ],
+   [
+    "Sine sweeps before and after each run checked for frequency shifts that indicate damage.",
+    "Sine sweeps were used to heat the bracket.",
+    "Any change in frequency was ignored."
+   ],
+   [
+    "Accelerometers measured the response of the bracket, the box and the table.",
+    "Strain gauges were the only sensors used.",
+    "No sensors were placed on the shaker table."
+   ]
+  ],
+  "retell": [
+   "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+   "Sine sweeps before and after each run checked if the first frequency shifted by more than 5 percent.",
+   "Accelerometers were placed on the bracket, on the box and on the shaker table."
+  ],
+  "parse": {
+   "sentence": "A shift of more than 5 percent in the first natural frequency was defined as a failure criterion, because it usually indicates loosened fasteners or structural damage.",
+   "parts": [
+    [
+     "A shift of more than 5 percent in the first natural frequency",
+     "подлежащее — длинная группа: сдвиг более чем на 5% первой собственной частоты"
+    ],
+    [
+     "was defined as a failure criterion",
+     "пассив: был принят за критерий отказа"
+    ],
+    [
+     "because it usually indicates…",
+     "потому что обычно говорит об ослаблении крепежа или повреждении"
+    ]
+   ],
+   "q": "What was defined as a failure criterion?",
+   "options": [
+    "A frequency shift of more than 5 percent",
+    "Any loosened fastener",
+    "A margin of 3 dB"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What was the qualification margin?",
+    "key": "qualification margin of 3 dB"
+   },
+   {
+    "q": "What was the failure criterion?",
+    "key": "more than 5 percent in the first natural frequency"
+   },
+   {
+    "q": "Where was the control accelerometer mounted?",
+    "key": "mounted on the shaker table"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Sine sweeps before and after each run checked if the first frequency shifted by more than 5 percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Sine sweeps before and after each run checked if the first frequency shifted by more than 5 percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Sine sweeps before and after each run checked if the first frequency shifted by more than 5 percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Sine sweeps before and after each run checked if the first frequency shifted by more than 5 percent.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-param-docs",
+  "module": "doc-docs",
+  "level": 2,
+  "topic": "cad",
+  "kind": "документация",
+  "title": "Help: driving a model with global variables",
+  "paragraphs": [
+   "Global variables let you control several dimensions of a part or an assembly from one place. To create a variable, open the Equations dialog, type a name in the Global Variables section, and enter a value or an expression. Names are case-sensitive and must not contain spaces.",
+   "To link a dimension to a variable, double-click the dimension in the graphics area, type an equals sign, and select the variable from the list. The dimension turns red if the expression cannot be evaluated. Note: after you change a variable, press Rebuild (Ctrl+B) to update the model. Circular references, where a variable depends on itself, are not supported and will produce an error."
+  ],
+  "summaries": [
+   [
+    "You create global variables in the Equations dialog to control several dimensions.",
+    "Global variables can only be used in drawings.",
+    "Variable names may contain spaces."
+   ],
+   [
+    "You link a dimension with an equals sign and rebuild after changes; circular references cause errors.",
+    "Dimensions update automatically without rebuilding.",
+    "A variable may depend on itself."
+   ]
+  ],
+  "retell": [
+   "Global variables are created in the Equations dialog and control several dimensions at once.",
+   "You link a dimension by typing an equals sign, and after a change you rebuild the model."
+  ],
+  "parse": {
+   "sentence": "Circular references, where a variable depends on itself, are not supported and will produce an error.",
+   "parts": [
+    [
+     "Circular references",
+     "подлежащее: циклические ссылки"
+    ],
+    [
+     ", where a variable depends on itself,",
+     "пояснение: когда переменная зависит сама от себя"
+    ],
+    [
+     "are not supported and will produce an error",
+     "не поддерживаются и вызовут ошибку"
+    ]
+   ],
+   "q": "What is a circular reference?",
+   "options": [
+    "A variable that depends on itself",
+    "A dimension that turns red",
+    "A variable with a space in its name"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What keyboard shortcut updates the model?",
+    "key": "Rebuild (Ctrl+B)"
+   },
+   {
+    "q": "What happens if the expression cannot be evaluated?",
+    "key": "turns red"
+   },
+   {
+    "q": "What must variable names not contain?",
+    "key": "must not contain spaces"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Global variables are created in the Equations dialog and control several dimensions at once.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Global variables are created in the Equations dialog and control several dimensions at once.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Global variables are created in the Equations dialog and control several dimensions at once.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Global variables are created in the Equations dialog and control several dimensions at once.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "You link a dimension by typing an equals sign, and after a change you rebuild the model.",
+    "voice": "us-f"
+   },
+   {
+    "text": "You link a dimension by typing an equals sign, and after a change you rebuild the model.",
+    "voice": "us-m"
+   },
+   {
+    "text": "You link a dimension by typing an equals sign, and after a change you rebuild the model.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "You link a dimension by typing an equals sign, and after a change you rebuild the model.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-pt-datasheet",
+  "module": "doc-docs",
+  "level": 2,
+  "topic": "sens",
+  "kind": "даташит",
+  "title": "PT-200 pressure transducer: specifications",
+  "paragraphs": [
+   "Pressure range: 0 to 200 bar gauge. Output signal: 4 to 20 mA, two-wire. Supply voltage: 10 to 30 V DC. Accuracy: ±0.25% FS (typical), ±0.5% FS (maximum), including non-linearity, hysteresis and repeatability. Response time: less than 1 ms.",
+   "Operating temperature: −40 to +85 °C. Compensated temperature range: −20 to +80 °C. Proof pressure: 400 bar. Burst pressure: 800 bar. Wetted parts: stainless steel 316L. Note: exceeding the proof pressure may cause a permanent zero offset. Do not use with liquid oxygen unless the sensor has been cleaned for oxygen service."
+  ],
+  "summaries": [
+   [
+    "The first part lists the range, output, supply and accuracy of the transducer.",
+    "The first part describes how to install the transducer.",
+    "The first part lists the price and delivery time."
+   ],
+   [
+    "The second part gives temperature and pressure limits and safety notes.",
+    "The second part says the sensor can be used with any fluid.",
+    "The second part explains how to calibrate the sensor."
+   ]
+  ],
+  "retell": [
+   "The PT-200 measures up to 200 bar with a 4 to 20 milliamp output and a maximum error of half a percent of full scale.",
+   "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen."
+  ],
+  "parse": {
+   "sentence": "Do not use with liquid oxygen unless the sensor has been cleaned for oxygen service.",
+   "parts": [
+    [
+     "Do not use with liquid oxygen",
+     "запрет: не использовать с жидким кислородом"
+    ],
+    [
+     "unless",
+     "если только не"
+    ],
+    [
+     "the sensor has been cleaned for oxygen service",
+     "датчик прошёл очистку для работы с кислородом"
+    ]
+   ],
+   "q": "When can the sensor be used with liquid oxygen?",
+   "options": [
+    "Only after cleaning for oxygen service",
+    "Never under any conditions",
+    "Only below 200 bar"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the maximum accuracy error?",
+    "key": "±0.5% FS (maximum)"
+   },
+   {
+    "q": "What may happen if you exceed the proof pressure?",
+    "key": "permanent zero offset"
+   },
+   {
+    "q": "What material are the wetted parts made of?",
+    "key": "stainless steel 316L"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The PT-200 measures up to 200 bar with a 4 to 20 milliamp output and a maximum error of half a percent of full scale.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The PT-200 measures up to 200 bar with a 4 to 20 milliamp output and a maximum error of half a percent of full scale.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The PT-200 measures up to 200 bar with a 4 to 20 milliamp output and a maximum error of half a percent of full scale.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The PT-200 measures up to 200 bar with a 4 to 20 milliamp output and a maximum error of half a percent of full scale.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen.",
+    "voice": "us-f"
+   },
+   {
+    "text": "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen.",
+    "voice": "us-m"
+   },
+   {
+    "text": "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "It works from minus 40 to plus 85 degrees, must not exceed 400 bar, and needs oxygen cleaning for liquid oxygen.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-adapter-req",
+  "module": "doc-standard",
+  "level": 3,
+  "topic": "space",
+  "kind": "требования",
+  "title": "Structural requirements for a payload adapter",
+  "paragraphs": [
+   "The payload adapter shall withstand the limit loads defined in Section 4 multiplied by a factor of safety of 1.25 on yield and 1.4 on ultimate strength, without detrimental permanent deformation. Compliance shall be demonstrated by analysis and verified by a static qualification test on a dedicated test article.",
+   "The first lateral natural frequency of the adapter with the payload mass simulator shall be above 15 Hz, and the first axial frequency shall be above 35 Hz, in order to avoid dynamic coupling with the launch vehicle. The frequencies should be measured by a low-level sine sweep before and after the qualification test.",
+   "Minor surface scratches may be accepted without repair if their depth does not exceed 0.1 mm. Any crack, regardless of its size, shall be reported as a nonconformance and shall be dispositioned by the design authority before flight."
+  ],
+  "summaries": [
+   [
+    "The adapter must carry scaled limit loads, shown by analysis and a static test.",
+    "The adapter may be flown without any testing.",
+    "The factor of safety is only applied to yield strength."
+   ],
+   [
+    "Minimum lateral and axial frequencies are required and should be checked by sine sweeps.",
+    "The frequencies must be below 15 Hz.",
+    "Sine sweeps are forbidden before the test."
+   ],
+   [
+    "Small scratches are acceptable, but every crack must be reported and dispositioned.",
+    "Cracks shorter than 0.1 mm may be ignored.",
+    "Scratches must always be repaired."
+   ]
+  ],
+  "retell": [
+   "The adapter must carry the limit loads with safety factors of 1.25 and 1.4, proven by analysis and a static test.",
+   "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+   "Shallow scratches are fine, but any crack must be reported and approved before flight."
+  ],
+  "parse": {
+   "sentence": "Any crack, regardless of its size, shall be reported as a nonconformance and shall be dispositioned by the design authority before flight.",
+   "parts": [
+    [
+     "Any crack, regardless of its size,",
+     "подлежащее: любая трещина, независимо от размера"
+    ],
+    [
+     "shall be reported as a nonconformance",
+     "обязательно: должна быть оформлена как несоответствие"
+    ],
+    [
+     "and shall be dispositioned by the design authority before flight",
+     "и по ней должен принять решение разработчик до полёта"
+    ]
+   ],
+   "q": "Which cracks must be reported?",
+   "options": [
+    "All cracks, of any size",
+    "Only cracks deeper than 0.1 mm",
+    "Only cracks found after flight"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the factor of safety on ultimate strength?",
+    "key": "1.4 on ultimate strength"
+   },
+   {
+    "q": "What is the minimum axial frequency?",
+    "key": "first axial frequency shall be above 35 Hz"
+   },
+   {
+    "q": "What is the maximum depth of an acceptable scratch?",
+    "key": "does not exceed 0.1 mm"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The adapter must carry the limit loads with safety factors of 1.25 and 1.4, proven by analysis and a static test.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The adapter must carry the limit loads with safety factors of 1.25 and 1.4, proven by analysis and a static test.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The adapter must carry the limit loads with safety factors of 1.25 and 1.4, proven by analysis and a static test.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The adapter must carry the limit loads with safety factors of 1.25 and 1.4, proven by analysis and a static test.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-combustion-instab",
+  "module": "doc-speed",
+  "level": 3,
+  "topic": "prop",
+  "kind": "обсуждение",
+  "title": "Combustion instability: why engines shake themselves apart",
+  "paragraphs": [
+   "Combustion instability is a coupling between pressure oscillations in the combustion chamber and the heat release of the burning propellants. If the heat release is added in phase with the pressure peaks, the oscillations grow, sometimes within milliseconds, until they damage the injector or the chamber wall.",
+   "High-frequency instabilities are usually associated with the acoustic modes of the chamber, especially the first tangential mode. Low-frequency instabilities, often called chugging, are more commonly linked to the feed system, where the pressure drop across the injector is too small to isolate the chamber from disturbances in the propellant lines.",
+   "Engineers use several approaches to suppress instability. Baffles on the injector face and acoustic cavities in the chamber wall damp the acoustic modes, while a sufficient injector pressure drop, typically 15 to 20 percent of the chamber pressure, reduces the risk of chugging. Because the phenomenon is difficult to predict, full-scale hot fire testing remains essential."
+  ],
+  "summaries": [
+   [
+    "Instability grows when heat release is in phase with pressure oscillations.",
+    "Instability happens only after the engine is shut down.",
+    "Heat release always damps pressure oscillations."
+   ],
+   [
+    "High-frequency modes relate to chamber acoustics, low-frequency chugging to the feed system.",
+    "Chugging is caused by the tangential acoustic mode.",
+    "The feed system has no effect on stability."
+   ],
+   [
+    "Baffles, cavities and enough injector pressure drop help, but testing is still necessary.",
+    "Instability can be fully predicted by simulation.",
+    "A small pressure drop prevents chugging."
+   ]
+  ],
+  "retell": [
+   "Combustion instability appears when heat release adds energy to pressure oscillations in the chamber.",
+   "Fast oscillations come from chamber acoustics, and slow chugging comes from the feed system.",
+   "Baffles, acoustic cavities and a large enough pressure drop help, but engines still need hot fire tests."
+  ],
+  "parse": {
+   "sentence": "Low-frequency instabilities, often called chugging, are more commonly linked to the feed system, where the pressure drop across the injector is too small to isolate the chamber from disturbances in the propellant lines.",
+   "parts": [
+    [
+     "Low-frequency instabilities, often called chugging,",
+     "подлежащее с пояснением: низкочастотные неустойчивости («чаггинг»)"
+    ],
+    [
+     "are more commonly linked to the feed system",
+     "чаще связаны с системой подачи"
+    ],
+    [
+     "where the pressure drop across the injector is too small to isolate the chamber…",
+     "где перепад на форсунках слишком мал, чтобы развязать камеру с возмущениями в магистралях"
+    ]
+   ],
+   "q": "Why does the feed system cause chugging?",
+   "options": [
+    "The injector pressure drop is too small",
+    "The chamber has no baffles",
+    "The propellants are too cold"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "Which mode is especially associated with high-frequency instability?",
+    "key": "first tangential mode"
+   },
+   {
+    "q": "What is the typical injector pressure drop?",
+    "key": "15 to 20 percent of the chamber pressure"
+   },
+   {
+    "q": "What are low-frequency instabilities often called?",
+    "key": "often called chugging"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Combustion instability appears when heat release adds energy to pressure oscillations in the chamber.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Combustion instability appears when heat release adds energy to pressure oscillations in the chamber.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Combustion instability appears when heat release adds energy to pressure oscillations in the chamber.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Combustion instability appears when heat release adds energy to pressure oscillations in the chamber.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Fast oscillations come from chamber acoustics, and slow chugging comes from the feed system.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Fast oscillations come from chamber acoustics, and slow chugging comes from the feed system.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Fast oscillations come from chamber acoustics, and slow chugging comes from the feed system.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Fast oscillations come from chamber acoustics, and slow chugging comes from the feed system.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Baffles, acoustic cavities and a large enough pressure drop help, but engines still need hot fire tests.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Baffles, acoustic cavities and a large enough pressure drop help, but engines still need hot fire tests.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Baffles, acoustic cavities and a large enough pressure drop help, but engines still need hot fire tests.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Baffles, acoustic cavities and a large enough pressure drop help, but engines still need hot fire tests.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-bonded-fatigue",
+  "module": "doc-speed",
+  "level": 3,
+  "topic": "mat",
+  "kind": "результаты",
+  "title": "Fatigue of bonded composite joints",
+  "paragraphs": [
+   "Single-lap joints of carbon/epoxy adherends bonded with a toughened epoxy film adhesive were tested under constant-amplitude tension–tension fatigue at a stress ratio of 0.1 and a frequency of 5 Hz. Crack growth in the bondline was monitored with a travelling microscope and with backface strain gauges placed near the overlap ends.",
+   "The fatigue threshold, defined as the maximum load at which no crack initiation was detected after two million cycles, was approximately 35 percent of the static failure load. Above this level, cracks initiated at the overlap ends, where peel stresses are highest, and then propagated along the adhesive–adherend interface.",
+   "Joints with a tapered adherend edge and an adhesive fillet showed a 40 percent longer fatigue life than joints with square edges. The backface strain gauges detected crack initiation on average 15 percent of the fatigue life earlier than the microscope, which suggests that they could be used for structural health monitoring of bonded joints in service."
+  ],
+  "summaries": [
+   [
+    "Bonded lap joints were fatigue-tested, and cracks were monitored with a microscope and gauges.",
+    "The joints were tested only under static load.",
+    "The adhesive was a liquid paste without any film."
+   ],
+   [
+    "Below about 35 percent of the static load, no cracks started; above it, cracks grew from the overlap ends.",
+    "Cracks started in the middle of the overlap.",
+    "The threshold was 90 percent of the static load."
+   ],
+   [
+    "Tapered edges with fillets lived longer, and strain gauges detected cracks earlier than the microscope.",
+    "Square edges gave the longest fatigue life.",
+    "The strain gauges could not detect crack initiation."
+   ]
+  ],
+  "retell": [
+   "Carbon/epoxy lap joints were fatigue-tested, and crack growth was monitored with a microscope and strain gauges.",
+   "No cracks started below about 35 percent of the static load; above it, cracks grew from the overlap ends.",
+   "Tapered edges gave 40 percent longer life, and the gauges saw cracks earlier, so they could monitor joints in service."
+  ],
+  "parse": {
+   "sentence": "The fatigue threshold, defined as the maximum load at which no crack initiation was detected after two million cycles, was approximately 35 percent of the static failure load.",
+   "parts": [
+    [
+     "The fatigue threshold,",
+     "подлежащее: порог усталости"
+    ],
+    [
+     "defined as the maximum load at which no crack initiation was detected after two million cycles,",
+     "определение (причастный оборот): максимальная нагрузка, при которой за два миллиона циклов трещина не зародилась"
+    ],
+    [
+     "was approximately 35 percent of the static failure load",
+     "сказуемое: составил около 35% статической разрушающей нагрузки"
+    ]
+   ],
+   "q": "What was about 35 percent of the static failure load?",
+   "options": [
+    "The fatigue threshold",
+    "The fatigue life of tapered joints",
+    "The frequency of the test"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What was the stress ratio of the fatigue test?",
+    "key": "stress ratio of 0.1"
+   },
+   {
+    "q": "Where did the cracks initiate?",
+    "key": "initiated at the overlap ends"
+   },
+   {
+    "q": "How much longer did tapered joints last?",
+    "key": "40 percent longer fatigue life"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Carbon/epoxy lap joints were fatigue-tested, and crack growth was monitored with a microscope and strain gauges.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Carbon/epoxy lap joints were fatigue-tested, and crack growth was monitored with a microscope and strain gauges.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Carbon/epoxy lap joints were fatigue-tested, and crack growth was monitored with a microscope and strain gauges.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Carbon/epoxy lap joints were fatigue-tested, and crack growth was monitored with a microscope and strain gauges.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "No cracks started below about 35 percent of the static load; above it, cracks grew from the overlap ends.",
+    "voice": "us-f"
+   },
+   {
+    "text": "No cracks started below about 35 percent of the static load; above it, cracks grew from the overlap ends.",
+    "voice": "us-m"
+   },
+   {
+    "text": "No cracks started below about 35 percent of the static load; above it, cracks grew from the overlap ends.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "No cracks started below about 35 percent of the static load; above it, cracks grew from the overlap ends.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Tapered edges gave 40 percent longer life, and the gauges saw cracks earlier, so they could monitor joints in service.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Tapered edges gave 40 percent longer life, and the gauges saw cracks earlier, so they could monitor joints in service.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Tapered edges gave 40 percent longer life, and the gauges saw cracks earlier, so they could monitor joints in service.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Tapered edges gave 40 percent longer life, and the gauges saw cracks earlier, so they could monitor joints in service.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-panel-report",
+  "module": "doc-standard",
+  "level": 3,
+  "topic": "test",
+  "kind": "отчёт об испытаниях",
+  "title": "Test report: static load test of a composite floor panel",
+  "paragraphs": [
+   "Test article: sandwich floor panel, carbon/epoxy face sheets on aluminum honeycomb, serial number FP-003. Objective: to verify that the panel carries the ultimate design load of 12 kN without failure and the limit load of 8 kN without detrimental permanent deformation. The panel was simply supported on two edges and loaded at four points through rubber pads by a hydraulic actuator.",
+   "The load was applied in steps of 10 percent of limit load, with a two-minute hold at each step. At limit load, the maximum deflection was 6.8 mm, which is 5 percent below the prediction, and the residual deflection after unloading was 0.1 mm, within the allowed 0.2 mm. At 11.4 kN, a local crushing of the core under one of the loading pads was heard and later confirmed by ultrasonic inspection.",
+   "Deviation: during the first loading, the test was paused at 60 percent of limit load because of a data acquisition fault; the panel was unloaded and the test was restarted. Result: the panel reached the ultimate load of 12 kN and held it for three seconds without global failure. The local core crushing is attributed to the pad size and is not considered representative of the flight configuration. Status: PASS, with one observation."
+  ],
+  "summaries": [
+   [
+    "The report tests whether a sandwich panel carries its design loads in a four-point setup.",
+    "The report describes the manufacturing of the honeycomb core.",
+    "The panel was tested under vibration."
+   ],
+   [
+    "Deflection matched predictions, and local core crushing was noticed near ultimate load.",
+    "The panel broke completely at limit load.",
+    "The residual deflection was far above the allowed value."
+   ],
+   [
+    "After a restart, the panel held ultimate load; the test passed with one observation.",
+    "The test failed because of the data acquisition fault.",
+    "The core crushing is considered a flight problem."
+   ]
+  ],
+  "retell": [
+   "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.",
+   "Deflection was 5 percent below the prediction, but the core crushed locally under one pad at 11.4 kN.",
+   "After a restart caused by a data fault, the panel held the ultimate load, so the test passed with one observation."
+  ],
+  "parse": {
+   "sentence": "The local core crushing is attributed to the pad size and is not considered representative of the flight configuration.",
+   "parts": [
+    [
+     "The local core crushing",
+     "подлежащее: местное смятие заполнителя"
+    ],
+    [
+     "is attributed to the pad size",
+     "пассив: объясняется размером прокладки"
+    ],
+    [
+     "and is not considered representative of the flight configuration",
+     "и не считается характерным для лётной конфигурации"
+    ]
+   ],
+   "q": "Why did the core crush locally?",
+   "options": [
+    "Because of the loading pad size",
+    "Because the panel was too heavy",
+    "Because of the data acquisition fault"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What was the maximum deflection at limit load?",
+    "key": "maximum deflection was 6.8 mm"
+   },
+   {
+    "q": "Why was the test paused?",
+    "key": "data acquisition fault"
+   },
+   {
+    "q": "At what load was core crushing heard?",
+    "key": "At 11.4 kN"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The report checks if a sandwich floor panel carries 8 kN without permanent damage and 12 kN without failure.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Deflection was 5 percent below the prediction, but the core crushed locally under one pad at 11.4 kN.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Deflection was 5 percent below the prediction, but the core crushed locally under one pad at 11.4 kN.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Deflection was 5 percent below the prediction, but the core crushed locally under one pad at 11.4 kN.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Deflection was 5 percent below the prediction, but the core crushed locally under one pad at 11.4 kN.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "After a restart caused by a data fault, the panel held the ultimate load, so the test passed with one observation.",
+    "voice": "us-f"
+   },
+   {
+    "text": "After a restart caused by a data fault, the panel held the ultimate load, so the test passed with one observation.",
+    "voice": "us-m"
+   },
+   {
+    "text": "After a restart caused by a data fault, the panel held the ultimate load, so the test passed with one observation.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "After a restart caused by a data fault, the panel held the ultimate load, so the test passed with one observation.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-stackup",
+  "module": "doc-docs",
+  "level": 3,
+  "topic": "cad",
+  "kind": "документация",
+  "title": "Tolerance stack-up: worst case or statistical?",
+  "paragraphs": [
+   "A tolerance stack-up calculates how the tolerances of individual parts combine in an assembly to affect a critical dimension, such as a gap or an interference. In a worst-case analysis, all tolerances are added arithmetically, assuming that every part is simultaneously at its most unfavorable limit.",
+   "Worst-case analysis guarantees that every assembly will fit, but it often leads to unnecessarily tight and expensive tolerances when the chain contains many parts. A statistical analysis, most commonly the root sum square method, assumes that the dimensions are independent and normally distributed and combines the tolerances as the square root of the sum of their squares.",
+   "For a chain of five parts, each with a tolerance of ±0.1 mm, the worst-case result is ±0.5 mm, whereas the root sum square result is about ±0.22 mm. The statistical method is therefore appropriate for high-volume production with capable processes, while worst-case analysis should be used for safety-critical interfaces and for small batches, where the statistical assumptions may not hold."
+  ],
+  "summaries": [
+   [
+    "A stack-up shows how part tolerances add up; worst case assumes all parts at their worst limits.",
+    "A stack-up measures the weight of an assembly.",
+    "Worst-case analysis ignores tolerances."
+   ],
+   [
+    "Worst case is safe but expensive; the statistical method uses the root sum square.",
+    "The statistical method always gives larger results than worst case.",
+    "The root sum square adds tolerances arithmetically."
+   ],
+   [
+    "An example shows the difference, and each method has its proper use.",
+    "Worst case should be used for all high-volume production.",
+    "Statistical methods are best for safety-critical interfaces."
+   ]
+  ],
+  "retell": [
+   "A tolerance stack-up shows how part tolerances combine; worst case adds them all up.",
+   "Worst case is safe but expensive, so the root sum square method combines them statistically.",
+   "For five parts it gives 0.22 instead of 0.5 millimeters, but for safety-critical parts we still use worst case."
+  ],
+  "parse": {
+   "sentence": "In a worst-case analysis, all tolerances are added arithmetically, assuming that every part is simultaneously at its most unfavorable limit.",
+   "parts": [
+    [
+     "In a worst-case analysis",
+     "при расчёте на максимум-минимум"
+    ],
+    [
+     "all tolerances are added arithmetically",
+     "пассив: все допуски складываются арифметически"
+    ],
+    [
+     "assuming that every part is simultaneously at its most unfavorable limit",
+     "в предположении, что каждая деталь одновременно на самом неблагоприятном пределе"
+    ]
+   ],
+   "q": "What does worst-case analysis assume?",
+   "options": [
+    "All parts are at their worst limits at the same time",
+    "Dimensions are normally distributed",
+    "Only one part is out of tolerance"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the worst-case result for five parts?",
+    "key": "the worst-case result is ±0.5 mm"
+   },
+   {
+    "q": "What is the most common statistical method?",
+    "key": "root sum square method"
+   },
+   {
+    "q": "When should worst-case analysis be used?",
+    "key": "safety-critical interfaces and for small batches"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A tolerance stack-up shows how part tolerances combine; worst case adds them all up.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A tolerance stack-up shows how part tolerances combine; worst case adds them all up.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A tolerance stack-up shows how part tolerances combine; worst case adds them all up.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A tolerance stack-up shows how part tolerances combine; worst case adds them all up.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Worst case is safe but expensive, so the root sum square method combines them statistically.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Worst case is safe but expensive, so the root sum square method combines them statistically.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Worst case is safe but expensive, so the root sum square method combines them statistically.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Worst case is safe but expensive, so the root sum square method combines them statistically.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "For five parts it gives 0.22 instead of 0.5 millimeters, but for safety-critical parts we still use worst case.",
+    "voice": "us-f"
+   },
+   {
+    "text": "For five parts it gives 0.22 instead of 0.5 millimeters, but for safety-critical parts we still use worst case.",
+    "voice": "us-m"
+   },
+   {
+    "text": "For five parts it gives 0.22 instead of 0.5 millimeters, but for safety-critical parts we still use worst case.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "For five parts it gives 0.22 instead of 0.5 millimeters, but for safety-critical parts we still use worst case.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-load-cell-unc",
+  "module": "doc-standard",
+  "level": 3,
+  "topic": "sens",
+  "kind": "методика",
+  "title": "Estimating the uncertainty of a load cell measurement",
+  "paragraphs": [
+   "Every measurement result should be reported together with its uncertainty. For a load measured with a strain gauge load cell, the main contributions are the calibration uncertainty of the load cell, its non-linearity and hysteresis, the resolution of the data acquisition system, temperature effects and the repeatability of the setup.",
+   "Each contribution shall be expressed as a standard uncertainty. Values given as limits in a datasheet, for example ±0.05 percent of full scale, are usually treated as a rectangular distribution and divided by the square root of three. The standard uncertainties are then combined as the square root of the sum of their squares, provided that they are independent.",
+   "The combined standard uncertainty is multiplied by a coverage factor, normally k = 2, to obtain the expanded uncertainty, which corresponds to a confidence level of approximately 95 percent. For example, a 50 kN load cell with a combined standard uncertainty of 20 N would be reported as 50.00 kN ± 0.04 kN (k = 2)."
+  ],
+  "summaries": [
+   [
+    "Load measurements need an uncertainty, which comes from several listed sources.",
+    "Load cells have no measurement uncertainty.",
+    "Only temperature affects the result."
+   ],
+   [
+    "Each source becomes a standard uncertainty, and independent ones are combined by root sum square.",
+    "Datasheet limits are multiplied by three.",
+    "Uncertainties are simply added arithmetically."
+   ],
+   [
+    "The combined value times k = 2 gives the expanded uncertainty at about 95 percent confidence.",
+    "The coverage factor is always 10.",
+    "Expanded uncertainty corresponds to 50 percent confidence."
+   ]
+  ],
+  "retell": [
+   "A load measurement must include its uncertainty, which comes from calibration, non-linearity, resolution, temperature and repeatability.",
+   "Each part becomes a standard uncertainty, and independent parts are combined by root sum square.",
+   "Multiplying by k equals 2 gives the expanded uncertainty, about 95 percent confidence."
+  ],
+  "parse": {
+   "sentence": "The combined standard uncertainty is multiplied by a coverage factor, normally k = 2, to obtain the expanded uncertainty, which corresponds to a confidence level of approximately 95 percent.",
+   "parts": [
+    [
+     "The combined standard uncertainty is multiplied by a coverage factor",
+     "пассив: суммарную стандартную неопределённость умножают на коэффициент охвата"
+    ],
+    [
+     ", normally k = 2,",
+     "пояснение: обычно k = 2"
+    ],
+    [
+     "to obtain the expanded uncertainty, which corresponds to … 95 percent",
+     "цель: чтобы получить расширенную неопределённость, соответствующую уровню доверия около 95%"
+    ]
+   ],
+   "q": "What do you get after multiplying by the coverage factor?",
+   "options": [
+    "The expanded uncertainty",
+    "The resolution",
+    "The calibration certificate"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "By what are datasheet limits divided?",
+    "key": "divided by the square root of three"
+   },
+   {
+    "q": "What is the normal coverage factor?",
+    "key": "normally k = 2"
+   },
+   {
+    "q": "How would the 50 kN measurement be reported?",
+    "key": "50.00 kN ± 0.04 kN"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A load measurement must include its uncertainty, which comes from calibration, non-linearity, resolution, temperature and repeatability.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A load measurement must include its uncertainty, which comes from calibration, non-linearity, resolution, temperature and repeatability.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A load measurement must include its uncertainty, which comes from calibration, non-linearity, resolution, temperature and repeatability.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A load measurement must include its uncertainty, which comes from calibration, non-linearity, resolution, temperature and repeatability.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Each part becomes a standard uncertainty, and independent parts are combined by root sum square.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Each part becomes a standard uncertainty, and independent parts are combined by root sum square.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Each part becomes a standard uncertainty, and independent parts are combined by root sum square.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Each part becomes a standard uncertainty, and independent parts are combined by root sum square.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Multiplying by k equals 2 gives the expanded uncertainty, about 95 percent confidence.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Multiplying by k equals 2 gives the expanded uncertainty, about 95 percent confidence.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Multiplying by k equals 2 gives the expanded uncertainty, about 95 percent confidence.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Multiplying by k equals 2 gives the expanded uncertainty, about 95 percent confidence.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "t-fea-guide",
+  "module": "doc-grammar",
+  "level": 3,
+  "topic": "test",
+  "kind": "руководство",
+  "title": "Good practice for finite element stress analysis",
+  "paragraphs": [
+   "A finite element model is only as good as its boundary conditions. Over-constrained supports, such as fully fixed bolt holes, artificially stiffen the structure and move the stress peaks, while under-constrained models cannot be solved at all. The supports should represent the real stiffness of the interface as closely as reasonably possible.",
+   "Stress results near point loads, sharp re-entrant corners and single constrained nodes are singularities: they increase without limit as the mesh is refined and should not be used for strength assessment. A mesh convergence study, in which the element size is reduced until the peak stress in the region of interest changes by less than 5 percent, shall be performed for every critical location.",
+   "Finally, the model should be correlated with test data whenever possible. A difference of more than 10 percent between predicted and measured strains usually points to an error in the boundary conditions, the material properties or the load introduction, rather than to a problem with the solver itself."
+  ],
+  "summaries": [
+   [
+    "Boundary conditions must represent real supports; too many or too few constraints are both wrong.",
+    "Fully fixing every hole is always the safest choice.",
+    "Boundary conditions do not affect the results."
+   ],
+   [
+    "Singular stresses must be ignored, and mesh convergence must be checked at critical points.",
+    "Stresses at sharp corners converge quickly.",
+    "A convergence study is optional."
+   ],
+   [
+    "Models should be correlated with tests; large differences usually mean input errors.",
+    "Differences with test data are always caused by the solver.",
+    "Correlation with tests is impossible."
+   ]
+  ],
+  "retell": [
+   "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.",
+   "Stresses at point loads and sharp corners are singular, and the mesh must converge within 5 percent.",
+   "Compare the model with tests; more than 10 percent difference usually means wrong inputs."
+  ],
+  "parse": {
+   "sentence": "A mesh convergence study, in which the element size is reduced until the peak stress in the region of interest changes by less than 5 percent, shall be performed for every critical location.",
+   "parts": [
+    [
+     "A mesh convergence study,",
+     "подлежащее: исследование сходимости сетки"
+    ],
+    [
+     "in which the element size is reduced until the peak stress … changes by less than 5 percent,",
+     "вставка: в нём размер элемента уменьшают, пока пиковое напряжение в зоне интереса не изменится меньше чем на 5%"
+    ],
+    [
+     "shall be performed for every critical location",
+     "обязательно: должно выполняться для каждого критического места"
+    ]
+   ],
+   "q": "What shall be performed for every critical location?",
+   "options": [
+    "A mesh convergence study",
+    "A test with point loads",
+    "A change of the solver"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What is the convergence criterion?",
+    "key": "changes by less than 5 percent"
+   },
+   {
+    "q": "What does a difference of more than 10 percent usually point to?",
+    "key": "error in the boundary conditions"
+   },
+   {
+    "q": "What do over-constrained supports do?",
+    "key": "artificially stiffen the structure"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Supports in the model must be as stiff as the real interface; fixing everything or too little is wrong.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Stresses at point loads and sharp corners are singular, and the mesh must converge within 5 percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Stresses at point loads and sharp corners are singular, and the mesh must converge within 5 percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Stresses at point loads and sharp corners are singular, and the mesh must converge within 5 percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Stresses at point loads and sharp corners are singular, and the mesh must converge within 5 percent.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Compare the model with tests; more than 10 percent difference usually means wrong inputs.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Compare the model with tests; more than 10 percent difference usually means wrong inputs.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Compare the model with tests; more than 10 percent difference usually means wrong inputs.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Compare the model with tests; more than 10 percent difference usually means wrong inputs.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ }
+]

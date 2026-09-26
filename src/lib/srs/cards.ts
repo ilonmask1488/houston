@@ -4,6 +4,7 @@
   фраза Эфира, которую не поймал, — карточку 3: слабые места возвращаются чаще.
 */
 import { chunkById, phraseById } from '../../content'
+import { dictById, dictionaryLoaded, loadDictionary } from '../dict/dict'
 import { db, type AppDB } from '../db/db'
 import type { CardRow } from '../db/types'
 import { cardId, newCard, review, unlocksAfter, type CardKind, type Grade14 } from './srs'
@@ -13,8 +14,34 @@ export const DUE_OVERLOAD = 150
 /** Открытые позже типы карточек появляются не сразу, а к следующему занятию. */
 export const UNLOCK_DELAY_MS = 12 * 60 * 60 * 1000
 
+const userWordIds = new Set<string>()
+
+/** Слова (словарь и свои) проверяются по загруженным источникам — см. prepareItems. */
 export function itemExists(itemId: string): boolean {
+  if (itemId.startsWith('w-')) return !dictionaryLoaded() || dictById.has(itemId)
+  if (itemId.startsWith('u-')) return userWordIds.has(itemId)
   return chunkById.has(itemId) || phraseById.has(itemId)
+}
+
+/** Загрузить словарь и список своих слов, если в карточках есть слова. */
+export async function prepareItems(database: AppDB = db): Promise<void> {
+  const hasWords = (await database.cards.filter((c) => c.itemId.startsWith('w-') || c.itemId.startsWith('u-')).count()) > 0
+  if (!hasWords) return
+  await loadDictionary()
+  userWordIds.clear()
+  for (const w of await database.userWords.toArray()) userWordIds.add(w.id)
+}
+
+/** Слово в карточки: «слово → значение»; у технического термина со звуком — ещё «на слух». */
+export async function addWordCards(itemId: string, database: AppDB = db, now = Date.now()): Promise<number> {
+  let n = 0
+  await database.transaction('rw', database.cards, async () => {
+    if (await ensure(database, itemId, 1, now)) n++
+    const w = dictById.get(itemId)
+    if (w?.voices?.length && (await ensure(database, itemId, 3, now, UNLOCK_DELAY_MS))) n++
+  })
+  if (itemId.startsWith('u-')) userWordIds.add(itemId)
+  return n
 }
 
 async function ensure(database: AppDB, itemId: string, kind: CardKind, now: number, delay = 0): Promise<boolean> {
@@ -43,6 +70,7 @@ export type ReviewQueue = { cards: CardRow[]; totalDue: number; capped: boolean 
 
 /** Очередь на сегодня: сначала самые просроченные, типы вперемешку. */
 export async function reviewQueue(limit: number, database: AppDB = db, now = Date.now()): Promise<ReviewQueue> {
+  await prepareItems(database)
   const due = await database.cards.where('due').belowOrEqual(now).toArray()
   const live = due.filter((c) => itemExists(c.itemId)).sort((a, b) => a.due - b.due)
   const picked = live.slice(0, limit)

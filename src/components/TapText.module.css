@@ -1,0 +1,119 @@
+.text {
+  line-height: 1.75;
+}
+
+.word {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px dotted transparent;
+  background: none;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .word:hover {
+    border-bottom-color: var(--line-strong);
+  }
+}
+
+.word[data-on] {
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--signal) 30%, transparent);
+  box-shadow: 0 2px 0 var(--signal);
+}
+
+.sheet {
+  position: fixed;
+  inset: auto 0 0 0;
+  width: min(560px, 100vw);
+  max-width: 100vw;
+  max-height: 80dvh;
+  margin: 0 auto;
+  padding: var(--space-4) var(--gutter) calc(var(--safe-bottom) + var(--space-4));
+  border: 0;
+  border-top: 3px solid var(--signal);
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  background: var(--surface);
+  color: var(--ink);
+  overflow-y: auto;
+}
+
+.sheet[open] {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.sheet::backdrop {
+  background: var(--scrim);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.headMain {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.term {
+  font-size: var(--fs-lead);
+}
+
+.ipa {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.play {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+}
+
+.ru {
+  font-size: var(--fs-lead);
+}
+
+.muted {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.label {
+  display: grid;
+  gap: var(--space-1);
+  font-size: var(--fs-small);
+}
+
+.input {
+  min-height: var(--tap);
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: var(--paper);
+}

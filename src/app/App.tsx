@@ -6,7 +6,8 @@ import { GameRoute } from '../features/games/GameScreen'
 import { IntakeScreen } from '../features/intake/IntakeScreen'
 import { ProfileScreen } from '../features/intake/ProfileScreen'
 import { AboutScreen, AchievementsScreen, GamesScreen, MoreScreen } from '../features/more/MoreScreen'
-import { ModuleRun, SegmentRun } from '../features/run/routes'
+import { LibraryScreen, LibraryText, MyTexts, MyTextView } from '../features/library/LibraryScreen'
+import { ModuleRun, SegmentRun, TextRun } from '../features/run/routes'
 import { HomeScreen } from '../features/session/HomeScreen'
 import { SessionScreen } from '../features/session/SessionScreen'
 import { SettingsScreen } from '../features/settings/SettingsScreen'
@@ -47,6 +48,11 @@ export function App() {
           <Route path="session" element={<SessionScreen />} />
           <Route path="run/seg/:id" element={<SegmentRun />} />
           <Route path="run/module/:id" element={<ModuleRun />} />
+          <Route path="run/text/:id" element={<TextRun />} />
+          <Route path="library" element={<LibraryScreen />} />
+          <Route path="library/:id" element={<LibraryText />} />
+          <Route path="mytext" element={<MyTexts />} />
+          <Route path="mytext/:id" element={<MyTextView />} />
           <Route path="game/:id" element={<GameRoute />} />
           <Route path="games" element={<GamesScreen />} />
           <Route path="intake" element={<IntakeScreen />} />

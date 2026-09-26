@@ -1,0 +1,480 @@
+# Переводы NAWL (2-я половина). Формат: лемма|перевод. Сгенерировано, reviewed: false.
+lateral|боковой
+layout|компоновка, расположение
+leaf|лист
+lecturer|преподаватель
+legend|легенда (условных обозначений)
+legitimate|законный
+leisure|досуг
+lever|рычаг
+lexical|лексический
+liable|подверженный; ответственный
+lifestyle|образ жизни
+lifetime|срок службы; жизнь
+likelihood|вероятность
+likewise|аналогично
+limb|конечность
+linear|линейный
+linguistic|лингвистический
+linguistics|лингвистика
+liter|литр
+liver|печень
+locally|локально
+locus|геометрическое место точек
+logical|логический
+longitudinal|продольный
+loop|петля; контур
+lump|комок
+lung|лёгкое
+machinery|оборудование, механизмы
+magnetic|магнитный
+magnitude|величина, модуль
+mall|торговый центр
+manipulate|манипулировать
+manipulation|манипуляция
+manual|руководство; ручной
+manuscript|рукопись
+marble|мрамор
+marginal|незначительный; предельный
+marker|маркер
+marrow|костный мозг
+maternal|материнский
+mathematical|математический
+matrix|матрица
+maximize|максимизировать
+meaningful|значимый
+mechanic|механик
+mechanical|механический
+media|СМИ; среды
+mediate|посредничать
+membrane|мембрана
+memorize|запоминать
+mentor|наставник
+mercury|ртуть
+merge|сливать, объединять
+messenger|посланник
+metabolism|обмен веществ
+metaphor|метафора
+methodology|методология
+micro|микро-
+mid|середина, средний
+migrate|мигрировать
+migration|миграция
+millimeter|миллиметр
+mineral|минерал
+minimal|минимальный
+minimize|минимизировать
+minus|минус
+missile|ракета (боевая)
+mobility|подвижность
+modification|модификация, доработка
+mole|моль; родинка
+molecular|молекулярный
+molecule|молекула
+momentum|импульс, количество движения
+monetary|денежный
+monkey|обезьяна
+monopoly|монополия
+morality|мораль
+morphological|морфологический
+morphology|морфология
+mortality|смертность
+motif|мотив
+motive|мотив
+multi|много-
+multinational|многонациональный
+multiply|умножать
+mutation|мутация
+myth|миф
+naked|голый
+namely|а именно
+nasty|неприятный
+nationalism|национализм
+neat|аккуратный
+necessity|необходимость
+neo|нео-
+nest|гнездо; вкладывать
+neural|нейронный
+neuron|нейрон
+neutral|нейтральный
+nicely|хорошо
+niche|ниша
+nitrogen|азот
+noble|благородный
+node|узел
+noisy|шумный
+nominal|номинальный
+non|не-
+nonetheless|тем не менее
+nonlinear|нелинейный
+norm|норма
+notation|обозначение
+novice|новичок
+nucleus|ядро
+null|нулевой
+numerical|численный
+nutrient|питательное вещество
+objection|возражение
+obscure|неясный; заслонять
+observer|наблюдатель
+obtain|получать
+occupation|занятие, профессия
+occurrence|возникновение
+offspring|потомство
+onset|начало (появление)
+onwards|далее
+optical|оптический
+optimal|оптимальный
+optimum|оптимум
+oral|устный
+organ|орган
+organism|организм
+orient|ориентировать
+orientation|ориентация
+oscillation|колебание
+outer|внешний
+outlet|выход; розетка
+overhead|накладной; над головой
+overlap|перекрытие; перекрываться
+overview|обзор
+oxidize|окислять
+oxygen|кислород
+painful|болезненный
+par|номинал (on par — наравне)
+paradigm|парадигма
+paradox|парадокс
+parameter|параметр
+parcel|посылка
+pardon|простите
+parental|родительский
+parenthesis|скобка
+partial|частичный
+partially|частично
+particle|частица
+partition|перегородка; разбиение
+pathway|путь
+peasant|крестьянин
+periodic|периодический
+peripheral|периферийный
+pest|вредитель
+pesticide|пестицид
+phenomenal|феноменальный
+philosopher|философ
+philosophical|философский
+phonological|фонологический
+phosphate|фосфат
+photographic|фотографический
+physically|физически
+physician|врач
+physics|физика
+physiological|физиологический
+pi|число пи
+planner|планировщик
+plantation|плантация
+plausible|правдоподобный
+plug|штекер; заглушка
+plural|множественное число
+polar|полярный
+pole|полюс; столб
+politically|политически
+portfolio|портфолио
+portray|изображать
+portrayal|изображение
+positively|положительно
+poster|постер
+postgraduate|аспирант
+potassium|калий
+powder|порошок
+practitioner|практик
+pragmatic|прагматичный
+pre|до-, пред-
+precede|предшествовать
+precipitate|осаждать; ускорять
+precipitation|осадки; осаждение
+predator|хищник
+prediction|прогноз
+predominantly|преимущественно
+prejudice|предрассудок
+preliminary|предварительный
+presume|предполагать
+prevalence|распространённость
+prey|добыча
+primer|грунтовка; праймер
+primitive|примитив; примитивный
+probe|зонд; щуп
+problematic|проблемный
+processor|процессор
+productive|продуктивный
+productivity|производительность
+profound|глубокий
+progression|развитие; прогрессия
+progressive|прогрессивный
+projection|проекция
+prominent|выдающийся
+pronounce|произносить
+proposition|предложение, утверждение
+protocol|протокол
+proton|протон
+psychiatric|психиатрический
+psychologist|психолог
+psychology|психология
+publish|публиковать
+pulse|импульс
+punch|пробивать; пуансон
+punish|наказывать
+punishment|наказание
+purely|исключительно
+puzzle|головоломка
+qualitative|качественный
+quantitative|количественный
+quantum|квантовый
+questionnaire|анкета
+quiz|тест, викторина
+quotation|цитата; котировка
+rack|стойка
+radar|радар
+radiation|излучение, радиация
+radius|радиус
+rainfall|осадки
+randomize|рандомизировать
+randomly|случайно
+rational|рациональный
+rationality|рациональность
+ray|луч
+reactive|реактивный
+reactor|реактор
+readily|легко, охотно
+realism|реализм
+realistic|реалистичный
+realm|сфера
+receptor|рецептор
+recipe|рецепт
+reconstruct|реконструировать
+regime|режим
+regression|регрессия
+rehabilitation|реабилитация
+reinforce|армировать; усиливать
+rejection|отбраковка; отказ
+reliability|надёжность
+render|визуализировать; делать
+repertoire|репертуар
+replacement|замена
+replicate|повторять, воспроизводить
+replication|повторение (опыта)
+reproduce|воспроизводить
+reproduction|воспроизведение
+republic|республика
+resemble|напоминать
+reservoir|резервуар
+residual|остаточный
+residue|остаток
+resistant|стойкий
+respiratory|дыхательный
+retrieve|извлекать
+revolutionary|революционный
+rewrite|переписывать
+rhetoric|риторика
+rhythm|ритм
+ridiculous|нелепый
+ritual|ритуал
+robot|робот
+rope|верёвка, трос
+rotate|вращать
+rotation|вращение
+rub|тереть
+ruler|линейка; правитель
+scatter|разброс; рассеивать
+scenario|сценарий
+scholarship|стипендия
+scripture|писание
+scroll|прокручивать
+secrete|выделять
+sediment|осадок
+selective|избирательный
+semantic|смысловой
+semester|семестр
+semi|полу-
+seminar|семинар
+sensation|ощущение
+sensible|разумный
+sensitivity|чувствительность
+sensory|сенсорный
+separately|отдельно
+separation|разделение
+sexuality|сексуальность
+shallow|мелкий
+shortly|вскоре
+shuttle|челнок
+similarity|сходство
+simplify|упрощать
+simulate|моделировать
+simulation|моделирование
+simultaneously|одновременно
+sin|грех
+singular|единственное число; особый
+sketch|эскиз
+skip|пропускать
+slab|плита
+slash|косая черта; сокращать
+slavery|рабство
+slot|паз, слот
+snake|змея
+sneeze|чихать
+sniff|нюхать
+socialize|общаться
+socially|социально
+sodium|натрий
+soluble|растворимый
+solute|растворённое вещество
+solvent|растворитель
+sometime|когда-нибудь
+sophisticate|усложнять (sophisticated — сложный)
+span|пролёт; размах
+spatial|пространственный
+specialty|специальность
+specification|спецификация, технические условия
+specimen|образец
+spectrum|спектр
+sperm|сперма
+sphere|сфера
+splice|сращивать
+sponsorship|спонсорство
+spontaneous|самопроизвольный
+spray|распылять
+stabilize|стабилизировать
+stack|стопка; пакет (слоёв)
+stadium|стадион
+stance|позиция
+standardize|стандартизировать
+static|статический
+statistical|статистический
+statistically|статистически
+statistics|статистика
+stereotype|стереотип
+stimulus|стимул
+straightforward|простой, понятный
+strand|прядь; жила (провода)
+strategic|стратегический
+strictly|строго
+stripe|полоса
+sub|под-
+subjective|субъективный
+subset|подмножество
+substitution|замена, подстановка
+substrate|подложка
+subtle|тонкий, едва заметный
+subtract|вычитать
+sufficiently|достаточно
+suicide|самоубийство
+super|супер-
+superior|превосходящий
+supposedly|предположительно
+surgeon|хирург
+surgical|хирургический
+surplus|избыток
+susceptible|восприимчивый
+sustainable|устойчивый
+swap|менять местами
+swell|набухать
+sword|меч
+syllable|слог
+syllabus|программа курса
+symbolic|символический
+syndrome|синдром
+syntactic|синтаксический
+syntax|синтаксис
+synthesis|синтез
+synthetic|синтетический
+systematic|систематический
+tech|технологии (разг.)
+technically|технически
+temporal|временной
+tempt|соблазнять
+tense|время (грамм.); напряжённый
+terminal|клемма; терминал
+terminology|терминология
+terribly|ужасно
+textbook|учебник
+theorem|теорема
+theorist|теоретик
+thereby|тем самым
+thermal|тепловой
+thesis|диссертация, дипломная работа
+thickness|толщина
+thread|резьба; нить; поток
+threshold|порог
+thumb|большой палец
+tolerance|допуск
+ton|тонна
+toxic|токсичный
+tract|тракт
+traditionally|традиционно
+trait|черта
+trajectory|траектория
+trans|транс-
+transaction|транзакция
+transcribe|расшифровывать, записывать
+transcription|транскрипция; расшифровка
+transformation|преобразование
+translation|перевод; поступательное движение
+transmission|передача; трансмиссия
+transmit|передавать
+transparency|прозрачность
+transplant|пересадка
+trauma|травма
+treaty|договор
+tremendous|огромный
+triangle|треугольник
+tribe|племя
+tricky|каверзный
+trivial|тривиальный
+tropical|тропический
+tumor|опухоль
+turbulent|турбулентный
+tutor|репетитор
+ultimate|предельный; окончательный
+undergraduate|студент бакалавриата
+undermine|подрывать
+underneath|под, внизу
+unemployed|безработный
+unify|унифицировать
+unintelligible|неразборчивый
+unity|единство
+unstable|неустойчивый
+uplift|подъём
+upward|вверх
+urine|моча
+usage|использование
+utility|полезность; служебная программа
+utilize|использовать
+utterance|высказывание
+vague|расплывчатый
+valid|действительный, корректный
+validity|достоверность
+valve|клапан
+variability|изменчивость
+variance|дисперсия
+variant|вариант
+vector|вектор
+vegetation|растительность
+vein|вена; жилка
+velocity|скорость (векторная)
+verbal|устный
+vertical|вертикальный
+viable|жизнеспособный
+virtue|достоинство
+vitamin|витамин
+vocabulary|словарный запас
+volition|воля
+vowel|гласный (звук)
+watershed|водораздел; переломный момент
+wavelength|длина волны
+weave|плетение; ткать
+wheat|пшеница
+whereby|посредством чего
+whichever|какой бы ни
+whoever|кто бы ни
+widespread|широко распространённый
+wisdom|мудрость
+workshop|мастерская, цех; семинар
+yeast|дрожжи

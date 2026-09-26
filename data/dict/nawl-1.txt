@@ -1,0 +1,480 @@
+# Переводы NAWL (1-я половина). Формат: лемма|перевод. Сгенерировано, reviewed: false.
+abdominal|брюшной
+absorb|поглощать
+absorption|поглощение
+accelerate|ускорять(ся)
+acceleration|ускорение
+accent|акцент
+accumulate|накапливать(ся)
+accumulation|накопление
+accuracy|точность
+accurately|точно
+acid|кислота
+acidic|кислотный
+activate|активировать
+actively|активно
+acute|острый
+adaptation|адаптация
+adaptive|адаптивный
+adjacent|соседний, смежный
+admission|приём; допуск
+adolescent|подросток
+adverse|неблагоприятный
+aerosol|аэрозоль
+aesthetic|эстетический
+affirm|подтверждать
+afterward|впоследствии
+aggregate|совокупность; заполнитель
+agriculture|сельское хозяйство
+airplane|самолёт
+algebra|алгебра
+algorithm|алгоритм
+alien|чужой; инопланетянин
+alliance|альянс
+allocate|распределять
+allocation|распределение
+altitude|высота (над уровнем)
+aluminum|алюминий
+amino|амино-
+amongst|среди
+amplitude|амплитуда
+analogy|аналогия
+ancestor|предок
+anthropology|антропология
+anti|анти-, против
+antibiotic|антибиотик
+antibody|антитело
+antiquity|древность
+appendix|приложение (к документу)
+applause|аплодисменты
+apple|яблоко
+approximate|приблизительный; аппроксимировать
+approximation|приближение
+arbitrary|произвольный
+archaeology|археология
+architect|архитектор
+array|массив
+arrow|стрелка
+articulate|чётко выражать
+artifact|артефакт
+artificial|искусственный
+artistic|художественный
+artwork|произведение искусства
+aspect|аспект
+assembly|сборка; сборочная единица
+assert|утверждать
+assignment|задание
+athletic|спортивный
+atom|атом
+atomic|атомный
+auction|аукцион
+audio|аудио
+audit|аудит, проверка
+authority|полномочия; орган власти
+autonomy|автономность
+availability|наличие, доступность
+axiom|аксиома
+axis|ось
+backward|назад, обратный
+bacteria|бактерии
+bacterial|бактериальный
+bang|удар, хлопок
+bargain|сделка
+barrel|бочка; ствол
+basin|бассейн; чаша
+bat|бита; летучая мышь
+beam|балка; луч
+behavioral|поведенческий
+bilingual|двуязычный
+binary|двоичный
+biodiversity|биоразнообразие
+biologist|биолог
+biology|биология
+bizarre|странный
+blank|пустой; заготовка
+bleed|кровоточить; стравливать
+bodily|телесный
+bonus|бонус
+bound|граница; связанный
+bracket|кронштейн; скобка
+breakdown|разбивка; поломка; пробой
+broadly|в широком смысле
+bubble|пузырь
+bucket|ведро
+bulk|основная масса; объёмный
+bullet|пуля; маркер списка
+bundle|пучок, жгут
+calcium|кальций
+calculation|расчёт
+calculator|калькулятор
+calculus|математический анализ
+campus|кампус
+capillary|капиллярный
+capitalism|капитализм
+capitalist|капиталист
+carrier|носитель; перевозчик
+cattle|скот
+censor|цензор
+characterization|определение характеристик
+cheat|жульничать
+cheer|подбадривать
+chemistry|химия
+chemotherapy|химиотерапия
+chess|шахматы
+chloride|хлорид
+chromosome|хромосома
+chronic|хронический
+chunk|кусок, фрагмент
+cinema|кино
+circa|около (о датах)
+circulate|циркулировать
+circulation|циркуляция
+civilization|цивилизация
+clarify|уточнять, прояснять
+classification|классификация
+classify|классифицировать
+classroom|класс, аудитория
+clay|глина
+clever|умный
+client|клиент
+clinic|клиника
+clip|зажим; клип
+clone|клон
+closure|закрытие, замыкание
+clue|подсказка, ключ
+coefficient|коэффициент
+cognitive|когнитивный
+coherent|связный, согласованный
+collective|коллективный
+colonial|колониальный
+colony|колония
+comma|запятая
+commentary|комментарий
+commodity|товар
+commonly|обычно
+communicative|коммуникативный
+communist|коммунист
+compact|компактный; уплотнять
+comparable|сопоставимый
+comparative|сравнительный
+compensate|компенсировать
+competence|компетентность
+competent|компетентный
+complement|дополнять
+complication|осложнение
+comply|соответствовать (требованиям)
+composer|композитор
+composite|композит; составной
+comprehension|понимание
+computation|вычисление
+conceive|задумывать
+conception|концепция
+conceptual|концептуальный
+conditional|условный
+conduction|теплопроводность, проводимость
+cone|конус
+configuration|конфигурация
+confine|ограничивать
+confound|смешивать; сбивать с толку
+congruent|конгруэнтный, совпадающий
+connector|разъём
+connotation|оттенок значения
+conscious|сознательный
+consciousness|сознание
+consensus|консенсус
+consent|согласие
+conservation|сохранение
+conserve|сохранять
+consonant|согласный (звук)
+constitution|конституция; состав
+constrain|ограничивать; закреплять
+consultation|консультация
+consumption|потребление, расход
+container|контейнер
+continent|континент
+continuity|непрерывность
+contour|контур
+contradict|противоречить
+contradiction|противоречие
+contradictory|противоречивый
+contrary|противоположный (on the contrary — напротив)
+controversy|спор, разногласия
+converge|сходиться
+convergence|сходимость
+coordinate|координата; координировать
+coordination|координация
+cord|шнур
+coronary|коронарный
+corpus|корпус (текстов)
+correction|поправка, исправление
+correctly|правильно
+correlate|коррелировать
+correlation|корреляция
+correspondence|соответствие; переписка
+corruption|коррупция; повреждение (данных)
+cortex|кора (мозга)
+credibility|достоверность
+critically|критически
+critique|критика
+crude|сырой; грубый
+crystal|кристалл
+cue|сигнал, подсказка
+cure|лечить; отверждение (cure cycle)
+curriculum|учебная программа
+cyclic|циклический
+cylinder|цилиндр; баллон
+damp|влажный; демпфировать
+deadline|крайний срок
+decay|распад; затухание
+deceive|обманывать
+defect|дефект
+deficiency|недостаток
+definite|определённый
+deflection|прогиб; отклонение
+degrade|ухудшать(ся), деградировать
+deliberately|намеренно
+delta|дельта; разность
+demonstrator|демонстратор
+denominator|знаменатель
+denote|обозначать
+dense|плотный
+dependence|зависимость
+depict|изображать
+derivative|производная
+descendent|потомок
+descriptor|дескриптор
+destination|пункт назначения
+detection|обнаружение
+developmental|связанный с развитием
+deviation|отклонение
+diagnose|диагностировать
+diagnosis|диагноз
+diagnostic|диагностический
+diagram|схема, диаграмма
+dialect|диалект
+diameter|диаметр
+diary|дневник
+dictate|диктовать
+dictionary|словарь
+differential|дифференциальный; перепад
+differentiate|различать; дифференцировать
+differentiation|дифференцирование
+diffusion|диффузия
+dilemma|дилемма
+dilute|разбавлять
+dimensional|размерный
+dioxide|диоксид
+directive|директива
+disability|инвалидность
+disadvantage|недостаток
+discharge|разряд; выпуск
+discourse|дискурс
+discrete|дискретный
+discrimination|дискриминация; различение
+displacement|перемещение
+dissection|вскрытие, рассечение
+dissertation|диссертация
+dissolve|растворять
+distribution|распределение
+disturbance|возмущение, помеха
+diverse|разнообразный
+domain|область
+dominance|доминирование
+dominant|доминирующий
+domination|господство
+donor|донор
+dose|доза
+drain|слив; дренаж; сток (транзистора)
+drift|дрейф
+duration|продолжительность
+dye|краситель
+dynamic|динамический
+ecological|экологический
+ecology|экология
+economically|экономически
+economist|экономист
+effectiveness|эффективность
+elaborate|подробный; разрабатывать
+elastic|упругий
+elasticity|упругость
+electron|электрон
+elementary|элементарный
+elevate|поднимать
+elevation|возвышение; угол места
+elimination|устранение
+elite|элита
+embed|встраивать
+emergence|появление
+emission|излучение; выброс
+emit|излучать
+emperor|император
+empirical|эмпирический
+encode|кодировать
+enforcement|обеспечение соблюдения
+enormously|чрезвычайно
+entity|сущность
+entrant|участник
+enzyme|фермент
+epidemic|эпидемия
+epidemiology|эпидемиология
+equality|равенство
+equilibrium|равновесие
+equivalence|эквивалентность
+erase|стирать
+essence|суть
+essentially|по существу
+estimation|оценка
+ethical|этический
+ethics|этика
+evident|очевидный
+evolutionary|эволюционный
+ex|бывший
+execute|выполнять
+execution|выполнение
+exit|выход
+expertise|экспертиза, опыт
+explicit|явный
+explicitly|явно
+exploit|использовать; эксплуатировать
+exponential|экспоненциальный
+fabric|ткань
+facet|грань
+facilitate|облегчать
+factorial|факториал
+faculty|факультет
+fatigue|усталость (материала)
+feedback|обратная связь
+fertility|плодородие
+fetal|эмбриональный
+fever|жар
+fiber|волокно
+fin|ребро; стабилизатор
+finite|конечный
+flesh|плоть
+flexibility|гибкость
+flip|переворачивать
+fluid|жидкость, текучая среда
+flux|поток
+footnote|сноска
+formally|формально
+formulation|формулировка; рецептура
+forum|форум
+fossil|ископаемое
+founds|основы
+fraction|доля; дробь
+fracture|разрушение; излом
+freely|свободно
+friction|трение
+fringe|край, периферия
+fundamentally|в корне
+fungus|грибок
+fusion|слияние; синтез
+gauge|датчик; калибр; манометр
+generalization|обобщение
+generalize|обобщать
+genetically|генетически
+genetics|генетика
+ghost|призрак
+globalization|глобализация
+goat|коза
+goodness|доброта
+goods|товары
+gradient|градиент
+gram|грамм
+grammatical|грамматический
+graph|график
+grasp|хватать; понимать
+gravity|гравитация
+grid|сетка
+gross|валовой; грубый
+gut|кишка
+habitat|среда обитания
+halfway|на полпути
+handout|раздаточный материал
+harvest|урожай
+hawk|ястреб
+headquarter|штаб-квартира
+hedge|хеджировать; изгородь
+helix|спираль
+hepatitis|гепатит
+herbicide|гербицид
+hierarchy|иерархия
+hip|бедро
+historically|исторически
+homework|домашнее задание
+horizon|горизонт
+horizontal|горизонтальный
+hormone|гормон
+hydrogen|водород
+identical|идентичный
+identification|идентификация
+ideology|идеология
+illusion|иллюзия
+immune|иммунный
+impact|удар; воздействие
+implicit|неявный
+importantly|важно
+impulse|импульс
+incidence|частота; падение (угол падения)
+incline|наклон
+inclusion|включение
+incredible|невероятный
+incredibly|невероятно
+incumbent|действующий
+independently|независимо
+indicator|индикатор, показатель
+indifference|безразличие
+indigenous|коренной
+indirect|косвенный
+individually|по отдельности
+induce|вызывать; индуцировать
+induction|индукция
+industrialization|индустриализация
+industrialize|индустриализировать
+inequality|неравенство
+inevitably|неизбежно
+infect|заражать
+infectious|инфекционный
+inference|вывод
+inferior|худший
+infinite|бесконечный
+infinity|бесконечность
+influential|влиятельный
+informal|неформальный
+inhibit|подавлять
+inhibition|подавление
+initiate|инициировать
+initiation|инициирование
+inject|впрыскивать
+injection|впрыск; инжекция
+innate|врождённый
+insect|насекомое
+insert|вставлять; вставка
+instability|неустойчивость
+instinct|инстинкт
+integral|интеграл; неотъемлемый
+integration|интеграция
+intensity|интенсивность
+intensive|интенсивный
+interact|взаимодействовать
+interestingly|интересно, что
+interface|интерфейс; сопряжение
+interfere|мешать, создавать помехи
+intermediate|промежуточный
+interrupt|прерывать
+interval|интервал
+intervene|вмешиваться
+interviewer|интервьюер
+invade|вторгаться
+invasion|вторжение
+inversion|инверсия
+invert|инвертировать, переворачивать
+ion|ион
+irrelevant|не относящийся к делу
+irrigation|орошение
+jazz|джаз
+junior|младший
+justification|обоснование
+kidney|почка
+kilometer|километр
+lab|лаборатория

@@ -1,8 +1,9 @@
 /* Какие звуки понадобятся шагу — чтобы скачать заранее и играть без задержки. */
-import { chunkById, passageById, phraseById, questionById, spokenText, substById, translateById } from '../../content'
+import { chunkById, passageById, phraseById, questionById, spokenText, substById, textById, translateById } from '../../content'
 import type { VoiceId } from '../../content/types'
 import { defaultVoice } from '../../lib/audio/audio'
 import type { Step } from '../../lib/run/steps'
+import { dictById } from '../../lib/dict/dict'
 import { parseCardId } from '../../lib/srs/srs'
 
 type T = { text: string; voice?: VoiceId }
@@ -42,7 +43,13 @@ export function preloadFor(s: Step): T[] {
       const p = phraseById.get(itemId)
       if (p) return [{ text: spokenText(p), voice: p.voice }]
       const c = chunkById.get(itemId)
-      return c ? [{ text: c.en, voice: defaultVoice() }] : []
+      if (c) return [{ text: c.en, voice: defaultVoice() }]
+      const w = dictById.get(itemId)
+      return w?.voices?.length ? [{ text: w.text, voice: w.voices.includes(defaultVoice()) ? defaultVoice() : w.voices[0] }] : []
+    }
+    case 'docRetell': {
+      const t = textById.get(s.text)
+      return t?.retell[s.p] ? [{ text: t.retell[s.p]!, voice: defaultVoice() }] : []
     }
     default:
       return []

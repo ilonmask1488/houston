@@ -1,0 +1,107 @@
+.article {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.para {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.source {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+}
+
+.findHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.clock {
+  flex: none;
+  min-width: 2.6em;
+  padding: var(--space-1) var(--space-2);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--lcd);
+  font-size: var(--fs-lead);
+  text-align: center;
+}
+
+.clock[data-low] {
+  color: var(--danger);
+}
+
+.sentence {
+  display: inline;
+  margin: 0;
+  padding: 1px 0;
+  border: 0;
+  border-radius: 2px;
+  background: none;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .sentence:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--signal) 15%, transparent);
+  }
+}
+
+.sentence:active:not(:disabled) {
+  background: color-mix(in srgb, var(--signal) 22%, transparent);
+}
+
+.sentence:disabled {
+  cursor: default;
+}
+
+.sentence[data-state='right'] {
+  background: color-mix(in srgb, var(--ok) 20%, transparent);
+  box-shadow: 0 2px 0 var(--ok);
+}
+
+.sentence[data-state='wrong'] {
+  background: color-mix(in srgb, var(--danger) 18%, transparent);
+  text-decoration: line-through;
+}
+
+.bigSentence {
+  padding: var(--space-4);
+  border-left: 3px solid var(--signal);
+  background: var(--surface);
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+}
+
+.parts {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-small);
+}
+
+.parts th,
+.parts td {
+  padding: var(--space-2) var(--space-2) var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.parts th {
+  width: 48%;
+  font-weight: 500;
+}

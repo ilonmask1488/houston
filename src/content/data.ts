@@ -10,6 +10,8 @@ import questions from './call/questions.json'
 import substitution from './call/substitution.json'
 import translate from './call/translate.json'
 import characters from './characters.json'
+import strategies from './doc/strategies.json'
+import texts from './doc/texts.json'
 import intakeJson from './intake.json'
 import modulesJson from './modules.json'
 import episodes from './story/episodes.json'
@@ -19,6 +21,7 @@ import type {
   Chunk,
   Connected,
   Content,
+  DocText,
   Episode,
   IntakeContent,
   Module,
@@ -33,7 +36,8 @@ import type {
 export const raw: Content = {
   modules: modulesJson as Module[],
   intake: intakeJson as IntakeContent,
-  connected: connected as Connected[],
+  // Объяснения модулей: явления связной речи (Эфир) и стратегии чтения (Техдок) — одного формата.
+  connected: [...connected, ...strategies] as Connected[],
   phrases: phrases as Phrase[],
   passages: passages as Passage[],
   characters: characters as Character[],
@@ -43,4 +47,5 @@ export const raw: Content = {
   substitution: substitution as Substitution[],
   storyQuestions: storyQuestions as StoryQuestion[],
   episodes: episodes as Episode[],
+  texts: texts as unknown as DocText[],
 }

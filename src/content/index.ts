@@ -8,6 +8,7 @@ import type {
   Chunk,
   Connected,
   Content,
+  DocText,
   Episode,
   StoryQuestion,
   IntakeContent,
@@ -33,7 +34,10 @@ export const content: Content = {
   substitution: [],
   storyQuestions: [],
   episodes: [],
+  texts: [],
 }
+
+export const textById = new Map<string, DocText>()
 
 export const storyQuestionById = new Map<string, StoryQuestion>()
 export const episodeById = new Map<string, Episode>()
@@ -50,7 +54,15 @@ export const translateById = new Map<string, TranslateItem>()
 export const substById = new Map<string, Substitution>()
 
 /** Что лежит в модуле: id всех его упражнений по видам. */
-export type ModuleItems = { phrases: Phrase[]; passages: Passage[]; chunks: Chunk[]; questions: QuickQuestion[]; translate: TranslateItem[]; substitution: Substitution[] }
+export type ModuleItems = {
+  phrases: Phrase[]
+  passages: Passage[]
+  chunks: Chunk[]
+  questions: QuickQuestion[]
+  translate: TranslateItem[]
+  substitution: Substitution[]
+  texts: DocText[]
+}
 export const itemsByModule = new Map<string, ModuleItems>()
 
 let loading: Promise<void> | null = null
@@ -73,7 +85,7 @@ export function fill(raw: Content): void {
   for (const m of [...raw.modules].sort((a, b) => a.order - b.order)) {
     moduleById.set(m.id, m)
     modulesByTrack.set(m.track, [...(modulesByTrack.get(m.track) ?? []), m])
-    itemsByModule.set(m.id, { phrases: [], passages: [], chunks: [], questions: [], translate: [], substitution: [] })
+    itemsByModule.set(m.id, { phrases: [], passages: [], chunks: [], questions: [], translate: [], substitution: [], texts: [] })
   }
   connectedByModule.clear()
   for (const c of raw.connected) connectedByModule.set(c.module, c)
@@ -86,6 +98,7 @@ export function fill(raw: Content): void {
   index(substById, raw.substitution)
   index(storyQuestionById, raw.storyQuestions)
   index(episodeById, raw.episodes)
+  index(textById, raw.texts)
   content.episodes = [...raw.episodes].sort((a, b) => a.n - b.n)
   const put = <K extends keyof ModuleItems>(key: K, list: ModuleItems[K]) => {
     for (const x of list) itemsByModule.get(x.module)?.[key].push(x as never)
@@ -96,6 +109,7 @@ export function fill(raw: Content): void {
   put('questions', raw.questions)
   put('translate', raw.translate)
   put('substitution', raw.substitution)
+  put('texts', raw.texts)
 }
 
 export function intake(): IntakeContent {

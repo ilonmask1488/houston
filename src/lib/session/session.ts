@@ -3,7 +3,7 @@
   повторение 7, Эфир 6, Позывной 8, ротация 6). Блоки режутся на сегменты не длиннее ~3 минут
   одного формата и чередуются. Говорение есть каждый день; слабый трек получает ротацию.
 */
-import { chunkById, content, itemsByModule, phraseById } from '../../content'
+import { chunkById, content, itemsByModule, phraseById, textById } from '../../content'
 import type { Module, TrackId } from '../../content/types'
 import { currentModule, doneSet, type Progress } from '../course/progress'
 import { db } from '../db/db'
@@ -150,6 +150,33 @@ function callParts(c: CallInput, seconds: number): { label: string; steps?: Step
   return out
 }
 
+export type DocInput = { module: Module; done: Set<string>; started: boolean; seed: number; /** конкретный текст (из библиотеки) */ text?: string }
+
+/**
+  Техдок (ТЗ §6.3): один текст — прочитать с таймером, найти ответы на время, краткое содержание абзаца,
+  разбор сложного предложения, пересказ абзаца вслух. Засчитывается модулю после пересказа.
+*/
+export function docSteps(d: DocInput, seconds: number): Step[] {
+  const texts = freshFirst(itemsByModule.get(d.module.id)?.texts ?? [], d.done, d.seed)
+  const t = d.text ? textById.get(d.text) : texts[0]
+  if (!t) return []
+  const r = rng(d.seed + 7)
+  const p = Math.floor(r() * t.paragraphs.length)
+  const q = (p + 1) % t.paragraphs.length
+  const speed = d.module.id === 'doc-speed'
+  const steps: Step[] = [
+    ...(d.started ? [] : [{ kind: 'intro', module: d.module.id } as Step]),
+    { kind: 'docRead', text: t.id },
+    ...t.find.slice(0, 2).map((_, i): Step => ({ kind: 'docFind', text: t.id, i, ...(speed ? { seconds: 25 } : {}) })),
+    { kind: 'docSummary', text: t.id, p },
+    { kind: 'docParse', text: t.id },
+    { kind: 'docRetell', text: t.id, p: q },
+  ]
+  // Не влезает в бюджет — выкидываем разбор и второй поиск, но пересказ оставляем всегда: это и есть «сделано».
+  if (stepsSeconds(steps) > seconds + 60) return steps.filter((s) => s.kind !== 'docParse' && !(s.kind === 'docFind' && s.i > 0))
+  return steps
+}
+
 export type PlanInput = {
   minutes: number
   date: string
@@ -207,11 +234,42 @@ export function planSegments(input: PlanInput): SessionSegment[] {
   return out
 }
 
+export const ROTATION_TRACKS: TrackId[] = ['doc', 'mail', 'clean']
+
+/**
+  Какой трек ротации сегодня. Треки без контента не участвуют. Слабый трек (по вводному тесту)
+  стоит в цикле дважды: из четырёх дней два — ему.
+*/
+export function rotationTrack(seed: number, available: TrackId[], scores?: Partial<Record<TrackId, number>>): TrackId | undefined {
+  if (!available.length) return undefined
+  const cycle = [...available]
+  if (scores && available.length > 1) {
+    const weak = [...available].sort((a, b) => (scores[a] ?? 50) - (scores[b] ?? 50))[0]!
+    cycle.push(weak)
+  }
+  return cycle[seed % cycle.length]
+}
+
 /**
   Ротация (ТЗ §8): по дням Техдок / Телеграмма / Чистый сигнал, больше внимания слабому треку.
-  Пока у этих треков нет контента — слабый из Эфира и Позывного: длинный отрывок или акценты / подстановка.
+  Если у этих треков нет контента — слабый из Эфира и Позывного: длинный отрывок или акценты / подстановка.
 */
 function rotationSegments(input: PlanInput, seconds: number, seed: number, airMod?: Module, callMod?: Module): SessionSegment[] {
+  const mods = new Map(ROTATION_TRACKS.map((t) => [t, currentModule(t, input.progress, input.intake)] as const))
+  const track = rotationTrack(
+    Math.floor(Date.parse(`${input.date}T12:00:00Z`) / 86_400_000),
+    ROTATION_TRACKS.filter((t) => mods.get(t)),
+    input.intake?.tracks,
+  )
+  const mod = track && mods.get(track)
+  if (track === 'doc' && mod) {
+    const steps = docSteps({ module: mod, done: doneSet(input.progress, mod.id), started: input.progress.has(mod.id), seed }, seconds)
+    if (steps.length) return chunkSteps(steps).map((st, i) => seg(`rotation-${i + 1}`, 'rotation', i === 0 ? 'read' : 'readTasks', { steps: st, track: 'doc', module: mod.id }))
+  }
+  return legacyRotation(input, seconds, seed, airMod, callMod)
+}
+
+function legacyRotation(input: PlanInput, seconds: number, seed: number, airMod?: Module, callMod?: Module): SessionSegment[] {
   const scores = input.intake?.tracks
   const weakAir = !scores || scores.air <= scores.call
   const alt = seed % 2 === 0 ? weakAir : !weakAir
@@ -298,7 +356,6 @@ export async function skipBlock(block: SessionBlock): Promise<void> {
 
 /** Для подписей: какой трек у блока. */
 export const BLOCK_TRACK: Partial<Record<SessionBlock, TrackId>> = { air: 'air', call: 'call' }
-
 /** Есть ли у фразы или чанка всё нужное (для отбраковки битых ссылок в старом плане). */
 export function stepAlive(s: Step): boolean {
   switch (s.kind) {
@@ -309,6 +366,14 @@ export function stepAlive(s: Step): boolean {
       return phraseById.has(s.phrase)
     case 'chunk':
       return chunkById.has(s.chunk)
+    case 'docRead':
+    case 'docParse':
+      return textById.has(s.text)
+    case 'docFind':
+      return !!textById.get(s.text)?.find[s.i]
+    case 'docSummary':
+    case 'docRetell':
+      return !!textById.get(s.text)?.paragraphs[s.p]
     default:
       return true
   }

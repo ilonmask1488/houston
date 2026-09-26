@@ -2,7 +2,7 @@ import Dexie from 'dexie'
 import { describe, expect, it } from 'vitest'
 import { moduleItems } from '../course/progress'
 import { db } from '../db/db'
-import { quickPoints, saveRecord, staticNoise, staticPool, staticSpeed, weekStart } from './games'
+import { quickPoints, saveRecord, speedreadPoints, speedreadRounds, speedreadSeconds, staticNoise, staticPool, staticSpeed, weekStart } from './games'
 
 describe('Помехи', () => {
   it('скорость растёт с серией и упирается в 1.5', () => {
@@ -42,5 +42,22 @@ describe('рекорды', () => {
     expect(weekStart('2026-09-27')).toBe('2026-09-21')
     db.close()
     await Dexie.delete(db.name)
+  })
+})
+
+describe('Скорочтение', () => {
+  it('шесть раундов из разных текстов, ответ всегда в показанном тексте', () => {
+    const rounds = speedreadRounds(42)
+    expect(rounds).toHaveLength(6)
+    expect(new Set(rounds.map((r) => r.text)).size).toBe(6)
+    for (const r of rounds) expect(r.paragraphs.join(' ').toLowerCase(), r.id).toContain(r.key.toLowerCase())
+  })
+
+  it('таймер короче с серией, но не меньше 15 секунд; очки за скорость и комбо', () => {
+    expect(speedreadSeconds(0)).toBe(40)
+    expect(speedreadSeconds(3)).toBe(28)
+    expect(speedreadSeconds(20)).toBe(15)
+    expect(speedreadPoints(0, 1)).toBe(10)
+    expect(speedreadPoints(20, 2)).toBe(100)
   })
 })

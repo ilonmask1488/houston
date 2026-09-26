@@ -4,7 +4,7 @@ import { currentModule, moduleItems, type Progress } from '../course/progress'
 import type { CardRow } from '../db/types'
 import { STEP_SECONDS, stepsSeconds } from '../run/steps'
 import { newCard } from '../srs/srs'
-import { airSteps, callSteps, chunkSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments } from './session'
+import { airSteps, callSteps, chunkSteps, docSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments, rotationTrack, stepAlive } from './session'
 
 const cards = (n: number): CardRow[] => Array.from({ length: n }, (_, i) => newCard(`c-intro-${String(i + 1).padStart(2, '0')}`, 1, 0))
 
@@ -78,5 +78,45 @@ describe('сеанс связи', () => {
     const merged = refreshSegments(old, fresh)
     expect(merged[0]).toMatchObject({ id: 'warmup', status: 'done' })
     expect(merged.some((s) => s.block === 'review')).toBe(true)
+  })
+})
+
+describe('Техдок в сеансе', () => {
+  const doc = () => moduleById.get('doc-structure')!
+
+  it('текст: прочитать → найти → суть → разбор → пересказ; пересказ есть всегда', () => {
+    const steps = docSteps({ module: doc(), done: new Set(), started: false, seed: 1 }, 360)
+    expect(steps.map((s) => s.kind)).toEqual(['intro', 'docRead', 'docFind', 'docFind', 'docSummary', 'docParse', 'docRetell'])
+    const short = docSteps({ module: doc(), done: new Set(), started: true, seed: 1 }, 120)
+    expect(short.at(-1)!.kind).toBe('docRetell')
+    expect(short.some((s) => s.kind === 'docParse')).toBe(false)
+  })
+
+  it('сначала непрочитанные тексты модуля', () => {
+    const all = moduleItems('doc-structure')
+    const done = new Set(all.slice(0, -1))
+    const steps = docSteps({ module: doc(), done, started: true, seed: 5 }, 360)
+    const read = steps.find((s) => s.kind === 'docRead')
+    expect(read && read.kind === 'docRead' && read.text).toBe(all.at(-1))
+  })
+
+  it('ротация: треки без контента не участвуют, слабый получает вдвое больше дней', () => {
+    expect(rotationTrack(3, [])).toBeUndefined()
+    expect(rotationTrack(3, ['doc'])).toBe('doc')
+    const days = Array.from({ length: 40 }, (_, d) => rotationTrack(d, ['doc', 'mail', 'clean'], { doc: 70, mail: 30, clean: 60 }))
+    const n = (t: string) => days.filter((x) => x === t).length
+    expect(n('mail')).toBe(2 * n('doc'))
+    expect(n('clean')).toBe(n('doc'))
+  })
+
+  it('в сеансе ротация — Техдок, сегменты ≤ 3 минут, все шаги живые', () => {
+    const segs = planSegments({ minutes: 30, date: '2026-09-27', due: [], progress: new Map(), speed: 1 })
+    const rot = segs.filter((s) => s.block === 'rotation')
+    expect(rot.length).toBeGreaterThan(0)
+    expect(rot.every((s) => s.track === 'doc')).toBe(true)
+    for (const s of rot) {
+      expect(stepsSeconds(s.steps!)).toBeLessThanOrEqual(MAX_SEGMENT_SECONDS)
+      expect(s.steps!.every(stepAlive)).toBe(true)
+    }
   })
 })

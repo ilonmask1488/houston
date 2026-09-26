@@ -3,13 +3,13 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Placeholder, Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
-import { moduleById } from '../../content'
+import { moduleById, textById } from '../../content'
 import { ru } from '../../i18n/ru'
 import { doneSet, loadProgress, startModuleRow } from '../../lib/course/progress'
 import type { SessionSegment } from '../../lib/db/types'
 import { lastIntake } from '../../lib/intake/store'
 import type { Step } from '../../lib/run/steps'
-import { airSteps, callSteps, currentSpeed, hash, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
+import { airSteps, callSteps, currentSpeed, docSteps, hash, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
 import { Runner } from './Runner'
 
 export function SegmentRun() {
@@ -54,6 +54,41 @@ export function SegmentRun() {
   )
 }
 
+/** Задания к конкретному тексту из библиотеки (/run/text/:id). */
+export function TextRun() {
+  const id = useParams().id ?? ''
+  const navigate = useNavigate()
+  const [round, setRound] = useState(0)
+  const t = textById.get(id)
+  const m = t && moduleById.get(t.module)
+  const steps = useMemo(
+    () => (t && m ? docSteps({ module: m, done: new Set(), started: true, seed: hash(`${id}:${round}`), text: id }, 600) : []),
+    [t, m, id, round],
+  )
+  useEffect(() => {
+    if (m) void startModuleRow(m.id)
+  }, [m])
+  if (!t || !steps.length) return <Screen title={ru.run.notFound} back />
+  return (
+    <Runner
+      key={round}
+      steps={steps}
+      source="drill"
+      onExit={() => navigate(`/library/${id}`)}
+      actions={() => (
+        <>
+          <button type="button" className={ui.signalButton} onClick={() => setRound((n) => n + 1)}>
+            {ru.run.summary.again}
+          </button>
+          <button type="button" className={ui.secondary} onClick={() => navigate('/library')}>
+            {ru.doc.toLibrary}
+          </button>
+        </>
+      )}
+    />
+  )
+}
+
 /** Свободная тренировка модуля из «Треков»: один круг минут на пять. */
 export function ModuleRun() {
   const id = useParams().id ?? ''
@@ -71,6 +106,7 @@ export function ModuleRun() {
       let out: Step[] = []
       if (m.track === 'air') out = airSteps({ module: m, done, started: progress.has(id) && round > 0, speed: await currentSpeed(intake), seed }, 300).flatMap((x) => x.steps)
       else if (m.track === 'call') out = callSteps({ module: m, done, seed, quickGame: false }, 360).flatMap((x) => x.steps ?? [])
+      else if (m.track === 'doc') out = docSteps({ module: m, done, started: progress.has(id) && round > 0, seed }, 360)
       await startModuleRow(id)
       setSteps(out)
     })()

@@ -7,10 +7,11 @@ import ui from '../../components/ui.module.css'
 import { formatDate, ru } from '../../i18n/ru'
 import { manifest } from '../../lib/audio/manifest'
 import { db } from '../../lib/db/db'
+import { GAME_IDS } from '../../lib/games/games'
 import { ACHIEVEMENT_IDS } from '../../lib/progress/achievements'
 import s from './MoreScreen.module.css'
 
-const ITEMS = ['profile', 'stats', 'games', 'achievements', 'check', 'settings', 'about'] as const
+const ITEMS = ['profile', 'stats', 'games', 'library', 'achievements', 'check', 'settings', 'about'] as const
 
 export function MoreScreen() {
   return (
@@ -38,7 +39,7 @@ export function GamesScreen() {
   return (
     <Screen title={t.list} back>
       <ul className={ui.list}>
-        {(['static', 'quick'] as const).map((g) => (
+        {GAME_IDS.map((g) => (
           <li key={g}>
             <Link to={`/game/${g}`} className={ui.item}>
               <span>

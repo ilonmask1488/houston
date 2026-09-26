@@ -1,4 +1,4 @@
-/* Словарь: чанки (все — это справочник фраз) и фразы Эфира, которые уже встречались. Поиск по-русски и по-английски. */
+/* Словарь: чанки (все — это справочник фраз), слова (мои, термины, весь словарь) и фразы Эфира, которые уже встречались. */
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo, useState } from 'react'
 import { PlayButton } from '../../components/Play'
@@ -11,8 +11,9 @@ import { defaultVoice } from '../../lib/audio/audio'
 import { db } from '../../lib/db/db'
 import { addChunkCards } from '../../lib/srs/cards'
 import s from './DictionaryScreen.module.css'
+import { WordsTab } from './WordsTab'
 
-type Tab = 'chunks' | 'phrases'
+type Tab = 'chunks' | 'words' | 'phrases'
 
 function norm(x: string): string {
   return x.toLowerCase().replace(/[’']/g, "'").replace(/ё/g, 'е')
@@ -50,13 +51,21 @@ export function DictionaryScreen() {
 
   return (
     <Screen title={t.title}>
-      <input className={s.search} type="search" placeholder={t.search} value={q} onChange={(e) => setQ(e.target.value)} aria-label={t.search} />
+      <input
+        className={s.search}
+        type="search"
+        placeholder={tab === 'words' ? t.wordsSearch : t.search}
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        aria-label={tab === 'words' ? t.wordsSearch : t.search}
+      />
       <Segmented
         label={t.title}
         value={tab}
-        options={(['chunks', 'phrases'] as const).map((v) => ({ value: v, label: t.tabs[v]! }))}
+        options={(['chunks', 'words', 'phrases'] as const).map((v) => ({ value: v, label: t.tabs[v]! }))}
         onChange={setTab}
       />
+      {tab === 'words' && <WordsTab query={q} />}
       {tab === 'chunks' &&
         (groups.length ? (
           groups.map(([fn, list]) => (

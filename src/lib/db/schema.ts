@@ -53,6 +53,14 @@ export const SCHEMA_VERSIONS: SchemaVersion[] = [
       episodes: 'id',
     },
   },
+  {
+    // Фаза 3: слова с твоим переводом и «Мой текст». Новые пустые таблицы.
+    version: 4,
+    stores: {
+      userWords: 'id, createdAt',
+      myTexts: '++id, createdAt',
+    },
+  },
 ]
 
 export const CURRENT_SCHEMA_VERSION = SCHEMA_VERSIONS[SCHEMA_VERSIONS.length - 1]!.version

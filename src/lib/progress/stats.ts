@@ -45,6 +45,34 @@ export function avgLatency(answers: AnswerRow[]): number | null {
   return xs.length ? Math.round(xs.reduce((s, x) => s + x, 0) / xs.length) : null
 }
 
+/**
+  Чтение (Техдок): скорость по шагам «прочитай» (слова / секунды, медиана последних 10 —
+  чтобы одно отвлечение не портило цифру), доля и среднее время найденных ответов.
+*/
+export function readingStats(answers: AnswerRow[]): { wpm: number | null; texts: number; found: number; findTotal: number; findMs: number | null } {
+  const reads = answers
+    .filter((a) => a.kind === 'read' && Number(a.given) >= 20)
+    .map((a) => (Number(a.expected) / Number(a.given)) * 60)
+    .filter((x) => Number.isFinite(x) && x > 0)
+  const last = reads.slice(-10).sort((a, b) => a - b)
+  const wpm = last.length ? Math.round(last[Math.floor(last.length / 2)]!) : null
+  const finds = answers.filter((a) => a.kind === 'find')
+  const ok = finds.filter((a) => a.correct && a.latencyMs !== undefined)
+  const findMs = ok.length ? Math.round(ok.reduce((s, a) => s + a.latencyMs!, 0) / ok.length) : null
+  return { wpm, texts: reads.length, found: finds.filter((a) => a.correct).length, findTotal: finds.length, findMs }
+}
+
+/** Слова в карточках по полосам частотности словаря; свои слова — отдельно. */
+export function wordsByBand(itemIds: string[], bandOf: (id: string) => string | undefined): { band: string; n: number }[] {
+  const by = new Map<string, number>()
+  for (const id of new Set(itemIds)) {
+    const band = id.startsWith('u-') ? 'own' : bandOf(id)
+    if (band) by.set(band, (by.get(band) ?? 0) + 1)
+  }
+  const order = ['ngsl1', 'ngsl2', 'ngsl3', 'ngsl4', 'nawl', 'tech', 'own']
+  return order.filter((b) => by.has(b)).map((band) => ({ band, n: by.get(band)! }))
+}
+
 /** Явления связной речи, где чаще всего теряешься (доля ошибок, от 4 ответов). */
 export function weakTags(answers: AnswerRow[]): { tag: string; errorRate: number; total: number }[] {
   const by = new Map<string, { wrong: number; total: number }>()

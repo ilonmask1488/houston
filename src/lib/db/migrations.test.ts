@@ -61,6 +61,12 @@ FIXTURES[3] = {
   episodes: [{ id: 'ep-1', completedAt: 1, best: 0.8, times: 1 }],
 }
 
+FIXTURES[4] = {
+  ...FIXTURES[3]!,
+  userWords: [{ id: 'u-outgas', text: 'outgas', ru: 'газовыделение', context: 'Materials outgas in vacuum.', createdAt: 1 }],
+  myTexts: [{ id: 1, title: 'Abstract', text: 'We present a new method.', createdAt: 1 }],
+}
+
 let counter = 0
 const names: string[] = []
 function freshName(): string {

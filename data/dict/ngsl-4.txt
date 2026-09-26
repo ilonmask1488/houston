@@ -1,0 +1,710 @@
+# Переводы NGSL 2101–2809. Формат: лемма|перевод. Сгенерировано, reviewed: false.
+formula|формула
+alter|изменять
+perceive|воспринимать
+routine|рутина; стандартная процедура
+sink|тонуть; раковина; теплоотвод (heat sink)
+stare|пристально смотреть
+anymore|больше (не)
+hero|герой
+supporter|сторонник
+convert|преобразовывать
+steady|устойчивый, установившийся
+meter|метр; счётчик
+truck|грузовик
+nose|нос; носовой обтекатель
+beside|рядом с
+sail|парус; плыть
+disaster|катастрофа
+pace|темп
+heavily|сильно, тяжело
+devote|посвящать
+terrorist|террорист
+justify|обосновывать
+vital|жизненно важный
+fascinate|очаровывать
+external|внешний
+spare|запасной; уделить
+whenever|всякий раз когда
+depression|депрессия; углубление
+guilty|виновный
+underlie|лежать в основе
+mom|мама
+distinction|различие
+satisfaction|удовлетворение
+incorporate|включать
+pour|лить
+sweep|развёртка; мести; стреловидность
+obligation|обязательство
+sir|сэр
+evaluate|оценивать
+anger|гнев
+pub|паб
+perception|восприятие
+naturally|естественно
+currency|валюта
+database|база данных
+initially|изначально
+territory|территория
+stream|поток
+rarely|редко
+height|высота
+apparent|очевидный; кажущийся
+western|западный
+expansion|расширение
+constantly|постоянно
+muscle|мышца
+scare|пугать
+badly|плохо
+everyday|повседневный
+boundary|граница; граничный (условие)
+ratio|отношение, коэффициент
+essay|эссе
+scream|кричать
+withdraw|отзывать, изымать
+pollution|загрязнение
+disorder|беспорядок; расстройство
+furniture|мебель
+symbol|символ, обозначение
+apartment|квартира
+demonstration|демонстрация
+analyst|аналитик
+platform|платформа
+steel|сталь
+cake|торт
+transform|преобразовывать
+wound|рана
+restriction|ограничение
+foundation|основание, фундамент
+designer|конструктор; дизайнер
+strain|деформация (относительная); напряжение
+innovation|инновация
+album|альбом
+singer|певец
+trail|след; тропа
+trap|ловушка
+loose|свободный, ослабленный
+extension|удлинение; расширение
+wealth|богатство
+gradually|постепенно
+tank|бак; резервуар; танк
+evil|зло
+remarkable|замечательный
+tune|настраивать; мелодия
+grass|трава
+invitation|приглашение
+transition|переход
+frighten|пугать
+bid|предложение цены, заявка
+breed|порода; разводить
+extraordinary|необычайный
+brilliant|блестящий; отлично (брит.)
+adviser|советник
+stem|стебель; происходить (stem from)
+reverse|обратный; реверс
+mode|режим
+mirror|зеркало
+awful|ужасный
+pose|ставить (вопрос); поза
+adjust|регулировать, настраивать
+creative|творческий
+nowadays|в наши дни
+poem|стихотворение
+agricultural|сельскохозяйственный
+competitor|конкурент
+alcohol|спирт; алкоголь
+festival|фестиваль
+vegetable|овощ
+van|фургон
+confident|уверенный
+planet|планета
+curve|кривая
+knee|колено
+overcome|преодолевать
+web|сеть; стенка (балки)
+depth|глубина
+entrance|вход
+log|журнал; бревно; логарифм
+giant|гигант
+god|бог
+portion|часть, порция
+substance|вещество
+extensive|обширный
+interpret|интерпретировать
+independence|независимость
+sugar|сахар
+inner|внутренний
+harm|вред
+consult|консультироваться
+pink|розовый
+shadow|тень
+strip|полоса; снимать (покрытие)
+smooth|гладкий
+intervention|вмешательство
+impress|производить впечатление
+exam|экзамен
+vice|вице-; тиски (vise)
+radical|радикальный
+similarly|аналогично
+behave|вести себя
+loud|громкий
+dimension|размер, измерение
+subsequent|последующий
+infection|инфекция
+jacket|куртка; рубашка (охлаждения)
+efficiency|эффективность, КПД
+dirty|грязный
+statistic|статистика
+regularly|регулярно
+resort|курорт; прибегать
+iron|железо; утюг
+broadcast|трансляция
+membership|членство
+bread|хлеб
+blind|слепой; глухой (отверстие)
+pure|чистый
+bloody|кровавый; чёртов (брит.)
+ally|союзник
+quantity|количество, величина
+bend|изгибать; изгиб
+mature|зрелый
+briefly|кратко
+alarm|тревога
+disturb|беспокоить; возмущение
+sustain|выдерживать, поддерживать
+flood|наводнение
+poverty|бедность
+crazy|сумасшедший
+cite|цитировать
+newly|недавно
+parallel|параллельный
+gender|пол, гендер
+sponsor|спонсор
+boot|ботинок; загрузка
+accurate|точный
+dealer|дилер
+button|кнопка
+burden|бремя
+desert|пустыня
+mate|приятель; сопрягать
+occasionally|иногда
+shareholder|акционер
+bowl|миска
+discovery|открытие
+resistance|сопротивление
+bath|ванна
+frequency|частота
+criticize|критиковать
+tap|кран; постукивать; метчик
+philosophy|философия
+lip|губа; кромка
+attribute|приписывать; атрибут
+apologize|извиняться
+approval|одобрение, утверждение
+grab|хватать
+entitle|давать право; озаглавить
+lend|одалживать
+involvement|участие
+exposure|воздействие
+conventional|обычный, традиционный
+digital|цифровой
+translate|переводить
+edit|редактировать
+formation|образование, формирование
+deposit|депозит; отложение
+pleasant|приятный
+overseas|за рубежом
+advocate|сторонник; отстаивать
+establishment|учреждение
+summary|краткое изложение
+rough|шероховатый; грубый, приблизительный
+pen|ручка
+recovery|восстановление; спасение (ступени)
+seal|уплотнение; герметизировать
+tube|труба, трубка
+tower|башня
+characterize|характеризовать
+specify|указывать, задавать
+exact|точный
+spin|вращение; вращаться
+operator|оператор
+infant|младенец
+dig|копать
+drag|сопротивление (аэродинамическое); тащить
+mount|крепление; монтировать
+wrap|оборачивать
+anticipate|предвидеть
+dependent|зависимый
+specialize|специализироваться
+angle|угол
+chicken|курица
+anxiety|тревога
+virus|вирус
+precisely|точно
+rival|соперник
+offense|нарушение; обида
+detect|обнаруживать
+teenager|подросток
+admire|восхищаться
+moderate|умеренный
+surgery|хирургия
+musician|музыкант
+significance|значимость
+shower|душ
+illegal|незаконный
+charity|благотворительность
+universal|универсальный
+cigarette|сигарета
+constitute|составлять
+adequate|достаточный, адекватный
+consultant|консультант
+historian|историк
+cousin|двоюродный брат/сестра
+visual|визуальный
+stupid|глупый
+keen|увлечённый
+ethnic|этнический
+twin|близнец; двойной
+clinical|клинический
+eastern|восточный
+forecast|прогноз
+segment|сегмент
+custom|обычай; заказной
+adapt|адаптировать
+sand|песок
+cap|крышка, колпачок
+prompt|быстрый; подсказка
+charm|обаяние
+react|реагировать
+lecture|лекция
+venture|предприятие; рискнуть
+compound|соединение; составной
+rescue|спасение
+mess|беспорядок
+preference|предпочтение
+comprehensive|всесторонний
+incentive|стимул
+league|лига
+dialog|диалог
+cream|крем, сливки
+rapid|быстрый
+cancel|отменять
+regret|сожалеть
+dismiss|отклонять
+margin|запас (safety margin — запас прочности); поле
+beneath|под
+opponent|оппонент
+resist|сопротивляться
+capability|возможность, способность
+absolute|абсолютный
+correspond|соответствовать; переписываться
+stroke|ход (поршня); удар
+dare|сметь
+barrier|барьер
+rid|избавиться (get rid of)
+divorce|развод
+ruin|разрушать
+bury|закапывать
+counsel|совет; адвокат
+tendency|тенденция
+frequent|частый
+motor|мотор, двигатель
+survival|выживание
+counter|счётчик; прилавок; противо-
+possess|обладать
+permission|разрешение
+valley|долина
+float|плавать; поплавок
+mad|безумный
+greatly|сильно
+visible|видимый
+electric|электрический
+impressive|впечатляющий
+evolution|эволюция
+awareness|осведомлённость
+violent|жестокий, бурный
+slave|раб; ведомый
+wealthy|богатый
+architecture|архитектура
+acceptable|приемлемый
+journal|журнал
+coal|уголь
+measurement|измерение
+random|случайный
+successfully|успешно
+depress|нажимать; угнетать
+illustration|иллюстрация
+burst|разрыв; лопнуть
+privilege|привилегия
+buyer|покупатель
+mutual|взаимный
+rail|рельс; направляющая
+motivate|мотивировать
+laboratory|лаборатория
+mortgage|ипотека
+promotion|продвижение; повышение
+passion|страсть
+champion|чемпион
+fulfill|выполнять
+dust|пыль
+dedicate|посвящать
+roughly|примерно
+skirt|юбка; обечайка
+province|провинция
+march|марш; март (March)
+evaluation|оценка
+compromise|компромисс
+accomplish|выполнять
+weakness|слабость
+announcement|объявление
+salt|соль
+glance|взгляд
+opera|опера
+contest|конкурс
+brush|щётка
+embarrass|смущать
+gallery|галерея
+genetic|генетический
+aggressive|агрессивный
+chest|грудь; сундук
+format|формат
+literary|литературный
+govern|управлять
+embrace|обнимать; принимать
+praise|хвалить
+silent|тихий
+pump|насос
+publisher|издатель
+celebration|празднование
+golf|гольф
+compensation|компенсация
+classical|классический
+weigh|весить; взвешивать
+versus|против; в зависимости от (на графике)
+deficit|дефицит
+modify|изменять, дорабатывать
+flash|вспышка; флеш-память
+friendship|дружба
+profession|профессия
+literally|буквально
+equation|уравнение
+gesture|жест
+entertain|развлекать
+fantastic|фантастический
+assign|назначать, присваивать
+inflation|инфляция; наддув
+historic|исторический
+injure|травмировать
+remote|удалённый; пульт
+therapy|терапия
+orange|апельсин; оранжевый
+twist|скручивать; кручение
+personnel|персонал
+imagination|воображение
+disagree|не соглашаться
+throat|горло; критическое сечение сопла
+insight|понимание
+tackle|браться за (задачу)
+forever|навсегда
+exceed|превышать
+expenditure|расходы
+joy|радость
+pregnant|беременная
+reliable|надёжный
+gear|шестерня; передача; снаряжение
+click|щелчок
+poet|поэт
+fortune|удача; состояние
+ceremony|церемония
+pile|куча; свая
+pig|свинья
+mixture|смесь
+automatically|автоматически
+scholar|учёный
+psychological|психологический
+dramatically|резко
+stake|ставка; доля
+creature|существо
+partnership|партнёрство
+participation|участие
+clause|пункт (договора, стандарта)
+penalty|штраф
+chamber|камера (сгорания); палата
+fancy|хотеть (разг.); причудливый
+poetry|поэзия
+chat|болтать; чат
+clothing|одежда
+evolve|развиваться
+sake|ради (for the sake of)
+shelf|полка
+boost|усиление; ускоритель (ракета)
+tail|хвост
+possession|владение
+abortion|аборт
+curious|любопытный
+wooden|деревянный
+boom|бум; стрела
+tale|сказка
+democratic|демократический
+maintenance|техническое обслуживание
+consequently|следовательно
+pot|горшок; заливать компаундом
+cow|корова
+strengthen|усиливать
+whilst|в то время как
+constraint|ограничение; закрепление (в расчёте)
+fold|складывать; сгиб
+bin|корзина; контейнер
+undergo|подвергаться, проходить
+potentially|потенциально
+scope|объём (работ); область
+pretend|притворяться
+diversity|разнообразие
+allege|утверждать
+pride|гордость
+intense|интенсивный
+inquiry|запрос; расследование
+resign|увольняться
+craft|ремесло; аппарат (spacecraft)
+strict|строгий
+concrete|бетон; конкретный
+shell|оболочка; корпус
+damn|чёрт
+distinct|отчётливый, отличный
+humor|юмор
+limitation|ограничение
+indication|указание, признак
+stability|устойчивость
+wise|мудрый
+neglect|пренебрегать
+compose|составлять
+jail|тюрьма
+shelter|укрытие
+mere|всего лишь
+carbon|углерод
+regulate|регулировать
+cheese|сыр
+trigger|запускать; триггер
+pipe|труба
+destruction|разрушение
+guitar|гитара
+flag|флаг; помечать
+piano|пианино
+magic|магия
+mystery|тайна
+ski|лыжи
+whisper|шептать
+rear|задний; тыл
+menu|меню
+species|вид (биол.)
+moon|луна
+presumably|предположительно
+bless|благословлять
+airline|авиакомпания
+amendment|поправка
+grandmother|бабушка
+jury|жюри
+cooperation|сотрудничество
+civilian|гражданский
+composition|состав; композиция
+coin|монета
+regardless|независимо
+scan|сканировать
+bunch|пучок, куча
+racial|расовый
+greet|приветствовать
+hopefully|надеюсь
+sanction|санкция
+trick|трюк
+paragraph|абзац
+maker|производитель
+chocolate|шоколад
+stimulate|стимулировать
+belt|ремень; пояс
+potato|картофель
+narrative|повествование
+tissue|ткань; салфетка
+barely|едва
+invent|изобретать
+tourism|туризм
+pro|профи; за
+stair|ступенька
+hesitate|колебаться
+shine|сиять
+motivation|мотивация
+romantic|романтичный
+firmly|твёрдо
+interior|внутренний
+stomach|желудок
+nowhere|нигде
+pray|молиться
+championship|чемпионат
+servant|слуга
+immigrant|иммигрант
+excess|избыток
+complexity|сложность
+liability|ответственность (юр.)
+surprisingly|удивительно
+extract|извлекать
+implementation|реализация
+bias|смещение; предвзятость
+differently|по-другому
+catalog|каталог
+continuous|непрерывный
+golden|золотой
+stamp|штамп; марка
+guideline|рекомендация, руководство
+envelope|конверт; огибающая
+knife|нож
+biological|биологический
+consume|потреблять
+luxury|роскошь
+weekly|еженедельный
+wherever|где бы ни
+bite|кусать
+printer|принтер
+firstly|во-первых
+anxious|тревожный
+adventure|приключение
+fence|забор, ограждение
+exhaust|выхлоп; истощать
+attraction|притяжение; достопримечательность
+ocean|океан
+quietly|тихо
+castle|замок
+veteran|ветеран
+reflection|отражение
+nerve|нерв
+determination|определение; решимость
+altogether|в целом
+fiction|художественная литература
+carpet|ковёр
+cluster|кластер
+confusion|путаница
+hurry|спешить
+logic|логика
+controversial|спорный
+raw|сырой, необработанный
+grammar|грамматика
+revise|пересматривать
+hint|подсказка
+hook|крюк
+bell|колокол
+liquid|жидкость; жидкий
+panic|паника
+uncle|дядя
+rice|рис
+slope|наклон; склон
+happiness|счастье
+genuine|подлинный
+vessel|сосуд; судно
+verb|глагол
+reckon|считать, полагать
+silly|глупый
+transportation|перевозка
+harbor|гавань
+comedy|комедия
+chase|преследовать
+storage|хранение; хранилище
+universe|вселенная
+horrible|ужасный
+sheep|овца
+lover|любитель
+rat|крыса
+portrait|портрет; книжная (ориентация)
+innocent|невиновный
+substitute|заменять; замена
+supplement|дополнение
+adjustment|регулировка
+reasonably|достаточно, разумно
+filter|фильтр
+flexible|гибкий
+abstract|аннотация; абстрактный
+tent|палатка
+precise|точный
+distant|далёкий
+stranger|незнакомец
+shade|тень; оттенок
+grain|зерно
+situate|располагать
+summarize|кратко излагать
+leap|прыжок
+snap|защёлка; щёлкнуть
+probability|вероятность
+leather|кожа (материал)
+uncertainty|неопределённость, погрешность
+swear|клясться
+refugee|беженец
+shore|берег
+monthly|ежемесячный
+comprise|включать, состоять из
+stir|перемешивать
+excitement|волнение
+sigh|вздох
+pregnancy|беременность
+experimental|экспериментальный
+institutional|институциональный
+slice|ломтик; срез
+wander|бродить
+empire|империя
+subsequently|впоследствии
+gentle|мягкий, плавный
+attendance|посещаемость
+ownership|владение
+qualification|квалификация; квалификационные испытания
+suspend|подвешивать; приостанавливать
+functional|функциональный
+voluntary|добровольный
+pale|бледный
+stain|пятно
+athlete|спортсмен
+organic|органический
+tongue|язык (орган)
+server|сервер
+structural|конструкционный, прочностной
+website|сайт
+fool|дурак
+alongside|наряду с
+unite|объединять
+gently|мягко
+compute|вычислять
+wipe|протирать
+weird|странный
+gaze|взгляд
+fade|угасать
+cough|кашель
+hypothesis|гипотеза
+royal|королевский
+theoretical|теоретический
+curtain|занавеска
+mayor|мэр
+darkness|темнота
+aunt|тётя
+tournament|турнир
+registration|регистрация
+fragment|фрагмент
+listener|слушатель
+immigration|иммиграция
+tender|тендер; нежный
+density|плотность
+ugly|уродливый
+module|модуль
+faithfully|верно (Yours faithfully — с уважением)
+autumn|осень
+cheek|щека
+attachment|вложение; крепление
+holder|держатель
+solar|солнечный
+grin|ухмылка
+rose|роза
+noun|существительное
+fortunate|удачливый
+alright|в порядке
+lazy|ленивый
+hello|привет
+hunger|голод
+insure|страховать
+ashamed|пристыженный
+found|основывать
+blog|блог
+thirst|жажда

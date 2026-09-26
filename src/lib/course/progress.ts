@@ -15,7 +15,7 @@ export function moduleItems(moduleId: string): string[] {
   if (moduleId === 'air-fast') return content.phrases.filter((p) => p.module !== 'air-accents').map((p) => p.id)
   const m = itemsByModule.get(moduleId)
   if (!m) return []
-  return [...m.phrases, ...m.passages, ...m.chunks, ...m.questions, ...m.translate, ...m.substitution].map((x) => x.id)
+  return [...m.phrases, ...m.passages, ...m.chunks, ...m.questions, ...m.translate, ...m.substitution, ...m.texts].map((x) => x.id)
 }
 
 /** Модуль с контентом (треки фаз 3–4 пока пустые). */

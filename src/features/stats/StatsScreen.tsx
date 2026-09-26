@@ -7,10 +7,11 @@ import { TRACKS } from '../../content/types'
 import { formatSeconds, ru } from '../../i18n/ru'
 import { hasContent, loadProgress } from '../../lib/course/progress'
 import { db } from '../../lib/db/db'
-import { avgLatency, listeningBySpeed, minutesByDay, weakTags } from '../../lib/progress/stats'
+import { dictById } from '../../lib/dict/dict'
+import { avgLatency, listeningBySpeed, minutesByDay, readingStats, weakTags, wordsByBand } from '../../lib/progress/stats'
 import { AIR_DAY_SECONDS, computeStreak, localDate } from '../../lib/progress/streak'
 import { useSettings } from '../../lib/settings/settings'
-import { retentionStats } from '../../lib/srs/cards'
+import { prepareItems, retentionStats } from '../../lib/srs/cards'
 import s from './StatsScreen.module.css'
 
 export function StatsScreen() {
@@ -32,6 +33,12 @@ export function StatsScreen() {
       progress: await loadProgress(),
       cards: await db.cards.count(),
       retention: await retentionStats(),
+      reading: readingStats(answers),
+      words: await (async () => {
+        await prepareItems()
+        const ids = (await db.cards.where('kind').equals(1).toArray()).map((c) => c.itemId).filter((id) => /^(w|u)-/.test(id))
+        return wordsByBand(ids, (id) => dictById.get(id)?.band)
+      })(),
     }
   }, [])
   if (!data) return <Screen title={t.title} back />
@@ -108,6 +115,24 @@ export function StatsScreen() {
       <section className={s.section}>
         <h2>{t.latency}</h2>
         <p className="mono">{t.latencyValue(data.latency)}</p>
+      </section>
+
+      <section className={s.section}>
+        <h2>{t.reading}</h2>
+        <p className="mono">{t.wpm(data.reading.wpm, data.reading.texts)}</p>
+        <p className="mono">{t.find(data.reading.found, data.reading.findTotal, data.reading.findMs)}</p>
+        <h3 className={s.h3}>{t.words}</h3>
+        {data.words.length ? (
+          <ul className={s.weak}>
+            {data.words.map((w) => (
+              <li key={w.band}>
+                {w.band === 'own' ? t.ownWords : ru.bands[w.band]} · <span className="mono">{w.n}</span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className={s.note}>{t.wordsEmpty}</p>
+        )}
       </section>
 
       <section className={s.section}>

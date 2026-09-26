@@ -184,6 +184,14 @@ export type InterviewRow = { id?: number; at: number; seconds: number; items: In
 
 export type EpisodeRow = { id: string; completedAt: number; best: number; times: number }
 
+/* ——— Схема v4 (фаза 3): свои слова и свои тексты ——— */
+
+/** Слово, которого нет во встроенном словаре: перевод ввёл ты. id — «u-<слово>». */
+export type UserWordRow = { id: string; text: string; ru: string; context?: string; createdAt: number }
+
+/** «Мой текст» — вставленный абзац из статьи. Хранится только на устройстве. */
+export type MyTextRow = { id?: number; title: string; text: string; createdAt: number }
+
 /** Прогресс модуля трека. */
 export type ModuleProgressRow = {
   moduleId: string

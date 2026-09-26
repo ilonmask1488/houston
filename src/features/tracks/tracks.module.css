@@ -124,3 +124,13 @@
   padding-top: var(--space-4);
   border-top: 1.5px solid var(--ink);
 }
+
+.extra {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin-top: var(--space-2);
+  color: var(--signal-ink);
+  font-weight: 500;
+  text-decoration: none;
+}

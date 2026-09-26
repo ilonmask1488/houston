@@ -8,7 +8,9 @@ import type {
   EpisodeRow,
   GameRecordRow,
   InterviewRow,
+  MyTextRow,
   StoryRow,
+  UserWordRow,
   IntakeRow,
   MetaKey,
   MetaRow,
@@ -33,6 +35,8 @@ export class AppDB extends Dexie {
   stories!: EntityTable<StoryRow, 'id'>
   interviews!: EntityTable<InterviewRow, 'id'>
   episodes!: EntityTable<EpisodeRow, 'id'>
+  userWords!: EntityTable<UserWordRow, 'id'>
+  myTexts!: EntityTable<MyTextRow, 'id'>
 
   constructor(name = DB_NAME) {
     super(name)

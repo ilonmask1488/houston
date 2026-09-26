@@ -4,6 +4,7 @@
 */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
+import { splitSentences } from '../src/lib/story/text.ts'
 
 export type JsonFile = { path: string; data: unknown }
 
@@ -157,6 +158,58 @@ export function checkCourse(files: JsonFile[]): string[] {
     const key = String(c.en).toLowerCase()
     if (chunkTexts.has(key)) errors.push(`чанк «${String(c.en)}» повторяется`)
     chunkTexts.add(key)
+  }
+  errors.push(...checkDoc(get('doc/texts.json'), get('doc/strategies.json'), modules, ids))
+  errors.push(...checkDictionary(get('dict/words.json')))
+  return errors
+}
+
+/**
+  Техдок: у каждого абзаца три разных кратких содержания и образец пересказа; ключ «найди ответ»
+  стоит ровно в одном предложении текста (иначе верными окажутся два); индекс ответа разбора в пределах вариантов.
+*/
+export function checkDoc(texts: Json[], strategies: Json[], modules: Set<string>, ids: Map<string, string>): string[] {
+  const errors: string[] = []
+  for (const s of strategies) if (!modules.has(s.module as string)) errors.push(`стратегия: нет модуля ${String(s.module)}`)
+  for (const t of texts) {
+    const id = String(t.id)
+    const where = `текст ${id}`
+    if (ids.has(id)) errors.push(`повтор id ${id}`)
+    ids.set(id, 'doc/texts.json')
+    if (!modules.has(t.module as string)) errors.push(`${where}: нет модуля ${String(t.module)}`)
+    if (typeof t.reviewed !== 'boolean') errors.push(`${where}: нет флага reviewed`)
+    if (!t.source || !t.license) errors.push(`${where}: нет источника или лицензии`)
+    const paragraphs = t.paragraphs as string[]
+    const summaries = t.summaries as string[][]
+    const retell = t.retell as string[]
+    if (summaries.length !== paragraphs.length || retell.length !== paragraphs.length) errors.push(`${where}: краткие содержания и пересказы — по одному на абзац`)
+    for (const [i, s] of summaries.entries()) if (s.length !== 3 || new Set(s).size !== 3) errors.push(`${where}: абзац ${i + 1} — нужно 3 разных кратких содержания`)
+    const sentences = paragraphs.flatMap((p) => splitSentences(p)).map((x) => x.toLowerCase())
+    for (const f of t.find as Json[]) {
+      const n = sentences.filter((x) => x.includes(String(f.key).toLowerCase())).length
+      if (n !== 1) errors.push(`${where}: ключ «${String(f.key)}» найден в ${n} предложениях, нужно ровно в одном`)
+    }
+    const parse = t.parse as Json
+    const opts = parse.options as string[]
+    if ((parse.answer as number) < 0 || (parse.answer as number) >= opts.length || new Set(opts).size !== opts.length) errors.push(`${where}: разбор — индекс ответа или варианты`)
+  }
+  return errors
+}
+
+const BANDS = new Set(['ngsl1', 'ngsl2', 'ngsl3', 'ngsl4', 'nawl', 'tech'])
+
+/** Словарь: id уникальны, перевод есть, у технических терминов — транскрипция и тема. */
+export function checkDictionary(words: Json[]): string[] {
+  const errors: string[] = []
+  const seen = new Set<string>()
+  for (const w of words) {
+    const id = String(w.id)
+    if (seen.has(id)) errors.push(`словарь: повтор ${id}`)
+    seen.add(id)
+    if (!String(w.ru ?? '').trim()) errors.push(`словарь: ${id} без перевода`)
+    if (!BANDS.has(w.band as string)) errors.push(`словарь: ${id} — неизвестная полоса ${String(w.band)}`)
+    if (w.band === 'tech' && (!w.ipa || !w.topic)) errors.push(`словарь: термин ${id} без транскрипции или темы`)
+    if (typeof w.reviewed !== 'boolean') errors.push(`словарь: ${id} без флага reviewed`)
   }
   return errors
 }

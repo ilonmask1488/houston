@@ -1,4 +1,4 @@
-/* Мини-игры: «Помехи» и «Быстрый ответ». Маршрут /game/:id (?seg=… — сегмент сеанса). */
+/* Мини-игры: «Помехи», «Быстрый ответ», «Скорочтение». Маршрут /game/:id (?seg=… — сегмент сеанса). */
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
@@ -14,7 +14,7 @@ import { playText, stopAudio } from '../../lib/audio/audio'
 import { sfx, startStatic } from '../../lib/audio/sfx'
 import { loadProgress } from '../../lib/course/progress'
 import { db } from '../../lib/db/db'
-import { comboPoints, gameRandom, quickPoints, quickQuestions, saveRecord, STATIC_SECONDS, staticNoise, staticPool, staticSpeed, type GameId, type StaticItem } from '../../lib/games/games'
+import { comboPoints, GAME_IDS, gameRandom, quickPoints, quickQuestions, saveRecord, STATIC_SECONDS, staticNoise, staticPool, staticSpeed, type GameId, type StaticItem } from '../../lib/games/games'
 import { rng, shuffle } from '../../lib/intake/plan'
 import { lastIntake } from '../../lib/intake/store'
 import { evaluateAchievements } from '../../lib/progress/achievements'
@@ -23,6 +23,7 @@ import { comboMultiplier, signalFor } from '../../lib/progress/signal'
 import { currentSpeed, updateSegment } from '../../lib/session/session'
 import { useSettings } from '../../lib/settings/settings'
 import s from './games.module.css'
+import { SpeedreadGame } from './Speedread'
 
 type Outcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
 
@@ -38,7 +39,7 @@ export function GameRoute() {
   const [round, setRound] = useState(0)
   const record = useLiveQuery(() => db.gameRecords.get(id), [id, outcome])
   const t = ru.games
-  if (id !== 'static' && id !== 'quick') return <Screen title={ru.run.notFound} back />
+  if (!GAME_IDS.includes(id)) return <Screen title={ru.run.notFound} back />
   const info = t[id]
 
   const finish = async (o: Outcome) => {
@@ -78,7 +79,14 @@ export function GameRoute() {
           </button>
         </section>
       )}
-      {phase === 'play' && (id === 'static' ? <StaticGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} /> : <QuickGame key={round} onFinish={(o) => void finish(o)} />)}
+      {phase === 'play' &&
+        (id === 'static' ? (
+          <StaticGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
+        ) : id === 'quick' ? (
+          <QuickGame key={round} onFinish={(o) => void finish(o)} />
+        ) : (
+          <SpeedreadGame key={round} onFinish={(o) => void finish(o)} />
+        ))}
       {phase === 'over' && outcome && (
         <section className={s.intro}>
           <Mascot mood={outcome.isBest ? 'celebrate' : 'happy'} size={112} />

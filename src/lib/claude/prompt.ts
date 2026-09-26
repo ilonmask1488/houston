@@ -47,6 +47,10 @@ export function explainPrompt(paragraph: string): string {
   return fill(CLAUDE_PROMPTS.explainParagraph, { paragraph })
 }
 
+export function askWordPrompt(word: string, sentence: string): string {
+  return fill(CLAUDE_PROMPTS.askWord, { word, sentence })
+}
+
 export function letterPrompt(p: { situation: string; register: string; letter: string }): string {
   return fill(CLAUDE_PROMPTS.checkLetter, p)
 }

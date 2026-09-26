@@ -96,6 +96,7 @@ export function formatInterval(ms: number): string {
 /** Какие карточки открываются после ответа: «понял значение» → «скажи сам». */
 export function unlocksAfter(row: CardRow, grade: Grade14): CardKind[] {
   if (grade < 3) return []
-  if (row.kind === 1 && row.itemId.startsWith('c-')) return [2]
+  // Чанки и слова: «понял значение» → «скажи сам».
+  if (row.kind === 1 && /^(c|w|u)-/.test(row.itemId)) return [2]
   return []
 }

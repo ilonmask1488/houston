@@ -136,6 +136,45 @@ export type Episode = {
   reviewed: boolean
 }
 
+/* ——— Техдок ——— */
+
+export type DocText = {
+  id: string
+  module: string
+  level: 1 | 2 | 3
+  topic: 'space' | 'prop' | 'mat' | 'test' | 'cad' | 'sens'
+  /** жанр: статья, аннотация, даташит, требования… */
+  kind: string
+  title: string
+  paragraphs: string[]
+  /** по абзацам: [верное, ловушка, ловушка] */
+  summaries: string[][]
+  /** образец пересказа абзаца */
+  retell: string[]
+  /** вопрос и ключевая фраза из предложения-ответа */
+  find: { q: string; key: string }[]
+  parse: { sentence: string; parts: [string, string][]; q: string; options: string[]; answer: number }
+  source: string
+  license: string
+  reviewed: boolean
+}
+
+/** Слово встроенного словаря: общие (полосы NGSL/NAWL) и технические (с МФА и звуком). */
+export type DictWord = {
+  id: string
+  text: string
+  ru: string
+  band: 'ngsl1' | 'ngsl2' | 'ngsl3' | 'ngsl4' | 'nawl' | 'tech'
+  rank?: number
+  forms?: string[]
+  ipa?: string
+  topic?: string
+  /** у технических: полоса частотности, если термин есть и в общем списке */
+  freq?: string
+  voices?: VoiceId[]
+  reviewed: boolean
+}
+
 export type Content = {
   modules: Module[]
   intake: IntakeContent
@@ -149,4 +188,5 @@ export type Content = {
   substitution: Substitution[]
   storyQuestions: StoryQuestion[]
   episodes: Episode[]
+  texts: DocText[]
 }

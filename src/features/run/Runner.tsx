@@ -24,6 +24,7 @@ import s from './run.module.css'
 import { ChunkStep, QuickStep, SubstituteStep, TranslateStep } from './speaking'
 import { preloadFor } from './preload'
 import { StoryColdStep, StoryKeysStep, StoryListenStep, StoryShadowStep } from '../story/steps'
+import { DocFindStep, DocParseStep, DocReadStep, DocRetellStep, DocSummaryStep } from './doc'
 
 export type RunSummary = {
   seconds: number
@@ -184,6 +185,16 @@ export function StepView({ step, onDone }: { step: Step; onDone: (r: StepResult)
       return <StoryKeysStep step={step} onDone={onDone} />
     case 'storyCold':
       return <StoryColdStep step={step} onDone={onDone} />
+    case 'docRead':
+      return <DocReadStep step={step} onDone={onDone} />
+    case 'docFind':
+      return <DocFindStep step={step} onDone={onDone} />
+    case 'docSummary':
+      return <DocSummaryStep step={step} onDone={onDone} />
+    case 'docRetell':
+      return <DocRetellStep step={step} onDone={onDone} />
+    case 'docParse':
+      return <DocParseStep step={step} onDone={onDone} />
   }
 }
 

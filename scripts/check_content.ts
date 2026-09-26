@@ -17,10 +17,10 @@ const warnings: string[] = []
 
 // Звук: всё, что нужно контенту, есть в манифесте, и все файлы манифеста на месте.
 const have = new Set(Object.entries(manifest.texts).flatMap(([text, es]) => es.map((e) => `${text}|${e.voice}`)))
-let needed = 0
+const needed = new Set<string>()
 for (const f of files) {
   for (const need of audioNeeds(f.data)) {
-    needed++
+    needed.add(need)
     if (!have.has(need)) errors.push(`нет звука: «${need.replace('|', '» голосом ')} (${f.path}) — запусти scripts/generate_audio.py`)
   }
 }
@@ -49,7 +49,7 @@ const review = existsSync(join(root, 'docs/audio-review.md'))
   ? readFileSync(join(root, 'docs/audio-review.md'), 'utf8').split('\n').filter((l) => /^\| [^-|]/.test(l) && !l.startsWith('| Фраза')).length
   : 0
 
-console.log(`Контент: ${files.length} файлов JSON; звук: нужно ${needed}, в манифесте ${have.size}`)
+console.log(`Контент: ${files.length} файлов JSON; звук: нужно ${needed.size}, в манифесте ${have.size}`)
 for (const w of warnings) console.log(`  предупреждение: ${w}`)
 for (const e of errors) console.error(`  ОШИБКА: ${e}`)
 console.log(`Не проверено вручную (reviewed: false): ${unreviewed} из ${total}${total ? ` (${Math.round((100 * unreviewed) / total)}%)` : ''}`)

@@ -9,6 +9,8 @@ import type { VoiceId } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { defaultVoice, durationOf, playText, stopAudio } from '../../lib/audio/audio'
 import { db } from '../../lib/db/db'
+import type { UserWordRow } from '../../lib/db/types'
+import { dictById, dictionaryLoaded, loadDictionary } from '../../lib/dict/dict'
 import type { Step } from '../../lib/run/steps'
 import { useSettings } from '../../lib/settings/settings'
 import { answerCard } from '../../lib/srs/cards'
@@ -18,20 +20,37 @@ import s from './run.module.css'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
-/** Что показывать для элемента карточки: чанк или фраза Эфира. */
-function itemView(itemId: string): { en: string; say: string; ru: string; example?: string; exampleRu?: string; focus?: string; voice: VoiceId } | null {
+type ItemView = { en: string; say: string; ru: string; example?: string; exampleRu?: string; focus?: string; ipa?: string; voice: VoiceId }
+
+/** Что показывать для элемента карточки: чанк, фраза Эфира, слово словаря или своё слово. */
+function itemView(itemId: string, userWord?: UserWordRow): ItemView | null {
   const c = chunkById.get(itemId)
   if (c) return { en: c.en, say: c.en, ru: c.ru, example: c.example, exampleRu: c.exampleRu, voice: defaultVoice() }
   const p = phraseById.get(itemId)
   if (p) return { en: p.text, say: spokenText(p), ru: p.ru, focus: p.focus, voice: p.voice }
+  const w = dictById.get(itemId)
+  if (w) return { en: w.text, say: w.text, ru: w.ru, ipa: w.ipa, example: userWord?.context, voice: w.voices?.includes(defaultVoice()) ? defaultVoice() : (w.voices?.[0] ?? defaultVoice()) }
+  if (userWord) return { en: userWord.text, say: userWord.text, ru: userWord.ru, example: userWord.context, voice: defaultVoice() }
   return null
+}
+
+/** Слова живут в отдельно загружаемом словаре и в базе — дождаться их. */
+function useItemView(itemId: string): ItemView | null | undefined {
+  const isWord = /^(w|u)-/.test(itemId)
+  const [ready, setReady] = useState(!isWord || dictionaryLoaded())
+  useEffect(() => {
+    if (!ready) void loadDictionary().then(() => setReady(true))
+  }, [ready])
+  const userWord = useLiveQuery(() => (itemId.startsWith('u-') ? db.userWords.get(itemId).then((x) => x ?? null) : null), [itemId])
+  if (!ready || userWord === undefined) return isWord ? undefined : itemView(itemId)
+  return itemView(itemId, userWord ?? undefined)
 }
 
 export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
   const t = ru.steps.card
   const settings = useSettings()
   const { itemId, kind } = parseCardId(step.card)
-  const v = itemView(itemId)
+  const v = useItemView(itemId)
   const row = useLiveQuery(() => db.cards.get(step.card), [step.card])
   const [shown, setShown] = useState(false)
   const [said, setSaid] = useState<VoiceResult | undefined>(undefined)
@@ -40,7 +59,8 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
     if (v && kind === 3) void playText(v.say, { voice: v.voice }).catch(() => {})
     return () => stopAudio()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step.card])
+  }, [step.card, !!v])
+  if (v === undefined) return <section className={s.body} aria-busy />
   if (!v) {
     return (
       <section className={s.body}>
@@ -86,10 +106,12 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
             <p className={s.phrase}>
               <PlayButton text={v.say} voice={v.voice} label={v.en} size="s" /> <Highlight text={v.en} focus={v.focus} />
             </p>
+            {v.ipa && <p className={`${s.hint} mono`}>/{v.ipa}/</p>}
             <p className={s.ru}>{v.ru}</p>
             {v.example && (
               <p className={s.hint}>
-                <span lang="en">{v.example}</span> — {v.exampleRu}
+                <span lang="en">{v.example}</span>
+                {v.exampleRu && ` — ${v.exampleRu}`}
               </p>
             )}
           </div>
