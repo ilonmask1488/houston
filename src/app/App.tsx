@@ -5,7 +5,8 @@ import { DictionaryScreen } from '../features/dictionary/DictionaryScreen'
 import { GameRoute } from '../features/games/GameScreen'
 import { IntakeScreen } from '../features/intake/IntakeScreen'
 import { ProfileScreen } from '../features/intake/ProfileScreen'
-import { AboutScreen, AchievementsScreen, GamesScreen, MoreScreen } from '../features/more/MoreScreen'
+import { AboutScreen, AchievementsScreen, GamesScreen, MeScreen } from '../features/more/MoreScreen'
+import { TrainingScreen } from '../features/more/TrainingScreen'
 import { LibraryScreen, LibraryText, MyTexts, MyTextView } from '../features/library/LibraryScreen'
 import { BossRun, ModuleRun, SegmentRun, TextRun } from '../features/run/routes'
 import { HomeScreen } from '../features/session/HomeScreen'
@@ -72,7 +73,8 @@ export function App() {
           <Route path="interview" element={<InterviewScreen />} />
           <Route path="episode/:id" element={<Remount><EpisodeScreen /></Remount>} />
           <Route path="dictionary" element={<DictionaryScreen />} />
-          <Route path="more" element={<MoreScreen />} />
+          <Route path="more" element={<TrainingScreen />} />
+          <Route path="me" element={<MeScreen />} />
           <Route path="stats" element={<StatsScreen />} />
           <Route path="achievements" element={<AchievementsScreen />} />
           <Route path="check" element={<CheckScreen />} />

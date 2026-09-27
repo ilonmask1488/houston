@@ -29,7 +29,7 @@ test('босс Телеграммы: регистр, своё письмо, че
   await page.getByRole('button', { name: 'Проверить с Claude' }).click()
   await expect(page.getByText(/Промпт скопирован|Скопировать не получилось/).first()).toBeVisible()
   await page.getByRole('button', { name: 'Дальше' }).click()
-  await expect(page.getByRole('heading', { name: 'Сегмент пройден' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: /^Готово/ })).toBeVisible()
   await page.goto('./#/achievements')
   await expect(page.locator('li[data-got]', { hasText: 'Дипломат' })).toBeVisible()
   await expect(page.locator('li[data-got]', { hasText: 'Первая телеграмма' })).toBeVisible()
@@ -66,8 +66,9 @@ test('игры «Близнецы» и «Ложные друзья»: корот
 
 test('боссы Эфира и Техдока проходятся; эпизоды 4–6 в сюжете', async ({ page }) => {
   test.setTimeout(240_000)
-  await page.goto('./#/tracks')
+  await page.goto('./#/more')
   await expect(page.getByRole('link', { name: /Эпизод 6: Презентация результатов/ })).toBeVisible()
+  await page.goto('./#/tracks')
   await page.locator('a[href="#/boss/doc"]').click()
   await runSegment(page)
   await page.goto('./#/boss/air')

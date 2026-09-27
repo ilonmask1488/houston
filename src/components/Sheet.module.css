@@ -1,0 +1,46 @@
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  align-items: end;
+  background: var(--scrim);
+}
+
+.panel {
+  display: grid;
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 560px;
+  max-height: 80dvh;
+  margin: 0 auto;
+  padding: var(--space-4) var(--gutter) calc(var(--safe-bottom) + var(--space-4));
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  background: var(--paper);
+  overflow-y: auto;
+}
+
+.panel h2 {
+  font-size: var(--fs-lead);
+}
+
+.panel p {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+/* Термин по тапу: как текст, но с пунктирным подчёркиванием — видно, что объяснится */
+.term {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: underline dotted var(--line-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}

@@ -8,7 +8,7 @@ const ANSWER =
 test('«Мой рассказ»: написать ответ, скопировать промпт для Claude, натренировать', async ({ page }) => {
   test.setTimeout(180_000)
   await seedIntake(page)
-  await page.getByRole('navigation').getByRole('link', { name: 'Мой рассказ' }).click()
+  await page.getByRole('navigation').getByRole('link', { name: 'Собеседование' }).click()
   await expect(page.getByText('Пробное собеседование').first()).toBeVisible()
   await page.getByRole('link', { name: /Tell me about yourself\./ }).click()
   await expect(page.getByText('Как отвечать')).toBeVisible()
@@ -23,7 +23,7 @@ test('«Мой рассказ»: написать ответ, скопирова
   await train.click()
   await expect(page.getByText('Послушай свой ответ')).toBeVisible()
   await runSegment(page)
-  await page.getByRole('button', { name: 'К «Моему рассказу»' }).click()
+  await page.getByRole('button', { name: 'К собеседованию' }).click()
   await expect(page.getByText(/тренировок: 1/)).toBeVisible()
 
   // Сброс прогресса не трогает твои тексты
@@ -56,7 +56,7 @@ test('пробное собеседование: вопросы подряд, т
 
 test('эпизод 1: реплики персонажей, выбор ответа с объяснением, культурная вставка', async ({ page }) => {
   test.setTimeout(180_000)
-  await page.goto('./#/tracks')
+  await page.goto('./#/more')
   await page.getByRole('link', { name: 'Эпизод 1: Собеседование' }).click()
   await expect(page.getByRole('heading', { name: 'Собеседование' })).toBeVisible()
   await page.getByRole('button', { name: 'Дальше' }).click()
@@ -86,6 +86,6 @@ test('эпизод 1: реплики персонажей, выбор ответ
   await expect(page.getByText(/Верных ответов с первого раза/)).toBeVisible()
   await page.getByRole('button', { name: 'Практика разговора с Claude' }).click()
   await expect(page.getByText(/Промпт скопирован|Скопировать не получилось/)).toBeVisible()
-  await page.getByRole('button', { name: 'К трекам' }).click()
+  await page.getByRole('button', { name: 'К тренировке' }).click()
   await expect(page.getByText('✓ пройден')).toBeVisible()
 })

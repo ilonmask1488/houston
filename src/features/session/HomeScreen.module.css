@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-4);
   min-height: 100dvh;
   padding: calc(var(--safe-top) + var(--space-3)) calc(var(--gutter) + var(--safe-right))
     calc(var(--nav-h) + var(--safe-bottom) + var(--space-4)) calc(var(--gutter) + var(--safe-left));
@@ -18,7 +18,6 @@
 }
 
 .brand {
-  flex-basis: 100%;
   font-family: var(--font-cond);
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -30,24 +29,26 @@
   letter-spacing: 0.02em;
 }
 
-.days {
-  font-family: var(--font-cond);
-  font-weight: 500;
+.me {
+  display: grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  margin-right: calc(var(--space-2) * -1);
+  border-radius: 50%;
+  color: var(--ink);
 }
 
-.days strong {
-  font-size: var(--fs-lead);
-  font-weight: 500;
-}
-
-.signal {
-  display: inline-flex;
+.status {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-2);
 }
 
-.signalLabel {
-  color: var(--ink-2);
+.status strong {
+  font-weight: 500;
 }
 
 .banners {
@@ -55,8 +56,8 @@
   gap: var(--space-2);
 }
 
-/* ——— Вводный тест ——— */
-.intake {
+/* ——— Карточка «Занятие на сегодня» и вводный тест ——— */
+.card {
   display: grid;
   gap: var(--space-3);
   padding: var(--space-4);
@@ -66,9 +67,41 @@
   background: var(--surface);
 }
 
-.intake p {
+.cardHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.min {
   color: var(--ink-2);
   font-size: var(--fs-small);
+}
+
+.cardText {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.plan {
+  line-height: 1.5;
+}
+
+.progress {
+  color: var(--signal-ink);
+  font-size: var(--fs-small);
+}
+
+.done {
+  font-size: var(--fs-lead);
+  font-weight: 600;
+}
+
+.hint {
+  color: var(--ink-2);
+  font-size: var(--fs-caption);
+  text-align: center;
 }
 
 .parts {
@@ -86,130 +119,8 @@
   color: var(--signal-ink);
 }
 
-/* ——— Профиль ——— */
-.profile {
-  display: grid;
-  gap: var(--space-3);
-  justify-items: start;
-}
-
-.profileHead {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-3);
-  width: 100%;
-}
-
-.cefr {
-  display: grid;
-  justify-items: end;
-  font-size: var(--fs-lead);
-  font-weight: 500;
-}
-
-.cefrHint {
-  color: var(--ink-2);
-  font-size: var(--fs-caption);
-}
-
-.trackBars {
-  display: grid;
-  gap: var(--space-2);
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.trackBars li {
-  display: grid;
-  grid-template-columns: 7.5em 1fr 2.2em;
-  align-items: center;
-  gap: var(--space-3);
-  font-size: var(--fs-small);
-}
-
-.trackBars li > .mono {
-  text-align: right;
-  color: var(--ink-2);
-}
-
-.trackName {
-  font-family: var(--font-cond);
-  font-weight: 500;
-}
-
-/* ——— Циклограмма ——— */
-.timeline h2 {
-  margin-bottom: var(--space-3);
-}
-
-.bar {
-  display: flex;
-  gap: 3px;
-  height: 10px;
-  margin-bottom: var(--space-3);
-}
-
-.segment {
-  border-radius: 1px;
-  background: var(--line-strong);
-}
-
-.segment[data-block='air'],
-.segment[data-block='call'] {
-  background: var(--ink);
-}
-
-.rows {
-  display: grid;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 3.5em 1fr auto;
-  gap: var(--space-3);
-  align-items: baseline;
-  padding: var(--space-2) 0;
-  border-bottom: var(--hairline) dashed var(--line);
-}
-
-.t,
-.min {
+.level {
   color: var(--ink-2);
   font-size: var(--fs-small);
-}
-
-.blockTitle {
-  display: block;
-  font-weight: 600;
-}
-
-.blockWhat {
-  display: block;
-  color: var(--ink-2);
-  font-size: var(--fs-small);
-}
-
-/* ——— Кнопка в зоне большого пальца ——— */
-.launch {
-  display: grid;
-  gap: var(--space-2);
-  justify-items: center;
-  margin-top: auto;
-  padding-top: var(--space-3);
-}
-
-.launchHint {
-  color: var(--ink-2);
-  font-size: var(--fs-caption);
-}
-
-.today {
-  color: var(--signal-ink);
-  font-size: var(--fs-small);
+  text-decoration: none;
 }

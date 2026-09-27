@@ -56,7 +56,7 @@ export function StatsScreen() {
   return (
     <Screen title={t.title} back>
       <div className={s.readouts}>
-        <Readout label={t.airDays} value={data.streak.days} hint={data.streak.reserveUsed ? ru.home.reserve : undefined} />
+        <Readout label={t.airDays} value={data.streak.days} hint={data.streak.reserveUsed ? t.reserve : undefined} />
         <Readout label={t.minutes} value={Math.round(total / 60)} unit="мин" />
         <Readout label={t.spoken} value={formatSeconds(spoken)} />
         <Readout label={t.signal} value={data.days.reduce((a, d) => a + d.signal, 0)} />

@@ -50,7 +50,7 @@ export function ProfileScreen() {
             return (
               <li key={id} className={s.track}>
                 <div className={s.trackHead}>
-                  <span className={s.channel}>{ru.tracks[id].channel}</span>
+                  <span className={s.channel}>{ru.tracks[id].alias}</span>
                   <span className={s.trackTitle}>{ru.tracks[id].title}</span>
                   <span className="mono">{score}</span>
                 </div>

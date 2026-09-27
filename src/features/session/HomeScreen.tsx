@@ -1,10 +1,16 @@
+/*
+  «Сегодня» (UX §3.2): статус одной строкой, карточка «Занятие на сегодня» с главной кнопкой без прокрутки,
+  маленький Ping, уровень одной строкой. Профиль, статистика и настройки — значок в правом верхнем углу.
+*/
 import { useLiveQuery } from 'dexie-react-hooks'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ScoreBar, SignalMeter } from '../../components/Instruments'
+import { IconProfile } from '../../components/Icons'
+import { SignalMeter } from '../../components/Instruments'
+import { Term } from '../../components/Sheet'
 import { Banner, PingSays } from '../../components/ui'
 import ui from '../../components/ui.module.css'
-import { TRACKS } from '../../content/types'
+import { TRACKS, type TrackId } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { downloadBackup, shouldRemindBackup } from '../../lib/backup/backup'
 import { db } from '../../lib/db/db'
@@ -12,26 +18,35 @@ import { useIntakeState } from '../../lib/intake/store'
 import { signalBars } from '../../lib/progress/signal'
 import { computeStreak, localDate } from '../../lib/progress/streak'
 import { detectPlatform, isStandalone, useInstallPrompt } from '../../lib/pwa/install'
-import { planSession } from '../../lib/session/plan'
+import { getTodaySession } from '../../lib/session/today'
 import { useSettings } from '../../lib/settings/settings'
 import s from './HomeScreen.module.css'
+import { nextSegment, planBlocks, planLine, segmentUrl } from './segments'
 
-const INSTALL_HINT_PAUSE_MS = 14 * 24 * 60 * 60 * 1000
+/** Подсказка «Установи на главный экран» после закрытия не возвращается месяц. */
+const INSTALL_HINT_PAUSE_MS = 30 * 24 * 60 * 60 * 1000
 
 export function HomeScreen() {
   const settings = useSettings()
   const navigate = useNavigate()
-  const plan = planSession(settings.sessionMinutes)
   const intake = useIntakeState()
   const telemetry = useLiveQuery(async () => {
     const days = await db.days.toArray()
     const streak = computeStreak(new Map(days.map((d) => [d.date, d.seconds])), localDate())
-    return { days: streak.days, reserve: streak.reserveUsed, signal: days.reduce((sum, d) => sum + d.signal, 0) }
+    return { days: streak.days, signal: days.reduce((sum, d) => sum + d.signal, 0) }
   }, [])
   const [greeting] = useState(() => ru.greetings[dayOfYear() % ru.greetings.length]!)
-  const today = useLiveQuery(() => db.sessions.get(localDate()), [])
-  const doneSegs = today?.segments.filter((x) => x.status !== 'pending').length ?? 0
+  // План на сегодня собирается, как только есть итог вводного теста.
+  const [ready, setReady] = useState(false)
+  useEffect(() => {
+    if (intake.last) void getTodaySession(settings.sessionMinutes).then(() => setReady(true))
+  }, [intake.last, settings.sessionMinutes])
+  const today = useLiveQuery(() => (ready ? db.sessions.get(localDate()) : undefined), [ready])
   const signal = telemetry?.signal ?? 0
+  const days = telemetry?.days ?? 0
+  const next = nextSegment(today)
+  const doneSegs = today?.segments.filter((x) => x.status !== 'pending').length ?? 0
+  const minutes = settings.sessionMinutes
 
   return (
     <main className={s.home}>
@@ -40,26 +55,27 @@ export function HomeScreen() {
         <span className={s.brand}>
           HOUSTON <span className={s.freq}>· {ru.mascot.name}</span>
         </span>
-        <span className={s.days} aria-label={ru.home.airDays(telemetry?.days ?? 0)}>
-          <strong className="mono">{telemetry?.days ?? 0}</strong> {ru.home.airDaysLabel(telemetry?.days ?? 0)}
-        </span>
-        <span className={s.signal}>
-          <span className={s.signalLabel}>{ru.home.signal}</span>
-          <SignalMeter value={signalBars(signal)} label={`${ru.home.signal}: ${signal}`} size="s" />
-          <strong className="mono">{signal}</strong>
+        <Link to="/me" className={s.me} aria-label={ru.home.profileLink}>
+          <IconProfile />
+        </Link>
+        <span className={s.status}>
+          <Term k="streak">
+            🔥 <strong className="mono">{ru.home.airDays(days)}</strong>
+          </Term>
+          <span aria-hidden>·</span>
+          <Term k="points">
+            <span className="mono">{ru.home.points(signal)}</span>
+          </Term>
+          <SignalMeter value={signalBars(signal)} label={`${ru.terms.points.title}: ${signal}`} size="s" />
         </span>
       </div>
 
       <HomeBanners />
 
-      <PingSays mood={intake.last ? 'happy' : 'wink'} size={96}>
-        {greeting}
-      </PingSays>
-
       {intake.loaded && !intake.last && (
-        <section className={s.intake}>
+        <section className={s.card}>
           <h2>{ru.home.intakeTitle}</h2>
-          <p>{ru.home.intakeText}</p>
+          <p className={s.cardText}>{ru.home.intakeText}</p>
           <ol className={s.parts}>
             {ru.home.intakeParts.map((p) => (
               <li key={p} className="mono">
@@ -67,73 +83,62 @@ export function HomeScreen() {
               </li>
             ))}
           </ol>
+          <button type="button" className={ui.signalButton} onClick={() => navigate('/intake')}>
+            {intake.hasDraft ? ru.home.intakeContinue : ru.home.intakeStart}
+          </button>
         </section>
       )}
 
-      {intake.last && (
-        <section className={s.profile}>
-          <div className={s.profileHead}>
-            <h2>{ru.home.profile}</h2>
-            <span className={s.cefr}>
-              <span className="mono">{ru.home.level(intake.last.cefr)}</span>
-              <span className={s.cefrHint}>{ru.home.levelHint}</span>
-            </span>
+      {intake.last && today && (
+        <section className={s.card} aria-labelledby="today-title">
+          <div className={s.cardHead}>
+            <h2 id="today-title">{ru.home.todayTitle}</h2>
+            <span className={`${s.min} mono`}>{ru.home.todayMinutes(minutes)}</span>
           </div>
-          <ul className={s.trackBars}>
-            {TRACKS.map((t) => (
-              <li key={t}>
-                <span className={s.trackName}>{ru.tracks[t].title}</span>
-                <ScoreBar value={intake.last!.tracks[t]} label={ru.tracks[t].title} />
-                <span className="mono">{intake.last!.tracks[t]}</span>
-              </li>
-            ))}
-          </ul>
-          <Link to="/profile" className={ui.link}>
-            {ru.home.toProfile}
+          {!next ? (
+            <>
+              <p className={s.done}>{ru.home.doneTitle}</p>
+              <p className={s.cardText}>{ru.home.doneText}</p>
+              <button type="button" className={ui.secondary} onClick={() => navigate('/more')}>
+                {ru.home.toTraining}
+              </button>
+            </>
+          ) : (
+            <>
+              <p className={s.plan}>{planLine(today).join(' · ')}</p>
+              {doneSegs > 0 && (
+                <p className={`${s.progress} mono`}>
+                  {ru.home.today(planBlocks(today).filter((b) => b.status === 'done').length, planBlocks(today).length)}
+                </p>
+              )}
+              <button type="button" className={ui.signalButton} onClick={() => navigate(segmentUrl(next))}>
+                {doneSegs > 0 ? ru.home.continue : ru.home.start}
+              </button>
+              <span className={s.hint}>{ru.home.startHint}</span>
+            </>
+          )}
+          <Link to="/session" className={ui.link}>
+            {ru.home.planLink}
           </Link>
         </section>
       )}
 
-      {intake.last && (
-        <section className={s.timeline}>
-          <h2>{ru.home.timelineTitle(settings.sessionMinutes)}</h2>
-          <div className={s.bar} aria-hidden>
-            {plan.map((b) => (
-              <span key={b.id} className={s.segment} data-block={b.id} style={{ flexGrow: b.minutes }} />
-            ))}
-          </div>
-          <ol className={s.rows}>
-            {plan.map((b) => (
-              <li key={b.id} className={s.row}>
-                <span className={`${s.t} mono`}>T+{String(b.startsAt).padStart(2, '0')}</span>
-                <span>
-                  <span className={s.blockTitle}>{ru.blocks[b.id].title}</span>
-                  <span className={s.blockWhat}>{ru.blocks[b.id].what}</span>
-                </span>
-                <span className={`${s.min} mono`}>{b.minutes} мин</span>
-              </li>
-            ))}
-          </ol>
-        </section>
-      )}
+      <PingSays mood={intake.last ? 'happy' : 'wink'} size={56}>
+        {greeting}
+      </PingSays>
 
-      <div className={s.launch}>
-        {today && doneSegs > 0 && (
-          <p className={`${s.today} mono`}>{today.finishedAt ? ru.home.todayDone : ru.home.today(doneSegs, today.segments.length)}</p>
-        )}
-        {intake.loaded &&
-          (intake.last ? (
-            <button type="button" className={ui.signalButton} onClick={() => navigate('/session')}>
-              {today?.finishedAt ? ru.home.again : doneSegs > 0 ? ru.home.continue : ru.home.start}
-            </button>
-          ) : (
-            <button type="button" className={ui.signalButton} onClick={() => navigate('/intake')}>
-              {intake.hasDraft ? ru.home.intakeContinue : ru.home.intakeStart}
-            </button>
-          ))}
-        <span className={s.launchHint}>{ru.home.startHint}</span>
-      </div>
+      {intake.last && <LevelLine cefr={intake.last.cefr} tracks={intake.last.tracks} />}
     </main>
+  )
+}
+
+/** Уровень одной строкой: «Уровень ≈ B1 · сильнее всего чтение, слабее всего говорение» → профиль. */
+function LevelLine({ cefr, tracks }: { cefr: string; tracks: Record<TrackId, number> }) {
+  const sorted = [...TRACKS].sort((a, b) => tracks[b] - tracks[a])
+  return (
+    <Link to="/profile" className={s.level}>
+      {ru.home.levelLine(cefr, ru.tracks[sorted[0]!].short, ru.tracks[sorted[sorted.length - 1]!].short)} →
+    </Link>
   )
 }
 

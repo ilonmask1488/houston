@@ -30,7 +30,7 @@ export function IntroStep({ step, onDone }: StepProps<S<'intro'>>) {
   const pairs = (itemsByModule.get(step.module)?.pairs ?? []).slice(0, 3)
   return (
     <section className={s.body}>
-      <p className={s.kicker}>{m ? ru.tracks[m.track].channel : ''}</p>
+      <p className={s.kicker}>{m ? `${ru.tracks[m.track].title} · ${ru.tracks[m.track].alias}` : ''}</p>
       <h1>{m?.title}</h1>
       {c?.intro.map((p) => (
         <p key={p} className={s.lead}>

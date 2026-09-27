@@ -1,7 +1,7 @@
 import { Component, useEffect, useState, type ReactNode } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useRegisterSW } from 'virtual:pwa-register/react'
-import { IconDictionary, IconMore, IconSession, IconStory, IconTracks } from '../components/Icons'
+import { IconDictionary, IconSession, IconStory, IconTracks, IconTraining } from '../components/Icons'
 import { Banner } from '../components/ui'
 import ui from '../components/ui.module.css'
 import { ru } from '../i18n/ru'
@@ -13,7 +13,7 @@ const TABS = [
   { to: '/tracks', label: ru.nav.tracks, icon: <IconTracks /> },
   { to: '/story', label: ru.nav.story, icon: <IconStory /> },
   { to: '/dictionary', label: ru.nav.dictionary, icon: <IconDictionary /> },
-  { to: '/more', label: ru.nav.more, icon: <IconMore /> },
+  { to: '/more', label: ru.nav.more, icon: <IconTraining /> },
 ]
 
 /** Экраны, где нижняя навигация мешает (тест, упражнения и игры во весь экран). */

@@ -9,13 +9,23 @@ import { manifest } from '../../lib/audio/manifest'
 import { db } from '../../lib/db/db'
 import { GAME_IDS } from '../../lib/games/games'
 import { ACHIEVEMENT_IDS } from '../../lib/progress/achievements'
+import { computeStreak, localDate } from '../../lib/progress/streak'
 import s from './MoreScreen.module.css'
 
-const ITEMS = ['profile', 'stats', 'games', 'library', 'achievements', 'check', 'settings', 'about'] as const
+const ITEMS = ['profile', 'stats', 'achievements', 'settings', 'check', 'about'] as const
 
-export function MoreScreen() {
+/** Профиль (UX §3.1): сводка одной строкой и всё «служебное» — статистика, достижения, настройки. Маршрут /me. */
+export function MeScreen() {
+  const sum = useLiveQuery(async () => {
+    const days = await db.days.toArray()
+    return {
+      days: computeStreak(new Map(days.map((d) => [d.date, d.seconds])), localDate()).days,
+      points: days.reduce((n, d) => n + d.signal, 0),
+      cards: await db.cards.count(),
+    }
+  }, [])
   return (
-    <Screen title={ru.more.title}>
+    <Screen title={ru.me.title} back subtitle={sum ? ru.me.summary(sum.days, sum.points, sum.cards) : undefined}>
       <ul className={ui.list}>
         {ITEMS.map((key) => (
           <li key={key}>

@@ -25,6 +25,7 @@ import { useSettings } from '../../lib/settings/settings'
 import s from './games.module.css'
 import { SpeedreadGame } from './Speedread'
 import { FalseFriendsGame, TwinsGame } from './Twins'
+import { NextBlock } from '../session/NextBlock'
 
 type Outcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
 
@@ -60,7 +61,7 @@ function Game({ id }: { id: GameId }) {
     setPhase('over')
   }
 
-  const exit = () => (stopAudio(), navigate(seg ? '/session' : '/more'))
+  const exit = () => (stopAudio(), navigate(seg ? '/' : '/more'))
 
   return (
     <main className={s.game}>
@@ -110,22 +111,16 @@ function Game({ id }: { id: GameId }) {
           <p>{t.stats(outcome.o.correct, outcome.o.wrong, outcome.o.bestStreak, outcome.signal)}</p>
           <div className={s.actions}>
             {seg ? (
-              <button type="button" className={ui.signalButton} onClick={() => navigate('/session')}>
-                {t.toSession}
-              </button>
+              <NextBlock afterId={seg} />
             ) : (
-              <button type="button" className={ui.signalButton} onClick={() => (setRound((n) => n + 1), setOutcome(null), setPhase('play'))}>
-                {t.again}
-              </button>
-            )}
-            {seg ? (
-              <button type="button" className={ui.secondary} onClick={() => (setRound((n) => n + 1), setOutcome(null), setPhase('play'))}>
-                {t.again}
-              </button>
-            ) : (
-              <button type="button" className={ui.secondary} onClick={exit}>
-                {t.done}
-              </button>
+              <>
+                <button type="button" className={ui.signalButton} onClick={() => (setRound((n) => n + 1), setOutcome(null), setPhase('play'))}>
+                  {t.again}
+                </button>
+                <button type="button" className={ui.secondary} onClick={exit}>
+                  {t.done}
+                </button>
+              </>
             )}
           </div>
         </section>

@@ -17,7 +17,7 @@ test('тема, длительность и вариант языка сохра
   await expect(page.getByRole('radio', { name: '45 мин' })).toHaveAttribute('aria-checked', 'true')
   await expect(page.getByRole('radio', { name: 'Британский' })).toHaveAttribute('aria-checked', 'true')
   await page.goto('./#/')
-  await expect(page.getByText('Сеанс связи · 45 мин')).toBeVisible()
+  await expect(page.getByText('~45 мин')).toBeVisible()
 })
 
 test('бэкап: сохранить → изменить → загрузить → всё вернулось', async ({ page }) => {

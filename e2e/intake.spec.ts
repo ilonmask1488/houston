@@ -75,14 +75,15 @@ test('вводный тест целиком → профиль по трека�
   }
 
   // Профиль
-  await expect(page.getByRole('heading', { level: 1, name: 'Профиль' })).toBeVisible({ timeout: 15_000 })
+  await expect(page.getByRole('heading', { level: 1, name: 'Результаты теста' })).toBeVisible({ timeout: 15_000 })
   await expect(page.getByText('Ориентировочный уровень')).toBeVisible()
-  for (const t of ['Эфир', 'Позывной', 'Техдок', 'Телеграмма', 'Чистый сигнал']) await expect(page.getByText(t, { exact: true }).first()).toBeVisible()
+  for (const t of ['Аудирование', 'Говорение', 'Чтение', 'Переписка', 'Произношение']) await expect(page.getByText(t, { exact: true }).first()).toBeVisible()
   await expect(page.getByText(/Повторный тест откроется/)).toBeVisible()
 
   // На главной — профиль и сеанс; достижение «Первый контакт»
-  await page.getByRole('button', { name: 'К сеансу связи' }).click()
-  await expect(page.getByText(/Сеанс связи · 30 мин/)).toBeVisible()
+  await page.getByRole('button', { name: 'К занятию' }).click()
+  await expect(page.getByRole('heading', { name: 'Занятие на сегодня' })).toBeVisible()
+  await expect(page.getByText('~30 мин')).toBeVisible()
   await page.goto('./#/achievements')
   await expect(page.locator('li[data-got]', { hasText: 'Первый контакт' })).toBeVisible()
 })

@@ -15,8 +15,8 @@ test('после первой загрузки приложение открыв
   await context.setOffline(true)
   await page.reload()
   await expect(page.getByRole('button', { name: 'Начать вводный тест' })).toBeVisible()
-  await page.getByRole('navigation').getByRole('link', { name: 'Треки' }).click()
-  await expect(page.getByRole('heading', { level: 1, name: 'Треки' })).toBeVisible()
+  await page.getByRole('navigation').getByRole('link', { name: 'Курс' }).click()
+  await expect(page.getByRole('heading', { level: 1, name: 'Курс' })).toBeVisible()
   // Шрифты тоже из кэша: знаки транскрипции рисуются IBM Plex Sans, кириллица — Plex Sans Condensed
   const fonts = await page.evaluate(async () => {
     await document.fonts.load('16px "IBM Plex Sans"', 'ðθŋʃəˈː')

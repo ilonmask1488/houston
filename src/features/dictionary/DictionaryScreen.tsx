@@ -74,7 +74,7 @@ export function DictionaryScreen() {
         (groups.length ? (
           groups.map(([fn, list]) => (
             <section key={fn} className={s.group}>
-              <h2 className={s.fn}>{fn}</h2>
+              <h2 className={s.fn}>{ru.steps.chunk.fn(fn)}</h2>
               <ul className={s.list}>
                 {list.map((c) => (
                   <li key={c.id} className={s.row}>

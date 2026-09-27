@@ -1,6 +1,6 @@
 import { expect, type Page } from '@playwright/test'
 
-const SUMMARY = /^(Сегмент пройден|Модуль «.*» закрыт!)$/
+const SUMMARY = /^(Готово.*|Модуль «.*» пройден!)$/
 
 async function visible(page: Page, name: string | RegExp, exact = true): Promise<boolean> {
   return page

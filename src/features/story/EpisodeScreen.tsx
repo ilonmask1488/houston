@@ -112,7 +112,7 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
 
   const top = (
     <div className={s.top}>
-      <button type="button" className={s.close} onClick={() => navigate('/tracks')} aria-label={ru.run.close}>
+      <button type="button" className={s.close} onClick={() => navigate('/more')} aria-label={ru.run.close}>
         <IconClose size={24} />
       </button>
       <StepTicks total={e.lines.length} done={Math.max(0, i)} label={t.ep(e.n)} />
@@ -150,7 +150,7 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
           />
         </section>
         <div className={s.actions}>
-          <button type="button" className={ui.signalButton} onClick={() => navigate('/tracks')}>
+          <button type="button" className={ui.signalButton} onClick={() => navigate('/more')}>
             {t.toTracks}
           </button>
           <button type="button" className={ui.secondary} onClick={onAgain}>

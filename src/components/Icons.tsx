@@ -23,6 +23,29 @@ export function IconSession({ size = 24 }: P) {
   )
 }
 
+/** Профиль: человек в круге */
+export function IconProfile({ size = 26 }: P) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} {...common}>
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="10" r="3.2" />
+      <path d="M6.2 18.4c1.3-2.2 3.4-3.4 5.8-3.4s4.5 1.2 5.8 3.4" />
+    </svg>
+  )
+}
+
+/** Тренировка: гантель */
+export function IconTraining({ size = 24 }: P) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} {...common}>
+      <path d="M8 12h8" />
+      <rect x="4" y="7" width="4" height="10" rx="1" />
+      <rect x="16" y="7" width="4" height="10" rx="1" />
+      <path d="M2 10v4M22 10v4" />
+    </svg>
+  )
+}
+
 /** Треки: уровни каналов */
 export function IconTracks({ size = 24 }: P) {
   return (

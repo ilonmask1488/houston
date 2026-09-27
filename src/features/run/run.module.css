@@ -25,6 +25,21 @@
   border-radius: var(--radius-m);
 }
 
+.topMain {
+  display: grid;
+  flex: 1;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.topTitle {
+  overflow: hidden;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .count {
   flex: none;
   color: var(--ink-2);

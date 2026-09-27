@@ -49,6 +49,10 @@ type Props = {
   onFinish?: (r: RunSummary) => Promise<void>
   actions: (r: RunSummary) => ReactNode
   onRestart?: () => void
+  /** что за блок или модуль — в шапке: «Быстрая речь на слух · 2 из 6» */
+  title?: string
+  /** заголовок итогов: «Готово: Разминка (игра) ✓» */
+  summaryTitle?: string
 }
 
 export function Runner(props: Props) {
@@ -131,7 +135,7 @@ export function Runner(props: Props) {
     }
   }
 
-  if (finished) return <Summary {...finished} actions={props.actions(finished.r)} />
+  if (finished) return <Summary {...finished} title={props.summaryTitle} actions={props.actions(finished.r)} />
   const step = steps[index]
   return (
     <div className={s.runner}>
@@ -139,7 +143,10 @@ export function Runner(props: Props) {
         <button type="button" className={s.close} onClick={props.onExit} aria-label={ru.run.close}>
           <IconClose size={24} />
         </button>
-        <StepTicks total={steps.length} done={index} label={ru.run.progress(index + 1, steps.length)} />
+        <div className={s.topMain}>
+          {props.title && <span className={s.topTitle}>{props.title}</span>}
+          <StepTicks total={steps.length} done={index} label={ru.run.progress(index + 1, steps.length)} />
+        </div>
         <span className={`${s.count} mono`}>{ru.run.progress(index + 1, steps.length)}</span>
       </div>
       {resumed && index === props.startAt && props.onRestart && (
@@ -218,7 +225,7 @@ export function StepView({ step, onDone }: { step: Step; onDone: (r: StepResult)
   }
 }
 
-function Summary({ r, fresh, actions }: { r: RunSummary; fresh: AchievementId[]; actions: ReactNode }) {
+function Summary({ r, fresh, actions, title }: { r: RunSummary; fresh: AchievementId[]; actions: ReactNode; title?: string }) {
   const t = ru.run.summary
   const pool = r.accuracy === null || r.accuracy >= 0.85 ? ru.lines.summaryHigh : r.accuracy >= 0.6 ? ru.lines.summaryMid : ru.lines.summaryLow
   const [line] = useState(() => pick(pool))
@@ -227,7 +234,7 @@ function Summary({ r, fresh, actions }: { r: RunSummary; fresh: AchievementId[];
     <div className={s.runner}>
       <div className={`${s.body} ${s.summary}`}>
         <Mascot mood={fresh.length || done.length || (r.accuracy ?? 1) >= 0.85 ? 'celebrate' : 'happy'} size={112} />
-        <h1>{done.length ? t.moduleDone(done[0]!) : t.title}</h1>
+        <h1>{done.length ? t.moduleDone(done[0]!) : (title ?? t.title)}</h1>
         <p>{line}</p>
         <div className={s.stats}>
           <div className={s.stat}>

@@ -10,6 +10,8 @@ import type { SessionSegment } from '../../lib/db/types'
 import { lastIntake } from '../../lib/intake/store'
 import type { Step } from '../../lib/run/steps'
 import { airSteps, callSteps, cleanSteps, currentSpeed, docSteps, hash, mailSteps, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
+import { NextBlock } from '../session/NextBlock'
+import { segmentBlockTitle } from '../session/segments'
 import { Runner } from './Runner'
 
 export function SegmentRun() {
@@ -25,12 +27,17 @@ export function SegmentRun() {
     })
   }, [id])
   const steps = useMemo(() => (seg?.steps ?? []).filter(stepAlive), [seg])
-  const back = () => navigate('/session')
+  const back = () => navigate('/')
+  // Пустой блок (например, карточки уже повторены) не держит занятие: отмечаем и предлагаем следующий.
+  const empty = !!seg && !steps.length
+  useEffect(() => {
+    if (empty && seg && seg.status === 'pending') void updateSegment(seg.id, { status: 'skipped', auto: true })
+  }, [empty, seg])
   if (seg === undefined) return null
   if (!seg || !steps.length)
     return (
       <Screen title={ru.session.title} back>
-        <Placeholder text={seg ? ru.steps.card.empty : ru.run.notFound} />
+        <Placeholder text={seg ? ru.steps.card.empty : ru.run.notFound}>{seg && <NextBlock afterId={seg.id} />}</Placeholder>
       </Screen>
     )
   return (
@@ -42,14 +49,12 @@ export function SegmentRun() {
       onStep={(pos) => void updateSegment(seg.id, { pos })}
       onRestart={() => setAttempt((n) => n + 1)}
       onExit={back}
+      title={segmentBlockTitle(seg)}
+      summaryTitle={ru.session.blockDone(segmentBlockTitle(seg))}
       onFinish={async (r) => {
         await updateSegment(seg.id, { status: 'done', pos: 0 }, { seconds: r.seconds, signal: r.signal, correct: r.correct, total: r.total, spokenMs: r.spokenMs })
       }}
-      actions={() => (
-        <button type="button" className={ui.signalButton} onClick={back}>
-          {ru.run.summary.back}
-        </button>
-      )}
+      actions={() => <NextBlock afterId={seg.id} />}
     />
   )
 }
@@ -74,6 +79,7 @@ export function TextRun() {
       key={round}
       steps={steps}
       source="drill"
+      title={`${ru.tracks.doc.title} · ${t.title}`}
       onExit={() => navigate(`/library/${id}`)}
       actions={() => (
         <>
@@ -121,6 +127,7 @@ export function BossRun() {
       key={round}
       steps={steps}
       source="drill"
+      title={`${ru.boss.title}: ${ru.boss[id].title}`}
       onExit={() => navigate('/tracks')}
       actions={() => (
         <>
@@ -173,6 +180,7 @@ export function ModuleRun() {
       key={round}
       steps={steps}
       source="drill"
+      title={`${ru.tracks[m.track].title} · ${m.title}`}
       onExit={() => navigate('/tracks')}
       actions={() => (
         <>
