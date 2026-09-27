@@ -103,8 +103,62 @@
   font-size: var(--fs-small);
 }
 
-.itemMeta[data-empty] {
+.itemMeta[data-empty],
+.itemMeta[data-status='empty'] {
   font-style: italic;
+}
+
+.itemMeta[data-status='trained'] {
+  color: var(--ok);
+}
+
+.row {
+  position: relative;
+}
+
+/* STAR — отдельная кнопка поверх строки: тап объясняет схему, а не открывает вопрос */
+.row > .badge {
+  position: absolute;
+  top: var(--space-2);
+  right: calc(var(--space-6) + var(--space-1));
+  text-decoration: none;
+}
+
+.item[data-start] {
+  box-shadow: inset 3px 0 0 var(--signal);
+  padding-left: var(--space-2);
+}
+
+.startTag {
+  margin-right: var(--space-2);
+  padding: 0 var(--space-1);
+  border-radius: var(--radius-s);
+  background: var(--signal);
+  color: var(--on-signal);
+  font-family: var(--font-cond);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.how {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+}
+
+.how summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.how ol {
+  display: grid;
+  gap: var(--space-1);
+  margin: var(--space-2) 0 0;
+  padding-left: 1.2em;
+  font-size: var(--fs-small);
 }
 
 .badge {

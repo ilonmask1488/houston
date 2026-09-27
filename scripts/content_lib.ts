@@ -164,6 +164,45 @@ export function checkCourse(files: JsonFile[]): string[] {
   errors.push(...checkDoc([...get('doc/texts.json'), ...(bosses ? [bosses.doc as Json] : [])], [...get('doc/strategies.json'), ...get('content/guides.json')], bossModules, ids))
   errors.push(...checkDictionary(get('dict/words.json')))
   errors.push(...checkPhase4(files, bossModules, ids, characters))
+  errors.push(...checkTranslations(files))
+  return errors
+}
+
+/**
+  Переводы (UX §8). Значения слов: несколько — через «; », пояснение в скобках без запятой перед скобкой,
+  без точки в конце. У каждого предложения текстов, диалогов и заданий на аудирование — русский перевод.
+*/
+export function checkTranslations(files: JsonFile[]): string[] {
+  const errors: string[] = []
+  const get = (suffix: string) => (files.find((f) => f.path.endsWith(suffix))?.data ?? []) as Json[]
+  const gloss = (where: string, ru: unknown) => {
+    const s = String(ru ?? '')
+    if (!s.trim()) errors.push(`${where}: нет перевода`)
+    else if (/\.\s*$/.test(s)) errors.push(`${where}: точка в конце перевода «${s}»`)
+    else if (/,\s*\(/.test(s)) errors.push(`${where}: запятая перед скобкой «${s}»`)
+    else if (/\s;|;(?! )/.test(s)) errors.push(`${where}: значения разделяются «; » — «${s}»`)
+  }
+  for (const w of get('dict/words.json')) gloss(`словарь ${String(w.id)}`, w.ru)
+  for (const w of get('clean/stress.json')) gloss(`ударение ${String(w.id)}`, w.ru)
+  for (const p of get('clean/pairs.json')) {
+    gloss(`пара ${String(p.id)}`, p.ruA)
+    gloss(`пара ${String(p.id)}`, p.ruB)
+  }
+  const intake = files.find((f) => f.path.endsWith('content/intake.json'))?.data as { words?: Json[] } | undefined
+  for (const w of intake?.words ?? []) gloss(`вводный тест ${String(w.w)}`, w.ru)
+
+  const bosses = files.find((f) => f.path.endsWith('boss/bosses.json'))?.data as Json | undefined
+  const texts = [...get('doc/texts.json'), ...(bosses ? [bosses.doc as Json] : [])]
+  for (const t of texts) {
+    const ru = t.paragraphsRu as string[] | undefined
+    if (!ru || ru.length !== (t.paragraphs as string[]).length || ru.some((x) => !x.trim())) errors.push(`текст ${String(t.id)}: нужен перевод каждого абзаца`)
+  }
+  const passages = [...get('air/passages.json'), ...(bosses ? [bosses.air as Json] : [])]
+  for (const p of passages) for (const l of p.lines as Json[]) if (!String(l.ru ?? '').trim()) errors.push(`отрывок ${String(p.id)}: реплика без перевода «${String(l.text)}»`)
+  for (const e of [...get('story/episodes.json'), ...get('story/episodes-2.json')])
+    for (const l of e.lines as Json[]) if (l.speaker !== 'me' && !String(l.ru ?? '').trim()) errors.push(`эпизод ${String(e.id)}: реплика без перевода`)
+  for (const p of get('air/phrases.json')) if (!String(p.ru ?? '').trim()) errors.push(`фраза ${String(p.id)}: нет перевода`)
+  for (const p of get('clean/phrases.json')) if (!String(p.ru ?? '').trim()) errors.push(`фраза произношения ${String(p.id)}: нет перевода`)
   return errors
 }
 

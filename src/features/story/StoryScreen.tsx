@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ClaudeButton } from '../../components/ClaudeButton'
 import { IconChevron } from '../../components/Icons'
+import { ScoreBar } from '../../components/Instruments'
+import { Term } from '../../components/Sheet'
 import { PlayButton } from '../../components/Play'
 import { ConfirmDialog, Placeholder, Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
@@ -24,40 +26,66 @@ import { hasCyrillic, speakingSeconds, wordCount } from '../../lib/story/text'
 import { Runner } from '../run/Runner'
 import st from './story.module.css'
 
+/**
+  «Собеседование» (UX §5): как это работает (свёрнуто), готовность ответов, «Начни с этого» у первого вопроса,
+  статусы «не написан → написан → отрепетирован ✓», STAR объясняется тапом. Пробное собеседование — наверху.
+*/
 export function StoryScreen() {
   const t = ru.story
   const stories = useLiveQuery(async () => new Map((await db.stories.toArray()).map((x) => [x.id, x])), [])
   const lastInterview = useLiveQuery(() => db.interviews.orderBy('at').last(), [])
+  const total = content.storyQuestions.length
+  const written = content.storyQuestions.filter((q) => (stories?.get(q.id) ? wordCount(stories.get(q.id)!.text) >= MIN_WORDS : false)).length
+  const first = content.storyQuestions.find((q) => !stories?.get(q.id) || wordCount(stories.get(q.id)!.text) < MIN_WORDS)
   return (
     <Screen title={t.title} subtitle={t.subtitle}>
+      <details className={st.how} open={written === 0 || undefined}>
+        <summary>{t.howTitle}</summary>
+        <ol>
+          {t.howSteps.map((x) => (
+            <li key={x}>{x}</li>
+          ))}
+        </ol>
+      </details>
       <Link to="/interview" className={`${st.card} ${st.item}`} style={{ textDecoration: 'none' }}>
         <span className={st.itemMain}>
           <span className={st.itemQ}>{t.interview}</span>
           <span className={st.itemMeta}>{t.interviewWhat}</span>
+          {written < 3 && <span className={st.itemMeta}>{t.interviewHint}</span>}
           {lastInterview && <span className={`${st.itemMeta} mono`}>{t.lastInterview(formatDate(lastInterview.at))}</span>}
         </span>
         <IconChevron />
       </Link>
       <section className={st.section}>
         <h2 className={st.h2}>{t.questions}</h2>
+        <p className={`${st.itemMeta} mono`}>{t.ready(written, total)}</p>
+        <ScoreBar value={(100 * written) / total} label={t.ready(written, total)} />
         <ul className={st.list}>
           {content.storyQuestions.map((q) => {
             const row = stories?.get(q.id)
             const words = row ? wordCount(row.text) : 0
+            const status = words < MIN_WORDS ? 'empty' : row!.trained > 0 ? 'trained' : 'written'
             return (
-              <li key={q.id}>
-                <Link to={`/story/${q.id}`} className={st.item}>
+              <li key={q.id} className={st.row}>
+                <Link to={`/story/${q.id}`} className={st.item} data-start={q.id === first?.id || undefined}>
                   <span className={st.itemMain}>
                     <span className={st.itemQ} lang="en">
-                      {q.q} {q.star && <span className={st.badge}>{t.star}</span>}
+                      {q.q}
                     </span>
                     <span className={st.itemMeta}>{q.ru}</span>
-                    <span className={`${st.itemMeta} mono`} data-empty={!words || undefined}>
-                      {words ? t.status(words, speakingSeconds(row!.text), row!.trained) : t.empty}
+                    <span className={`${st.itemMeta} mono`} data-status={status}>
+                      {q.id === first?.id && <span className={st.startTag}>{t.startHere}</span>}
+                      {t.statuses[status]}
+                      {words > 0 && ` · ${t.status(words, speakingSeconds(row!.text), row!.trained)}`}
                     </span>
                   </span>
                   <IconChevron />
                 </Link>
+                {q.star && (
+                  <Term k="star" className={st.badge}>
+                    {t.star}
+                  </Term>
+                )}
               </li>
             )
           })}

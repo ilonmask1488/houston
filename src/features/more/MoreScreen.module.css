@@ -26,6 +26,27 @@
   text-align: right;
 }
 
+.how {
+  display: grid;
+  gap: var(--space-5);
+  justify-items: start;
+}
+
+.howSection {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.howSection h2 {
+  font-size: var(--fs-lead);
+}
+
+.howSection p {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
 .achievements {
   display: grid;
   gap: var(--space-2);

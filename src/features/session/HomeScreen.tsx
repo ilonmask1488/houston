@@ -21,6 +21,7 @@ import { detectPlatform, isStandalone, useInstallPrompt } from '../../lib/pwa/in
 import { getTodaySession } from '../../lib/session/today'
 import { useSettings } from '../../lib/settings/settings'
 import s from './HomeScreen.module.css'
+import { Welcome } from '../onboarding/Welcome'
 import { nextSegment, planBlocks, planLine, segmentUrl } from './segments'
 
 /** Подсказка «Установи на главный экран» после закрытия не возвращается месяц. */
@@ -128,6 +129,7 @@ export function HomeScreen() {
       </PingSays>
 
       {intake.last && <LevelLine cefr={intake.last.cefr} tracks={intake.last.tracks} />}
+      {intake.last && <Welcome />}
     </main>
   )
 }

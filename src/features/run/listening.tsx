@@ -106,8 +106,13 @@ function Reveal({ p, ok, speed, notCaught }: { p: Phrase; ok: boolean; speed: nu
   const [showRu, setShowRu] = useState(false)
   const t = ru.steps.listen
   const play = (rate: number) => void playText(spokenText(p), { voice: p.voice, rate }).catch(() => {})
+  // Разбор появляется ниже вариантов — показать его, не заставляя листать
+  const box = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    box.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }, [])
   return (
-    <div className={s.feedback} data-ok={ok || undefined}>
+    <div ref={box} className={s.feedback} data-ok={ok || undefined}>
       <PingSays mood={ok ? 'happy' : notCaught ? 'thinking' : 'oops'} size={52}>
         {line}
       </PingSays>

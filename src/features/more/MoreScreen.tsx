@@ -12,7 +12,7 @@ import { ACHIEVEMENT_IDS } from '../../lib/progress/achievements'
 import { computeStreak, localDate } from '../../lib/progress/streak'
 import s from './MoreScreen.module.css'
 
-const ITEMS = ['profile', 'stats', 'achievements', 'settings', 'check', 'about'] as const
+const ITEMS = ['profile', 'stats', 'achievements', 'settings', 'check', 'how', 'about'] as const
 
 /** Профиль (UX §3.1): сводка одной строкой и всё «служебное» — статистика, достижения, настройки. Маршрут /me. */
 export function MeScreen() {

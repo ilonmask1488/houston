@@ -1,6 +1,7 @@
 /*
-  Общий test для e2e: однократные объяснения упражнений («Новое упражнение: …») всплывают поверх экрана
-  при первой встрече — закрываем их автоматически, где бы они ни появились. Проверка самих объяснений — в ux.spec.ts.
+  Общий test для e2e: однократные объяснения («Новое упражнение: …») и обучение интерфейсу
+  («Как устроен Houston», «Что изменилось») всплывают поверх экрана — закрываем их автоматически,
+  где бы они ни появились. Проверка самих объяснений и обучения — в ux.spec.ts (coachmarks: false).
 */
 import { test as base } from '@playwright/test'
 
@@ -14,6 +15,14 @@ export const test = base.extend<{ coachmarks: boolean }>({
       const sheet = page.getByRole('dialog', { name: /^Новое упражнение/ })
       await page.addLocatorHandler(sheet, async () => {
         await sheet.getByRole('button', { name: 'Понятно' }).click()
+      })
+      const tour = page.getByRole('dialog', { name: 'Как устроен Houston' })
+      await page.addLocatorHandler(tour, async () => {
+        await tour.getByRole('button', { name: 'Пропустить' }).click()
+      })
+      const changed = page.getByRole('dialog', { name: 'Что изменилось' })
+      await page.addLocatorHandler(changed, async () => {
+        await changed.getByRole('button', { name: 'Понятно' }).click()
       })
     }
     await use(page)

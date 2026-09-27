@@ -7,6 +7,7 @@ import { IntakeScreen } from '../features/intake/IntakeScreen'
 import { ProfileScreen } from '../features/intake/ProfileScreen'
 import { AboutScreen, AchievementsScreen, GamesScreen, MeScreen } from '../features/more/MoreScreen'
 import { TrainingScreen } from '../features/more/TrainingScreen'
+import { HowScreen } from '../features/more/HowScreen'
 import { LibraryScreen, LibraryText, MyTexts, MyTextView } from '../features/library/LibraryScreen'
 import { BossRun, ModuleRun, SegmentRun, TextRun } from '../features/run/routes'
 import { HomeScreen } from '../features/session/HomeScreen'
@@ -75,6 +76,7 @@ export function App() {
           <Route path="dictionary" element={<DictionaryScreen />} />
           <Route path="more" element={<TrainingScreen />} />
           <Route path="me" element={<MeScreen />} />
+          <Route path="how" element={<HowScreen />} />
           <Route path="stats" element={<StatsScreen />} />
           <Route path="achievements" element={<AchievementsScreen />} />
           <Route path="check" element={<CheckScreen />} />
