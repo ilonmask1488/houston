@@ -84,3 +84,10 @@
   justify-items: stretch;
   margin-top: var(--space-6);
 }
+
+.termLink {
+  justify-self: start;
+  margin-top: calc(var(--space-2) * -1);
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}

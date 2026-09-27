@@ -2,6 +2,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useState } from 'react'
 import { PlayButton } from '../../components/Play'
+import { Term } from '../../components/Sheet'
 import ui from '../../components/ui.module.css'
 import { content } from '../../content'
 import type { DictWord } from '../../content/types'
@@ -145,7 +146,7 @@ export function WordsTab({ query }: { query: string }) {
       </section>
       <section className={s.group}>
         <h2 className={s.fn}>
-          {t.falseFriends} <span className={s.note}>· {t.falseFriendsNote}</span>
+          <Term k="falseFriends">{t.falseFriends}</Term> <span className={s.note}>· {t.falseFriendsNote}</span>
         </h2>
         <ul className={s.list}>
           {content.falseFriends.map((f) => (

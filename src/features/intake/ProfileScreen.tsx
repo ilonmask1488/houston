@@ -1,5 +1,6 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { Readout, ScoreBar } from '../../components/Instruments'
+import { Term } from '../../components/Sheet'
 import { PingSays, Placeholder, Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
 import { modulesByTrack } from '../../content'
@@ -38,8 +39,11 @@ export function ProfileScreen() {
       )}
       <section className={s.top}>
         <Readout label={t.cefr} value={`≈ ${r.cefr}`} hint={t.cefrNote} />
-        <Readout label={ru.intake.steps.vocab!}value={`≈ ${r.vocabSize}`} unit="слов" />
+        <Readout label={ru.intake.steps.vocab!} value={`≈ ${r.vocabSize}`} unit="слов" />
       </section>
+      <Term k="cefr" className={s.termLink}>
+        {t.cefrWhat}
+      </Term>
 
       <section className={s.section}>
         <h2>{t.tracks}</h2>
@@ -56,7 +60,7 @@ export function ProfileScreen() {
                 </div>
                 <ScoreBar value={score} label={`${ru.tracks[id].title}: ${score} из 100`} />
                 <p className={s.trackStart}>
-                  {ru.trackScreen.level(trackLevel(score))} · {t.start}: <strong>{start?.title}</strong>
+                  {t.trackLevel(trackLevel(score))} · {t.start}: <strong>{start?.title}</strong>
                 </p>
               </li>
             )

@@ -240,7 +240,6 @@ export function DictationStep({ step, onDone }: StepProps<S<'dictation'>>) {
   const ok = diff.total > 0 && diff.ok / diff.total >= 0.8
   return (
     <section className={s.body}>
-      <p className={s.prompt}>{t.title}</p>
       <div className={s.center}>
         <PlayButton text={spokenText(p)} voice={p.voice} rate={step.speed} label={fmt(step.speed)} size="l" />
         <span className={`${s.speedTag} mono`}>{fmt(step.speed)}</span>
@@ -334,8 +333,6 @@ export function LadderStep({ step, onDone }: StepProps<S<'ladder'>>) {
   const comfort = match ? claimed : null
   return (
     <section className={s.body}>
-      <p className={s.prompt}>{t.title}</p>
-      <p className={s.hint}>{t.hint}</p>
       <SpeedScale speeds={RUNGS} current={revealed ? (comfort ?? 0.75) : speed} label={fmt(speed)} />
       {!revealed && (
         <>

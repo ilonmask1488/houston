@@ -301,7 +301,6 @@ export function DocParseStep({ step, onDone }: StepProps<S<'docParse'>>) {
   const [given, setGiven] = useState<string | null>(null)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.doc.parse}</p>
       <p className={d.bigSentence} lang="en">
         {x.sentence}
       </p>

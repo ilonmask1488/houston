@@ -37,12 +37,12 @@ export function HomeScreen() {
     return { days: streak.days, signal: days.reduce((sum, d) => sum + d.signal, 0) }
   }, [])
   const [greeting] = useState(() => ru.greetings[dayOfYear() % ru.greetings.length]!)
-  // План на сегодня собирается, как только есть итог вводного теста.
-  const [ready, setReady] = useState(false)
+  // План на сегодня собирается (или обновляется), как только есть итог вводного теста;
+  // уже сохранённый план показываем сразу — пересчёт догонит через живой запрос.
   useEffect(() => {
-    if (intake.last) void getTodaySession(settings.sessionMinutes).then(() => setReady(true))
+    if (intake.last) void getTodaySession(settings.sessionMinutes)
   }, [intake.last, settings.sessionMinutes])
-  const today = useLiveQuery(() => (ready ? db.sessions.get(localDate()) : undefined), [ready])
+  const today = useLiveQuery(() => db.sessions.get(localDate()), [])
   const signal = telemetry?.signal ?? 0
   const days = telemetry?.days ?? 0
   const next = nextSegment(today)

@@ -111,7 +111,6 @@ export function MailOrderStep({ step, onDone }: StepProps<S<'mailOrder'>>) {
   }
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.mail.orderKicker}</p>
       <p className={s.prompt}>{x.title}</p>
       <p className={s.hint}>{ru.mail.orderHint}</p>
       <ol className={m.letter} aria-label={ru.mail.yourLetter}>
@@ -195,7 +194,6 @@ export function MailWriteStep({ step, onDone }: StepProps<S<'mailWrite'>>) {
   const situation = x.incoming ? `${x.task}\nВходящее письмо:\n${x.incoming}` : x.task
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.mail.writeKicker}</p>
       <p className={s.prompt}>{x.task}</p>
       {x.incoming && (
         <figure className={m.incoming}>

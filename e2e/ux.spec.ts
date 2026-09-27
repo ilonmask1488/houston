@@ -38,6 +38,7 @@ test.describe('однократные объяснения', () => {
   test('тому, кто уже занимался, после обновления — «Что изменилось», прогресс на месте', async ({ page }) => {
     await seedIntake(page)
     await putRows(page, 'days', [{ date: '2026-09-20', seconds: 1800, signal: 120, spokenSeconds: 200, spokenCount: 5, newItems: 3 }])
+    await putRows(page, 'moduleProgress', [{ moduleId: 'air-weak', startedAt: 1, done: ['ph-weak-1'] }])
     await page.reload()
     const changed = page.getByRole('dialog', { name: 'Что изменилось' })
     await expect(changed).toBeVisible()

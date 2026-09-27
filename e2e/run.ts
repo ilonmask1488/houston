@@ -44,9 +44,19 @@ export async function speak(page: Page) {
 }
 
 /** Пройти открытый сегмент до итогов, отвечая первым вариантом и «Вспомнил». */
-export async function runSegment(page: Page, maxSteps = 200, opts: { checkHelp?: boolean } = {}): Promise<void> {
+export async function runSegment(page: Page, maxSteps = 200, opts: { checkHelp?: boolean; onScreen?: (title: string) => Promise<void> } = {}): Promise<void> {
+  let lastTitle = ''
   for (let i = 0; i < maxSteps; i++) {
     if (await page.getByRole('heading', { name: SUMMARY }).isVisible().catch(() => false)) return
+    // Для «прогулки новичка»: снимок каждого нового экрана упражнения
+    if (opts.onScreen) {
+      const title = (await page.locator('[class*="exTitle"]').first().textContent({ timeout: 300 }).catch(() => null)) ?? ''
+      const counter = (await page.locator('[class*="count"]').first().textContent({ timeout: 300 }).catch(() => null)) ?? ''
+      if (title && `${title}${counter}` !== lastTitle) {
+        lastTitle = `${title}${counter}`
+        await opts.onScreen(title)
+      }
+    }
     if (await visible(page, 'Понятно, поехали')) {
       await click(page, 'Понятно, поехали')
       continue

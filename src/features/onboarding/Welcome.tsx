@@ -15,7 +15,8 @@ export function Welcome() {
   // welcomeSeen: true — показано; 'tour' — попросили показать заново; нет — первый раз
   const state = useLiveQuery(async () => {
     const flag = await db.getMeta('welcomeSeen')
-    return { seen: flag === true, tour: flag === 'tour', existing: (await db.days.count()) > 0 }
+    // «Уже занимался» — есть модули или карточки. Минуты не годятся: их даёт и сам вводный тест.
+    return { seen: flag === true, tour: flag === 'tour', existing: (await db.moduleProgress.count()) + (await db.cards.count()) > 0 }
   }, [])
   const [step, setStep] = useState(-1) // -1 — «что изменилось» для тех, кто уже занимался; 0..n — шаги
   if (!state || state.seen) return null

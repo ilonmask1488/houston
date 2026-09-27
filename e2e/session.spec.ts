@@ -66,14 +66,14 @@ test('занятие можно прервать посреди блока и п
   await expect(page.getByText(/игра «Помехи»/)).toBeVisible()
   await page.goto('./#/run/seg/air-1')
   await page.getByRole('button', { name: 'Понятно, поехали' }).click()
-  await expect(page.getByText(/^2 из \d+$/)).toBeVisible()
+  await expect(page.getByText(/^шаг 2 из \d+$/)).toBeVisible()
   await page.getByRole('button', { name: 'Выйти' }).click()
   await expect(page.getByText('Прогресс сохранён — продолжишь с этого места.')).toBeVisible()
   await page.getByRole('dialog').getByRole('button', { name: 'Выйти' }).click()
   await expect(page.getByRole('heading', { name: 'Занятие на сегодня' })).toBeVisible()
   await page.goto('./#/run/seg/air-1')
   await expect(page.getByText('Продолжаем с места, где остановился.')).toBeVisible()
-  await expect(page.getByText(/^2 из \d+$/)).toBeVisible()
+  await expect(page.getByText(/^шаг 2 из \d+$/)).toBeVisible()
 })
 
 test('курс: любой модуль открывается для свободной тренировки', async ({ page }) => {

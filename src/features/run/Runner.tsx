@@ -68,6 +68,7 @@ export function Runner(props: Props) {
   const seconds = useRef(0)
   const lastTick = useRef(0)
   const busy = useRef(false)
+  const finishing = useRef(false)
   const [confirmExit, setConfirmExit] = useState(false)
   const resumed = (props.startAt ?? 0) > 0
 
@@ -93,7 +94,8 @@ export function Runner(props: Props) {
   }, [index, steps])
 
   async function onDone(r: StepResult) {
-    if (busy.current) return
+    // Двойной тап по последнему «Дальше» не должен завершить круг дважды (дважды засчитать тренировку)
+    if (busy.current || finishing.current) return
     busy.current = true
     try {
       const a = acc.current
@@ -116,6 +118,7 @@ export function Runner(props: Props) {
       const next = index + 1
       props.onStep?.(next >= steps.length ? 0 : next)
       if (next >= steps.length) {
+        finishing.current = true
         const secs = seconds.current
         const signal = a.signal + Math.round((secs / 60) * SIGNAL.perMinute) + SIGNAL.exerciseComplete + a.completed.length * SIGNAL.bossPassed
         const summary: RunSummary = {
@@ -154,7 +157,7 @@ export function Runner(props: Props) {
           {props.title && <span className={s.topTitle}>{props.title}</span>}
           <StepTicks total={steps.length} done={index} label={ru.run.progress(index + 1, steps.length)} />
         </div>
-        <span className={`${s.count} mono`}>{ru.run.progress(index + 1, steps.length)}</span>
+        <span className={`${s.count} mono`}>{steps.every((x) => x.kind === 'card') ? ru.run.cardOf(index + 1, steps.length) : ru.run.stepOf(index + 1, steps.length)}</span>
       </div>
       {props.session && (
         <div className={s.sessionBar} role="img" aria-label={ru.run.sessionBar(props.session.findIndex((b) => b.status === 'current') + 1, props.session.length)}>

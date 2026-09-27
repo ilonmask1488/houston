@@ -10,21 +10,21 @@ export type { Page } from '@playwright/test'
 
 export const test = base.extend<{ coachmarks: boolean }>({
   coachmarks: [true, { option: true }],
-  page: async ({ page, coachmarks }, use) => {
+  page: async ({ page, coachmarks }, provide) => {
     if (coachmarks) {
       const sheet = page.getByRole('dialog', { name: /^Новое упражнение/ })
       await page.addLocatorHandler(sheet, async () => {
-        await sheet.getByRole('button', { name: 'Понятно' }).click()
+        await sheet.getByRole('button', { name: 'Понятно' }).click({ timeout: 3000 }).catch(() => {})
       })
       const tour = page.getByRole('dialog', { name: 'Как устроен Houston' })
       await page.addLocatorHandler(tour, async () => {
-        await tour.getByRole('button', { name: 'Пропустить' }).click()
+        await tour.getByRole('button', { name: 'Пропустить' }).click({ timeout: 3000 }).catch(() => {})
       })
       const changed = page.getByRole('dialog', { name: 'Что изменилось' })
       await page.addLocatorHandler(changed, async () => {
-        await changed.getByRole('button', { name: 'Понятно' }).click()
+        await changed.getByRole('button', { name: 'Понятно' }).click({ timeout: 3000 }).catch(() => {})
       })
     }
-    await use(page)
+    await provide(page)
   },
 })

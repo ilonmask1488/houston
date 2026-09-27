@@ -70,7 +70,6 @@ export function PairHearStep({ step, onDone }: StepProps<S<'pairHear'>>) {
   const ok = given === target
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.clean.hearKicker}</p>
       <div className={s.cardFace}>
         <PlayButton text={target} voice={voice} label={ru.clean.replay} size="l" />
       </div>
@@ -125,7 +124,6 @@ export function PairSayStep({ step, onDone }: StepProps<S<'pairSay'>>) {
   const finished = result !== undefined && (verdict !== 'none' || self !== null)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.clean.sayKicker}</p>
       <div className={s.cardFace}>
         <p className={s.chunkEn} lang="en">
           {target}
@@ -190,7 +188,6 @@ export function CleanSayStep({ step, onDone }: StepProps<S<'cleanSay'>>) {
   const sample = entryFor(x.text, voice)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.clean.phraseKicker}</p>
       <p className={s.phrase}>
         <PlayButton text={x.text} voice={voice} label={x.text} /> <span lang="en">{x.text}</span>
       </p>
@@ -245,7 +242,6 @@ export function StressStep({ step, onDone }: StepProps<S<'stress'>>) {
   const ok = given === w.stress
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.clean.stressKicker}</p>
       <p className={s.prompt}>
         {w.ru} · <span className={s.hint}>{ru.clean.stressHint}</span>
       </p>
@@ -295,7 +291,6 @@ export function FalseFriendStep({ step, onDone }: StepProps<S<'falseFriend'>>) {
   const [res, setRes] = useState<{ given: string; ok: boolean } | null>(null)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{ru.clean.ffKicker}</p>
       <p className={s.bigRu}>{f.ru}</p>
       <p className={s.hint}>«{f.context}»</p>
       <p className={s.prompt}>{ru.clean.ffPrompt}</p>

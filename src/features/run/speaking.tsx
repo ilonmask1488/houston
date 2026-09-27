@@ -98,7 +98,6 @@ export function QuickStep({ step, onDone }: StepProps<S<'quick'>>) {
   const noPauses = measured ? result!.longPauses === 0 : checks[2]!
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{t.title}</p>
       <div className={s.question}>
         <p className={s.qText} lang="en">
           {q.q}
@@ -209,12 +208,11 @@ export function TranslateStep({ step, onDone }: StepProps<S<'translate'>>) {
   const seconds = settings.answerSeconds + 2
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{t.title}</p>
       <p className={s.bigRu}>{it.ru}</p>
       {result === undefined ? (
         <>
           <p className={s.hint}>{t.hint(seconds)}</p>
-          <VoiceAnswer timed={seconds} maxSeconds={15} autoStart onResult={setResult} />
+          <VoiceAnswer timed={seconds} maxSeconds={15} onResult={setResult} />
         </>
       ) : (
         <SelfGrade
@@ -244,7 +242,6 @@ export function SubstituteStep({ step, onDone }: StepProps<S<'substitute'>>) {
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{t.title}</p>
       <div className={s.example}>
         <span className={s.hint}>{t.base}</span>
         <p className={s.phrase}>
