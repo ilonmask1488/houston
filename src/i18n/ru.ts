@@ -5,6 +5,7 @@
 */
 import type { TrackId } from '../content/types'
 import type { BlockId } from '../lib/session/plan'
+import { exercise } from './exercises'
 
 export const ru = {
   appName: 'Houston',
@@ -95,6 +96,7 @@ export const ru = {
   },
 
   help: { label: 'Как работает это упражнение', ok: 'Понятно' },
+  exercise,
 
   /** Реплики Ping на главном экране — по одной в день. */
   greetings: [
@@ -617,7 +619,7 @@ export const ru = {
     continue: 'Продолжить занятие',
     skipThis: 'Пропустить этот блок',
     blockDone: (b: string) => `Готово: ${b} ✓`,
-    nextBlock: (b: string, min: number) => `Дальше: ${b}, ${min} мин`,
+    nextBlock: (b: string, min: number) => `Дальше: ${b} · ${min} мин`,
     next: 'Дальше',
     toPlan: 'План занятия',
     toHome: 'На главный экран',
@@ -658,6 +660,7 @@ export const ru = {
   run: {
     close: 'Выйти',
     progress: (i: number, n: number) => `${i} из ${n}`,
+    sessionBar: (i: number, n: number) => `Занятие: блок ${i} из ${n}`,
     next: 'Дальше',
     check: 'Проверить',
     resume: 'Продолжаем с места, где остановился.',
@@ -684,8 +687,14 @@ export const ru = {
       replay: 'Ещё раз',
       slower: 'Медленнее · 0.75×',
       notCaught: 'Не разобрал',
+      notCaughtLine: 'Не разобрал — это нормально, без штрафа. Вот что прозвучало:',
       focus: 'Где стык',
       ru: 'Перевод',
+      speed: 'Скорость',
+      hint: 'Подсказка',
+      hintText: (f: string) => `Прислушайся к стыку слов: «${f}» — носители произносят его слитно.`,
+      again: 'Послушать ещё раз',
+      slowerAfter: 'Послушать медленнее',
       shadow: 'Скажи за диктором вслух — так ухо быстрее настраивается.',
     },
     dictation: {
@@ -728,6 +737,8 @@ export const ru = {
       example: 'В предложении',
       say: 'Скажи вслух — лучше целиком пример.',
       said: 'Сказал — дальше',
+      recordCompare: 'Записать себя и сравнить',
+      saidNext: 'Сказал вслух → Дальше',
     },
     quick: {
       title: 'Быстрый ответ',
@@ -758,9 +769,16 @@ export const ru = {
         3: 'Сначала только слух — текст после ответа.',
         4: 'Вспомни перевод — осторожно, рядом ловушка.',
       } as Record<number, string>,
-      show: 'Показать ответ',
+      show: 'Проверить себя',
+      ask: 'Ты вспомнил?',
+      askSaid: 'Ты сказал правильно?',
+      sayIt: (ru: string) => `Скажи по-английски: «${ru}»`,
+      firstWord: 'Первое слово',
+      firstWordShow: 'Подсказка: первое слово',
+      recordSelf: 'Записать себя',
       gradeLabel: 'Насколько легко вспомнилось',
-      grades: { 1: 'Снова', 2: 'Трудно', 3: 'Хорошо', 4: 'Легко' } as Record<number, string>,
+      grades: { 1: 'Не вспомнил', 2: 'С трудом', 3: 'Вспомнил', 4: 'Легко' } as Record<number, string>,
+      when: (g: number, words: string) => (g === 1 ? `покажу снова ${words}` : `повторим ${words}`),
       empty: 'Все карточки повторены — следующие придут, когда наступит их срок.',
     },
   },
@@ -770,6 +788,7 @@ export const ru = {
     record: 'Записать себя',
     stop: 'Готово',
     said: 'Сказал',
+    saidNoRec: 'Сказал вслух без записи',
     noMic: 'Без микрофона: скажи вслух и нажми «Сказал».',
     startIn: (n: number) => `начни говорить · ${n}`,
     speaking: 'Говоришь…',
@@ -809,7 +828,7 @@ export const ru = {
     combo: (x: number) => `×${x}`,
     speed: 'Скорость',
     secondsLeft: (n: number) => `Осталось ${n} с`,
-    stats: (ok: number, bad: number, streak: number, signal: number) => `Верно ${ok}, ошибок ${bad}, лучшая серия ${streak}. Сигнал +${signal}.`,
+    stats: (ok: number, bad: number, streak: number, signal: number) => `Верно ${ok}, ошибок ${bad}, лучшая серия ${streak}. Очки +${signal}.`,
     quickRound: (i: number, n: number) => `Вопрос ${i} из ${n}`,
     quickPoints: (on: number, dur: number, clean: number) => `вовремя +${on} · речь +${dur} · без пауз +${clean}`,
     selfOnTime: 'Начал вовремя?',
@@ -827,7 +846,7 @@ export const ru = {
     source: 'Источник',
     timer: (sec: number, words: number) => `${words} слов · ${sec} с${sec > 5 ? ` · ≈ ${Math.round((words / sec) * 60)} слов/мин` : ''}`,
     read: 'Прочитал',
-    findHint: 'Не читай всё — найди в тексте предложение с ответом и нажми на него.',
+    paraRu: 'Перевод абзаца',
     left: (n: number) => `осталось ${n} с`,
     found: (sec: number) => `Нашёл за ${sec} с!`,
     timeUp: 'Время вышло — ответ подсвечен. В следующий раз ищи слово из вопроса.',
@@ -937,7 +956,7 @@ export const ru = {
   },
 
   boss: {
-    title: 'Босс трека',
+    title: 'Итоговое испытание',
     air: { title: 'Созвон по срыву сроков', what: 'четыре голоса, быстро, с перебиванием — пять вопросов' },
     call: { title: 'Пробное собеседование', what: 'вопросы подряд, запись, транскрипт' },
     doc: { title: 'Статья на время', what: 'найти четыре ответа по 25 секунд, суть и пересказ' },
@@ -1035,4 +1054,17 @@ export function pick<T>(arr: T[], seed = Math.random()): T {
 
 export function formatDate(ms: number): string {
   return new Date(ms).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+
+/** Интервал словами: «через 10 мин», «завтра», «через 8 дней». */
+export function intervalWords(ms: number): string {
+  const min = Math.max(1, Math.round(ms / 60_000))
+  if (min < 60) return `через ${min} мин`
+  const h = Math.round(min / 60)
+  if (h < 20) return `через ${h} ${plural(h, 'час', 'часа', 'часов')}`
+  const d = Math.max(1, Math.round(h / 24))
+  if (d === 1) return 'завтра'
+  if (d < 45) return `через ${d} ${plural(d, 'день', 'дня', 'дней')}`
+  const mo = Math.round(d / 30)
+  return `через ${mo} ${plural(mo, 'месяц', 'месяца', 'месяцев')}`
 }

@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { seedIntake } from './helpers.ts'
 
 test('первый запуск: приглашение на вводный тест, кнопка видна без прокрутки', async ({ page }) => {

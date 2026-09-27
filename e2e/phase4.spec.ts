@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { runSegment } from './run.ts'
 
 test('Телеграмма: регистр, «слишком по-русски», письмо из блоков или своё письмо', async ({ page }) => {

@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { seedIntake } from './helpers.ts'
 import { playStatic, runSegment } from './run.ts'
 
@@ -20,7 +20,8 @@ test('занятие: одна кнопка «Начать», блоки иду�
   await expect(page.getByText(/Рекорд: \d+/).first()).toBeVisible()
 
   // Дальше — быстрая речь на слух (повторения в первый день нет)
-  await page.getByRole('button', { name: /^Дальше: Быстрая речь на слух, \d+ мин$/ }).click()
+  await expect(page.getByText(/^Дальше: Быстрая речь на слух · \d+ мин$/)).toBeVisible()
+  await page.getByRole('button', { name: 'Дальше', exact: true }).click()
   await expect(page.getByRole('heading', { level: 1, name: 'Выпадение звуков' })).toBeVisible() // аудирование 38 → старт с «Выпадения»
   await expect(page.getByText('Быстрая речь на слух', { exact: true })).toBeVisible() // шапка: что за блок
   await runSegment(page)
@@ -28,7 +29,8 @@ test('занятие: одна кнопка «Начать», блоки иду�
   await expect(page.getByText('Очки', { exact: true })).toBeVisible()
 
   // Следующий блок — «Говорим вслух»; его можно пропустить
-  await page.getByRole('button', { name: /^Дальше: Говорим вслух, \d+ мин$/ }).click()
+  await expect(page.getByText(/^Дальше: Говорим вслух · \d+ мин$/)).toBeVisible()
+  await page.getByRole('button', { name: 'Дальше', exact: true }).click()
   await expect(page.getByText('Говорим вслух', { exact: true })).toBeVisible() // итоги прошлого блока ушли
   await runSegment(page)
   await page.getByRole('link', { name: 'План занятия' }).click()
@@ -66,6 +68,8 @@ test('занятие можно прервать посреди блока и п
   await page.getByRole('button', { name: 'Понятно, поехали' }).click()
   await expect(page.getByText(/^2 из \d+$/)).toBeVisible()
   await page.getByRole('button', { name: 'Выйти' }).click()
+  await expect(page.getByText('Прогресс сохранён — продолжишь с этого места.')).toBeVisible()
+  await page.getByRole('dialog').getByRole('button', { name: 'Выйти' }).click()
   await expect(page.getByRole('heading', { name: 'Занятие на сегодня' })).toBeVisible()
   await page.goto('./#/run/seg/air-1')
   await expect(page.getByText('Продолжаем с места, где остановился.')).toBeVisible()

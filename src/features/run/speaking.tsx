@@ -52,9 +52,19 @@ export function ChunkStep({ step, onDone }: StepProps<S<'chunk'>>) {
           <p className={s.ru}>{c.exampleRu}</p>
         </div>
       )}
-      <p className={s.hint}>{t.say}</p>
       {result === undefined ? (
-        <VoiceAnswer maxSeconds={12} label={ru.voice.record} onResult={setResult} />
+        <>
+          <p className={s.hint}>{t.say}</p>
+          <VoiceAnswer maxSeconds={12} label={t.recordCompare} allowSkip={false} onResult={setResult} />
+          {/* Без записи двигаться дальше — одной кнопкой (UX §4.3) */}
+          <button
+            type="button"
+            className={ui.secondary}
+            onClick={() => onDone({ spokenMs: durationOf(target, voice), chunkLearned: c.id, done: [{ module: c.module, item: c.id }] })}
+          >
+            {t.saidNext}
+          </button>
+        </>
       ) : (
         <>
           <VoiceReport result={result} target={target} sample={{ text: target, voice }} />

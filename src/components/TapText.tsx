@@ -10,7 +10,7 @@ import { hasAudio } from '../lib/audio/manifest'
 import { speakEnglish } from '../lib/audio/speech'
 import { askWordPrompt } from '../lib/claude/prompt'
 import { db } from '../lib/db/db'
-import { BAND_LABEL, loadDictionary, lookupInContext, norm } from '../lib/dict/dict'
+import { BAND_LABEL, dictionaryLoaded, loadDictionary, lookup, lookupInContext, norm } from '../lib/dict/dict'
 import { saveUserWord, userWordId } from '../lib/dict/words'
 import { addWordCards } from '../lib/srs/cards'
 import { ClaudeButton } from './ClaudeButton'
@@ -30,12 +30,24 @@ function tokenize(text: string): Token[] {
   return out
 }
 
-/** Абзац с нажимаемыми словами. highlight — индексы предложения, подсвеченного извне (не используется здесь). */
+/** Слова, которые уже в карточках (словарь и свои) — их слегка подчёркиваем (UX §4.5). */
+function useKnownWords(): ((word: string) => boolean) | null {
+  const [ready, setReady] = useState(dictionaryLoaded())
+  const ids = useLiveQuery(async () => new Set((await db.cards.where('kind').equals(1).toArray()).map((c) => c.itemId).filter((id) => /^(w|u)-/.test(id))), [])
+  useEffect(() => {
+    if (!ready && ids?.size) void loadDictionary().then(() => setReady(true))
+  }, [ready, ids])
+  if (!ids?.size || !ready) return null
+  return (word) => ids.has(userWordId(word)) || ids.has(lookup(word)?.id ?? '')
+}
+
+/** Абзац с нажимаемыми словами. */
 export function TapText({ text, className }: { text: string; className?: string }) {
   const tokens = useMemo(() => tokenize(text), [text])
   const words = useMemo(() => tokens.filter((t) => t.word).map((t) => t.t), [tokens])
   const [picked, setPicked] = useState<number | null>(null)
   const [range, setRange] = useState<[number, number] | null>(null)
+  const known = useKnownWords()
   return (
     <>
       <span className={`${s.text} ${className ?? ''}`} lang="en">
@@ -46,6 +58,7 @@ export function TapText({ text, className }: { text: string; className?: string 
               type="button"
               className={s.word}
               data-on={range && tk.i >= range[0] && tk.i <= range[1] ? true : undefined}
+              data-known={known?.(tk.t) || undefined}
               onClick={() => setPicked(tk.i)}
             >
               {tk.t}

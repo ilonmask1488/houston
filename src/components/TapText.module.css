@@ -21,6 +21,10 @@
   }
 }
 
+.word[data-known] {
+  border-bottom: 1.5px solid color-mix(in srgb, var(--signal) 70%, transparent);
+}
+
 .word[data-on] {
   border-radius: 2px;
   background: color-mix(in srgb, var(--signal) 30%, transparent);

@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test'
+import { expect, test, type Page } from './fixtures.ts'
 import { knowUntilVerify } from './helpers.ts'
 
 /** Пройти словарь: всё «Не знаю» — после второй полосы тест сам остановится. */

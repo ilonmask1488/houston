@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 
 test('iPhone: подсказка «Установи на главный экран», закрывается и не возвращается', async ({ page }, info) => {
   test.skip(info.project.name !== 'iphone', 'только iOS')

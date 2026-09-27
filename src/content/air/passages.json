@@ -9,37 +9,44 @@
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Morning, everyone. Let's keep this short. Tom, you first."
+    "text": "Morning, everyone. Let's keep this short. Tom, you first.",
+    "ru": "Всем доброе утро. Давайте коротко. Том, ты первый."
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "Sure. So yesterday I finished the bracket redesign, and I'm gonna run the stress analysis today. Should be done by lunch, unless the mesh gives me trouble again."
+    "text": "Sure. So yesterday I finished the bracket redesign, and I'm gonna run the stress analysis today. Should be done by lunch, unless the mesh gives me trouble again.",
+    "ru": "Конечно. Значит, вчера я закончил переделку кронштейна, а сегодня запущу расчёт на прочность. К обеду должно быть готово, если сетка опять не подведёт."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "Right, quick one from me. The vibration table's booked for Thursday, not Wednesday, so we've got an extra day to fix the mounting plate."
+    "text": "Right, quick one from me. The vibration table's booked for Thursday, not Wednesday, so we've got an extra day to fix the mounting plate.",
+    "ru": "Так, коротко от меня. Вибростенд забронирован на четверг, а не на среду, так что у нас есть лишний день, чтобы доделать монтажную плиту."
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "I reviewed the sensor wiring. Two connectors were swapped, so I've corrected the drawing and sent it to the workshop."
+    "text": "I reviewed the sensor wiring. Two connectors were swapped, so I've corrected the drawing and sent it to the workshop.",
+    "ru": "Я проверила проводку датчиков. Два разъёма были перепутаны, поэтому я исправила чертёж и отправила его в цех."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Good. Any blockers?"
+    "text": "Good. Any blockers?",
+    "ru": "Хорошо. Что-нибудь мешает?"
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "Just one. I still don't have the updated material data from the supplier."
+    "text": "Just one. I still don't have the updated material data from the supplier.",
+    "ru": "Только одно. У меня до сих пор нет обновлённых данных о материале от поставщика."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "I'll chase them after this call. Thanks, everyone."
+    "text": "I'll chase them after this call. Thanks, everyone.",
+    "ru": "Я потороплю их после созвона. Всем спасибо."
    }
   ],
   "questions": [
@@ -83,42 +90,50 @@
    {
     "speaker": "sophie",
     "voice": "gb-f",
-    "text": "Hi Dana, thanks for making time. I've got some good news and some not-so-good news."
+    "text": "Hi Dana, thanks for making time. I've got some good news and some not-so-good news.",
+    "ru": "Привет, Дана, спасибо, что нашла время. У меня есть хорошие новости и не очень."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Let's start with the good news."
+    "text": "Let's start with the good news.",
+    "ru": "Давай начнём с хороших."
    },
    {
     "speaker": "sophie",
     "voice": "gb-f",
-    "text": "The carbon fiber panels passed inspection, so they'll ship on Monday."
+    "text": "The carbon fiber panels passed inspection, so they'll ship on Monday.",
+    "ru": "Панели из углепластика прошли инспекцию, так что их отгрузят в понедельник."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Great. And the bad news?"
+    "text": "Great. And the bad news?",
+    "ru": "Отлично. А плохие?"
    },
    {
     "speaker": "sophie",
     "voice": "gb-f",
-    "text": "The titanium fasteners are delayed. Our supplier had a problem with the heat treatment, so we're looking at two weeks, maybe three."
+    "text": "The titanium fasteners are delayed. Our supplier had a problem with the heat treatment, so we're looking at two weeks, maybe three.",
+    "ru": "Титановый крепёж задерживается. У нашего поставщика возникла проблема с термообработкой, так что речь о двух неделях, может быть, о трёх."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Three weeks is a problem for us. Is there any way to split the order and send part of it earlier?"
+    "text": "Three weeks is a problem for us. Is there any way to split the order and send part of it earlier?",
+    "ru": "Три недели — это для нас проблема. Можно как-то разделить заказ и отправить часть раньше?"
    },
    {
     "speaker": "sophie",
     "voice": "gb-f",
-    "text": "I can check. If they have fifty in stock, I could send those by express."
+    "text": "I can check. If they have fifty in stock, I could send those by express.",
+    "ru": "Могу уточнить. Если у них на складе есть пятьдесят штук, я могла бы отправить их экспресс-доставкой."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "That would help a lot. Please let me know by Wednesday."
+    "text": "That would help a lot. Please let me know by Wednesday.",
+    "ru": "Это бы очень помогло. Пожалуйста, дай знать до среды."
    }
   ],
   "questions": [
@@ -162,42 +177,50 @@
    {
     "speaker": "mike",
     "voice": "us-m",
-    "text": "So, tell me about a project you're proud of."
+    "text": "So, tell me about a project you're proud of.",
+    "ru": "Итак, расскажите о проекте, которым вы гордитесь."
    },
    {
     "speaker": "grace",
     "voice": "au-f",
-    "text": "Sure. Last year I worked on a small satellite for a university team. I was responsible for the thermal design."
+    "text": "Sure. Last year I worked on a small satellite for a university team. I was responsible for the thermal design.",
+    "ru": "Конечно. В прошлом году я работала над малым спутником в университетской команде. Я отвечала за тепловое проектирование."
    },
    {
     "speaker": "mike",
     "voice": "us-m",
-    "text": "What was the main challenge?"
+    "text": "What was the main challenge?",
+    "ru": "В чём была главная трудность?"
    },
    {
     "speaker": "grace",
     "voice": "au-f",
-    "text": "The electronics kept overheating in our simulations. We couldn't add a radiator because of the mass limit, so I suggested moving the battery closer to the panel and using a thermal strap instead."
+    "text": "The electronics kept overheating in our simulations. We couldn't add a radiator because of the mass limit, so I suggested moving the battery closer to the panel and using a thermal strap instead.",
+    "ru": "В наших расчётах электроника постоянно перегревалась. Добавить радиатор мы не могли из-за ограничения по массе, поэтому я предложила перенести батарею ближе к панели и вместо радиатора поставить тепловой мост."
    },
    {
     "speaker": "mike",
     "voice": "us-m",
-    "text": "And did it work?"
+    "text": "And did it work?",
+    "ru": "И это сработало?"
    },
    {
     "speaker": "grace",
     "voice": "au-f",
-    "text": "It did. The peak temperature dropped by about twelve degrees, and we stayed within the mass budget."
+    "text": "It did. The peak temperature dropped by about twelve degrees, and we stayed within the mass budget.",
+    "ru": "Да. Пиковая температура снизилась примерно на двенадцать градусов, и мы уложились в бюджет массы."
    },
    {
     "speaker": "mike",
     "voice": "us-m",
-    "text": "Nice. What would you do differently next time?"
+    "text": "Nice. What would you do differently next time?",
+    "ru": "Отлично. Что бы вы сделали иначе в следующий раз?"
    },
    {
     "speaker": "grace",
     "voice": "au-f",
-    "text": "I'd start the thermal analysis earlier. We found the problem quite late, and it cost us a few weeks."
+    "text": "I'd start the thermal analysis earlier. We found the problem quite late, and it cost us a few weeks.",
+    "ru": "Я бы начала тепловой расчёт раньше. Мы обнаружили проблему довольно поздно, и это стоило нам нескольких недель."
    }
   ],
   "questions": [
@@ -241,27 +264,32 @@
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "Right, so here's what happened on Friday. We ran the random vibration test at full level."
+    "text": "Right, so here's what happened on Friday. We ran the random vibration test at full level.",
+    "ru": "Итак, вот что случилось в пятницу. Мы проводили испытание на случайную вибрацию на полном уровне."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "About forty seconds in, the accelerometer on the bracket started showing a spike at around a hundred and twenty hertz."
+    "text": "About forty seconds in, the accelerometer on the bracket started showing a spike at around a hundred and twenty hertz.",
+    "ru": "Примерно на сороковой секунде акселерометр на кронштейне начал показывать пик в районе ста двадцати герц."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "We stopped the test, had a look, and found that two of the four bolts had loosened. Nothing's cracked, which is the good news."
+    "text": "We stopped the test, had a look, and found that two of the four bolts had loosened. Nothing's cracked, which is the good news.",
+    "ru": "Мы остановили испытание, осмотрели и обнаружили, что два болта из четырёх ослабли. Ничего не треснуло — это хорошая новость."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "The torque was probably too low, so we're going to re-torque everything to spec, add thread locker, and repeat the test on Tuesday."
+    "text": "The torque was probably too low, so we're going to re-torque everything to spec, add thread locker, and repeat the test on Tuesday.",
+    "ru": "Скорее всего, момент затяжки был слишком мал, так что мы затянем всё заново по спецификации, добавим фиксатор резьбы и повторим испытание во вторник."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "If it happens again, we'll need to look at the bracket design itself."
+    "text": "If it happens again, we'll need to look at the bracket design itself.",
+    "ru": "Если это повторится, придётся пересматривать саму конструкцию кронштейна."
    }
   ],
   "questions": [
@@ -305,42 +333,50 @@
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "Hey Priya, have you got a sec? It's about tomorrow's design review."
+    "text": "Hey Priya, have you got a sec? It's about tomorrow's design review.",
+    "ru": "Привет, Прия, есть секунда? Это насчёт завтрашнего ревью проекта."
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "Sure, what's up?"
+    "text": "Sure, what's up?",
+    "ru": "Конечно, что случилось?"
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "The client wants to move it to Thursday afternoon. Does that work for you?"
+    "text": "The client wants to move it to Thursday afternoon. Does that work for you?",
+    "ru": "Клиент хочет перенести его на четверг, на вторую половину дня. Тебе подходит?"
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "Thursday afternoon. I have the lab until three. Could we do four o'clock?"
+    "text": "Thursday afternoon. I have the lab until three. Could we do four o'clock?",
+    "ru": "Четверг после обеда. У меня лаборатория до трёх. Можем в четыре?"
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "Four should be fine. I'll send an updated invite."
+    "text": "Four should be fine. I'll send an updated invite.",
+    "ru": "Четыре, думаю, подойдёт. Я разошлю обновлённое приглашение."
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "Thanks. And could you attach the latest drawings? The ones from last week are out of date."
+    "text": "Thanks. And could you attach the latest drawings? The ones from last week are out of date.",
+    "ru": "Спасибо. И можешь приложить последние чертежи? Те, что с прошлой недели, уже устарели."
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "Will do. Oh, and they'd like a short demo of the test rig, if possible."
+    "text": "Will do. Oh, and they'd like a short demo of the test rig, if possible.",
+    "ru": "Сделаю. Да, и они хотели бы, если можно, короткую демонстрацию стенда."
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "No problem. I'll prepare something, ten minutes max."
+    "text": "No problem. I'll prepare something, ten minutes max.",
+    "ru": "Без проблем. Подготовлю что-нибудь, максимум на десять минут."
    }
   ],
   "questions": [
@@ -384,27 +420,32 @@
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "In this video I'll walk you through our new test rig. On the left you can see the hydraulic actuator."
+    "text": "In this video I'll walk you through our new test rig. On the left you can see the hydraulic actuator.",
+    "ru": "В этом видео я покажу вам наш новый испытательный стенд. Слева вы видите гидравлический привод."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens."
+    "text": "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens.",
+    "ru": "Он развивает усилие до пятидесяти килоньютонов — этого хватает для большинства наших композитных образцов."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "The specimen sits in these wedge grips, and the load cell above it measures the force."
+    "text": "The specimen sits in these wedge grips, and the load cell above it measures the force.",
+    "ru": "Образец зажимается в этих клиновых захватах, а датчик силы над ним измеряет усилие."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "We use two strain gauges on each specimen, one on each side, so we can check for bending."
+    "text": "We use two strain gauges on each specimen, one on each side, so we can check for bending.",
+    "ru": "На каждый образец мы ставим два тензодатчика, по одному с каждой стороны, чтобы проверять изгиб."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "All the data goes to this computer at a thousand samples per second. The whole setup took us about three months to build, mostly because of the safety enclosure."
+    "text": "All the data goes to this computer at a thousand samples per second. The whole setup took us about three months to build, mostly because of the safety enclosure.",
+    "ru": "Все данные идут на этот компьютер с частотой тысяча отсчётов в секунду. Сборка всей установки заняла у нас около трёх месяцев — в основном из-за защитного кожуха."
    }
   ],
   "questions": [

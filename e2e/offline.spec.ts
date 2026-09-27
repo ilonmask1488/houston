@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 
 test('после первой загрузки приложение открывается без сети', async ({ page, context, browserName }) => {
   test.skip(browserName === 'webkit', 'service worker в WebKit-сборке Playwright под Windows не поддерживается')

@@ -50,10 +50,24 @@
 .all summary {
   display: flex;
   align-items: center;
+  gap: var(--space-2);
   min-height: var(--tap);
   color: var(--ink-2);
   font-size: var(--fs-small);
   cursor: pointer;
+  list-style: none;
+}
+
+.all summary::-webkit-details-marker {
+  display: none;
+}
+
+.all summary::after {
+  content: '▾';
+}
+
+.all[open] summary::after {
+  content: '▴';
 }
 
 .modules {

@@ -9,52 +9,62 @@
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first."
+    "text": "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first.",
+    "ru": "Так, давайте начнём. У нас проблема с графиком, поэтому хочу выслушать всех. Оливер, ты первый."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday."
+    "text": "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday.",
+    "ru": "Короче говоря, вибростенд опять встал — дело в усилителе, а не в самом столе, — и раньше среды замену нам не привезут."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Wednesday. And how long do the vibration tests take once it's back?"
+    "text": "Wednesday. And how long do the vibration tests take once it's back?",
+    "ru": "В среду. А сколько займут вибрационные испытания, когда стенд заработает?"
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "Three days if nothing goes wrong, so realistically we're looking at the end of next week."
+    "text": "Three days if nothing goes wrong, so realistically we're looking at the end of next week.",
+    "ru": "Три дня, если всё пойдёт гладко, так что реально — конец следующей недели."
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday."
+    "text": "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday.",
+    "ru": "Извините, можно вклиниться? Если вибрация сдвигается, может, просто поменяем порядок и сначала сделаем термоциклирование? Камера свободна с понедельника."
    },
    {
     "speaker": "tom",
     "voice": "au-m",
-    "text": "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality."
+    "text": "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality.",
+    "ru": "Можно, но, дружище, методика термоциклирования предполагает, что панель уже прошла вибрацию. Это придётся согласовать с отделом качества."
    },
    {
     "speaker": "grace",
     "voice": "au-f",
-    "text": "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day."
+    "text": "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day.",
+    "ru": "Это ко мне. В принципе я не против, но мне нужна короткая записка с обоснованием, почему порядок не влияет на результаты. Если получу её к утру понедельника, согласую в тот же день."
    },
    {
     "speaker": "dana",
     "voice": "us-f",
-    "text": "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?"
+    "text": "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?",
+    "ru": "Хорошо, тогда план такой. Прия пишет записку на выходных, Грейс проверяет её в понедельник утром, термоциклирование начинается в понедельник после обеда, а к вибрации возвращаемся, когда починят усилитель. Всех устраивает?"
    },
    {
     "speaker": "priya",
     "voice": "in-f",
-    "text": "Works for me."
+    "text": "Works for me.",
+    "ru": "Меня устраивает."
    },
    {
     "speaker": "oliver",
     "voice": "gb-m",
-    "text": "Yep, I'll chase the supplier and let you know if Wednesday slips."
+    "text": "Yep, I'll chase the supplier and let you know if Wednesday slips.",
+    "ru": "Да, я потороплю поставщика и дам знать, если среда сдвинется."
    }
   ],
   "questions": [
@@ -118,6 +128,12 @@
    "Forty-eight panels measuring 300 by 200 millimetres were manufactured in four groups: pristine panels and panels with artificial core crushing, skin wrinkles or disbonds. Disbonds were introduced by placing a 25-millimetre PTFE film between the skin and the core before curing. All panels were inspected by ultrasonic C-scan and then loaded to failure in edgewise compression at a rate of 0.5 millimetres per minute.",
    "Pristine panels failed at a mean load of 86 kilonewtons with a coefficient of variation of 4 percent. Core crushing reduced the strength by only 3 percent, which is within the scatter of the pristine group. Skin wrinkles reduced the strength by 11 percent, while disbonds caused the largest reduction of 27 percent. In all disbonded panels, failure started with local skin buckling over the disbond.",
    "The results suggest that disbonds are the most critical defect for compressive loading and should be given priority in inspection. Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every flight panel, whereas visual inspection is considered sufficient for core crushing."
+  ],
+  "paragraphsRu": [
+   "Трёхслойные панели с сотовым заполнителем широко применяются в конструкциях космических аппаратов, потому что сочетают высокую изгибную жёсткость с малой массой. Однако их прочность при сжатии чувствительна к производственным дефектам — смятию сот, складкам обшивки и отслоениям обшивки от заполнителя. В этом исследовании количественно оценивается влияние этих дефектов на прочность при торцевом сжатии панелей с алюминиевыми сотами и обшивками из углепластика.",
+   "Сорок восемь панелей размером 300 на 200 миллиметров изготовили четырьмя группами: бездефектные панели и панели с искусственным смятием сот, складками обшивки или отслоениями. Отслоения создавали, помещая перед отверждением между обшивкой и заполнителем плёнку из ПТФЭ размером 25 миллиметров. Все панели проконтролировали ультразвуковым C-сканированием, а затем нагружали торцевым сжатием до разрушения со скоростью 0,5 миллиметра в минуту.",
+   "Бездефектные панели разрушились при средней нагрузке 86 килоньютонов с коэффициентом вариации 4 процента. Смятие сот снизило прочность всего на 3 процента, что лежит в пределах разброса бездефектной группы. Складки обшивки снизили прочность на 11 процентов, а наибольшее снижение — на 27 процентов — вызвали отслоения. Во всех панелях с отслоениями разрушение начиналось с местной потери устойчивости обшивки над отслоением.",
+   "Результаты позволяют предположить, что при сжатии самый критичный дефект — отслоение и при контроле ему следует уделять первоочередное внимание. Поскольку отслоение размером 25 миллиметров надёжно выявляется C-сканированием, авторы рекомендуют C-скан каждой лётной панели, тогда как для смятия сот достаточным считается визуальный осмотр."
   ],
   "summaries": [
    [

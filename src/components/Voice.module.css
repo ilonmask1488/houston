@@ -61,6 +61,39 @@
   color: var(--ok);
 }
 
+.ring {
+  transform: rotate(-90deg);
+}
+
+.ringTrack,
+.ringFill {
+  fill: none;
+  stroke-width: 5;
+}
+
+.ringTrack {
+  stroke: var(--line);
+}
+
+.ringFill {
+  stroke: var(--signal);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.ringFill[data-low] {
+  stroke: var(--danger);
+}
+
+.ringText {
+  fill: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 600;
+  transform: rotate(90deg);
+  transform-origin: 32px 32px;
+}
+
 .stop {
   background: var(--danger);
   color: #fff;

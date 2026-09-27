@@ -11,18 +11,24 @@ import { lastIntake } from '../../lib/intake/store'
 import type { Step } from '../../lib/run/steps'
 import { airSteps, callSteps, cleanSteps, currentSpeed, docSteps, hash, mailSteps, stepAlive, todaySession, updateSegment } from '../../lib/session/session'
 import { NextBlock } from '../session/NextBlock'
-import { segmentBlockTitle } from '../session/segments'
+import { planBlocks, segmentBlockTitle, type PlanBlock } from '../session/segments'
 import { Runner } from './Runner'
 
 export function SegmentRun() {
   const id = useParams().id ?? ''
   const navigate = useNavigate()
   const [seg, setSeg] = useState<SessionSegment | null | undefined>(undefined)
+  const [blocks, setBlocks] = useState<PlanBlock[] | undefined>(undefined)
   const [attempt, setAttempt] = useState(0)
   useEffect(() => {
     void todaySession().then((row) => {
       const found = row?.segments.find((x) => x.id === id) ?? null
       if (found?.module) void startModuleRow(found.module)
+      if (row) {
+        // Текущий блок — тот, где этот сегмент (а не первый несделанный)
+        const plan = planBlocks(row).map((b) => (b.segments.some((x) => x.id === id) ? { ...b, status: 'current' as const } : b.status === 'current' ? { ...b, status: 'pending' as const } : b))
+        setBlocks(plan)
+      }
       setSeg(found)
     })
   }, [id])
@@ -50,6 +56,7 @@ export function SegmentRun() {
       onRestart={() => setAttempt((n) => n + 1)}
       onExit={back}
       title={segmentBlockTitle(seg)}
+      session={blocks}
       summaryTitle={ru.session.blockDone(segmentBlockTitle(seg))}
       onFinish={async (r) => {
         await updateSegment(seg.id, { status: 'done', pos: 0 }, { seconds: r.seconds, signal: r.signal, correct: r.correct, total: r.total, spokenMs: r.spokenMs })

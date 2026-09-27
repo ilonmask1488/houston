@@ -38,6 +38,20 @@ function findSeconds(t: DocText): number {
 
 /* ——— Чтение ——— */
 
+/** «Перевод абзаца» (UX §4.5): по кнопке, из данных контента. */
+export function ParaRu({ ru: text }: { ru?: string }) {
+  const [open, setOpen] = useState(false)
+  if (!text) return null
+  return (
+    <>
+      <button type="button" className={ui.link} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        {ru.doc.paraRu}
+      </button>
+      {open && <p className={d.paraRu}>{text}</p>}
+    </>
+  )
+}
+
 export function DocReadStep({ step, onDone }: StepProps<S<'docRead'>>) {
   const t = textById.get(step.text)!
   const started = useRef(Date.now())
@@ -51,14 +65,16 @@ export function DocReadStep({ step, onDone }: StepProps<S<'docRead'>>) {
     <section className={s.body}>
       <Meta t={t} />
       <h1 lang="en">{t.title}</h1>
-      <p className={s.hint}>{ru.doc.readHint}</p>
       <article className={d.article}>
         {t.paragraphs.map((p, i) => (
           <div key={i} className={d.para}>
             <p>
               <TapText text={p} />
             </p>
-            <ClaudeButton label={ru.doc.explain} build={() => explainPrompt(p)} />
+            <div className={d.paraTools}>
+              <ParaRu ru={t.paragraphsRu?.[i]} />
+              <ClaudeButton label={ru.doc.explain} build={() => explainPrompt(p)} />
+            </div>
           </div>
         ))}
       </article>
@@ -126,7 +142,6 @@ export function DocFindStep({ step, onDone }: StepProps<S<'docFind'>>) {
           {String(left).padStart(2, '0')}
         </span>
       </div>
-      <p className={s.hint}>{ru.doc.findHint}</p>
       <article className={d.article} lang="en" role="group" aria-label={ru.doc.findGroup}>
         {sentences.map((ps, pi) => (
           <p key={pi}>
@@ -184,11 +199,12 @@ export function DocSummaryStep({ step, onDone }: StepProps<S<'docSummary'>>) {
   return (
     <section className={s.body}>
       <Meta t={t} />
-      <p className={s.prompt}>{ru.doc.summary}</p>
       <article className={d.article}>
         <p>
           <TapText text={p} />
         </p>
+        {/* Перевод подсказал бы ответ — он доступен после выбора */}
+        {given !== null && <ParaRu ru={t.paragraphsRu?.[step.p]} />}
       </article>
       <div className={s.options} role="group" aria-label={ru.doc.summary}>
         {options.map((o) => (
@@ -234,11 +250,11 @@ export function DocRetellStep({ step, onDone }: StepProps<S<'docRetell'>>) {
   return (
     <section className={s.body}>
       <Meta t={t} />
-      <p className={s.prompt}>{ru.doc.retell}</p>
       <article className={d.article}>
         <p>
           <TapText text={p} />
         </p>
+        <ParaRu ru={t.paragraphsRu?.[step.p]} />
       </article>
       {result === undefined ? (
         <>

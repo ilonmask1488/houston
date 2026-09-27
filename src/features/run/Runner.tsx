@@ -6,6 +6,9 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { IconClose } from '../../components/Icons'
 import { StepTicks } from '../../components/Instruments'
 import { Mascot } from '../../components/Mascot'
+import { ConfirmDialog } from '../../components/ui'
+import type { PlanBlock } from '../session/segments'
+import { ExerciseHead, exerciseKind } from './ExerciseHead'
 import ui from '../../components/ui.module.css'
 import { moduleById } from '../../content'
 import { formatSeconds, pick, ru } from '../../i18n/ru'
@@ -53,6 +56,8 @@ type Props = {
   title?: string
   /** заголовок итогов: «Готово: Разминка (игра) ✓» */
   summaryTitle?: string
+  /** блоки всего занятия — тонкая полоса под шапкой */
+  session?: PlanBlock[]
 }
 
 export function Runner(props: Props) {
@@ -63,6 +68,7 @@ export function Runner(props: Props) {
   const seconds = useRef(0)
   const lastTick = useRef(0)
   const busy = useRef(false)
+  const [confirmExit, setConfirmExit] = useState(false)
   const resumed = (props.startAt ?? 0) > 0
 
   // Время: только пока вкладка видима.
@@ -137,10 +143,11 @@ export function Runner(props: Props) {
 
   if (finished) return <Summary {...finished} title={props.summaryTitle} actions={props.actions(finished.r)} />
   const step = steps[index]
+  const kind = step ? exerciseKind(step) : null
   return (
     <div className={s.runner}>
       <div className={s.top}>
-        <button type="button" className={s.close} onClick={props.onExit} aria-label={ru.run.close}>
+        <button type="button" className={s.close} onClick={() => setConfirmExit(true)} aria-label={ru.run.close}>
           <IconClose size={24} />
         </button>
         <div className={s.topMain}>
@@ -149,6 +156,13 @@ export function Runner(props: Props) {
         </div>
         <span className={`${s.count} mono`}>{ru.run.progress(index + 1, steps.length)}</span>
       </div>
+      {props.session && (
+        <div className={s.sessionBar} role="img" aria-label={ru.run.sessionBar(props.session.findIndex((b) => b.status === 'current') + 1, props.session.length)}>
+          {props.session.map((b) => (
+            <span key={b.block} data-status={b.status} style={{ flexGrow: b.minutes }} title={b.title} />
+          ))}
+        </div>
+      )}
       {resumed && index === props.startAt && props.onRestart && (
         <div className={s.resume}>
           <span>{ru.run.resume}</span>
@@ -157,7 +171,21 @@ export function Runner(props: Props) {
           </button>
         </div>
       )}
+      {kind && <ExerciseHead key={`${index}:${kind}`} kind={kind} />}
       {step && <StepView key={`${index}:${JSON.stringify(step)}`} step={step} onDone={(r) => void onDone(r)} />}
+      <ConfirmDialog
+        open={confirmExit}
+        title={ru.exercise.exitTitle}
+        confirm={ru.exercise.exit}
+        cancel={ru.exercise.stay}
+        onCancel={() => setConfirmExit(false)}
+        onConfirm={() => {
+          setConfirmExit(false)
+          props.onExit()
+        }}
+      >
+        {props.source === 'session' ? ru.exercise.exitSession : ru.exercise.exitDrill}
+      </ConfirmDialog>
     </div>
   )
 }

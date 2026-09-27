@@ -41,6 +41,10 @@ export type MetaKey =
   | 'intakeDraft'
   /** 'both' — запись и распознавание вместе; 'asr-only' — телефон не даёт микрофон двоим сразу */
   | 'captureMode'
+  /** виды упражнений, чьё объяснение уже показано (JSON-список) */
+  | 'seenExercises'
+  /** обучение интерфейсу: true — показано, 'tour' — попросили показать заново */
+  | 'welcomeSeen'
 
 export type MetaRow = { key: MetaKey; value: number | boolean | string }
 

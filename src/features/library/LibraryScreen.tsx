@@ -16,12 +16,12 @@ import { defaultVoice, playSeries, stopAudio } from '../../lib/audio/audio'
 import { explainPrompt } from '../../lib/claude/prompt'
 import { db } from '../../lib/db/db'
 import { splitSentences, wordCount } from '../../lib/story/text'
-import { Meta } from '../run/doc'
+import { Meta, ParaRu } from '../run/doc'
 import d from '../run/doc.module.css'
 import s from './LibraryScreen.module.css'
 
 /** Абзац: озвучка по предложениям с подсветкой текущего, слова нажимаются. */
-function Paragraph({ text }: { text: string }) {
+function Paragraph({ text, tr }: { text: string; tr?: string }) {
   const sentences = useMemo(() => splitSentences(text), [text])
   const [at, setAt] = useState<number | null>(null)
   useEffect(() => () => stopAudio(), [])
@@ -53,6 +53,7 @@ function Paragraph({ text }: { text: string }) {
         <button type="button" className={s.listen} data-playing={at !== null || undefined} onClick={play}>
           <IconSpeaker size={18} /> {at !== null ? ru.library.stop : ru.library.listen}
         </button>
+        <ParaRu ru={tr} />
         <ClaudeButton label={ru.doc.explain} build={() => explainPrompt(text)} />
       </div>
     </div>
@@ -111,7 +112,7 @@ export function LibraryText() {
       <p className={s.note}>{ru.doc.readHint}</p>
       <article className={d.article}>
         {x.paragraphs.map((p, i) => (
-          <Paragraph key={i} text={p} />
+          <Paragraph key={i} text={p} tr={x.paragraphsRu?.[i]} />
         ))}
       </article>
       <p className={s.note}>

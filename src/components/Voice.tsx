@@ -62,12 +62,14 @@ type Props = {
   /** начать сразу при показе (после вопроса) */
   autoStart?: boolean
   label?: string
+  /** показать «Сказал вслух без записи» (выключают, когда на экране уже есть свой путь без записи) */
+  allowSkip?: boolean
   onResult: (r: VoiceResult) => void
 }
 
 type Phase = 'idle' | 'explain' | 'prompt' | 'rec' | 'nomic'
 
-export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, onResult }: Props) {
+export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, allowSkip = true, onResult }: Props) {
   const settings = useSettings()
   const can = captureSupported()
   const hasCapture = can.record || (settings.asr && can.asr)
@@ -178,14 +180,23 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
         </div>
       )}
       {phase === 'idle' && (
-        <button type="button" className={ui.signalButton} onClick={() => void begin()}>
-          <IconMic /> {label ?? ru.voice.start}
-        </button>
+        <>
+          <button type="button" className={ui.signalButton} onClick={() => void begin()}>
+            <IconMic /> {label ?? ru.voice.start}
+          </button>
+          {/* Никогда не блокировать без выхода (UX §1.10): можно сказать вслух без записи */}
+          {hasCapture && allowSkip && (
+            <button type="button" className={ui.link} onClick={() => onResult(null)}>
+              {ru.voice.saidNoRec}
+            </button>
+          )}
+        </>
       )}
       {phase === 'prompt' && <p className={s.status}>…</p>}
       {phase === 'rec' && (
         <div className={s.rec}>
           <LevelMeter level={level} label={ru.check.mic} />
+          {timed && countdown !== null && !talking && <CountdownRing left={countdown} total={timed} />}
           <p className={s.countdown} aria-live="polite" data-talking={talking || undefined}>
             {talking ? ru.voice.speaking : countdown !== null ? ru.voice.startIn(countdown) : '●'}
           </p>
@@ -204,6 +215,21 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
       )}
       {error && <p className={ui.error}>{error}</p>}
     </div>
+  )
+}
+
+/** Круговой отсчёт до начала ответа (UX §4.6): кольцо тает, в центре — секунды. */
+function CountdownRing({ left, total }: { left: number; total: number }) {
+  const r = 26
+  const len = 2 * Math.PI * r
+  return (
+    <svg className={s.ring} viewBox="0 0 64 64" width="72" height="72" aria-hidden>
+      <circle cx="32" cy="32" r={r} className={s.ringTrack} />
+      <circle cx="32" cy="32" r={r} className={s.ringFill} strokeDasharray={len} strokeDashoffset={len * (1 - left / total)} data-low={left <= 2 || undefined} />
+      <text x="32" y="38" textAnchor="middle" className={s.ringText}>
+        {left}
+      </text>
+    </svg>
   )
 }
 

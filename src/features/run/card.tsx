@@ -6,7 +6,7 @@ import ui from '../../components/ui.module.css'
 import { Highlight, VoiceAnswer, VoiceReport, type VoiceResult } from '../../components/Voice'
 import { chunkById, falseFriendById, phraseById, spokenText } from '../../content'
 import type { VoiceId } from '../../content/types'
-import { ru } from '../../i18n/ru'
+import { intervalWords, ru } from '../../i18n/ru'
 import { defaultVoice, durationOf, playText, stopAudio } from '../../lib/audio/audio'
 import { db } from '../../lib/db/db'
 import type { UserWordRow } from '../../lib/db/types'
@@ -14,7 +14,7 @@ import { dictById, dictionaryLoaded, loadDictionary } from '../../lib/dict/dict'
 import type { Step } from '../../lib/run/steps'
 import { useSettings } from '../../lib/settings/settings'
 import { answerCard } from '../../lib/srs/cards'
-import { formatInterval, parseCardId, previewIntervals, type Grade14 } from '../../lib/srs/srs'
+import { parseCardId, previewIntervals, type Grade14 } from '../../lib/srs/srs'
 import type { StepProps } from './result'
 import s from './run.module.css'
 
@@ -56,6 +56,7 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
   const row = useLiveQuery(() => db.cards.get(step.card), [step.card])
   const [shown, setShown] = useState(false)
   const [said, setSaid] = useState<VoiceResult | undefined>(undefined)
+  const [hint, setHint] = useState(false)
   const started = useRef(Date.now())
   useEffect(() => {
     if (v && kind === 3) void playText(v.say, { voice: v.voice }).catch(() => {})
@@ -78,40 +79,55 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
     await answerCard(step.card, g, Date.now() - started.current, settings.desiredRetention).catch((e) => console.error(e))
     onDone({ correct: g >= 2, spokenMs: kind === 2 ? (said && (said.recorded || said.recognized) ? said.speechMs : durationOf(v.say)) : undefined })
   }
+  const firstWord = v.en.split(/\s+/)[0]
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{t.kind[kind]}</p>
+      {/* Шаг 1 — вопрос: только то, что нужно для вопроса (UX §4.4) */}
       <div className={s.cardFace}>
         {kind === 1 && (
-          <p className={s.chunkEn} lang="en">
-            {v.en}
+          <p className={s.phrase}>
+            <PlayButton text={v.say} voice={v.voice} label={v.en} size="s" />{' '}
+            <span className={s.chunkEn} lang="en">
+              {v.en}
+            </span>
           </p>
         )}
-        {(kind === 2 || kind === 4) && <p className={s.bigRu}>{v.ru}</p>}
+        {kind === 2 && <p className={s.bigRu}>{t.sayIt(v.ru)}</p>}
+        {kind === 4 && <p className={s.bigRu}>{v.ru}</p>}
         {kind === 4 && v.context && <p className={s.hint}>«{v.context}»</p>}
         {kind === 3 && <PlayButton text={v.say} voice={v.voice} label={t.kind[3]!} size="l" />}
       </div>
-      {!shown && <p className={s.hint}>{t.hint[kind]}</p>}
-      {kind === 2 && !shown && said === undefined && <VoiceAnswer maxSeconds={12} onResult={(r) => (setSaid(r), setShown(true))} />}
-      {!shown && kind !== 2 && (
-        <button type="button" className={ui.primary} onClick={() => setShown(true)}>
-          {t.show}
-        </button>
+      {!shown && kind === 2 && (
+        <>
+          {hint ? (
+            <p className={s.hint}>
+              {t.firstWord}: <b lang="en">{firstWord}</b> …
+            </p>
+          ) : (
+            <button type="button" className={ui.link} onClick={() => setHint(true)}>
+              {t.firstWordShow}
+            </button>
+          )}
+          {said === undefined && <VoiceAnswer maxSeconds={12} label={t.recordSelf} allowSkip={false} onResult={(r) => (setSaid(r), setShown(true))} />}
+        </>
       )}
-      {!shown && kind === 2 && said === undefined && (
-        <button type="button" className={ui.link} onClick={() => setShown(true)}>
-          {t.show}
-        </button>
+      {!shown && (
+        <div className={s.actions}>
+          <button type="button" className={kind === 2 ? ui.secondary : ui.primary} onClick={() => setShown(true)}>
+            {t.show}
+          </button>
+        </div>
       )}
       {shown && (
         <>
+          {/* Шаг 2 — ответ целиком */}
           <div className={s.feedback} data-ok>
             <p className={s.phrase}>
               <PlayButton text={v.say} voice={v.voice} label={v.en} size="s" /> <Highlight text={v.en} focus={v.focus} />
             </p>
             {v.ipa && <p className={`${s.hint} mono`}>/{v.ipa}/</p>}
-            {v.note && <p className={s.hint}>{v.note}</p>}
             <p className={s.ru}>{v.ru}</p>
+            {v.note && <p className={s.hint}>{v.note}</p>}
             {v.example && (
               <p className={s.hint}>
                 <span lang="en">{v.example}</span>
@@ -120,11 +136,13 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
             )}
           </div>
           {said && <VoiceReport result={said} target={v.en} sample={{ text: v.en, voice: v.voice }} />}
+          {/* Шаг 3 — самооценка: подписано, когда карточка вернётся */}
+          <p className={s.prompt}>{kind === 2 ? t.askSaid : t.ask}</p>
           <div className={s.grades} role="group" aria-label={t.gradeLabel}>
             {([1, 2, 3, 4] as const).map((g) => (
               <button key={g} type="button" className={s.grade} data-grade={g} onClick={() => void grade(g)}>
                 <span>{t.grades[g]}</span>
-                {intervals && <span className={`${s.interval} mono`}>{formatInterval(intervals[g])}</span>}
+                {intervals && <span className={s.interval}>{t.when(g, intervalWords(intervals[g]))}</span>}
               </button>
             ))}
           </div>
@@ -133,3 +151,4 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
     </section>
   )
 }
+

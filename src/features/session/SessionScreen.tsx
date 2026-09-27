@@ -20,11 +20,12 @@ import { useSettings } from '../../lib/settings/settings'
 import { nextSegment, planBlocks, segmentUrl } from './segments'
 import s from './SessionScreen.module.css'
 
-function segmentWhat(seg: SessionSegment): string {
-  if (seg.label === 'cards') return ru.session.cardsN(seg.steps?.length ?? 0)
-  const label = ru.session.labels[seg.label] ?? seg.label
-  const m = seg.module ? moduleById.get(seg.module) : undefined
-  return m ? `${label} · ${ru.session.module(m.title)}` : label
+/** Что внутри блока: виды упражнений без повторов и модуль один раз. */
+function blockWhat(segs: SessionSegment[]): string {
+  const cards = segs.filter((x) => x.label === 'cards').reduce((n, x) => n + (x.steps?.length ?? 0), 0)
+  const labels = [...new Set(segs.filter((x) => x.label !== 'cards').map((x) => ru.session.labels[x.label] ?? x.label))]
+  const modules = [...new Set(segs.map((x) => (x.module ? moduleById.get(x.module)?.title : undefined)).filter((x): x is string => !!x))]
+  return [...(cards ? [ru.session.cardsN(cards)] : []), ...labels, ...modules.map((m) => ru.session.module(m))].join(' · ')
 }
 
 export function SessionScreen() {
@@ -57,7 +58,7 @@ export function SessionScreen() {
                   {b.title} <span className={`${s.min} mono`}>· {b.minutes} мин</span>
                   {b.status === 'current' && <span className={s.now}>{t.current}</span>}
                 </span>
-                <span className={s.what}>{b.segments.map(segmentWhat).join(' · ')}</span>
+                <span className={s.what}>{blockWhat(b.segments)}</span>
               </span>
             </li>
           )

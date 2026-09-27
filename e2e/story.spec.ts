@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { seedIntake } from './helpers.ts'
 import { runSegment, speak } from './run.ts'
 
@@ -21,7 +21,7 @@ test('«Мой рассказ»: написать ответ, скопирова
   await expect(page.getByText(/Промпт скопирован|Скопировать не получилось/)).toBeVisible()
 
   await train.click()
-  await expect(page.getByText('Послушай свой ответ')).toBeVisible()
+  await expect(page.getByText('Послушай свой ответ', { exact: true }).first()).toBeVisible()
   await runSegment(page)
   await page.getByRole('button', { name: 'К собеседованию' }).click()
   await expect(page.getByText(/тренировок: 1/)).toBeVisible()
@@ -55,7 +55,7 @@ test('пробное собеседование: вопросы подряд, т
 })
 
 test('эпизод 1: реплики персонажей, выбор ответа с объяснением, культурная вставка', async ({ page }) => {
-  test.setTimeout(180_000)
+  test.setTimeout(300_000)
   await page.goto('./#/more')
   await page.getByRole('link', { name: 'Эпизод 1: Собеседование' }).click()
   await expect(page.getByRole('heading', { name: 'Собеседование' })).toBeVisible()

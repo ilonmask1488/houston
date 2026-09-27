@@ -485,32 +485,32 @@ PAIRS = [
     ("clean-ng", "king", "kin", "kɪŋ", "kɪn", "король", "родня"),
 ]
 
-# Фразы для постановки звука: (модуль, фраза, на что обратить внимание)
+# Фразы для постановки звука: (модуль, фраза, на что обратить внимание, перевод)
 PHRASES = [
-    ("clean-th", "I think the thread is three millimetres thick.", "θ в think, thread, three, thick — язык у зубов"),
-    ("clean-th", "The thermal model is worth the effort.", "θ в thermal и worth, ð в the"),
-    ("clean-th", "They say the other method is better than this one.", "ð — звонкий: they, the, other, than, this"),
-    ("clean-th", "Both of them thought it through.", "θ в both, thought, through; ð в them"),
-    ("clean-wv", "We will verify the valve on Wednesday.", "w в we, will, Wednesday; v в verify, valve"),
-    ("clean-wv", "The vibration was very weak.", "v в vibration, very; w в was, weak"),
-    ("clean-wv", "Which version of the drawing do we use?", "w в which, we; v в version"),
-    ("clean-wv", "Every wire was well insulated.", "v в every; w в wire, was, well"),
-    ("clean-h", "How high is the heat load?", "h — выдох: how, high, heat"),
-    ("clean-h", "He has half an hour.", "h в he, has, half; hour — без h!"),
-    ("clean-h", "The housing holds the heater.", "h в housing, holds, heater"),
-    ("clean-h", "Hold the handle with both hands.", "h в hold, handle, hands"),
-    ("clean-vowels", "Please fill in this sheet before you leave.", "ɪ в fill, this; iː в please, sheet, leave"),
-    ("clean-vowels", "The fuel line is full of air.", "uː в fuel, ʊ в full"),
-    ("clean-vowels", "The bad batch was sent back.", "æ в bad, batch, back; e в sent"),
-    ("clean-vowels", "We need a bigger seal for this bit.", "iː в need, seal; ɪ в bigger, this, bit"),
-    ("clean-final", "The load is too big for this bracket.", "звонкие d в load и g в big"),
-    ("clean-final", "We had to change the grade of the bolt.", "звонкие d в had, grade"),
-    ("clean-final", "The weld was good, but the plate was bad.", "d в weld, good, bad — не оглушай"),
-    ("clean-final", "Please save the file and close the tab.", "v в save, z в close, b в tab"),
-    ("clean-ng", "The bearing is making a strange ringing sound.", "ŋ в bearing, making, ringing — без «г»"),
-    ("clean-ng", "We are testing the wing today.", "ŋ в testing, wing"),
-    ("clean-ng", "Something is wrong with the spring.", "ŋ в something, wrong, spring"),
-    ("clean-ng", "Bring the long fitting, please.", "ŋ в bring, long, fitting"),
+    ("clean-th", "I think the thread is three millimetres thick.", "θ в think, thread, three, thick — язык у зубов", "Думаю, нить толщиной три миллиметра."),
+    ("clean-th", "The thermal model is worth the effort.", "θ в thermal и worth, ð в the", "Тепловая модель стоит затраченных усилий."),
+    ("clean-th", "They say the other method is better than this one.", "ð — звонкий: they, the, other, than, this", "Говорят, другой метод лучше этого."),
+    ("clean-th", "Both of them thought it through.", "θ в both, thought, through; ð в them", "Они оба всё продумали."),
+    ("clean-wv", "We will verify the valve on Wednesday.", "w в we, will, Wednesday; v в verify, valve", "Мы проверим клапан в среду."),
+    ("clean-wv", "The vibration was very weak.", "v в vibration, very; w в was, weak", "Вибрация была очень слабой."),
+    ("clean-wv", "Which version of the drawing do we use?", "w в which, we; v в version", "Какую версию чертежа мы используем?"),
+    ("clean-wv", "Every wire was well insulated.", "v в every; w в wire, was, well", "Каждый провод был хорошо изолирован."),
+    ("clean-h", "How high is the heat load?", "h — выдох: how, high, heat", "Насколько велика тепловая нагрузка?"),
+    ("clean-h", "He has half an hour.", "h в he, has, half; hour — без h!", "У него есть полчаса."),
+    ("clean-h", "The housing holds the heater.", "h в housing, holds, heater", "Нагреватель закреплён в корпусе."),
+    ("clean-h", "Hold the handle with both hands.", "h в hold, handle, hands", "Держи ручку обеими руками."),
+    ("clean-vowels", "Please fill in this sheet before you leave.", "ɪ в fill, this; iː в please, sheet, leave", "Пожалуйста, заполни этот лист перед уходом."),
+    ("clean-vowels", "The fuel line is full of air.", "uː в fuel, ʊ в full", "В топливной магистрали полно воздуха."),
+    ("clean-vowels", "The bad batch was sent back.", "æ в bad, batch, back; e в sent", "Бракованную партию отправили обратно."),
+    ("clean-vowels", "We need a bigger seal for this bit.", "iː в need, seal; ɪ в bigger, this, bit", "Для этой детали нужно уплотнение побольше."),
+    ("clean-final", "The load is too big for this bracket.", "звонкие d в load и g в big", "Нагрузка слишком велика для этого кронштейна."),
+    ("clean-final", "We had to change the grade of the bolt.", "звонкие d в had, grade", "Пришлось сменить класс прочности болта."),
+    ("clean-final", "The weld was good, but the plate was bad.", "d в weld, good, bad — не оглушай", "Сварной шов был хороший, а вот пластина — плохая."),
+    ("clean-final", "Please save the file and close the tab.", "v в save, z в close, b в tab", "Пожалуйста, сохрани файл и закрой вкладку."),
+    ("clean-ng", "The bearing is making a strange ringing sound.", "ŋ в bearing, making, ringing — без «г»", "Подшипник издаёт странный звенящий звук."),
+    ("clean-ng", "We are testing the wing today.", "ŋ в testing, wing", "Сегодня мы испытываем крыло."),
+    ("clean-ng", "Something is wrong with the spring.", "ŋ в something, wrong, spring", "С пружиной что-то не так."),
+    ("clean-ng", "Bring the long fitting, please.", "ŋ в bring, long, fitting", "Принеси, пожалуйста, длинный фитинг."),
 ]
 
 # Ударение: (слово, слоги, индекс ударного, МФА, перевод)
@@ -736,16 +736,26 @@ BOSS_AIR = {
     "id": "boss-air", "module": "boss-air", "title": "Созвон по срыву сроков", "kind": "созвон",
     "situation": "Пятничный созвон: четверо из разных стран обсуждают, почему испытания сдвигаются. Говорят быстро и перебивают друг друга.",
     "lines": [
-        ("dana", "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first."),
-        ("oliver", "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday."),
-        ("dana", "Wednesday. And how long do the vibration tests take once it's back?"),
-        ("oliver", "Three days if nothing goes wrong, so realistically we're looking at the end of next week."),
-        ("priya", "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday."),
-        ("tom", "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality."),
-        ("grace", "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day."),
-        ("dana", "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?"),
-        ("priya", "Works for me."),
-        ("oliver", "Yep, I'll chase the supplier and let you know if Wednesday slips."),
+        ("dana", "Okay, let's get started. We've got a problem with the schedule, so I want to hear from everyone. Oliver, you first.",
+         "Так, давайте начнём. У нас проблема с графиком, поэтому хочу выслушать всех. Оливер, ты первый."),
+        ("oliver", "Right, so the long and short of it is the shaker table's gone down again — it's the amplifier, not the table itself — and the earliest they can get a replacement out to us is Wednesday.",
+         "Короче говоря, вибростенд опять встал — дело в усилителе, а не в самом столе, — и раньше среды замену нам не привезут."),
+        ("dana", "Wednesday. And how long do the vibration tests take once it's back?",
+         "В среду. А сколько займут вибрационные испытания, когда стенд заработает?"),
+        ("oliver", "Three days if nothing goes wrong, so realistically we're looking at the end of next week.",
+         "Три дня, если всё пойдёт гладко, так что реально — конец следующей недели."),
+        ("priya", "Sorry, can I jump in? If vibration slips, can't we just swap the order and do the thermal cycling first? The chamber's free from Monday.",
+         "Извините, можно вклиниться? Если вибрация сдвигается, может, просто поменяем порядок и сначала сделаем термоциклирование? Камера свободна с понедельника."),
+        ("tom", "We could, but mate, the thermal procedure assumes the panel's already been through vibration. We'd have to get that signed off by quality.",
+         "Можно, но, дружище, методика термоциклирования предполагает, что панель уже прошла вибрацию. Это придётся согласовать с отделом качества."),
+        ("grace", "That's me. I'm not against it in principle, but I'd need a short note explaining why the order doesn't affect the results. If I get it by Monday morning, I can approve it the same day.",
+         "Это ко мне. В принципе я не против, но мне нужна короткая записка с обоснованием, почему порядок не влияет на результаты. Если получу её к утру понедельника, согласую в тот же день."),
+        ("dana", "Okay, so here's the plan. Priya writes the note over the weekend, Grace reviews it Monday morning, thermal cycling starts Monday afternoon, and vibration picks up when the amplifier's fixed. Does that work for everyone?",
+         "Хорошо, тогда план такой. Прия пишет записку на выходных, Грейс проверяет её в понедельник утром, термоциклирование начинается в понедельник после обеда, а к вибрации возвращаемся, когда починят усилитель. Всех устраивает?"),
+        ("priya", "Works for me.",
+         "Меня устраивает."),
+        ("oliver", "Yep, I'll chase the supplier and let you know if Wednesday slips.",
+         "Да, я потороплю поставщика и дам знать, если среда сдвинется."),
     ],
     "questions": [
         ("What exactly is broken?", ["The amplifier", "The shaker table itself", "The thermal chamber"]),
@@ -764,6 +774,12 @@ BOSS_DOC = {
         "Forty-eight panels measuring 300 by 200 millimetres were manufactured in four groups: pristine panels and panels with artificial core crushing, skin wrinkles or disbonds. Disbonds were introduced by placing a 25-millimetre PTFE film between the skin and the core before curing. All panels were inspected by ultrasonic C-scan and then loaded to failure in edgewise compression at a rate of 0.5 millimetres per minute.",
         "Pristine panels failed at a mean load of 86 kilonewtons with a coefficient of variation of 4 percent. Core crushing reduced the strength by only 3 percent, which is within the scatter of the pristine group. Skin wrinkles reduced the strength by 11 percent, while disbonds caused the largest reduction of 27 percent. In all disbonded panels, failure started with local skin buckling over the disbond.",
         "The results suggest that disbonds are the most critical defect for compressive loading and should be given priority in inspection. Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every flight panel, whereas visual inspection is considered sufficient for core crushing.",
+    ],
+    "paragraphsRu": [
+        "Трёхслойные панели с сотовым заполнителем широко применяются в конструкциях космических аппаратов, потому что сочетают высокую изгибную жёсткость с малой массой. Однако их прочность при сжатии чувствительна к производственным дефектам — смятию сот, складкам обшивки и отслоениям обшивки от заполнителя. В этом исследовании количественно оценивается влияние этих дефектов на прочность при торцевом сжатии панелей с алюминиевыми сотами и обшивками из углепластика.",
+        "Сорок восемь панелей размером 300 на 200 миллиметров изготовили четырьмя группами: бездефектные панели и панели с искусственным смятием сот, складками обшивки или отслоениями. Отслоения создавали, помещая перед отверждением между обшивкой и заполнителем плёнку из ПТФЭ размером 25 миллиметров. Все панели проконтролировали ультразвуковым C-сканированием, а затем нагружали торцевым сжатием до разрушения со скоростью 0,5 миллиметра в минуту.",
+        "Бездефектные панели разрушились при средней нагрузке 86 килоньютонов с коэффициентом вариации 4 процента. Смятие сот снизило прочность всего на 3 процента, что лежит в пределах разброса бездефектной группы. Складки обшивки снизили прочность на 11 процентов, а наибольшее снижение — на 27 процентов — вызвали отслоения. Во всех панелях с отслоениями разрушение начиналось с местной потери устойчивости обшивки над отслоением.",
+        "Результаты позволяют предположить, что при сжатии самый критичный дефект — отслоение и при контроле ему следует уделять первоочередное внимание. Поскольку отслоение размером 25 миллиметров надёжно выявляется C-сканированием, авторы рекомендуют C-скан каждой лётной панели, тогда как для смятия сот достаточным считается визуальный осмотр.",
     ],
     "summaries": [
         ["Sandwich panels are light and stiff, but defects may reduce their compressive strength, which this study measures.", "Sandwich panels are always made without defects.", "Honeycomb panels are heavier than solid aluminium plates."],
@@ -856,7 +872,7 @@ def build():
         pairs.append({"id": f"mp-{a}-{b}", "module": module, "a": a, "b": b, "ipaA": ia, "ipaB": ib, "ruA": ra, "ruB": rb,
                       "speak": [{"text": w, "voice": v} for w in (a, b) for v in STD], "reviewed": False})
     assert len({p["id"] for p in pairs}) == len(pairs)
-    phrases = [{"id": nid("cp", m), "module": m, "text": t, "focus": f, "voices": STD, "reviewed": False} for m, t, f in PHRASES]
+    phrases = [{"id": nid("cp", m), "module": m, "text": t, "ru": ru, "focus": f, "voices": STD, "reviewed": False} for m, t, f, ru in PHRASES]
     phrases += [{"id": f"ci-{i + 1}", "module": "clean-intonation", "text": t, "ru": ru, "focus": f, "voices": STD, "reviewed": False} for i, (t, ru, f) in enumerate(INTONATION)]
     stress = []
     for w, syl, k, ipa, ru in STRESS:
@@ -885,9 +901,10 @@ def build():
                          "lines": lines, "culture": {"title": e["culture"][0], "text": e["culture"][1]}, "reviewed": False})
 
     air = {**{k: v for k, v in BOSS_AIR.items() if k not in ("lines", "questions")},
-           "lines": [{"speaker": s, "voice": CHARS[s], "text": t} for s, t in BOSS_AIR["lines"]],
+           "lines": [{"speaker": s, "voice": CHARS[s], "text": t, "ru": ru} for s, t, ru in BOSS_AIR["lines"]],
            "questions": [{"q": q, "options": o, "answer": 0} for q, o in BOSS_AIR["questions"]], "reviewed": False}
     t = BOSS_DOC
+    assert len(t["paragraphsRu"]) == len(t["paragraphs"]), "boss-doc: число абзацев перевода"
     flat = [s for p in t["paragraphs"] for s in split_sentences(p)]
     for q, key in t["find"]:
         hits = [s for s in flat if key.lower() in s.lower()]

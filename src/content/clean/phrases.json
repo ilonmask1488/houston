@@ -3,6 +3,7 @@
   "id": "cp-th-1",
   "module": "clean-th",
   "text": "I think the thread is three millimetres thick.",
+  "ru": "Думаю, нить толщиной три миллиметра.",
   "focus": "θ в think, thread, three, thick — язык у зубов",
   "voices": [
    "us-f",
@@ -16,6 +17,7 @@
   "id": "cp-th-2",
   "module": "clean-th",
   "text": "The thermal model is worth the effort.",
+  "ru": "Тепловая модель стоит затраченных усилий.",
   "focus": "θ в thermal и worth, ð в the",
   "voices": [
    "us-f",
@@ -29,6 +31,7 @@
   "id": "cp-th-3",
   "module": "clean-th",
   "text": "They say the other method is better than this one.",
+  "ru": "Говорят, другой метод лучше этого.",
   "focus": "ð — звонкий: they, the, other, than, this",
   "voices": [
    "us-f",
@@ -42,6 +45,7 @@
   "id": "cp-th-4",
   "module": "clean-th",
   "text": "Both of them thought it through.",
+  "ru": "Они оба всё продумали.",
   "focus": "θ в both, thought, through; ð в them",
   "voices": [
    "us-f",
@@ -55,6 +59,7 @@
   "id": "cp-wv-1",
   "module": "clean-wv",
   "text": "We will verify the valve on Wednesday.",
+  "ru": "Мы проверим клапан в среду.",
   "focus": "w в we, will, Wednesday; v в verify, valve",
   "voices": [
    "us-f",
@@ -68,6 +73,7 @@
   "id": "cp-wv-2",
   "module": "clean-wv",
   "text": "The vibration was very weak.",
+  "ru": "Вибрация была очень слабой.",
   "focus": "v в vibration, very; w в was, weak",
   "voices": [
    "us-f",
@@ -81,6 +87,7 @@
   "id": "cp-wv-3",
   "module": "clean-wv",
   "text": "Which version of the drawing do we use?",
+  "ru": "Какую версию чертежа мы используем?",
   "focus": "w в which, we; v в version",
   "voices": [
    "us-f",
@@ -94,6 +101,7 @@
   "id": "cp-wv-4",
   "module": "clean-wv",
   "text": "Every wire was well insulated.",
+  "ru": "Каждый провод был хорошо изолирован.",
   "focus": "v в every; w в wire, was, well",
   "voices": [
    "us-f",
@@ -107,6 +115,7 @@
   "id": "cp-h-1",
   "module": "clean-h",
   "text": "How high is the heat load?",
+  "ru": "Насколько велика тепловая нагрузка?",
   "focus": "h — выдох: how, high, heat",
   "voices": [
    "us-f",
@@ -120,6 +129,7 @@
   "id": "cp-h-2",
   "module": "clean-h",
   "text": "He has half an hour.",
+  "ru": "У него есть полчаса.",
   "focus": "h в he, has, half; hour — без h!",
   "voices": [
    "us-f",
@@ -133,6 +143,7 @@
   "id": "cp-h-3",
   "module": "clean-h",
   "text": "The housing holds the heater.",
+  "ru": "Нагреватель закреплён в корпусе.",
   "focus": "h в housing, holds, heater",
   "voices": [
    "us-f",
@@ -146,6 +157,7 @@
   "id": "cp-h-4",
   "module": "clean-h",
   "text": "Hold the handle with both hands.",
+  "ru": "Держи ручку обеими руками.",
   "focus": "h в hold, handle, hands",
   "voices": [
    "us-f",
@@ -159,6 +171,7 @@
   "id": "cp-vowels-1",
   "module": "clean-vowels",
   "text": "Please fill in this sheet before you leave.",
+  "ru": "Пожалуйста, заполни этот лист перед уходом.",
   "focus": "ɪ в fill, this; iː в please, sheet, leave",
   "voices": [
    "us-f",
@@ -172,6 +185,7 @@
   "id": "cp-vowels-2",
   "module": "clean-vowels",
   "text": "The fuel line is full of air.",
+  "ru": "В топливной магистрали полно воздуха.",
   "focus": "uː в fuel, ʊ в full",
   "voices": [
    "us-f",
@@ -185,6 +199,7 @@
   "id": "cp-vowels-3",
   "module": "clean-vowels",
   "text": "The bad batch was sent back.",
+  "ru": "Бракованную партию отправили обратно.",
   "focus": "æ в bad, batch, back; e в sent",
   "voices": [
    "us-f",
@@ -198,6 +213,7 @@
   "id": "cp-vowels-4",
   "module": "clean-vowels",
   "text": "We need a bigger seal for this bit.",
+  "ru": "Для этой детали нужно уплотнение побольше.",
   "focus": "iː в need, seal; ɪ в bigger, this, bit",
   "voices": [
    "us-f",
@@ -211,6 +227,7 @@
   "id": "cp-final-1",
   "module": "clean-final",
   "text": "The load is too big for this bracket.",
+  "ru": "Нагрузка слишком велика для этого кронштейна.",
   "focus": "звонкие d в load и g в big",
   "voices": [
    "us-f",
@@ -224,6 +241,7 @@
   "id": "cp-final-2",
   "module": "clean-final",
   "text": "We had to change the grade of the bolt.",
+  "ru": "Пришлось сменить класс прочности болта.",
   "focus": "звонкие d в had, grade",
   "voices": [
    "us-f",
@@ -237,6 +255,7 @@
   "id": "cp-final-3",
   "module": "clean-final",
   "text": "The weld was good, but the plate was bad.",
+  "ru": "Сварной шов был хороший, а вот пластина — плохая.",
   "focus": "d в weld, good, bad — не оглушай",
   "voices": [
    "us-f",
@@ -250,6 +269,7 @@
   "id": "cp-final-4",
   "module": "clean-final",
   "text": "Please save the file and close the tab.",
+  "ru": "Пожалуйста, сохрани файл и закрой вкладку.",
   "focus": "v в save, z в close, b в tab",
   "voices": [
    "us-f",
@@ -263,6 +283,7 @@
   "id": "cp-ng-1",
   "module": "clean-ng",
   "text": "The bearing is making a strange ringing sound.",
+  "ru": "Подшипник издаёт странный звенящий звук.",
   "focus": "ŋ в bearing, making, ringing — без «г»",
   "voices": [
    "us-f",
@@ -276,6 +297,7 @@
   "id": "cp-ng-2",
   "module": "clean-ng",
   "text": "We are testing the wing today.",
+  "ru": "Сегодня мы испытываем крыло.",
   "focus": "ŋ в testing, wing",
   "voices": [
    "us-f",
@@ -289,6 +311,7 @@
   "id": "cp-ng-3",
   "module": "clean-ng",
   "text": "Something is wrong with the spring.",
+  "ru": "С пружиной что-то не так.",
   "focus": "ŋ в something, wrong, spring",
   "voices": [
    "us-f",
@@ -302,6 +325,7 @@
   "id": "cp-ng-4",
   "module": "clean-ng",
   "text": "Bring the long fitting, please.",
+  "ru": "Принеси, пожалуйста, длинный фитинг.",
   "focus": "ŋ в bring, long, fitting",
   "voices": [
    "us-f",

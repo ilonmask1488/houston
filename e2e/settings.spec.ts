@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises'
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { seedIntake } from './helpers.ts'
 
 test('тема, длительность и вариант языка сохраняются после перезагрузки', async ({ page }) => {

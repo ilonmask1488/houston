@@ -1,6 +1,7 @@
 /* Шаги Эфира: объяснение, «что прозвучало», диктант, лестница скоростей, акценты, длинный отрывок. */
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { SpeedScale } from '../../components/Instruments'
+import { Term } from '../../components/Sheet'
 import { PlayButton } from '../../components/Play'
 import { PingSays } from '../../components/ui'
 import ui from '../../components/ui.module.css'
@@ -100,29 +101,35 @@ export function IntroStep({ step, onDone }: StepProps<S<'intro'>>) {
 
 /* ——— После ответа: текст с подсветкой, перевод, послушать медленнее ——— */
 
-function Reveal({ p, ok, speed }: { p: Phrase; ok: boolean; speed: number }) {
-  const [line] = useState(() => pick(ok ? ru.lines.correct : ru.lines.wrong))
+function Reveal({ p, ok, speed, notCaught }: { p: Phrase; ok: boolean; speed: number; notCaught?: boolean }) {
+  const [line] = useState(() => (notCaught ? ru.steps.listen.notCaughtLine : pick(ok ? ru.lines.correct : ru.lines.wrong)))
+  const [showRu, setShowRu] = useState(false)
+  const t = ru.steps.listen
+  const play = (rate: number) => void playText(spokenText(p), { voice: p.voice, rate }).catch(() => {})
   return (
     <div className={s.feedback} data-ok={ok || undefined}>
-      <PingSays mood={ok ? 'happy' : 'oops'} size={52}>
+      <PingSays mood={ok ? 'happy' : notCaught ? 'thinking' : 'oops'} size={52}>
         {line}
       </PingSays>
       <p className={s.phrase}>
         <Highlight text={p.text} focus={p.focus} />
       </p>
-      <p className={s.ru}>{p.ru}</p>
       <p className={s.focusNote}>
-        {ru.steps.listen.focus}: <span lang="en">{p.focus}</span>
+        {t.focus}: <span lang="en">{p.focus}</span>
       </p>
-      <div className={s.plays}>
-        {[0.75, speed === 0.75 ? 1 : speed].map((sp) => (
-          <span key={sp} className={s.playWith}>
-            <PlayButton text={spokenText(p)} voice={p.voice} rate={sp} label={fmt(sp)} size="s" />
-            <span className="mono">{fmt(sp)}</span>
-          </span>
-        ))}
+      {showRu && <p className={s.ru}>{p.ru}</p>}
+      <div className={s.chips}>
+        <button type="button" className={ui.secondary} aria-pressed={showRu} onClick={() => setShowRu((v) => !v)}>
+          {t.ru}
+        </button>
+        <button type="button" className={ui.secondary} onClick={() => play(speed)}>
+          {t.again}
+        </button>
+        <button type="button" className={ui.secondary} onClick={() => play(0.75)}>
+          {t.slowerAfter}
+        </button>
       </div>
-      <p className={s.hint}>{ru.steps.listen.shadow}</p>
+      <p className={s.hint}>{t.shadow}</p>
     </div>
   )
 }
@@ -143,13 +150,20 @@ export function ListenStep({ step, onDone }: StepProps<S<'listen'>>) {
   }, [])
   const right = options.indexOf(p.text)
   const ok = given === right
+  const notCaught = given === -1
+  const [hint, setHint] = useState(false)
   const choose = (k: number) => {
     setGiven(k)
-    sfx(k === right ? 'correct' : 'wrong')
+    if (k >= 0) sfx(k === right ? 'correct' : 'wrong')
   }
   return (
     <section className={s.body}>
-      <SpeedScale speeds={[0.75, 1, 1.25]} current={step.speed} label={fmt(step.speed)} />
+      <div className={s.speedRow}>
+        <Term k="speed" className={s.speedLabel}>
+          {ru.steps.listen.speed}
+        </Term>
+        <SpeedScale speeds={[0.75, 1, 1.25]} current={step.speed} label={fmt(step.speed)} />
+      </div>
       <div className={s.center}>
         <PlayButton text={spokenText(p)} voice={voice} rate={step.speed} label={ru.steps.listen.replay} size="l" onStart={() => setReplays((n) => n + 1)} />
       </div>
@@ -171,22 +185,24 @@ export function ListenStep({ step, onDone }: StepProps<S<'listen'>>) {
         <button type="button" className={s.option} data-quiet disabled={given !== null} onClick={() => choose(-1)}>
           {ru.steps.listen.notCaught}
         </button>
-        {given === null && step.speed > 0.75 && (
-          <button type="button" className={ui.link} onClick={() => play(0.75)}>
-            {ru.steps.listen.slower}
+        {given === null && (
+          <button type="button" className={ui.link} onClick={() => setHint((v) => !v)}>
+            {ru.steps.listen.hint}
           </button>
         )}
+        {given === null && hint && <p className={s.hint}>{ru.steps.listen.hintText(p.focus.split('→')[0]!.trim())}</p>}
       </div>
       {given !== null && (
         <>
-          <Reveal p={p} ok={ok} speed={step.speed} />
+          <Reveal p={p} ok={ok} speed={step.speed} notCaught={notCaught} />
           <div className={s.actions}>
             <button
               type="button"
               className={ui.primary}
               onClick={() =>
                 onDone({
-                  correct: ok,
+                  // «Не разобрал» — без штрафа: в точность не идёт, но фраза вернётся в повторение
+                  correct: notCaught ? undefined : ok,
                   fast: ok && step.speed >= 1,
                   answer: { kind: 'listen', track: 'air', item: p.id, expected: p.text, given: given >= 0 ? options[given]! : '', correct: ok, speed: step.speed, accent: accentOf(voice), tag: p.module },
                   done: ok ? [{ module: p.module, item: p.id }, ...(step.speed >= 1.25 ? [{ module: 'air-fast', item: p.id }] : [])] : undefined,
@@ -481,6 +497,7 @@ export function PassageStep({ step, onDone }: StepProps<S<'passage'>>) {
     stopAudio()
   }, [])
   const speakers = [...new Set(p.lines.map((l) => l.speaker))].map((id) => characterById.get(id)).filter(Boolean)
+  const [showRu, setShowRu] = useState(false)
 
   const playAll = async () => {
     const my = ++token.current
@@ -564,12 +581,20 @@ export function PassageStep({ step, onDone }: StepProps<S<'passage'>>) {
         <>
           <p className={`${s.score} mono`}>{t.score(correct, p.questions.length)}</p>
           <p className={s.hint}>{t.transcript}</p>
+          {p.lines.some((l) => l.ru) && (
+            <div className={s.chips}>
+              <button type="button" className={ui.secondary} aria-pressed={showRu} onClick={() => setShowRu((v) => !v)}>
+                {ru.steps.listen.ru}
+              </button>
+            </div>
+          )}
           <ol className={s.transcript}>
             {p.lines.map((l, i) => (
               <li key={i}>
                 <button type="button" className={s.line} data-playing={playing === i || undefined} onClick={() => void playLine(i)}>
                   <b>{characterById.get(l.speaker)?.name.split(' ')[0]}:</b> <span lang="en">{l.text}</span>
                 </button>
+                {showRu && l.ru && <p className={s.lineRu}>{l.ru}</p>}
               </li>
             ))}
           </ol>

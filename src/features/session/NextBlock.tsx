@@ -1,6 +1,6 @@
 /*
-  Между блоками занятия (UX §3.3): «Дальше: Быстрая речь на слух, 3 мин» и мелкая «Пропустить этот блок».
-  Когда блоков не осталось — «Занятие выполнено» и возврат на главный.
+  Между блоками занятия (UX §3.3): «Дальше: Быстрая речь на слух · 3 мин», кнопка «Дальше»
+  и мелкая «Пропустить этот блок». Когда блоков не осталось — «Занятие выполнено» и возврат на главный.
 */
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link, useNavigate } from 'react-router-dom'
@@ -31,8 +31,9 @@ export function NextBlock({ afterId }: { afterId: string }) {
   const minutes = row.segments.filter((x) => x.block === next.block && x.status === 'pending').reduce((n, x) => n + x.minutes, 0)
   return (
     <>
+      <p className={s.next}>{t.nextBlock(segmentBlockTitle(next), minutes)}</p>
       <button type="button" className={ui.signalButton} onClick={() => navigate(segmentUrl(next))}>
-        {t.nextBlock(segmentBlockTitle(next), minutes)}
+        {t.next}
       </button>
       <div className={s.row}>
         <button

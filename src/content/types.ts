@@ -85,7 +85,7 @@ export type Passage = {
   title: string
   kind: string
   situation: string
-  lines: { speaker: string; voice: VoiceId; text: string }[]
+  lines: { speaker: string; voice: VoiceId; text: string; ru?: string }[]
   /** answer — индекс верного варианта (в данных всегда 0, приложение перемешивает) */
   questions: { q: string; options: string[]; answer: number }[]
   reviewed: boolean
@@ -147,6 +147,8 @@ export type DocText = {
   kind: string
   title: string
   paragraphs: string[]
+  /** перевод по абзацам (в «Моём тексте» его нет) */
+  paragraphsRu?: string[]
   /** по абзацам: [верное, ловушка, ловушка] */
   summaries: string[][]
   /** образец пересказа абзаца */

@@ -110,6 +110,10 @@ TEXTS = [
             "Every satellite has two main parts: the payload and the bus. The payload is the reason the satellite exists, for example a camera or a radio transmitter. The bus is everything else that keeps the payload working.",
             "The bus provides electrical power from solar arrays and batteries. It controls the attitude, so that the antennas and the camera point in the right direction. It also keeps the temperature inside a safe range, because electronics do not like to be too hot or too cold. Engineers often reuse the same bus design for different missions, which saves time and money.",
         ],
+        "paragraphsRu": [
+            "У каждого спутника две основные части: полезная нагрузка и служебная платформа. Полезная нагрузка — то, ради чего спутник существует, например камера или радиопередатчик. Платформа — всё остальное, что обеспечивает работу полезной нагрузки.",
+            "Платформа обеспечивает электропитание от солнечных батарей и аккумуляторов. Она управляет ориентацией, чтобы антенны и камера были направлены куда нужно. Кроме того, она поддерживает температуру внутри в безопасных пределах, потому что электроника не любит ни перегрева, ни переохлаждения. Инженеры часто используют одну и ту же конструкцию платформы для разных миссий, что экономит время и деньги.",
+        ],
         "summaries": [
             ["A satellite consists of a payload, which does the mission, and a bus, which supports it.", "A satellite bus is a vehicle that carries astronauts to orbit.", "The payload provides power and controls the temperature."],
             ["The bus supplies power, controls attitude and temperature, and is often reused.", "Electronics work best at very low temperatures.", "Each mission needs a completely new bus design."],
@@ -127,6 +131,10 @@ TEXTS = [
         "paragraphs": [
             "A liquid rocket engine burns a fuel and an oxidizer, for example kerosene and liquid oxygen. Pumps push both liquids into the combustion chamber, where they mix and burn at a very high temperature.",
             "The hot gas then flows through the nozzle. The narrow part of the nozzle is called the throat. After the throat, the nozzle becomes wider, and the gas accelerates to a very high speed. This fast jet of gas pushes the rocket forward. The force it creates is called thrust.",
+        ],
+        "paragraphsRu": [
+            "Жидкостный ракетный двигатель сжигает горючее и окислитель, например керосин и жидкий кислород. Насосы подают обе жидкости в камеру сгорания, где они смешиваются и сгорают при очень высокой температуре.",
+            "Затем горячий газ проходит через сопло. Самая узкая часть сопла называется критическим сечением. За критическим сечением сопло расширяется, и газ разгоняется до очень высокой скорости. Эта быстрая струя газа толкает ракету вперёд. Создаваемая ею сила называется тягой.",
         ],
         "summaries": [
             ["Fuel and oxidizer are pumped into a chamber where they burn.", "Liquid oxygen is used as fuel in all rockets.", "The chamber keeps the liquids cold."],
@@ -146,6 +154,10 @@ TEXTS = [
             "A composite material is made of two or more materials that work together. In aerospace, the most common composite is carbon fiber in an epoxy matrix. The fibers carry the load, and the matrix holds the fibers together.",
             "Composites are popular because they are stiff and light. A carbon fiber part can be much lighter than the same part made of aluminum. However, composites are also more expensive, and they can hide damage inside, where it is difficult to see. For this reason, they need careful inspection.",
         ],
+        "paragraphsRu": [
+            "Композиционный материал состоит из двух или более материалов, работающих совместно. В аэрокосмической технике самый распространённый композит — углеродное волокно в эпоксидной матрице. Волокна воспринимают нагрузку, а матрица удерживает волокна вместе.",
+            "Композиты популярны, потому что они жёсткие и лёгкие. Деталь из углепластика может быть намного легче такой же детали из алюминия. Однако композиты к тому же дороже и могут скрывать повреждения внутри, где их трудно увидеть. Поэтому они требуют тщательного контроля.",
+        ],
         "summaries": [
             ["In a composite, fibers carry the load and a matrix holds them together.", "Composites are made of a single metal.", "The matrix carries most of the load."],
             ["Composites are light and stiff but expensive and need careful inspection.", "Composites are always cheaper than aluminum.", "Damage in composites is easy to see."],
@@ -163,6 +175,10 @@ TEXTS = [
         "paragraphs": [
             "A tensile test shows how strong a material is. A flat or round specimen is held in two grips. The machine pulls the grips apart slowly, and the specimen becomes longer until it breaks.",
             "During the test, a load cell measures the force, and an extensometer or a strain gauge measures how much the specimen stretches. From these data, engineers draw a stress-strain curve. The highest point of the curve shows the tensile strength, and the slope at the beginning shows the stiffness of the material.",
+        ],
+        "paragraphsRu": [
+            "Испытание на растяжение показывает, насколько прочен материал. Плоский или круглый образец зажимают в двух захватах. Машина медленно разводит захваты, и образец удлиняется, пока не разрушится.",
+            "Во время испытания датчик силы измеряет усилие, а экстензометр или тензорезистор — удлинение образца. По этим данным инженеры строят диаграмму «напряжение — деформация». Наивысшая точка кривой показывает предел прочности, а наклон её начального участка — жёсткость материала.",
         ],
         "summaries": [
             ["In a tensile test, a specimen is pulled until it breaks.", "In a tensile test, a specimen is heated in an oven.", "The grips measure the temperature of the specimen."],
@@ -182,6 +198,10 @@ TEXTS = [
             "Most CAD models start with a 2D sketch. The designer draws lines and circles on a plane and adds dimensions and constraints, for example that two lines are parallel.",
             "Then the sketch becomes a 3D feature. The most common features are extrude, which pulls the sketch into a solid, and revolve, which turns it around an axis. The designer adds holes, fillets and chamfers, one feature at a time. Because the model is parametric, changing one dimension later updates the whole part.",
         ],
+        "paragraphsRu": [
+            "Большинство моделей в САПР начинается с двумерного эскиза. Конструктор рисует на плоскости линии и окружности и добавляет размеры и взаимосвязи, например параллельность двух линий.",
+            "Затем эскиз превращается в трёхмерный элемент. Самые распространённые элементы — выдавливание, которое вытягивает эскиз в твёрдое тело, и вращение, которое поворачивает его вокруг оси. Конструктор добавляет отверстия, скругления и фаски — по одному элементу за раз. Поскольку модель параметрическая, изменение одного размера впоследствии обновляет всю деталь.",
+        ],
         "summaries": [
             ["A CAD model usually starts with a dimensioned 2D sketch.", "CAD models always start as 3D solids.", "Constraints are only used in drawings."],
             ["Features like extrude and revolve turn sketches into a parametric solid.", "A parametric model cannot be changed after it is built.", "Revolve pulls the sketch in a straight line."],
@@ -199,6 +219,10 @@ TEXTS = [
         "paragraphs": [
             "A strain gauge is a thin metal pattern on a plastic film. It is glued to the surface of a part. When the part stretches, the gauge stretches too, and its electrical resistance changes a little.",
             "The change is very small, so the gauge is usually connected in a Wheatstone bridge. The bridge turns the small change of resistance into a voltage that an amplifier can measure. Temperature can also change the resistance, so good installations compensate for it with a second gauge.",
+        ],
+        "paragraphsRu": [
+            "Тензорезистор — это тонкая металлическая решётка на полимерной плёнке. Его наклеивают на поверхность детали. Когда деталь растягивается, тензорезистор растягивается вместе с ней, и его электрическое сопротивление немного меняется.",
+            "Это изменение очень мало, поэтому тензорезистор обычно включают в мост Уитстона. Мост превращает малое изменение сопротивления в напряжение, которое может измерить усилитель. Сопротивление меняется и от температуры, поэтому в хороших схемах её влияние компенсируют вторым тензорезистором.",
         ],
         "summaries": [
             ["A glued strain gauge changes its resistance when the part stretches.", "A strain gauge is a large metal block bolted to the part.", "The gauge changes color under load."],
@@ -219,6 +243,11 @@ TEXTS = [
             "Small satellites have very limited power and mass budgets, which makes active thermal control difficult. In this work, we present a passive thermal strap made of pyrolytic graphite sheets that connects the on-board computer to an external radiator panel.",
             "The strap was tested in a thermal vacuum chamber under hot-case conditions, and the results were compared with a finite element model. The measured peak temperature of the computer board decreased by 12 °C, while the added mass was only 38 g. The model predicted the steady-state temperatures within 3 °C.",
             "The results suggest that graphite straps can replace heaters and fans in low-power CubeSat missions, especially when the internal layout does not allow a direct path to the radiator.",
+        ],
+        "paragraphsRu": [
+            "У малых спутников очень ограничены бюджеты мощности и массы, что затрудняет активное терморегулирование. В этой работе мы представляем пассивный тепловой мост из листов пиролитического графита, который соединяет бортовой компьютер с внешней панелью радиатора.",
+            "Тепловой мост испытали в термовакуумной камере в условиях «горячего» расчётного случая, а результаты сравнили с конечно-элементной моделью. Измеренная пиковая температура платы компьютера снизилась на 12 °C, а добавленная масса составила всего 38 г. Модель предсказала установившиеся температуры с точностью до 3 °C.",
+            "Результаты позволяют предположить, что графитовые тепловые мосты могут заменить нагреватели и вентиляторы в маломощных миссиях CubeSat, особенно когда внутренняя компоновка не позволяет проложить прямой путь к радиатору.",
         ],
         "summaries": [
             ["The authors propose a light passive strap to cool the computer of a small satellite.", "The authors design a new solar panel for large satellites.", "The paper compares fans from different suppliers."],
@@ -244,6 +273,11 @@ TEXTS = [
             "Before hot fire testing, the internal channels were inspected by computed tomography, and cold flow tests with water were used to check the pressure drop. In twelve hot fire tests with a total duration of 140 seconds, the engine reached a combustion efficiency of 96 percent, and no damage to the injector face was observed.",
             "The one-piece design reduced the number of parts from 34 to 1 and the manufacturing time from eight weeks to ten days. Further work will focus on surface roughness inside the channels, which caused a 7 percent higher pressure drop than predicted.",
         ],
+        "paragraphsRu": [
+            "Форсуночные головки малых жидкостных ракетных двигателей традиционно собирают из множества механически обработанных и паяных деталей, что увеличивает стоимость и сроки изготовления. В статье описана цельная коаксиальная форсуночная головка для метан-кислородного двигателя тягой 2 кН, изготовленная селективным лазерным сплавлением из никелевого суперсплава.",
+            "Перед огневыми испытаниями внутренние каналы проверили методом компьютерной томографии, а перепад давления проверили проливками водой. В двенадцати огневых испытаниях общей продолжительностью 140 секунд двигатель достиг полноты сгорания 96 процентов, повреждений огневого днища форсуночной головки не обнаружено.",
+            "Цельная конструкция сократила число деталей с 34 до 1, а срок изготовления — с восьми недель до десяти дней. Дальнейшая работа будет посвящена шероховатости поверхности внутри каналов, из-за которой перепад давления оказался на 7 процентов выше расчётного.",
+        ],
         "summaries": [
             ["The paper presents a 3D-printed one-piece injector for a small methane engine.", "The paper compares kerosene and methane for large engines.", "The paper describes how to braze 34 injector parts."],
             ["After inspection and cold flow tests, hot fire tests showed high efficiency and no damage.", "The injector was destroyed during the first hot fire test.", "Only computer simulations were performed."],
@@ -267,6 +301,11 @@ TEXTS = [
             "Carbon fiber reinforced polymers absorb moisture from the air, which can reduce the strength of the matrix and of the fiber–matrix interface. This study investigates how moisture affects the interlaminar shear strength of a unidirectional carbon/epoxy laminate.",
             "Short beam specimens were conditioned at 70 °C and 85 percent relative humidity for up to 60 days and then tested at room temperature and at 90 °C. The weight gain of the specimens was measured every five days.",
             "After saturation, the interlaminar shear strength decreased by 9 percent at room temperature and by 27 percent at 90 °C. Microscopy showed that wet specimens failed mainly at the interface, whereas dry specimens failed within the matrix. These results indicate that hot and wet conditions should be considered in the design of composite structures.",
+        ],
+        "paragraphsRu": [
+            "Углепластики поглощают влагу из воздуха, что может снижать прочность матрицы и границы раздела «волокно — матрица». В этом исследовании изучается, как влага влияет на межслойную прочность при сдвиге однонаправленного углеэпоксидного ламината.",
+            "Образцы для испытаний методом короткой балки выдерживали при 70 °C и относительной влажности 85 процентов до 60 суток, а затем испытывали при комнатной температуре и при 90 °C. Привес образцов измеряли каждые пять суток.",
+            "После насыщения межслойная прочность при сдвиге снизилась на 9 процентов при комнатной температуре и на 27 процентов при 90 °C. Микроскопия показала, что влажные образцы разрушались в основном по границе раздела, тогда как сухие — внутри матрицы. Эти результаты указывают на то, что при проектировании композитных конструкций нужно учитывать сочетание повышенной температуры и влажности.",
         ],
         "summaries": [
             ["The study checks how absorbed moisture changes the interlaminar strength of CFRP.", "The study measures how fast carbon fibers are produced.", "The study compares epoxy with aluminum."],
@@ -292,6 +331,11 @@ TEXTS = [
             "Before and after each random run, a low-level sine sweep from 5 to 2000 Hz was performed to detect any change in the natural frequencies. A shift of more than 5 percent in the first natural frequency was defined as a failure criterion, because it usually indicates loosened fasteners or structural damage.",
             "Three triaxial accelerometers were bonded to the bracket and to the electronics box, and one control accelerometer was mounted on the shaker table.",
         ],
+        "paragraphsRu": [
+            "Алюминиевый кронштейн, на котором крепится блок электроники, подвергли испытаниям на случайную вибрацию по трём взаимно перпендикулярным осям. Уровни испытаний взяли из руководства пользователя ракеты-носителя с квалификационным запасом 3 дБ сверх ожидаемых полётных уровней.",
+            "До и после каждого прогона случайной вибрации выполняли низкоуровневый синусоидальный проход от 5 до 2000 Гц, чтобы обнаружить изменение собственных частот. Критерием отказа был принят сдвиг первой собственной частоты более чем на 5 процентов, поскольку он обычно указывает на ослабление крепежа или повреждение конструкции.",
+            "Три трёхосных акселерометра приклеили к кронштейну и к блоку электроники, а один управляющий акселерометр установили на стол вибростенда.",
+        ],
         "summaries": [
             ["The bracket was vibrated in three axes at levels above the expected flight levels.", "The bracket was tested only in one axis at flight level.", "The test levels were chosen randomly by the operator."],
             ["Sine sweeps before and after each run checked for frequency shifts that indicate damage.", "Sine sweeps were used to heat the bracket.", "Any change in frequency was ignored."],
@@ -315,6 +359,10 @@ TEXTS = [
             "Global variables let you control several dimensions of a part or an assembly from one place. To create a variable, open the Equations dialog, type a name in the Global Variables section, and enter a value or an expression. Names are case-sensitive and must not contain spaces.",
             "To link a dimension to a variable, double-click the dimension in the graphics area, type an equals sign, and select the variable from the list. The dimension turns red if the expression cannot be evaluated. Note: after you change a variable, press Rebuild (Ctrl+B) to update the model. Circular references, where a variable depends on itself, are not supported and will produce an error.",
         ],
+        "paragraphsRu": [
+            "Глобальные переменные позволяют управлять несколькими размерами детали или сборки из одного места. Чтобы создать переменную, откройте диалог «Уравнения», введите имя в разделе «Глобальные переменные» и задайте значение или выражение. Имена чувствительны к регистру и не должны содержать пробелов.",
+            "Чтобы связать размер с переменной, дважды щёлкните размер в графической области, введите знак равенства и выберите переменную из списка. Если выражение не удаётся вычислить, размер становится красным. Примечание: после изменения переменной нажмите «Перестроить» (Ctrl+B), чтобы обновить модель. Циклические ссылки, когда переменная зависит сама от себя, не поддерживаются и вызовут ошибку.",
+        ],
         "summaries": [
             ["You create global variables in the Equations dialog to control several dimensions.", "Global variables can only be used in drawings.", "Variable names may contain spaces."],
             ["You link a dimension with an equals sign and rebuild after changes; circular references cause errors.", "Dimensions update automatically without rebuilding.", "A variable may depend on itself."],
@@ -332,6 +380,10 @@ TEXTS = [
         "paragraphs": [
             "Pressure range: 0 to 200 bar gauge. Output signal: 4 to 20 mA, two-wire. Supply voltage: 10 to 30 V DC. Accuracy: ±0.25% FS (typical), ±0.5% FS (maximum), including non-linearity, hysteresis and repeatability. Response time: less than 1 ms.",
             "Operating temperature: −40 to +85 °C. Compensated temperature range: −20 to +80 °C. Proof pressure: 400 bar. Burst pressure: 800 bar. Wetted parts: stainless steel 316L. Note: exceeding the proof pressure may cause a permanent zero offset. Do not use with liquid oxygen unless the sensor has been cleaned for oxygen service.",
+        ],
+        "paragraphsRu": [
+            "Диапазон давления: от 0 до 200 бар (избыточное). Выходной сигнал: 4–20 мА, двухпроводная схема. Напряжение питания: 10–30 В постоянного тока. Точность: ±0,25% ВПИ (типовая), ±0,5% ВПИ (максимальная), включая нелинейность, гистерезис и повторяемость. Время отклика: менее 1 мс.",
+            "Рабочая температура: от −40 до +85 °C. Диапазон термокомпенсации: от −20 до +80 °C. Давление перегрузки: 400 бар. Разрушающее давление: 800 бар. Детали, контактирующие со средой: нержавеющая сталь 316L. Примечание: превышение давления перегрузки может вызвать необратимое смещение нуля. Не использовать с жидким кислородом, если датчик не прошёл очистку для работы с кислородом.",
         ],
         "summaries": [
             ["The first part lists the range, output, supply and accuracy of the transducer.", "The first part describes how to install the transducer.", "The first part lists the price and delivery time."],
@@ -352,6 +404,11 @@ TEXTS = [
             "The payload adapter shall withstand the limit loads defined in Section 4 multiplied by a factor of safety of 1.25 on yield and 1.4 on ultimate strength, without detrimental permanent deformation. Compliance shall be demonstrated by analysis and verified by a static qualification test on a dedicated test article.",
             "The first lateral natural frequency of the adapter with the payload mass simulator shall be above 15 Hz, and the first axial frequency shall be above 35 Hz, in order to avoid dynamic coupling with the launch vehicle. The frequencies should be measured by a low-level sine sweep before and after the qualification test.",
             "Minor surface scratches may be accepted without repair if their depth does not exceed 0.1 mm. Any crack, regardless of its size, shall be reported as a nonconformance and shall be dispositioned by the design authority before flight.",
+        ],
+        "paragraphsRu": [
+            "Адаптер полезной нагрузки должен выдерживать эксплуатационные нагрузки, определённые в разделе 4 и умноженные на коэффициент безопасности 1,25 по пределу текучести и 1,4 по пределу прочности, без недопустимой остаточной деформации. Соответствие должно быть показано расчётом и подтверждено статическими квалификационными испытаниями на специально изготовленном испытательном образце.",
+            "Первая поперечная собственная частота адаптера с имитатором массы полезной нагрузки должна быть выше 15 Гц, а первая продольная — выше 35 Гц, чтобы избежать динамического взаимодействия с ракетой-носителем. Частоты рекомендуется измерять низкоуровневым синусоидальным проходом до и после квалификационных испытаний.",
+            "Мелкие поверхностные царапины допускается принимать без ремонта, если их глубина не превышает 0,1 мм. Любая трещина, независимо от её размера, должна оформляться как несоответствие, и решение по ней должен принять разработчик до полёта.",
         ],
         "summaries": [
             ["The adapter must carry scaled limit loads, shown by analysis and a static test.", "The adapter may be flown without any testing.", "The factor of safety is only applied to yield strength."],
@@ -377,6 +434,11 @@ TEXTS = [
             "High-frequency instabilities are usually associated with the acoustic modes of the chamber, especially the first tangential mode. Low-frequency instabilities, often called chugging, are more commonly linked to the feed system, where the pressure drop across the injector is too small to isolate the chamber from disturbances in the propellant lines.",
             "Engineers use several approaches to suppress instability. Baffles on the injector face and acoustic cavities in the chamber wall damp the acoustic modes, while a sufficient injector pressure drop, typically 15 to 20 percent of the chamber pressure, reduces the risk of chugging. Because the phenomenon is difficult to predict, full-scale hot fire testing remains essential.",
         ],
+        "paragraphsRu": [
+            "Неустойчивость горения — это взаимодействие колебаний давления в камере сгорания с тепловыделением горящего топлива. Если тепло выделяется в фазе с пиками давления, колебания нарастают — иногда за миллисекунды, — пока не повредят форсуночную головку или стенку камеры.",
+            "Высокочастотную неустойчивость обычно связывают с акустическими модами камеры, особенно с первой тангенциальной модой. Низкочастотную неустойчивость, которую часто называют «чаггингом», чаще связывают с системой подачи, когда перепад давления на форсунках слишком мал, чтобы развязать камеру от возмущений в топливных магистралях.",
+            "Для подавления неустойчивости инженеры применяют несколько подходов. Антипульсационные перегородки на огневом днище и акустические резонаторы в стенке камеры демпфируют акустические моды, а достаточный перепад давления на форсунках — обычно 15–20 процентов давления в камере — снижает риск низкочастотной неустойчивости. Поскольку это явление трудно предсказать, полноразмерные огневые испытания по-прежнему необходимы.",
+        ],
         "summaries": [
             ["Instability grows when heat release is in phase with pressure oscillations.", "Instability happens only after the engine is shut down.", "Heat release always damps pressure oscillations."],
             ["High-frequency modes relate to chamber acoustics, low-frequency chugging to the feed system.", "Chugging is caused by the tangential acoustic mode.", "The feed system has no effect on stability."],
@@ -400,6 +462,11 @@ TEXTS = [
             "Single-lap joints of carbon/epoxy adherends bonded with a toughened epoxy film adhesive were tested under constant-amplitude tension–tension fatigue at a stress ratio of 0.1 and a frequency of 5 Hz. Crack growth in the bondline was monitored with a travelling microscope and with backface strain gauges placed near the overlap ends.",
             "The fatigue threshold, defined as the maximum load at which no crack initiation was detected after two million cycles, was approximately 35 percent of the static failure load. Above this level, cracks initiated at the overlap ends, where peel stresses are highest, and then propagated along the adhesive–adherend interface.",
             "Joints with a tapered adherend edge and an adhesive fillet showed a 40 percent longer fatigue life than joints with square edges. The backface strain gauges detected crack initiation on average 15 percent of the fatigue life earlier than the microscope, which suggests that they could be used for structural health monitoring of bonded joints in service.",
+        ],
+        "paragraphsRu": [
+            "Одинарные нахлёсточные соединения углеэпоксидных элементов, склеенных плёночным эпоксидным клеем повышенной трещиностойкости, испытывали на усталость по циклу «растяжение — растяжение» с постоянной амплитудой при коэффициенте асимметрии цикла 0,1 и частоте 5 Гц. Рост трещины в клеевом шве контролировали передвижным микроскопом и тензорезисторами на тыльной стороне, наклеенными у концов нахлёста.",
+            "Порог усталости — максимальная нагрузка, при которой за два миллиона циклов не было обнаружено зарождения трещины, — составил примерно 35 процентов статической разрушающей нагрузки. Выше этого уровня трещины зарождались у концов нахлёста, где напряжения отрыва максимальны, а затем распространялись по границе раздела «клей — склеиваемый элемент».",
+            "Соединения со скошенной кромкой склеиваемого элемента и клеевой галтелью показали на 40 процентов большую усталостную долговечность, чем соединения с прямыми кромками. Тензорезисторы на тыльной стороне обнаруживали зарождение трещины в среднем на 15 процентов усталостной долговечности раньше микроскопа, а значит, их можно было бы применять для контроля состояния клеевых соединений в эксплуатации.",
         ],
         "summaries": [
             ["Bonded lap joints were fatigue-tested, and cracks were monitored with a microscope and gauges.", "The joints were tested only under static load.", "The adhesive was a liquid paste without any film."],
@@ -425,6 +492,11 @@ TEXTS = [
             "The load was applied in steps of 10 percent of limit load, with a two-minute hold at each step. At limit load, the maximum deflection was 6.8 mm, which is 5 percent below the prediction, and the residual deflection after unloading was 0.1 mm, within the allowed 0.2 mm. At 11.4 kN, a local crushing of the core under one of the loading pads was heard and later confirmed by ultrasonic inspection.",
             "Deviation: during the first loading, the test was paused at 60 percent of limit load because of a data acquisition fault; the panel was unloaded and the test was restarted. Result: the panel reached the ultimate load of 12 kN and held it for three seconds without global failure. The local core crushing is attributed to the pad size and is not considered representative of the flight configuration. Status: PASS, with one observation.",
         ],
+        "paragraphsRu": [
+            "Объект испытаний: трёхслойная панель пола, обшивки из углепластика на алюминиевом сотовом заполнителе, заводской номер FP-003. Цель: подтвердить, что панель выдерживает расчётную разрушающую нагрузку 12 кН без разрушения и эксплуатационную нагрузку 8 кН без недопустимой остаточной деформации. Панель свободно опирали по двум кромкам и нагружали гидравлическим приводом в четырёх точках через резиновые прокладки.",
+            "Нагрузку прикладывали ступенями по 10 процентов эксплуатационной с выдержкой две минуты на каждой ступени. При эксплуатационной нагрузке максимальный прогиб составил 6,8 мм, что на 5 процентов меньше расчётного, а остаточный прогиб после разгрузки — 0,1 мм при допустимых 0,2 мм. При 11,4 кН был слышен звук местного смятия сот под одной из нагружающих прокладок, что позднее подтвердил ультразвуковой контроль.",
+            "Отклонение: при первом нагружении испытание приостановили на 60 процентах эксплуатационной нагрузки из-за сбоя системы сбора данных; панель разгрузили и начали испытание заново. Результат: панель достигла расчётной разрушающей нагрузки 12 кН и выдержала её в течение трёх секунд без общего разрушения. Местное смятие заполнителя объясняется размером прокладки и не считается характерным для лётной конфигурации. Статус: ПРОЙДЕНО, с одним замечанием.",
+        ],
         "summaries": [
             ["The report tests whether a sandwich panel carries its design loads in a four-point setup.", "The report describes the manufacturing of the honeycomb core.", "The panel was tested under vibration."],
             ["Deflection matched predictions, and local core crushing was noticed near ultimate load.", "The panel broke completely at limit load.", "The residual deflection was far above the allowed value."],
@@ -448,6 +520,11 @@ TEXTS = [
             "A tolerance stack-up calculates how the tolerances of individual parts combine in an assembly to affect a critical dimension, such as a gap or an interference. In a worst-case analysis, all tolerances are added arithmetically, assuming that every part is simultaneously at its most unfavorable limit.",
             "Worst-case analysis guarantees that every assembly will fit, but it often leads to unnecessarily tight and expensive tolerances when the chain contains many parts. A statistical analysis, most commonly the root sum square method, assumes that the dimensions are independent and normally distributed and combines the tolerances as the square root of the sum of their squares.",
             "For a chain of five parts, each with a tolerance of ±0.1 mm, the worst-case result is ±0.5 mm, whereas the root sum square result is about ±0.22 mm. The statistical method is therefore appropriate for high-volume production with capable processes, while worst-case analysis should be used for safety-critical interfaces and for small batches, where the statistical assumptions may not hold.",
+        ],
+        "paragraphsRu": [
+            "Расчёт размерной цепи показывает, как допуски отдельных деталей складываются в сборке и влияют на критичный размер, например зазор или натяг. При расчёте на максимум-минимум все допуски складываются арифметически в предположении, что каждая деталь одновременно находится на самом неблагоприятном пределе.",
+            "Расчёт на максимум-минимум гарантирует собираемость каждого изделия, но при большом числе звеньев в цепи часто приводит к неоправданно жёстким и дорогим допускам. Вероятностный расчёт — чаще всего методом квадратного корня из суммы квадратов — предполагает, что размеры независимы и распределены нормально, и объединяет допуски как квадратный корень из суммы их квадратов.",
+            "Для цепи из пяти деталей с допуском ±0,1 мм каждая расчёт на максимум-минимум даёт ±0,5 мм, а метод квадратного корня из суммы квадратов — около ±0,22 мм. Поэтому вероятностный метод подходит для крупносерийного производства со стабильными процессами, а расчёт на максимум-минимум следует применять для интерфейсов, критичных для безопасности, и для малых партий, где статистические допущения могут не выполняться.",
         ],
         "summaries": [
             ["A stack-up shows how part tolerances add up; worst case assumes all parts at their worst limits.", "A stack-up measures the weight of an assembly.", "Worst-case analysis ignores tolerances."],
@@ -473,6 +550,11 @@ TEXTS = [
             "Each contribution shall be expressed as a standard uncertainty. Values given as limits in a datasheet, for example ±0.05 percent of full scale, are usually treated as a rectangular distribution and divided by the square root of three. The standard uncertainties are then combined as the square root of the sum of their squares, provided that they are independent.",
             "The combined standard uncertainty is multiplied by a coverage factor, normally k = 2, to obtain the expanded uncertainty, which corresponds to a confidence level of approximately 95 percent. For example, a 50 kN load cell with a combined standard uncertainty of 20 N would be reported as 50.00 kN ± 0.04 kN (k = 2).",
         ],
+        "paragraphsRu": [
+            "Любой результат измерения следует приводить вместе с его неопределённостью. Для силы, измеренной тензорезисторным датчиком силы, основные составляющие — неопределённость калибровки датчика, его нелинейность и гистерезис, разрешение системы сбора данных, влияние температуры и повторяемость установки.",
+            "Каждую составляющую обязательно выражают в виде стандартной неопределённости. Значения, заданные в даташите как пределы, например ±0,05 процента ВПИ, обычно считают равномерно распределёнными и делят на квадратный корень из трёх. Затем стандартные неопределённости объединяют как квадратный корень из суммы их квадратов — при условии, что они независимы.",
+            "Суммарную стандартную неопределённость умножают на коэффициент охвата, обычно k = 2, и получают расширенную неопределённость, соответствующую уровню доверия примерно 95 процентов. Например, результат измерения датчиком силы на 50 кН с суммарной стандартной неопределённостью 20 Н записали бы как 50,00 кН ± 0,04 кН (k = 2).",
+        ],
         "summaries": [
             ["Load measurements need an uncertainty, which comes from several listed sources.", "Load cells have no measurement uncertainty.", "Only temperature affects the result."],
             ["Each source becomes a standard uncertainty, and independent ones are combined by root sum square.", "Datasheet limits are multiplied by three.", "Uncertainties are simply added arithmetically."],
@@ -496,6 +578,11 @@ TEXTS = [
             "A finite element model is only as good as its boundary conditions. Over-constrained supports, such as fully fixed bolt holes, artificially stiffen the structure and move the stress peaks, while under-constrained models cannot be solved at all. The supports should represent the real stiffness of the interface as closely as reasonably possible.",
             "Stress results near point loads, sharp re-entrant corners and single constrained nodes are singularities: they increase without limit as the mesh is refined and should not be used for strength assessment. A mesh convergence study, in which the element size is reduced until the peak stress in the region of interest changes by less than 5 percent, shall be performed for every critical location.",
             "Finally, the model should be correlated with test data whenever possible. A difference of more than 10 percent between predicted and measured strains usually points to an error in the boundary conditions, the material properties or the load introduction, rather than to a problem with the solver itself.",
+        ],
+        "paragraphsRu": [
+            "Конечно-элементная модель хороша ровно настолько, насколько хороши её граничные условия. Избыточные закрепления, например полностью заделанные болтовые отверстия, искусственно повышают жёсткость конструкции и смещают пики напряжений, а недозакреплённую модель вообще невозможно решить. Опоры должны воспроизводить реальную жёсткость интерфейса настолько точно, насколько это разумно возможно.",
+            "Напряжения вблизи сосредоточенных сил, острых входящих углов и одиночных закреплённых узлов — это сингулярности: при измельчении сетки они растут неограниченно, и использовать их для оценки прочности нельзя. Для каждого критического места обязательно выполняется исследование сходимости сетки, в котором размер элемента уменьшают, пока пиковое напряжение в зоне интереса не станет меняться менее чем на 5 процентов.",
+            "Наконец, модель по возможности следует верифицировать по результатам испытаний. Расхождение более 10 процентов между расчётными и измеренными деформациями обычно указывает на ошибку в граничных условиях, свойствах материала или приложении нагрузки, а не на проблему самого решателя.",
         ],
         "summaries": [
             ["Boundary conditions must represent real supports; too many or too few constraints are both wrong.", "Fully fixing every hole is always the safest choice.", "Boundary conditions do not affect the results."],
@@ -614,6 +701,7 @@ def build():
             hits = [s for s in flat if key.lower() in s.lower()]
             assert len(hits) == 1, f"{t['id']}: ключ «{key}» найден {len(hits)} раз"
         assert len(t["summaries"]) == len(t["paragraphs"]) == len(t["retell"]), f"{t['id']}: число абзацев"
+        assert len(t["paragraphsRu"]) == len(t["paragraphs"]), f"{t['id']}: число абзацев перевода"
         assert t["parse"]["sentence"] in flat, f"{t['id']}: разбираемое предложение не из текста"
         texts.append({
             **{k: v for k, v in t.items() if k not in ("find",)},

@@ -39,11 +39,11 @@ function useHasVoice(): boolean | null {
   return v
 }
 
-function Head({ story, title }: { story: string; title: string }) {
+/** Вопрос, к которому ответ; инструкция шага — в шапке упражнения (ExerciseHead). */
+function Head({ story }: { story: string; title?: string }) {
   const q = storyQuestionById.get(story)
   return (
     <>
-      <p className={`${s.kicker} mono`}>{title}</p>
       <p className={st.q} lang="en">
         {q?.q}
       </p>
@@ -236,7 +236,6 @@ export function StoryColdStep({ step, onDone }: StepProps<S<'storyCold'>>) {
   const [line] = useState(() => ru.lines.summaryHigh[Math.floor(Math.random() * ru.lines.summaryHigh.length)]!)
   return (
     <section className={s.body}>
-      <p className={`${s.kicker} mono`}>{t.cold}</p>
       <div className={s.question}>
         <p className={s.qText} lang="en">
           {q?.q}
