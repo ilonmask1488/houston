@@ -1036,3 +1036,85 @@
 | gang | us-m |
 | gang | gb-f |
 | gang | gb-m |
+| The design review is on Thursday at ten. | us-f |
+| We need fifteen more bolts for the bracket. | us-m |
+| The wall thickness is three point five millimetres. | gb-f |
+| The tolerance on this hole is plus or minus five microns. | gb-m |
+| Can you send them the updated drawing today? | us-f |
+| The supplier can't deliver the valves before May. | us-m |
+| We tested forty samples last week. | gb-f |
+| The meeting starts at half past two. | gb-m |
+| He's checking the drawings for the new housing. | us-f |
+| The test bench needs thirty minutes to warm up. | us-m |
+| I want to finish the model before lunch. | gb-f |
+| Its mass is lower than we expected. | gb-m |
+| It's not the sensor, it's the cable. | us-f |
+| Could you check the torque on these bolts? | us-m |
+| The parts arrived on the thirteenth of March. | gb-f |
+| We worked on the drawings all weekend. | gb-m |
+| The pressure dropped to sixty bar. | us-f |
+| Please add a chamfer to this edge. | us-m |
+| The deadline has moved to next Friday. | gb-f |
+| We'll need two more days for the report. | gb-m |
+| Did they approve the change request? | us-f |
+| The hole diameter is eighteen millimetres. | us-m |
+| I'll call the supplier after the meeting. | gb-f |
+| We could use aluminium instead of steel. | gb-m |
+| The panel failed at ninety percent of the load. | us-f |
+| She needs the test report by Monday. | us-m |
+| Let's move the call to four fifteen. | gb-f |
+| The new version is on the server. | gb-m |
+| There's a crack near the second hole. | us-f |
+| We can't start the test without the sensors. | us-m |
+| The bolts were tightened to twelve newton metres. | gb-f |
+| He was at the test site all day. | gb-m |
+| The shipment will arrive on the fourteenth. | us-f |
+| Can you print the drawing in A3? | us-m |
+| We've already ordered the material. | gb-f |
+| The engine runs for eighty seconds. | gb-m |
+| Who's responsible for the wiring diagram? | us-f |
+| Use the M8 bolts, not the M6. | us-m |
+| I think he's sent the wrong file. | gb-f |
+| Our team is smaller than theirs. | gb-m |
+| He's on holiday until the twentieth. | us-f |
+| Make sure you save it as a PDF. | us-m |
+| The gap should be less than half a millimetre. | gb-f |
+| We'll run the test again tomorrow morning. | gb-m |
+| I need the latest revision, not the old one. | us-f |
+| The temperature reached two hundred and fifty degrees. | us-m |
+| They want to change the material again. | gb-f |
+| The drawing was signed off on Wednesday. | gb-m |
+| Can you join the call at eleven? | us-f |
+| The pipe is fifty centimetres long. | us-m |
+| We should order more bolts this week. | gb-f |
+| The customer asked for a lighter version. | gb-m |
+| Is it ready, or does it need more work? | us-f |
+| The batch passed inspection this morning. | us-m |
+| I'm afraid we can't meet that deadline. | gb-f |
+| The stress is highest near the fillet. | gb-m |
+| How much are these apples? | us-f |
+| That one costs fifteen pounds. | us-m |
+| The next bus leaves at seven forty. | gb-f |
+| Can I pay by card here? | gb-m |
+| I'll be there in ten minutes. | us-f |
+| We met them at the station. | us-m |
+| Do you want to grab lunch today? | gb-f |
+| Sorry, I think you have the wrong number. | gb-m |
+| My train was delayed by twenty minutes. | us-f |
+| Could you call me back after six? | us-m |
+| The shop closes at nine on Sundays. | gb-f |
+| He's been to London twice. | gb-m |
+| I'd like two coffees to take away. | us-f |
+| The weather was great last weekend. | us-m |
+| Excuse me, is this seat taken? | gb-f |
+| Can you pick me up at eight? | gb-m |
+| I'm going to the gym after work. | us-f |
+| The doctor can see you on Tuesday. | us-m |
+| My car needs new tyres. | gb-f |
+| She lives on the thirteenth floor. | gb-m |
+| Could you tell me the way to the station? | us-f |
+| I didn't know it was your birthday. | us-m |
+| There's a pharmacy on the corner. | gb-f |
+| I'll text you when I get home. | gb-m |
+| The tickets are forty pounds each. | us-f |
+| Would you like tea or coffee? | us-m |

@@ -1,1 +1,4487 @@
-[]
+[
+ {
+  "id": "g-st-r-001",
+  "text": "Let me briefly introduce myself.",
+  "options": [
+   "Let me briefly introduce myself.",
+   "Let me briefly introduce them.",
+   "Let me briefly introduce my team."
+  ],
+  "ru": "Позвольте коротко представиться.",
+  "focus": "introduce myself",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-002",
+  "text": "I'm a fourth-year student in aerospace engineering.",
+  "options": [
+   "I'm a fourth-year student in aerospace engineering.",
+   "I was a fourth-year student in aerospace engineering.",
+   "I'm a fourth-year student of aerospace engineering."
+  ],
+  "ru": "Я студент четвёртого курса, аэрокосмическая инженерия.",
+  "focus": "I'm a fourth-year student in",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-003",
+  "text": "I'm currently working on a project about composite testing.",
+  "options": [
+   "I'm currently working on a project about composite testing.",
+   "I'm currently working on the project about composite testing.",
+   "I'm currently working on a project about composite tests."
+  ],
+  "ru": "Сейчас я работаю над проектом по испытаниям композитов.",
+  "focus": "a project about composite testing",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-004",
+  "text": "My background is in rocket and space engineering.",
+  "options": [
+   "My background is in rocket and space engineering.",
+   "My background was in rocket and space engineering.",
+   "My background is in rockets and space engineering."
+  ],
+  "ru": "По специальности я инженер ракетно-космической техники.",
+  "focus": "is in rocket and",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-005",
+  "text": "I'm particularly interested in structural analysis.",
+  "options": [
+   "I'm particularly interested in structural analysis.",
+   "I was particularly interested in structural analysis.",
+   "I'm particularly interested in structural analyses."
+  ],
+  "ru": "Меня особенно интересует прочностной анализ.",
+  "focus": "I'm particularly interested in structural analysis",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-006",
+  "text": "I've had some hands-on experience with CAD and FEA.",
+  "options": [
+   "I've had some hands-on experience with CAD and FEA.",
+   "I had some hands-on experience with CAD and FEA.",
+   "I've had some hands-on experience with CAD and CFD."
+  ],
+  "ru": "У меня есть практический опыт с CAD и МКЭ.",
+  "focus": "I've had some hands-on experience with CAD and FEA",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-007",
+  "text": "What I enjoy most is solving practical problems.",
+  "options": [
+   "What I enjoy most is solving practical problems.",
+   "What I enjoyed most was solving practical problems.",
+   "What I enjoy most is solving a practical problem."
+  ],
+  "ru": "Больше всего мне нравится решать практические задачи.",
+  "focus": "I enjoy most is solving practical problems",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-008",
+  "text": "In my free time, I like to read about space missions.",
+  "options": [
+   "In my free time, I like to read about space missions.",
+   "In my free time, I'd like to read about space missions.",
+   "In my free time, I like to read about a space mission."
+  ],
+  "ru": "В свободное время я люблю читать о космических миссиях.",
+  "focus": "I like to read about space missions",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-009",
+  "text": "I'm looking for a position where I can grow as an engineer.",
+  "options": [
+   "I'm looking for a position where I can grow as an engineer.",
+   "I was looking for a position where I can grow as an engineer.",
+   "I'm looking for a position where I could grow as an engineer."
+  ],
+  "ru": "Я ищу позицию, где смогу расти как инженер.",
+  "focus": "I'm looking for a position where I can",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-010",
+  "text": "That's a good question, let me think.",
+  "options": [
+   "That's a good question, let me think.",
+   "That was a good question, let me think.",
+   "That's a good question, let's think."
+  ],
+  "ru": "Хороший вопрос, дайте подумать.",
+  "focus": "That's a good question, let me think",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-011",
+  "text": "Let me think about that for a second.",
+  "options": [
+   "Let me think about that for a second.",
+   "Let me think about it for a second.",
+   "Let me think about that for a sec."
+  ],
+  "ru": "Дайте секунду подумать.",
+  "focus": "think about that for a second",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-012",
+  "text": "How can I put it... it's more of a process than a tool.",
+  "options": [
+   "How can I put it... it's more of a process than a tool.",
+   "How can I put it... it's more of a process than the tool.",
+   "How can I put it... it's more a process than a tool."
+  ],
+  "ru": "Как бы это сказать… это скорее процесс, чем инструмент.",
+  "focus": "more of a process than a tool",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-013",
+  "text": "Well, it depends on the requirements.",
+  "options": [
+   "Well, it depends on the requirements.",
+   "Well, it depended on the requirements.",
+   "Well, it depends on the requirement."
+  ],
+  "ru": "Ну, это зависит от требований.",
+  "focus": "it depends on the requirements",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-014",
+  "text": "Off the top of my head, I'd say about two weeks.",
+  "options": [
+   "Off the top of my head, I'd say about two weeks.",
+   "Off the top of my head, I'd say about ten weeks.",
+   "Off the top of my head, I'd say about three weeks."
+  ],
+  "ru": "Навскидку — около двух недель.",
+  "focus": "about two weeks",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-015",
+  "text": "Give me a moment to gather my thoughts.",
+  "options": [
+   "Give me a moment to gather my thoughts.",
+   "Give me a minute to gather my thoughts.",
+   "Give me a moment to gather our thoughts."
+  ],
+  "ru": "Дайте мне собраться с мыслями.",
+  "focus": "a moment to gather my thoughts",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-016",
+  "text": "Let me put it another way.",
+  "options": [
+   "Let me put it another way.",
+   "Let me put it the other way.",
+   "Let me put it in another way."
+  ],
+  "ru": "Скажу по-другому.",
+  "focus": "put it another way",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-017",
+  "text": "If I understand the question correctly, you're asking about the timeline.",
+  "options": [
+   "If I understand the question correctly, you're asking about the timeline.",
+   "If I understood the question correctly, you're asking about the timeline.",
+   "If I understand the question correctly, you're asking about the timelines."
+  ],
+  "ru": "Если я правильно понял вопрос, вы спрашиваете о сроках.",
+  "focus": "If I understand the question correctly",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-018",
+  "text": "The short answer is yes, but there's a catch.",
+  "options": [
+   "The short answer is yes, but there's a catch.",
+   "The short answer is no, but there's a catch.",
+   "The short answer is yes, but there was a catch."
+  ],
+  "ru": "Если коротко — да, но есть нюанс.",
+  "focus": "yes, but there's a catch",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-019",
+  "text": "I haven't thought about it that way before.",
+  "options": [
+   "I haven't thought about it that way before.",
+   "I hadn't thought about it that way before.",
+   "I haven't thought about it this way before."
+  ],
+  "ru": "Я раньше не смотрел на это с такой стороны.",
+  "focus": "I haven't thought about it that way",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-020",
+  "text": "Could you say that again, please?",
+  "options": [
+   "Could you say that again, please?",
+   "Would you say that again, please?",
+   "Could you say it again, please?"
+  ],
+  "ru": "Можете повторить, пожалуйста?",
+  "focus": "Could you say that",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-021",
+  "text": "Sorry, I didn't catch that.",
+  "options": [
+   "Sorry, I didn't catch that.",
+   "Sorry, I didn't catch it.",
+   "Sorry, I can't catch that."
+  ],
+  "ru": "Извините, я не расслышал.",
+  "focus": "I didn't catch that",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-022",
+  "text": "Could you speak a bit more slowly?",
+  "options": [
+   "Could you speak a bit more slowly?",
+   "Can you speak a bit more slowly?",
+   "Could you speak a bit slower?"
+  ],
+  "ru": "Можете говорить чуть медленнее?",
+  "focus": "Could you speak a bit more slowly",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-023",
+  "text": "Do you mean the first version or the second one?",
+  "options": [
+   "Do you mean the first version or the second one?",
+   "Did you mean the first version or the second one?",
+   "Do you mean the first versions or the second one?"
+  ],
+  "ru": "Вы имеете в виду первую версию или вторую?",
+  "focus": "Do you mean the first version",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-024",
+  "text": "Just to make sure I understand, you need the report by Friday?",
+  "options": [
+   "Just to make sure I understand, you need the report by Friday?",
+   "Just to make sure I understand, you needed the report by Friday?",
+   "Just to make sure I understand, you need the reports by Friday?"
+  ],
+  "ru": "Чтобы убедиться, что я правильно понял: отчёт нужен к пятнице?",
+  "focus": "you need the report by Friday",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-025",
+  "text": "Could you walk me through it?",
+  "options": [
+   "Could you walk me through it?",
+   "Could you walk me through them?",
+   "Would you walk me through it?"
+  ],
+  "ru": "Можете объяснить по шагам?",
+  "focus": "Could you walk me through it",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-026",
+  "text": "What exactly do you mean by critical?",
+  "options": [
+   "What exactly do you mean by critical?",
+   "What exactly did you mean by critical?",
+   "What exactly do they mean by critical?"
+  ],
+  "ru": "Что именно вы имеете в виду под «критичным»?",
+  "focus": "do you mean by critical",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-027",
+  "text": "Could you give me an example?",
+  "options": [
+   "Could you give me an example?",
+   "Could you give me some examples?",
+   "Could you give them an example?"
+  ],
+  "ru": "Можете привести пример?",
+  "focus": "give me an example",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-028",
+  "text": "So, if I understand correctly, the test is on Thursday.",
+  "options": [
+   "So, if I understand correctly, the test is on Thursday.",
+   "So, if I understand correctly, the test is on Tuesday.",
+   "So, if I understand correctly, the test was on Thursday."
+  ],
+  "ru": "То есть, если я правильно понял, испытание в четверг.",
+  "focus": "the test is on Thursday",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-029",
+  "text": "Could you spell that, please?",
+  "options": [
+   "Could you spell that, please?",
+   "Could you spell it, please?",
+   "Can you spell that, please?"
+  ],
+  "ru": "Можете продиктовать по буквам?",
+  "focus": "Could you spell that",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-030",
+  "text": "The goal of the project was to reduce the weight of the bracket.",
+  "options": [
+   "The goal of the project was to reduce the weight of the bracket.",
+   "The goal of the project is to reduce the weight of the bracket.",
+   "The goal of the project was to reduce the weight of the brackets."
+  ],
+  "ru": "Цель проекта — снизить массу кронштейна.",
+  "focus": "was to reduce the weight of the bracket",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-031",
+  "text": "I was responsible for the stress analysis.",
+  "options": [
+   "I was responsible for the stress analysis.",
+   "I'm responsible for the stress analysis.",
+   "I was responsible for a stress analysis."
+  ],
+  "ru": "Я отвечал за расчёт на прочность.",
+  "focus": "I was responsible for the",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-032",
+  "text": "We had a tight deadline, so we split the work into two teams.",
+  "options": [
+   "We had a tight deadline, so we split the work into two teams.",
+   "We have a tight deadline, so we split the work into two teams.",
+   "We had a tight deadline, so we split the work into three teams."
+  ],
+  "ru": "Сроки были жёсткие, поэтому мы разделились на две команды.",
+  "focus": "We had a tight deadline",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-033",
+  "text": "The main challenge was the vibration at launch.",
+  "options": [
+   "The main challenge was the vibration at launch.",
+   "The main challenge was the vibration at lunch.",
+   "The main challenge is the vibration at launch."
+  ],
+  "ru": "Главной трудностью была вибрация при старте.",
+  "focus": "was the vibration at launch",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-034",
+  "text": "We solved it by changing the material.",
+  "options": [
+   "We solved it by changing the material.",
+   "We solved it by changing the materials.",
+   "We solved them by changing the material."
+  ],
+  "ru": "Мы решили это, поменяв материал.",
+  "focus": "solved it by changing the material",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-035",
+  "text": "As a result, the mass dropped by fifteen percent.",
+  "options": [
+   "As a result, the mass dropped by fifteen percent.",
+   "As a result, the mass dropped by fifty percent.",
+   "As a result, the mass dropped by sixteen percent."
+  ],
+  "ru": "В результате масса снизилась на пятнадцать процентов.",
+  "focus": "fifteen percent",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-036",
+  "text": "I worked closely with the test engineers.",
+  "options": [
+   "I worked closely with the test engineers.",
+   "I work closely with the test engineers.",
+   "I worked closely with the test engineer."
+  ],
+  "ru": "Я тесно работал с испытателями.",
+  "focus": "worked closely with the test engineers",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-037",
+  "text": "My role was to prepare the test plan.",
+  "options": [
+   "My role was to prepare the test plan.",
+   "My role is to prepare the test plan.",
+   "My role was to prepare the test plans."
+  ],
+  "ru": "Моя задача была подготовить программу испытаний.",
+  "focus": "was to prepare the test plan",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-038",
+  "text": "In the end, we managed to meet the deadline.",
+  "options": [
+   "In the end, we managed to meet the deadline.",
+   "In the end, we managed to meet the deadlines.",
+   "In the end, we didn't manage to meet the deadline."
+  ],
+  "ru": "В итоге нам удалось уложиться в срок.",
+  "focus": "we managed to meet the deadline",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-039",
+  "text": "Looking back, I would start testing earlier.",
+  "options": [
+   "Looking back, I would start testing earlier.",
+   "Looking back, I would start testing later.",
+   "Looking back, I could start testing earlier."
+  ],
+  "ru": "Сейчас я бы начал испытания раньше.",
+  "focus": "I would start testing earlier",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-040",
+  "text": "In simple terms, it's a very stiff spring.",
+  "options": [
+   "In simple terms, it's a very stiff spring.",
+   "In simple terms, it's a very stiff string.",
+   "In simple terms, it was a very stiff spring."
+  ],
+  "ru": "Проще говоря, это очень жёсткая пружина.",
+  "focus": "it's a very stiff spring",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-041",
+  "text": "Think of it as a thermos for electronics.",
+  "options": [
+   "Think of it as a thermos for electronics.",
+   "Think of it as a thermos for the electronics.",
+   "Think of them as a thermos for electronics."
+  ],
+  "ru": "Представь это как термос для электроники.",
+  "focus": "Think of it as a thermos for electronics",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-042",
+  "text": "Basically, it's a way to find weak spots before we build anything.",
+  "options": [
+   "Basically, it's a way to find weak spots before we build anything.",
+   "Basically, it's a way to find weak spots after we build anything.",
+   "Basically, it's a way to find weak spots before we built anything."
+  ],
+  "ru": "По сути, это способ найти слабые места до того, как что-то построено.",
+  "focus": "before we build anything",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-043",
+  "text": "The idea is pretty simple: we split the part into small pieces.",
+  "options": [
+   "The idea is pretty simple: we split the part into small pieces.",
+   "The idea is pretty simple: we split the part into smaller pieces.",
+   "The idea is pretty simple: we split the parts into small pieces."
+  ],
+  "ru": "Идея простая: мы делим деталь на маленькие кусочки.",
+  "focus": "split the part into small pieces",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-044",
+  "text": "Let me give you an example.",
+  "options": [
+   "Let me give you an example.",
+   "Let me give you some examples.",
+   "Let me give them an example."
+  ],
+  "ru": "Приведу пример.",
+  "focus": "give you an example",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-045",
+  "text": "Imagine you have a long beam fixed at one end.",
+  "options": [
+   "Imagine you have a long beam fixed at one end.",
+   "Imagine you have a long beam fixed at both ends.",
+   "Imagine you have a long beam fixed at the end."
+  ],
+  "ru": "Представь, что у тебя есть длинная балка, закреплённая с одного конца.",
+  "focus": "fixed at one end",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-046",
+  "text": "It's similar to a spring, but it works both ways.",
+  "options": [
+   "It's similar to a spring, but it works both ways.",
+   "It's similar to a string, but it works both ways.",
+   "It was similar to a spring, but it works both ways."
+  ],
+  "ru": "Это похоже на пружину, но работает в обе стороны.",
+  "focus": "It's similar to a spring",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-047",
+  "text": "The key point is that the part must not deform.",
+  "options": [
+   "The key point is that the part must not deform.",
+   "The key point is that the parts must not deform.",
+   "The key point is that the part might not deform."
+  ],
+  "ru": "Главное, что деталь не должна деформироваться.",
+  "focus": "the part must not deform",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-048",
+  "text": "In other words, we're checking the strength.",
+  "options": [
+   "In other words, we're checking the strength.",
+   "In other words, we were checking the strength.",
+   "In other words, we're checking the length."
+  ],
+  "ru": "Другими словами, мы проверяем прочность.",
+  "focus": "we're checking the strength",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-049",
+  "text": "Does that make sense?",
+  "options": [
+   "Does that make sense?",
+   "Did that make sense?",
+   "Does it make sense?"
+  ],
+  "ru": "Понятно объясняю?",
+  "focus": "Does that make sense",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-050",
+  "text": "I see your point, but we're short on time.",
+  "options": [
+   "I see your point, but we're short on time.",
+   "I see your point, but we were short on time.",
+   "I see your point, but we're short of time."
+  ],
+  "ru": "Понимаю, но у нас мало времени.",
+  "focus": "we're short on time",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-051",
+  "text": "I'm not sure I agree with that.",
+  "options": [
+   "I'm not sure I agree with that.",
+   "I'm not sure I agreed with that.",
+   "I'm not sure they agree with that."
+  ],
+  "ru": "Не уверен, что с этим согласен.",
+  "focus": "I agree with that",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-052",
+  "text": "That's true, but have we considered the cost?",
+  "options": [
+   "That's true, but have we considered the cost?",
+   "That's true, but have we considered the costs?",
+   "That's true, but had we considered the cost?"
+  ],
+  "ru": "Это так, но мы учли стоимость?",
+  "focus": "have we considered the cost",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-053",
+  "text": "I'd look at it a bit differently.",
+  "options": [
+   "I'd look at it a bit differently.",
+   "I'll look at it a bit differently.",
+   "I'd look at them a bit differently."
+  ],
+  "ru": "Я бы посмотрел на это немного иначе.",
+  "focus": "I'd look at it",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-054",
+  "text": "I don't know, but I'll find out.",
+  "options": [
+   "I don't know, but I'll find out.",
+   "I didn't know, but I'll find out.",
+   "I don't know, but I'd find out."
+  ],
+  "ru": "Не знаю, но выясню.",
+  "focus": "I don't know, but I'll find out",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-055",
+  "text": "I'm not sure off the top of my head. Can I get back to you?",
+  "options": [
+   "I'm not sure off the top of my head. Can I get back to you?",
+   "I'm not sure off the top of my head. Can I get back to them?",
+   "I'm not sure off the top of my head. Could I get back to you?"
+  ],
+  "ru": "Навскидку не скажу. Можно я отвечу позже?",
+  "focus": "Can I get back to you",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-056",
+  "text": "That's outside my area, to be honest.",
+  "options": [
+   "That's outside my area, to be honest.",
+   "That was outside my area, to be honest.",
+   "That's outside our area, to be honest."
+  ],
+  "ru": "Честно говоря, это не моя область.",
+  "focus": "That's outside my area",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-057",
+  "text": "I might be wrong, but I think it's the sensor.",
+  "options": [
+   "I might be wrong, but I think it's the sensor.",
+   "I might be wrong, but I think it's the sensors.",
+   "I might be wrong, but I think it was the sensor."
+  ],
+  "ru": "Могу ошибаться, но, кажется, дело в датчике.",
+  "focus": "I think it's the sensor",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-058",
+  "text": "With respect, I think we need more data first.",
+  "options": [
+   "With respect, I think we need more data first.",
+   "With respect, I think we needed more data first.",
+   "With respect, I think we need more data fast."
+  ],
+  "ru": "При всём уважении, думаю, сначала нужно больше данных.",
+  "focus": "we need more data first",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-059",
+  "text": "What does a typical day look like in this role?",
+  "options": [
+   "What does a typical day look like in this role?",
+   "What does a typical day look like in your role?",
+   "What does a typical day look like in this room?"
+  ],
+  "ru": "Как выглядит обычный день на этой позиции?",
+  "focus": "in this role",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-060",
+  "text": "What would you expect from me in the first three months?",
+  "options": [
+   "What would you expect from me in the first three months?",
+   "What would you expect from me in the first three weeks?",
+   "What do you expect from me in the first three months?"
+  ],
+  "ru": "Чего вы ждёте от меня в первые три месяца?",
+  "focus": "the first three months",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-061",
+  "text": "How is the team structured?",
+  "options": [
+   "How is the team structured?",
+   "How was the team structured?",
+   "How are the teams structured?"
+  ],
+  "ru": "Как устроена команда?",
+  "focus": "How is the team",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-062",
+  "text": "What are the biggest challenges the team is facing right now?",
+  "options": [
+   "What are the biggest challenges the team is facing right now?",
+   "What's the biggest challenge the team is facing right now?",
+   "What are the biggest challenges the teams are facing right now?"
+  ],
+  "ru": "С какими главными трудностями команда сталкивается сейчас?",
+  "focus": "What are the biggest challenges the team is",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-063",
+  "text": "How do you measure success in this position?",
+  "options": [
+   "How do you measure success in this position?",
+   "How did you measure success in this position?",
+   "How do they measure success in this position?"
+  ],
+  "ru": "Как вы оцениваете успех на этой позиции?",
+  "focus": "How do you measure",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-064",
+  "text": "What opportunities are there for learning and growth?",
+  "options": [
+   "What opportunities are there for learning and growth?",
+   "What opportunities were there for learning and growth?",
+   "What opportunity is there for learning and growth?"
+  ],
+  "ru": "Какие есть возможности учиться и расти?",
+  "focus": "What opportunities are there",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-065",
+  "text": "What software does the team use?",
+  "options": [
+   "What software does the team use?",
+   "What software do the teams use?",
+   "What software did the team use?"
+  ],
+  "ru": "Какими программами пользуется команда?",
+  "focus": "does the team use",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-066",
+  "text": "What are the next steps in the process?",
+  "options": [
+   "What are the next steps in the process?",
+   "What are the next steps of the process?",
+   "What were the next steps in the process?"
+  ],
+  "ru": "Какие дальше шаги?",
+  "focus": "What are the next steps in",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-067",
+  "text": "I'm a fourth-year student studying rocket engineering.",
+  "options": [
+   "I'm a fourth-year student studying rocket engineering.",
+   "I was a fourth-year student studying rocket engineering.",
+   "I'm the fourth-year student studying rocket engineering."
+  ],
+  "ru": "Я студент четвёртого курса, учусь на ракетостроении.",
+  "focus": "I'm a fourth-year student",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-068",
+  "text": "I'm currently working on my thesis.",
+  "options": [
+   "I'm currently working on my thesis.",
+   "I'm currently working on the thesis.",
+   "I'm currently working on his thesis."
+  ],
+  "ru": "Сейчас я работаю над дипломом.",
+  "focus": "working on my thesis",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-069",
+  "text": "I'm particularly interested in composites.",
+  "options": [
+   "I'm particularly interested in composites.",
+   "I was particularly interested in composites.",
+   "I'm particularly interested in components."
+  ],
+  "ru": "Меня особенно интересуют композиты.",
+  "focus": "I'm particularly interested in composites",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-070",
+  "text": "I have experience with SolidWorks.",
+  "options": [
+   "I have experience with SolidWorks.",
+   "I had experience with SolidWorks.",
+   "I have some experience with SolidWorks."
+  ],
+  "ru": "У меня есть опыт работы в SolidWorks.",
+  "focus": "I have experience with",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-071",
+  "text": "I'm looking for a summer internship.",
+  "options": [
+   "I'm looking for a summer internship.",
+   "I was looking for a summer internship.",
+   "I'm looking for the summer internship."
+  ],
+  "ru": "Я ищу стажировку на лето.",
+  "focus": "I'm looking for a summer",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-072",
+  "text": "What I enjoy most is hands-on work.",
+  "options": [
+   "What I enjoy most is hands-on work.",
+   "What I enjoyed most was hands-on work.",
+   "What I enjoy more is hands-on work."
+  ],
+  "ru": "Больше всего мне нравится работать руками.",
+  "focus": "What I enjoy most is",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-073",
+  "text": "It depends on the load.",
+  "options": [
+   "It depends on the load.",
+   "It depended on the load.",
+   "It depends on the loads."
+  ],
+  "ru": "Это зависит от нагрузки.",
+  "focus": "It depends on the load",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-074",
+  "text": "Do you mean the first version?",
+  "options": [
+   "Do you mean the first version?",
+   "Did you mean the first version?",
+   "Do you mean the first versions?"
+  ],
+  "ru": "Вы имеете в виду первую версию?",
+  "focus": "Do you mean the first version",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-075",
+  "text": "So you need the report by Friday?",
+  "options": [
+   "So you need the report by Friday?",
+   "So you needed the report by Friday?",
+   "So you need the report on Friday?"
+  ],
+  "ru": "То есть отчёт нужен к пятнице?",
+  "focus": "need the report by Friday",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-076",
+  "text": "I was responsible for the thermal analysis.",
+  "options": [
+   "I was responsible for the thermal analysis.",
+   "I'm responsible for the thermal analysis.",
+   "I was responsible for a thermal analysis."
+  ],
+  "ru": "Я отвечал за тепловой расчёт.",
+  "focus": "I was responsible for the",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-077",
+  "text": "The main challenge was the weight.",
+  "options": [
+   "The main challenge was the weight.",
+   "The main challenge is the weight.",
+   "The main challenge was its weight."
+  ],
+  "ru": "Главной трудностью был вес.",
+  "focus": "was the weight",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-078",
+  "text": "In the end, we met the deadline.",
+  "options": [
+   "In the end, we met the deadline.",
+   "In the end, we missed the deadline.",
+   "In the end, we met the deadlines."
+  ],
+  "ru": "В итоге мы уложились в срок.",
+  "focus": "we met the deadline",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-079",
+  "text": "Imagine you have a long beam.",
+  "options": [
+   "Imagine you have a long beam.",
+   "Imagine you had a long beam.",
+   "Imagine we have a long beam."
+  ],
+  "ru": "Представь, что у тебя есть длинная балка.",
+  "focus": "Imagine you have a long beam",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-080",
+  "text": "I'm not sure I agree.",
+  "options": [
+   "I'm not sure I agree.",
+   "I'm not sure I agreed.",
+   "I'm not sure they agree."
+  ],
+  "ru": "Не уверен, что согласен.",
+  "focus": "I'm not sure I agree",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-081",
+  "text": "To be honest, that's outside my area.",
+  "options": [
+   "To be honest, that's outside my area.",
+   "To be honest, that was outside my area.",
+   "To be honest, that's outside our area."
+  ],
+  "ru": "Честно говоря, это не моя область.",
+  "focus": "that's outside my area",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-082",
+  "text": "What are the next steps?",
+  "options": [
+   "What are the next steps?",
+   "What were the next steps?",
+   "What's the next step?"
+  ],
+  "ru": "Какие дальше шаги?",
+  "focus": "What are the next steps",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-083",
+  "text": "I'm particularly interested in propulsion.",
+  "options": [
+   "I'm particularly interested in propulsion.",
+   "I was particularly interested in propulsion.",
+   "I'm particularly interested in production."
+  ],
+  "ru": "Меня особенно интересуют двигательные установки.",
+  "focus": "interested in propulsion",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-084",
+  "text": "I'm particularly interested in materials.",
+  "options": [
+   "I'm particularly interested in materials.",
+   "I was particularly interested in materials.",
+   "I'm particularly interested in material."
+  ],
+  "ru": "Меня особенно интересуют материалы.",
+  "focus": "I'm particularly interested in materials",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-085",
+  "text": "I'm particularly interested in control systems.",
+  "options": [
+   "I'm particularly interested in control systems.",
+   "I was particularly interested in control systems.",
+   "I'm particularly interested in the control systems."
+  ],
+  "ru": "Меня особенно интересуют системы управления.",
+  "focus": "interested in control systems",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-086",
+  "text": "My background is in mechanical engineering.",
+  "options": [
+   "My background is in mechanical engineering.",
+   "My background was in mechanical engineering.",
+   "My background is mechanical engineering."
+  ],
+  "ru": "По образованию я инженер-механик.",
+  "focus": "My background is in mechanical",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-087",
+  "text": "My background is in materials science.",
+  "options": [
+   "My background is in materials science.",
+   "My background was in materials science.",
+   "My background is in material science."
+  ],
+  "ru": "По образованию я материаловед.",
+  "focus": "is in materials science",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-088",
+  "text": "My background is in applied mathematics.",
+  "options": [
+   "My background is in applied mathematics.",
+   "My background was in applied mathematics.",
+   "My background is in applied mechanics."
+  ],
+  "ru": "По образованию я специалист по прикладной математике.",
+  "focus": "is in applied mathematics",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-089",
+  "text": "Off the top of my head, I'd say about a hundred kilograms.",
+  "options": [
+   "Off the top of my head, I'd say about a hundred kilograms.",
+   "Off the top of my head, I'd say about two hundred kilograms.",
+   "Off the top of my head, I'd say about a hundred kilometres."
+  ],
+  "ru": "Навскидку — около ста килограммов.",
+  "focus": "about a hundred kilograms",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-090",
+  "text": "Off the top of my head, I'd say about five percent.",
+  "options": [
+   "Off the top of my head, I'd say about five percent.",
+   "Off the top of my head, I'd say about fifty percent.",
+   "Off the top of my head, I'd say about nine percent."
+  ],
+  "ru": "Навскидку — примерно пять процентов.",
+  "focus": "about five percent",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-091",
+  "text": "Off the top of my head, I'd say three or four people.",
+  "options": [
+   "Off the top of my head, I'd say three or four people.",
+   "Off the top of my head, I'd say two or three people.",
+   "Off the top of my head, I'd say three or four weeks."
+  ],
+  "ru": "Навскидку — три-четыре человека.",
+  "focus": "three or four people",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-092",
+  "text": "Could you send me the drawings by Friday?",
+  "options": [
+   "Could you send me the drawings by Friday?",
+   "Could you send me the drawing by Friday?",
+   "Could you send them the drawings by Friday?"
+  ],
+  "ru": "Можешь прислать чертежи до пятницы?",
+  "focus": "send me the drawings",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-093",
+  "text": "Could you send me the report by Wednesday?",
+  "options": [
+   "Could you send me the report by Wednesday?",
+   "Could you send me the reports by Wednesday?",
+   "Could you send me the report on Wednesday?"
+  ],
+  "ru": "Можешь прислать отчёт до среды?",
+  "focus": "the report by Wednesday",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-094",
+  "text": "Could you send me the test data by tomorrow?",
+  "options": [
+   "Could you send me the test data by tomorrow?",
+   "Could you send me the test data by today?",
+   "Could you send him the test data by tomorrow?"
+  ],
+  "ru": "Можешь прислать данные испытаний до завтра?",
+  "focus": "send me the test data by tomorrow",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-095",
+  "text": "Could you send me the updated schedule by the end of the week?",
+  "options": [
+   "Could you send me the updated schedule by the end of the week?",
+   "Could you send me the updated schedule by the end of the day?",
+   "Could you send me the updated schedules by the end of the week?"
+  ],
+  "ru": "Можешь прислать обновлённый график до конца недели?",
+  "focus": "updated schedule by the end of the week",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-096",
+  "text": "Do you mean the old drawing or the new one?",
+  "options": [
+   "Do you mean the old drawing or the new one?",
+   "Do you mean the whole drawing or the new one?",
+   "Do you mean the old drawings or the new ones?"
+  ],
+  "ru": "Ты имеешь в виду старый чертёж или новый?",
+  "focus": "the old drawing",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-097",
+  "text": "Do you mean this sensor or that one?",
+  "options": [
+   "Do you mean this sensor or that one?",
+   "Do you mean these sensors or that one?",
+   "Did you mean this sensor or that one?"
+  ],
+  "ru": "Ты имеешь в виду этот датчик или тот?",
+  "focus": "Do you mean this sensor",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-098",
+  "text": "Do you mean Monday or Tuesday?",
+  "options": [
+   "Do you mean Monday or Tuesday?",
+   "Do you mean Monday or Thursday?",
+   "Do you mean Sunday or Tuesday?"
+  ],
+  "ru": "Ты имеешь в виду понедельник или вторник?",
+  "focus": "Monday or Tuesday",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-099",
+  "text": "I've been working on composite testing for two months.",
+  "options": [
+   "I've been working on composite testing for two months.",
+   "I've been working on composite testing for ten months.",
+   "I've been working on composite testing for two weeks."
+  ],
+  "ru": "Я уже два месяца занимаюсь испытаниями композитов.",
+  "focus": "for two months",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-100",
+  "text": "I've been working on the CAD model for three weeks.",
+  "options": [
+   "I've been working on the CAD model for three weeks.",
+   "I've been working on the CAD model for two weeks.",
+   "I've been working on the CAD models for three weeks."
+  ],
+  "ru": "Я уже три недели работаю над CAD-моделью.",
+  "focus": "the CAD model for three weeks",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-101",
+  "text": "I've been working on the thermal analysis for six months.",
+  "options": [
+   "I've been working on the thermal analysis for six months.",
+   "I've been working on the thermal analysis for six weeks.",
+   "I worked on the thermal analysis for six months."
+  ],
+  "ru": "Я уже полгода занимаюсь тепловым расчётом.",
+  "focus": "for six months",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-102",
+  "text": "I've been working on the test rig for a year.",
+  "options": [
+   "I've been working on the test rig for a year.",
+   "I've been working on the test rigs for a year.",
+   "I've been working on the test rig for years."
+  ],
+  "ru": "Я уже год работаю над испытательным стендом.",
+  "focus": "the test rig for a year",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-103",
+  "text": "I'm responsible for the stress analysis.",
+  "options": [
+   "I'm responsible for the stress analysis.",
+   "He's responsible for the stress analysis.",
+   "I'm responsible for the test analysis."
+  ],
+  "ru": "Я отвечаю за расчёт на прочность.",
+  "focus": "I'm responsible for the stress",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-104",
+  "text": "I'm responsible for procurement.",
+  "options": [
+   "I'm responsible for procurement.",
+   "I was responsible for procurement.",
+   "I'm not responsible for procurement."
+  ],
+  "ru": "Я отвечаю за закупки.",
+  "focus": "I'm responsible for",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-105",
+  "text": "I'm responsible for the documentation.",
+  "options": [
+   "I'm responsible for the documentation.",
+   "I was responsible for the documentation.",
+   "They're responsible for the documentation."
+  ],
+  "ru": "Я отвечаю за документацию.",
+  "focus": "I'm responsible",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-106",
+  "text": "The main challenge was the deadline.",
+  "options": [
+   "The main challenge was the deadline.",
+   "The main challenge was the deadlines.",
+   "The main challenge is the deadline."
+  ],
+  "ru": "Главной трудностью были сроки.",
+  "focus": "was the deadline",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-107",
+  "text": "The main challenge was vibration.",
+  "options": [
+   "The main challenge was vibration.",
+   "The main challenge was the vibration.",
+   "The main challenge is vibration."
+  ],
+  "ru": "Главной трудностью была вибрация.",
+  "focus": "was vibration",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-108",
+  "text": "The main challenge was the budget.",
+  "options": [
+   "The main challenge was the budget.",
+   "The main challenge was a budget.",
+   "The main challenge is the budget."
+  ],
+  "ru": "Главной трудностью был бюджет.",
+  "focus": "was the budget",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-109",
+  "text": "Think of it as a very stiff spring.",
+  "options": [
+   "Think of it as a very stiff spring.",
+   "Think of it as a very stiff string.",
+   "Think of them as very stiff springs."
+  ],
+  "ru": "Представь это как очень жёсткую пружину.",
+  "focus": "a very stiff spring",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-110",
+  "text": "Think of it as a very thin membrane.",
+  "options": [
+   "Think of it as a very thin membrane.",
+   "Think of it as a very thick membrane.",
+   "Think of them as very thin membranes."
+  ],
+  "ru": "Представь это как очень тонкую мембрану.",
+  "focus": "a very thin membrane",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-111",
+  "text": "Think of it as a big thermos.",
+  "options": [
+   "Think of it as a big thermos.",
+   "Think of it as the big thermos.",
+   "Think of them as a big thermos."
+  ],
+  "ru": "Представь это как большой термос.",
+  "focus": "Think of it as a big",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-112",
+  "text": "Think of it as a lever.",
+  "options": [
+   "Think of it as a lever.",
+   "Think of it as a level.",
+   "Think of them as a lever."
+  ],
+  "ru": "Представь это как рычаг.",
+  "focus": "it as a lever",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-113",
+  "text": "I see your point, but we don't have the data.",
+  "options": [
+   "I see your point, but we don't have the data.",
+   "I see your point, but we didn't have the data.",
+   "I see your point, but they don't have the data."
+  ],
+  "ru": "Понимаю, но у нас нет данных.",
+  "focus": "we don't have the data",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-114",
+  "text": "I see your point, but it's more expensive.",
+  "options": [
+   "I see your point, but it's more expensive.",
+   "I see your point, but it's much more expensive.",
+   "I see your point, but it was more expensive."
+  ],
+  "ru": "Понимаю, но это дороже.",
+  "focus": "it's more expensive",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-115",
+  "text": "I see your point, but it's risky.",
+  "options": [
+   "I see your point, but it's risky.",
+   "I see your point, but it was risky.",
+   "I see your point, but it's a risk."
+  ],
+  "ru": "Понимаю, но это рискованно.",
+  "focus": "but it's risky",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-116",
+  "text": "I don't know, but I'll find out by tomorrow.",
+  "options": [
+   "I don't know, but I'll find out by tomorrow.",
+   "I don't know, but I'd find out by tomorrow.",
+   "I didn't know, but I'll find out by tomorrow."
+  ],
+  "ru": "Не знаю, но выясню к завтрашнему дню.",
+  "focus": "I'll find out by tomorrow",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-117",
+  "text": "I don't know, but I'll find out by lunch.",
+  "options": [
+   "I don't know, but I'll find out by lunch.",
+   "I don't know, but I'll find out by launch.",
+   "I don't know, but I'll find out after lunch."
+  ],
+  "ru": "Не знаю, но выясню к обеду.",
+  "focus": "by lunch",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-118",
+  "text": "I don't know, but I'll find out this week.",
+  "options": [
+   "I don't know, but I'll find out this week.",
+   "I don't know, but I'll find out next week.",
+   "I don't know, but I'll find out this weekend."
+  ],
+  "ru": "Не знаю, но выясню на этой неделе.",
+  "focus": "this week",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-119",
+  "text": "I don't know, but I'll find out after the call.",
+  "options": [
+   "I don't know, but I'll find out after the call.",
+   "I don't know, but I'll find out before the call.",
+   "I don't know, but I'll find out after the calls."
+  ],
+  "ru": "Не знаю, но выясню после созвона.",
+  "focus": "after the call",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-120",
+  "text": "What does a typical day look like in your team?",
+  "options": [
+   "What does a typical day look like in your team?",
+   "What does a typical day look like in our team?",
+   "What does a typical day look like in your teams?"
+  ],
+  "ru": "Как выглядит обычный день в вашей команде?",
+  "focus": "in your team",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-121",
+  "text": "What does a typical day look like for an intern?",
+  "options": [
+   "What does a typical day look like for an intern?",
+   "What does a typical day look like for the intern?",
+   "What does a typical day look like for interns?"
+  ],
+  "ru": "Как выглядит обычный день стажёра?",
+  "focus": "for an intern",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-122",
+  "text": "What does a typical day look like at the test site?",
+  "options": [
+   "What does a typical day look like at the test site?",
+   "What does a typical day look like at the test sites?",
+   "What did a typical day look like at the test site?"
+  ],
+  "ru": "Как выглядит обычный день на испытательной площадке?",
+  "focus": "at the test site",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-123",
+  "text": "Morning, everyone. Let's keep this short. Tom, you first.",
+  "options": [
+   "Morning, everyone. Let's keep this short. Tom, you first.",
+   "Morning, everyone. Let's keep it short. Tom, you first.",
+   "Morning, everyone. Let's keep this short. Tom, you're first."
+  ],
+  "ru": "Всем доброе утро. Давайте коротко. Том, ты первый.",
+  "focus": "Let's keep this short",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-124",
+  "text": "Just one. I still don't have the updated material data from the supplier.",
+  "options": [
+   "Just one. I still don't have the updated material data from the supplier.",
+   "Just one. I still didn't have the updated material data from the supplier.",
+   "Just one. I still don't have the updated material data from the suppliers."
+  ],
+  "ru": "Только одно. У меня до сих пор нет обновлённых данных о материале от поставщика.",
+  "focus": "I still don't have",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-125",
+  "text": "I'll chase them after this call. Thanks, everyone.",
+  "options": [
+   "I'll chase them after this call. Thanks, everyone.",
+   "I'll chase him after this call. Thanks, everyone.",
+   "I'll chase them after the call. Thanks, everyone."
+  ],
+  "ru": "Я потороплю их после созвона. Всем спасибо.",
+  "focus": "chase them after this call",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-126",
+  "text": "Hi Dana, thanks for making time. I've got some good news and some not-so-good news.",
+  "options": [
+   "Hi Dana, thanks for making time. I've got some good news and some not-so-good news.",
+   "Hi Dana, thanks for making time. I've got some good news and some bad news.",
+   "Hi Dana, thanks for making time. I got some good news and some not-so-good news."
+  ],
+  "ru": "Привет, Дана, спасибо, что нашла время. У меня есть хорошие новости и не очень.",
+  "focus": "I've got some good news",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-127",
+  "text": "Let's start with the good news.",
+  "options": [
+   "Let's start with the good news.",
+   "Let's start with the bad news.",
+   "Let's start with some good news."
+  ],
+  "ru": "Давай начнём с хороших.",
+  "focus": "with the good news",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-128",
+  "text": "The carbon fiber panels passed inspection, so they'll ship on Monday.",
+  "options": [
+   "The carbon fiber panels passed inspection, so they'll ship on Monday.",
+   "The carbon fiber panels passed inspection, so they'd ship on Monday.",
+   "The carbon fiber panels passed inspection, so they'll ship on Sunday."
+  ],
+  "ru": "Панели из углепластика прошли инспекцию, так что их отгрузят в понедельник.",
+  "focus": "they'll ship on Monday",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-129",
+  "text": "Great. And the bad news?",
+  "options": [
+   "Great. And the bad news?",
+   "Great. Now the bad news?",
+   "Great. And the good news?"
+  ],
+  "ru": "Отлично. А плохие?",
+  "focus": "And the bad news",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-130",
+  "text": "I can check. If they have fifty in stock, I could send those by express.",
+  "options": [
+   "I can check. If they have fifty in stock, I could send those by express.",
+   "I can check. If they have fifteen in stock, I could send those by express.",
+   "I can check. If they have fifty in stock, I would send those by express."
+  ],
+  "ru": "Могу уточнить. Если у них на складе есть пятьдесят штук, я могла бы отправить их экспресс-доставкой.",
+  "focus": "fifty in stock, I could send",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-131",
+  "text": "That would help a lot. Please let me know by Wednesday.",
+  "options": [
+   "That would help a lot. Please let me know by Wednesday.",
+   "That will help a lot. Please let me know by Wednesday.",
+   "That would help a lot. Please let me know on Wednesday."
+  ],
+  "ru": "Это бы очень помогло. Пожалуйста, дай знать до среды.",
+  "focus": "That would help",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-132",
+  "text": "So, tell me about a project you're proud of.",
+  "options": [
+   "So, tell me about a project you're proud of.",
+   "So, tell me about a project you were proud of.",
+   "So, tell me about the project you're proud of."
+  ],
+  "ru": "Итак, расскажите о проекте, которым вы гордитесь.",
+  "focus": "a project you're proud of",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-133",
+  "text": "What was the main challenge?",
+  "options": [
+   "What was the main challenge?",
+   "What's the main challenge?",
+   "What were the main challenges?"
+  ],
+  "ru": "В чём была главная трудность?",
+  "focus": "What was the main challenge",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-134",
+  "text": "And did it work?",
+  "options": [
+   "And did it work?",
+   "And does it work?",
+   "And did they work?"
+  ],
+  "ru": "И это сработало?",
+  "focus": "did it work",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-135",
+  "text": "Nice. What would you do differently next time?",
+  "options": [
+   "Nice. What would you do differently next time?",
+   "Nice. What could you do differently next time?",
+   "Nice. What would you do differently this time?"
+  ],
+  "ru": "Отлично. Что бы вы сделали иначе в следующий раз?",
+  "focus": "What would you do differently next time",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-136",
+  "text": "Right, so here's what happened on Friday. We ran the random vibration test at full level.",
+  "options": [
+   "Right, so here's what happened on Friday. We ran the random vibration test at full level.",
+   "Right, so here's what happened on Friday. We ran the random vibration tests at full level.",
+   "Right, so here's what happened on Friday. We ran the random vibration test at half level."
+  ],
+  "ru": "Итак, вот что случилось в пятницу. Мы проводили испытание на случайную вибрацию на полном уровне.",
+  "focus": "the random vibration test at full level",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-137",
+  "text": "If it happens again, we'll need to look at the bracket design itself.",
+  "options": [
+   "If it happens again, we'll need to look at the bracket design itself.",
+   "If it happened again, we'd need to look at the bracket design itself.",
+   "If it happens again, we'll need to look at the bracket designs."
+  ],
+  "ru": "Если это повторится, придётся пересматривать саму конструкцию кронштейна.",
+  "focus": "If it happens again, we'll need",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-138",
+  "text": "Hey Priya, have you got a sec? It's about tomorrow's design review.",
+  "options": [
+   "Hey Priya, have you got a sec? It's about tomorrow's design review.",
+   "Hey Priya, have you got a sec? It's about today's design review.",
+   "Hey Priya, have you got a sec? It's about tomorrow's design reviews."
+  ],
+  "ru": "Привет, Прия, есть секунда? Это насчёт завтрашнего ревью проекта.",
+  "focus": "tomorrow's design review",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-139",
+  "text": "The client wants to move it to Thursday afternoon. Does that work for you?",
+  "options": [
+   "The client wants to move it to Thursday afternoon. Does that work for you?",
+   "The client wants to move it to Tuesday afternoon. Does that work for you?",
+   "The clients want to move it to Thursday afternoon. Does that work for you?"
+  ],
+  "ru": "Клиент хочет перенести его на четверг, на вторую половину дня. Тебе подходит?",
+  "focus": "move it to Thursday afternoon",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-140",
+  "text": "Thursday afternoon. I have the lab until three. Could we do four o'clock?",
+  "options": [
+   "Thursday afternoon. I have the lab until three. Could we do four o'clock?",
+   "Thursday afternoon. I have the lab until three. Could we do five o'clock?",
+   "Thursday afternoon. I had the lab until three. Could we do four o'clock?"
+  ],
+  "ru": "Четверг после обеда. У меня лаборатория до трёх. Можем в четыре?",
+  "focus": "until three. Could we do four",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-141",
+  "text": "Four should be fine. I'll send an updated invite.",
+  "options": [
+   "Four should be fine. I'll send an updated invite.",
+   "Four should be fine. I'll send the updated invite.",
+   "Four would be fine. I'll send an updated invite."
+  ],
+  "ru": "Четыре, думаю, подойдёт. Я разошлю обновлённое приглашение.",
+  "focus": "I'll send an updated invite",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-142",
+  "text": "Will do. Oh, and they'd like a short demo of the test rig, if possible.",
+  "options": [
+   "Will do. Oh, and they'd like a short demo of the test rig, if possible.",
+   "Will do. Oh, and he'd like a short demo of the test rig, if possible.",
+   "Will do. Oh, and they'd like a short demo of the test rigs, if possible."
+  ],
+  "ru": "Сделаю. Да, и они хотели бы, если можно, короткую демонстрацию стенда.",
+  "focus": "they'd like a short demo of the test rig",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-143",
+  "text": "No problem. I'll prepare something, ten minutes max.",
+  "options": [
+   "No problem. I'll prepare something, ten minutes max.",
+   "No problem. I'll prepare something, two minutes max.",
+   "No problem. I'd prepare something, ten minutes max."
+  ],
+  "ru": "Без проблем. Подготовлю что-нибудь, максимум на десять минут.",
+  "focus": "I'll prepare something, ten minutes",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-144",
+  "text": "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens.",
+  "options": [
+   "It can apply up to fifty kilonewtons, which is enough for most of our composite specimens.",
+   "It can apply up to fifteen kilonewtons, which is enough for most of our composite specimens.",
+   "It can apply up to fifty kilonewtons, which isn't enough for most of our composite specimens."
+  ],
+  "ru": "Он развивает усилие до пятидесяти килоньютонов — этого хватает для большинства наших композитных образцов.",
+  "focus": "up to fifty kilonewtons, which is enough",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-145",
+  "text": "The specimen sits in these wedge grips, and the load cell above it measures the force.",
+  "options": [
+   "The specimen sits in these wedge grips, and the load cell above it measures the force.",
+   "The specimen sits in these wedge grips, and the load cell below it measures the force.",
+   "The specimen sits in these wedge grips, and a load cell above it measures the force."
+  ],
+  "ru": "Образец зажимается в этих клиновых захватах, а датчик силы над ним измеряет усилие.",
+  "focus": "the load cell above it",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-146",
+  "text": "Hi, thanks for coming in. Did you find us okay?",
+  "options": [
+   "Hi, thanks for coming in. Did you find us okay?",
+   "Hi, thanks for coming in. Did you find it okay?",
+   "Hi, thanks for coming in. Do you find us okay?"
+  ],
+  "ru": "Привет, спасибо, что пришёл. Легко нашёл нас?",
+  "focus": "Did you find us okay",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-147",
+  "text": "Yes, thanks. The directions were really clear.",
+  "options": [
+   "Yes, thanks. The directions were really clear.",
+   "Yes, thanks. The direction was really clear.",
+   "Yes, thanks. The directions are really clear."
+  ],
+  "ru": "Да, спасибо. Всё было очень понятно объяснено.",
+  "focus": "The directions were",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-148",
+  "text": "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structures team.",
+  "options": [
+   "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structures team.",
+   "Great. I'm Mike, I handle recruitment, and this is Dana. She led the structures team.",
+   "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structure team."
+  ],
+  "ru": "Отлично. Я Майк, занимаюсь наймом, а это Дана — она руководит группой конструкций.",
+  "focus": "She leads the structures team",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-149",
+  "text": "Nice to meet you. So, let's start easy. Tell me a little about yourself.",
+  "options": [
+   "Nice to meet you. So, let's start easy. Tell me a little about yourself.",
+   "Nice to meet you. So, let's start early. Tell me a little about yourself.",
+   "Nice to meet you. So, let's start easy. Tell me a lot about yourself."
+  ],
+  "ru": "Приятно познакомиться. Начнём с простого: расскажи немного о себе.",
+  "focus": "let's start easy. Tell me a little",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-150",
+  "text": "Composite testing, interesting. What exactly are you testing?",
+  "options": [
+   "Composite testing, interesting. What exactly are you testing?",
+   "Composite testing, interesting. What exactly were you testing?",
+   "Composite testing, interesting. What exactly are they testing?"
+  ],
+  "ru": "Испытания композитов — интересно. Что именно вы испытываете?",
+  "focus": "What exactly are you testing",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-151",
+  "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+  "options": [
+   "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+   "Mostly tensile and bending tests of carbon fiber specimens, and I compared the results with FEA.",
+   "Mostly tensile and bending tests of carbon fiber specimens, and I compare the result with FEA."
+  ],
+  "ru": "В основном растяжение и изгиб образцов из углепластика, и я сравниваю результаты с расчётом МКЭ.",
+  "focus": "I compare the results",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-152",
+  "text": "And what was the most difficult part?",
+  "options": [
+   "And what was the most difficult part?",
+   "And what's the most difficult part?",
+   "And what were the most difficult parts?"
+  ],
+  "ru": "А что было самым сложным?",
+  "focus": "what was the most difficult part",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-153",
+  "text": "Do you have any questions for us?",
+  "options": [
+   "Do you have any questions for us?",
+   "Do you have any questions for them?",
+   "Did you have any questions for us?"
+  ],
+  "ru": "У тебя есть вопросы к нам?",
+  "focus": "Do you have any questions for us",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-154",
+  "text": "Yes, what does a typical day look like for an intern in your team?",
+  "options": [
+   "Yes, what does a typical day look like for an intern in your team?",
+   "Yes, what does a typical day look like for the intern in your team?",
+   "Yes, what does a typical day look like for an intern in our team?"
+  ],
+  "ru": "Да: как выглядит обычный день стажёра в вашей команде?",
+  "focus": "for an intern in your team",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-155",
+  "text": "Thanks for your time. We'll be in touch by the end of next week.",
+  "options": [
+   "Thanks for your time. We'll be in touch by the end of next week.",
+   "Thanks for your time. We'll be in touch by the end of this week.",
+   "Thanks for your time. We'd be in touch by the end of next week."
+  ],
+  "ru": "Спасибо за время. Мы свяжемся с тобой до конца следующей недели.",
+  "focus": "We'll be in touch by the end of next week",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-156",
+  "text": "Thank you, I really enjoyed the conversation.",
+  "options": [
+   "Thank you, I really enjoyed the conversation.",
+   "Thank you, I really enjoy the conversation.",
+   "Thank you, I really enjoyed the conversations."
+  ],
+  "ru": "Спасибо, мне очень понравился разговор.",
+  "focus": "I really enjoyed the conversation",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-157",
+  "text": "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be your mentor.",
+  "options": [
+   "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be your mentor.",
+   "Welcome aboard! Let me introduce you to the team. This is Priya, she'd be your mentor.",
+   "Welcome aboard! Let me introduce you to the team. This is Priya, she'll be our mentor."
+  ],
+  "ru": "Добро пожаловать в команду! Давай познакомлю. Это Прия, она будет твоей наставницей.",
+  "focus": "she'll be your mentor",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-158",
+  "text": "Hi, great to have you here. How are you settling in?",
+  "options": [
+   "Hi, great to have you here. How are you settling in?",
+   "Hi, great to have you there. How are you settling in?",
+   "Hi, great to have them here. How are you settling in?"
+  ],
+  "ru": "Привет, рада, что ты с нами. Как осваиваешься?",
+  "focus": "great to have you here",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-159",
+  "text": "So far so good, thanks. Everyone's been really helpful.",
+  "options": [
+   "So far so good, thanks. Everyone's been really helpful.",
+   "So far so good, thanks. Everyone was really helpful.",
+   "So far so good, thanks. Everyone's been really hopeful."
+  ],
+  "ru": "Пока всё хорошо, спасибо. Все очень помогают.",
+  "focus": "Everyone's been really helpful",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-160",
+  "text": "Sure, that sounds great.",
+  "options": [
+   "Sure, that sounds great.",
+   "Sure, that sounded great.",
+   "Sure, that sounds good."
+  ],
+  "ru": "Конечно, с удовольствием.",
+  "focus": "that sounds great",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-161",
+  "text": "Brilliant. So, where are you from originally?",
+  "options": [
+   "Brilliant. So, where are you from originally?",
+   "Brilliant. So, where are they from originally?",
+   "Brilliant. So, where is she from originally?"
+  ],
+  "ru": "Отлично. А ты откуда родом?",
+  "focus": "where are you from",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-162",
+  "text": "I'm from Russia, from Moscow. I moved here for the internship.",
+  "options": [
+   "I'm from Russia, from Moscow. I moved here for the internship.",
+   "I'm from Russia, from Moscow. I moved here for an internship.",
+   "I'm from Russia, from Moscow. I moved here after the internship."
+  ],
+  "ru": "Я из России, из Москвы. Переехал сюда ради стажировки.",
+  "focus": "I moved here for the internship",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-163",
+  "text": "Only the critical ones for now. They're marked in red. No rush, take your time.",
+  "options": [
+   "Only the critical ones for now. They're marked in red. No rush, take your time.",
+   "Only the critical one for now. They're marked in red. No rush, take your time.",
+   "Only the critical ones for now. They were marked in red. No rush, take your time."
+  ],
+  "ru": "Пока только критичные — они отмечены красным. Не торопись.",
+  "focus": "the critical ones for now. They're marked in red",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-164",
+  "text": "Okay, everyone's here. Oliver, can you give us a quick update on the vibration test?",
+  "options": [
+   "Okay, everyone's here. Oliver, can you give us a quick update on the vibration test?",
+   "Okay, everyone's here. Oliver, can you give them a quick update on the vibration test?",
+   "Okay, everyone's here. Oliver, can you give us a quick update on the vibration tests?"
+  ],
+  "ru": "Так, все на месте. Оливер, коротко — что с вибрационными испытаниями?",
+  "focus": "can you give us a quick update",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-165",
+  "text": "Did you get all that?",
+  "options": [
+   "Did you get all that?",
+   "Did they get all that?",
+   "Do you get all that?"
+  ],
+  "ru": "Всё уловил?",
+  "focus": "Did you get all that",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-166",
+  "text": "Mostly. Sorry, could you repeat the part about the first run?",
+  "options": [
+   "Mostly. Sorry, could you repeat the part about the first run?",
+   "Mostly. Sorry, could you repeat the part about the first one?",
+   "Mostly. Sorry, could you repeat the parts about the first run?"
+  ],
+  "ru": "В основном. Извините, можно повторить про первый прогон?",
+  "focus": "the part about the first run",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-167",
+  "text": "Sorry, I'll slow down. The first test this morning went well. No problems.",
+  "options": [
+   "Sorry, I'll slow down. The first test this morning went well. No problems.",
+   "Sorry, I'll slow down. The first tests this morning went well. No problems.",
+   "Sorry, I'll slow down. The first test this evening went well. No problems."
+  ],
+  "ru": "Извини, помедленнее. Первый тест утром прошёл хорошо. Проблем нет.",
+  "focus": "The first test this morning",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-168",
+  "text": "I can collect the certificates from the supplier and send them to you by Tuesday.",
+  "options": [
+   "I can collect the certificates from the supplier and send them to you by Tuesday.",
+   "I can collect the certificates from the supplier and send them to you by Thursday.",
+   "I can collect the certificates from the supplier and send it to you by Tuesday."
+  ],
+  "ru": "Я могу забрать сертификаты у поставщика и прислать до вторника.",
+  "focus": "send them to you by Tuesday",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-169",
+  "text": "That'd be brilliant, thanks.",
+  "options": [
+   "That'd be brilliant, thanks.",
+   "That'll be brilliant, thanks.",
+   "That was brilliant, thanks."
+  ],
+  "ru": "Было бы отлично, спасибо.",
+  "focus": "That'd be brilliant",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-170",
+  "text": "Great. Anything else? No? Okay, thanks, everyone. Talk tomorrow.",
+  "options": [
+   "Great. Anything else? No? Okay, thanks, everyone. Talk tomorrow.",
+   "Great. Anything new? No? Okay, thanks, everyone. Talk tomorrow.",
+   "Great. Anything else? No? Okay, thanks, everyone. Talk soon."
+  ],
+  "ru": "Отлично. Что-нибудь ещё? Нет? Всем спасибо, до завтра.",
+  "focus": "Anything else",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-171",
+  "text": "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+  "options": [
+   "Sure. All channels read close to zero, except channel four — it's drifting a bit.",
+   "Sure. All channels read close to zero, except channel five — it's drifting a bit.",
+   "Sure. All channels read close to zero, except channel four — it was drifting a bit."
+  ],
+  "ru": "Конечно. Все каналы около нуля, кроме четвёртого — он немного плывёт.",
+  "focus": "except channel four",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-172",
+  "text": "Drifting? Let me re-seat the connector. Right, try now.",
+  "options": [
+   "Drifting? Let me re-seat the connector. Right, try now.",
+   "Drifting? Let me re-seat the connectors. Right, try now.",
+   "Drifting? Let me reset the connector. Right, try now."
+  ],
+  "ru": "Плывёт? Сейчас переткну разъём. Так, попробуй теперь.",
+  "focus": "re-seat the connector",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-173",
+  "text": "That fixed it. Channel four is stable now.",
+  "options": [
+   "That fixed it. Channel four is stable now.",
+   "That fixed it. Channel four isn't stable now.",
+   "That fixed it. Channel fourteen is stable now."
+  ],
+  "ru": "Помогло. Четвёртый канал теперь стабилен.",
+  "focus": "Channel four is stable",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-174",
+  "text": "Great. We'll load in steps of two kilonewtons and hold each step for thirty seconds.",
+  "options": [
+   "Great. We'll load in steps of two kilonewtons and hold each step for thirty seconds.",
+   "Great. We'll load in steps of two kilonewtons and hold each step for thirteen seconds.",
+   "Great. We'll load in steps of ten kilonewtons and hold each step for thirty seconds."
+  ],
+  "ru": "Отлично. Нагружаем ступенями по два килоньютона, каждую держим тридцать секунд.",
+  "focus": "for thirty seconds",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-175",
+  "text": "Limit load today. Failure test is next week.",
+  "options": [
+   "Limit load today. Failure test is next week.",
+   "Limit load today. Failure test was last week.",
+   "Limit load today. Fatigue test is next week."
+  ],
+  "ru": "Сегодня — до эксплуатационной. Испытание до разрушения — на следующей неделе.",
+  "focus": "Failure test is next week",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-176",
+  "text": "So, how did it go? Anything I should worry about?",
+  "options": [
+   "So, how did it go? Anything I should worry about?",
+   "So, how did it go? Anything you should worry about?",
+   "So, how does it go? Anything I should worry about?"
+  ],
+  "ru": "Ну как прошло? Есть о чём беспокоиться?",
+  "focus": "Anything I should worry about",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-177",
+  "text": "Nice. Can you put that in a short report by Friday?",
+  "options": [
+   "Nice. Can you put that in a short report by Friday?",
+   "Nice. Could you put that in a short report by Friday?",
+   "Nice. Can you put that in the short report by Friday?"
+  ],
+  "ru": "Отлично. Сможешь оформить короткий отчёт к пятнице?",
+  "focus": "Can you put that in a short report",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-178",
+  "text": "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+  "options": [
+   "Sure. I'll include the load–strain curves and a comparison with the FEA.",
+   "Sure. I'll include the load–strain curve and a comparison with the FEA.",
+   "Sure. I'll include the load–strain curves and the comparison with the FEA."
+  ],
+  "ru": "Конечно. Добавлю графики нагрузка–деформация и сравнение с расчётом МКЭ.",
+  "focus": "the load–strain curves and a comparison",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-179",
+  "text": "Just a new date for now. We still need them.",
+  "options": [
+   "Just a new date for now. We still need them.",
+   "Just a new date for now. We still need him.",
+   "Just a new date for now. We still needed them."
+  ],
+  "ru": "Пока только новую дату. Они нам всё ещё нужны.",
+  "focus": "We still need them",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-180",
+  "text": "Thanks for calling. When do you expect to ship them?",
+  "options": [
+   "Thanks for calling. When do you expect to ship them?",
+   "Thanks for calling. When did you expect to ship them?",
+   "Thanks for calling. When do you expect to ship it?"
+  ],
+  "ru": "Спасибо, что позвонили. Когда вы рассчитываете их отправить?",
+  "focus": "When do you expect to ship them",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-181",
+  "text": "We can ship on Thursday, so you should have them by Monday.",
+  "options": [
+   "We can ship on Thursday, so you should have them by Monday.",
+   "We can ship on Tuesday, so you should have them by Monday.",
+   "We could ship on Thursday, so you should have them by Monday."
+  ],
+  "ru": "Можем отправить в четверг, так что к понедельнику они у вас будут.",
+  "focus": "We can ship on Thursday",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-182",
+  "text": "Great, Monday works. Could you send me the tracking number once they ship?",
+  "options": [
+   "Great, Monday works. Could you send me the tracking number once they ship?",
+   "Great, Monday works. Could you send me the tracking numbers once they ship?",
+   "Great, Monday works. Could you send me the tracking number once it ships?"
+  ],
+  "ru": "Отлично, понедельник подходит. Пришлёте номер отслеживания, когда отправите?",
+  "focus": "the tracking number once they ship",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-183",
+  "text": "Of course. I'll email it to you on Thursday. Thanks for your patience.",
+  "options": [
+   "Of course. I'll email it to you on Thursday. Thanks for your patience.",
+   "Of course. I'll email them to you on Thursday. Thanks for your patience.",
+   "Of course. I'll email it to you on Tuesday. Thanks for your patience."
+  ],
+  "ru": "Конечно. Пришлю письмом в четверг. Спасибо за терпение.",
+  "focus": "I'll email it to you on Thursday",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-184",
+  "text": "Over to you. Can you walk us through the results?",
+  "options": [
+   "Over to you. Can you walk us through the results?",
+   "Over to you. Can you walk us through the result?",
+   "Over to you. Can you walk them through the results?"
+  ],
+  "ru": "Передаю тебе слово. Расскажешь о результатах?",
+  "focus": "walk us through the results",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-185",
+  "text": "Sorry to interrupt. Panel three failed at a lower load than the others. Why is that?",
+  "options": [
+   "Sorry to interrupt. Panel three failed at a lower load than the others. Why is that?",
+   "Sorry to interrupt. Panel three failed at a lower load than the other. Why is that?",
+   "Sorry to interrupt. Panel three failed at a lower load than the others. Why was that?"
+  ],
+  "ru": "Простите, что перебиваю. Панель три разрушилась при меньшей нагрузке, чем остальные. Почему?",
+  "focus": "than the others. Why is that",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-186",
+  "text": "Okay, that makes sense. Can you send us the CT images?",
+  "options": [
+   "Okay, that makes sense. Can you send us the CT images?",
+   "Okay, that made sense. Can you send us the CT images?",
+   "Okay, that makes sense. Can you send us the CT image?"
+  ],
+  "ru": "Хорошо, это логично. Пришлёте нам снимки КТ?",
+  "focus": "that makes sense. Can you send us the CT images",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-187",
+  "text": "Of course. I'll send them today together with the updated report.",
+  "options": [
+   "Of course. I'll send them today together with the updated report.",
+   "Of course. I'll send it today together with the updated report.",
+   "Of course. I'll send them today together with the updated reports."
+  ],
+  "ru": "Конечно. Пришлю сегодня вместе с обновлённым отчётом.",
+  "focus": "I'll send them today",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-188",
+  "text": "Bring the long fitting, please.",
+  "options": [
+   "Bring the long fitting, please.",
+   "Bring the long fittings, please.",
+   "Bring the wrong fitting, please."
+  ],
+  "ru": "Принеси, пожалуйста, длинный фитинг.",
+  "focus": "the long fitting",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-189",
+  "text": "Could you send me the drawing, please?",
+  "options": [
+   "Could you send me the drawing, please?",
+   "Could you send me the drawings, please?",
+   "Could you send them the drawing, please?"
+  ],
+  "ru": "Не могли бы вы прислать чертёж?",
+  "focus": "send me the drawing",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-190",
+  "text": "Do you have a minute?",
+  "options": [
+   "Do you have a minute?",
+   "Did you have a minute?",
+   "Do they have a minute?"
+  ],
+  "ru": "Есть минутка?",
+  "focus": "Do you have a minute",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-191",
+  "text": "Every wire was well insulated.",
+  "options": [
+   "Every wire was well insulated.",
+   "Every wire is well insulated.",
+   "Every wire was well isolated."
+  ],
+  "ru": "Каждый провод был хорошо изолирован.",
+  "focus": "was well insulated",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-192",
+  "text": "He has half an hour.",
+  "options": [
+   "He has half an hour.",
+   "He had half an hour.",
+   "She has half an hour."
+  ],
+  "ru": "У него есть полчаса.",
+  "focus": "He has half an hour",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-193",
+  "text": "Hold the handle with both hands.",
+  "options": [
+   "Hold the handle with both hands.",
+   "Hold the handles with both hands.",
+   "Hold the handle with one hand."
+  ],
+  "ru": "Держи ручку обеими руками.",
+  "focus": "Hold the handle with both hands",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-194",
+  "text": "How high is the heat load?",
+  "options": [
+   "How high is the heat load?",
+   "How high was the heat load?",
+   "How high are the heat loads?"
+  ],
+  "ru": "Насколько велика тепловая нагрузка?",
+  "focus": "How high is the heat load",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-195",
+  "text": "I think the thread is three millimetres thick.",
+  "options": [
+   "I think the thread is three millimetres thick.",
+   "I think the thread is thirteen millimetres thick.",
+   "I think the threads are three millimetres thick."
+  ],
+  "ru": "Думаю, нить толщиной три миллиметра.",
+  "focus": "the thread is three millimetres",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-196",
+  "text": "I'm not sure that's right.",
+  "options": [
+   "I'm not sure that's right.",
+   "I'm not sure that was right.",
+   "I'm not sure it's right."
+  ],
+  "ru": "Не уверен, что это так.",
+  "focus": "I'm not sure that's right",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-197",
+  "text": "Please fill in this sheet before you leave.",
+  "options": [
+   "Please fill in this sheet before you leave.",
+   "Please fill in these sheets before you leave.",
+   "Please fill in this sheet before we leave."
+  ],
+  "ru": "Пожалуйста, заполни этот лист перед уходом.",
+  "focus": "this sheet before you leave",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-198",
+  "text": "Please save the file and close the tab.",
+  "options": [
+   "Please save the file and close the tab.",
+   "Please save the files and close the tab.",
+   "Please save the file and close the tap."
+  ],
+  "ru": "Пожалуйста, сохрани файл и закрой вкладку.",
+  "focus": "save the file and close the tab",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-199",
+  "text": "Something is wrong with the spring.",
+  "options": [
+   "Something is wrong with the spring.",
+   "Something was wrong with the spring.",
+   "Something is wrong with the string."
+  ],
+  "ru": "С пружиной что-то не так.",
+  "focus": "is wrong with the spring",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-200",
+  "text": "Sorry, could you repeat that?",
+  "options": [
+   "Sorry, could you repeat that?",
+   "Sorry, would you repeat that?",
+   "Sorry, could you repeat it?"
+  ],
+  "ru": "Извините, можно повторить?",
+  "focus": "could you repeat that",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-201",
+  "text": "That's a good point, but I see it differently.",
+  "options": [
+   "That's a good point, but I see it differently.",
+   "That's a good point, but I saw it differently.",
+   "That's a good point, but they see it differently."
+  ],
+  "ru": "Хорошее замечание, но я вижу это иначе.",
+  "focus": "but I see it differently",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-202",
+  "text": "The bad batch was sent back.",
+  "options": [
+   "The bad batch was sent back.",
+   "The bad batches were sent back.",
+   "The bad batch was sent out."
+  ],
+  "ru": "Бракованную партию отправили обратно.",
+  "focus": "The bad batch was sent back",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-203",
+  "text": "The bearing is making a strange ringing sound.",
+  "options": [
+   "The bearing is making a strange ringing sound.",
+   "The bearing was making a strange ringing sound.",
+   "The bearings are making a strange ringing sound."
+  ],
+  "ru": "Подшипник издаёт странный звенящий звук.",
+  "focus": "The bearing is making",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-204",
+  "text": "The fuel line is full of air.",
+  "options": [
+   "The fuel line is full of air.",
+   "The fuel lines are full of air.",
+   "The fuel line was full of air."
+  ],
+  "ru": "В топливной магистрали полно воздуха.",
+  "focus": "The fuel line is full of air",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-205",
+  "text": "The housing holds the heater.",
+  "options": [
+   "The housing holds the heater.",
+   "The housing held the heater.",
+   "The housing holds the heaters."
+  ],
+  "ru": "Нагреватель закреплён в корпусе.",
+  "focus": "holds the heater",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-206",
+  "text": "The load is too big for this bracket.",
+  "options": [
+   "The load is too big for this bracket.",
+   "The load is too big for these brackets.",
+   "The load was too big for this bracket."
+  ],
+  "ru": "Нагрузка слишком велика для этого кронштейна.",
+  "focus": "The load is too big for this bracket",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-207",
+  "text": "The thermal model is worth the effort.",
+  "options": [
+   "The thermal model is worth the effort.",
+   "The thermal model was worth the effort.",
+   "The thermal model isn't worth the effort."
+  ],
+  "ru": "Тепловая модель стоит затраченных усилий.",
+  "focus": "The thermal model is worth",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-208",
+  "text": "The vibration was very weak.",
+  "options": [
+   "The vibration was very weak.",
+   "The vibrations were very weak.",
+   "The vibration is very weak."
+  ],
+  "ru": "Вибрация была очень слабой.",
+  "focus": "The vibration was very weak",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-209",
+  "text": "The weld was good, but the plate was bad.",
+  "options": [
+   "The weld was good, but the plate was bad.",
+   "The weld was bad, but the plate was good.",
+   "The welds were good, but the plate was bad."
+  ],
+  "ru": "Сварной шов был хороший, а вот пластина — плохая.",
+  "focus": "The weld was good, but the plate was bad",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-210",
+  "text": "They say the other method is better than this one.",
+  "options": [
+   "They say the other method is better than this one.",
+   "They said the other method is better than this one.",
+   "They say the other method is better than that one."
+  ],
+  "ru": "Говорят, другой метод лучше этого.",
+  "focus": "They say the other method",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-211",
+  "text": "We are testing the wing today.",
+  "options": [
+   "We are testing the wing today.",
+   "We were testing the wing today.",
+   "We are testing the wings today."
+  ],
+  "ru": "Сегодня мы испытываем крыло.",
+  "focus": "We are testing the wing",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-212",
+  "text": "We had to change the grade of the bolt.",
+  "options": [
+   "We had to change the grade of the bolt.",
+   "We have to change the grade of the bolt.",
+   "We had to change the grade of the bolts."
+  ],
+  "ru": "Пришлось сменить класс прочности болта.",
+  "focus": "We had to change the grade of the bolt",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-213",
+  "text": "We need a bigger seal for this bit.",
+  "options": [
+   "We need a bigger seal for this bit.",
+   "We needed a bigger seal for this bit.",
+   "We need bigger seals for this bit."
+  ],
+  "ru": "Для этой детали нужно уплотнение побольше.",
+  "focus": "We need a bigger seal",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-214",
+  "text": "We will verify the valve on Wednesday.",
+  "options": [
+   "We will verify the valve on Wednesday.",
+   "We will verify the valves on Wednesday.",
+   "We verified the valve on Wednesday."
+  ],
+  "ru": "Мы проверим клапан в среду.",
+  "focus": "We will verify the valve",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-215",
+  "text": "Which version of the drawing do we use?",
+  "options": [
+   "Which version of the drawing do we use?",
+   "Which version of the drawing did we use?",
+   "Which versions of the drawing do we use?"
+  ],
+  "ru": "Какую версию чертежа мы используем?",
+  "focus": "Which version of the drawing do we use",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-216",
+  "text": "Would you mind checking the numbers again?",
+  "options": [
+   "Would you mind checking the numbers again?",
+   "Would you mind checking the number again?",
+   "Would you mind checking these numbers again?"
+  ],
+  "ru": "Вы не против ещё раз проверить цифры?",
+  "focus": "checking the numbers again",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-217",
+  "text": "In a tensile test, a machine pulls a specimen until it breaks.",
+  "options": [
+   "In a tensile test, a machine pulls a specimen until it breaks.",
+   "In a tensile test, a machine pulls the specimen until it breaks.",
+   "In a tensile test, a machine pulls a specimen until it bends."
+  ],
+  "ru": "При испытании на растяжение машина тянет образец, пока он не разорвётся.",
+  "focus": "pulls a specimen until it breaks",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-218",
+  "text": "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+  "options": [
+   "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+   "The engine pumps fuel and oxidizer into a chamber, where it burns.",
+   "The engine pumped fuel and oxidizer into a chamber, where they burn."
+  ],
+  "ru": "Двигатель подаёт горючее и окислитель в камеру, где они сгорают.",
+  "focus": "where they burn",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-219",
+  "text": "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+  "options": [
+   "The hot gas speeds up in the nozzle, and the fast jet creates thrust.",
+   "The hot gas speeds up in the nozzles, and the fast jet creates thrust.",
+   "The hot gas speeds up in the nozzle, and the fast jet created thrust."
+  ],
+  "ru": "Горячий газ разгоняется в сопле, и быстрая струя создаёт тягу.",
+  "focus": "speeds up in the nozzle",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-220",
+  "text": "A satellite has a payload that does the job and a bus that supports it.",
+  "options": [
+   "A satellite has a payload that does the job and a bus that supports it.",
+   "A satellite has a payload that does the job and a bus that supports them.",
+   "A satellite has a payload that did the job and a bus that supports it."
+  ],
+  "ru": "У спутника есть полезная нагрузка, которая выполняет задачу, и платформа, которая её обслуживает.",
+  "focus": "a bus that supports it",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-221",
+  "text": "A CAD model starts with a 2D sketch with dimensions and constraints.",
+  "options": [
+   "A CAD model starts with a 2D sketch with dimensions and constraints.",
+   "A CAD model starts with a 3D sketch with dimensions and constraints.",
+   "A CAD model starts with a 2D sketch with dimensions and no constraints."
+  ],
+  "ru": "CAD-модель начинается с 2D-эскиза с размерами и связями.",
+  "focus": "a 2D sketch",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-222",
+  "text": "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+  "options": [
+   "Its first frequencies must be above 15 hertz laterally and 35 hertz axially.",
+   "Its first frequencies must be above 50 hertz laterally and 35 hertz axially.",
+   "Its first frequencies must be above 15 hertz laterally and 25 hertz axially."
+  ],
+  "ru": "Его первые собственные частоты должны быть выше 15 герц в поперечном направлении и 35 герц в продольном.",
+  "focus": "above 15 hertz laterally and 35 hertz",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-223",
+  "text": "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+  "options": [
+   "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+   "Shallow scratches are fine, but any cracks must be reported and approved before flight.",
+   "Shallow scratches are fine, but any crack must be reported and approved after flight."
+  ],
+  "ru": "Неглубокие царапины допустимы, но о любой трещине нужно сообщить и получить согласование до полёта.",
+  "focus": "any crack must be reported",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-224",
+  "text": "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+  "options": [
+   "Accelerometers were placed on the bracket, on the box and on the shaker table.",
+   "Accelerometers were placed on the brackets, on the box and on the shaker table.",
+   "Accelerometers were placed on the bracket, in the box and on the shaker table."
+  ],
+  "ru": "Акселерометры установили на кронштейн, на блок и на стол вибростенда.",
+  "focus": "on the bracket, on the box",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-225",
+  "text": "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+  "options": [
+   "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+   "The bracket was vibrated in three axes, 6 dB above the expected flight levels.",
+   "The bracket was vibrated in three axes, 3 dB above the expected flight level."
+  ],
+  "ru": "Кронштейн испытали на вибрацию по трём осям, на 3 дБ выше ожидаемых полётных уровней.",
+  "focus": "3 dB above the expected flight levels",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-226",
+  "text": "The authors printed a one-piece injector for a small methane-oxygen engine.",
+  "options": [
+   "The authors printed a one-piece injector for a small methane-oxygen engine.",
+   "The authors printed a two-piece injector for a small methane-oxygen engine.",
+   "The authors printed one-piece injectors for a small methane-oxygen engine."
+  ],
+  "ru": "Авторы напечатали цельную форсуночную головку для небольшого метан-кислородного двигателя.",
+  "focus": "a one-piece injector",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-227",
+  "text": "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+  "options": [
+   "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+   "After CT inspection and water tests, twenty hot fires showed 96 percent efficiency and no damage.",
+   "After CT inspection and water tests, twelve hot fires showed 86 percent efficiency and no damage."
+  ],
+  "ru": "После КТ-контроля и проливок водой двенадцать огневых испытаний показали эффективность 96 процентов и никаких повреждений.",
+  "focus": "twelve hot fires showed 96 percent",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-228",
+  "text": "A composite combines materials: the fibers carry the load and the matrix holds them.",
+  "options": [
+   "A composite combines materials: the fibers carry the load and the matrix holds them.",
+   "A composite combines materials: the fibers carry the load and the matrix holds it.",
+   "A composite combines materials: the fiber carries the load and the matrix holds them."
+  ],
+  "ru": "Композит объединяет материалы: волокна несут нагрузку, а матрица их удерживает.",
+  "focus": "the matrix holds them",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-229",
+  "text": "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+  "options": [
+   "We measure force and stretch and get a curve that shows the strength and the stiffness.",
+   "We measured force and stretch and got a curve that shows the strength and the stiffness.",
+   "We measure force and stretch and get a curve that shows the strength and the thickness."
+  ],
+  "ru": "Мы измеряем силу и удлинение и получаем кривую, которая показывает прочность и жёсткость.",
+  "focus": "shows the strength and the stiffness",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-230",
+  "text": "So straps like this can replace heaters and fans in small, low-power satellites.",
+  "options": [
+   "So straps like this can replace heaters and fans in small, low-power satellites.",
+   "So straps like this can't replace heaters and fans in small, low-power satellites.",
+   "So straps like this can replace heaters and fans in small, high-power satellites."
+  ],
+  "ru": "Поэтому такие ленты могут заменить нагреватели и вентиляторы в небольших маломощных спутниках.",
+  "focus": "can replace heaters and fans",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-231",
+  "text": "What are you studying at the moment?",
+  "options": [
+   "What are you studying at the moment?",
+   "What were you studying at the moment?",
+   "What are they studying at the moment?"
+  ],
+  "ru": "Что ты сейчас изучаешь?",
+  "focus": "What are you studying",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-232",
+  "text": "Why did you choose engineering?",
+  "options": [
+   "Why did you choose engineering?",
+   "Why do you choose engineering?",
+   "Why did they choose engineering?"
+  ],
+  "ru": "Почему ты выбрал инженерию?",
+  "focus": "Why did you choose",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-233",
+  "text": "What do you do in your free time?",
+  "options": [
+   "What do you do in your free time?",
+   "What did you do in your free time?",
+   "What do they do in their free time?"
+  ],
+  "ru": "Чем занимаешься в свободное время?",
+  "focus": "What do you do in your free time",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-234",
+  "text": "What's your biggest weakness?",
+  "options": [
+   "What's your biggest weakness?",
+   "What was your biggest weakness?",
+   "What's their biggest weakness?"
+  ],
+  "ru": "Какая твоя главная слабость?",
+  "focus": "What's your biggest",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-235",
+  "text": "What's the most interesting thing you've learned this year?",
+  "options": [
+   "What's the most interesting thing you've learned this year?",
+   "What's the most interesting thing you learned last year?",
+   "What's the most interesting thing you've learned this week?"
+  ],
+  "ru": "Что самое интересное ты узнал в этом году?",
+  "focus": "you've learned this year",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-236",
+  "text": "What was the hardest technical problem you've solved?",
+  "options": [
+   "What was the hardest technical problem you've solved?",
+   "What's the hardest technical problem you've solved?",
+   "What was the hardest technical problem you saw?"
+  ],
+  "ru": "Какую самую сложную техническую задачу ты решил?",
+  "focus": "What was the hardest technical problem",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-237",
+  "text": "Tell me about a time you worked under pressure.",
+  "options": [
+   "Tell me about a time you worked under pressure.",
+   "Tell me about the time you worked under pressure.",
+   "Tell me about a time you were under pressure."
+  ],
+  "ru": "Расскажи, как работал в условиях давления и сжатых сроков.",
+  "focus": "a time you worked under pressure",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-238",
+  "text": "What was your role in your last team project?",
+  "options": [
+   "What was your role in your last team project?",
+   "What's your role in your last team project?",
+   "What was your role in the last team project?"
+  ],
+  "ru": "Какая была твоя роль в последнем командном проекте?",
+  "focus": "What was your role in your last",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-239",
+  "text": "What's the difference between strength and stiffness?",
+  "options": [
+   "What's the difference between strength and stiffness?",
+   "What's the difference between strength and thickness?",
+   "What was the difference between strength and stiffness?"
+  ],
+  "ru": "В чём разница между прочностью и жёсткостью?",
+  "focus": "between strength and stiffness",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-240",
+  "text": "Why are composites used in aircraft?",
+  "options": [
+   "Why are composites used in aircraft?",
+   "Why were composites used in aircraft?",
+   "Why are composites used in spacecraft?"
+  ],
+  "ru": "Почему в самолётах используют композиты?",
+  "focus": "Why are composites used in aircraft",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-241",
+  "text": "What would you do if you disagreed with your manager?",
+  "options": [
+   "What would you do if you disagreed with your manager?",
+   "What would you do if you disagreed with your managers?",
+   "What could you do if you disagreed with your manager?"
+  ],
+  "ru": "Что будешь делать, если не согласен с руководителем?",
+  "focus": "What would you do if you disagreed",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-242",
+  "text": "Do you know how our production line is organized?",
+  "options": [
+   "Do you know how our production line is organized?",
+   "Do you know how our production line was organized?",
+   "Do you know how their production line is organized?"
+  ],
+  "ru": "Знаешь, как устроена наша производственная линия? (Можно честно сказать, что нет.)",
+  "focus": "how our production line is",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-243",
+  "text": "Is there anything else you'd like to know about the role?",
+  "options": [
+   "Is there anything else you'd like to know about the role?",
+   "Was there anything else you'd like to know about the role?",
+   "Is there anything else you'd like to know about the team?"
+  ],
+  "ru": "Хочешь ещё что-нибудь узнать о позиции?",
+  "focus": "Is there anything else you'd like to know",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-244",
+  "text": "If you could work on any space mission, which one would it be?",
+  "options": [
+   "If you could work on any space mission, which one would it be?",
+   "If you could work on any space mission, which one could it be?",
+   "If you could work on one space mission, which one would it be?"
+  ],
+  "ru": "Если бы можно было работать над любой космической миссией — какой?",
+  "focus": "work on any space mission",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-245",
+  "text": "Our team thinks deadlines matter more than documentation. Do you agree?",
+  "options": [
+   "Our team thinks deadlines matter more than documentation. Do you agree?",
+   "Our team thinks deadlines matter less than documentation. Do you agree?",
+   "Our team thought deadlines mattered more than documentation. Do you agree?"
+  ],
+  "ru": "Наша команда считает, что сроки важнее документации. Согласен?",
+  "focus": "deadlines matter more than documentation",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-246",
+  "text": "Some people say simulation will replace testing. What do you think?",
+  "options": [
+   "Some people say simulation will replace testing. What do you think?",
+   "Some people say simulation won't replace testing. What do you think?",
+   "Some people said simulation would replace testing. What do you think?"
+  ],
+  "ru": "Некоторые говорят, что моделирование заменит испытания. Что думаешь?",
+  "focus": "simulation will replace testing",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-247",
+  "text": "Describe a time you made a mistake. What did you learn?",
+  "options": [
+   "Describe a time you made a mistake. What did you learn?",
+   "Describe a time you made a mistake. What do you learn?",
+   "Describe a time you made mistakes. What did you learn?"
+  ],
+  "ru": "Расскажи об ошибке, которую ты совершил. Чему научился?",
+  "focus": "a time you made a mistake. What did you learn",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-248",
+  "text": "How would you explain your thesis to a ten-year-old?",
+  "options": [
+   "How would you explain your thesis to a ten-year-old?",
+   "How would you explain your thesis to ten-year-olds?",
+   "How would you explain your thesis to a seven-year-old?"
+  ],
+  "ru": "Как бы ты объяснил свою дипломную работу десятилетнему ребёнку?",
+  "focus": "to a ten-year-old",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-249",
+  "text": "How does a rocket engine work, in simple terms?",
+  "options": [
+   "How does a rocket engine work, in simple terms?",
+   "How did a rocket engine work, in simple terms?",
+   "How do rocket engines work, in simple terms?"
+  ],
+  "ru": "Как работает ракетный двигатель, если просто?",
+  "focus": "How does a rocket engine work",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-250",
+  "text": "What is a strain gauge, and why do we need it?",
+  "options": [
+   "What is a strain gauge, and why do we need it?",
+   "What is a strain gauge, and why do we need them?",
+   "What is a strain gauge, and why did we need it?"
+  ],
+  "ru": "Что такое тензодатчик и зачем он нужен?",
+  "focus": "why do we need it",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-251",
+  "text": "Tell me about a difficult problem you solved.",
+  "options": [
+   "Tell me about a difficult problem you solved.",
+   "Tell me about the difficult problem you solved.",
+   "Tell me about difficult problems you solved."
+  ],
+  "ru": "Расскажи о сложной задаче, которую ты решил.",
+  "focus": "a difficult problem you solved",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-252",
+  "text": "Tell me about a project you worked on.",
+  "options": [
+   "Tell me about a project you worked on.",
+   "Tell me about the project you worked on.",
+   "Tell me about a project you work on."
+  ],
+  "ru": "Расскажи о проекте, над которым работал.",
+  "focus": "a project you worked on",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-253",
+  "text": "Tell me about a time you failed.",
+  "options": [
+   "Tell me about a time you failed.",
+   "Tell me about the time you failed.",
+   "Tell me about a time you fell."
+  ],
+  "ru": "Расскажи о своей неудаче.",
+  "focus": "a time you failed",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-254",
+  "text": "Tell me about a time you worked in a team.",
+  "options": [
+   "Tell me about a time you worked in a team.",
+   "Tell me about a time you worked in the team.",
+   "Tell me about a time you worked in teams."
+  ],
+  "ru": "Расскажи о работе в команде.",
+  "focus": "worked in a team",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-255",
+  "text": "What are your strengths?",
+  "options": [
+   "What are your strengths?",
+   "What were your strengths?",
+   "What is your strength?"
+  ],
+  "ru": "Какие у тебя сильные стороны?",
+  "focus": "What are your strengths",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-256",
+  "text": "What is your greatest weakness?",
+  "options": [
+   "What is your greatest weakness?",
+   "What was your greatest weakness?",
+   "What is their greatest weakness?"
+  ],
+  "ru": "Какая твоя главная слабость?",
+  "focus": "What is your greatest weakness",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-257",
+  "text": "Where do you see yourself in five years?",
+  "options": [
+   "Where do you see yourself in five years?",
+   "Where do you see yourself in fifty years?",
+   "Where did you see yourself in five years?"
+  ],
+  "ru": "Где ты видишь себя через пять лет?",
+  "focus": "in five years",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-258",
+  "text": "Why do you want to work for us?",
+  "options": [
+   "Why do you want to work for us?",
+   "Why do you want to work with us?",
+   "Why did you want to work for us?"
+  ],
+  "ru": "Почему ты хочешь работать у нас?",
+  "focus": "want to work for us",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-259",
+  "text": "Houston, can you hear me?",
+  "options": [
+   "Houston, can you hear me?",
+   "Houston, can you hear us?",
+   "Houston, can't you hear me?"
+  ],
+  "ru": "Хьюстон, слышите меня?",
+  "focus": "can you hear me",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-260",
+  "text": "Thanks a lot, that's really helpful!",
+  "options": [
+   "Thanks a lot, that's really helpful!",
+   "Thanks a lot, that was really helpful!",
+   "Thanks a lot, that's very helpful!"
+  ],
+  "ru": "Большое спасибо, это очень помогло!",
+  "focus": "that's really helpful",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-261",
+  "text": "Yep, I'll chase the supplier and let you know if Wednesday slips.",
+  "options": [
+   "Yep, I'll chase the supplier and let you know if Wednesday slips.",
+   "Yep, I'll chase the suppliers and let you know if Wednesday slips.",
+   "Yep, I'll chase the supplier and let you know when Wednesday slips."
+  ],
+  "ru": "Да, я потороплю поставщика и дам знать, если среда сдвинется.",
+  "focus": "chase the supplier and let you know if",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-262",
+  "text": "Wednesday. And how long do the vibration tests take once it's back?",
+  "options": [
+   "Wednesday. And how long do the vibration tests take once it's back?",
+   "Wednesday. And how long did the vibration tests take once it's back?",
+   "Wednesday. And how long does the vibration test take once it's back?"
+  ],
+  "ru": "В среду. А сколько займут вибрационные испытания, когда стенд заработает?",
+  "focus": "how long do the vibration tests take",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-r-263",
+  "text": "Three days if nothing goes wrong, so realistically we're looking at the end of next week.",
+  "options": [
+   "Three days if nothing goes wrong, so realistically we're looking at the end of next week.",
+   "Three days if nothing goes wrong, so realistically we're looking at the end of this week.",
+   "Two days if nothing goes wrong, so realistically we're looking at the end of next week."
+  ],
+  "ru": "Три дня, если всё пойдёт гладко, так что реально — конец следующей недели.",
+  "focus": "the end of next week",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-001",
+  "text": "The design review is on Thursday at ten.",
+  "options": [
+   "The design review is on Thursday at ten.",
+   "The design review is on Tuesday at ten.",
+   "The design review is on Thursday at two."
+  ],
+  "ru": "Защита проекта в четверг в десять.",
+  "focus": "on Thursday at ten",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-002",
+  "text": "We need fifteen more bolts for the bracket.",
+  "options": [
+   "We need fifteen more bolts for the bracket.",
+   "We need fifty more bolts for the bracket.",
+   "We needed fifteen more bolts for the bracket."
+  ],
+  "ru": "Нам нужно ещё пятнадцать болтов для кронштейна.",
+  "focus": "need fifteen more bolts",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-003",
+  "text": "The wall thickness is three point five millimetres.",
+  "options": [
+   "The wall thickness is three point five millimetres.",
+   "The wall thickness is three point nine millimetres.",
+   "The wall thickness is three point five centimetres."
+  ],
+  "ru": "Толщина стенки — три и пять десятых миллиметра.",
+  "focus": "three point five millimetres",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-004",
+  "text": "The tolerance on this hole is plus or minus five microns.",
+  "options": [
+   "The tolerance on this hole is plus or minus five microns.",
+   "The tolerance on this hole is plus or minus fifteen microns.",
+   "The tolerance on these holes is plus or minus five microns."
+  ],
+  "ru": "Допуск на это отверстие — плюс-минус пять микрон.",
+  "focus": "plus or minus five microns",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-005",
+  "text": "Can you send them the updated drawing today?",
+  "options": [
+   "Can you send them the updated drawing today?",
+   "Can you send him the updated drawing today?",
+   "Can't you send them the updated drawing today?"
+  ],
+  "ru": "Можешь сегодня отправить им обновлённый чертёж?",
+  "focus": "send them the updated drawing",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-006",
+  "text": "The supplier can't deliver the valves before May.",
+  "options": [
+   "The supplier can't deliver the valves before May.",
+   "The supplier can deliver the valves before May.",
+   "The supplier can't deliver the valve before May."
+  ],
+  "ru": "Поставщик не может поставить клапаны раньше мая.",
+  "focus": "can't deliver the valves",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-007",
+  "text": "We tested forty samples last week.",
+  "options": [
+   "We tested forty samples last week.",
+   "We tested fourteen samples last week.",
+   "We tested forty samples this week."
+  ],
+  "ru": "На прошлой неделе мы испытали сорок образцов.",
+  "focus": "forty samples last week",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-008",
+  "text": "The meeting starts at half past two.",
+  "options": [
+   "The meeting starts at half past two.",
+   "The meeting starts at half past ten.",
+   "The meeting started at half past two."
+  ],
+  "ru": "Совещание начинается в половине третьего.",
+  "focus": "starts at half past two",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-009",
+  "text": "He's checking the drawings for the new housing.",
+  "options": [
+   "He's checking the drawings for the new housing.",
+   "He was checking the drawings for the new housing.",
+   "He's checking the drawing for the new housing."
+  ],
+  "ru": "Он проверяет чертежи нового корпуса.",
+  "focus": "He's checking the drawings",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-010",
+  "text": "The test bench needs thirty minutes to warm up.",
+  "options": [
+   "The test bench needs thirty minutes to warm up.",
+   "The test bench needs thirteen minutes to warm up.",
+   "The test benches need thirty minutes to warm up."
+  ],
+  "ru": "Стенду нужно тридцать минут на прогрев.",
+  "focus": "needs thirty minutes",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-011",
+  "text": "I want to finish the model before lunch.",
+  "options": [
+   "I want to finish the model before lunch.",
+   "I won't finish the model before lunch.",
+   "I want to finish the models before lunch."
+  ],
+  "ru": "Я хочу закончить модель до обеда.",
+  "focus": "I want to finish the model",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-012",
+  "text": "Its mass is lower than we expected.",
+  "options": [
+   "Its mass is lower than we expected.",
+   "Its mass isn't lower than we expected.",
+   "Its mass was lower than we expected."
+  ],
+  "ru": "Её масса меньше, чем мы ожидали.",
+  "focus": "Its mass is lower",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-013",
+  "text": "It's not the sensor, it's the cable.",
+  "options": [
+   "It's not the sensor, it's the cable.",
+   "It's the sensor, not the cable.",
+   "It's not the sensors, it's the cable."
+  ],
+  "ru": "Дело не в датчике, а в кабеле.",
+  "focus": "It's not the sensor",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-014",
+  "text": "Could you check the torque on these bolts?",
+  "options": [
+   "Could you check the torque on these bolts?",
+   "Would you check the torque on these bolts?",
+   "Could you check the torque on this bolt?"
+  ],
+  "ru": "Можешь проверить момент затяжки этих болтов?",
+  "focus": "Could you check the torque on these bolts",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-015",
+  "text": "The parts arrived on the thirteenth of March.",
+  "options": [
+   "The parts arrived on the thirteenth of March.",
+   "The parts arrived on the thirtieth of March.",
+   "The part arrived on the thirteenth of March."
+  ],
+  "ru": "Детали пришли тринадцатого марта.",
+  "focus": "parts arrived on the thirteenth",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-016",
+  "text": "We worked on the drawings all weekend.",
+  "options": [
+   "We worked on the drawings all weekend.",
+   "We work on the drawings all weekend.",
+   "We worked on the drawing all weekend."
+  ],
+  "ru": "Мы все выходные работали над чертежами.",
+  "focus": "We worked on the drawings",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-017",
+  "text": "The pressure dropped to sixty bar.",
+  "options": [
+   "The pressure dropped to sixty bar.",
+   "The pressure dropped to sixteen bar.",
+   "The pressure drops to sixty bar."
+  ],
+  "ru": "Давление упало до шестидесяти бар.",
+  "focus": "dropped to sixty bar",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-018",
+  "text": "Please add a chamfer to this edge.",
+  "options": [
+   "Please add a chamfer to this edge.",
+   "Please add a chamfer to these edges.",
+   "Please add the chamfer to this edge."
+  ],
+  "ru": "Пожалуйста, добавь фаску на эту кромку.",
+  "focus": "a chamfer to this edge",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-019",
+  "text": "The deadline has moved to next Friday.",
+  "options": [
+   "The deadline has moved to next Friday.",
+   "The deadline was moved to next Friday.",
+   "The deadline has moved to this Friday."
+  ],
+  "ru": "Срок перенесли на следующую пятницу.",
+  "focus": "has moved to next Friday",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-020",
+  "text": "We'll need two more days for the report.",
+  "options": [
+   "We'll need two more days for the report.",
+   "We'd need two more days for the report.",
+   "We'll need two more days for the reports."
+  ],
+  "ru": "Нам понадобится ещё два дня на отчёт.",
+  "focus": "We'll need two more days",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-021",
+  "text": "Did they approve the change request?",
+  "options": [
+   "Did they approve the change request?",
+   "Did he approve the change request?",
+   "Do they approve the change request?"
+  ],
+  "ru": "Они одобрили извещение об изменении?",
+  "focus": "Did they approve",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-022",
+  "text": "The hole diameter is eighteen millimetres.",
+  "options": [
+   "The hole diameter is eighteen millimetres.",
+   "The hole diameter is eighty millimetres.",
+   "The hole diameters are eighteen millimetres."
+  ],
+  "ru": "Диаметр отверстия — восемнадцать миллиметров.",
+  "focus": "eighteen millimetres",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-023",
+  "text": "I'll call the supplier after the meeting.",
+  "options": [
+   "I'll call the supplier after the meeting.",
+   "I'd call the supplier after the meeting.",
+   "I'll call the suppliers after the meeting."
+  ],
+  "ru": "Я позвоню поставщику после совещания.",
+  "focus": "I'll call the supplier",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-024",
+  "text": "We could use aluminium instead of steel.",
+  "options": [
+   "We could use aluminium instead of steel.",
+   "We would use aluminium instead of steel.",
+   "We could use aluminium instead of the steel."
+  ],
+  "ru": "Можно было бы взять алюминий вместо стали.",
+  "focus": "We could use aluminium",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-025",
+  "text": "The panel failed at ninety percent of the load.",
+  "options": [
+   "The panel failed at ninety percent of the load.",
+   "The panel failed at nineteen percent of the load.",
+   "The panels failed at ninety percent of the load."
+  ],
+  "ru": "Панель разрушилась при девяноста процентах нагрузки.",
+  "focus": "failed at ninety percent",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-026",
+  "text": "She needs the test report by Monday.",
+  "options": [
+   "She needs the test report by Monday.",
+   "She needed the test report by Monday.",
+   "She needs the test reports by Monday."
+  ],
+  "ru": "Ей нужен протокол испытаний к понедельнику.",
+  "focus": "She needs the test report",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-027",
+  "text": "Let's move the call to four fifteen.",
+  "options": [
+   "Let's move the call to four fifteen.",
+   "Let's move the call to four fifty.",
+   "Let's move the call to five fifteen."
+  ],
+  "ru": "Давай перенесём созвон на четыре пятнадцать.",
+  "focus": "to four fifteen",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-028",
+  "text": "The new version is on the server.",
+  "options": [
+   "The new version is on the server.",
+   "The new versions are on the server.",
+   "The new version was on the server."
+  ],
+  "ru": "Новая версия лежит на сервере.",
+  "focus": "The new version is",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-029",
+  "text": "There's a crack near the second hole.",
+  "options": [
+   "There's a crack near the second hole.",
+   "There was a crack near the second hole.",
+   "There are cracks near the second hole."
+  ],
+  "ru": "Возле второго отверстия есть трещина.",
+  "focus": "There's a crack",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-030",
+  "text": "We can't start the test without the sensors.",
+  "options": [
+   "We can't start the test without the sensors.",
+   "We can start the test without the sensors.",
+   "We can't start the test without the sensor."
+  ],
+  "ru": "Без датчиков мы не можем начать испытание.",
+  "focus": "We can't start",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-031",
+  "text": "The bolts were tightened to twelve newton metres.",
+  "options": [
+   "The bolts were tightened to twelve newton metres.",
+   "The bolts were tightened to twenty newton metres.",
+   "The bolt was tightened to twelve newton metres."
+  ],
+  "ru": "Болты затянули моментом двенадцать ньютон-метров.",
+  "focus": "tightened to twelve",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-032",
+  "text": "He was at the test site all day.",
+  "options": [
+   "He was at the test site all day.",
+   "He's at the test site all day.",
+   "He was at the test sites all day."
+  ],
+  "ru": "Он весь день был на испытательной площадке.",
+  "focus": "He was at the test site",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-033",
+  "text": "The shipment will arrive on the fourteenth.",
+  "options": [
+   "The shipment will arrive on the fourteenth.",
+   "The shipment will arrive on the fourth.",
+   "The shipments will arrive on the fourteenth."
+  ],
+  "ru": "Груз прибудет четырнадцатого.",
+  "focus": "on the fourteenth",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-034",
+  "text": "Can you print the drawing in A3?",
+  "options": [
+   "Can you print the drawing in A3?",
+   "Can you print the drawing in A4?",
+   "Can you print the drawings in A3?"
+  ],
+  "ru": "Можешь распечатать чертёж в формате А3?",
+  "focus": "print the drawing in A3",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-035",
+  "text": "We've already ordered the material.",
+  "options": [
+   "We've already ordered the material.",
+   "We'd already ordered the material.",
+   "We've already ordered the materials."
+  ],
+  "ru": "Мы уже заказали материал.",
+  "focus": "We've already ordered",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-036",
+  "text": "The engine runs for eighty seconds.",
+  "options": [
+   "The engine runs for eighty seconds.",
+   "The engine runs for eighteen seconds.",
+   "The engine ran for eighty seconds."
+  ],
+  "ru": "Двигатель работает восемьдесят секунд.",
+  "focus": "runs for eighty seconds",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-037",
+  "text": "Who's responsible for the wiring diagram?",
+  "options": [
+   "Who's responsible for the wiring diagram?",
+   "Who was responsible for the wiring diagram?",
+   "Who's responsible for the wiring diagrams?"
+  ],
+  "ru": "Кто отвечает за схему соединений?",
+  "focus": "Who's responsible",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-038",
+  "text": "Use the M8 bolts, not the M6.",
+  "options": [
+   "Use the M8 bolts, not the M6.",
+   "Use the M6 bolts, not the M8.",
+   "Use the M8 bolt, not the M6."
+  ],
+  "ru": "Ставь болты M8, а не M6.",
+  "focus": "the M8 bolts, not the M6",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-039",
+  "text": "I think he's sent the wrong file.",
+  "options": [
+   "I think he's sent the wrong file.",
+   "I think he's sent the wrong files.",
+   "I think she's sent the wrong file."
+  ],
+  "ru": "Кажется, он прислал не тот файл.",
+  "focus": "he's sent the wrong file",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-040",
+  "text": "Our team is smaller than theirs.",
+  "options": [
+   "Our team is smaller than theirs.",
+   "Our team was smaller than theirs.",
+   "Our teams are smaller than theirs."
+  ],
+  "ru": "Наша команда меньше, чем у них.",
+  "focus": "Our team is smaller",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-041",
+  "text": "He's on holiday until the twentieth.",
+  "options": [
+   "He's on holiday until the twentieth.",
+   "He was on holiday until the twentieth.",
+   "He's on holiday until the twelfth."
+  ],
+  "ru": "Он в отпуске до двадцатого.",
+  "focus": "He's on holiday until the twentieth",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-042",
+  "text": "Make sure you save it as a PDF.",
+  "options": [
+   "Make sure you save it as a PDF.",
+   "Make sure you save them as a PDF.",
+   "Make sure you saved it as a PDF."
+  ],
+  "ru": "Обязательно сохрани это в PDF.",
+  "focus": "save it as a PDF",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-043",
+  "text": "The gap should be less than half a millimetre.",
+  "options": [
+   "The gap should be less than half a millimetre.",
+   "The gap should be more than half a millimetre.",
+   "The gaps should be less than half a millimetre."
+  ],
+  "ru": "Зазор должен быть меньше половины миллиметра.",
+  "focus": "less than half a millimetre",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-044",
+  "text": "We'll run the test again tomorrow morning.",
+  "options": [
+   "We'll run the test again tomorrow morning.",
+   "We'll run the tests again tomorrow morning.",
+   "We'd run the test again tomorrow morning."
+  ],
+  "ru": "Завтра утром повторим испытание.",
+  "focus": "We'll run the test again",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-045",
+  "text": "I need the latest revision, not the old one.",
+  "options": [
+   "I need the latest revision, not the old one.",
+   "I needed the latest revision, not the old one.",
+   "I need the latest revisions, not the old ones."
+  ],
+  "ru": "Мне нужна последняя ревизия, а не старая.",
+  "focus": "I need the latest revision",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-046",
+  "text": "The temperature reached two hundred and fifty degrees.",
+  "options": [
+   "The temperature reached two hundred and fifty degrees.",
+   "The temperature reached two hundred and fifteen degrees.",
+   "The temperature reaches two hundred and fifty degrees."
+  ],
+  "ru": "Температура дошла до двухсот пятидесяти градусов.",
+  "focus": "two hundred and fifty degrees",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-047",
+  "text": "They want to change the material again.",
+  "options": [
+   "They want to change the material again.",
+   "They won't change the material again.",
+   "They wanted to change the material again."
+  ],
+  "ru": "Они хотят снова поменять материал.",
+  "focus": "They want to change",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-048",
+  "text": "The drawing was signed off on Wednesday.",
+  "options": [
+   "The drawing was signed off on Wednesday.",
+   "The drawings were signed off on Wednesday.",
+   "The drawing was signed off on Monday."
+  ],
+  "ru": "Чертёж подписали в среду.",
+  "focus": "The drawing was signed off",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-049",
+  "text": "Can you join the call at eleven?",
+  "options": [
+   "Can you join the call at eleven?",
+   "Can't you join the call at eleven?",
+   "Can you join the call at seven?"
+  ],
+  "ru": "Можешь подключиться к созвону в одиннадцать?",
+  "focus": "join the call at eleven",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-050",
+  "text": "The pipe is fifty centimetres long.",
+  "options": [
+   "The pipe is fifty centimetres long.",
+   "The pipe is fifteen centimetres long.",
+   "The pipes are fifty centimetres long."
+  ],
+  "ru": "Длина трубы — пятьдесят сантиметров.",
+  "focus": "fifty centimetres long",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-051",
+  "text": "We should order more bolts this week.",
+  "options": [
+   "We should order more bolts this week.",
+   "We should've ordered more bolts this week.",
+   "We should order more bolts next week."
+  ],
+  "ru": "На этой неделе нужно заказать ещё болтов.",
+  "focus": "We should order more bolts",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-052",
+  "text": "The customer asked for a lighter version.",
+  "options": [
+   "The customer asked for a lighter version.",
+   "The customer asks for a lighter version.",
+   "The customers asked for a lighter version."
+  ],
+  "ru": "Заказчик попросил облегчённый вариант.",
+  "focus": "The customer asked for",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-053",
+  "text": "Is it ready, or does it need more work?",
+  "options": [
+   "Is it ready, or does it need more work?",
+   "Was it ready, or did it need more work?",
+   "Are they ready, or do they need more work?"
+  ],
+  "ru": "Это готово или ещё нужно доработать?",
+  "focus": "Is it ready",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-054",
+  "text": "The batch passed inspection this morning.",
+  "options": [
+   "The batch passed inspection this morning.",
+   "The batches passed inspection this morning.",
+   "The batch failed inspection this morning."
+  ],
+  "ru": "Партия прошла приёмку сегодня утром.",
+  "focus": "The batch passed inspection",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-055",
+  "text": "I'm afraid we can't meet that deadline.",
+  "options": [
+   "I'm afraid we can't meet that deadline.",
+   "I'm afraid we can meet that deadline.",
+   "I'm afraid we couldn't meet that deadline."
+  ],
+  "ru": "Боюсь, мы не уложимся в этот срок.",
+  "focus": "we can't meet that deadline",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-056",
+  "text": "The stress is highest near the fillet.",
+  "options": [
+   "The stress is highest near the fillet.",
+   "The stress was highest near the fillet.",
+   "The stress is highest near the fillets."
+  ],
+  "ru": "Напряжения максимальны возле галтели.",
+  "focus": "The stress is highest near the fillet",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-057",
+  "text": "How much are these apples?",
+  "options": [
+   "How much are these apples?",
+   "How much is this apple?",
+   "How much were these apples?"
+  ],
+  "ru": "Сколько стоят эти яблоки?",
+  "focus": "How much are these apples",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-058",
+  "text": "That one costs fifteen pounds.",
+  "options": [
+   "That one costs fifteen pounds.",
+   "That one costs fifty pounds.",
+   "That one cost fifteen pounds."
+  ],
+  "ru": "Вон тот стоит пятнадцать фунтов.",
+  "focus": "costs fifteen pounds",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-059",
+  "text": "The next bus leaves at seven forty.",
+  "options": [
+   "The next bus leaves at seven forty.",
+   "The next bus leaves at seven fourteen.",
+   "The next bus left at seven forty."
+  ],
+  "ru": "Следующий автобус отходит в семь сорок.",
+  "focus": "leaves at seven forty",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-060",
+  "text": "Can I pay by card here?",
+  "options": [
+   "Can I pay by card here?",
+   "Can't I pay by card here?",
+   "Could I pay by card here?"
+  ],
+  "ru": "Здесь можно расплатиться картой?",
+  "focus": "Can I pay by card",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-061",
+  "text": "I'll be there in ten minutes.",
+  "options": [
+   "I'll be there in ten minutes.",
+   "I'd be there in ten minutes.",
+   "I'll be there in two minutes."
+  ],
+  "ru": "Буду через десять минут.",
+  "focus": "I'll be there in ten minutes",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-062",
+  "text": "We met them at the station.",
+  "options": [
+   "We met them at the station.",
+   "We met him at the station.",
+   "We meet them at the station."
+  ],
+  "ru": "Мы встретили их на вокзале.",
+  "focus": "We met them",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-063",
+  "text": "Do you want to grab lunch today?",
+  "options": [
+   "Do you want to grab lunch today?",
+   "Did you want to grab lunch today?",
+   "Do they want to grab lunch today?"
+  ],
+  "ru": "Хочешь сходить пообедать сегодня?",
+  "focus": "Do you want to grab lunch",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-064",
+  "text": "Sorry, I think you have the wrong number.",
+  "options": [
+   "Sorry, I think you have the wrong number.",
+   "Sorry, I thought you had the wrong number.",
+   "Sorry, I think you have the wrong name."
+  ],
+  "ru": "Извините, кажется, вы ошиблись номером.",
+  "focus": "you have the wrong number",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-065",
+  "text": "My train was delayed by twenty minutes.",
+  "options": [
+   "My train was delayed by twenty minutes.",
+   "My train is delayed by twenty minutes.",
+   "My train was delayed by twelve minutes."
+  ],
+  "ru": "Мой поезд задержали на двадцать минут.",
+  "focus": "was delayed by twenty minutes",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-066",
+  "text": "Could you call me back after six?",
+  "options": [
+   "Could you call me back after six?",
+   "Would you call me back after six?",
+   "Could you call him back after six?"
+  ],
+  "ru": "Можете перезвонить мне после шести?",
+  "focus": "Could you call me back",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-067",
+  "text": "The shop closes at nine on Sundays.",
+  "options": [
+   "The shop closes at nine on Sundays.",
+   "The shop closed at nine on Sunday.",
+   "The shops close at nine on Sundays."
+  ],
+  "ru": "По воскресеньям магазин закрывается в девять.",
+  "focus": "The shop closes",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-068",
+  "text": "He's been to London twice.",
+  "options": [
+   "He's been to London twice.",
+   "He was in London twice.",
+   "He's been to London once."
+  ],
+  "ru": "Он был в Лондоне дважды.",
+  "focus": "He's been to London twice",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-069",
+  "text": "I'd like two coffees to take away.",
+  "options": [
+   "I'd like two coffees to take away.",
+   "I'd like a coffee to take away.",
+   "I'd like ten coffees to take away."
+  ],
+  "ru": "Мне два кофе с собой.",
+  "focus": "two coffees",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-070",
+  "text": "The weather was great last weekend.",
+  "options": [
+   "The weather was great last weekend.",
+   "The weather was great last week.",
+   "The weather is great this weekend."
+  ],
+  "ru": "В прошлые выходные погода была отличная.",
+  "focus": "great last weekend",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-071",
+  "text": "Excuse me, is this seat taken?",
+  "options": [
+   "Excuse me, is this seat taken?",
+   "Excuse me, is the seat taken?",
+   "Excuse me, was this seat taken?"
+  ],
+  "ru": "Извините, это место занято?",
+  "focus": "is this seat taken",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-072",
+  "text": "Can you pick me up at eight?",
+  "options": [
+   "Can you pick me up at eight?",
+   "Can you pick them up at eight?",
+   "Can you pick me up at nine?"
+  ],
+  "ru": "Можешь заехать за мной в восемь?",
+  "focus": "pick me up at eight",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-073",
+  "text": "I'm going to the gym after work.",
+  "options": [
+   "I'm going to the gym after work.",
+   "I was going to the gym after work.",
+   "I'm going to the gym before work."
+  ],
+  "ru": "После работы я иду в спортзал.",
+  "focus": "I'm going to the gym after work",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-074",
+  "text": "The doctor can see you on Tuesday.",
+  "options": [
+   "The doctor can see you on Tuesday.",
+   "The doctor can't see you on Tuesday.",
+   "The doctor can see you on Thursday."
+  ],
+  "ru": "Врач может принять вас во вторник.",
+  "focus": "can see you on Tuesday",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-075",
+  "text": "My car needs new tyres.",
+  "options": [
+   "My car needs new tyres.",
+   "My car needed new tyres.",
+   "My car needs a new tyre."
+  ],
+  "ru": "Моей машине нужны новые шины.",
+  "focus": "needs new tyres",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-076",
+  "text": "She lives on the thirteenth floor.",
+  "options": [
+   "She lives on the thirteenth floor.",
+   "She lives on the thirtieth floor.",
+   "She lived on the thirteenth floor."
+  ],
+  "ru": "Она живёт на тринадцатом этаже.",
+  "focus": "lives on the thirteenth floor",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-077",
+  "text": "Could you tell me the way to the station?",
+  "options": [
+   "Could you tell me the way to the station?",
+   "Would you tell me the way to the station?",
+   "Could you tell us the way to the station?"
+  ],
+  "ru": "Не подскажете, как пройти к вокзалу?",
+  "focus": "Could you tell me the way",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-078",
+  "text": "I didn't know it was your birthday.",
+  "options": [
+   "I didn't know it was your birthday.",
+   "I don't know if it was your birthday.",
+   "I didn't know it was his birthday."
+  ],
+  "ru": "Я не знал, что у тебя день рождения.",
+  "focus": "I didn't know it was your birthday",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-079",
+  "text": "There's a pharmacy on the corner.",
+  "options": [
+   "There's a pharmacy on the corner.",
+   "There was a pharmacy on the corner.",
+   "There's a pharmacy round the corner."
+  ],
+  "ru": "На углу есть аптека.",
+  "focus": "There's a pharmacy on the corner",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-080",
+  "text": "I'll text you when I get home.",
+  "options": [
+   "I'll text you when I get home.",
+   "I'd text you when I get home.",
+   "I'll text you when I get there."
+  ],
+  "ru": "Напишу тебе, когда доберусь домой.",
+  "focus": "I'll text you when I get home",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-081",
+  "text": "The tickets are forty pounds each.",
+  "options": [
+   "The tickets are forty pounds each.",
+   "The tickets are fourteen pounds each.",
+   "The ticket is forty pounds each."
+  ],
+  "ru": "Билеты — по сорок фунтов.",
+  "focus": "forty pounds each",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "g-st-n-082",
+  "text": "Would you like tea or coffee?",
+  "options": [
+   "Would you like tea or coffee?",
+   "Do you like tea or coffee?",
+   "Would you like a tea or coffee?"
+  ],
+  "ru": "Вам чай или кофе?",
+  "focus": "Would you like tea",
+  "voice": "us-m",
+  "reviewed": false
+ }
+]
