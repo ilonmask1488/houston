@@ -83,7 +83,8 @@ test('вводный тест целиком → профиль по трека�
   // На главной — профиль и сеанс; достижение «Первый контакт»
   await page.getByRole('button', { name: 'К занятию' }).click()
   await expect(page.getByRole('heading', { name: 'Занятие на сегодня' })).toBeVisible()
-  await expect(page.getByText('~30 мин')).toBeVisible()
+  // длительность — честная сумма плана, а не цифра из настроек
+  await expect(page.getByText(/^~\d+ мин$/)).toBeVisible()
   await page.goto('./#/achievements')
   await expect(page.locator('li[data-got]', { hasText: 'Первый контакт' })).toBeVisible()
 })

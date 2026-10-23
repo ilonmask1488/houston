@@ -322,6 +322,11 @@ export function planSegments(input: PlanInput): SessionSegment[] {
   const due = input.due.slice(0, cardCount)
   for (let i = 0; i < due.length; i += perChunk)
     review.push(seg(`review-${review.length + 1}`, 'review', 'cards', { steps: due.slice(i, i + perChunk).map((c): Step => ({ kind: 'card', card: c.id })) }))
+  // Карточек меньше, чем минут на повторение, — свободные минуты слушанию и говорению,
+  // а не короткое занятие (без этого 30-минутный план выходил на 20 минут).
+  const spare = Math.max(0, min.review - Math.ceil((cardCount * STEP_SECONDS.card) / 60))
+  min.air += Math.ceil(spare / 2)
+  min.call += Math.floor(spare / 2)
 
   const airMod = currentModule('air', progress, intake)
   const air: SessionSegment[] = airMod
@@ -335,9 +340,12 @@ export function planSegments(input: PlanInput): SessionSegment[] {
 
   const callMod = currentModule('call', progress, intake)
   const call: SessionSegment[] = callMod
-    ? callSteps({ module: callMod, done: doneSet(progress, callMod.id), seed, quickGame: seed % 3 === 0, stories: input.stories }, min.call * 60).map((x, i) =>
-        seg(`call-${i + 1}`, 'call', x.label, x.game ? { kind: 'game', game: x.game, minutes: 3, track: 'call', module: callMod.id } : { steps: x.steps, track: 'call', module: callMod.id }),
-      )
+    ? callSteps({ module: callMod, done: doneSet(progress, callMod.id), seed, quickGame: seed % 3 === 0, stories: input.stories }, min.call * 60)
+        // длинную часть (быстрые ответы на 8–11 минут при 45-минутном занятии) режем по ~3 минуты
+        .flatMap((x) => (x.game || !x.steps ? [x] : chunkSteps(x.steps).map((steps) => ({ ...x, steps }))))
+        .map((x, i) =>
+          seg(`call-${i + 1}`, 'call', x.label, x.game ? { kind: 'game', game: x.game, minutes: 3, track: 'call', module: callMod.id } : { steps: x.steps, track: 'call', module: callMod.id }),
+        )
     : []
 
   const rotation = debt ? [] : rotationSegments(input, min.rotation * 60, seed, airMod, callMod)

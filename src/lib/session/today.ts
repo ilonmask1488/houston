@@ -14,7 +14,8 @@ export async function getTodaySession(minutes: number): Promise<SessionRow> {
   const intake = await lastIntake()
   const progress = await loadProgress()
   // «Слова дня» — после вводного теста (по нему ясен уровень словаря); ошибка словаря не ломает занятие
-  if (intake) await addDailyWords(intake.result.vocabSize).catch((e) => console.error(e))
+  // Со следующего дня после теста: день теста и так насыщенный, а в плане первого дня повторения ещё нет
+  if (intake && localDate(new Date(intake.at)) < date) await addDailyWords(intake.result.vocabSize).catch((e) => console.error(e))
   const queue = await reviewQueue(200)
   const speed = await currentSpeed(intake)
   const stories = (await readyStories()).map((x) => ({ id: x.id, trained: x.trained }))

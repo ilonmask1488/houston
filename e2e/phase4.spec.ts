@@ -54,8 +54,11 @@ test('игры «Близнецы» и «Ложные друзья»: корот
   ] as const) {
     await page.goto(`./#/game/${id}?seconds=6`)
     await page.getByRole('button', { name: 'Старт' }).click()
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 80; i++) {
       if (await page.getByRole('heading', { name: 'Раунд окончен' }).isVisible().catch(() => false)) break
+      // после ошибки — разбор и «Дальше» (таймер на паузе)
+      const next = page.getByRole('button', { name: 'Дальше', exact: true })
+      if (await next.isVisible().catch(() => false)) await next.click({ timeout: 1000 }).catch(() => {})
       await page.getByRole('group', { name: group }).getByRole('button').first().click({ timeout: 1000 }).catch(() => {})
       await page.waitForTimeout(400)
     }

@@ -50,7 +50,8 @@ export function HomeScreen() {
   const days = telemetry?.days ?? 0
   const next = nextSegment(today)
   const doneSegs = today?.segments.filter((x) => x.status !== 'pending').length ?? 0
-  const minutes = settings.sessionMinutes
+  // Честная длительность: сумма сегментов плана (план бывает короче настройки), пока плана нет — настройка
+  const minutes = today?.segments.length ? today.segments.reduce((n, x) => n + x.minutes, 0) : settings.sessionMinutes
 
   return (
     <main className={s.home}>

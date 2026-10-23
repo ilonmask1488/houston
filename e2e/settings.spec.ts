@@ -17,7 +17,10 @@ test('тема, длительность и вариант языка сохра
   await expect(page.getByRole('radio', { name: '45 мин' })).toHaveAttribute('aria-checked', 'true')
   await expect(page.getByRole('radio', { name: 'Британский' })).toHaveAttribute('aria-checked', 'true')
   await page.goto('./#/')
-  await expect(page.getByText('~45 мин')).toBeVisible()
+  // 45-минутное занятие заметно длиннее 30-минутного (план честный, но не короче)
+  const label = page.getByText(/^~\d+ мин$/)
+  await expect(label).toBeVisible()
+  expect(Number((await label.textContent())!.match(/\d+/)![0])).toBeGreaterThan(30)
 })
 
 test('бэкап: сохранить → изменить → загрузить → всё вернулось', async ({ page }) => {
