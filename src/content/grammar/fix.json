@@ -1,0 +1,659 @@
+[
+ {
+  "id": "gf-articles-001",
+  "topic": "articles",
+  "wrong": "I am engineer.",
+  "right": "I am an engineer.",
+  "ru": "Я инженер.",
+  "why": "Профессия в единственном числе — с a/an, перед гласным звуком an.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-002",
+  "topic": "articles",
+  "wrong": "He is the good specialist in strength analysis.",
+  "right": "He is a good specialist in strength analysis.",
+  "ru": "Он хороший специалист по расчётам на прочность.",
+  "why": "Характеристика «какой-то хороший специалист» — a, а не the.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-003",
+  "topic": "articles",
+  "wrong": "Sun is a star.",
+  "right": "The Sun is a star.",
+  "ru": "Солнце — звезда.",
+  "why": "Единственные в своём роде объекты — с the: the Sun, the Moon.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-004",
+  "topic": "articles",
+  "wrong": "The life is hard sometimes.",
+  "right": "Life is hard sometimes.",
+  "ru": "Жизнь иногда тяжела.",
+  "why": "Абстрактное понятие в общем смысле — без артикля.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-005",
+  "topic": "articles",
+  "wrong": "It's best solution for this bracket.",
+  "right": "It's the best solution for this bracket.",
+  "ru": "Это лучшее решение для этого кронштейна.",
+  "why": "Превосходная степень — всегда с the.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-006",
+  "topic": "articles",
+  "wrong": "I go to work by the car.",
+  "right": "I go to work by car.",
+  "ru": "Я езжу на работу на машине.",
+  "why": "By + транспорт — без артикля.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-007",
+  "topic": "articles",
+  "wrong": "She found a job in the Moscow.",
+  "right": "She found a job in Moscow.",
+  "ru": "Она нашла работу в Москве.",
+  "why": "Названия городов — без артикля.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-008",
+  "topic": "articles",
+  "wrong": "The test takes a hour.",
+  "right": "The test takes an hour.",
+  "ru": "Испытание занимает час.",
+  "why": "В hour h не читается, первый звук гласный — нужно an.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-articles-009",
+  "topic": "articles",
+  "wrong": "This is a only option we have.",
+  "right": "This is the only option we have.",
+  "ru": "Это единственный вариант, который у нас есть.",
+  "why": "The only — «единственный»: предмет определён, нужен the.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-001",
+  "topic": "prepositions",
+  "wrong": "It depends from the weather.",
+  "right": "It depends on the weather.",
+  "ru": "Это зависит от погоды.",
+  "why": "Depend on — только on, хотя по-русски «от».",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-002",
+  "topic": "prepositions",
+  "wrong": "Let's discuss about the plan.",
+  "right": "Let's discuss the plan.",
+  "ru": "Давай обсудим план.",
+  "why": "Discuss — без предлога about.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-003",
+  "topic": "prepositions",
+  "wrong": "I'm interested on space technology.",
+  "right": "I'm interested in space technology.",
+  "ru": "Я интересуюсь космической техникой.",
+  "why": "Interested in — только in.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-004",
+  "topic": "prepositions",
+  "wrong": "We are waiting the answer from the customer.",
+  "right": "We are waiting for the answer from the customer.",
+  "ru": "Мы ждём ответа от заказчика.",
+  "why": "Wait for something — for обязателен.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-005",
+  "topic": "prepositions",
+  "wrong": "See you in Monday.",
+  "right": "See you on Monday.",
+  "ru": "Увидимся в понедельник.",
+  "why": "Дни недели — on.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-006",
+  "topic": "prepositions",
+  "wrong": "The meeting is at the morning.",
+  "right": "The meeting is in the morning.",
+  "ru": "Совещание утром.",
+  "why": "Части суток — in the morning / in the evening.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-007",
+  "topic": "prepositions",
+  "wrong": "The kit consists from five parts.",
+  "right": "The kit consists of five parts.",
+  "ru": "Комплект состоит из пяти деталей.",
+  "why": "Consist of — только of.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-008",
+  "topic": "prepositions",
+  "wrong": "Please send the drawings until Friday.",
+  "right": "Please send the drawings by Friday.",
+  "ru": "Пожалуйста, пришли чертежи к пятнице.",
+  "why": "Срок «не позже» — by. Until — «до тех пор» для длительного действия.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-009",
+  "topic": "prepositions",
+  "wrong": "We arrived to Kazan at six.",
+  "right": "We arrived in Kazan at six.",
+  "ru": "Мы прибыли в Казань в шесть.",
+  "why": "Arrive in + город, arrive at + место. Arrive to не бывает.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-010",
+  "topic": "prepositions",
+  "wrong": "Call me on five o'clock.",
+  "right": "Call me at five o'clock.",
+  "ru": "Позвони мне в пять часов.",
+  "why": "Точное время — at.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-001",
+  "topic": "tenses",
+  "wrong": "I have sent the email yesterday.",
+  "right": "I sent the email yesterday.",
+  "ru": "Я отправил письмо вчера.",
+  "why": "С yesterday — только Past Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-002",
+  "topic": "tenses",
+  "wrong": "I work here since 2022.",
+  "right": "I have worked here since 2022.",
+  "ru": "Я работаю здесь с 2022 года.",
+  "why": "Since + момент до сих пор — Present Perfect.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-003",
+  "topic": "tenses",
+  "wrong": "I know him for ten years.",
+  "right": "I have known him for ten years.",
+  "ru": "Я знаю его десять лет.",
+  "why": "Состояние длится до сих пор (for ten years) — Present Perfect.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-004",
+  "topic": "tenses",
+  "wrong": "Listen! Someone sings in the next room.",
+  "right": "Listen! Someone is singing in the next room.",
+  "ru": "Послушай! Кто-то поёт в соседней комнате.",
+  "why": "Происходит прямо сейчас — Present Continuous.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-005",
+  "topic": "tenses",
+  "wrong": "If it will rain, we will stay at home.",
+  "right": "If it rains, we will stay at home.",
+  "ru": "Если пойдёт дождь, мы останемся дома.",
+  "why": "После if (условие) будущее время не ставится — Present Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-006",
+  "topic": "tenses",
+  "wrong": "When I will finish, I'll call you.",
+  "right": "When I finish, I'll call you.",
+  "ru": "Когда я закончу, я тебе позвоню.",
+  "why": "После when о будущем — Present Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-007",
+  "topic": "tenses",
+  "wrong": "I am working here for two years.",
+  "right": "I have been working here for two years.",
+  "ru": "Я работаю здесь два года.",
+  "why": "Длится с прошлого до сейчас + for — Present Perfect Continuous.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-008",
+  "topic": "tenses",
+  "wrong": "I am knowing the answer.",
+  "right": "I know the answer.",
+  "ru": "Я знаю ответ.",
+  "why": "Know — глагол состояния, в Continuous не используется.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-tenses-009",
+  "topic": "tenses",
+  "wrong": "I have seen him last week.",
+  "right": "I saw him last week.",
+  "ru": "Я видел его на прошлой неделе.",
+  "why": "Last week — законченное время, Past Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-001",
+  "topic": "questions",
+  "wrong": "Where you work?",
+  "right": "Where do you work?",
+  "ru": "Где ты работаешь?",
+  "why": "В вопросе с обычным глаголом нужен do/does.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-002",
+  "topic": "questions",
+  "wrong": "What time the meeting starts?",
+  "right": "What time does the meeting start?",
+  "ru": "Во сколько начинается совещание?",
+  "why": "Нужен does, а глагол — без -s: does … start.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-003",
+  "topic": "questions",
+  "wrong": "Could you tell me where is the lab?",
+  "right": "Could you tell me where the lab is?",
+  "ru": "Не подскажете, где лаборатория?",
+  "why": "Косвенный вопрос — прямой порядок слов, без инверсии.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-004",
+  "topic": "questions",
+  "wrong": "Do you know what time is it?",
+  "right": "Do you know what time it is?",
+  "ru": "Вы не знаете, который час?",
+  "why": "После Do you know… — прямой порядок: what time it is.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-005",
+  "topic": "questions",
+  "wrong": "Why you didn't call me?",
+  "right": "Why didn't you call me?",
+  "ru": "Почему ты мне не позвонил?",
+  "why": "В прямом вопросе вспомогательный глагол — перед подлежащим: didn't you.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-006",
+  "topic": "questions",
+  "wrong": "Does she works here?",
+  "right": "Does she work here?",
+  "ru": "Она здесь работает?",
+  "why": "После does глагол без -s: окончание уже «ушло» в does.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-007",
+  "topic": "questions",
+  "wrong": "How much it costs?",
+  "right": "How much does it cost?",
+  "ru": "Сколько это стоит?",
+  "why": "Прямой вопрос с обычным глаголом — с does и без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-008",
+  "topic": "questions",
+  "wrong": "I don't know where does he live.",
+  "right": "I don't know where he lives.",
+  "ru": "Я не знаю, где он живёт.",
+  "why": "Косвенный вопрос — без does и с прямым порядком: where he lives.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-questions-009",
+  "topic": "questions",
+  "wrong": "Did you saw the results?",
+  "right": "Did you see the results?",
+  "ru": "Ты видел результаты?",
+  "why": "После did — начальная форма глагола (see), а не прошедшая (saw).",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-001",
+  "topic": "countable",
+  "wrong": "Thank you for the informations.",
+  "right": "Thank you for the information.",
+  "ru": "Спасибо за информацию.",
+  "why": "Information неисчисляемое, без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-002",
+  "topic": "countable",
+  "wrong": "We bought new equipments for the lab.",
+  "right": "We bought new equipment for the lab.",
+  "ru": "Мы купили новое оборудование для лаборатории.",
+  "why": "Equipment неисчисляемое, без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-003",
+  "topic": "countable",
+  "wrong": "Can you give me an advice?",
+  "right": "Can you give me some advice?",
+  "ru": "Можешь дать мне совет?",
+  "why": "Advice неисчисляемое: some advice или a piece of advice, но не an advice.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-004",
+  "topic": "countable",
+  "wrong": "Thank you for your feedbacks.",
+  "right": "Thank you for your feedback.",
+  "ru": "Спасибо за отзыв.",
+  "why": "Feedback неисчисляемое, без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-005",
+  "topic": "countable",
+  "wrong": "He did many researches on this topic.",
+  "right": "He did a lot of research on this topic.",
+  "ru": "Он много исследовал эту тему.",
+  "why": "Research неисчисляемое: a lot of research, а не many researches.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-006",
+  "topic": "countable",
+  "wrong": "How much samples do you need?",
+  "right": "How many samples do you need?",
+  "ru": "Сколько образцов тебе нужно?",
+  "why": "Samples исчисляемое — how many.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-007",
+  "topic": "countable",
+  "wrong": "The news are good.",
+  "right": "The news is good.",
+  "ru": "Новости хорошие.",
+  "why": "News неисчисляемое, глагол в единственном числе.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-008",
+  "topic": "countable",
+  "wrong": "We need to install new softwares.",
+  "right": "We need to install new software.",
+  "ru": "Нам нужно установить новые программы.",
+  "why": "Software неисчисляемое, без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-countable-009",
+  "topic": "countable",
+  "wrong": "I don't have many time today.",
+  "right": "I don't have much time today.",
+  "ru": "Сегодня у меня мало времени.",
+  "why": "Time неисчисляемое — much.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-001",
+  "topic": "verbs",
+  "wrong": "I am agree with you.",
+  "right": "I agree with you.",
+  "ru": "Я с тобой согласен.",
+  "why": "Agree — глагол, am перед ним не нужен.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-002",
+  "topic": "verbs",
+  "wrong": "Can you explain me this formula?",
+  "right": "Can you explain this formula to me?",
+  "ru": "Можешь объяснить мне эту формулу?",
+  "why": "Explain something to someone. «Explain me» — калька.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-003",
+  "topic": "verbs",
+  "wrong": "He said me the truth.",
+  "right": "He told me the truth.",
+  "ru": "Он сказал мне правду.",
+  "why": "Tell someone the truth. После say человек без to не ставится.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-004",
+  "topic": "verbs",
+  "wrong": "I made my homework.",
+  "right": "I did my homework.",
+  "ru": "Я сделал домашнее задание.",
+  "why": "Do homework — с do.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-005",
+  "topic": "verbs",
+  "wrong": "We need to do a decision.",
+  "right": "We need to make a decision.",
+  "ru": "Нам нужно принять решение.",
+  "why": "Make a decision — с make.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-006",
+  "topic": "verbs",
+  "wrong": "I look forward to hear from you.",
+  "right": "I look forward to hearing from you.",
+  "ru": "С нетерпением жду вашего ответа.",
+  "why": "В look forward to слово to — предлог, после него -ing.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-007",
+  "topic": "verbs",
+  "wrong": "I suggest to repeat the test.",
+  "right": "I suggest repeating the test.",
+  "ru": "Предлагаю повторить испытание.",
+  "why": "Suggest + -ing (или that…), не suggest to.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-008",
+  "topic": "verbs",
+  "wrong": "I am boring at this lecture.",
+  "right": "I am bored at this lecture.",
+  "ru": "Мне скучно на этой лекции.",
+  "why": "Чувство человека — bored. I am boring = «я скучный».",
+  "reviewed": false
+ },
+ {
+  "id": "gf-verbs-009",
+  "topic": "verbs",
+  "wrong": "My parents didn't let me to go.",
+  "right": "My parents didn't let me go.",
+  "ru": "Родители меня не отпустили.",
+  "why": "Let + кого + глагол без to.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-001",
+  "topic": "passive",
+  "wrong": "The samples was tested yesterday.",
+  "right": "The samples were tested yesterday.",
+  "ru": "Образцы испытали вчера.",
+  "why": "Samples — множественное число: were tested.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-002",
+  "topic": "passive",
+  "wrong": "The bridge was build in 1990.",
+  "right": "The bridge was built in 1990.",
+  "ru": "Мост построили в 1990 году.",
+  "why": "В пассиве — третья форма: built.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-003",
+  "topic": "passive",
+  "wrong": "This engine designed by Korolev's team.",
+  "right": "This engine was designed by Korolev's team.",
+  "ru": "Этот двигатель спроектировала команда Королёва.",
+  "why": "Без was смысл меняется: двигатель сам «спроектировал». Пассив — be + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-004",
+  "topic": "passive",
+  "wrong": "The part is made by steel.",
+  "right": "The part is made of steel.",
+  "ru": "Деталь сделана из стали.",
+  "why": "Материал — made of. By — для того, кто сделал.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-005",
+  "topic": "passive",
+  "wrong": "The report will written tomorrow.",
+  "right": "The report will be written tomorrow.",
+  "ru": "Отчёт напишут завтра.",
+  "why": "Будущий пассив: will be + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-006",
+  "topic": "passive",
+  "wrong": "The results are show in Figure 3.",
+  "right": "The results are shown in Figure 3.",
+  "ru": "Результаты приведены на рисунке 3.",
+  "why": "После are в пассиве — третья форма: shown.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-007",
+  "topic": "passive",
+  "wrong": "The test rig is building now.",
+  "right": "The test rig is being built now.",
+  "ru": "Стенд сейчас строится.",
+  "why": "Стенд сам не строит — процесс в пассиве: is being built.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-008",
+  "topic": "passive",
+  "wrong": "The bolts must tightened carefully.",
+  "right": "The bolts must be tightened carefully.",
+  "ru": "Болты нужно затягивать аккуратно.",
+  "why": "Пассив с модальным глаголом: must be + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-passive-009",
+  "topic": "passive",
+  "wrong": "I born in Saratov.",
+  "right": "I was born in Saratov.",
+  "ru": "Я родился в Саратове.",
+  "why": "Be born — всегда с was/were.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-001",
+  "topic": "word-order",
+  "wrong": "I go always to work by metro.",
+  "right": "I always go to work by metro.",
+  "ru": "Я всегда езжу на работу на метро.",
+  "why": "Always — перед обычным глаголом.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-002",
+  "topic": "word-order",
+  "wrong": "He is enough old to drive.",
+  "right": "He is old enough to drive.",
+  "ru": "Он достаточно взрослый, чтобы водить.",
+  "why": "Enough — после прилагательного.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-003",
+  "topic": "word-order",
+  "wrong": "I also am a student.",
+  "right": "I am also a student.",
+  "ru": "Я тоже студент.",
+  "why": "С be also ставится после глагола.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-004",
+  "topic": "word-order",
+  "wrong": "She speaks very well English.",
+  "right": "She speaks English very well.",
+  "ru": "Она очень хорошо говорит по-английски.",
+  "why": "Глагол и дополнение не разрываем, наречие — в конце.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-005",
+  "topic": "word-order",
+  "wrong": "I like very much this job.",
+  "right": "I like this job very much.",
+  "ru": "Мне очень нравится эта работа.",
+  "why": "Very much — в конце, после дополнения.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-006",
+  "topic": "word-order",
+  "wrong": "Never I have seen such a big rocket.",
+  "right": "I have never seen such a big rocket.",
+  "ru": "Я никогда не видел такую большую ракету.",
+  "why": "Never — между have и третьей формой.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-007",
+  "topic": "word-order",
+  "wrong": "She drinks usually coffee in the morning.",
+  "right": "She usually drinks coffee in the morning.",
+  "ru": "Утром она обычно пьёт кофе.",
+  "why": "Usually — перед обычным глаголом.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-008",
+  "topic": "word-order",
+  "wrong": "We bought a wooden big table.",
+  "right": "We bought a big wooden table.",
+  "ru": "Мы купили большой деревянный стол.",
+  "why": "Размер — раньше материала: big wooden.",
+  "reviewed": false
+ },
+ {
+  "id": "gf-word-order-009",
+  "topic": "word-order",
+  "wrong": "I checked carefully the drawing.",
+  "right": "I checked the drawing carefully.",
+  "ru": "Я внимательно проверил чертёж.",
+  "why": "Наречие не ставят между глаголом и дополнением.",
+  "reviewed": false
+ }
+]

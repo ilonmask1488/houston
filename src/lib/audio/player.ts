@@ -77,6 +77,9 @@ class Player {
     this.stop()
     const el = this.element()
     setState('loading')
+    // <audio> просит файл кусками (Range → 206), такие ответы service worker не кэширует.
+    // Обычный fetch целиком кладёт файл в кэш — звук будет и офлайн.
+    if (!/^(blob|data):/.test(url)) this.preload([url])
     return new Promise<void>((resolve, reject) => {
       let guard: ReturnType<typeof setTimeout> | undefined
       const done = () => {

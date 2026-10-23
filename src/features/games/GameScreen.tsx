@@ -1,4 +1,4 @@
-/* Мини-игры: «Помехи», «Быстрый ответ», «Скорочтение». Маршрут /game/:id (?seg=… — сегмент сеанса). */
+/* Мини-игры (список — GAME_IDS). Маршрут /game/:id (?seg=… — сегмент сеанса). «Помехи» и «Быстрый ответ» — здесь, остальные — Twins.tsx, Drills.tsx, Speedread.tsx. */
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
@@ -14,7 +14,9 @@ import { playText, stopAudio } from '../../lib/audio/audio'
 import { sfx, startStatic } from '../../lib/audio/sfx'
 import { loadProgress } from '../../lib/course/progress'
 import { db } from '../../lib/db/db'
+import { loadDeck, type Deck } from '../../lib/games/deck'
 import { comboPoints, GAME_IDS, gameRandom, quickPoints, quickQuestions, saveRecord, STATIC_SECONDS, staticNoise, staticPool, staticSpeed, type GameId, type StaticItem } from '../../lib/games/games'
+import { addPhraseCard } from '../../lib/srs/cards'
 import { rng, shuffle } from '../../lib/intake/plan'
 import { lastIntake } from '../../lib/intake/store'
 import { evaluateAchievements } from '../../lib/progress/achievements'
@@ -23,6 +25,7 @@ import { comboMultiplier, signalFor } from '../../lib/progress/signal'
 import { currentSpeed, updateSegment } from '../../lib/session/session'
 import { useSettings } from '../../lib/settings/settings'
 import s from './games.module.css'
+import { GrammarGame, NumbersGame, TermsGame } from './Drills'
 import { SpeedreadGame } from './Speedread'
 import { FalseFriendsGame, TwinsGame } from './Twins'
 import { NextBlock } from '../session/NextBlock'
@@ -96,6 +99,12 @@ function Game({ id }: { id: GameId }) {
           <TwinsGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
         ) : id === 'ff' ? (
           <FalseFriendsGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
+        ) : id === 'numbers' ? (
+          <NumbersGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
+        ) : id === 'terms' ? (
+          <TermsGame key={round} seconds={seconds} onFinish={(o) => void finish(o)} />
+        ) : id === 'grammar' ? (
+          <GrammarGame key={round} onFinish={(o) => void finish(o)} />
         ) : (
           <SpeedreadGame key={round} onFinish={(o) => void finish(o)} />
         ))}
@@ -133,7 +142,7 @@ function Game({ id }: { id: GameId }) {
 
 function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outcome) => void }) {
   const t = ru.games
-  const [pool, setPool] = useState<StaticItem[] | null>(null)
+  const [pool, setPool] = useState<Deck<StaticItem> | null>(null)
   const [base, setBase] = useState(1)
   const [item, setItem] = useState<StaticItem | null>(null)
   const [options, setOptions] = useState<string[]>([])
@@ -151,7 +160,7 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
     void (async () => {
       const [progress, intake] = await Promise.all([loadProgress(), lastIntake()])
       setBase(await currentSpeed(intake))
-      setPool(staticPool(progress))
+      setPool(await loadDeck('static', staticPool(progress), ['listen']))
     })()
     return () => {
       stopNoise.current()
@@ -163,8 +172,7 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
   const next = (after?: StaticItem, st = streak) => {
     if (!pool) return
     const rate = staticSpeed(base, st)
-    const cand = pool.filter((p) => p.id !== after?.id)
-    const it = cand[Math.floor(random() * cand.length)]!
+    const it = pool.draw(random, after?.id)
     setItem(it)
     setOptions(shuffle(it.options, rng(Math.floor(random() * 1e9))))
     setGiven(null)
@@ -200,7 +208,11 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
     if (given !== null || ended.current) return
     setGiven(k)
     const ok = k === right
+    pool.result(item.id, ok)
+    void pool.save().catch(() => {})
     void recordAnswer({ kind: 'listen', source: 'game', track: 'air', item: item.id, expected: item.text, given: options[k] ?? '', correct: ok, speed, accent: accentOf(item.voice), tag: 'static' })
+    // Не поймал — фраза вернётся карточкой «на слух → понять»
+    if (!ok) void addPhraseCard(item.id).catch(() => {})
     const s2 = ok ? streak + 1 : 0
     if (ok) {
       stats.current.correct++
@@ -213,7 +225,7 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
       setStreak(0)
       sfx('wrong')
     }
-    setTimeout(() => !ended.current && next(item, s2), ok ? 650 : 1400)
+    if (ok) setTimeout(() => !ended.current && next(item, s2), 650)
   }
   return (
     <section className={s.play}>
@@ -246,6 +258,30 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
           </button>
         ))}
       </div>
+      {given !== null && given !== right && (
+        <>
+          <div className={s.feedback} data-ok="false">
+            <span className={s.feedbackNote}>{t.heard}</span>
+            <span lang="en" className={s.feedbackEn}>
+              {item.text}
+            </span>
+            {item.ru && <span>{item.ru}</span>}
+            {item.focus && (
+              <span className={s.feedbackNote}>
+                ↳ <span lang="en">{item.focus}</span>
+              </span>
+            )}
+          </div>
+          <div className={ui.row}>
+            <button type="button" className={ui.secondary} onClick={() => void playText(item.say ?? item.text, { voice: item.voice, rate: 0.75 }).catch(() => {})}>
+              {ru.steps.listen.slower}
+            </button>
+            <button type="button" className={ui.primary} onClick={() => !ended.current && next(item, 0)}>
+              {t.nextRound}
+            </button>
+          </div>
+        </>
+      )}
     </section>
   )
 }
@@ -331,6 +367,12 @@ function QuickGame({ onFinish }: { onFinish: (o: Outcome) => void }) {
                 ))}
               </div>
             </div>
+          )}
+          {q.sample && (
+            <details className={s.feedback}>
+              <summary>{t.sample}</summary>
+              <span lang="en">{q.sample}</span>
+            </details>
           )}
           {pts && (
             <>

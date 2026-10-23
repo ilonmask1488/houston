@@ -50,6 +50,9 @@ drag coefficient|ˈdræɡ ˌkoʊɪˈfɪʃənt|коэффициент лобов�
 angle of attack|ˈæŋɡəl əv əˈtæk|угол атаки|space
 Mach number|ˈmɑːk ˌnʌmbər|число Маха|space
 supersonic|ˌsuːpərˈsɑːnɪk|сверхзвуковой|space
+clean room|ˈkliːn ruːm|чистое помещение|space
+flight model|ˈflaɪt ˌmɑːdəl|лётный образец|space
+wrist strap|ˈrɪst stræp|антистатический браслет|space
 propulsion|prəˈpʌlʃən|двигательная установка|prop
 rocket engine|ˈrɑːkɪt ˌendʒɪn|ракетный двигатель|prop
 liquid propellant|ˈlɪkwɪd prəˈpelənt|жидкое ракетное топливо|prop
@@ -97,6 +100,14 @@ flow rate|ˈfloʊ reɪt|расход|prop
 mass flow|ˈmæs floʊ|массовый расход|prop
 heat flux|ˈhiːt flʌks|тепловой поток|prop
 additive manufacturing|ˈædətɪv ˌmænjəˈfæktʃərɪŋ|аддитивное производство|prop
+nitrogen|ˈnaɪtrədʒən|азот|prop
+helium|ˈhiːliəm|гелий|prop
+cold gas thruster|ˈkoʊld ɡæs ˈθrʌstər|двигатель на холодном газе|prop
+impulse bit|ˈɪmpʌls bɪt|единичный (минимальный) импульс|prop
+solenoid valve|ˈsoʊlənɔɪd vælv|электромагнитный клапан|prop
+relief valve|rɪˈliːf vælv|предохранительный клапан|prop
+fitting|ˈfɪtɪŋ|штуцер, фитинг|prop
+hose|hoʊz|шланг|prop
 composite|kəmˈpɑːzɪt|композит; составной|mat
 carbon fiber|ˈkɑːrbən ˌfaɪbər|углеродное волокно|mat
 glass fiber|ˈɡlæs ˌfaɪbər|стекловолокно|mat
@@ -144,6 +155,13 @@ density|ˈdensəti|плотность|mat
 porosity|pəˈrɑːsəti|пористость|mat
 grain|ɡreɪn|зерно (структуры)|mat
 microstructure|ˈmaɪkroʊˌstrʌktʃər|микроструктура|mat
+shelf life|ˈʃelf laɪf|срок хранения|mat
+out-life|ˈaʊt laɪf|жизнеспособность вне морозильника|mat
+gel time|ˈdʒel taɪm|время гелеобразования|mat
+tack|tæk|липкость (препрега)|mat
+void|vɔɪd|пора (в ламинате)|mat
+thaw|θɔː|размораживать(ся)|mat
+condense|kənˈdens|конденсироваться|mat
 specimen|ˈspesəmən|образец|test
 stress|stres|механическое напряжение|test
 strain|streɪn|деформация (относительная)|test
@@ -216,6 +234,11 @@ cantilever|ˈkæntɪliːvər|консоль|test
 deflection|dɪˈflekʃən|прогиб|test
 torque|tɔːrk|крутящий момент; момент затяжки|test
 preload|ˈpriːloʊd|предварительная затяжка|test
+test bench|ˈtest bentʃ|испытательный стенд|test
+hydraulic|haɪˈdrɔːlɪk|гидравлический|test
+emergency stop|ɪˈmɜːrdʒənsi stɑːp|аварийный останов|test
+proof pressure|ˈpruːf ˌpreʃər|давление опрессовки (перегрузки)|test
+leak rate|ˈliːk reɪt|натекание, скорость утечки|test
 drawing|ˈdrɔːɪŋ|чертёж|cad
 technical drawing|ˈteknɪkəl ˈdrɔːɪŋ|технический чертёж|cad
 assembly drawing|əˈsembli ˈdrɔːɪŋ|сборочный чертёж|cad
@@ -277,6 +300,13 @@ casting|ˈkæstɪŋ|литьё; отливка|cad
 sheet metal|ˈʃiːt ˌmetəl|листовой металл|cad
 workshop|ˈwɜːrkʃɑːp|цех, мастерская|cad
 lead time|ˈliːd taɪm|срок изготовления/поставки|cad
+burr|bɜːr|заусенец|cad
+sealing face|ˈsiːlɪŋ feɪs|уплотнительная поверхность|cad
+mask|mæsk|защищать от покрытия; маска|cad
+position tolerance|pəˈzɪʃən ˈtɑːlərəns|позиционный допуск|cad
+zero point|ˈzɪroʊ pɔɪnt|нулевая точка (станка)|cad
+rework|ˈriːwɜːrk|доработка; дорабатывать|cad
+batch|bætʃ|партия (изделий)|cad
 sensor|ˈsensər|датчик|sens
 transducer|trænzˈduːsər|преобразователь|sens
 strain gauge|ˈstreɪn ɡeɪdʒ|тензодатчик|sens
@@ -321,6 +351,10 @@ ground loop|ˈɡraʊnd luːp|контур заземления|sens
 datasheet|ˈdeɪtəʃiːt|техническое описание (даташит)|sens
 operating temperature|ˈɑːpəreɪtɪŋ ˈtemprətʃər|рабочая температура|sens
 power supply|ˈpaʊər səˈplaɪ|источник питания|sens
+sheath|ʃiːθ|оболочка (термопары)|sens
+junction|ˈdʒʌŋkʃən|спай (термопары); соединение|sens
+pressure gauge|ˈpreʃər ɡeɪdʒ|манометр|sens
+grounding|ˈɡraʊndɪŋ|заземление|sens
 abstract|ˈæbstrækt|аннотация (статьи)|doc
 introduction|ˌɪntrəˈdʌkʃən|введение|doc
 methodology|ˌmeθəˈdɑːlədʒi|методика|doc
@@ -354,3 +388,8 @@ scatter|ˈskætər|разброс|doc
 mean value|ˈmiːn ˈvæljuː|среднее значение|doc
 standard deviation|ˈstændərd ˌdiːviˈeɪʃən|среднеквадратическое отклонение|doc
 significant figures|sɪɡˈnɪfɪkənt ˈfɪɡjərz|значащие цифры|doc
+root cause|ˈruːt kɔːz|первопричина|doc
+corrective action|kəˈrektɪv ˈækʃən|корректирующее действие|doc
+disposition|ˌdɪspəˈzɪʃən|решение (по несоответствию)|doc
+work instruction|ˈwɜːrk ɪnˌstrʌkʃən|рабочая инструкция|doc
+inspector|ɪnˈspektər|контролёр (ОТК)|doc

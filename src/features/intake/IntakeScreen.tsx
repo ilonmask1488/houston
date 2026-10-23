@@ -24,6 +24,7 @@ import { dropDraft, finishIntake, loadDraft, saveDraft } from '../../lib/intake/
 import { useSettings } from '../../lib/settings/settings'
 import { countWords } from '../../lib/speech/recognize'
 import s from './intake.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 const BLOCKS = ['vocab', 'listening', 'pairs', 'reading', 'speaking'] as const
 
@@ -32,6 +33,8 @@ export function IntakeScreen() {
   const [draft, setDraft] = useState<IntakeDraft | null>(null)
   const [resume, setResume] = useState<IntakeDraft | null>(null)
   const [finishing, setFinishing] = useState(false)
+  // Итог не сохранился — не повторяем сами по кругу, ждём «Повторить».
+  const [finishError, setFinishError] = useState(false)
 
   useEffect(() => {
     void loadDraft().then((d) => {
@@ -51,10 +54,17 @@ export function IntakeScreen() {
   }, [])
 
   useEffect(() => {
-    if (draft?.step !== 'done' || finishing) return
+    if (draft?.step !== 'done' || finishing || finishError) return
     setFinishing(true)
-    void finishIntake(draft).then(() => navigate('/profile?fresh=1', { replace: true }))
-  }, [draft, finishing, navigate])
+    void finishIntake(draft).then(
+      () => navigate('/profile?fresh=1', { replace: true }),
+      (e: unknown) => {
+        console.error('finishIntake', e)
+        setFinishing(false)
+        setFinishError(true)
+      },
+    )
+  }, [draft, finishing, finishError, navigate])
 
   if (resume)
     return (
@@ -99,6 +109,16 @@ export function IntakeScreen() {
       {draft.step === 'reading' && <ReadingStep draft={draft} update={update} />}
       {draft.step === 'speaking' && <SpeakingStep draft={draft} update={update} />}
       {draft.step === 'done' && <PingSays mood="celebrate">{ru.lines.intake.done}</PingSays>}
+      {draft.step === 'done' && finishError && (
+        <div className={s.actions}>
+          <p className={ui.error} role="alert">
+            {ru.errors.save}
+          </p>
+          <button type="button" className={ui.signalButton} onClick={() => setFinishError(false)}>
+            {ru.errors.retry}
+          </button>
+        </div>
+      )}
     </main>
   )
 }
@@ -479,17 +499,22 @@ function SpeakingStep({ draft, update }: StepProps) {
   const [noMic, setNoMic] = useState(!hasCapture)
   const cap = useRef<Capture | null>(null)
   const timers = useRef<ReturnType<typeof setTimeout>[]>([])
+  // Ушли с экрана, пока звучал вопрос, — микрофон после await не включаем.
+  const alive = useRef(true)
+  useObjectUrl(result?.url)
 
   useEffect(() => {
     if (!item) update((d) => ({ ...d, step: 'done' }))
   }, [item, update])
-  useEffect(
-    () => () => {
+  useEffect(() => {
+    alive.current = true
+    return () => {
+      alive.current = false
       timers.current.forEach(clearTimeout)
       cap.current?.cancel()
-    },
-    [],
-  )
+      cap.current = null
+    }
+  }, [])
   // Новый вопрос: сначала объяснение про микрофон (один раз), потом вопрос.
   useEffect(() => {
     if (!item) return
@@ -505,10 +530,11 @@ function SpeakingStep({ draft, update }: StepProps) {
     setError(null)
     stopAudio()
     await playText(item.q, { voice: item.voice }).catch(() => {})
+    if (!alive.current) return
     if (noMic) return setPhase('nomic')
     try {
       setStarted(false)
-      cap.current = await startCapture({
+      const c = await startCapture({
         asr: settings.asr,
         onLevel: setLevel,
         onSpeechStart: () => {
@@ -516,6 +542,8 @@ function SpeakingStep({ draft, update }: StepProps) {
           setCountdown(null)
         },
       })
+      if (!alive.current) return c.cancel()
+      cap.current = c
       setPhase('recording')
       let n = settings.answerSeconds
       setCountdown(n)
@@ -527,6 +555,7 @@ function SpeakingStep({ draft, update }: StepProps) {
       timers.current.push(setTimeout(tick, 1000))
       timers.current.push(setTimeout(() => void stop(), 60_000))
     } catch (e) {
+      if (!alive.current) return
       const reason = e instanceof RecorderError ? e.reason : 'failed'
       setError(reason === 'denied' ? ru.check.denied : reason === 'no-device' ? ru.check.noDevice : ru.check.failed)
       setNoMic(true)
@@ -542,6 +571,10 @@ function SpeakingStep({ draft, update }: StepProps) {
     cap.current = null
     if (!c) return
     const r = await c.stop()
+    if (!alive.current) {
+      if (r.url) URL.revokeObjectURL(r.url)
+      return
+    }
     setResult(r)
     setPhase('rate')
   }

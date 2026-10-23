@@ -1,0 +1,2400 @@
+[
+ {
+  "id": "gr-articles-001",
+  "topic": "articles",
+  "text": "I am ___ engineer at a design bureau.",
+  "options": [
+   "an",
+   "a",
+   "the",
+   "∅"
+  ],
+  "ru": "Я инженер в конструкторском бюро.",
+  "why": "Профессия в единственном числе — всегда с a/an. Перед гласным звуком — an. Пропускать артикль («I am engineer») нельзя.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-002",
+  "topic": "articles",
+  "text": "She works as ___ technician in our lab.",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "∅"
+  ],
+  "ru": "Она работает техником в нашей лаборатории.",
+  "why": "После as + профессия тоже нужен a/an. Technician начинается с согласного звука — значит, a.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-003",
+  "topic": "articles",
+  "text": "We have ___ new supplier. The supplier is from Kazan.",
+  "options": [
+   "a",
+   "the",
+   "∅"
+  ],
+  "ru": "У нас новый поставщик. Поставщик из Казани.",
+  "why": "Первое упоминание — a: собеседник о нём ещё не знает. Во втором предложении он уже известен — the.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-004",
+  "topic": "articles",
+  "text": "I bought a multimeter, but ___ multimeter doesn't work.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Я купил мультиметр, но он не работает.",
+  "why": "Второе упоминание того же предмета — the: понятно, о каком мультиметре речь.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-005",
+  "topic": "articles",
+  "text": "___ Moon goes around the Earth.",
+  "options": [
+   "The",
+   "A",
+   "∅"
+  ],
+  "ru": "Луна вращается вокруг Земли.",
+  "why": "Единственный в своём роде объект — the: the Moon, the Sun, the Earth.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-006",
+  "topic": "articles",
+  "text": "Please close ___ door, it is cold in here.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Закрой, пожалуйста, дверь, здесь холодно.",
+  "why": "Обоим ясно, о какой двери речь (о той, что в этой комнате), — значит, the.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-007",
+  "topic": "articles",
+  "text": "This is ___ best result of the whole test series.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Это лучший результат за всю серию испытаний.",
+  "why": "Перед превосходной степенью — всегда the: the best, the highest, the most reliable.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-008",
+  "topic": "articles",
+  "text": "Our office is on ___ third floor.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Наш офис на третьем этаже.",
+  "why": "Порядковые числительные (first, second, third) идут с the.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-009",
+  "topic": "articles",
+  "text": "___ first stage separates after two minutes.",
+  "options": [
+   "The",
+   "A",
+   "∅"
+  ],
+  "ru": "Первая ступень отделяется через две минуты.",
+  "why": "Порядковое числительное first — с the. Без артикля по-английски так не говорят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-010",
+  "topic": "articles",
+  "text": "Carbon fibre is lighter than ___ steel.",
+  "options": [
+   "∅",
+   "the",
+   "a"
+  ],
+  "ru": "Углепластик легче стали.",
+  "why": "Материал вообще (неисчисляемое существительное в общем смысле) — без артикля: steel, aluminium, water.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-011",
+  "topic": "articles",
+  "text": "I usually go to work by ___ bus.",
+  "options": [
+   "∅",
+   "a",
+   "the"
+  ],
+  "ru": "Обычно я езжу на работу на автобусе.",
+  "why": "By + транспорт — без артикля: by bus, by car, by metro.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-012",
+  "topic": "articles",
+  "text": "Let's discuss it after ___ lunch.",
+  "options": [
+   "∅",
+   "the",
+   "a"
+  ],
+  "ru": "Давай обсудим это после обеда.",
+  "why": "Приёмы пищи в обычном смысле — без артикля: after lunch, before breakfast, at dinner.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-013",
+  "topic": "articles",
+  "text": "Can I ask you ___ question?",
+  "options": [
+   "a",
+   "an",
+   "∅"
+  ],
+  "ru": "Можно задать тебе вопрос?",
+  "why": "Один какой-то вопрос, впервые упомянутый, — a. Существительное в единственном числе не бывает «голым».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-014",
+  "topic": "articles",
+  "text": "The test lasted about ___ hour.",
+  "options": [
+   "an",
+   "a",
+   "the",
+   "∅"
+  ],
+  "ru": "Испытание длилось около часа.",
+  "why": "Выбор a/an — по звуку, а не по букве. В hour буква h не читается, первый звук гласный — an.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-015",
+  "topic": "articles",
+  "text": "She is ___ university student.",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "∅"
+  ],
+  "ru": "Она студентка университета.",
+  "why": "University начинается со звука [ju], это согласный звук — поэтому a, а не an.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-016",
+  "topic": "articles",
+  "text": "Our plant is certified to ___ ISO 9001.",
+  "options": [
+   "∅",
+   "the",
+   "an"
+  ],
+  "ru": "Наш завод сертифицирован по ISO 9001.",
+  "why": "Название стандарта с номером — без артикля: ISO 9001, GOST 2.307. С the — только если добавить слово standard.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-017",
+  "topic": "articles",
+  "text": "I read an interesting article in ___ Journal of Spacecraft and Rockets.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Я прочитал интересную статью в журнале Journal of Spacecraft and Rockets.",
+  "why": "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-018",
+  "topic": "articles",
+  "text": "___ Volga is the longest river in Europe.",
+  "options": [
+   "The",
+   "∅",
+   "A"
+  ],
+  "ru": "Волга — самая длинная река в Европе.",
+  "why": "Реки, моря и океаны — с the: the Volga, the Black Sea. Города и страны — обычно без артикля.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-019",
+  "topic": "articles",
+  "text": "He lives in ___ Moscow.",
+  "options": [
+   "∅",
+   "the",
+   "a"
+  ],
+  "ru": "Он живёт в Москве.",
+  "why": "Названия городов — без артикля: in Moscow, in Kazan.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-020",
+  "topic": "articles",
+  "text": "We need ___ more time to finish the analysis.",
+  "options": [
+   "∅",
+   "a",
+   "the"
+  ],
+  "ru": "Нам нужно больше времени, чтобы закончить анализ.",
+  "why": "Time в значении «время» неисчисляемое — a с ним не ставится. Речь о времени вообще — без артикля.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-021",
+  "topic": "articles",
+  "text": "What ___ interesting idea!",
+  "options": [
+   "an",
+   "a",
+   "the",
+   "∅"
+  ],
+  "ru": "Какая интересная идея!",
+  "why": "Восклицание What + существительное в единственном числе требует a/an. Interesting начинается с гласной — an.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-022",
+  "topic": "articles",
+  "text": "We meet with the customer twice ___ week.",
+  "options": [
+   "a",
+   "the",
+   "∅"
+  ],
+  "ru": "Мы встречаемся с заказчиком дважды в неделю.",
+  "why": "Частота «раз в …» — с a: once a day, twice a week. The здесь не ставят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-articles-023",
+  "topic": "articles",
+  "text": "This is ___ only drawing we have.",
+  "options": [
+   "the",
+   "an",
+   "∅"
+  ],
+  "ru": "Это единственный чертёж, который у нас есть.",
+  "why": "The only — «единственный»: предмет однозначно определён. An only тут не говорят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-001",
+  "topic": "prepositions",
+  "text": "The result depends ___ the temperature.",
+  "options": [
+   "on",
+   "from",
+   "of"
+  ],
+  "ru": "Результат зависит от температуры.",
+  "why": "Depend on — «зависеть от». Русское «от» тянет к from, но по-английски только on.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-002",
+  "topic": "prepositions",
+  "text": "We discussed ___ the new design at the meeting.",
+  "options": [
+   "∅",
+   "about",
+   "on"
+  ],
+  "ru": "Мы обсудили новую конструкцию на совещании.",
+  "why": "Discuss — без предлога: discuss the plan. «Обсуждать о» — ошибка калькой с talk about.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-003",
+  "topic": "prepositions",
+  "text": "The meeting starts ___ 10 o'clock.",
+  "options": [
+   "at",
+   "in",
+   "on"
+  ],
+  "ru": "Совещание начинается в 10 часов.",
+  "why": "Точное время — at: at 10 o'clock, at noon.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-004",
+  "topic": "prepositions",
+  "text": "I was born ___ 2004.",
+  "options": [
+   "in",
+   "at",
+   "on"
+  ],
+  "ru": "Я родился в 2004 году.",
+  "why": "Год, месяц, время года — in: in 2004, in May, in winter.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-005",
+  "topic": "prepositions",
+  "text": "The design review is ___ Monday.",
+  "options": [
+   "on",
+   "in",
+   "at"
+  ],
+  "ru": "Защита проекта (дизайн-ревью) — в понедельник.",
+  "why": "Дни недели и даты — on: on Monday, on 5 May.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-006",
+  "topic": "prepositions",
+  "text": "I am interested ___ structural analysis.",
+  "options": [
+   "in",
+   "on",
+   "about",
+   "at"
+  ],
+  "ru": "Мне интересен прочностной анализ.",
+  "why": "Interested in — только in. «Интересуюсь чем-то» не переводится через about или on.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-007",
+  "topic": "prepositions",
+  "text": "Who is responsible ___ the test report?",
+  "options": [
+   "for",
+   "of",
+   "on"
+  ],
+  "ru": "Кто отвечает за протокол испытаний?",
+  "why": "Responsible for — «отвечать за». Of и on здесь не подходят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-008",
+  "topic": "prepositions",
+  "text": "According ___ the drawing, the hole diameter is 12 mm.",
+  "options": [
+   "to",
+   "with",
+   "on"
+  ],
+  "ru": "Согласно чертежу, диаметр отверстия — 12 мм.",
+  "why": "According to — устойчивое сочетание, «согласно», «по данным». Другие предлоги невозможны.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-009",
+  "topic": "prepositions",
+  "text": "We are still waiting ___ the parts from the supplier.",
+  "options": [
+   "for",
+   "∅",
+   "of"
+  ],
+  "ru": "Мы всё ещё ждём детали от поставщика.",
+  "why": "Wait for something — «ждать что-то». Без for (как в русском «ждать детали») нельзя.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-010",
+  "topic": "prepositions",
+  "text": "The assembly consists ___ twelve parts.",
+  "options": [
+   "of",
+   "from",
+   "in"
+  ],
+  "ru": "Сборка состоит из двенадцати деталей.",
+  "why": "Consist of — «состоять из». Русское «из» подталкивает к from, но правильно только of.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-011",
+  "topic": "prepositions",
+  "text": "Please send the report ___ Friday at the latest.",
+  "options": [
+   "by",
+   "until",
+   "in"
+  ],
+  "ru": "Пришли, пожалуйста, отчёт не позже пятницы.",
+  "why": "By Friday — «к пятнице, не позже» (срок). Until — «до пятницы непрерывно», для разового действия не годится.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-012",
+  "topic": "prepositions",
+  "text": "I will be in the lab ___ 6 p.m., then I'll go home.",
+  "options": [
+   "until",
+   "by",
+   "for"
+  ],
+  "ru": "Я буду в лаборатории до 18:00, потом пойду домой.",
+  "why": "Until — действие длится до этого момента. By — только срок «не позже», для состояния «быть» не подходит.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-013",
+  "topic": "prepositions",
+  "text": "You can see the crack ___ the photo.",
+  "options": [
+   "in",
+   "on",
+   "at"
+  ],
+  "ru": "На фотографии видна трещина.",
+  "why": "На картинке/фото — in the picture, in the photo. Русское «на» тянет к on, но это ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-014",
+  "topic": "prepositions",
+  "text": "The results table is ___ page 5.",
+  "options": [
+   "on",
+   "in",
+   "at"
+  ],
+  "ru": "Таблица результатов на странице 5.",
+  "why": "Страница — on: on page 5. In page и at page — ошибки.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-015",
+  "topic": "prepositions",
+  "text": "We arrived ___ Moscow late at night.",
+  "options": [
+   "in",
+   "at",
+   "to"
+  ],
+  "ru": "Мы прибыли в Москву поздно ночью.",
+  "why": "Arrive in — город или страна, arrive at — здание, станция. Arrive to не бывает, хотя по-русски «в Москву» похоже на to.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-016",
+  "topic": "prepositions",
+  "text": "The train arrives ___ the station at nine.",
+  "options": [
+   "at",
+   "to",
+   "on"
+  ],
+  "ru": "Поезд прибывает на станцию в девять.",
+  "why": "Arrive at + конкретное место (станция, завод, аэропорт). После arrive предлог to не ставится.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-017",
+  "topic": "prepositions",
+  "text": "I'm good ___ CAD modelling.",
+  "options": [
+   "at",
+   "in",
+   "on"
+  ],
+  "ru": "Я хорошо умею моделировать в САПР.",
+  "why": "Good at something — «хорошо умею». Good in — частая ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-018",
+  "topic": "prepositions",
+  "text": "Thank you ___ your help with the calculations.",
+  "options": [
+   "for",
+   "about",
+   "of"
+  ],
+  "ru": "Спасибо за помощь с расчётами.",
+  "why": "Thank you for — «спасибо за». About и of здесь не подходят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-019",
+  "topic": "prepositions",
+  "text": "He is married ___ a teacher.",
+  "options": [
+   "to",
+   "with",
+   "on"
+  ],
+  "ru": "Он женат на учительнице.",
+  "why": "Married to someone — «женат на / замужем за». Married with — калька с «вместе с», это ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-020",
+  "topic": "prepositions",
+  "text": "I'll call you ___ the evening.",
+  "options": [
+   "in",
+   "at",
+   "on"
+  ],
+  "ru": "Я позвоню тебе вечером.",
+  "why": "Части суток — in: in the morning, in the evening. Но at night.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-021",
+  "topic": "prepositions",
+  "text": "Let's meet ___ Monday morning.",
+  "options": [
+   "on",
+   "in",
+   "at"
+  ],
+  "ru": "Давай встретимся в понедельник утром.",
+  "why": "Если перед morning стоит день недели, предлог on: on Monday morning.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-022",
+  "topic": "prepositions",
+  "text": "She is afraid ___ public speaking.",
+  "options": [
+   "of",
+   "from",
+   "before"
+  ],
+  "ru": "Она боится выступать на публике.",
+  "why": "Afraid of — «бояться чего-то». Русское «боится перед» или «от» не переносится.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-023",
+  "topic": "prepositions",
+  "text": "Please reply ___ my email as soon as possible.",
+  "options": [
+   "to",
+   "on",
+   "∅"
+  ],
+  "ru": "Пожалуйста, ответь на моё письмо как можно скорее.",
+  "why": "Reply to something — «ответить на». Reply on — калька с «на», а без предлога нельзя.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-024",
+  "topic": "prepositions",
+  "text": "I've worked at this plant ___ two years.",
+  "options": [
+   "for",
+   "since",
+   "during"
+  ],
+  "ru": "Я работаю на этом заводе два года.",
+  "why": "For + отрезок времени (two years), since + точка отсчёта (since 2024). During — «во время чего-то».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-025",
+  "topic": "prepositions",
+  "text": "The plant is famous ___ its engines.",
+  "options": [
+   "for",
+   "by",
+   "with"
+  ],
+  "ru": "Завод знаменит своими двигателями.",
+  "why": "Famous for — «известен чем-то». Русский творительный падеж тянет к by/with — это ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-prepositions-026",
+  "topic": "prepositions",
+  "text": "Listen ___ me, please.",
+  "options": [
+   "to",
+   "∅",
+   "at"
+  ],
+  "ru": "Послушай меня, пожалуйста.",
+  "why": "Listen to someone — предлог обязателен. «Listen me» — частая ошибка из-за русского «слушать кого-то».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-001",
+  "topic": "tenses",
+  "text": "I ___ the report to the customer yesterday.",
+  "options": [
+   "sent",
+   "have sent",
+   "send"
+  ],
+  "ru": "Вчера я отправил отчёт заказчику.",
+  "why": "Yesterday, last week, in 2020 — законченное время в прошлом, только Past Simple. Present Perfect с yesterday не сочетается.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-002",
+  "topic": "tenses",
+  "text": "I ___ in this design bureau since 2023.",
+  "options": [
+   "have worked",
+   "work",
+   "worked"
+  ],
+  "ru": "Я работаю в этом КБ с 2023 года.",
+  "why": "Since — с какого-то момента до сих пор: Present Perfect. По-русски «работаю» — настоящее, но work здесь ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-003",
+  "topic": "tenses",
+  "text": "We ___ each other for five years.",
+  "options": [
+   "have known",
+   "know",
+   "am knowing"
+  ],
+  "ru": "Мы знаем друг друга пять лет.",
+  "why": "Состояние длится до сих пор (for five years) — Present Perfect: have known. Know в Continuous не бывает.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-004",
+  "topic": "tenses",
+  "text": "I ___ on this project for two years.",
+  "options": [
+   "have been working",
+   "am working",
+   "work"
+  ],
+  "ru": "Я работаю над этим проектом два года.",
+  "why": "Действие длится с прошлого до сейчас, указано «сколько» — Present Perfect Continuous. Am working + for two years — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-005",
+  "topic": "tenses",
+  "text": "Look at the gauge! The pressure ___ quickly.",
+  "options": [
+   "is rising",
+   "rises",
+   "rose"
+  ],
+  "ru": "Посмотри на манометр! Давление быстро растёт.",
+  "why": "Происходит прямо сейчас (Look!) — Present Continuous.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-006",
+  "topic": "tenses",
+  "text": "Water ___ at 100 degrees Celsius.",
+  "options": [
+   "boils",
+   "is boiling",
+   "boiled"
+  ],
+  "ru": "Вода кипит при 100 градусах Цельсия.",
+  "why": "Общий факт, закон природы — Present Simple. Continuous означал бы «кипит прямо сейчас».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-007",
+  "topic": "tenses",
+  "text": "I usually ___ to work by metro.",
+  "options": [
+   "go",
+   "am going",
+   "goes"
+  ],
+  "ru": "Обычно я езжу на работу на метро.",
+  "why": "Привычка, регулярное действие (usually) — Present Simple. Для I — go, без -s.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-008",
+  "topic": "tenses",
+  "text": "Yesterday the vibration test ___ three hours.",
+  "options": [
+   "took",
+   "has taken",
+   "takes"
+  ],
+  "ru": "Вчера вибрационное испытание заняло три часа.",
+  "why": "Yesterday — законченный момент в прошлом, Past Simple: took.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-009",
+  "topic": "tenses",
+  "text": "I ___ Kazan last summer.",
+  "options": [
+   "visited",
+   "have visited",
+   "visit"
+  ],
+  "ru": "Прошлым летом я был в Казани.",
+  "why": "Last summer — конкретное прошлое время, нужен Past Simple.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-010",
+  "topic": "tenses",
+  "text": "Have you ever ___ a rocket launch?",
+  "options": [
+   "seen",
+   "saw",
+   "see"
+  ],
+  "ru": "Ты когда-нибудь видел запуск ракеты?",
+  "why": "Have + третья форма глагола (seen). Saw — вторая форма, после have не ставится.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-011",
+  "topic": "tenses",
+  "text": "I ___ my pass, so I can't get into the lab.",
+  "options": [
+   "have lost",
+   "lose",
+   "am losing"
+  ],
+  "ru": "Я потерял пропуск, поэтому не могу пройти в лабораторию.",
+  "why": "Действие в прошлом, а результат важен сейчас — Present Perfect.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-012",
+  "topic": "tenses",
+  "text": "I ___ the supplier tomorrow at 10; it's in my calendar.",
+  "options": [
+   "am meeting",
+   "met",
+   "have met"
+  ],
+  "ru": "Завтра в 10 я встречаюсь с поставщиком, это у меня в календаре.",
+  "why": "Договорённость на ближайшее будущее — Present Continuous: I'm meeting… tomorrow.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-013",
+  "topic": "tenses",
+  "text": "Wait, I ___ help you with that box.",
+  "options": [
+   "will",
+   "am",
+   "have"
+  ],
+  "ru": "Подожди, я помогу тебе с этой коробкой.",
+  "why": "Решение, принятое в момент речи, — will: I'll help you.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-014",
+  "topic": "tenses",
+  "text": "If it ___ tomorrow, we will postpone the test.",
+  "options": [
+   "rains",
+   "will rain",
+   "rain"
+  ],
+  "ru": "Если завтра будет дождь, мы перенесём испытание.",
+  "why": "После if в значении условия будущее время не ставится — Present Simple. Русское «будет» тянет к will.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-015",
+  "topic": "tenses",
+  "text": "When I ___ the results, I'll call you.",
+  "options": [
+   "get",
+   "will get",
+   "got"
+  ],
+  "ru": "Когда я получу результаты, я тебе позвоню.",
+  "why": "После when (о будущем) — Present Simple, а will только во второй части.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-016",
+  "topic": "tenses",
+  "text": "I ___ a webinar when you called me.",
+  "options": [
+   "was watching",
+   "am watching",
+   "have watched"
+  ],
+  "ru": "Я смотрел вебинар, когда ты мне позвонил.",
+  "why": "Длительное действие в прошлом, которое прервали, — Past Continuous: was watching.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-017",
+  "topic": "tenses",
+  "text": "She ___ in Kazan, but now she lives in Moscow.",
+  "options": [
+   "used to live",
+   "use to live",
+   "is living"
+  ],
+  "ru": "Раньше она жила в Казани, а сейчас живёт в Москве.",
+  "why": "Used to — «раньше (а теперь нет)». В утвердительном предложении — именно used, с d.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-018",
+  "topic": "tenses",
+  "text": "How long ___ you been working here?",
+  "options": [
+   "have",
+   "are",
+   "do"
+  ],
+  "ru": "Как долго ты здесь работаешь?",
+  "why": "Present Perfect Continuous: have + been + -ing. Вопрос «How long … ?» о действии до сих пор.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-019",
+  "topic": "tenses",
+  "text": "I ___ my thesis next June.",
+  "options": [
+   "will defend",
+   "defended",
+   "have defended"
+  ],
+  "ru": "Я буду защищать диплом в июне следующего года.",
+  "why": "Next June — будущее, нужен will (или going to). Прошедшее и Present Perfect с next невозможны.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-020",
+  "topic": "tenses",
+  "text": "He ___ the company in 2020.",
+  "options": [
+   "joined",
+   "has joined",
+   "joins"
+  ],
+  "ru": "Он пришёл в компанию в 2020 году.",
+  "why": "Конкретный год в прошлом — Past Simple. Present Perfect с «in 2020» — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-021",
+  "topic": "tenses",
+  "text": "We ___ the prototype last week, and it works well.",
+  "options": [
+   "built",
+   "have built",
+   "build"
+  ],
+  "ru": "Мы собрали прототип на прошлой неделе, и он хорошо работает.",
+  "why": "Last week — законченное время, значит Past Simple, даже если результат важен сейчас.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-022",
+  "topic": "tenses",
+  "text": "Right now I ___ a new bracket in KOMPAS.",
+  "options": [
+   "am designing",
+   "design",
+   "designed"
+  ],
+  "ru": "Прямо сейчас я проектирую новый кронштейн в КОМПАСе.",
+  "why": "Right now — действие в процессе, Present Continuous.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-023",
+  "topic": "tenses",
+  "text": "This is the first time I ___ a real rocket engine.",
+  "options": [
+   "have seen",
+   "see",
+   "am seeing"
+  ],
+  "ru": "Я впервые вижу настоящий ракетный двигатель.",
+  "why": "После This is the first time… — Present Perfect. По-русски «вижу», но see/am seeing — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-tenses-024",
+  "topic": "tenses",
+  "text": "Our team ___ the analysis yet.",
+  "options": [
+   "hasn't finished",
+   "doesn't finish",
+   "isn't finish"
+  ],
+  "ru": "Наша команда ещё не закончила анализ.",
+  "why": "Yet в отрицании — Present Perfect: hasn't finished. Isn't finish — неправильная форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-001",
+  "topic": "questions",
+  "text": "Where ___ you work?",
+  "options": [
+   "do",
+   "are",
+   "does"
+  ],
+  "ru": "Где ты работаешь?",
+  "why": "В вопросе с обычным глаголом в Present Simple нужен do/does. Для you — do.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-002",
+  "topic": "questions",
+  "text": "___ she speak English?",
+  "options": [
+   "Does",
+   "Do",
+   "Is"
+  ],
+  "ru": "Она говорит по-английски?",
+  "why": "He/she/it в Present Simple — does. Is с глаголом speak не образует вопрос.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-003",
+  "topic": "questions",
+  "text": "What time ___ the meeting start?",
+  "options": [
+   "does",
+   "is",
+   "do"
+  ],
+  "ru": "Во сколько начинается совещание?",
+  "why": "Нужен вспомогательный does (the meeting = it). Порядок: What time + does + подлежащее + глагол.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-004",
+  "topic": "questions",
+  "text": "Why ___ you call me yesterday?",
+  "options": [
+   "did",
+   "do",
+   "were"
+  ],
+  "ru": "Почему ты звонил мне вчера?",
+  "why": "Вопрос о прошлом с обычным глаголом — did + глагол в начальной форме.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-005",
+  "topic": "questions",
+  "text": "Could you tell me where ___?",
+  "options": [
+   "the lab is",
+   "is the lab",
+   "does the lab"
+  ],
+  "ru": "Не подскажете, где лаборатория?",
+  "why": "В косвенном вопросе (после Could you tell me…) — прямой порядок слов: подлежащее, потом глагол.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-006",
+  "topic": "questions",
+  "text": "Do you know what time ___?",
+  "options": [
+   "the train leaves",
+   "does the train leave",
+   "leaves the train"
+  ],
+  "ru": "Вы не знаете, во сколько отходит поезд?",
+  "why": "После Do you know… — прямой порядок и без does: what time the train leaves.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-007",
+  "topic": "questions",
+  "text": "I wonder ___ the parts have arrived.",
+  "options": [
+   "if",
+   "that",
+   "what"
+  ],
+  "ru": "Интересно, пришли ли детали.",
+  "why": "Косвенный вопрос «да/нет» вводится через if (или whether) — это русское «ли».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-008",
+  "topic": "questions",
+  "text": "Can you tell me how much ___?",
+  "options": [
+   "it costs",
+   "does it cost",
+   "costs it"
+  ],
+  "ru": "Можете сказать, сколько это стоит?",
+  "why": "Косвенный вопрос — без инверсии и без does: how much it costs.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-009",
+  "topic": "questions",
+  "text": "Who ___ this drawing?",
+  "options": [
+   "made",
+   "did made",
+   "was made"
+  ],
+  "ru": "Кто сделал этот чертёж?",
+  "why": "Вопрос к подлежащему (Who …?) — без did, обычный порядок: Who made…?",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-010",
+  "topic": "questions",
+  "text": "What ___ to the specimen after the test?",
+  "options": [
+   "happened",
+   "did happened",
+   "was happen"
+  ],
+  "ru": "Что случилось с образцом после испытания?",
+  "why": "What — подлежащее, поэтому без did: What happened? Did happened и was happen — ошибочные формы.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-011",
+  "topic": "questions",
+  "text": "How long ___ the test take?",
+  "options": [
+   "does",
+   "is",
+   "do"
+  ],
+  "ru": "Сколько длится испытание?",
+  "why": "Take — обычный глагол, the test = it — значит, does.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-012",
+  "topic": "questions",
+  "text": "___ you ever been to Baikonur?",
+  "options": [
+   "Have",
+   "Did",
+   "Were"
+  ],
+  "ru": "Ты когда-нибудь был на Байконуре?",
+  "why": "Ever + been — Present Perfect, вопрос начинается с Have.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-013",
+  "topic": "questions",
+  "text": "What ___ you doing now?",
+  "options": [
+   "are",
+   "do",
+   "is"
+  ],
+  "ru": "Что ты сейчас делаешь?",
+  "why": "Present Continuous: are + you + -ing. Do с doing не сочетается.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-014",
+  "topic": "questions",
+  "text": "Where ___ you born?",
+  "options": [
+   "were",
+   "did",
+   "are"
+  ],
+  "ru": "Где ты родился?",
+  "why": "Be born — пассив в прошедшем времени: Where were you born? Did и are здесь — ошибки.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-015",
+  "topic": "questions",
+  "text": "How many samples ___ we need?",
+  "options": [
+   "do",
+   "are",
+   "does"
+  ],
+  "ru": "Сколько образцов нам нужно?",
+  "why": "Need — обычный глагол, we — значит, do.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-016",
+  "topic": "questions",
+  "text": "You're an engineer, ___ you?",
+  "options": [
+   "aren't",
+   "isn't",
+   "don't"
+  ],
+  "ru": "Ты ведь инженер, да?",
+  "why": "Хвостик повторяет глагол основной части: you are → aren't you?",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-017",
+  "topic": "questions",
+  "text": "She works in the lab, ___ she?",
+  "options": [
+   "doesn't",
+   "isn't",
+   "don't"
+  ],
+  "ru": "Она ведь работает в лаборатории?",
+  "why": "В основной части works (Present Simple) — в хвостике doesn't she?",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-018",
+  "topic": "questions",
+  "text": "Can you explain why ___?",
+  "options": [
+   "the test failed",
+   "did the test fail",
+   "failed the test"
+  ],
+  "ru": "Можешь объяснить, почему испытание провалилось?",
+  "why": "Косвенный вопрос внутри другого — прямой порядок слов и без did.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-019",
+  "topic": "questions",
+  "text": "___ is responsible for quality control?",
+  "options": [
+   "Who",
+   "Whom",
+   "Whose"
+  ],
+  "ru": "Кто отвечает за контроль качества?",
+  "why": "Вопрос к подлежащему-человеку — Who. Whom — только для дополнения, whose — «чей».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-020",
+  "topic": "questions",
+  "text": "What ___ the problem with the pump?",
+  "options": [
+   "is",
+   "does",
+   "are"
+  ],
+  "ru": "В чём проблема с насосом?",
+  "why": "Problem — единственное число, глагол be: What is the problem?",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-021",
+  "topic": "questions",
+  "text": "Why ___ the machine working?",
+  "options": [
+   "isn't",
+   "doesn't",
+   "don't"
+  ],
+  "ru": "Почему станок не работает?",
+  "why": "Working — Present Continuous, отрицание строится с be: isn't.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-questions-022",
+  "topic": "questions",
+  "text": "___ do you go to the gym? — Three times a week.",
+  "options": [
+   "How often",
+   "How much",
+   "How long"
+  ],
+  "ru": "Как часто ты ходишь в спортзал? — Три раза в неделю.",
+  "why": "Вопрос о частоте — How often. How long — о длительности, how much — о количестве.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-001",
+  "topic": "countable",
+  "text": "Can you give me some ___ about the test?",
+  "options": [
+   "information",
+   "informations",
+   "an information"
+  ],
+  "ru": "Можешь дать мне информацию об испытании?",
+  "why": "Information неисчисляемое: нет множественного числа и не бывает an information.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-002",
+  "topic": "countable",
+  "text": "We need new ___ for the lab.",
+  "options": [
+   "equipment",
+   "equipments",
+   "an equipment"
+  ],
+  "ru": "Нам нужно новое оборудование для лаборатории.",
+  "why": "Equipment — неисчисляемое, без -s и без a/an.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-003",
+  "topic": "countable",
+  "text": "Can I give you ___ advice?",
+  "options": [
+   "a piece of",
+   "an",
+   "many"
+  ],
+  "ru": "Можно дать тебе совет?",
+  "why": "Advice неисчисляемое. «Один совет» — a piece of advice. An advice, many advices — ошибки.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-004",
+  "topic": "countable",
+  "text": "We have done a lot of ___ on composites.",
+  "options": [
+   "research",
+   "researches",
+   "a research"
+  ],
+  "ru": "Мы провели много исследований композитов.",
+  "why": "Research в значении «исследования» неисчисляемое. По-русски множественное число, по-английски — нет.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-005",
+  "topic": "countable",
+  "text": "Thanks for the ___ on my report.",
+  "options": [
+   "feedback",
+   "feedbacks",
+   "a feedback"
+  ],
+  "ru": "Спасибо за отзыв на мой отчёт.",
+  "why": "Feedback неисчисляемое: без -s и без a.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-006",
+  "topic": "countable",
+  "text": "Which ___ do you use for FEM analysis?",
+  "options": [
+   "software",
+   "softwares",
+   "a software"
+  ],
+  "ru": "Какой софт вы используете для МКЭ-анализа?",
+  "why": "Software — неисчисляемое. Если нужно посчитать — a program, two programs.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-007",
+  "topic": "countable",
+  "text": "How ___ time do we have before the meeting?",
+  "options": [
+   "much",
+   "many",
+   "a lot"
+  ],
+  "ru": "Сколько у нас времени до совещания?",
+  "why": "Time (время) неисчисляемое — how much. How many — только с исчисляемыми во множественном числе.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-008",
+  "topic": "countable",
+  "text": "How ___ samples did you test?",
+  "options": [
+   "many",
+   "much",
+   "a lot"
+  ],
+  "ru": "Сколько образцов ты испытал?",
+  "why": "Samples — исчисляемое во множественном числе, значит how many.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-009",
+  "topic": "countable",
+  "text": "There isn't ___ money in the budget.",
+  "options": [
+   "much",
+   "many",
+   "a few"
+  ],
+  "ru": "В бюджете не так много денег.",
+  "why": "Money неисчисляемое, поэтому much. Many и a few — для исчисляемых.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-010",
+  "topic": "countable",
+  "text": "We have ___ problems with the new supplier.",
+  "options": [
+   "a few",
+   "a little",
+   "much"
+  ],
+  "ru": "У нас есть несколько проблем с новым поставщиком.",
+  "why": "Problems исчисляемое, поэтому a few. A little и much — для неисчисляемых.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-011",
+  "topic": "countable",
+  "text": "There is ___ water on the floor of the workshop.",
+  "options": [
+   "some",
+   "a",
+   "many"
+  ],
+  "ru": "На полу цеха вода.",
+  "why": "Water неисчисляемое: с ним some, но не a и не many.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-012",
+  "topic": "countable",
+  "text": "The news ___ good for the whole team.",
+  "options": [
+   "is",
+   "are",
+   "were"
+  ],
+  "ru": "Новости хорошие для всей команды.",
+  "why": "News — неисчисляемое, хотя на -s. Глагол в единственном числе: the news is.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-013",
+  "topic": "countable",
+  "text": "I have little ___ in 3D printing.",
+  "options": [
+   "experience",
+   "experiences",
+   "an experience"
+  ],
+  "ru": "У меня мало опыта в 3D-печати.",
+  "why": "Experience в значении «опыт, навыки» неисчисляемое. Experiences — «случаи, впечатления».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-014",
+  "topic": "countable",
+  "text": "We need ___ furniture for the new office.",
+  "options": [
+   "some",
+   "a",
+   "many"
+  ],
+  "ru": "Нам нужна мебель для нового офиса.",
+  "why": "Furniture неисчисляемое: some furniture, a piece of furniture. A furniture — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-015",
+  "topic": "countable",
+  "text": "There ___ many people at the conference.",
+  "options": [
+   "were",
+   "was",
+   "is"
+  ],
+  "ru": "На конференции было много людей.",
+  "why": "People — множественное число (один человек — person), глагол тоже во множественном: were.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-016",
+  "topic": "countable",
+  "text": "The police ___ arrived at the plant.",
+  "options": [
+   "have",
+   "has",
+   "is"
+  ],
+  "ru": "Полиция приехала на завод.",
+  "why": "Police — всегда во множественном числе: the police have / are.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-017",
+  "topic": "countable",
+  "text": "He gave me ___ useful tips for the interview.",
+  "options": [
+   "some",
+   "a",
+   "much"
+  ],
+  "ru": "Он дал мне несколько полезных советов к собеседованию.",
+  "why": "Tips исчисляемое во множественном числе: some tips. A — только с единственным, much — с неисчисляемыми.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-018",
+  "topic": "countable",
+  "text": "I made ___ progress with my thesis this week.",
+  "options": [
+   "good",
+   "a good",
+   "many"
+  ],
+  "ru": "На этой неделе я хорошо продвинулся с дипломом.",
+  "why": "Progress неисчисляемое: make good progress, без a и без many.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-019",
+  "topic": "countable",
+  "text": "I need two ___ of paper for the sketch.",
+  "options": [
+   "sheets",
+   "papers",
+   "piece"
+  ],
+  "ru": "Мне нужно два листа бумаги для эскиза.",
+  "why": "Paper (бумага) неисчисляемое. Считаем листами: a sheet of paper, two sheets. Papers — это «документы», «статьи».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-020",
+  "topic": "countable",
+  "text": "There is too ___ noise in the workshop.",
+  "options": [
+   "much",
+   "many",
+   "few"
+  ],
+  "ru": "В цехе слишком много шума.",
+  "why": "Noise в значении «шум вообще» неисчисляемое — too much.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-021",
+  "topic": "countable",
+  "text": "We don't have ___ spare parts left.",
+  "options": [
+   "many",
+   "much",
+   "a little"
+  ],
+  "ru": "У нас осталось не так много запчастей.",
+  "why": "Parts исчисляемое во множественном числе, в отрицании — many.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-countable-022",
+  "topic": "countable",
+  "text": "This job requires a lot of ___.",
+  "options": [
+   "knowledge",
+   "knowledges",
+   "a knowledge"
+  ],
+  "ru": "Эта работа требует много знаний.",
+  "why": "Knowledge неисчисляемое. По-русски «знания» во множественном, по-английски -s не бывает.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-001",
+  "topic": "verbs",
+  "text": "Could you ___ me a favour?",
+  "options": [
+   "do",
+   "make",
+   "give"
+  ],
+  "ru": "Можешь оказать мне услугу?",
+  "why": "Устойчивое сочетание: do someone a favour. Make a favour — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-002",
+  "topic": "verbs",
+  "text": "We need to ___ a decision today.",
+  "options": [
+   "make",
+   "do",
+   "create"
+  ],
+  "ru": "Нам нужно принять решение сегодня.",
+  "why": "Make a decision — «принять решение». Do — для работы и заданий, а решение «делают» через make.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-003",
+  "topic": "verbs",
+  "text": "I ___ a mistake in the calculation.",
+  "options": [
+   "made",
+   "did",
+   "done"
+  ],
+  "ru": "Я допустил ошибку в расчёте.",
+  "why": "Make a mistake — только make. Done — третья форма, без have не употребляется.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-004",
+  "topic": "verbs",
+  "text": "Can you ___ me your phone number?",
+  "options": [
+   "tell",
+   "say",
+   "speak"
+  ],
+  "ru": "Можешь сказать мне свой номер телефона?",
+  "why": "Tell + кому (tell me). Say me — ошибка: после say человек без to не ставится.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-005",
+  "topic": "verbs",
+  "text": "She ___ that the test was successful.",
+  "options": [
+   "said",
+   "told",
+   "spoke"
+  ],
+  "ru": "Она сказала, что испытание прошло успешно.",
+  "why": "Say + что сказали (said that…). Told требует человека: told me that…",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-006",
+  "topic": "verbs",
+  "text": "He ___ me that the parts were late.",
+  "options": [
+   "told",
+   "said",
+   "spoke"
+  ],
+  "ru": "Он сказал мне, что детали задерживаются.",
+  "why": "Tell someone something — told me. Said me — частая ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-007",
+  "topic": "verbs",
+  "text": "Could you explain ___ how this works?",
+  "options": [
+   "to me",
+   "me",
+   "at me"
+  ],
+  "ru": "Можешь объяснить мне, как это работает?",
+  "why": "Explain to someone. «Explain me» — калька с «объясни мне», это ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-008",
+  "topic": "verbs",
+  "text": "I ___ with you about the new layout.",
+  "options": [
+   "agree",
+   "am agree",
+   "am agreeing"
+  ],
+  "ru": "Я согласен с тобой насчёт новой компоновки.",
+  "why": "Agree — глагол, а не прилагательное: I agree. «I am agree» — калька с «я согласен».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-009",
+  "topic": "verbs",
+  "text": "My boss ___ me leave early on Friday.",
+  "options": [
+   "let",
+   "allowed",
+   "permitted"
+  ],
+  "ru": "Начальник разрешил мне уйти пораньше в пятницу.",
+  "why": "Let + кого + глагол без to: let me leave. Allow и permit требуют to: allowed me to leave.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-010",
+  "topic": "verbs",
+  "text": "They don't allow us ___ in the lab.",
+  "options": [
+   "to eat",
+   "eat",
+   "eating"
+  ],
+  "ru": "Нам не разрешают есть в лаборатории.",
+  "why": "Allow someone to do something — после человека нужен to.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-011",
+  "topic": "verbs",
+  "text": "I look forward to ___ from you.",
+  "options": [
+   "hearing",
+   "hear",
+   "heard"
+  ],
+  "ru": "С нетерпением жду ответа от вас.",
+  "why": "В look forward to слово to — предлог, после него -ing: look forward to hearing.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-012",
+  "topic": "verbs",
+  "text": "I suggest ___ the test tomorrow morning.",
+  "options": [
+   "repeating",
+   "to repeat",
+   "repeat"
+  ],
+  "ru": "Предлагаю повторить испытание завтра утром.",
+  "why": "Suggest + -ing (или suggest that we repeat). Suggest to repeat — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-013",
+  "topic": "verbs",
+  "text": "I am very ___ in rocket engines.",
+  "options": [
+   "interested",
+   "interesting",
+   "interest"
+  ],
+  "ru": "Мне очень интересны ракетные двигатели.",
+  "why": "-ed — что чувствует человек (interested), -ing — каков предмет (interesting). «I am interesting» = «я интересный».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-014",
+  "topic": "verbs",
+  "text": "The lecture on tolerances was very ___.",
+  "options": [
+   "boring",
+   "bored",
+   "bore"
+  ],
+  "ru": "Лекция о допусках была очень скучной.",
+  "why": "Лекция вызывает скуку — boring. Bored — что чувствует человек.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-015",
+  "topic": "verbs",
+  "text": "I'm really ___ after the long test.",
+  "options": [
+   "tired",
+   "tiring",
+   "tire"
+  ],
+  "ru": "Я очень устал после долгого испытания.",
+  "why": "Чувство человека — -ed: tired. Tiring — «утомительный» (о работе).",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-016",
+  "topic": "verbs",
+  "text": "We need to ___ some research before we choose a material.",
+  "options": [
+   "do",
+   "make",
+   "write"
+  ],
+  "ru": "Нам нужно провести исследование, прежде чем выбрать материал.",
+  "why": "Do research — только do. Make research — частая калька.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-017",
+  "topic": "verbs",
+  "text": "He ___ a lot of money as a courier.",
+  "options": [
+   "made",
+   "did",
+   "done"
+  ],
+  "ru": "Он много заработал, работая курьером.",
+  "why": "Make money — «зарабатывать». Do money по-английски не говорят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-018",
+  "topic": "verbs",
+  "text": "Please always ___ the truth to the customer.",
+  "options": [
+   "tell",
+   "say",
+   "talk"
+  ],
+  "ru": "Пожалуйста, всегда говори заказчику правду.",
+  "why": "Устойчивое сочетание: tell the truth, tell a lie.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-019",
+  "topic": "verbs",
+  "text": "Can you ___ that again, please?",
+  "options": [
+   "say",
+   "tell",
+   "speak"
+  ],
+  "ru": "Можешь повторить, пожалуйста?",
+  "why": "Say + что (say that again). Tell требует человека: tell me again.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-020",
+  "topic": "verbs",
+  "text": "It ___ me two hours to fix the gearbox.",
+  "options": [
+   "took",
+   "made",
+   "had"
+  ],
+  "ru": "У меня ушло два часа на ремонт коробки передач.",
+  "why": "It takes me + время + to do — «у меня уходит столько-то времени».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-021",
+  "topic": "verbs",
+  "text": "Don't forget ___ the door of the lab.",
+  "options": [
+   "to lock",
+   "locking",
+   "lock"
+  ],
+  "ru": "Не забудь запереть дверь лаборатории.",
+  "why": "Forget to do — забыть сделать (в будущем). Forget doing — забыть, что уже сделал.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-022",
+  "topic": "verbs",
+  "text": "I enjoy ___ with CAD systems.",
+  "options": [
+   "working",
+   "to work",
+   "work"
+  ],
+  "ru": "Мне нравится работать с САПР.",
+  "why": "После enjoy — только -ing: enjoy working.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-023",
+  "topic": "verbs",
+  "text": "I'm used to ___ up early.",
+  "options": [
+   "getting",
+   "get",
+   "got"
+  ],
+  "ru": "Я привык рано вставать.",
+  "why": "Be used to — «привык», to здесь предлог, поэтому -ing: used to getting up.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-verbs-024",
+  "topic": "verbs",
+  "text": "We must ___ the drawings by Friday.",
+  "options": [
+   "finish",
+   "to finish",
+   "finishing"
+  ],
+  "ru": "Мы должны закончить чертежи к пятнице.",
+  "why": "После must, can, should — глагол без to.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-001",
+  "topic": "passive",
+  "text": "The samples ___ tested last week.",
+  "options": [
+   "were",
+   "was",
+   "have"
+  ],
+  "ru": "Образцы испытали на прошлой неделе.",
+  "why": "Пассив: be + третья форма. Samples — множественное число, прошлое — were.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-002",
+  "topic": "passive",
+  "text": "This bracket ___ made of aluminium.",
+  "options": [
+   "is",
+   "does",
+   "has"
+  ],
+  "ru": "Этот кронштейн сделан из алюминия.",
+  "why": "Be made of — «сделан из». Без is (как в русском «сделан») или с does — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-003",
+  "topic": "passive",
+  "text": "The engine was designed ___ a young engineer.",
+  "options": [
+   "by",
+   "with",
+   "from"
+  ],
+  "ru": "Двигатель был спроектирован молодым инженером.",
+  "why": "Кто выполнил действие в пассиве — by. Русский творительный падеж тянет к with, но это ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-004",
+  "topic": "passive",
+  "text": "The test report ___ written yet.",
+  "options": [
+   "hasn't been",
+   "didn't",
+   "isn't been"
+  ],
+  "ru": "Протокол испытаний ещё не написан.",
+  "why": "Present Perfect пассив: has/have been + третья форма. Yet требует Present Perfect.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-005",
+  "topic": "passive",
+  "text": "The parts ___ delivered tomorrow.",
+  "options": [
+   "will be",
+   "will",
+   "shall"
+  ],
+  "ru": "Детали доставят завтра.",
+  "why": "Будущий пассив: will be + третья форма. Без be получится, что детали сами что-то доставят.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-006",
+  "topic": "passive",
+  "text": "The new test rig ___ built at the moment.",
+  "options": [
+   "is being",
+   "is",
+   "has"
+  ],
+  "ru": "Новый стенд сейчас строится.",
+  "why": "Процесс в пассиве прямо сейчас — is being + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-007",
+  "topic": "passive",
+  "text": "English ___ all over the world.",
+  "options": [
+   "is spoken",
+   "speaks",
+   "is speaking"
+  ],
+  "ru": "На английском говорят во всём мире.",
+  "why": "Язык сам не говорит — на нём говорят: пассив is spoken. Русское безличное «говорят» переводится пассивом.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-008",
+  "topic": "passive",
+  "text": "The temperature was ___ every ten minutes.",
+  "options": [
+   "measured",
+   "measure",
+   "measuring"
+  ],
+  "ru": "Температуру измеряли каждые десять минут.",
+  "why": "После was в пассиве — третья форма: was measured.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-009",
+  "topic": "passive",
+  "text": "The drawing must ___ by the chief designer.",
+  "options": [
+   "be signed",
+   "sign",
+   "signed"
+  ],
+  "ru": "Чертёж должен быть подписан главным конструктором.",
+  "why": "Пассив с модальным глаголом: must be + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-010",
+  "topic": "passive",
+  "text": "The results ___ in Table 2.",
+  "options": [
+   "are shown",
+   "show",
+   "are showing"
+  ],
+  "ru": "Результаты приведены в таблице 2.",
+  "why": "В отчётах: «приведены, показаны» — пассив are shown.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-011",
+  "topic": "passive",
+  "text": "The specimen ___ to failure.",
+  "options": [
+   "was loaded",
+   "loaded",
+   "has loading"
+  ],
+  "ru": "Образец нагрузили до разрушения.",
+  "why": "Образец сам себя не нагружает — нужен пассив was loaded.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-012",
+  "topic": "passive",
+  "text": "I ___ born in 2004.",
+  "options": [
+   "was",
+   "am",
+   "have"
+  ],
+  "ru": "Я родился в 2004 году.",
+  "why": "Be born — пассив: I was born. «I born» и «I am born» — ошибки.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-013",
+  "topic": "passive",
+  "text": "The meeting ___ cancelled because of the snow.",
+  "options": [
+   "was",
+   "has",
+   "did"
+  ],
+  "ru": "Совещание отменили из-за снега.",
+  "why": "Пассив в прошлом: was + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-014",
+  "topic": "passive",
+  "text": "Where ___ this part produced?",
+  "options": [
+   "was",
+   "did",
+   "has"
+  ],
+  "ru": "Где была изготовлена эта деталь?",
+  "why": "Вопрос в пассиве: was + подлежащее + третья форма. Did с produced не сочетается.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-015",
+  "topic": "passive",
+  "text": "The bolts should ___ to 25 N·m.",
+  "options": [
+   "be tightened",
+   "tighten",
+   "tightened"
+  ],
+  "ru": "Болты следует затянуть моментом 25 Н·м.",
+  "why": "В инструкциях — пассив с модальным: should be + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-016",
+  "topic": "passive",
+  "text": "This problem ___ solved by changing the material.",
+  "options": [
+   "was",
+   "did",
+   "had"
+  ],
+  "ru": "Эту проблему решили заменой материала.",
+  "why": "Пассив в прошлом: was solved. Did и had с solved пассив не образуют — проблема сама себя не решает.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-017",
+  "topic": "passive",
+  "text": "A new version of the software ___ released next month.",
+  "options": [
+   "will be",
+   "will",
+   "is release"
+  ],
+  "ru": "Новая версия программы выйдет в следующем месяце.",
+  "why": "Будущий пассив: will be released.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-018",
+  "topic": "passive",
+  "text": "The files ___ stored on the server.",
+  "options": [
+   "are",
+   "is",
+   "have"
+  ],
+  "ru": "Файлы хранятся на сервере.",
+  "why": "Files — множественное число, пассив Present Simple: are stored.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-019",
+  "topic": "passive",
+  "text": "The surface was cleaned ___ alcohol.",
+  "options": [
+   "with",
+   "by",
+   "from"
+  ],
+  "ru": "Поверхность протёрли спиртом.",
+  "why": "Инструмент или вещество — with. By — только для исполнителя (кем).",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-020",
+  "topic": "passive",
+  "text": "The first satellite ___ launched in 1957.",
+  "options": [
+   "was",
+   "has",
+   "is"
+  ],
+  "ru": "Первый спутник запустили в 1957 году.",
+  "why": "Конкретный год в прошлом — пассив Past Simple: was launched.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-021",
+  "topic": "passive",
+  "text": "All the samples ___ checked before the test started.",
+  "options": [
+   "had been",
+   "had",
+   "have being"
+  ],
+  "ru": "Все образцы проверили до начала испытания.",
+  "why": "Раньше другого действия в прошлом — Past Perfect пассив: had been + третья форма.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-passive-022",
+  "topic": "passive",
+  "text": "The project is ___ by the government.",
+  "options": [
+   "funded",
+   "funding",
+   "fund"
+  ],
+  "ru": "Проект финансирует государство.",
+  "why": "Пассив: is + третья форма (funded).",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-001",
+  "topic": "word-order",
+  "text": "I ___ late for meetings.",
+  "options": [
+   "am never",
+   "never am",
+   "never"
+  ],
+  "ru": "Я никогда не опаздываю на совещания.",
+  "why": "Наречия частоты (always, never, often) ставятся после am/is/are, но перед обычным глаголом.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-002",
+  "topic": "word-order",
+  "text": "She ___ her email in the morning.",
+  "options": [
+   "always checks",
+   "checks always",
+   "always is checking"
+  ],
+  "ru": "Она всегда проверяет почту утром.",
+  "why": "Always — перед обычным глаголом: always checks. После глагола — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-003",
+  "topic": "word-order",
+  "text": "We ___ tea after lunch.",
+  "options": [
+   "usually drink",
+   "drink usually",
+   "usually are drinking"
+  ],
+  "ru": "Мы обычно пьём чай после обеда.",
+  "why": "Usually — между подлежащим и глаголом.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-004",
+  "topic": "word-order",
+  "text": "The beam is not ___.",
+  "options": [
+   "strong enough",
+   "enough strong",
+   "enough strongly"
+  ],
+  "ru": "Балка недостаточно прочная.",
+  "why": "Enough ставится после прилагательного: strong enough. По-русски наоборот — «достаточно прочная».",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-005",
+  "topic": "word-order",
+  "text": "We don't have ___ for all the tests.",
+  "options": [
+   "enough samples",
+   "samples enough",
+   "enough of samples"
+  ],
+  "ru": "У нас недостаточно образцов для всех испытаний.",
+  "why": "С существительным enough стоит перед ним: enough samples.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-006",
+  "topic": "word-order",
+  "text": "He has a ___ car.",
+  "options": [
+   "nice new red",
+   "red new nice",
+   "new red nice"
+  ],
+  "ru": "У него хорошая новая красная машина.",
+  "why": "Порядок прилагательных: мнение → возраст → цвет (nice new red).",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-007",
+  "topic": "word-order",
+  "text": "I ___ German.",
+  "options": [
+   "also speak",
+   "speak also",
+   "also am speaking"
+  ],
+  "ru": "Я также говорю по-немецки.",
+  "why": "Also — перед обычным глаголом: also speak. После глагола в середине фразы — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-008",
+  "topic": "word-order",
+  "text": "She ___ a good engineer.",
+  "options": [
+   "is also",
+   "also is",
+   "also"
+  ],
+  "ru": "Она к тому же хороший инженер.",
+  "why": "С глаголом be also ставится после него: is also.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-009",
+  "topic": "word-order",
+  "text": "I have ___ been to Baikonur.",
+  "options": [
+   "never",
+   "ever not",
+   "not never"
+  ],
+  "ru": "Я никогда не был на Байконуре.",
+  "why": "Never уже содержит отрицание. Двойное отрицание (not never) в английском — ошибка.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-010",
+  "topic": "word-order",
+  "text": "He speaks ___.",
+  "options": [
+   "English very well",
+   "very well English",
+   "well very English"
+  ],
+  "ru": "Он очень хорошо говорит по-английски.",
+  "why": "Глагол и дополнение не разрываем: speaks English, а наречие — в конце: very well.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-011",
+  "topic": "word-order",
+  "text": "I like ___.",
+  "options": [
+   "this job very much",
+   "very much this job",
+   "much very this job"
+  ],
+  "ru": "Мне очень нравится эта работа.",
+  "why": "Very much — в конце, после дополнения. «I like very much…» — калька с русского.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-012",
+  "topic": "word-order",
+  "text": "She ___ late for work.",
+  "options": [
+   "is often",
+   "often is",
+   "often"
+  ],
+  "ru": "Она часто опаздывает на работу.",
+  "why": "С be наречие частоты стоит после глагола: is often.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-013",
+  "topic": "word-order",
+  "text": "We ___ to the test site on Mondays.",
+  "options": [
+   "often go",
+   "go often",
+   "often are go"
+  ],
+  "ru": "По понедельникам мы часто ездим на полигон.",
+  "why": "Often — перед обычным глаголом: often go.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-014",
+  "topic": "word-order",
+  "text": "We bought a ___ table for the lab.",
+  "options": [
+   "big round wooden",
+   "wooden round big",
+   "round wooden big"
+  ],
+  "ru": "Мы купили большой круглый деревянный стол для лаборатории.",
+  "why": "Порядок: размер → форма → материал (big round wooden). Материал — ближе всего к существительному.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-015",
+  "topic": "word-order",
+  "text": "The test was not ___ to show the problem.",
+  "options": [
+   "long enough",
+   "enough long",
+   "enough length"
+  ],
+  "ru": "Испытание было недостаточно долгим, чтобы выявить проблему.",
+  "why": "Прилагательное + enough: long enough.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-016",
+  "topic": "word-order",
+  "text": "Is the room ___ for twenty people?",
+  "options": [
+   "big enough",
+   "enough big",
+   "big so enough"
+  ],
+  "ru": "Комната достаточно большая для двадцати человек?",
+  "why": "Enough после прилагательного: big enough.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-017",
+  "topic": "word-order",
+  "text": "I don't know ___.",
+  "options": [
+   "what to do",
+   "what do",
+   "to do what"
+  ],
+  "ru": "Я не знаю, что делать.",
+  "why": "«Что делать» — what to do: вопросительное слово + to + глагол.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-018",
+  "topic": "word-order",
+  "text": "They have ___ finished the tests.",
+  "options": [
+   "already",
+   "yet",
+   "still"
+  ],
+  "ru": "Они уже закончили испытания.",
+  "why": "Already — между have и третьей формой. Yet ставят в конце и в отрицаниях/вопросах, still сюда не подходит.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-019",
+  "topic": "word-order",
+  "text": "He always drives ___.",
+  "options": [
+   "too fast",
+   "fast too",
+   "too much fast"
+  ],
+  "ru": "Он всегда ездит слишком быстро.",
+  "why": "Too стоит перед прилагательным/наречием: too fast. Too much — перед существительным.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-020",
+  "topic": "word-order",
+  "text": "This is ___ project.",
+  "options": [
+   "a very interesting",
+   "very an interesting",
+   "an interesting very"
+  ],
+  "ru": "Это очень интересный проект.",
+  "why": "Порядок: артикль → наречие → прилагательное → существительное. Very влияет на артикль: a very.",
+  "reviewed": false
+ },
+ {
+  "id": "gr-word-order-021",
+  "topic": "word-order",
+  "text": "I checked ___.",
+  "options": [
+   "the drawing carefully",
+   "carefully the drawing",
+   "the carefully drawing"
+  ],
+  "ru": "Я внимательно проверил чертёж.",
+  "why": "Между глаголом и дополнением наречие не ставят: checked the drawing carefully.",
+  "reviewed": false
+ }
+]

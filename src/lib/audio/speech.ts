@@ -36,17 +36,39 @@ export function pickVoice(lang: string, gender?: 'female' | 'male'): SpeechSynth
   return [...pool].sort((a, b) => score(b) - score(a))[0]
 }
 
+/*
+  Текущая фраза держится в модуле: Chrome иначе собирает её сборщиком мусора посреди речи,
+  и onend не приходит никогда.
+*/
+let current: SpeechSynthesisUtterance | null = null
+
+/** Запас на случай, если конец так и не придёт: ~ 80 мс на символ при rate 1, но не меньше 4 с. */
+function safetyMs(text: string, rate: number): number {
+  return Math.max(4000, (text.length * 80) / Math.max(rate, 0.3) + 3000)
+}
+
 export function speakEnglish(text: string, opts: { rate?: number; lang?: string; gender?: 'female' | 'male'; onBoundary?: (charIndex: number) => void } = {}): Promise<void> {
   return new Promise((resolve, reject) => {
     if (!speechSupported()) return reject(new Error('no speechSynthesis'))
     speechSynthesis.cancel()
     const u = new SpeechSynthesisUtterance(text)
+    current = u
     u.lang = opts.lang ?? 'en-US'
     u.rate = opts.rate ?? 1
     const v = pickVoice(u.lang, opts.gender)
     if (v) u.voice = v
-    u.onend = () => resolve()
-    u.onerror = (e) => (e.error === 'canceled' || e.error === 'interrupted' ? resolve() : reject(new Error(e.error)))
+    let settled = false
+    const settle = (err?: Error) => {
+      if (settled) return
+      settled = true
+      clearTimeout(timer)
+      if (current === u) current = null
+      if (err) reject(err)
+      else resolve()
+    }
+    const timer = setTimeout(() => settle(), safetyMs(text, u.rate))
+    u.onend = () => settle()
+    u.onerror = (e) => settle(e.error === 'canceled' || e.error === 'interrupted' ? undefined : new Error(e.error))
     if (opts.onBoundary) u.onboundary = (e) => opts.onBoundary!(e.charIndex)
     speechSynthesis.speak(u)
   })

@@ -17,6 +17,7 @@ import { Choice } from './Choice'
 import c from './clean.module.css'
 import type { StepProps } from './result'
 import s from './run.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
@@ -118,6 +119,7 @@ export function PairSayStep({ step, onDone }: StepProps<S<'pairSay'>>) {
   const [ipa, tr] = step.pick === 0 ? [p.ipaA, p.ruA] : [p.ipaB, p.ruB]
   const voice = defaultVoice()
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const [self, setSelf] = useState<boolean | null>(null)
   const verdict = result?.recognized ? judgePair(target, other, result.transcript, result.alts) : 'none'
   const ok = verdict === 'right' || (verdict === 'none' && self === true)
@@ -183,6 +185,7 @@ export function CleanSayStep({ step, onDone }: StepProps<S<'cleanSay'>>) {
   const x = cleanPhraseById.get(step.phrase)!
   const voice = defaultVoice()
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const [chart, setChart] = useState(false)
   const intonation = x.module === 'clean-intonation'
   const sample = entryFor(x.text, voice)

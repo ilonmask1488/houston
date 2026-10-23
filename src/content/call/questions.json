@@ -222,5 +222,421 @@
   "ru": "Хочешь ещё что-нибудь узнать о позиции?",
   "voice": "au-f",
   "reviewed": false
+ },
+ {
+  "id": "q-intro-06",
+  "module": "call-intro",
+  "q": "Where are you from originally?",
+  "ru": "Ты откуда родом?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-07",
+  "module": "call-intro",
+  "q": "How was your weekend?",
+  "ru": "Как прошли выходные?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-08",
+  "module": "call-intro",
+  "q": "How did you get here today?",
+  "ru": "Как ты сегодня сюда добрался?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-09",
+  "module": "call-intro",
+  "q": "What do you like most about living in Moscow?",
+  "ru": "Что тебе больше всего нравится в жизни в Москве?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-10",
+  "module": "call-intro",
+  "q": "Why do you want to work in a design bureau?",
+  "ru": "Почему ты хочешь работать в конструкторском бюро?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-11",
+  "module": "call-intro",
+  "q": "What software do you use for design work?",
+  "ru": "Какими программами ты пользуешься в конструкторской работе?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-12",
+  "module": "call-intro",
+  "q": "Which subjects do you enjoy most at university?",
+  "ru": "Какие предметы в университете тебе нравятся больше всего?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-13",
+  "module": "call-intro",
+  "q": "Have you ever done an internship?",
+  "ru": "Ты когда-нибудь проходил стажировку?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-intro-14",
+  "module": "call-intro",
+  "q": "Do you prefer working alone or in a team?",
+  "ru": "Тебе больше нравится работать одному или в команде?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-05",
+  "module": "call-time",
+  "q": "Why should we hire you and not another student?",
+  "ru": "Почему нам стоит взять тебя, а не другого студента?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-06",
+  "module": "call-time",
+  "q": "What would your friends say about you?",
+  "ru": "Что о тебе сказали бы друзья?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-07",
+  "module": "call-time",
+  "q": "What's the best advice you've ever been given?",
+  "ru": "Какой лучший совет тебе когда-либо давали?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-08",
+  "module": "call-time",
+  "q": "If you had unlimited funding, what would you build?",
+  "ru": "Если бы финансирование было неограниченным, что бы ты построил?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-09",
+  "module": "call-time",
+  "q": "What does a good engineer need besides technical knowledge?",
+  "ru": "Что нужно хорошему инженеру, кроме технических знаний?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-10",
+  "module": "call-time",
+  "q": "What are your salary expectations?",
+  "ru": "Какую зарплату ты ожидаешь?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-11",
+  "module": "call-time",
+  "q": "What's something you'd like to get better at?",
+  "ru": "В чём тебе хотелось бы стать лучше?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-04",
+  "module": "call-clarify",
+  "q": "Can you give me a ROM estimate for the new bracket?",
+  "ru": "Можешь дать грубую оценку (ROM) по новому кронштейну? (Переспроси, что такое ROM.)",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-05",
+  "module": "call-clarify",
+  "q": "Can you send me the updated drawings by the end of the day?",
+  "ru": "Пришлёшь обновлённые чертежи до конца дня? (Уточни, какие именно чертежи и к какому часу.)",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-06",
+  "module": "call-clarify",
+  "q": "Have you checked the GD and T callouts on the housing?",
+  "ru": "Ты проверил обозначения допусков формы и расположения (GD&T) на корпусе? (Можно переспросить.)",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-07",
+  "module": "call-clarify",
+  "q": "What's your availability for the CDR next week?",
+  "ru": "Когда ты свободен для защиты рабочего проекта (CDR) на следующей неделе? (Уточни, что за CDR и какой день.)",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-08",
+  "module": "call-clarify",
+  "q": "Can we move our call to half past?",
+  "ru": "Можем перенести созвон на «половину»? (Уточни, на какое именно время.)",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-09",
+  "module": "call-clarify",
+  "q": "What's the MoS on this joint, roughly?",
+  "ru": "Какой примерно запас прочности (MoS) у этого соединения? (Переспроси, что такое MoS.)",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-clarify-10",
+  "module": "call-clarify",
+  "q": "Could you take care of the thing we discussed on Monday?",
+  "ru": "Можешь заняться тем, что мы обсуждали в понедельник? (Уточни, о чём именно речь.)",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-06",
+  "module": "call-project",
+  "q": "Tell me about a time you had to learn something new quickly.",
+  "ru": "Расскажи, как тебе пришлось быстро научиться чему-то новому.",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-07",
+  "module": "call-project",
+  "q": "Describe a time you disagreed with a teammate. How did you resolve it?",
+  "ru": "Расскажи, как ты не сошёлся во мнениях с товарищем по команде. Как вы это решили?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-08",
+  "module": "call-project",
+  "q": "Tell me about a time something went wrong during a test.",
+  "ru": "Расскажи, как что-то пошло не так во время испытания.",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-09",
+  "module": "call-project",
+  "q": "Give me an example of a time you took the initiative.",
+  "ru": "Приведи пример, когда ты проявил инициативу.",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-10",
+  "module": "call-project",
+  "q": "Tell me about a time you fixed something with your own hands.",
+  "ru": "Расскажи, как ты что-то починил своими руками.",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-11",
+  "module": "call-project",
+  "q": "What's the status of your part of the project?",
+  "ru": "Как обстоят дела с твоей частью проекта?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-12",
+  "module": "call-project",
+  "q": "Can you walk me through your last lab report?",
+  "ru": "Расскажешь по порядку о своём последнем отчёте по лабораторной?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-13",
+  "module": "call-project",
+  "q": "When can you send us the final version of the model?",
+  "ru": "Когда сможешь прислать нам окончательную версию модели?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-project-14",
+  "module": "call-project",
+  "q": "How did you check that your calculations were correct?",
+  "ru": "Как ты проверял, что твои расчёты верны?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-06",
+  "module": "call-explain",
+  "q": "What does a nozzle do, in simple terms?",
+  "ru": "Что делает сопло, если просто?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-07",
+  "module": "call-explain",
+  "q": "Why do composite parts fail in fatigue?",
+  "ru": "Почему композитные детали разрушаются от усталости?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-08",
+  "module": "call-explain",
+  "q": "What's the difference between FEM and a physical test?",
+  "ru": "Чем расчёт МКЭ отличается от натурного испытания?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-09",
+  "module": "call-explain",
+  "q": "What's a tolerance, and why does it matter?",
+  "ru": "Что такое допуск и почему он важен?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-10",
+  "module": "call-explain",
+  "q": "What is a safety factor?",
+  "ru": "Что такое коэффициент запаса?",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-11",
+  "module": "call-explain",
+  "q": "Why do rockets have several stages?",
+  "ru": "Почему у ракет несколько ступеней?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-12",
+  "module": "call-explain",
+  "q": "How does a satellite stay in orbit?",
+  "ru": "Как спутник держится на орбите?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-13",
+  "module": "call-explain",
+  "q": "What's the difference between a drawing and a 3D model?",
+  "ru": "Чем чертёж отличается от 3D-модели?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-14",
+  "module": "call-explain",
+  "q": "Why do we need to calibrate sensors?",
+  "ru": "Зачем нужно калибровать датчики?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-15",
+  "module": "call-explain",
+  "q": "Why do engineers worry about vibration during launch?",
+  "ru": "Почему инженеров беспокоит вибрация при старте?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-05",
+  "module": "call-disagree",
+  "q": "Isn't a 3D model enough without drawings?",
+  "ru": "Разве 3D-модели недостаточно и без чертежей?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-06",
+  "module": "call-disagree",
+  "q": "We could skip the second test to save time. What do you think?",
+  "ru": "Можно пропустить второе испытание, чтобы сэкономить время. Что думаешь?",
+  "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-07",
+  "module": "call-disagree",
+  "q": "Do you know the exact strength of this alloy?",
+  "ru": "Ты знаешь точную прочность этого сплава? (Можно честно сказать, что нет.)",
+  "voice": "us-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-08",
+  "module": "call-disagree",
+  "q": "Can you guarantee the part will be ready by Monday?",
+  "ru": "Можешь гарантировать, что деталь будет готова к понедельнику?",
+  "voice": "gb-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-09",
+  "module": "call-disagree",
+  "q": "Shouldn't we always use the strongest material?",
+  "ru": "Разве не нужно всегда брать самый прочный материал?",
+  "voice": "in-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-disagree-10",
+  "module": "call-disagree",
+  "q": "Do you think engineers need to know how to sell their ideas?",
+  "ru": "Как думаешь, инженерам нужно уметь продавать свои идеи?",
+  "voice": "au-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-03",
+  "module": "call-questions",
+  "q": "We've covered everything on our side. What would you like to ask?",
+  "ru": "С нашей стороны всё. Что ты хотел бы спросить?",
+  "voice": "us-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-04",
+  "module": "call-questions",
+  "q": "Before we finish, is there anything you want to know about the team?",
+  "ru": "Пока не закончили: хочешь что-нибудь узнать о команде?",
+  "voice": "gb-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-05",
+  "module": "call-questions",
+  "q": "Do you have any questions about the internship schedule?",
+  "ru": "Есть вопросы о графике стажировки?",
+  "voice": "in-f",
+  "reviewed": false
+ },
+ {
+  "id": "q-questions-06",
+  "module": "call-questions",
+  "q": "Is there anything you'd like to ask about the next steps?",
+  "ru": "Хочешь что-нибудь спросить о дальнейших шагах?",
+  "voice": "au-m",
+  "reviewed": false
  }
 ]

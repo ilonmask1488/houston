@@ -20,6 +20,7 @@ import { splitSentences } from '../../lib/story/text'
 import type { StepProps } from './result'
 import s from './run.module.css'
 import d from './doc.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
@@ -247,6 +248,7 @@ export function DocRetellStep({ step, onDone }: StepProps<S<'docRetell'>>) {
   const model = t.retell[step.p]!
   const voice = defaultVoice()
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   return (
     <section className={s.body}>
       <Meta t={t} />

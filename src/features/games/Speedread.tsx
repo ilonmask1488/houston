@@ -1,9 +1,10 @@
 /* «Скорочтение» (ТЗ §7.2): технический абзац, найти предложение с ответом, пока идёт таймер. */
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { SignalMeter } from '../../components/Instruments'
 import { ru } from '../../i18n/ru'
 import { sfx } from '../../lib/audio/sfx'
-import { speedreadPoints, speedreadRounds, speedreadSeconds } from '../../lib/games/games'
+import { loadDeck } from '../../lib/games/deck'
+import { gameRandom, speedreadFromDeck, speedreadPoints, speedreadPool, speedreadSeconds, type SpeedreadItem } from '../../lib/games/games'
 import { recordAnswer } from '../../lib/progress/record'
 import { comboMultiplier } from '../../lib/progress/signal'
 import { splitSentences } from '../../lib/story/text'
@@ -13,8 +14,23 @@ import s from './games.module.css'
 export type SpeedreadOutcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
 
 export function SpeedreadGame({ onFinish }: { onFinish: (o: SpeedreadOutcome) => void }) {
+  const [rounds, setRounds] = useState<SpeedreadItem[] | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadDeck('speedread', speedreadPool(), ['find']).then((deck) => {
+      const r = speedreadFromDeck(deck, gameRandom())
+      void deck.save().catch(() => {})
+      if (alive) setRounds(r)
+    })
+    return () => {
+      alive = false
+    }
+  }, [])
+  return rounds ? <SpeedreadPlay rounds={rounds} onFinish={onFinish} /> : null
+}
+
+function SpeedreadPlay({ rounds, onFinish }: { rounds: SpeedreadItem[]; onFinish: (o: SpeedreadOutcome) => void }) {
   const t = ru.games
-  const rounds = useMemo(() => speedreadRounds(Date.now()), [])
   const [i, setI] = useState(0)
   const [streak, setStreak] = useState(0)
   const [score, setScore] = useState(0)

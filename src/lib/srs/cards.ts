@@ -3,7 +3,7 @@
   Чанк после изучения даёт карточки 1 (текст → значение) и 3 (на слух → значение);
   фраза Эфира, которую не поймал, — карточку 3: слабые места возвращаются чаще.
 */
-import { chunkById, falseFriendById, phraseById } from '../../content'
+import { chunkById, falseFriendById, gameStaticById, phraseById } from '../../content'
 import { dictById, dictionaryLoaded, loadDictionary } from '../dict/dict'
 import { db, type AppDB } from '../db/db'
 import type { CardRow } from '../db/types'
@@ -20,7 +20,7 @@ const userWordIds = new Set<string>()
 export function itemExists(itemId: string): boolean {
   if (itemId.startsWith('w-')) return !dictionaryLoaded() || dictById.has(itemId)
   if (itemId.startsWith('u-')) return userWordIds.has(itemId)
-  return chunkById.has(itemId) || phraseById.has(itemId) || falseFriendById.has(itemId)
+  return chunkById.has(itemId) || phraseById.has(itemId) || falseFriendById.has(itemId) || gameStaticById.has(itemId)
 }
 
 /** Загрузить словарь и список своих слов, если в карточках есть слова. */

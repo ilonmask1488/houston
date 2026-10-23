@@ -2,61 +2,25 @@
   «Близнецы» — минимальные пары на слух (ship/sheep, west/vest, think/sink) и «Ложные друзья» —
   инженерные ловушки перевода (конструкция ≠ construction). Обе — 60 секунд, серия даёт множитель.
 */
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { SignalMeter } from '../../components/Instruments'
 import { Mascot } from '../../components/Mascot'
 import { content } from '../../content'
 import type { FalseFriend, MinimalPair, VoiceId } from '../../content/types'
 import { ru } from '../../i18n/ru'
-import { defaultVoice, playText, stopAudio } from '../../lib/audio/audio'
-import { sfx } from '../../lib/audio/sfx'
-import { comboPoints, gameRandom, twinsRound, twinsVoice } from '../../lib/games/games'
+import { defaultVoice, playText } from '../../lib/audio/audio'
+import ui from '../../components/ui.module.css'
+import { loadDeck, type Deck } from '../../lib/games/deck'
+import { gameRandom, twinsVoice } from '../../lib/games/games'
 import { rng, shuffle } from '../../lib/intake/plan'
 import { recordAnswer } from '../../lib/progress/record'
 import { comboMultiplier } from '../../lib/progress/signal'
 import { addFalseFriendCard } from '../../lib/srs/cards'
 import c from '../run/clean.module.css'
 import s from './games.module.css'
+import { useTimed, type TimedOutcome } from './timed'
 
-export type TimedOutcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
-
-/** Общий каркас игры на время: таймер, счёт, серия. */
-function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void) {
-  const [left, setLeft] = useState(seconds)
-  const [streak, setStreak] = useState(0)
-  const [score, setScore] = useState(0)
-  const stats = useRef({ correct: 0, wrong: 0, best: 0 })
-  const ended = useRef(false)
-  const started = useRef(0)
-  useEffect(() => {
-    started.current = Date.now()
-    const timer = setInterval(() => setLeft((n) => Math.max(0, n - 1)), 1000)
-    return () => clearInterval(timer)
-  }, [])
-  useEffect(() => {
-    if (left > 0 || ended.current) return
-    ended.current = true
-    stopAudio()
-    onFinish({ score, correct: stats.current.correct, wrong: stats.current.wrong, bestStreak: stats.current.best, seconds: (Date.now() - started.current) / 1000, spokenMs: 0, onTime: 0 })
-  }, [left, score, onFinish])
-  const answer = (ok: boolean): number => {
-    const s2 = ok ? streak + 1 : 0
-    if (ok) {
-      stats.current.correct++
-      stats.current.best = Math.max(stats.current.best, s2)
-      setScore((x) => x + comboPoints(comboMultiplier(s2)))
-      sfx(s2 === 5 || s2 === 10 ? 'combo' : 'correct')
-    } else {
-      stats.current.wrong++
-      sfx('wrong')
-    }
-    setStreak(s2)
-    return s2
-  }
-  return { left, streak, score, answer, ended }
-}
-
-function Hud({ left, streak, score }: { left: number; streak: number; score: number }) {
+export function Hud({ left, streak, score }: { left: number; streak: number; score: number }) {
   const t = ru.games
   return (
     <div className={s.hud}>
@@ -73,27 +37,48 @@ function Hud({ left, streak, score }: { left: number; streak: number; score: num
 
 /* ——— Близнецы ——— */
 
+type TwinRound = { pair: MinimalPair; pick: 0 | 1; voice: VoiceId }
+
 export function TwinsGame({ seconds, onFinish }: { seconds: number; onFinish: (o: TimedOutcome) => void }) {
   const random = useMemo(() => gameRandom(), [])
-  const g = useTimed(seconds, onFinish)
-  const [round, setRound] = useState<{ pair: MinimalPair; pick: 0 | 1; voice: VoiceId }>(() => ({ ...twinsRound(random), voice: defaultVoice() }))
+  const [deck, setDeck] = useState<Deck<MinimalPair> | null>(null)
+  const [round, setRound] = useState<TwinRound | null>(null)
   const [given, setGiven] = useState<string | null>(null)
-  const target = round.pick === 0 ? round.pair.a : round.pair.b
+  const g = useTimed(seconds, onFinish, !!round)
   useEffect(() => {
-    void playText(target, { voice: round.voice }).catch(() => {})
+    let alive = true
+    void loadDeck('twins', content.pairs, ['pair']).then((d) => {
+      if (!alive) return
+      setDeck(d)
+      setRound({ pair: d.draw(random), pick: random() < 0.5 ? 0 : 1, voice: defaultVoice() })
+    })
+    return () => {
+      alive = false
+    }
+  }, [random])
+  const target = round ? (round.pick === 0 ? round.pair.a : round.pair.b) : ''
+  useEffect(() => {
+    if (round) void playText(target, { voice: round.voice }).catch(() => {})
   }, [round, target])
+  if (!deck || !round) return null
   const choose = (w: string) => {
     if (given !== null || g.ended.current) return
     setGiven(w)
     const ok = w === target
+    deck.result(round.pair.id, ok)
+    void deck.save().catch(() => {})
     void recordAnswer({ kind: 'pair', source: 'game', track: 'clean', item: round.pair.id, expected: target, given: w, correct: ok, tag: round.pair.module })
     const s2 = g.answer(ok)
-    setTimeout(() => {
-      if (g.ended.current) return
-      setGiven(null)
-      setRound({ ...twinsRound(random, round.pair.id), voice: twinsVoice(s2, defaultVoice(), random) })
-    }, ok ? 600 : 1300)
+    setTimeout(
+      () => {
+        if (g.ended.current) return
+        setGiven(null)
+        setRound({ pair: deck.draw(random, round.pair.id), pick: random() < 0.5 ? 0 : 1, voice: twinsVoice(s2, defaultVoice(), random) })
+      },
+      ok ? 600 : 1800,
+    )
   }
+  const gloss = (w: string) => (w === round.pair.a ? round.pair.ruA : round.pair.ruB)
   return (
     <section className={s.play}>
       <Hud left={g.left} streak={g.streak} score={g.score} />
@@ -114,6 +99,16 @@ export function TwinsGame({ seconds, onFinish }: { seconds: number; onFinish: (o
           </button>
         ))}
       </div>
+      {given !== null && given !== target && (
+        <div className={s.feedback} data-ok="false">
+          <span>
+            <b lang="en">{target}</b> /{round.pick === 0 ? round.pair.ipaA : round.pair.ipaB}/ — {gloss(target)}
+          </span>
+          <span className={s.feedbackNote}>
+            <span lang="en">{given}</span> /{round.pick === 0 ? round.pair.ipaB : round.pair.ipaA}/ — {gloss(given)}
+          </span>
+        </div>
+      )}
     </section>
   )
 }
@@ -122,30 +117,45 @@ export function TwinsGame({ seconds, onFinish }: { seconds: number; onFinish: (o
 
 export function FalseFriendsGame({ seconds, onFinish }: { seconds: number; onFinish: (o: TimedOutcome) => void }) {
   const random = useMemo(() => gameRandom(), [])
-  const g = useTimed(seconds, onFinish)
-  const next = (after?: string): { f: FalseFriend; options: string[] } => {
-    const pool = content.falseFriends.filter((x) => x.id !== after)
-    const f = pool[Math.floor(random() * pool.length)]!
+  const [deck, setDeck] = useState<Deck<FalseFriend> | null>(null)
+  const [round, setRound] = useState<{ f: FalseFriend; options: string[] } | null>(null)
+  const [given, setGiven] = useState<string | null>(null)
+  const g = useTimed(seconds, onFinish, !!round)
+  const make = (d: Deck<FalseFriend>, after?: string) => {
+    const f = d.draw(random, after)
     return { f, options: shuffle(f.options, rng(Math.floor(random() * 1e9))) }
   }
-  const [round, setRound] = useState(() => next())
-  const [given, setGiven] = useState<string | null>(null)
+  useEffect(() => {
+    let alive = true
+    void loadDeck('ff', content.falseFriends, ['ff']).then((d) => {
+      if (!alive) return
+      setDeck(d)
+      setRound(make(d))
+    })
+    return () => {
+      alive = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  if (!deck || !round) return null
   const right = round.f.options[0]!
+  const next = () => {
+    if (g.ended.current) return
+    setGiven(null)
+    setRound(make(deck, round.f.id))
+  }
   const choose = (o: string) => {
     if (given !== null || g.ended.current) return
     setGiven(o)
     const ok = o === right
+    deck.result(round.f.id, ok)
+    void deck.save().catch(() => {})
     void recordAnswer({ kind: 'ff', source: 'game', track: 'clean', item: round.f.id, expected: right, given: o, correct: ok, tag: 'false-friends' })
+    void playText(right, { voice: defaultVoice() }).catch(() => {})
     if (!ok) void addFalseFriendCard(round.f.id).catch(() => {})
     g.answer(ok)
-    setTimeout(
-      () => {
-        if (g.ended.current) return
-        setGiven(null)
-        setRound(next(round.f.id))
-      },
-      ok ? 700 : 2600,
-    )
+    // Верно — коротко и дальше; ошибка — объяснение остаётся, пока не нажмёшь «Дальше»
+    if (ok) setTimeout(next, 1100)
   }
   return (
     <section className={s.play}>
@@ -154,7 +164,6 @@ export function FalseFriendsGame({ seconds, onFinish }: { seconds: number; onFin
         <p>{round.f.ru}</p>
         <p className={s.rules}>«{round.f.context}»</p>
       </div>
-      {given !== null && given !== right && <p className={s.rules}>{round.f.why}</p>}
       <div className={s.options} role="group" aria-label={ru.clean.ffGroup}>
         {round.options.map((o) => (
           <button
@@ -169,6 +178,16 @@ export function FalseFriendsGame({ seconds, onFinish }: { seconds: number; onFin
           </button>
         ))}
       </div>
+      {given !== null && (
+        <div className={s.feedback} data-ok={String(given === right)}>
+          <span>{round.f.why}</span>
+        </div>
+      )}
+      {given !== null && given !== right && (
+        <button type="button" className={ui.primary} onClick={next}>
+          {ru.games.nextRound}
+        </button>
+      )}
     </section>
   )
 }

@@ -10,6 +10,7 @@ import type { Step } from '../../lib/run/steps'
 import { useSettings } from '../../lib/settings/settings'
 import type { StepProps } from './result'
 import s from './run.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
@@ -27,6 +28,7 @@ export function ChunkStep({ step, onDone }: StepProps<S<'chunk'>>) {
   const voice = defaultVoice()
   const target = c.example ?? c.en
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   useEffect(() => {
     void playText(c.en, { voice }).catch(() => {})
     return () => stopAudio()
@@ -93,6 +95,7 @@ export function QuickStep({ step, onDone }: StepProps<S<'quick'>>) {
   const [showHints, setShowHints] = useState(false)
   const [showRu, setShowRu] = useState(false)
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const [checks, setChecks] = useState<boolean[]>([false, false, false])
   const measured = !!result && (result.recorded || result.recognized)
   const noPauses = measured ? result!.longPauses === 0 : checks[2]!
@@ -205,6 +208,7 @@ export function TranslateStep({ step, onDone }: StepProps<S<'translate'>>) {
   const settings = useSettings()
   const it = translateById.get(step.item)!
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const seconds = settings.answerSeconds + 2
   return (
     <section className={s.body}>
@@ -240,6 +244,7 @@ export function SubstituteStep({ step, onDone }: StepProps<S<'substitute'>>) {
   const swap = it.swaps[step.swap]!
   const voice = defaultVoice()
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   return (
     <section className={s.body}>
       <div className={s.example}>

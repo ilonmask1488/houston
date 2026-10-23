@@ -9,9 +9,12 @@ export async function recordAnswer(a: Omit<AnswerRow, 'id' | 'at'>): Promise<voi
   await db.answers.add({ ...a, at: Date.now() })
 }
 
-/** Добавить время, сигнал и речь к сегодняшнему дню. */
-export async function addToday(p: { seconds?: number; signal?: number; spokenMs?: number; spoken?: number; newItems?: number }): Promise<void> {
-  const date = localDate()
+/**
+  Добавить время, сигнал и речь к сегодняшнему дню.
+  date — день начала занятия: блок, начатый в 23:55 и законченный в 00:05, засчитывается вчерашнему дню.
+*/
+export async function addToday(p: { seconds?: number; signal?: number; spokenMs?: number; spoken?: number; newItems?: number; date?: string }): Promise<void> {
+  const date = p.date ?? localDate()
   await db.transaction('rw', db.days, async () => {
     const d = (await db.days.get(date)) ?? { date, seconds: 0, signal: 0, spokenSeconds: 0, spokenCount: 0, newItems: 0 }
     d.seconds += Math.round(p.seconds ?? 0)

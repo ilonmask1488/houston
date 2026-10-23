@@ -6,15 +6,17 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ClaudeButton } from '../../components/ClaudeButton'
 import { Mascot } from '../../components/Mascot'
 import { Screen } from '../../components/ui'
 import ui from '../../components/ui.module.css'
 import { moduleById } from '../../content'
 import { ru } from '../../i18n/ru'
+import { dayReviewPrompt } from '../../lib/claude/prompt'
 import { db } from '../../lib/db/db'
 import type { SessionSegment } from '../../lib/db/types'
 import { useIntakeState } from '../../lib/intake/store'
-import { localDate } from '../../lib/progress/streak'
+import { useToday } from '../../lib/progress/useToday'
 import { getTodaySession } from '../../lib/session/today'
 import { useSettings } from '../../lib/settings/settings'
 import { nextSegment, planBlocks, segmentUrl } from './segments'
@@ -32,11 +34,13 @@ export function SessionScreen() {
   const navigate = useNavigate()
   const settings = useSettings()
   const { last, loaded } = useIntakeState()
-  const [ready, setReady] = useState(false)
+  const date = useToday()
+  // Готов план именно на эту дату: после полуночи показываем новый, а не вчерашний.
+  const [ready, setReady] = useState<string | null>(null)
   useEffect(() => {
-    void getTodaySession(settings.sessionMinutes).then(() => setReady(true))
-  }, [settings.sessionMinutes])
-  const row = useLiveQuery(() => (ready ? db.sessions.get(localDate()) : undefined), [ready])
+    void getTodaySession(settings.sessionMinutes).then((r) => setReady(r.date))
+  }, [settings.sessionMinutes, date])
+  const row = useLiveQuery(() => (ready ? db.sessions.get(ready) : undefined), [ready])
   const t = ru.session
   if (!row) return <Screen title={t.title} back />
 
@@ -65,6 +69,7 @@ export function SessionScreen() {
         })}
       </ol>
       {!row.segments.some((x) => x.block === 'review') && <p className={s.honest}>{t.noReview}</p>}
+      {!row.segments.some((x) => x.block === 'warmup') && row.segments.some((x) => x.block === 'review') && <p className={s.honest}>{t.debt}</p>}
 
       {next ? (
         <div className={s.launch}>
@@ -77,6 +82,14 @@ export function SessionScreen() {
           <Mascot mood="celebrate" size={104} />
           <h2>{t.doneTitle}</h2>
           <p className="mono">{t.doneStats(Math.round(row.seconds / 60), row.signal, row.spokenMs / 1000)}</p>
+          <ClaudeButton
+            label={t.reviewClaude}
+            build={async () => {
+              const from = new Date(`${row.date}T00:00:00`).getTime()
+              const answers = await db.answers.where('at').aboveOrEqual(from).toArray()
+              return dayReviewPrompt(answers, last?.result.cefr)
+            }}
+          />
           <p className={s.honest}>{t.extra}</p>
           <button type="button" className={ui.secondary} onClick={() => navigate('/more')}>
             {t.toTraining}

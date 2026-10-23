@@ -25,6 +25,7 @@ import { signalFor } from '../../lib/progress/signal'
 import { hash } from '../../lib/session/session'
 import s from '../run/run.module.css'
 import st from './story.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 /** Чанки, которые сейчас учишь (последние в повторении), — для практики с Claude. */
 async function learnedChunks(): Promise<string[]> {
@@ -76,6 +77,7 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
   const [i, setI] = useState(-1) // -1 — вступление
   const [picked, setPicked] = useState<number | null>(null)
   const [said, setSaid] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(said?.url)
   const [showRu, setShowRu] = useState(false)
   const [score, setScore] = useState({ ok: 0, n: 0, spokenMs: 0 })
   const [started] = useState(() => Date.now())
@@ -94,19 +96,28 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
   }, [line])
 
   const finishing = useRef(false)
+  const [saveError, setSaveError] = useState(false)
   const finish = async () => {
     if (finishing.current) return
     finishing.current = true
-    const seconds = (Date.now() - started) / 1000
-    const best = score.n ? score.ok / score.n : 1
-    await db.transaction('rw', db.episodes, async () => {
-      const cur = await db.episodes.get(e.id)
-      await db.episodes.put({ id: e.id, completedAt: Date.now(), best: Math.max(best, cur?.best ?? 0), times: (cur?.times ?? 0) + 1 })
-    })
-    await addToday({ seconds, spokenMs: score.spokenMs, spoken: score.n, signal: signalFor({ seconds, correct: score.ok, wrong: score.n - score.ok, spokenMs: score.spokenMs, complete: true }) })
-    await evaluateAchievements()
-    sfx('combo')
-    setFinished(true)
+    setSaveError(false)
+    try {
+      const seconds = (Date.now() - started) / 1000
+      const best = score.n ? score.ok / score.n : 1
+      await db.transaction('rw', db.episodes, async () => {
+        const cur = await db.episodes.get(e.id)
+        await db.episodes.put({ id: e.id, completedAt: Date.now(), best: Math.max(best, cur?.best ?? 0), times: (cur?.times ?? 0) + 1 })
+      })
+      await addToday({ seconds, spokenMs: score.spokenMs, spoken: score.n, signal: signalFor({ seconds, correct: score.ok, wrong: score.n - score.ok, spokenMs: score.spokenMs, complete: true }) })
+      await evaluateAchievements().catch((x: unknown) => console.error(x))
+      sfx('combo')
+      setFinished(true)
+    } catch (err) {
+      // Не сохранилось (база недоступна) — не застреваем: показываем ошибку и «Повторить».
+      console.error('episode finish', err)
+      finishing.current = false
+      setSaveError(true)
+    }
   }
   const next = () => (i + 1 < e.lines.length ? setI(i + 1) : void finish())
 
@@ -207,8 +218,9 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
             {t.showRu}
           </button>
           <div className={s.actions}>
+            {saveError && <p className={ui.error} role="alert">{ru.errors.save}</p>}
             <button type="button" className={ui.primary} onClick={next}>
-              {t.next}
+              {saveError ? ru.errors.retry : t.next}
             </button>
           </div>
         </section>
@@ -270,9 +282,10 @@ function EpisodePlay({ e, onAgain }: { e: Episode; onAgain: () => void }) {
             ) : (
               <>
                 <VoiceReport result={said} target={right.text} sample={{ text: right.text, voice: defaultVoice() }} />
+                {saveError && <p className={ui.error} role="alert">{ru.errors.save}</p>}
                 <div className={s.actions}>
                   <button type="button" className={ui.primary} onClick={next}>
-                    {t.next}
+                    {saveError ? ru.errors.retry : t.next}
                   </button>
                 </div>
               </>

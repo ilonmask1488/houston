@@ -108,12 +108,15 @@ export function listen(lang = 'en-US', events: ListenEvents = {}, continuous = t
     }
     r.onerror = (e) => {
       if (e.error === 'no-speech' || e.error === 'aborted') return
+      // Ошибка окончательная (нет доступа, сеть, микрофон): onend не должен перезапускать сессию.
+      stopped = true
       if (!done) {
         done = true
         fail(new Error(e.error))
       }
     }
     r.onend = () => {
+      if (done) return
       if (interim) {
         finals.push(interim)
         interim = ''

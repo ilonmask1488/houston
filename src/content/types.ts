@@ -231,4 +231,17 @@ export type Content = {
   stress: StressWord[]
   falseFriends: FalseFriend[]
   bosses: Bosses | null
+  /** пул игры «Помехи» (src/content/games/static.json): озвученные реплики курса + новые фразы */
+  gameStatic: GameStatic[]
+  grammarGaps: GrammarGap[]
+  grammarFix: GrammarFixItem[]
 }
+
+/** Фраза «Помех»: options[0] — то, что звучит; остальные отличаются на слух одной мелочью. */
+export type GameStatic = { id: string; text: string; options: string[]; ru: string; focus: string; voice: VoiceId; reviewed: boolean }
+
+export type GrammarTopic = 'articles' | 'prepositions' | 'tenses' | 'questions' | 'countable' | 'verbs' | 'passive' | 'word-order'
+/** Пропуск в предложении: options[0] — верный, «∅» — ничего не нужно. */
+export type GrammarGap = { id: string; topic: GrammarTopic; text: string; options: string[]; ru: string; why: string; reviewed: boolean }
+/** Найди и исправь типичную ошибку русскоязычных. */
+export type GrammarFixItem = { id: string; topic: GrammarTopic; wrong: string; right: string; ru: string; why: string; reviewed: boolean }

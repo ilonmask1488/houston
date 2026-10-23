@@ -29,6 +29,8 @@ import { STEP_SECONDS, stepsSeconds, type Step } from '../run/steps'
 import { planSession } from './plan'
 
 export const MAX_SEGMENT_SECONDS = 180
+/** Больше стольких карточек к повторению — «режим долга»: занятие в основном повторение. */
+export const DEBT_CARDS = 60
 
 export function hash(s: string): number {
   let h = 2166136261
@@ -109,7 +111,9 @@ export function airSteps(a: AirInput, seconds: number): { label: string; steps: 
   const pool = rest.length >= 3 ? rest : ps
   const second: Step[] = [
     { kind: 'dictation', phrase: pool[0]!.id, speed: a.speed },
-    { kind: 'ladder', phrase: pool[1 % pool.length]!.id },
+    // Раньше здесь была «лестница скоростей» — три раза «понял / не понял» без проверки.
+    // Диктант на ступень быстрее проверяет то же самое честно (тип 'ladder' остаётся для старых планов).
+    { kind: 'dictation', phrase: pool[1 % pool.length]!.id, speed: Math.min(1.25, a.speed + 0.25) },
     { kind: 'dictation', phrase: pool[2 % pool.length]!.id, speed: a.speed },
   ]
   return [
@@ -148,10 +152,22 @@ function callParts(c: CallInput, seconds: number): { label: string; steps?: Step
     out.push({ label: 'chunks', steps: s })
     left -= stepsSeconds(s)
   }
+  // Подстановка входит в закрытие модуля (moduleItems), значит должна попадать в план, пока не сделана:
+  // без неё модуль Позывного не закрывался никогда и сеанс крутил одни и те же фразы перевода.
+  const subs = (items?.substitution ?? []).filter((x) => !c.done.has(x.id))
+  const subBudget = subs.length ? 2 * STEP_SECONDS.substitute : 0
   const tr = freshFirst(items?.translate ?? [], c.done, c.seed)
-  if (tr.length && left > 60) {
-    const s = take(tr.map((x): Step => ({ kind: 'translate', item: x.id })), Math.min(left - 60, MAX_SEGMENT_SECONDS))
+  if (tr.length && left - subBudget > 60) {
+    const s = take(tr.map((x): Step => ({ kind: 'translate', item: x.id })), Math.min(left - 60 - subBudget, MAX_SEGMENT_SECONDS))
     out.push({ label: 'translate', steps: s })
+    left -= stepsSeconds(s)
+  }
+  if (subs.length) {
+    const r = rng(c.seed + 2)
+    const s = shuffle(subs, r)
+      .slice(0, 2)
+      .map((x): Step => ({ kind: 'substitute', item: x.id, swap: Math.floor(r() * x.swaps.length) }))
+    out.push({ label: 'substitute', steps: s })
     left -= stepsSeconds(s)
   }
   // Говорение с таймером — каждый день.
@@ -256,6 +272,24 @@ export type PlanInput = {
   /** скорость, на которой сейчас ловишь фразы (0.75 или 1) */
   speed: number
   stories?: { id: string; trained: number }[]
+  /** точность по трекам за 14 дней (0–100), где ответов достаточно: важнее вводного теста */
+  accuracy?: Partial<Record<TrackId, number>>
+}
+
+/**
+  Точность по трекам из реальных ответов (упражнения и игры): трек с 12+ ответами получает процент верных.
+  Вводный тест — снимок первого дня; через пару недель слабое место по ответам может быть уже другим.
+*/
+export function trackAccuracy(answers: { track?: TrackId; correct: boolean }[], minAnswers = 12): Partial<Record<TrackId, number>> {
+  const by = new Map<TrackId, { ok: number; n: number }>()
+  for (const a of answers) {
+    if (!a.track) continue
+    const cur = by.get(a.track) ?? { ok: 0, n: 0 }
+    cur.n++
+    if (a.correct) cur.ok++
+    by.set(a.track, cur)
+  }
+  return Object.fromEntries([...by].filter(([, v]) => v.n >= minAnswers).map(([k, v]) => [k, Math.round((100 * v.ok) / v.n)]))
 }
 
 function seg(id: string, block: SessionBlock, label: string, x: Partial<SessionSegment>): SessionSegment {
@@ -268,8 +302,16 @@ export function planSegments(input: PlanInput): SessionSegment[] {
   const { date, progress, intake } = input
   const min = Object.fromEntries(planSession(input.minutes).map((b) => [b.id, b.minutes])) as Record<SessionBlock, number>
   const seed = hash(date)
+  // Вернулся после перерыва и карточек накопилось много: сначала разгрести их — минуты разминки
+  // и ротации уходят повторению, иначе долг только растёт (новое добавляется быстрее, чем повторяется).
+  const debt = input.due.length > DEBT_CARDS
+  if (debt) {
+    min.review += min.warmup + min.rotation
+    min.warmup = 0
+    min.rotation = 0
+  }
 
-  const warmup = [seg('warmup', 'warmup', 'static', { kind: 'game', game: 'static', minutes: min.warmup })]
+  const warmup = debt ? [] : [seg('warmup', 'warmup', 'static', { kind: 'game', game: 'static', minutes: min.warmup })]
 
   const perChunk = Math.floor(MAX_SEGMENT_SECONDS / STEP_SECONDS.card)
   const cardCount = Math.min(input.due.length, Math.round((min.review * 60) / STEP_SECONDS.card))
@@ -295,7 +337,7 @@ export function planSegments(input: PlanInput): SessionSegment[] {
       )
     : []
 
-  const rotation = rotationSegments(input, min.rotation * 60, seed, airMod, callMod)
+  const rotation = debt ? [] : rotationSegments(input, min.rotation * 60, seed, airMod, callMod)
 
   // Чередование: разминка, повторение, Эфир, Позывной, повторение, Эфир, Позывной, ротация…
   const queues = [review, air, call, rotation]
@@ -307,8 +349,8 @@ export function planSegments(input: PlanInput): SessionSegment[] {
 export const ROTATION_TRACKS: TrackId[] = ['doc', 'mail', 'clean']
 
 /**
-  Какой трек ротации сегодня. Треки без контента не участвуют. Слабый трек (по вводному тесту)
-  стоит в цикле дважды: из четырёх дней два — ему.
+  Какой трек ротации сегодня. Треки без контента не участвуют. Слабый трек (по ответам за 14 дней,
+  а пока их мало — по вводному тесту) стоит в цикле дважды: из четырёх дней два — ему.
 */
 export function rotationTrack(seed: number, available: TrackId[], scores?: Partial<Record<TrackId, number>>): TrackId | undefined {
   if (!available.length) return undefined
@@ -329,7 +371,7 @@ function rotationSegments(input: PlanInput, seconds: number, seed: number, airMo
   const track = rotationTrack(
     Math.floor(Date.parse(`${input.date}T12:00:00Z`) / 86_400_000),
     ROTATION_TRACKS.filter((t) => mods.get(t)),
-    input.intake?.tracks,
+    input.intake || input.accuracy ? { ...input.intake?.tracks, ...input.accuracy } : undefined,
   )
   const mod = track && mods.get(track)
   if (track && mod) {
@@ -399,8 +441,11 @@ export async function todaySession(): Promise<SessionRow | undefined> {
   return db.sessions.get(localDate())
 }
 
-export async function updateSegment(id: string, patch: Partial<SessionSegment>, stats?: { seconds: number; signal: number; correct: number; total: number; spokenMs: number }): Promise<SessionRow | undefined> {
-  const date = localDate()
+/**
+  date — день занятия, в котором сегмент (SessionRow.date). Без него — сегодня; но блок, начатый в 23:55
+  и законченный в 00:05, должен обновить вчерашнее занятие, поэтому раннер передаёт день явно.
+*/
+export async function updateSegment(id: string, patch: Partial<SessionSegment>, stats?: { seconds: number; signal: number; correct: number; total: number; spokenMs: number }, date = localDate()): Promise<SessionRow | undefined> {
   let out: SessionRow | undefined
   await db.transaction('rw', db.sessions, async () => {
     const row = await db.sessions.get(date)
@@ -423,7 +468,7 @@ export async function updateSegment(id: string, patch: Partial<SessionSegment>, 
 export async function skipBlock(block: SessionBlock): Promise<void> {
   const row = await todaySession()
   if (!row) return
-  for (const s of row.segments) if (s.block === block && s.status === 'pending') await updateSegment(s.id, { status: 'skipped', auto: false })
+  for (const s of row.segments) if (s.block === block && s.status === 'pending') await updateSegment(s.id, { status: 'skipped', auto: false }, undefined, row.date)
 }
 
 /** Для подписей: какой трек у блока. */

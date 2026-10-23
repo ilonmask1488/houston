@@ -62,12 +62,15 @@ export function InterviewScreen() {
   const [urls, setUrls] = useState<(string | undefined)[]>([])
   const [finished, setFinished] = useState<{ fresh: AchievementId[]; seconds: number } | null>(null)
   const started = useRef(0)
+  // Очистка при уходе видит только первый рендер — записи берём из ref, а не из замкнутого пустого urls.
+  const urlsRef = useRef<(string | undefined)[]>([])
+  const finishing = useRef(false)
+  const [saveError, setSaveError] = useState(false)
   useEffect(
     () => () => {
       stopAudio()
-      urls.forEach((u) => u && URL.revokeObjectURL(u))
+      urlsRef.current.forEach((u) => u && URL.revokeObjectURL(u))
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   )
 
@@ -90,7 +93,8 @@ export function InterviewScreen() {
         recorded: !!r && (r.recorded || r.recognized),
       },
     ])
-    setUrls((u) => [...u, r?.url])
+    urlsRef.current = [...urlsRef.current, r?.url]
+    setUrls(urlsRef.current)
     setAnswered(true)
   }
 
@@ -100,11 +104,20 @@ export function InterviewScreen() {
       setAnswered(false)
       return
     }
-    const seconds = (Date.now() - started.current) / 1000
-    const spokenMs = items.reduce((sum, x) => sum + (x.speechMs ?? 25_000), 0)
-    await db.interviews.add({ at: Date.now(), seconds, items })
-    await addToday({ seconds, spokenMs, spoken: items.length, signal: signalFor({ seconds, correct: items.length, wrong: 0, spokenMs }) + SIGNAL.bossPassed })
-    setFinished({ fresh: await evaluateAchievements(), seconds })
+    if (finishing.current) return
+    finishing.current = true
+    setSaveError(false)
+    try {
+      const seconds = (Date.now() - started.current) / 1000
+      const spokenMs = items.reduce((sum, x) => sum + (x.speechMs ?? 25_000), 0)
+      await db.interviews.add({ at: Date.now(), seconds, items })
+      await addToday({ seconds, spokenMs, spoken: items.length, signal: signalFor({ seconds, correct: items.length, wrong: 0, spokenMs }) + SIGNAL.bossPassed })
+      setFinished({ fresh: await evaluateAchievements().catch(() => [] as AchievementId[]), seconds })
+    } catch (e) {
+      console.error('interview finish', e)
+      finishing.current = false
+      setSaveError(true)
+    }
   }
 
   const exit = () => navigate('/story')
@@ -166,9 +179,10 @@ export function InterviewScreen() {
         ) : (
           <>
             <p className={s.hint}>{t.recorded}</p>
+            {saveError && <p className={ui.error} role="alert">{ru.errors.save}</p>}
             <div className={s.actions}>
               <button type="button" className={ui.primary} onClick={() => void next()}>
-                {i + 1 < qs.length ? t.next : t.finish}
+                {saveError ? ru.errors.retry : i + 1 < qs.length ? t.next : t.finish}
               </button>
             </div>
           </>

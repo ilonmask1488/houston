@@ -19,6 +19,7 @@ import { keyLines, speakingSeconds, splitSentences } from '../../lib/story/text'
 import type { StepProps } from '../run/result'
 import s from '../run/run.module.css'
 import st from './story.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
@@ -180,6 +181,7 @@ export function StoryKeysStep({ step, onDone }: StepProps<S<'storyKeys'>>) {
   const text = useStoryText(step.story) ?? ''
   const lines = useMemo(() => keyLines(text), [text])
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const [show, setShow] = useState(false)
   const cover = result && result.alts.length ? bestAlternative(text, result.alts) : null
   return (
@@ -233,6 +235,7 @@ export function StoryColdStep({ step, onDone }: StepProps<S<'storyCold'>>) {
   const q = storyQuestionById.get(step.story)
   const text = useStoryText(step.story) ?? ''
   const [result, setResult] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(result?.url)
   const [line] = useState(() => ru.lines.summaryHigh[Math.floor(Math.random() * ru.lines.summaryHigh.length)]!)
   return (
     <section className={s.body}>

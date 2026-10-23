@@ -20,8 +20,11 @@ export function SegmentRun() {
   const [seg, setSeg] = useState<SessionSegment | null | undefined>(undefined)
   const [blocks, setBlocks] = useState<PlanBlock[] | undefined>(undefined)
   const [attempt, setAttempt] = useState(0)
+  // День занятия, где этот сегмент: блок, перешедший за полночь, обновляет своё занятие, а не завтрашнее.
+  const [date, setDate] = useState<string | undefined>(undefined)
   useEffect(() => {
     void todaySession().then((row) => {
+      setDate(row?.date)
       const found = row?.segments.find((x) => x.id === id) ?? null
       if (found?.module) void startModuleRow(found.module)
       if (row) {
@@ -37,8 +40,8 @@ export function SegmentRun() {
   // Пустой блок (например, карточки уже повторены) не держит занятие: отмечаем и предлагаем следующий.
   const empty = !!seg && !steps.length
   useEffect(() => {
-    if (empty && seg && seg.status === 'pending') void updateSegment(seg.id, { status: 'skipped', auto: true })
-  }, [empty, seg])
+    if (empty && seg && seg.status === 'pending') void updateSegment(seg.id, { status: 'skipped', auto: true }, undefined, date)
+  }, [empty, seg, date])
   if (seg === undefined) return null
   if (!seg || !steps.length)
     return (
@@ -52,14 +55,14 @@ export function SegmentRun() {
       steps={steps}
       source="session"
       startAt={attempt ? 0 : (seg.pos ?? 0)}
-      onStep={(pos) => void updateSegment(seg.id, { pos })}
+      onStep={(pos) => void updateSegment(seg.id, { pos }, undefined, date)}
       onRestart={() => setAttempt((n) => n + 1)}
       onExit={back}
       title={segmentBlockTitle(seg)}
       session={blocks}
       summaryTitle={ru.session.blockDone(segmentBlockTitle(seg))}
       onFinish={async (r) => {
-        await updateSegment(seg.id, { status: 'done', pos: 0 }, { seconds: r.seconds, signal: r.signal, correct: r.correct, total: r.total, spokenMs: r.spokenMs })
+        await updateSegment(seg.id, { status: 'done', pos: 0 }, { seconds: r.seconds, signal: r.signal, correct: r.correct, total: r.total, spokenMs: r.spokenMs }, date)
       }}
       actions={() => <NextBlock afterId={seg.id} />}
     />

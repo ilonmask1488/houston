@@ -1,9 +1,10 @@
 /*
   npm run check:content — контроль качества контента (ТЗ §9.5).
-  Падает (код 1) при отсутствии звука, битых файлах, словах не из своей частотной полосы.
+  Падает (код 1) при битых файлах звука, ошибках в контенте, словах не из своей частотной полосы.
+  Отсутствующий звук — предупреждение и список в docs/audio-todo.md (до озвучки читает голос телефона).
   Печатает долю reviewed: false и число фраз со связной речью на проверку на слух.
 */
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { audioNeeds, checkCourse, checkIntake, loadContentFiles, loadWordLists, reviewedStats } from './content_lib.ts'
 
@@ -18,12 +19,26 @@ const warnings: string[] = []
 // Звук: всё, что нужно контенту, есть в манифесте, и все файлы манифеста на месте.
 const have = new Set(Object.entries(manifest.texts).flatMap(([text, es]) => es.map((e) => `${text}|${e.voice}`)))
 const needed = new Set<string>()
+// Нет mp3 — не ошибка: приложение прочитает такую фразу голосом телефона (speakEnglish).
+// Список того, что надо озвучить, — в docs/audio-todo.md; `generate_audio.py` закроет его целиком.
+const missing: string[] = []
 for (const f of files) {
   for (const need of audioNeeds(f.data)) {
     needed.add(need)
-    if (!have.has(need)) errors.push(`нет звука: «${need.replace('|', '» голосом ')} (${f.path}) — запусти scripts/generate_audio.py`)
+    if (!have.has(need) && !missing.includes(need)) missing.push(need)
   }
 }
+if (missing.length) {
+  warnings.push(`без готового звука ${missing.length} пар (текст, голос) — пока звучит голос телефона; запусти scripts/generate_audio.py (список: docs/audio-todo.md)`)
+  const rows = missing.map((m) => {
+    const [text, voice] = m.split('|')
+    return `| ${text!.replace(/\|/g, '\\|')} | ${voice} |`
+  })
+  writeFileSync(
+    join(root, 'docs/audio-todo.md'),
+    `# Звук, которого ещё нет\n\nЭти фразы приложение пока читает голосом телефона. Озвучить: \`scripts/generate_audio.py\`, затем \`npm run check:content\` — файл исчезнет.\n\n| Текст | Голос |\n|---|---|\n${rows.join('\n')}\n`,
+  )
+} else if (existsSync(join(root, 'docs/audio-todo.md'))) rmSync(join(root, 'docs/audio-todo.md'))
 for (const [text, es] of Object.entries(manifest.texts))
   for (const e of es) if (!existsSync(join(root, 'public/audio', e.file))) errors.push(`звук «${text}»: нет файла ${e.file}`)
 

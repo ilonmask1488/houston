@@ -10,7 +10,6 @@ export type AchievementId =
   | 'first-words'
   | 'no-problem'
   | 'no-pause'
-  | 'night'
   | 'air-3'
   | 'air-7'
   | 'talk-10min'
@@ -34,6 +33,8 @@ export type AchievementId =
   | 'boss-air'
   | 'boss-doc'
   | 'boss-mail'
+  | 'grammar-50'
+  | 'numbers-150'
 
 type Check = () => Promise<boolean>
 
@@ -45,10 +46,6 @@ async function streakDays(): Promise<number> {
 const CHECKS: Record<AchievementId, Check> = {
   'first-contact': async () => (await db.intake.count()) > 0,
   'first-words': async () => (await db.answers.filter((a) => (a.speechMs ?? 0) > 3000).count()) > 0,
-  night: async () => {
-    const h = new Date().getHours()
-    return h >= 23 || h < 4
-  },
   'air-3': async () => (await streakDays()) >= 3,
   'air-7': async () => (await streakDays()) >= 7,
   'talk-10min': async () => (await db.days.toArray()).reduce((s, d) => s + d.spokenSeconds, 0) >= 600,
@@ -78,6 +75,9 @@ const CHECKS: Record<AchievementId, Check> = {
   'boss-air': async () => (await db.answers.where('kind').equals('passage').filter((a) => a.item === 'boss-air' && a.correct).count()) > 0,
   'boss-doc': async () => new Set((await db.answers.where('kind').equals('find').filter((a) => a.item.startsWith('boss-doc#') && a.correct).toArray()).map((a) => a.item)).size >= 3,
   'boss-mail': async () => (await db.answers.where('kind').equals('letter').filter((a) => a.item === 'mw-boss' && a.given.trim().length > 40).count()) > 0,
+  // «Ночной эфир» убран: занятия после 23:00 хуже для памяти — поощрять их не стоит
+  'grammar-50': async () => (await db.answers.where('kind').equals('grammar').filter((a) => a.correct).count()) >= 50,
+  'numbers-150': async () => ((await db.gameRecords.get('numbers'))?.best ?? 0) >= 150,
 }
 
 export const ACHIEVEMENT_IDS = Object.keys(CHECKS) as AchievementId[]

@@ -60,6 +60,7 @@ export default defineConfig({
               cacheName: 'audio',
               rangeRequests: true,
               cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 5000 },
             },
           },
         ],

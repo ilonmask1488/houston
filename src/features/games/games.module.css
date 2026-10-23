@@ -175,3 +175,46 @@
   color: var(--signal-ink);
   text-align: center;
 }
+
+/* Обратная связь после ответа: что прозвучало, перевод, правило */
+.feedback {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  border-left: 3px solid var(--line-strong);
+  line-height: 1.4;
+}
+
+.feedback[data-ok='true'] {
+  border-left-color: var(--ok);
+}
+
+.feedback[data-ok='false'] {
+  border-left-color: var(--danger);
+}
+
+.feedbackEn {
+  font-weight: 600;
+}
+
+.feedbackNote {
+  color: var(--ink-2);
+  font-size: var(--fs-small);
+}
+
+.topic {
+  justify-self: start;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-s);
+  border: 1px solid var(--line-strong);
+  font-size: var(--fs-small);
+}
+
+.gap {
+  display: inline-block;
+  min-width: 3.5em;
+  border-bottom: 2px solid var(--signal);
+  text-align: center;
+}

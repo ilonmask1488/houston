@@ -5,17 +5,22 @@ import type { SessionRow } from '../db/types'
 import { lastIntake } from '../intake/store'
 import { localDate } from '../progress/streak'
 import { reviewQueue } from '../srs/cards'
+import { addDailyWords } from '../srs/daily'
 import { readyStories } from '../story/store'
-import { currentSpeed, planSegments, refreshSegments } from './session'
+import { currentSpeed, planSegments, refreshSegments, trackAccuracy } from './session'
 
 export async function getTodaySession(minutes: number): Promise<SessionRow> {
   const date = localDate()
   const intake = await lastIntake()
   const progress = await loadProgress()
+  // «Слова дня» — после вводного теста (по нему ясен уровень словаря); ошибка словаря не ломает занятие
+  if (intake) await addDailyWords(intake.result.vocabSize).catch((e) => console.error(e))
   const queue = await reviewQueue(200)
   const speed = await currentSpeed(intake)
   const stories = (await readyStories()).map((x) => ({ id: x.id, trained: x.trained }))
-  const fresh = planSegments({ minutes, date, due: queue.cards, progress, intake, speed, stories })
+  const recent = await db.answers.where('at').above(Date.now() - 14 * 86_400_000).toArray()
+  const accuracy = trackAccuracy(recent)
+  const fresh = planSegments({ minutes, date, due: queue.cards, progress, intake, speed, stories, accuracy })
   const existing = await db.sessions.get(date)
   if (existing) {
     const segments = refreshSegments(existing.segments, fresh)

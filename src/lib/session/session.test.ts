@@ -4,7 +4,7 @@ import { currentModule, moduleItems, type Progress } from '../course/progress'
 import type { CardRow } from '../db/types'
 import { STEP_SECONDS, stepsSeconds } from '../run/steps'
 import { newCard } from '../srs/srs'
-import { airSteps, callSteps, chunkSteps, cleanSteps, docSteps, mailSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments, rotationTrack, stepAlive } from './session'
+import { airSteps, callSteps, chunkSteps, cleanSteps, docSteps, mailSteps, MAX_SEGMENT_SECONDS, planSegments, refreshSegments, rotationTrack, stepAlive, trackAccuracy } from './session'
 
 const cards = (n: number): CardRow[] => Array.from({ length: n }, (_, i) => newCard(`c-intro-${String(i + 1).padStart(2, '0')}`, 1, 0))
 
@@ -22,6 +22,16 @@ describe('сеанс связи', () => {
       expect(segs.some((s) => s.block === 'call' && (s.game === 'quick' || s.steps?.some((x) => x.kind === 'quick')))).toBe(true)
       expect(segs[0]!.game).toBe('static')
     }
+  })
+
+  it('много карточек после перерыва: разминки и ротации нет, их минуты — повторению', () => {
+    const normal = planSegments({ minutes: 30, date: '2026-09-27', due: cards(50), progress: new Map(), speed: 1 })
+    const debt = planSegments({ minutes: 30, date: '2026-09-27', due: cards(120), progress: new Map(), speed: 1 })
+    const reviewCards = (segs: typeof normal) => segs.filter((s) => s.block === 'review').reduce((n, s) => n + (s.steps?.length ?? 0), 0)
+    expect(debt.some((s) => s.block === 'warmup' || s.block === 'rotation')).toBe(false)
+    expect(reviewCards(debt)).toBeGreaterThan(reviewCards(normal))
+    // новое и говорение не пропадают совсем
+    expect(debt.some((s) => s.block === 'call')).toBe(true)
   })
 
   it('соседние сегменты не одного блока (чередование форматов)', () => {
@@ -46,9 +56,24 @@ describe('сеанс связи', () => {
   it('Позывной: сначала новые чанки, потом перевод и быстрый ответ', () => {
     const m = moduleById.get('call-intro')!
     const parts = callSteps({ module: m, done: new Set(), seed: 1, quickGame: false }, 480)
-    expect(parts.map((p) => p.label)).toEqual(['chunks', 'translate', 'quick'])
+    expect(parts.map((p) => p.label)).toEqual(['chunks', 'translate', 'substitute', 'quick'])
     const learned = callSteps({ module: m, done: new Set(moduleItems('call-intro')), seed: 1, quickGame: true }, 480)
     expect(learned.map((p) => p.label)).toEqual(['translate', 'quickGame'])
+  })
+
+  it('Позывной закрывается: подстановка ставится в план, пока не сделана (иначе модуль висел вечно)', () => {
+    const m = moduleById.get('call-intro')!
+    const done = new Set<string>()
+    // Ученик проходит всё, что ему дают, — за конечное число дней модуль закрыт.
+    for (let day = 0; day < 30 && !moduleItems('call-intro').every((id) => done.has(id)); day++) {
+      const parts = callSteps({ module: m, done, seed: day, quickGame: false }, 480)
+      for (const s of parts.flatMap((p) => p.steps ?? [])) {
+        if (s.kind === 'chunk') done.add(s.chunk)
+        if (s.kind === 'translate' || s.kind === 'substitute') done.add(s.item)
+        if (s.kind === 'quick') done.add(s.question)
+      }
+    }
+    expect(moduleItems('call-intro').filter((id) => !done.has(id))).toEqual([])
   })
 
   it('«Мой рассказ»: свой ответ в Позывном — по опорным словам, потом без подсказок', () => {
@@ -154,5 +179,20 @@ describe('Телеграмма и Чистый сигнал в сеансе', ()
   it('каждый модуль Телеграммы и Чистого сигнала можно закрыть: у всех упражнений есть шаги', () => {
     for (const id of ['mail-structure', 'mail-register', 'mail-apply', 'mail-request', 'mail-decline', 'mail-status', 'clean-th', 'clean-wv', 'clean-h', 'clean-vowels', 'clean-final', 'clean-ng', 'clean-stress', 'clean-intonation'])
       expect(moduleItems(id).length, id).toBeGreaterThan(0)
+  })
+})
+
+describe('слабое место по ответам', () => {
+  it('точность считается по трекам, где ответов достаточно', () => {
+    const answers = [
+      ...Array.from({ length: 12 }, (_, i) => ({ track: 'mail' as const, correct: i < 3 })),
+      ...Array.from({ length: 12 }, () => ({ track: 'doc' as const, correct: true })),
+      ...Array.from({ length: 5 }, () => ({ track: 'clean' as const, correct: false })),
+    ]
+    expect(trackAccuracy(answers)).toEqual({ mail: 25, doc: 100 })
+    // ротация: по тесту «Переписка» была сильной (80), а по ответам слабее всех — ей лишний день
+    const scores = { doc: 70, mail: 80, clean: 60, ...trackAccuracy(answers) }
+    const days = Array.from({ length: 4 }, (_, d) => rotationTrack(d, ['doc', 'mail', 'clean'], scores))
+    expect(days.filter((t) => t === 'mail')).toHaveLength(2)
   })
 })

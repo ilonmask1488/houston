@@ -11,6 +11,9 @@ import type {
   DocText,
   Episode,
   FalseFriend,
+  GameStatic,
+  GrammarFixItem,
+  GrammarGap,
   MailFix,
   MailOrder,
   MailRegister,
@@ -53,6 +56,9 @@ export const content: Content = {
   stress: [],
   falseFriends: [],
   bosses: null,
+  gameStatic: [],
+  grammarGaps: [],
+  grammarFix: [],
 }
 
 export const textById = new Map<string, DocText>()
@@ -64,6 +70,9 @@ export const pairById = new Map<string, MinimalPair>()
 export const cleanPhraseById = new Map<string, CleanPhrase>()
 export const stressById = new Map<string, StressWord>()
 export const falseFriendById = new Map<string, FalseFriend>()
+export const gameStaticById = new Map<string, GameStatic>()
+export const grammarGapById = new Map<string, GrammarGap>()
+export const grammarFixById = new Map<string, GrammarFixItem>()
 
 export const storyQuestionById = new Map<string, StoryQuestion>()
 export const episodeById = new Map<string, Episode>()
@@ -101,7 +110,14 @@ export const itemsByModule = new Map<string, ModuleItems>()
 let loading: Promise<void> | null = null
 
 export function loadContent(): Promise<void> {
-  loading ??= import('./data').then(({ raw }) => fill(raw))
+  // Неудачную загрузку не запоминаем — иначе «Повторить» вернёт ту же ошибку.
+  loading ??= import('./data').then(
+    ({ raw }) => fill(raw),
+    (e: unknown) => {
+      loading = null
+      throw e
+    },
+  )
   return loading
 }
 
@@ -155,6 +171,9 @@ export function fill(raw: Content): void {
   index(cleanPhraseById, raw.cleanPhrases)
   index(stressById, raw.stress)
   index(falseFriendById, raw.falseFriends)
+  index(gameStaticById, raw.gameStatic ?? [])
+  index(grammarGapById, raw.grammarGaps ?? [])
+  index(grammarFixById, raw.grammarFix ?? [])
   content.episodes = [...raw.episodes].sort((a, b) => a.n - b.n)
   const put = <K extends keyof ModuleItems>(key: K, list: ModuleItems[K]) => {
     for (const x of list) itemsByModule.get(x.module)?.[key].push(x as never)

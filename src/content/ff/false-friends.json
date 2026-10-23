@@ -804,5 +804,1927 @@
    }
   ],
   "reviewed": false
+ },
+ {
+  "id": "ff-drawing",
+  "ru": "чертёж",
+  "context": "Распечатай чертёж корпуса в масштабе 1:2.",
+  "options": [
+   "drawing",
+   "draft",
+   "sketch"
+  ],
+  "trap": "draft",
+  "why": "Draft — черновик (draft version), sketch — эскиз от руки. Чертёж — drawing (engineering drawing).",
+  "speak": [
+   {
+    "text": "drawing",
+    "voice": "us-f"
+   },
+   {
+    "text": "drawing",
+    "voice": "us-m"
+   },
+   {
+    "text": "drawing",
+    "voice": "gb-f"
+   },
+   {
+    "text": "drawing",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-tolerance",
+  "ru": "допуск (на размер)",
+  "context": "Допуск на диаметр — плюс-минус 0,05 мм.",
+  "options": [
+   "tolerance",
+   "admission",
+   "access"
+  ],
+  "trap": "admission",
+  "why": "Admission — допуск в смысле «впустить» (приём в вуз, вход). Допуск на размер — tolerance.",
+  "speak": [
+   {
+    "text": "tolerance",
+    "voice": "us-f"
+   },
+   {
+    "text": "tolerance",
+    "voice": "us-m"
+   },
+   {
+    "text": "tolerance",
+    "voice": "gb-f"
+   },
+   {
+    "text": "tolerance",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-test-rig",
+  "ru": "стенд (испытательный)",
+  "context": "Образец закрепили на стенде и начали испытание.",
+  "options": [
+   "test rig",
+   "stand",
+   "booth"
+  ],
+  "trap": "stand",
+  "why": "Stand — подставка, стойка, киоск; «test stand» говорят про большие стенды для двигателей. Лабораторный стенд — test rig или test bench.",
+  "speak": [
+   {
+    "text": "test rig",
+    "voice": "us-f"
+   },
+   {
+    "text": "test rig",
+    "voice": "us-m"
+   },
+   {
+    "text": "test rig",
+    "voice": "gb-f"
+   },
+   {
+    "text": "test rig",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-complaint",
+  "ru": "рекламация",
+  "context": "Заказчик прислал рекламацию на партию клапанов.",
+  "options": [
+   "complaint",
+   "reclamation",
+   "reclaim"
+  ],
+  "trap": "reclamation",
+  "why": "Reclamation — освоение земель или переработка отходов. Рекламация — complaint или warranty claim.",
+  "speak": [
+   {
+    "text": "complaint",
+    "voice": "us-f"
+   },
+   {
+    "text": "complaint",
+    "voice": "us-m"
+   },
+   {
+    "text": "complaint",
+    "voice": "gb-f"
+   },
+   {
+    "text": "complaint",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-blank",
+  "ru": "заготовка",
+  "context": "Заготовку отрезали от прутка.",
+  "options": [
+   "blank",
+   "preparation",
+   "blanket"
+  ],
+  "trap": "preparation",
+  "why": "Preparation — подготовка или препарат. Заготовка до обработки — blank, в процессе обработки — workpiece.",
+  "speak": [
+   {
+    "text": "blank",
+    "voice": "us-f"
+   },
+   {
+    "text": "blank",
+    "voice": "us-m"
+   },
+   {
+    "text": "blank",
+    "voice": "gb-f"
+   },
+   {
+    "text": "blank",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-machine-tool",
+  "ru": "станок",
+  "context": "В цех поставили новый фрезерный станок с ЧПУ.",
+  "options": [
+   "CNC milling machine",
+   "CNC lathe",
+   "CNC milling stand"
+  ],
+  "trap": "CNC lathe",
+  "why": "Lathe — только токарный станок, stand — подставка. Станок вообще — machine tool, фрезерный — milling machine.",
+  "speak": [
+   {
+    "text": "CNC milling machine",
+    "voice": "us-f"
+   },
+   {
+    "text": "CNC milling machine",
+    "voice": "us-m"
+   },
+   {
+    "text": "CNC milling machine",
+    "voice": "gb-f"
+   },
+   {
+    "text": "CNC milling machine",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-welding",
+  "ru": "сварка",
+  "context": "Швы бака выполнены сваркой.",
+  "options": [
+   "welding",
+   "soldering",
+   "brazing"
+  ],
+  "trap": "soldering",
+  "why": "Soldering — пайка мягким припоем, brazing — пайка твёрдым припоем. Сварка (металл плавится) — welding.",
+  "speak": [
+   {
+    "text": "welding",
+    "voice": "us-f"
+   },
+   {
+    "text": "welding",
+    "voice": "us-m"
+   },
+   {
+    "text": "welding",
+    "voice": "gb-f"
+   },
+   {
+    "text": "welding",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-stamping",
+  "ru": "штамповка",
+  "context": "Кронштейн делают штамповкой из листа.",
+  "options": [
+   "stamping",
+   "stamp",
+   "die"
+  ],
+  "trap": "stamp",
+  "why": "Stamp — печать или почтовая марка; die — сам штамп-инструмент. Процесс штамповки — stamping (или pressing).",
+  "speak": [
+   {
+    "text": "stamping",
+    "voice": "us-f"
+   },
+   {
+    "text": "stamping",
+    "voice": "us-m"
+   },
+   {
+    "text": "stamping",
+    "voice": "gb-f"
+   },
+   {
+    "text": "stamping",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-calibration",
+  "ru": "тарировка",
+  "context": "Тарировку датчика давления делают раз в год.",
+  "options": [
+   "calibration",
+   "taring",
+   "tariff"
+  ],
+  "trap": "taring",
+  "why": "Tare/taring — вес тары, «обнулить весы»; tariff — тариф. Тарировка датчика — calibration.",
+  "speak": [
+   {
+    "text": "calibration",
+    "voice": "us-f"
+   },
+   {
+    "text": "calibration",
+    "voice": "us-m"
+   },
+   {
+    "text": "calibration",
+    "voice": "gb-f"
+   },
+   {
+    "text": "calibration",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-spec",
+  "ru": "техническое задание (ТЗ)",
+  "context": "Заказчик утвердил техническое задание.",
+  "options": [
+   "requirements specification",
+   "technical task",
+   "technical assignment"
+  ],
+  "trap": "technical task",
+  "why": "«Technical task» — калька, носителю непонятно. ТЗ — (requirements) specification или statement of work (SOW).",
+  "speak": [
+   {
+    "text": "requirements specification",
+    "voice": "us-f"
+   },
+   {
+    "text": "requirements specification",
+    "voice": "us-m"
+   },
+   {
+    "text": "requirements specification",
+    "voice": "gb-f"
+   },
+   {
+    "text": "requirements specification",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-stiffness",
+  "ru": "жёсткость",
+  "context": "Жёсткость кронштейна мала — он прогибается.",
+  "options": [
+   "stiffness",
+   "hardness",
+   "toughness"
+  ],
+  "trap": "hardness",
+  "why": "Hardness — твёрдость материала (по Бринеллю), toughness — вязкость, стойкость к удару. Жёсткость — stiffness (или rigidity).",
+  "speak": [
+   {
+    "text": "stiffness",
+    "voice": "us-f"
+   },
+   {
+    "text": "stiffness",
+    "voice": "us-m"
+   },
+   {
+    "text": "stiffness",
+    "voice": "gb-f"
+   },
+   {
+    "text": "stiffness",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-tooling",
+  "ru": "оснастка",
+  "context": "Для сборки панели нужна специальная оснастка.",
+  "options": [
+   "tooling",
+   "rigging",
+   "equipping"
+  ],
+  "trap": "rigging",
+  "why": "Rigging — такелаж: тросы, стропы, мачты. Технологическая оснастка — tooling (приспособления — fixtures, jigs).",
+  "speak": [
+   {
+    "text": "tooling",
+    "voice": "us-f"
+   },
+   {
+    "text": "tooling",
+    "voice": "us-m"
+   },
+   {
+    "text": "tooling",
+    "voice": "gb-f"
+   },
+   {
+    "text": "tooling",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-power",
+  "ru": "мощность (двигателя)",
+  "context": "Мощность двигателя — 120 лошадиных сил.",
+  "options": [
+   "power",
+   "capacity",
+   "might"
+  ],
+  "trap": "capacity",
+  "why": "Engine capacity — рабочий объём двигателя, а capacity вообще — ёмкость, вместимость. Мощность — power.",
+  "speak": [
+   {
+    "text": "power",
+    "voice": "us-f"
+   },
+   {
+    "text": "power",
+    "voice": "us-m"
+   },
+   {
+    "text": "power",
+    "voice": "gb-f"
+   },
+   {
+    "text": "power",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-battery",
+  "ru": "аккумулятор",
+  "context": "Аккумулятор в машине сел.",
+  "options": [
+   "battery",
+   "accumulator",
+   "charger"
+  ],
+  "trap": "accumulator",
+  "why": "Accumulator — гидроаккумулятор или устаревшее британское слово. Аккумулятор машины и телефона — battery.",
+  "speak": [
+   {
+    "text": "battery",
+    "voice": "us-f"
+   },
+   {
+    "text": "battery",
+    "voice": "us-m"
+   },
+   {
+    "text": "battery",
+    "voice": "gb-f"
+   },
+   {
+    "text": "battery",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-manual",
+  "ru": "инструкция (к оборудованию)",
+  "context": "Прочитай инструкцию к станку, прежде чем включать.",
+  "options": [
+   "operating manual",
+   "instruction",
+   "guideline"
+  ],
+  "trap": "instruction",
+  "why": "An instruction — одно указание, приказ. Документ к оборудованию — manual (operating manual) или instructions во множественном.",
+  "speak": [
+   {
+    "text": "operating manual",
+    "voice": "us-f"
+   },
+   {
+    "text": "operating manual",
+    "voice": "us-m"
+   },
+   {
+    "text": "operating manual",
+    "voice": "gb-f"
+   },
+   {
+    "text": "operating manual",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-spacecraft",
+  "ru": "аппарат (космический)",
+  "context": "Аппарат вышел на орбиту Марса.",
+  "options": [
+   "spacecraft",
+   "apparatus",
+   "aircraft"
+  ],
+  "trap": "apparatus",
+  "why": "Apparatus — книжное «прибор, установка», aircraft — самолёт или вертолёт. Космический аппарат — spacecraft (или probe).",
+  "speak": [
+   {
+    "text": "spacecraft",
+    "voice": "us-f"
+   },
+   {
+    "text": "spacecraft",
+    "voice": "us-m"
+   },
+   {
+    "text": "spacecraft",
+    "voice": "gb-f"
+   },
+   {
+    "text": "spacecraft",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-procedure",
+  "ru": "методика (испытаний)",
+  "context": "Методика испытаний согласована с заказчиком.",
+  "options": [
+   "test procedure",
+   "test methodic",
+   "test technic"
+  ],
+  "trap": "test methodic",
+  "why": "Существительного methodic в английском нет (methodical — методичный). Методика испытаний — test procedure или test method.",
+  "speak": [
+   {
+    "text": "test procedure",
+    "voice": "us-f"
+   },
+   {
+    "text": "test procedure",
+    "voice": "us-m"
+   },
+   {
+    "text": "test procedure",
+    "voice": "gb-f"
+   },
+   {
+    "text": "test procedure",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-equipment",
+  "ru": "техника (машины, оборудование)",
+  "context": "На полигон привезли технику.",
+  "options": [
+   "equipment",
+   "technique",
+   "technics"
+  ],
+  "trap": "technique",
+  "why": "Technique — приём, способ (welding technique — техника сварки). Техника как машины — equipment или machinery.",
+  "speak": [
+   {
+    "text": "equipment",
+    "voice": "us-f"
+   },
+   {
+    "text": "equipment",
+    "voice": "us-m"
+   },
+   {
+    "text": "equipment",
+    "voice": "gb-f"
+   },
+   {
+    "text": "equipment",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-set",
+  "ru": "комплект",
+  "context": "Комплект документации отправили заказчику.",
+  "options": [
+   "set of documents",
+   "complect of documents",
+   "complex of documents"
+  ],
+  "trap": "complect of documents",
+  "why": "Слова complect в английском нет, complex — комплекс или «сложный». Комплект — set, kit или package.",
+  "speak": [
+   {
+    "text": "set of documents",
+    "voice": "us-f"
+   },
+   {
+    "text": "set of documents",
+    "voice": "us-m"
+   },
+   {
+    "text": "set of documents",
+    "voice": "gb-f"
+   },
+   {
+    "text": "set of documents",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-inspection",
+  "ru": "контроль (проверка)",
+  "context": "Контроль размеров делают после механической обработки.",
+  "options": [
+   "inspection",
+   "control",
+   "checkup"
+  ],
+  "trap": "control",
+  "why": "Control — управление, регулирование (control system — система управления). Проверка размеров — inspection.",
+  "speak": [
+   {
+    "text": "inspection",
+    "voice": "us-f"
+   },
+   {
+    "text": "inspection",
+    "voice": "us-m"
+   },
+   {
+    "text": "inspection",
+    "voice": "gb-f"
+   },
+   {
+    "text": "inspection",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-revision",
+  "ru": "редакция (чертежа)",
+  "context": "Выпустили новую редакцию чертежа.",
+  "options": [
+   "revision",
+   "redaction",
+   "edition"
+  ],
+  "trap": "redaction",
+  "why": "Redaction — вычёркивание секретных мест в документе, edition — издание книги. Версия чертежа — revision (Rev. B).",
+  "speak": [
+   {
+    "text": "revision",
+    "voice": "us-f"
+   },
+   {
+    "text": "revision",
+    "voice": "us-m"
+   },
+   {
+    "text": "revision",
+    "voice": "gb-f"
+   },
+   {
+    "text": "revision",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-stocktaking",
+  "ru": "ревизия (на складе)",
+  "context": "На складе провели ревизию.",
+  "options": [
+   "stocktaking",
+   "revision",
+   "review"
+  ],
+  "trap": "revision",
+  "why": "Revision — исправленная версия, пересмотр. Ревизия как проверка — audit или inspection, на складе — stocktaking.",
+  "speak": [
+   {
+    "text": "stocktaking",
+    "voice": "us-f"
+   },
+   {
+    "text": "stocktaking",
+    "voice": "us-m"
+   },
+   {
+    "text": "stocktaking",
+    "voice": "gb-f"
+   },
+   {
+    "text": "stocktaking",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-sheet",
+  "ru": "лист (металла)",
+  "context": "Возьми лист алюминия толщиной 2 мм.",
+  "options": [
+   "sheet",
+   "list",
+   "leaf"
+  ],
+  "trap": "list",
+  "why": "List — список, leaf — лист дерева. Лист металла — sheet (тонкий) или plate (толстый).",
+  "speak": [
+   {
+    "text": "sheet",
+    "voice": "us-f"
+   },
+   {
+    "text": "sheet",
+    "voice": "us-m"
+   },
+   {
+    "text": "sheet",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sheet",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-foreman",
+  "ru": "мастер (участка)",
+  "context": "Спроси у мастера участка, когда будет готово.",
+  "options": [
+   "foreman",
+   "master",
+   "maestro"
+  ],
+  "trap": "master",
+  "why": "Master — хозяин, мастер своего дела или магистр. Мастер на производстве — foreman или shift supervisor.",
+  "speak": [
+   {
+    "text": "foreman",
+    "voice": "us-f"
+   },
+   {
+    "text": "foreman",
+    "voice": "us-m"
+   },
+   {
+    "text": "foreman",
+    "voice": "gb-f"
+   },
+   {
+    "text": "foreman",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-valves",
+  "ru": "арматура (трубопроводная)",
+  "context": "Трубопроводную арматуру заменили.",
+  "options": [
+   "valves",
+   "armature",
+   "armour"
+  ],
+  "trap": "armature",
+  "why": "Armature — якорь электродвигателя, armour — броня. Трубопроводная арматура — valves; арматура в бетоне — rebar.",
+  "speak": [
+   {
+    "text": "valves",
+    "voice": "us-f"
+   },
+   {
+    "text": "valves",
+    "voice": "us-m"
+   },
+   {
+    "text": "valves",
+    "voice": "gb-f"
+   },
+   {
+    "text": "valves",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-rejects",
+  "ru": "брак (производственный)",
+  "context": "В партии много брака.",
+  "options": [
+   "defective parts",
+   "marriage",
+   "breakage"
+  ],
+  "trap": "marriage",
+  "why": "Marriage — брак супругов, breakage — поломка при перевозке. Производственный брак — defects, rejects, scrap.",
+  "speak": [
+   {
+    "text": "defective parts",
+    "voice": "us-f"
+   },
+   {
+    "text": "defective parts",
+    "voice": "us-m"
+   },
+   {
+    "text": "defective parts",
+    "voice": "gb-f"
+   },
+   {
+    "text": "defective parts",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-experiment",
+  "ru": "опыт (эксперимент)",
+  "context": "Опыт повторили три раза — результат тот же.",
+  "options": [
+   "experiment",
+   "experience",
+   "practice"
+  ],
+  "trap": "experience",
+  "why": "Experience — жизненный опыт, стаж. Опыт как эксперимент — experiment.",
+  "speak": [
+   {
+    "text": "experiment",
+    "voice": "us-f"
+   },
+   {
+    "text": "experiment",
+    "voice": "us-m"
+   },
+   {
+    "text": "experiment",
+    "voice": "gb-f"
+   },
+   {
+    "text": "experiment",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-service",
+  "ru": "эксплуатация (техники)",
+  "context": "Изделие рассчитано на 10 лет эксплуатации.",
+  "options": [
+   "service",
+   "exploitation",
+   "exploration"
+  ],
+  "trap": "exploitation",
+  "why": "Exploitation — эксплуатация людей или нещадное использование ресурсов. Эксплуатация техники — service, operation, use.",
+  "speak": [
+   {
+    "text": "service",
+    "voice": "us-f"
+   },
+   {
+    "text": "service",
+    "voice": "us-m"
+   },
+   {
+    "text": "service",
+    "voice": "gb-f"
+   },
+   {
+    "text": "service",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-steelworks",
+  "ru": "комбинат",
+  "context": "Он работает на металлургическом комбинате.",
+  "options": [
+   "steelworks",
+   "combine",
+   "combination"
+  ],
+  "trap": "combine",
+  "why": "Combine — зерноуборочный комбайн или объединение. Комбинат — plant, works, mill (металлургический — steelworks).",
+  "speak": [
+   {
+    "text": "steelworks",
+    "voice": "us-f"
+   },
+   {
+    "text": "steelworks",
+    "voice": "us-m"
+   },
+   {
+    "text": "steelworks",
+    "voice": "gb-f"
+   },
+   {
+    "text": "steelworks",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-control-panel",
+  "ru": "пульт (управления)",
+  "context": "Оператор сидит за пультом управления.",
+  "options": [
+   "control panel",
+   "pulpit",
+   "pulse"
+  ],
+  "trap": "pulpit",
+  "why": "Pulpit — кафедра проповедника, pulse — пульс. Пульт — control panel или console; от телевизора — remote.",
+  "speak": [
+   {
+    "text": "control panel",
+    "voice": "us-f"
+   },
+   {
+    "text": "control panel",
+    "voice": "us-m"
+   },
+   {
+    "text": "control panel",
+    "voice": "gb-f"
+   },
+   {
+    "text": "control panel",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-manifold",
+  "ru": "коллектор (выпускной)",
+  "context": "Выпускной коллектор треснул.",
+  "options": [
+   "exhaust manifold",
+   "exhaust collector",
+   "exhaust muffler"
+  ],
+  "trap": "exhaust collector",
+  "why": "Collector — коллекционер или сборщик, muffler — глушитель. Выпускной коллектор — exhaust manifold.",
+  "speak": [
+   {
+    "text": "exhaust manifold",
+    "voice": "us-f"
+   },
+   {
+    "text": "exhaust manifold",
+    "voice": "us-m"
+   },
+   {
+    "text": "exhaust manifold",
+    "voice": "gb-f"
+   },
+   {
+    "text": "exhaust manifold",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-landing-gear",
+  "ru": "шасси (самолёта)",
+  "context": "Самолёт выпустил шасси перед посадкой.",
+  "options": [
+   "landing gear",
+   "chassis",
+   "wheelbase"
+  ],
+  "trap": "chassis",
+  "why": "Chassis — рама, шасси автомобиля, wheelbase — колёсная база. Шасси самолёта — landing gear.",
+  "speak": [
+   {
+    "text": "landing gear",
+    "voice": "us-f"
+   },
+   {
+    "text": "landing gear",
+    "voice": "us-m"
+   },
+   {
+    "text": "landing gear",
+    "voice": "gb-f"
+   },
+   {
+    "text": "landing gear",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-logbook",
+  "ru": "формуляр (изделия)",
+  "context": "Запиши наработку в формуляр двигателя.",
+  "options": [
+   "logbook",
+   "formular",
+   "form"
+  ],
+  "trap": "formular",
+  "why": "Слова formular в английском нет, form — бланк, анкета. Формуляр изделия — logbook или service record.",
+  "speak": [
+   {
+    "text": "logbook",
+    "voice": "us-f"
+   },
+   {
+    "text": "logbook",
+    "voice": "us-m"
+   },
+   {
+    "text": "logbook",
+    "voice": "gb-f"
+   },
+   {
+    "text": "logbook",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-product-range",
+  "ru": "номенклатура (изделий)",
+  "context": "Номенклатура продукции завода расширилась.",
+  "options": [
+   "product range",
+   "nomenclature",
+   "nomination"
+  ],
+  "trap": "nomenclature",
+  "why": "Nomenclature — система названий, терминология; nomination — выдвижение. Номенклатура изделий — product range.",
+  "speak": [
+   {
+    "text": "product range",
+    "voice": "us-f"
+   },
+   {
+    "text": "product range",
+    "voice": "us-m"
+   },
+   {
+    "text": "product range",
+    "voice": "gb-f"
+   },
+   {
+    "text": "product range",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-test-report",
+  "ru": "протокол испытаний",
+  "context": "Подпиши протокол испытаний.",
+  "options": [
+   "test report",
+   "test protocol",
+   "test minutes"
+  ],
+  "trap": "test protocol",
+  "why": "Test protocol — план испытаний (что делать заранее); minutes — протокол совещания. Протокол с результатами — test report.",
+  "speak": [
+   {
+    "text": "test report",
+    "voice": "us-f"
+   },
+   {
+    "text": "test report",
+    "voice": "us-m"
+   },
+   {
+    "text": "test report",
+    "voice": "gb-f"
+   },
+   {
+    "text": "test report",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-maintenance",
+  "ru": "регламентные работы",
+  "context": "Регламентные работы проводят раз в квартал.",
+  "options": [
+   "scheduled maintenance",
+   "regulation works",
+   "regular works"
+  ],
+  "trap": "regulation works",
+  "why": "Regulation — норматив, предписание. Регламентные работы — scheduled (routine) maintenance.",
+  "speak": [
+   {
+    "text": "scheduled maintenance",
+    "voice": "us-f"
+   },
+   {
+    "text": "scheduled maintenance",
+    "voice": "us-m"
+   },
+   {
+    "text": "scheduled maintenance",
+    "voice": "gb-f"
+   },
+   {
+    "text": "scheduled maintenance",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-dimensions",
+  "ru": "габариты",
+  "context": "Габариты блока — 200 × 100 × 50 мм.",
+  "options": [
+   "overall dimensions",
+   "gabarits",
+   "clearances"
+  ],
+  "trap": "gabarits",
+  "why": "Gabarit в английском почти не встречается, clearance — зазор. Габаритные размеры — overall dimensions или envelope.",
+  "speak": [
+   {
+    "text": "overall dimensions",
+    "voice": "us-f"
+   },
+   {
+    "text": "overall dimensions",
+    "voice": "us-m"
+   },
+   {
+    "text": "overall dimensions",
+    "voice": "gb-f"
+   },
+   {
+    "text": "overall dimensions",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-parts-list",
+  "ru": "спецификация (к сборочному чертежу)",
+  "context": "Спецификацию к сборочному чертежу оформи по ЕСКД.",
+  "options": [
+   "parts list",
+   "specification",
+   "inventory"
+  ],
+  "trap": "specification",
+  "why": "Specification — технические требования, ТЗ. Спецификация по ЕСКД (перечень деталей) — parts list или bill of materials (BOM).",
+  "speak": [
+   {
+    "text": "parts list",
+    "voice": "us-f"
+   },
+   {
+    "text": "parts list",
+    "voice": "us-m"
+   },
+   {
+    "text": "parts list",
+    "voice": "gb-f"
+   },
+   {
+    "text": "parts list",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-internship",
+  "ru": "практика (производственная)",
+  "context": "Летом у меня практика на заводе.",
+  "options": [
+   "internship",
+   "practice",
+   "praxis"
+  ],
+  "trap": "practice",
+  "why": "Practice — тренировка, применение на деле, частная практика врача. Студенческая практика — internship или work placement.",
+  "speak": [
+   {
+    "text": "internship",
+    "voice": "us-f"
+   },
+   {
+    "text": "internship",
+    "voice": "us-m"
+   },
+   {
+    "text": "internship",
+    "voice": "gb-f"
+   },
+   {
+    "text": "internship",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-major",
+  "ru": "специальность (в вузе)",
+  "context": "Моя специальность — ракетостроение.",
+  "options": [
+   "major",
+   "speciality",
+   "profession"
+  ],
+  "trap": "speciality",
+  "why": "Speciality — то, в чём ты особенно силён, или фирменное блюдо. Специальность в вузе — major (AmE) или «my degree is in…».",
+  "speak": [
+   {
+    "text": "major",
+    "voice": "us-f"
+   },
+   {
+    "text": "major",
+    "voice": "us-m"
+   },
+   {
+    "text": "major",
+    "voice": "gb-f"
+   },
+   {
+    "text": "major",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-room",
+  "ru": "аудитория",
+  "context": "Лекция будет в аудитории 501.",
+  "options": [
+   "room",
+   "audience",
+   "auditorium"
+  ],
+  "trap": "audience",
+  "why": "Audience — слушатели, зрители; auditorium — большой зал. Обычная аудитория — room или classroom (большая — lecture hall).",
+  "speak": [
+   {
+    "text": "room",
+    "voice": "us-f"
+   },
+   {
+    "text": "room",
+    "voice": "us-m"
+   },
+   {
+    "text": "room",
+    "voice": "gb-f"
+   },
+   {
+    "text": "room",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-department",
+  "ru": "кафедра (в вузе)",
+  "context": "Наша кафедра готовит ракетчиков.",
+  "options": [
+   "department",
+   "cathedral",
+   "cathedra"
+  ],
+  "trap": "cathedral",
+  "why": "Cathedral — собор, cathedra — трон епископа. Кафедра в вузе — department.",
+  "speak": [
+   {
+    "text": "department",
+    "voice": "us-f"
+   },
+   {
+    "text": "department",
+    "voice": "us-m"
+   },
+   {
+    "text": "department",
+    "voice": "gb-f"
+   },
+   {
+    "text": "department",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-term-project",
+  "ru": "курсовая работа",
+  "context": "Сдал курсовую по деталям машин.",
+  "options": [
+   "term project",
+   "course",
+   "coursebook"
+  ],
+  "trap": "course",
+  "why": "Course — учебный курс, предмет; coursebook — учебник. Курсовая — term project или term paper.",
+  "speak": [
+   {
+    "text": "term project",
+    "voice": "us-f"
+   },
+   {
+    "text": "term project",
+    "voice": "us-m"
+   },
+   {
+    "text": "term project",
+    "voice": "gb-f"
+   },
+   {
+    "text": "term project",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-notes",
+  "ru": "конспект",
+  "context": "Дай переписать конспект лекции.",
+  "options": [
+   "lecture notes",
+   "conspectus",
+   "abstract"
+  ],
+  "trap": "conspectus",
+  "why": "Conspectus — редкое книжное «обзор», abstract — аннотация к статье. Конспект — notes.",
+  "speak": [
+   {
+    "text": "lecture notes",
+    "voice": "us-f"
+   },
+   {
+    "text": "lecture notes",
+    "voice": "us-m"
+   },
+   {
+    "text": "lecture notes",
+    "voice": "gb-f"
+   },
+   {
+    "text": "lecture notes",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-essay",
+  "ru": "реферат",
+  "context": "К пятнице надо написать реферат по истории.",
+  "options": [
+   "essay",
+   "abstract",
+   "referee"
+  ],
+  "trap": "abstract",
+  "why": "Abstract — краткая аннотация статьи, referee — рецензент или судья. Реферат — essay или report.",
+  "speak": [
+   {
+    "text": "essay",
+    "voice": "us-f"
+   },
+   {
+    "text": "essay",
+    "voice": "us-m"
+   },
+   {
+    "text": "essay",
+    "voice": "gb-f"
+   },
+   {
+    "text": "essay",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-cv",
+  "ru": "резюме (для работы)",
+  "context": "Отправил резюме в КБ.",
+  "options": [
+   "CV",
+   "summary",
+   "review"
+  ],
+  "trap": "summary",
+  "why": "Summary — краткое изложение текста. Резюме для работы — CV (BrE) или résumé (AmE).",
+  "speak": [
+   {
+    "text": "CV",
+    "voice": "us-f"
+   },
+   {
+    "text": "CV",
+    "voice": "us-m"
+   },
+   {
+    "text": "CV",
+    "voice": "gb-f"
+   },
+   {
+    "text": "CV",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-reference",
+  "ru": "характеристика (на человека)",
+  "context": "Для практики нужна характеристика из университета.",
+  "options": [
+   "reference",
+   "characteristic",
+   "characterization"
+  ],
+  "trap": "characteristic",
+  "why": "Characteristic — свойство, особенность (технические характеристики — ок). Отзыв о человеке — reference или letter of recommendation.",
+  "speak": [
+   {
+    "text": "reference",
+    "voice": "us-f"
+   },
+   {
+    "text": "reference",
+    "voice": "us-m"
+   },
+   {
+    "text": "reference",
+    "voice": "gb-f"
+   },
+   {
+    "text": "reference",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-pretty",
+  "ru": "симпатичный",
+  "context": "Она очень симпатичная.",
+  "options": [
+   "pretty",
+   "sympathetic",
+   "pathetic"
+  ],
+  "trap": "sympathetic",
+  "why": "Sympathetic — сочувствующий, pathetic — жалкий. Симпатичный — pretty, cute, good-looking или просто nice.",
+  "speak": [
+   {
+    "text": "pretty",
+    "voice": "us-f"
+   },
+   {
+    "text": "pretty",
+    "voice": "us-m"
+   },
+   {
+    "text": "pretty",
+    "voice": "gb-f"
+   },
+   {
+    "text": "pretty",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-chord",
+  "ru": "аккорд",
+  "context": "Сыграй этот аккорд на гитаре.",
+  "options": [
+   "chord",
+   "accord",
+   "cord"
+  ],
+  "trap": "accord",
+  "why": "Accord — согласие, соглашение; cord — шнур. Аккорд — chord.",
+  "speak": [
+   {
+    "text": "chord",
+    "voice": "us-f"
+   },
+   {
+    "text": "chord",
+    "voice": "us-m"
+   },
+   {
+    "text": "chord",
+    "voice": "gb-f"
+   },
+   {
+    "text": "chord",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-factory",
+  "ru": "фабрика",
+  "context": "Его отец всю жизнь работал на фабрике.",
+  "options": [
+   "factory",
+   "fabric",
+   "fabrication"
+  ],
+  "trap": "fabric",
+  "why": "Fabric — ткань. Фабрика — factory.",
+  "speak": [
+   {
+    "text": "factory",
+    "voice": "us-f"
+   },
+   {
+    "text": "factory",
+    "voice": "us-m"
+   },
+   {
+    "text": "factory",
+    "voice": "gb-f"
+   },
+   {
+    "text": "factory",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-tonsillitis",
+  "ru": "ангина",
+  "context": "У меня ангина, на пары не приду.",
+  "options": [
+   "tonsillitis",
+   "angina",
+   "flu"
+  ],
+  "trap": "angina",
+  "why": "Angina — стенокардия, боль в сердце. Ангина — tonsillitis или strep throat; в быту — a bad sore throat.",
+  "speak": [
+   {
+    "text": "tonsillitis",
+    "voice": "us-f"
+   },
+   {
+    "text": "tonsillitis",
+    "voice": "us-m"
+   },
+   {
+    "text": "tonsillitis",
+    "voice": "gb-f"
+   },
+   {
+    "text": "tonsillitis",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-event",
+  "ru": "мероприятие",
+  "context": "В субботу в университете мероприятие для первокурсников.",
+  "options": [
+   "event",
+   "measure",
+   "undertaking"
+  ],
+  "trap": "measure",
+  "why": "Measure — мера (принять меры — take measures), undertaking — предприятие, обязательство. Мероприятие-событие — event.",
+  "speak": [
+   {
+    "text": "event",
+    "voice": "us-f"
+   },
+   {
+    "text": "event",
+    "voice": "us-m"
+   },
+   {
+    "text": "event",
+    "voice": "gb-f"
+   },
+   {
+    "text": "event",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-sleepwalker",
+  "ru": "лунатик",
+  "context": "Он лунатик — ночью ходит по общаге.",
+  "options": [
+   "sleepwalker",
+   "lunatic",
+   "moonwalker"
+  ],
+  "trap": "lunatic",
+  "why": "Lunatic — сумасшедший. Лунатик — sleepwalker.",
+  "speak": [
+   {
+    "text": "sleepwalker",
+    "voice": "us-f"
+   },
+   {
+    "text": "sleepwalker",
+    "voice": "us-m"
+   },
+   {
+    "text": "sleepwalker",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sleepwalker",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-sponge-cake",
+  "ru": "бисквит",
+  "context": "Мама испекла бисквит к чаю.",
+  "options": [
+   "sponge cake",
+   "biscuit",
+   "pastry"
+  ],
+  "trap": "biscuit",
+  "why": "Biscuit — печенье (BrE) или булочка (AmE). Бисквит — sponge cake.",
+  "speak": [
+   {
+    "text": "sponge cake",
+    "voice": "us-f"
+   },
+   {
+    "text": "sponge cake",
+    "voice": "us-m"
+   },
+   {
+    "text": "sponge cake",
+    "voice": "gb-f"
+   },
+   {
+    "text": "sponge cake",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-prescription",
+  "ru": "рецепт (врача)",
+  "context": "Это лекарство продают только по рецепту.",
+  "options": [
+   "prescription",
+   "recipe",
+   "receipt"
+  ],
+  "trap": "recipe",
+  "why": "Recipe — кулинарный рецепт, receipt — чек. Рецепт врача — prescription.",
+  "speak": [
+   {
+    "text": "prescription",
+    "voice": "us-f"
+   },
+   {
+    "text": "prescription",
+    "voice": "us-m"
+   },
+   {
+    "text": "prescription",
+    "voice": "gb-f"
+   },
+   {
+    "text": "prescription",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-receipt",
+  "ru": "чек (из магазина)",
+  "context": "Сохрани чек — вдруг придётся возвращать.",
+  "options": [
+   "receipt",
+   "check",
+   "recipe"
+  ],
+  "trap": "check",
+  "why": "Check (AmE) — счёт в ресторане или банковский чек. Чек из кассы — receipt.",
+  "speak": [
+   {
+    "text": "receipt",
+    "voice": "us-f"
+   },
+   {
+    "text": "receipt",
+    "voice": "us-m"
+   },
+   {
+    "text": "receipt",
+    "voice": "gb-f"
+   },
+   {
+    "text": "receipt",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-magazine",
+  "ru": "журнал",
+  "context": "Купил в киоске журнал про машины.",
+  "options": [
+   "car magazine",
+   "car journal",
+   "car log"
+  ],
+  "trap": "car journal",
+  "why": "Journal — научный журнал или дневник, log — журнал записей. Глянцевый журнал — magazine.",
+  "speak": [
+   {
+    "text": "car magazine",
+    "voice": "us-f"
+   },
+   {
+    "text": "car magazine",
+    "voice": "us-m"
+   },
+   {
+    "text": "car magazine",
+    "voice": "gb-f"
+   },
+   {
+    "text": "car magazine",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-fine",
+  "ru": "нормально (как дела)",
+  "context": "— Как дела? — Нормально.",
+  "options": [
+   "Fine.",
+   "Normal.",
+   "Normally."
+  ],
+  "trap": "Normal.",
+  "why": "Normal — обычный, стандартный; «I'm normal» звучит как «я не псих». На «как дела?» — Fine / OK / Not bad.",
+  "speak": [
+   {
+    "text": "Fine.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Fine.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Fine.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Fine.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-corduroy",
+  "ru": "вельвет",
+  "context": "Он пришёл в брюках из вельвета.",
+  "options": [
+   "corduroy",
+   "velvet",
+   "velour"
+  ],
+  "trap": "velvet",
+  "why": "Velvet — бархат, velour — велюр. Вельвет (в рубчик) — corduroy.",
+  "speak": [
+   {
+    "text": "corduroy",
+    "voice": "us-f"
+   },
+   {
+    "text": "corduroy",
+    "voice": "us-m"
+   },
+   {
+    "text": "corduroy",
+    "voice": "gb-f"
+   },
+   {
+    "text": "corduroy",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-diamond",
+  "ru": "бриллиант",
+  "context": "Кольцо с бриллиантом.",
+  "options": [
+   "diamond",
+   "brilliant",
+   "crystal"
+  ],
+  "trap": "brilliant",
+  "why": "Brilliant — блестящий, гениальный (brilliant idea). Камень — diamond.",
+  "speak": [
+   {
+    "text": "diamond",
+    "voice": "us-f"
+   },
+   {
+    "text": "diamond",
+    "voice": "us-m"
+   },
+   {
+    "text": "diamond",
+    "voice": "gb-f"
+   },
+   {
+    "text": "diamond",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-tuxedo",
+  "ru": "смокинг",
+  "context": "На выпускной он пришёл в смокинге.",
+  "options": [
+   "tuxedo",
+   "smoking",
+   "smoking jacket"
+  ],
+  "trap": "smoking",
+  "why": "Smoking — курение, smoking jacket — домашняя куртка. Смокинг — tuxedo (AmE) или dinner jacket (BrE).",
+  "speak": [
+   {
+    "text": "tuxedo",
+    "voice": "us-f"
+   },
+   {
+    "text": "tuxedo",
+    "voice": "us-m"
+   },
+   {
+    "text": "tuxedo",
+    "voice": "gb-f"
+   },
+   {
+    "text": "tuxedo",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
+ },
+ {
+  "id": "ff-gang",
+  "ru": "банда",
+  "context": "Полиция задержала банду угонщиков.",
+  "options": [
+   "gang",
+   "band",
+   "bandage"
+  ],
+  "trap": "band",
+  "why": "Band — музыкальная группа или лента, bandage — бинт. Банда — gang.",
+  "speak": [
+   {
+    "text": "gang",
+    "voice": "us-f"
+   },
+   {
+    "text": "gang",
+    "voice": "us-m"
+   },
+   {
+    "text": "gang",
+    "voice": "gb-f"
+   },
+   {
+    "text": "gang",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false
  }
 ]

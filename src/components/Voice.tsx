@@ -81,23 +81,27 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
   const cap = useRef<Capture | null>(null)
   const timers = useRef<ReturnType<typeof setTimeout>[]>([])
   const started = useRef(false)
+  // Экран закрыли, пока звучал вопрос: после await нельзя включать микрофон и распознавание.
+  const alive = useRef(true)
 
   const clear = () => {
     timers.current.forEach(clearTimeout)
     timers.current = []
   }
-  useEffect(
-    () => () => {
+  useEffect(() => {
+    alive.current = true
+    return () => {
+      alive.current = false
       clear()
       cap.current?.cancel()
-    },
-    [],
-  )
+      cap.current = null
+    }
+  }, [])
 
   const begin = async () => {
     setError(null)
-    if (hasCapture && !(await db.getMeta('micExplained'))) return setPhase('explain')
-    void run()
+    if (hasCapture && !(await db.getMeta('micExplained'))) return alive.current ? setPhase('explain') : undefined
+    if (alive.current) void run()
   }
 
   useEffect(() => {
@@ -113,12 +117,14 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
     if (prompt) {
       setPhase('prompt')
       await playText(prompt.text, { voice: prompt.voice }).catch(() => {})
+      if (!alive.current) return
       await wait(150)
+      if (!alive.current) return
     }
     if (!hasCapture) return setPhase('nomic')
     try {
       setTalking(false)
-      cap.current = await startCapture({
+      const c = await startCapture({
         asr: settings.asr,
         onLevel: setLevel,
         onSpeechStart: () => {
@@ -126,6 +132,8 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
           setCountdown(null)
         },
       })
+      if (!alive.current) return c.cancel()
+      cap.current = c
       setPhase('rec')
       if (timed) {
         let n = timed
@@ -139,6 +147,7 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
       }
       timers.current.push(setTimeout(() => void stop(), maxSeconds * 1000))
     } catch (e) {
+      if (!alive.current) return
       const reason = e instanceof RecorderError ? e.reason : 'failed'
       setError(reason === 'denied' ? ru.check.denied : reason === 'no-device' ? ru.check.noDevice : ru.check.failed)
       setPhase('nomic')
@@ -152,6 +161,10 @@ export function VoiceAnswer({ timed, maxSeconds = 45, prompt, autoStart, label, 
     cap.current = null
     if (!c) return
     const r = await c.stop()
+    if (!alive.current) {
+      if (r.url) URL.revokeObjectURL(r.url)
+      return
+    }
     setLevel(0)
     setPhase('idle')
     onResult({ ...r, onTime: timed === undefined ? undefined : r.startMs !== undefined && r.startMs <= timed * 1000 })

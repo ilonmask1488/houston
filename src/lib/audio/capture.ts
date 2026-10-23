@@ -76,7 +76,13 @@ export async function startCapture(opts: CaptureOptions): Promise<Capture> {
   }
   if (stream) {
     const mime = pickMime()
-    rec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream)
+    try {
+      rec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream)
+    } catch (e) {
+      // Иначе микрофон остаётся включённым (значок в статус-баре) до перезагрузки.
+      stream.getTracks().forEach((t) => t.stop())
+      throw e
+    }
     rec.ondataavailable = (ev) => {
       if (ev.data.size) chunks.push(ev.data)
     }
@@ -137,11 +143,22 @@ export async function startCapture(opts: CaptureOptions): Promise<Capture> {
       const ms = Date.now() - started
       const recStop = new Promise<string | undefined>((resolve) => {
         if (!rec || rec.state === 'inactive') return resolve(undefined)
-        rec.onstop = () => {
+        let finished = false
+        const finish = () => {
+          if (finished) return
+          finished = true
+          clearTimeout(guard)
           const blob = new Blob(chunks, { type: rec!.mimeType || 'audio/webm' })
           resolve(blob.size ? URL.createObjectURL(blob) : undefined)
         }
-        rec.stop()
+        // iOS иногда так и не присылает onstop — не вешаем интерфейс, берём что успело записаться.
+        const guard = setTimeout(finish, 2500)
+        rec.onstop = finish
+        try {
+          rec.stop()
+        } catch {
+          finish()
+        }
       })
       session?.stop()
       const [url, asr] = await Promise.all([

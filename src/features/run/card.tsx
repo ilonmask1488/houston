@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { PlayButton } from '../../components/Play'
 import ui from '../../components/ui.module.css'
 import { Highlight, VoiceAnswer, VoiceReport, type VoiceResult } from '../../components/Voice'
-import { chunkById, falseFriendById, phraseById, spokenText } from '../../content'
+import { chunkById, falseFriendById, gameStaticById, phraseById, spokenText } from '../../content'
 import type { VoiceId } from '../../content/types'
 import { intervalWords, ru } from '../../i18n/ru'
 import { defaultVoice, durationOf, playText, stopAudio } from '../../lib/audio/audio'
@@ -17,6 +17,7 @@ import { answerCard } from '../../lib/srs/cards'
 import { parseCardId, previewIntervals, type Grade14 } from '../../lib/srs/srs'
 import type { StepProps } from './result'
 import s from './run.module.css'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 
 type S<K extends Step['kind']> = Extract<Step, { kind: K }>
 
@@ -28,6 +29,8 @@ function itemView(itemId: string, userWord?: UserWordRow): ItemView | null {
   if (c) return { en: c.en, say: c.en, ru: c.ru, example: c.example, exampleRu: c.exampleRu, voice: defaultVoice() }
   const p = phraseById.get(itemId)
   if (p) return { en: p.text, say: spokenText(p), ru: p.ru, focus: p.focus, voice: p.voice }
+  const g = gameStaticById.get(itemId)
+  if (g) return { en: g.text, say: g.text, ru: g.ru, focus: g.focus, voice: g.voice }
   const w = dictById.get(itemId)
   if (w) return { en: w.text, say: w.text, ru: w.ru, ipa: w.ipa, example: userWord?.context, voice: w.voices?.includes(defaultVoice()) ? defaultVoice() : (w.voices?.[0] ?? defaultVoice()) }
   if (userWord) return { en: userWord.text, say: userWord.text, ru: userWord.ru, example: userWord.context, voice: defaultVoice() }
@@ -40,11 +43,21 @@ function itemView(itemId: string, userWord?: UserWordRow): ItemView | null {
 function useItemView(itemId: string): ItemView | null | undefined {
   const isWord = /^(w|u)-/.test(itemId)
   const [ready, setReady] = useState(!isWord || dictionaryLoaded())
+  const [failed, setFailed] = useState(false)
   useEffect(() => {
-    if (!ready) void loadDictionary().then(() => setReady(true))
+    if (!ready)
+      void loadDictionary().then(
+        () => setReady(true),
+        (e: unknown) => {
+          // Словарь не загрузился (нет сети) — своё слово покажем и так, слово словаря — как «пусто», шаг можно пройти.
+          console.error('loadDictionary', e)
+          setFailed(true)
+        },
+      )
   }, [ready])
   const userWord = useLiveQuery(() => (itemId.startsWith('u-') ? db.userWords.get(itemId).then((x) => x ?? null) : null), [itemId])
-  if (!ready || userWord === undefined) return isWord ? undefined : itemView(itemId)
+  if (userWord === undefined) return isWord ? undefined : itemView(itemId)
+  if (!ready && !failed) return isWord ? undefined : itemView(itemId)
   return itemView(itemId, userWord ?? undefined)
 }
 
@@ -56,8 +69,12 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
   const row = useLiveQuery(() => db.cards.get(step.card), [step.card])
   const [shown, setShown] = useState(false)
   const [said, setSaid] = useState<VoiceResult | undefined>(undefined)
+  useObjectUrl(said?.url)
   const [hint, setHint] = useState(false)
   const started = useRef(Date.now())
+  // Двойное касание по оценке не должно провести повторение FSRS дважды.
+  const grading = useRef(false)
+  const [graded, setGraded] = useState(false)
   useEffect(() => {
     if (v && kind === 3) void playText(v.say, { voice: v.voice }).catch(() => {})
     return () => stopAudio()
@@ -76,6 +93,9 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
   }
   const intervals = row ? previewIntervals(row, Date.now(), settings.desiredRetention) : null
   const grade = async (g: Grade14) => {
+    if (grading.current) return
+    grading.current = true
+    setGraded(true)
     await answerCard(step.card, g, Date.now() - started.current, settings.desiredRetention).catch((e) => console.error(e))
     onDone({ correct: g >= 2, spokenMs: kind === 2 ? (said && (said.recorded || said.recognized) ? said.speechMs : durationOf(v.say)) : undefined })
   }
@@ -140,7 +160,7 @@ export function CardStep({ step, onDone }: StepProps<S<'card'>>) {
           <p className={s.prompt}>{kind === 2 ? t.askSaid : t.ask}</p>
           <div className={s.grades} role="group" aria-label={t.gradeLabel}>
             {([1, 2, 3, 4] as const).map((g) => (
-              <button key={g} type="button" className={s.grade} data-grade={g} onClick={() => void grade(g)}>
+              <button key={g} type="button" className={s.grade} data-grade={g} disabled={graded} onClick={() => void grade(g)}>
                 <span>{t.grades[g]}</span>
                 {intervals && <span className={s.interval}>{t.when(g, intervalWords(intervals[g]))}</span>}
               </button>

@@ -7,15 +7,23 @@ import { Link, useNavigate } from 'react-router-dom'
 import ui from '../../components/ui.module.css'
 import { ru } from '../../i18n/ru'
 import { db } from '../../lib/db/db'
-import { localDate } from '../../lib/progress/streak'
+import { useToday } from '../../lib/progress/useToday'
 import { skipBlock } from '../../lib/session/session'
 import { nextSegment, segmentBlockTitle, segmentUrl } from './segments'
 import s from './NextBlock.module.css'
 
 export function NextBlock({ afterId }: { afterId: string }) {
   const navigate = useNavigate()
-  const row = useLiveQuery(() => db.sessions.get(localDate()), [])
+  const date = useToday()
+  const row = useLiveQuery(() => db.sessions.get(date).then((x) => x ?? null), [date])
   if (row === undefined) return null
+  // Новый день начался, а плана на него ещё нет — его соберёт главный экран.
+  if (row === null)
+    return (
+      <button type="button" className={ui.signalButton} onClick={() => navigate('/')}>
+        {ru.session.toHome}
+      </button>
+    )
   const next = nextSegment(row, afterId)
   const t = ru.session
   if (!next)
@@ -41,7 +49,7 @@ export function NextBlock({ afterId }: { afterId: string }) {
           className={ui.link}
           onClick={() =>
             void skipBlock(next.block).then(async () => {
-              const fresh = await db.sessions.get(localDate())
+              const fresh = await db.sessions.get(date)
               const after = nextSegment(fresh, afterId)
               navigate(after ? segmentUrl(after) : '/')
             })

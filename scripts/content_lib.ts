@@ -165,6 +165,44 @@ export function checkCourse(files: JsonFile[]): string[] {
   errors.push(...checkDictionary(get('dict/words.json')))
   errors.push(...checkPhase4(files, bossModules, ids, characters))
   errors.push(...checkTranslations(files))
+  errors.push(...checkGames(get('games/static.json'), get('grammar/gaps.json'), get('grammar/fix.json'), ids))
+  return errors
+}
+
+const VOICE_IDS = new Set(['us-f', 'us-m', 'gb-f', 'gb-m', 'in-f', 'in-m', 'au-f', 'au-m'])
+
+/** Пул «Помех» и грамматика: верный вариант первым, варианты разные, id не пересекаются с курсом. */
+export function checkGames(stat: Json[], gaps: Json[], fix: Json[], ids: Map<string, string>): string[] {
+  const errors: string[] = []
+  const own = new Set<string>()
+  const uniqueId = (id: string, file: string) => {
+    if (own.has(id) || ids.has(id)) errors.push(`${file}: повтор id ${id}`)
+    own.add(id)
+  }
+  for (const x of stat) {
+    const id = String(x.id)
+    uniqueId(id, 'games/static.json')
+    const opts = x.options as string[]
+    if (opts?.[0] !== x.text) errors.push(`«Помехи» ${id}: первый вариант должен совпадать с текстом`)
+    if (new Set(opts).size !== opts?.length || opts.length < 3) errors.push(`«Помехи» ${id}: нужно 3 разных варианта`)
+    if (!VOICE_IDS.has(String(x.voice))) errors.push(`«Помехи» ${id}: неизвестный голос ${String(x.voice)}`)
+    if (!x.ru) errors.push(`«Помехи» ${id}: нет перевода`)
+    if (typeof x.reviewed !== 'boolean') errors.push(`«Помехи» ${id}: нет флага reviewed`)
+  }
+  for (const x of gaps) {
+    const id = String(x.id)
+    uniqueId(id, 'grammar/gaps.json')
+    if (String(x.text).split('___').length !== 2) errors.push(`грамматика ${id}: нужен ровно один пропуск ___`)
+    const opts = x.options as string[]
+    if (new Set(opts).size !== opts?.length || opts.length < 3) errors.push(`грамматика ${id}: нужно 3–4 разных варианта`)
+    if (!x.why || !x.ru) errors.push(`грамматика ${id}: нет перевода или объяснения`)
+  }
+  for (const x of fix) {
+    const id = String(x.id)
+    uniqueId(id, 'grammar/fix.json')
+    if (x.wrong === x.right) errors.push(`грамматика ${id}: ошибка и исправление совпадают`)
+    if (!x.why || !x.ru) errors.push(`грамматика ${id}: нет перевода или объяснения`)
+  }
   return errors
 }
 

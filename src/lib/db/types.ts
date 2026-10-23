@@ -45,6 +45,10 @@ export type MetaKey =
   | 'seenExercises'
   /** обучение интерфейсу: true — показано, 'tour' — попросили показать заново */
   | 'welcomeSeen'
+  /** «колода» мини-игры: что недавно показано (JSON-массив id) — без повторов между раундами */
+  | `deck:${string}`
+  /** день (YYYY-MM-DD), когда добавлены «слова дня» — не чаще раза в день */
+  | 'dailyWordsDate'
 
 export type MetaRow = { key: MetaKey; value: number | boolean | string }
 

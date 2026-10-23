@@ -17,6 +17,9 @@ import stress from './clean/stress.json'
 import strategies from './doc/strategies.json'
 import texts from './doc/texts.json'
 import falseFriends from './ff/false-friends.json'
+import gameStatic from './games/static.json'
+import grammarFix from './grammar/fix.json'
+import grammarGaps from './grammar/gaps.json'
 import guides from './guides.json'
 import intakeJson from './intake.json'
 import mailBank from './mail/bank.json'
@@ -38,6 +41,9 @@ import type {
   DocText,
   Episode,
   FalseFriend,
+  GameStatic,
+  GrammarFixItem,
+  GrammarGap,
   IntakeContent,
   MailBankGroup,
   MailFix,
@@ -83,4 +89,7 @@ export const raw: Content = {
   stress: stress as StressWord[],
   falseFriends: falseFriends as FalseFriend[],
   bosses: boss,
+  gameStatic: gameStatic as GameStatic[],
+  grammarGaps: grammarGaps as GrammarGap[],
+  grammarFix: grammarFix as GrammarFixItem[],
 }

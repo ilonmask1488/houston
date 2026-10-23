@@ -3,7 +3,7 @@
 */
 import { chunkById } from '../../content'
 import { CLAUDE_PROMPTS } from '../../i18n/claude-prompts'
-import type { InterviewItem } from '../db/types'
+import type { AnswerRow, InterviewItem } from '../db/types'
 
 /** Подставить {ключи}; незаполненные подстановки заменяются на «—». */
 export function fill(template: string, vars: Record<string, string>): string {
@@ -76,4 +76,23 @@ export async function copyText(text: string): Promise<boolean> {
       return false
     }
   }
+}
+
+/** Ответы за день для разбора: что сказано вслух и где ошибки (не больше 25 строк каждого вида). */
+export function dayReviewPrompt(answers: Pick<AnswerRow, 'kind' | 'expected' | 'given' | 'correct'>[], level?: string): string {
+  const SPOKEN = new Set(['translate', 'substitute', 'quick', 'retell', 'story'])
+  const clean = (x: string) => x.replace(/\s+/g, ' ').trim()
+  const spoken = answers
+    .filter((a) => SPOKEN.has(a.kind) && clean(a.given).length > 3 && !/^\d$/.test(a.given))
+    .slice(-25)
+    .map((a, i) => `${i + 1}. ${a.expected ? `ожидалось: «${clean(a.expected)}»` : 'свободный ответ'} → я сказал: «${clean(a.given)}»`)
+  const mistakes = answers
+    .filter((a) => !a.correct && !SPOKEN.has(a.kind) && a.expected && a.given)
+    .slice(-25)
+    .map((a, i) => `${i + 1}. «${clean(a.expected)}» → «${clean(a.given)}»`)
+  return fill(CLAUDE_PROMPTS.dayReview, {
+    level: level ?? 'B1',
+    spoken: spoken.join('\n') || '(сегодня ответов вслух с распознаванием не было)',
+    mistakes: mistakes.join('\n') || '(ошибок не было)',
+  })
 }

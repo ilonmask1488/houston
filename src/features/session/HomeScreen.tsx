@@ -16,7 +16,8 @@ import { downloadBackup, shouldRemindBackup } from '../../lib/backup/backup'
 import { db } from '../../lib/db/db'
 import { useIntakeState } from '../../lib/intake/store'
 import { signalBars } from '../../lib/progress/signal'
-import { computeStreak, localDate } from '../../lib/progress/streak'
+import { computeStreak } from '../../lib/progress/streak'
+import { useToday } from '../../lib/progress/useToday'
 import { detectPlatform, isStandalone, useInstallPrompt } from '../../lib/pwa/install'
 import { getTodaySession } from '../../lib/session/today'
 import { useSettings } from '../../lib/settings/settings'
@@ -31,18 +32,20 @@ export function HomeScreen() {
   const settings = useSettings()
   const navigate = useNavigate()
   const intake = useIntakeState()
+  // Дата меняется в полночь — тогда собирается план нового дня.
+  const date = useToday()
   const telemetry = useLiveQuery(async () => {
     const days = await db.days.toArray()
-    const streak = computeStreak(new Map(days.map((d) => [d.date, d.seconds])), localDate())
+    const streak = computeStreak(new Map(days.map((d) => [d.date, d.seconds])), date)
     return { days: streak.days, signal: days.reduce((sum, d) => sum + d.signal, 0) }
-  }, [])
+  }, [date])
   const [greeting] = useState(() => ru.greetings[dayOfYear() % ru.greetings.length]!)
   // План на сегодня собирается (или обновляется), как только есть итог вводного теста;
   // уже сохранённый план показываем сразу — пересчёт догонит через живой запрос.
   useEffect(() => {
     if (intake.last) void getTodaySession(settings.sessionMinutes)
-  }, [intake.last, settings.sessionMinutes])
-  const today = useLiveQuery(() => db.sessions.get(localDate()), [])
+  }, [intake.last, settings.sessionMinutes, date])
+  const today = useLiveQuery(() => db.sessions.get(date), [date])
   const signal = telemetry?.signal ?? 0
   const days = telemetry?.days ?? 0
   const next = nextSegment(today)

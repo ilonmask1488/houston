@@ -13,6 +13,7 @@ import { playSeries, stopAudio } from '../../lib/audio/audio'
 import { captureSupported, startCapture, type Capture, type CaptureResult } from '../../lib/audio/capture'
 import { player } from '../../lib/audio/player'
 import { RecorderError } from '../../lib/audio/recorder'
+import { useObjectUrl } from '../../lib/audio/useObjectUrl'
 import { db } from '../../lib/db/db'
 import { detectPlatform } from '../../lib/pwa/install'
 import { useSettings } from '../../lib/settings/settings'
@@ -75,14 +76,19 @@ function MicPanel() {
   const cap = useRef<Capture | null>(null)
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined)
   const phrase = content.intake.micPhrase
+  // Ушли с экрана, пока браузер спрашивал доступ, — микрофон после await не оставляем включённым.
+  const alive = useRef(true)
+  useObjectUrl(result?.url)
 
-  useEffect(
-    () => () => {
+  useEffect(() => {
+    alive.current = true
+    return () => {
+      alive.current = false
       clearTimeout(timer.current)
       cap.current?.cancel()
-    },
-    [],
-  )
+      cap.current = null
+    }
+  }, [])
   useEffect(() => {
     void db.getMeta('captureMode').then((m) => setAsrOnly(m === 'asr-only'))
   }, [result])
@@ -100,10 +106,13 @@ function MicPanel() {
     setResult(null)
     stopAudio()
     try {
-      cap.current = await startCapture({ asr: settings.asr, onLevel: setLevel })
+      const c = await startCapture({ asr: settings.asr, onLevel: setLevel })
+      if (!alive.current) return c.cancel()
+      cap.current = c
       setPhase('rec')
       timer.current = setTimeout(() => void stop(), 8000)
     } catch (e) {
+      if (!alive.current) return
       const reason = e instanceof RecorderError ? e.reason : 'failed'
       setError(reason === 'denied' ? t.denied : reason === 'no-device' ? t.noDevice : t.failed)
       setPhase('idle')
@@ -115,6 +124,10 @@ function MicPanel() {
     cap.current = null
     if (!c) return
     const r = await c.stop()
+    if (!alive.current) {
+      if (r.url) URL.revokeObjectURL(r.url)
+      return
+    }
     setResult(r)
     setLevel(0)
     setPhase('done')

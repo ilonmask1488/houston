@@ -282,6 +282,8 @@ export function Fluency432() {
   if (!q) return <Screen title={ru.story.notFound} back />
   const done = stats.length === 3
   const onResult = (r: VoiceResult) => {
+    // Запись здесь не переслушивают — сразу освобождаем.
+    if (r?.url) URL.revokeObjectURL(r.url)
     const seconds = (Date.now() - t0.current) / 1000
     const measured = !!r && (r.recorded || r.recognized)
     const stat: RoundStat = { speechMs: measured ? r!.speechMs : seconds * 1000 * 0.8, pauses: r?.longPauses ?? 0, words: r?.transcript ? countWords(r.transcript) : null, seconds }

@@ -11,26 +11,30 @@ import { db } from '../db/db'
 import { rng, shuffle } from '../intake/plan'
 import { localDate } from '../progress/streak'
 
-export type GameId = 'static' | 'quick' | 'speedread' | 'twins' | 'ff'
-export const GAME_IDS: GameId[] = ['static', 'quick', 'speedread', 'twins', 'ff']
+export type GameId = 'static' | 'numbers' | 'terms' | 'twins' | 'grammar' | 'ff' | 'speedread' | 'quick'
+/** Порядок в «Тренировке»: сначала на слух, потом слова и грамматика, потом чтение и говорение. */
+export const GAME_IDS: GameId[] = ['static', 'numbers', 'terms', 'twins', 'grammar', 'ff', 'speedread', 'quick']
 /** Игры на время (60 с): «Помехи», «Близнецы», «Ложные друзья». */
 export const TIMED_SECONDS = 60
 export const STATIC_SECONDS = 60
 export const QUICK_ROUNDS = 3
 
-export type StaticItem = { id: string; text: string; say?: string; options: string[]; voice: VoiceId }
+export type StaticItem = { id: string; text: string; say?: string; options: string[]; voice: VoiceId; ru?: string; focus?: string }
 
 /**
-  Материал «Помех»: фразы, которые уже встречались (пройденные в модулях), и фразы вводного теста.
-  Если набралось мало — добавляются фразы первого модуля Эфира (новые, но короткие).
+  Материал «Помех»: пул игры (src/content/games/static.json — уже озвученные реплики курса и новые фразы),
+  пройденные фразы Эфира (и с акцентами — голосом, которым звучали), фразы вводного теста и всегда
+  фразы первого модуля Эфира. Раньше пул у новичка был 20 фраз и сжимался до 12 после первых занятий.
 */
 export function staticPool(progress: Progress): StaticItem[] {
   const seen = new Set([...progress.values()].flatMap((r) => r.done))
-  const learned = content.phrases.filter((p) => seen.has(p.id) && !p.voices)
-  const intake = content.intake.listening.map((l) => ({ id: l.id, text: l.text, say: l.say, options: l.options, voice: l.voice }))
-  const pool: StaticItem[] = [...learned, ...intake]
-  if (pool.length < 12) pool.push(...content.phrases.filter((p) => p.module === 'air-weak' && !seen.has(p.id)))
-  return pool
+  const learned = content.phrases
+    .filter((p) => seen.has(p.id) || p.module === 'air-weak')
+    .map((p): StaticItem => ({ id: p.id, text: p.text, say: p.say, options: p.options, voice: p.voices?.[0] ?? p.voice, ru: p.ru, focus: p.focus }))
+  const intake = content.intake.listening.map((l): StaticItem => ({ id: l.id, text: l.text, say: l.say, options: l.options, voice: l.voice }))
+  const game = content.gameStatic.map((g): StaticItem => ({ id: g.id, text: g.text, options: g.options, voice: g.voice, ru: g.ru, focus: g.focus }))
+  const ids = new Set<string>()
+  return [...learned, ...intake, ...game].filter((x) => !ids.has(x.id) && ids.add(x.id))
 }
 
 /** Скорость «Помех»: от базовой, +0.05 за каждый верный подряд, не быстрее 1.5. */
@@ -56,8 +60,20 @@ export function quickPoints(r: { onTime: boolean; speechMs: number; longPauses: 
   return { onTime, duration, clean, total: onTime + duration + clean }
 }
 
+/** Вопросы «Быстрого ответа»: банк Позывного и вопросы собеседования (у них есть образец ответа). */
+export type QuickItem = { id: string; q: string; ru: string; voice: VoiceId; sample?: string }
+
+export function quickPool(): QuickItem[] {
+  const own = content.questions.map((x): QuickItem => ({ id: x.id, q: x.q, ru: x.ru, voice: x.voice }))
+  const have = new Set(own.map((x) => x.q.toLowerCase()))
+  const story = content.storyQuestions
+    .filter((x) => !have.has(x.q.toLowerCase()))
+    .map((x): QuickItem => ({ id: `story-${x.id}`, q: x.q, ru: x.ru, voice: x.voice, sample: x.example }))
+  return [...own, ...story]
+}
+
 export function quickQuestions(seed: number, n = QUICK_ROUNDS) {
-  return shuffle(content.questions, rng(seed)).slice(0, n)
+  return shuffle(quickPool(), rng(seed)).slice(0, n)
 }
 
 /* ——— Близнецы и Ложные друзья ——— */
@@ -90,6 +106,15 @@ export type SpeedreadItem = { id: string; text: string; q: string; key: string; 
   дальше — абзац с ответом и соседний: искать приходится в большем тексте.
 */
 export function speedreadRounds(seed: number, n = SPEEDREAD_ROUNDS): SpeedreadItem[] {
+  // Не больше одного вопроса на текст за игру
+  const seen = new Set<string>()
+  return shuffle(speedreadPool(), rng(seed))
+    .filter((x) => !seen.has(x.text) && seen.add(x.text))
+    .slice(0, n)
+}
+
+/** Все вопросы «найди ответ» из текстов Техдока (кроме босса) — пул для колоды. */
+export function speedreadPool(): SpeedreadItem[] {
   const all: SpeedreadItem[] = []
   for (const t of content.texts.filter((x) => !x.module.startsWith('boss')))
     t.find.forEach((f, i) => {
@@ -99,11 +124,20 @@ export function speedreadRounds(seed: number, n = SPEEDREAD_ROUNDS): SpeedreadIt
       const paragraphs = t.level === 1 || other < 0 ? [t.paragraphs[p]!] : [t.paragraphs[Math.min(p, other)]!, t.paragraphs[Math.max(p, other)]!]
       all.push({ id: `${t.id}#${i}`, text: t.id, q: f.q, key: f.key, paragraphs })
     })
-  // Не больше одного вопроса на текст за игру
-  const seen = new Set<string>()
-  return shuffle(all, rng(seed))
-    .filter((x) => !seen.has(x.text) && seen.add(x.text))
-    .slice(0, n)
+  return all
+}
+
+/** Раунды из колоды: без повторов между играми, по одному вопросу на текст. */
+export function speedreadFromDeck(deck: { draw: (r: () => number, exclude?: string) => SpeedreadItem }, random: () => number, n = SPEEDREAD_ROUNDS): SpeedreadItem[] {
+  const out: SpeedreadItem[] = []
+  const texts = new Set<string>()
+  for (let guard = 0; out.length < n && guard < n * 8; guard++) {
+    const x = deck.draw(random)
+    if (texts.has(x.text)) continue
+    texts.add(x.text)
+    out.push(x)
+  }
+  return out
 }
 
 /** Время на раунд: 40 секунд, с каждым верным подряд на 4 меньше, не меньше 15. */

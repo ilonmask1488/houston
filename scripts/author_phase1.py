@@ -511,6 +511,76 @@ QUESTIONS = {
         ("Is there anything else you'd like to know about the role?", "Хочешь ещё что-нибудь узнать о позиции?"),
     ],
 }
+# Вторая партия вопросов. Отдельным словарём и после первой, чтобы у старых вопросов не сдвинулись
+# ни id (нумерация внутри модуля продолжается), ни голоса (счётчик голосов общий на все модули).
+QUESTIONS_MORE = {
+    "call-intro": [
+        ("Where are you from originally?", "Ты откуда родом?"),
+        ("How was your weekend?", "Как прошли выходные?"),
+        ("How did you get here today?", "Как ты сегодня сюда добрался?"),
+        ("What do you like most about living in Moscow?", "Что тебе больше всего нравится в жизни в Москве?"),
+        ("Why do you want to work in a design bureau?", "Почему ты хочешь работать в конструкторском бюро?"),
+        ("What software do you use for design work?", "Какими программами ты пользуешься в конструкторской работе?"),
+        ("Which subjects do you enjoy most at university?", "Какие предметы в университете тебе нравятся больше всего?"),
+        ("Have you ever done an internship?", "Ты когда-нибудь проходил стажировку?"),
+        ("Do you prefer working alone or in a team?", "Тебе больше нравится работать одному или в команде?"),
+    ],
+    "call-time": [
+        ("Why should we hire you and not another student?", "Почему нам стоит взять тебя, а не другого студента?"),
+        ("What would your friends say about you?", "Что о тебе сказали бы друзья?"),
+        ("What's the best advice you've ever been given?", "Какой лучший совет тебе когда-либо давали?"),
+        ("If you had unlimited funding, what would you build?", "Если бы финансирование было неограниченным, что бы ты построил?"),
+        ("What does a good engineer need besides technical knowledge?", "Что нужно хорошему инженеру, кроме технических знаний?"),
+        ("What are your salary expectations?", "Какую зарплату ты ожидаешь?"),
+        ("What's something you'd like to get better at?", "В чём тебе хотелось бы стать лучше?"),
+    ],
+    "call-clarify": [
+        ("Can you give me a ROM estimate for the new bracket?", "Можешь дать грубую оценку (ROM) по новому кронштейну? (Переспроси, что такое ROM.)"),
+        ("Can you send me the updated drawings by the end of the day?", "Пришлёшь обновлённые чертежи до конца дня? (Уточни, какие именно чертежи и к какому часу.)"),
+        ("Have you checked the GD and T callouts on the housing?", "Ты проверил обозначения допусков формы и расположения (GD&T) на корпусе? (Можно переспросить.)"),
+        ("What's your availability for the CDR next week?", "Когда ты свободен для защиты рабочего проекта (CDR) на следующей неделе? (Уточни, что за CDR и какой день.)"),
+        ("Can we move our call to half past?", "Можем перенести созвон на «половину»? (Уточни, на какое именно время.)"),
+        ("What's the MoS on this joint, roughly?", "Какой примерно запас прочности (MoS) у этого соединения? (Переспроси, что такое MoS.)"),
+        ("Could you take care of the thing we discussed on Monday?", "Можешь заняться тем, что мы обсуждали в понедельник? (Уточни, о чём именно речь.)"),
+    ],
+    "call-project": [
+        ("Tell me about a time you had to learn something new quickly.", "Расскажи, как тебе пришлось быстро научиться чему-то новому."),
+        ("Describe a time you disagreed with a teammate. How did you resolve it?", "Расскажи, как ты не сошёлся во мнениях с товарищем по команде. Как вы это решили?"),
+        ("Tell me about a time something went wrong during a test.", "Расскажи, как что-то пошло не так во время испытания."),
+        ("Give me an example of a time you took the initiative.", "Приведи пример, когда ты проявил инициативу."),
+        ("Tell me about a time you fixed something with your own hands.", "Расскажи, как ты что-то починил своими руками."),
+        ("What's the status of your part of the project?", "Как обстоят дела с твоей частью проекта?"),
+        ("Can you walk me through your last lab report?", "Расскажешь по порядку о своём последнем отчёте по лабораторной?"),
+        ("When can you send us the final version of the model?", "Когда сможешь прислать нам окончательную версию модели?"),
+        ("How did you check that your calculations were correct?", "Как ты проверял, что твои расчёты верны?"),
+    ],
+    "call-explain": [
+        ("What does a nozzle do, in simple terms?", "Что делает сопло, если просто?"),
+        ("Why do composite parts fail in fatigue?", "Почему композитные детали разрушаются от усталости?"),
+        ("What's the difference between FEM and a physical test?", "Чем расчёт МКЭ отличается от натурного испытания?"),
+        ("What's a tolerance, and why does it matter?", "Что такое допуск и почему он важен?"),
+        ("What is a safety factor?", "Что такое коэффициент запаса?"),
+        ("Why do rockets have several stages?", "Почему у ракет несколько ступеней?"),
+        ("How does a satellite stay in orbit?", "Как спутник держится на орбите?"),
+        ("What's the difference between a drawing and a 3D model?", "Чем чертёж отличается от 3D-модели?"),
+        ("Why do we need to calibrate sensors?", "Зачем нужно калибровать датчики?"),
+        ("Why do engineers worry about vibration during launch?", "Почему инженеров беспокоит вибрация при старте?"),
+    ],
+    "call-disagree": [
+        ("Isn't a 3D model enough without drawings?", "Разве 3D-модели недостаточно и без чертежей?"),
+        ("We could skip the second test to save time. What do you think?", "Можно пропустить второе испытание, чтобы сэкономить время. Что думаешь?"),
+        ("Do you know the exact strength of this alloy?", "Ты знаешь точную прочность этого сплава? (Можно честно сказать, что нет.)"),
+        ("Can you guarantee the part will be ready by Monday?", "Можешь гарантировать, что деталь будет готова к понедельнику?"),
+        ("Shouldn't we always use the strongest material?", "Разве не нужно всегда брать самый прочный материал?"),
+        ("Do you think engineers need to know how to sell their ideas?", "Как думаешь, инженерам нужно уметь продавать свои идеи?"),
+    ],
+    "call-questions": [
+        ("We've covered everything on our side. What would you like to ask?", "С нашей стороны всё. Что ты хотел бы спросить?"),
+        ("Before we finish, is there anything you want to know about the team?", "Пока не закончили: хочешь что-нибудь узнать о команде?"),
+        ("Do you have any questions about the internship schedule?", "Есть вопросы о графике стажировки?"),
+        ("Is there anything you'd like to ask about the next steps?", "Хочешь что-нибудь спросить о дальнейших шагах?"),
+    ],
+}
 QUESTION_VOICES = ["us-m", "gb-f", "in-m", "au-f", "us-f", "gb-m", "in-f", "au-m"]
 
 # ——— Позывной: перевод на лету. (по-русски, образец) ———
@@ -666,6 +736,13 @@ def build():
         for i, (q, ru) in enumerate(items):
             questions.append({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False})
             k += 1
+    for module, items in QUESTIONS_MORE.items():
+        start = len(QUESTIONS.get(module, []))
+        for i, (q, ru) in enumerate(items, start):
+            questions.append({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False})
+            k += 1
+    assert len({q["id"] for q in questions}) == len(questions), "id вопросов повторяются"
+    assert len({q["q"] for q in questions}) == len(questions), "вопросы повторяются"
 
     translate = []
     for module, items in TRANSLATE.items():

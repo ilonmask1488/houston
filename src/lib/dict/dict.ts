@@ -40,7 +40,14 @@ export function fillDictionary(words: DictWord[]): void {
 }
 
 export function loadDictionary(): Promise<void> {
-  loading ??= import('../../content/dict/words.json').then((m) => fillDictionary(m.default as DictWord[]))
+  // Неудачную загрузку (нет сети) не запоминаем — следующий вызов попробует снова.
+  loading ??= import('../../content/dict/words.json').then(
+    (m) => fillDictionary(m.default as DictWord[]),
+    (e: unknown) => {
+      loading = null
+      throw e
+    },
+  )
   return loading
 }
 

@@ -18,6 +18,7 @@ import type { AnswerSource } from '../../lib/db/types'
 import { evaluateAchievements, type AchievementId } from '../../lib/progress/achievements'
 import { addToday, recordAnswer } from '../../lib/progress/record'
 import { SIGNAL, signalFor } from '../../lib/progress/signal'
+import { localDate } from '../../lib/progress/streak'
 import type { Step } from '../../lib/run/steps'
 import { addChunkCards, addPhraseCard } from '../../lib/srs/cards'
 import { CardStep } from './card'
@@ -69,6 +70,8 @@ export function Runner(props: Props) {
   const lastTick = useRef(0)
   const busy = useRef(false)
   const finishing = useRef(false)
+  // День начала блока: минуты блока, перешедшего за полночь, — тому дню, когда начали.
+  const startDate = useRef(localDate())
   const [confirmExit, setConfirmExit] = useState(false)
   const resumed = (props.startAt ?? 0) > 0
 
@@ -131,7 +134,7 @@ export function Runner(props: Props) {
           accuracy: a.total ? a.correct / a.total : null,
           completedModules: a.completed,
         }
-        await addToday({ seconds: secs, signal, spokenMs: a.spokenMs, spoken: a.spoken, newItems: a.newItems }).catch((e) => console.error(e))
+        await addToday({ seconds: secs, signal, spokenMs: a.spokenMs, spoken: a.spoken, newItems: a.newItems, date: startDate.current }).catch((e) => console.error(e))
         await props.onFinish?.(summary).catch((e) => console.error(e))
         const fresh = await evaluateAchievements().catch(() => [] as AchievementId[])
         setFinished({ r: summary, fresh })
