@@ -9,6 +9,7 @@ import { content } from '../../content'
 import type { FalseFriend, MinimalPair, VoiceId } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { defaultVoice, playText } from '../../lib/audio/audio'
+import { hasAudio } from '../../lib/audio/manifest'
 import ui from '../../components/ui.module.css'
 import { loadDeck, type Deck } from '../../lib/games/deck'
 import { gameRandom, twinsVoice } from '../../lib/games/games'
@@ -47,7 +48,11 @@ export function TwinsGame({ seconds, onFinish }: { seconds: number; onFinish: (o
   const g = useTimed(seconds, onFinish, !!round)
   useEffect(() => {
     let alive = true
-    void loadDeck('twins', content.pairs, ['pair']).then((d) => {
+    // Пары с записью (оба слова): синтез телефона не гарантирует нужный звук в ship/sheep.
+    // Пары без записи — только если записанных мало (пока не запущен generate_audio.py).
+    const recorded = content.pairs.filter((p) => hasAudio(p.a) && hasAudio(p.b))
+    const pool = recorded.length >= 30 ? recorded : content.pairs
+    void loadDeck('twins', pool, ['pair']).then((d) => {
       if (!alive) return
       setDeck(d)
       setRound({ pair: d.draw(random), pick: random() < 0.5 ? 0 : 1, voice: defaultVoice() })
@@ -120,7 +125,7 @@ export function FalseFriendsGame({ seconds, onFinish }: { seconds: number; onFin
   const [deck, setDeck] = useState<Deck<FalseFriend> | null>(null)
   const [round, setRound] = useState<{ f: FalseFriend; options: string[] } | null>(null)
   const [given, setGiven] = useState<string | null>(null)
-  const g = useTimed(seconds, onFinish, !!round)
+  const g = useTimed(seconds, onFinish, !!round, !!round && given !== null && given !== round.f.options[0])
   const make = (d: Deck<FalseFriend>, after?: string) => {
     const f = d.draw(random, after)
     return { f, options: shuffle(f.options, rng(Math.floor(random() * 1e9))) }

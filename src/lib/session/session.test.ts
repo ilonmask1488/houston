@@ -24,11 +24,12 @@ describe('сеанс связи', () => {
     }
   })
 
-  it('много карточек после перерыва: разминки и ротации нет, их минуты — повторению', () => {
+  it('много карточек после перерыва: ротации нет, её минуты — повторению; разминка остаётся', () => {
     const normal = planSegments({ minutes: 30, date: '2026-09-27', due: cards(50), progress: new Map(), speed: 1 })
     const debt = planSegments({ minutes: 30, date: '2026-09-27', due: cards(120), progress: new Map(), speed: 1 })
     const reviewCards = (segs: typeof normal) => segs.filter((s) => s.block === 'review').reduce((n, s) => n + (s.steps?.length ?? 0), 0)
-    expect(debt.some((s) => s.block === 'warmup' || s.block === 'rotation')).toBe(false)
+    expect(debt.some((s) => s.block === 'rotation')).toBe(false)
+    expect(debt[0]!.game).toBe('static')
     expect(reviewCards(debt)).toBeGreaterThan(reviewCards(normal))
     // новое и говорение не пропадают совсем
     expect(debt.some((s) => s.block === 'call')).toBe(true)

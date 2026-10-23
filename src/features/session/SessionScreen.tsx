@@ -69,7 +69,7 @@ export function SessionScreen() {
         })}
       </ol>
       {!row.segments.some((x) => x.block === 'review') && <p className={s.honest}>{t.noReview}</p>}
-      {!row.segments.some((x) => x.block === 'warmup') && row.segments.some((x) => x.block === 'review') && <p className={s.honest}>{t.debt}</p>}
+      {!row.segments.some((x) => x.block === 'rotation') && row.segments.filter((x) => x.block === 'review').reduce((n, x) => n + (x.steps?.length ?? 0), 0) > 40 && <p className={s.honest}>{t.debt}</p>}
 
       {next ? (
         <div className={s.launch}>

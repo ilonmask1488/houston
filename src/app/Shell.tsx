@@ -1,4 +1,4 @@
-import { Component, useEffect, useState, type ReactNode } from 'react'
+import { Component, useEffect, useRef, useState, type ReactNode } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useRegisterSW } from 'virtual:pwa-register/react'
 import { IconDictionary, IconSession, IconStory, IconTracks, IconTraining } from '../components/Icons'
@@ -50,10 +50,23 @@ export function Shell() {
   )
 }
 
+/** Одна и та же ошибка звука не чаще раза в 10 минут: иначе без английского голоса баннер закрывал экран на каждой фразе. */
+const AUDIO_ERROR_QUIET_MS = 10 * 60_000
+
 /** Последняя ошибка звука — показывается 6 секунд. */
 function useAudioError(): { message: string | null; close: () => void } {
   const [message, setMessage] = useState<string | null>(null)
-  useEffect(() => player.onError((m) => setMessage(m)), [])
+  const shown = useRef(new Map<string, number>())
+  useEffect(
+    () =>
+      player.onError((m) => {
+        const now = Date.now()
+        if (now - (shown.current.get(m) ?? -Infinity) < AUDIO_ERROR_QUIET_MS) return
+        shown.current.set(m, now)
+        setMessage(m)
+      }),
+    [],
+  )
   useEffect(() => {
     if (!message) return
     const t = setTimeout(() => setMessage(null), 6000)

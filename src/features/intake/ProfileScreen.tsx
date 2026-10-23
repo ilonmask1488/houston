@@ -41,6 +41,7 @@ export function ProfileScreen() {
         <Readout label={t.cefr} value={`≈ ${r.cefr}`} hint={t.cefrNote} />
         <Readout label={ru.intake.steps.vocab!} value={`≈ ${r.vocabSize}`} unit="слов" />
       </section>
+      {r.falseAlarm >= 0.34 && <p className={s.termLink}>{t.falseAlarm}</p>}
       <Term k="cefr" className={s.termLink}>
         {t.cefrWhat}
       </Term>

@@ -117,7 +117,11 @@ function Game({ id }: { id: GameId }) {
           <p className="mono">
             {t.best(outcome.best)} · {t.weekBest(outcome.weekBest)}
           </p>
-          <p>{t.stats(outcome.o.correct, outcome.o.wrong, outcome.o.bestStreak, outcome.signal)}</p>
+          <p>
+            {id === 'quick'
+              ? t.quickStats(outcome.o.onTime, outcome.o.correct, outcome.o.correct + outcome.o.wrong, outcome.signal)
+              : t.stats(outcome.o.correct, outcome.o.wrong, outcome.o.bestStreak, outcome.signal)}
+          </p>
           <div className={s.actions}>
             {seg ? (
               <NextBlock afterId={seg} />
@@ -188,11 +192,13 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pool])
 
+  // Пока показан разбор ошибки (ждём «Дальше»), время стоит
+  const reviewing = !!item && given !== null && options[given] !== item.text
   useEffect(() => {
-    if (!pool) return
+    if (!pool || reviewing) return
     const timer = setInterval(() => setLeft((n) => Math.max(0, n - 1)), 1000)
     return () => clearInterval(timer)
-  }, [pool])
+  }, [pool, reviewing])
 
   useEffect(() => {
     if (left > 0 || ended.current) return

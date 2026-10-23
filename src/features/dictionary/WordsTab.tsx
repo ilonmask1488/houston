@@ -61,6 +61,9 @@ export function WordsTab({ query }: { query: string }) {
     return { inReview: new Set(cards.map((c) => c.itemId)), user: await db.userWords.orderBy('createdAt').reverse().toArray() }
   }, [])
   const q = norm(query)
+  // norm() оставляет только латиницу и цифры: по-русски q пустой, а искать всё равно надо — по переводу
+  const ruQ = query.trim().toLowerCase().replace(/ё/g, 'е')
+  const searching = !!q || /[а-я]/.test(ruQ)
 
   const mine = useMemo((): Row[] => {
     if (!state || !loaded) return []
@@ -71,9 +74,9 @@ export function WordsTab({ query }: { query: string }) {
   }, [state, loaded, t.mineOwn])
 
   const found = useMemo((): Row[] => {
-    if (!q || !loaded) return []
-    const ruQ = query.trim().toLowerCase().replace(/ё/g, 'е')
-    const hit = (w: { text: string; ru: string; forms?: string[] }) => w.text.toLowerCase().includes(q) || w.ru.toLowerCase().replace(/ё/g, 'е').includes(ruQ) || !!w.forms?.includes(q)
+    if (!searching || !loaded) return []
+    const hit = (w: { text: string; ru: string; forms?: string[] }) =>
+      (!!q && (w.text.toLowerCase().includes(q) || !!w.forms?.includes(q))) || (!!ruQ && w.ru.toLowerCase().replace(/ё/g, 'е').includes(ruQ))
     const own = (state?.user ?? []).filter(hit).map((u): Row => ({ id: u.id, text: u.text, ru: u.ru, note: u.context ?? t.mineOwn }))
     // Сначала точные совпадения и технические термины
     const dict = dictWords
@@ -81,7 +84,7 @@ export function WordsTab({ query }: { query: string }) {
       .sort((a, b) => Number(norm(b.text) === q) - Number(norm(a.text) === q) || Number(b.band === 'tech') - Number(a.band === 'tech') || (a.rank ?? 9999) - (b.rank ?? 9999))
       .map(fromDict)
     return [...own, ...dict].slice(0, 60)
-  }, [q, query, loaded, state, t.mineOwn])
+  }, [q, ruQ, searching, loaded, state, t.mineOwn])
 
   const topics = useMemo(() => {
     const m = new Map<string, DictWord[]>()
@@ -92,7 +95,7 @@ export function WordsTab({ query }: { query: string }) {
   if (!loaded || !state) return <p className={s.empty} aria-busy />
   const inReview = state.inReview
 
-  if (q)
+  if (searching)
     return (
       <section className={s.group}>
         <h2 className={s.fn}>{t.found(found.length)}</h2>

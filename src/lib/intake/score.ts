@@ -131,12 +131,16 @@ export function listeningScore(answers: ListenAnswer[]): IntakeResult['listening
 
 /* ——— Чтение и говорение ——— */
 
+export const MAX_WPM = 600
+
 export function readingScore(answers: ReadAnswer[]): IntakeResult['reading'] {
   let score = 0
   for (const a of answers) score += (a.total ? a.correct / a.total : 0) * 50
   const words = answers.reduce((s, a) => s + a.words, 0)
   const secs = answers.reduce((s, a) => s + a.seconds, 0)
-  return { score: Math.round(score), wpm: secs > 0 ? Math.round((words / secs) * 60) : null }
+  const wpm = secs > 0 ? Math.round((words / secs) * 60) : null
+  // Быстрее ~600 слов в минуту текст не прочитан, а пролистан («К вопросам» сразу) — скорость не измерена
+  return { score: Math.round(score), wpm: wpm !== null && wpm <= MAX_WPM ? wpm : null }
 }
 
 /** Нужен ли второй, более трудный текст: да, если первый понят хотя бы на 2 из 3. */

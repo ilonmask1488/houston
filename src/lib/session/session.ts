@@ -156,7 +156,11 @@ function callParts(c: CallInput, seconds: number): { label: string; steps?: Step
   // без неё модуль Позывного не закрывался никогда и сеанс крутил одни и те же фразы перевода.
   const subs = (items?.substitution ?? []).filter((x) => !c.done.has(x.id))
   const subBudget = subs.length ? 2 * STEP_SECONDS.substitute : 0
-  const tr = freshFirst(items?.translate ?? [], c.done, c.seed)
+  // Новые фразы перевода — сколько влезет; уже сделанные — не больше двух на закрепление,
+  // иначе одни и те же шесть фраз шли каждый день, пока модуль не закроется (а это 1–2 недели).
+  const trAll = freshFirst(items?.translate ?? [], c.done, c.seed)
+  const trFresh = trAll.filter((x) => !c.done.has(x.id))
+  const tr = [...trFresh, ...trAll.filter((x) => c.done.has(x.id)).slice(0, 2)]
   if (tr.length && left - subBudget > 60) {
     const s = take(tr.map((x): Step => ({ kind: 'translate', item: x.id })), Math.min(left - 60 - subBudget, MAX_SEGMENT_SECONDS))
     out.push({ label: 'translate', steps: s })
@@ -302,16 +306,15 @@ export function planSegments(input: PlanInput): SessionSegment[] {
   const { date, progress, intake } = input
   const min = Object.fromEntries(planSession(input.minutes).map((b) => [b.id, b.minutes])) as Record<SessionBlock, number>
   const seed = hash(date)
-  // Вернулся после перерыва и карточек накопилось много: сначала разгрести их — минуты разминки
-  // и ротации уходят повторению, иначе долг только растёт (новое добавляется быстрее, чем повторяется).
+  // Вернулся после перерыва и карточек накопилось много: минуты ротации уходят повторению, иначе долг
+  // только растёт. Разминка-игра остаётся — день из одних карточек скучный, и люди бросают.
   const debt = input.due.length > DEBT_CARDS
   if (debt) {
-    min.review += min.warmup + min.rotation
-    min.warmup = 0
+    min.review += min.rotation
     min.rotation = 0
   }
 
-  const warmup = debt ? [] : [seg('warmup', 'warmup', 'static', { kind: 'game', game: 'static', minutes: min.warmup })]
+  const warmup = [seg('warmup', 'warmup', 'static', { kind: 'game', game: 'static', minutes: min.warmup })]
 
   const perChunk = Math.floor(MAX_SEGMENT_SECONDS / STEP_SECONDS.card)
   const cardCount = Math.min(input.due.length, Math.round((min.review * 60) / STEP_SECONDS.card))

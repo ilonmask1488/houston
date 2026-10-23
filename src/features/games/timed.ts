@@ -8,7 +8,8 @@ import { comboMultiplier } from '../../lib/progress/signal'
 export type TimedOutcome = { score: number; correct: number; wrong: number; bestStreak: number; seconds: number; spokenMs: number; onTime: number }
 
 /** `ready` — таймер стартует, когда материал загружен (колода из базы, словарь). */
-export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, ready = true) {
+/** `paused` — пока показан разбор ошибки, время не идёт: читать объяснение не должно стоить очков. */
+export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, ready = true, paused = false) {
   const [left, setLeft] = useState(seconds)
   const [streak, setStreak] = useState(0)
   const [score, setScore] = useState(0)
@@ -16,11 +17,13 @@ export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, r
   const ended = useRef(false)
   const started = useRef(0)
   useEffect(() => {
-    if (!ready) return
-    started.current = Date.now()
+    if (ready && !started.current) started.current = Date.now()
+  }, [ready])
+  useEffect(() => {
+    if (!ready || paused) return
     const timer = setInterval(() => setLeft((n) => Math.max(0, n - 1)), 1000)
     return () => clearInterval(timer)
-  }, [ready])
+  }, [ready, paused])
   useEffect(() => {
     if (left > 0 || ended.current) return
     ended.current = true

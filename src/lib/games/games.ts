@@ -158,7 +158,8 @@ export async function saveRecord(game: GameId, score: number): Promise<{ best: n
     const weekBest = cur.weekStart === week ? cur.weekBest : 0
     const row = { game, best: Math.max(cur.best, score), weekBest: Math.max(weekBest, score), weekStart: week }
     await db.gameRecords.put(row)
-    return { best: row.best, weekBest: row.weekBest, isBest: score > cur.best && score > 0 }
+    // Первый раунд — ещё не «рекорд»: побить нечего
+    return { best: row.best, weekBest: row.weekBest, isBest: cur.best > 0 && score > cur.best }
   })
 }
 

@@ -38,8 +38,9 @@ describe('Быстрый ответ', () => {
 describe('рекорды', () => {
   it('рекорд за всё время и за неделю', async () => {
     await db.open()
-    expect(await saveRecord('static', 50)).toMatchObject({ best: 50, isBest: true })
+    expect(await saveRecord('static', 50)).toMatchObject({ best: 50, isBest: false })
     expect(await saveRecord('static', 30)).toMatchObject({ best: 50, weekBest: 50, isBest: false })
+    expect(await saveRecord('static', 70)).toMatchObject({ best: 70, isBest: true })
     expect(weekStart('2026-09-27')).toBe('2026-09-21')
     db.close()
     await Dexie.delete(db.name)
