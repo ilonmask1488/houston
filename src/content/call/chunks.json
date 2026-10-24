@@ -67,7 +67,47 @@
     "text": "I'm a fourth-year student in aerospace engineering.",
     "voice": "gb-m"
    }
-  ]
+  ],
+  "byField": {
+   "mech": {
+    "example": "I'm a fourth-year student in mechanical engineering.",
+    "exampleRu": "Я студент четвёртого курса, машиностроение.",
+    "speak": [
+     {
+      "text": "I'm a fourth-year student",
+      "voice": "us-f"
+     },
+     {
+      "text": "I'm a fourth-year student",
+      "voice": "us-m"
+     },
+     {
+      "text": "I'm a fourth-year student",
+      "voice": "gb-f"
+     },
+     {
+      "text": "I'm a fourth-year student",
+      "voice": "gb-m"
+     },
+     {
+      "text": "I'm a fourth-year student in mechanical engineering.",
+      "voice": "us-f"
+     },
+     {
+      "text": "I'm a fourth-year student in mechanical engineering.",
+      "voice": "us-m"
+     },
+     {
+      "text": "I'm a fourth-year student in mechanical engineering.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "I'm a fourth-year student in mechanical engineering.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "c-intro-03",
@@ -155,7 +195,47 @@
     "text": "My background is in rocket and space engineering.",
     "voice": "gb-m"
    }
-  ]
+  ],
+  "byField": {
+   "mech": {
+    "example": "My background is in mechanical engineering.",
+    "exampleRu": "По специальности я инженер-машиностроитель.",
+    "speak": [
+     {
+      "text": "My background is in",
+      "voice": "us-f"
+     },
+     {
+      "text": "My background is in",
+      "voice": "us-m"
+     },
+     {
+      "text": "My background is in",
+      "voice": "gb-f"
+     },
+     {
+      "text": "My background is in",
+      "voice": "gb-m"
+     },
+     {
+      "text": "My background is in mechanical engineering.",
+      "voice": "us-f"
+     },
+     {
+      "text": "My background is in mechanical engineering.",
+      "voice": "us-m"
+     },
+     {
+      "text": "My background is in mechanical engineering.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "My background is in mechanical engineering.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "c-intro-05",
@@ -331,7 +411,47 @@
     "text": "In my free time, I like to read about space missions.",
     "voice": "gb-m"
    }
-  ]
+  ],
+  "byField": {
+   "mech": {
+    "example": "In my free time, I like to fix things in my garage.",
+    "exampleRu": "В свободное время я люблю что-нибудь чинить в гараже.",
+    "speak": [
+     {
+      "text": "In my free time, I",
+      "voice": "us-f"
+     },
+     {
+      "text": "In my free time, I",
+      "voice": "us-m"
+     },
+     {
+      "text": "In my free time, I",
+      "voice": "gb-f"
+     },
+     {
+      "text": "In my free time, I",
+      "voice": "gb-m"
+     },
+     {
+      "text": "In my free time, I like to fix things in my garage.",
+      "voice": "us-f"
+     },
+     {
+      "text": "In my free time, I like to fix things in my garage.",
+      "voice": "us-m"
+     },
+     {
+      "text": "In my free time, I like to fix things in my garage.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "In my free time, I like to fix things in my garage.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "c-intro-09",
@@ -1259,7 +1379,47 @@
     "text": "The main challenge was the vibration at launch.",
     "voice": "gb-m"
    }
-  ]
+  ],
+  "byField": {
+   "mech": {
+    "example": "The main challenge was the vibration during cutting.",
+    "exampleRu": "Главной трудностью была вибрация при резании.",
+    "speak": [
+     {
+      "text": "The main challenge was",
+      "voice": "us-f"
+     },
+     {
+      "text": "The main challenge was",
+      "voice": "us-m"
+     },
+     {
+      "text": "The main challenge was",
+      "voice": "gb-f"
+     },
+     {
+      "text": "The main challenge was",
+      "voice": "gb-m"
+     },
+     {
+      "text": "The main challenge was the vibration during cutting.",
+      "voice": "us-f"
+     },
+     {
+      "text": "The main challenge was the vibration during cutting.",
+      "voice": "us-m"
+     },
+     {
+      "text": "The main challenge was the vibration during cutting.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "The main challenge was the vibration during cutting.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "c-project-05",

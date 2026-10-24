@@ -252,7 +252,8 @@
     "answer": 0
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "p-debrief",
@@ -478,5 +479,93 @@
    }
   ],
   "reviewed": false
+ },
+ {
+  "id": "p-interview-mech",
+  "module": "air-long",
+  "title": "Собеседование: вопрос о проекте",
+  "kind": "собеседование",
+  "situation": "Майк спрашивает кандидатку Грейс о её проекте. Так звучит хороший ответ по методу STAR.",
+  "lines": [
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "So, tell me about a project you're proud of.",
+    "ru": "Итак, расскажите о проекте, которым вы гордитесь."
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "Sure. Last year I worked on a gearbox housing for a student racing team. I was responsible for the machining process.",
+    "ru": "Конечно. В прошлом году я работала над корпусом редуктора для студенческой гоночной команды. Я отвечала за технологию механической обработки."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "What was the main challenge?",
+    "ru": "В чём была главная трудность?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "The housing kept moving in the fixture, so the bore positions were out of tolerance. We couldn't buy a new fixture because of the budget, so I suggested adding a third clamp and changing the order of operations instead.",
+    "ru": "Корпус всё время смещался в приспособлении, и положение отверстий выходило за допуск. Купить новое приспособление мы не могли из-за бюджета, поэтому я предложила вместо этого добавить третий прижим и поменять порядок операций."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "And did it work?",
+    "ru": "И это сработало?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "It did. The position error dropped from about a tenth of a millimetre to twenty microns, and we stayed within the budget.",
+    "ru": "Да. Погрешность положения снизилась примерно с десятой доли миллиметра до двадцати микрон, и мы уложились в бюджет."
+   },
+   {
+    "speaker": "mike",
+    "voice": "us-m",
+    "text": "Nice. What would you do differently next time?",
+    "ru": "Отлично. Что бы вы сделали иначе в следующий раз?"
+   },
+   {
+    "speaker": "grace",
+    "voice": "au-f",
+    "text": "I'd check the fixture earlier. We found the problem quite late, and it cost us a few weeks.",
+    "ru": "Я бы раньше проверила приспособление. Мы обнаружили проблему довольно поздно, и это стоило нам нескольких недель."
+   }
+  ],
+  "questions": [
+   {
+    "q": "За что отвечала Грейс?",
+    "options": [
+     "За технологию механической обработки",
+     "За закупки",
+     "За сборку редуктора"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Как решили проблему?",
+    "options": [
+     "Добавили третий прижим и поменяли порядок операций",
+     "Купили новое приспособление",
+     "Расширили допуск на отверстия"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Что она сделала бы иначе?",
+    "options": [
+     "Раньше проверила бы приспособление",
+     "Выбрала бы другой корпус",
+     "Попросила бы больше бюджета"
+    ],
+    "answer": 0
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
  }
 ]

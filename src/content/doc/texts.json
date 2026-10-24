@@ -116,7 +116,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-liquid-engine",
@@ -235,7 +236,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-composites",
@@ -354,7 +356,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-tensile",
@@ -858,7 +861,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-am-injector",
@@ -1005,7 +1009,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-moisture-cfrp",
@@ -1299,7 +1304,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-param-docs",
@@ -1692,7 +1698,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-combustion-instab",
@@ -1839,7 +1846,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-bonded-fatigue",
@@ -2721,7 +2729,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-valve-protocol",
@@ -3476,7 +3485,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-drawing-notes",
@@ -3779,5 +3789,1437 @@
    }
   ],
   "reviewed": false
+ },
+ {
+  "id": "t-mech-lathe",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "mach",
+  "kind": "статья",
+  "title": "How a lathe turns a shaft",
+  "paragraphs": [
+   "A lathe is a machine tool that makes round parts, such as shafts, pins and bushings. The workpiece is held in a chuck and turns with the spindle. A cutting tool moves along the workpiece and removes metal in the form of chips.",
+   "Three settings control the cut: the cutting speed, the feed rate and the depth of cut. A higher speed saves time, but the tool becomes hot and wears faster. For this reason, the operator usually removes most of the metal with a rough cut first and then makes a light finishing cut. The finishing cut gives the final size and a smooth surface."
+  ],
+  "paragraphsRu": [
+   "Токарный станок — это металлорежущий станок для круглых деталей, например валов, пальцев и втулок. Заготовку зажимают в патроне, и она вращается вместе со шпинделем. Резец движется вдоль заготовки и снимает металл в виде стружки.",
+   "Резание определяют три параметра: скорость резания, подача и глубина резания. Более высокая скорость экономит время, но инструмент сильнее нагревается и быстрее изнашивается. Поэтому оператор обычно сначала снимает бóльшую часть металла черновым проходом, а затем делает лёгкий чистовой проход. Чистовой проход даёт окончательный размер и гладкую поверхность."
+  ],
+  "summaries": [
+   [
+    "A lathe turns the workpiece while a tool removes metal to make round parts.",
+    "A lathe is used only to make flat plates.",
+    "The cutting tool turns with the spindle, and the workpiece stays still."
+   ],
+   [
+    "Speed, feed and depth of cut control the cut; a rough cut comes before a finishing cut.",
+    "A higher cutting speed makes the tool last longer.",
+    "The finishing cut removes most of the metal."
+   ]
+  ],
+  "retell": [
+   "A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.",
+   "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last."
+  ],
+  "parse": {
+   "sentence": "For this reason, the operator usually removes most of the metal with a rough cut first and then makes a light finishing cut.",
+   "parts": [
+    [
+     "For this reason,",
+     "поэтому — связка с предыдущим предложением"
+    ],
+    [
+     "the operator usually removes most of the metal with a rough cut first",
+     "сначала оператор снимает бóльшую часть металла черновым проходом"
+    ],
+    [
+     "and then makes a light finishing cut",
+     "а затем делает лёгкий чистовой проход"
+    ]
+   ],
+   "q": "What does the operator do first?",
+   "options": [
+    "Removes most of the metal with a rough cut",
+    "Makes a light finishing cut",
+    "Measures the final size"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What kind of parts does a lathe make?",
+    "key": "makes round parts"
+   },
+   {
+    "q": "What holds the workpiece?",
+    "key": "held in a chuck"
+   },
+   {
+    "q": "In what form is the metal removed?",
+    "key": "in the form of chips"
+   },
+   {
+    "q": "What three settings control the cut?",
+    "key": "the cutting speed, the feed rate and the depth of cut"
+   },
+   {
+    "q": "What happens to the tool at a higher speed?",
+    "key": "wears faster"
+   },
+   {
+    "q": "What does the finishing cut give?",
+    "key": "the final size and a smooth surface"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-cylinder",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "hyd",
+  "kind": "статья",
+  "title": "How a hydraulic cylinder works",
+  "paragraphs": [
+   "A hydraulic cylinder turns the pressure of oil into a straight-line force. It consists of a tube, a piston and a piston rod. A pump sends oil into the cylinder, and the oil pushes the piston and the rod out.",
+   "The force of the cylinder depends on two things: the oil pressure and the area of the piston. For example, a piston with an area of 20 square centimeters at 100 bar gives a force of about 20 kN. Seals on the piston and on the rod keep the oil inside. If the seals are worn, oil leaks, and the cylinder becomes slow and weak."
+  ],
+  "paragraphsRu": [
+   "Гидроцилиндр превращает давление масла в прямолинейное усилие. Он состоит из гильзы, поршня и штока. Насос подаёт масло в цилиндр, и масло выталкивает поршень со штоком.",
+   "Усилие цилиндра зависит от двух величин: давления масла и площади поршня. Например, поршень площадью 20 квадратных сантиметров при 100 бар даёт усилие около 20 кН. Уплотнения на поршне и на штоке удерживают масло внутри. Если уплотнения изношены, масло подтекает, и цилиндр становится медленным и слабым."
+  ],
+  "summaries": [
+   [
+    "A cylinder uses oil pressure from a pump to push a piston and a rod in a straight line.",
+    "A hydraulic cylinder turns electricity into rotation.",
+    "The piston pushes oil back into the pump to create force."
+   ],
+   [
+    "The force is pressure times piston area, and good seals are needed to keep it.",
+    "The force does not depend on the piston area.",
+    "Worn seals make the cylinder faster and stronger."
+   ]
+  ],
+  "retell": [
+   "A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.",
+   "Its force is pressure times piston area, and worn seals let oil leak and make it weak."
+  ],
+  "parse": {
+   "sentence": "If the seals are worn, oil leaks, and the cylinder becomes slow and weak.",
+   "parts": [
+    [
+     "If the seals are worn,",
+     "условие (пассив are worn): если уплотнения изношены"
+    ],
+    [
+     "oil leaks,",
+     "масло подтекает"
+    ],
+    [
+     "and the cylinder becomes slow and weak",
+     "и цилиндр становится медленным и слабым"
+    ]
+   ],
+   "q": "What happens when the seals are worn?",
+   "options": [
+    "Oil leaks and the cylinder becomes weak",
+    "The piston area becomes larger",
+    "The pump stops at once"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What does a hydraulic cylinder turn the oil pressure into?",
+    "key": "straight-line force"
+   },
+   {
+    "q": "What are the main parts of a cylinder?",
+    "key": "a tube, a piston and a piston rod"
+   },
+   {
+    "q": "What sends oil into the cylinder?",
+    "key": "A pump sends oil"
+   },
+   {
+    "q": "What does the force depend on?",
+    "key": "the oil pressure and the area of the piston"
+   },
+   {
+    "q": "What force does a 20 cm² piston give at 100 bar?",
+    "key": "force of about 20 kN"
+   },
+   {
+    "q": "What keeps the oil inside?",
+    "key": "keep the oil inside"
+   },
+   {
+    "q": "What happens if the seals are worn?",
+    "key": "becomes slow and weak"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Its force is pressure times piston area, and worn seals let oil leak and make it weak.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Its force is pressure times piston area, and worn seals let oil leak and make it weak.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Its force is pressure times piston area, and worn seals let oil leak and make it weak.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Its force is pressure times piston area, and worn seals let oil leak and make it weak.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-bearings",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "maint",
+  "kind": "статья",
+  "title": "Rolling bearings: why they fail",
+  "paragraphs": [
+   "A rolling bearing lets a shaft turn with very little friction. It has an inner ring, an outer ring, and balls or rollers between them. A bearing cage keeps the balls evenly spaced.",
+   "Most bearings do not fail because they are old. They fail because of poor lubrication, dirt, misalignment or wrong mounting. A bearing that is beginning to fail often becomes noisy and hot. Regular checks of temperature and vibration help to find the problem early, before the machine stops."
+  ],
+  "paragraphsRu": [
+   "Подшипник качения позволяет валу вращаться с очень малым трением. У него есть внутреннее кольцо, наружное кольцо и шарики или ролики между ними. Сепаратор удерживает шарики на равном расстоянии друг от друга.",
+   "Большинство подшипников выходит из строя не от старости. Они отказывают из-за плохой смазки, грязи, несоосности или неправильного монтажа. Подшипник, который начинает отказывать, часто шумит и греется. Регулярные проверки температуры и вибрации помогают обнаружить неисправность рано, до того как станок остановится."
+  ],
+  "summaries": [
+   [
+    "A bearing has two rings with balls or rollers between them, so a shaft turns easily.",
+    "A bearing increases friction to stop the shaft.",
+    "The cage is the outer cover of the machine."
+   ],
+   [
+    "Bearings usually fail because of lubrication, dirt or mounting problems, and checks find this early.",
+    "Bearings almost always fail simply because they are old.",
+    "A failing bearing becomes quiet and cold."
+   ]
+  ],
+  "retell": [
+   "A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.",
+   "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early."
+  ],
+  "parse": {
+   "sentence": "Regular checks of temperature and vibration help to find the problem early, before the machine stops.",
+   "parts": [
+    [
+     "Regular checks of temperature and vibration",
+     "подлежащее: регулярные проверки температуры и вибрации"
+    ],
+    [
+     "help to find the problem early",
+     "помогают обнаружить неисправность рано"
+    ],
+    [
+     ", before the machine stops",
+     "до того как станок остановится"
+    ]
+   ],
+   "q": "What helps to find the problem early?",
+   "options": [
+    "Regular checks of temperature and vibration",
+    "A new bearing cage",
+    "Stopping the machine every day"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What does a rolling bearing let a shaft do?",
+    "key": "turn with very little friction"
+   },
+   {
+    "q": "What is between the inner and the outer ring?",
+    "key": "balls or rollers between them"
+   },
+   {
+    "q": "What keeps the balls evenly spaced?",
+    "key": "bearing cage"
+   },
+   {
+    "q": "Why do most bearings fail?",
+    "key": "poor lubrication, dirt, misalignment or wrong mounting"
+   },
+   {
+    "q": "What happens to a bearing that is beginning to fail?",
+    "key": "noisy and hot"
+   },
+   {
+    "q": "What checks help to find the problem early?",
+    "key": "checks of temperature and vibration"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.",
+    "voice": "us-f"
+   },
+   {
+    "text": "A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.",
+    "voice": "us-m"
+   },
+   {
+    "text": "A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-oil-change",
+  "module": "doc-structure",
+  "level": 1,
+  "topic": "maint",
+  "kind": "рабочая инструкция",
+  "title": "Work instruction: changing the gearbox oil",
+  "paragraphs": [
+   "This instruction applies to the main gearbox of conveyor line 3. The oil shall be changed every 4000 operating hours or once a year, whichever comes first. The work takes about one hour and needs two people.",
+   "Before you start, stop the conveyor and lock out the main switch with your personal lock. Let the gearbox cool down for at least 30 minutes, because hot oil can burn your skin. Put an oil tray under the drain plug, remove the plug and let the old oil drain completely.",
+   "Clean the magnetic drain plug and look for metal particles on it. A few fine particles are normal, but large pieces must be reported to the maintenance supervisor. Fit the plug with a new washer and fill the gearbox with 12 liters of fresh oil until the level is in the middle of the sight glass. Write the date and the hours in the maintenance log."
+  ],
+  "paragraphsRu": [
+   "Настоящая инструкция относится к главному редуктору конвейерной линии 3. Масло необходимо менять каждые 4000 моточасов или раз в год — смотря что наступит раньше. Работа занимает около часа и выполняется вдвоём.",
+   "Перед началом остановите конвейер и заблокируйте главный выключатель своим личным замком. Дайте редуктору остыть не менее 30 минут: горячее масло может обжечь кожу. Поставьте поддон под сливную пробку, выверните пробку и дайте старому маслу полностью стечь.",
+   "Очистите магнитную сливную пробку и осмотрите её на наличие металлических частиц. Немного мелких частиц — норма, но о крупных кусочках нужно сообщить мастеру службы ремонта. Установите пробку с новой шайбой и залейте в редуктор 12 литров свежего масла, пока уровень не дойдёт до середины смотрового стекла. Запишите дату и моточасы в журнал обслуживания."
+  ],
+  "summaries": [
+   [
+    "The instruction is for the conveyor gearbox, and the oil is changed every 4000 hours or yearly.",
+    "The oil is changed every week by one person.",
+    "The instruction is for all machines in the factory."
+   ],
+   [
+    "Stop and lock out the conveyor, let the gearbox cool, and drain the old oil.",
+    "Drain the oil while it is still hot to save time.",
+    "The conveyor can keep running during the oil change."
+   ],
+   [
+    "Check the plug for metal, refit it with a new washer, add fresh oil and record the work.",
+    "Large metal pieces on the plug are normal and need no report.",
+    "The old washer should always be used again."
+   ]
+  ],
+  "retell": [
+   "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+   "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+   "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log."
+  ],
+  "parse": {
+   "sentence": "Fit the plug with a new washer and fill the gearbox with 12 liters of fresh oil until the level is in the middle of the sight glass.",
+   "parts": [
+    [
+     "Fit the plug with a new washer",
+     "повелительное: установите пробку с новой шайбой"
+    ],
+    [
+     "and fill the gearbox with 12 liters of fresh oil",
+     "и залейте в редуктор 12 литров свежего масла"
+    ],
+    [
+     "until the level is in the middle of the sight glass",
+     "пока уровень не дойдёт до середины смотрового стекла (until — пока не)"
+    ]
+   ],
+   "q": "When do you stop filling the oil?",
+   "options": [
+    "When the level is in the middle of the sight glass",
+    "When the oil starts to leak",
+    "After exactly one hour"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "How often shall the oil be changed?",
+    "key": "every 4000 operating hours"
+   },
+   {
+    "q": "How many people are needed?",
+    "key": "needs two people"
+   },
+   {
+    "q": "What must you lock out?",
+    "key": "lock out the main switch"
+   },
+   {
+    "q": "How long should the gearbox cool down?",
+    "key": "at least 30 minutes"
+   },
+   {
+    "q": "Why must you wait before draining the oil?",
+    "key": "hot oil can burn your skin"
+   },
+   {
+    "q": "What must be reported to the supervisor?",
+    "key": "large pieces must be reported"
+   },
+   {
+    "q": "How much fresh oil is needed?",
+    "key": "12 liters of fresh oil"
+   },
+   {
+    "q": "Where do you write the date and the hours?",
+    "key": "in the maintenance log"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-tool-wear",
+  "module": "doc-abstract",
+  "level": 2,
+  "topic": "mach",
+  "kind": "аннотация",
+  "title": "Tool life of coated carbide inserts with minimum quantity lubrication",
+  "paragraphs": [
+   "Flood coolant improves tool life in milling, but it is expensive to buy, filter and dispose of, and it can be harmful to operators. In this study, we compare dry milling, flood coolant and minimum quantity lubrication (MQL) when face milling a 42CrMo4 steel with coated carbide inserts.",
+   "All tests were carried out on a vertical machining center at a cutting speed of 200 m/min and a feed of 0.15 mm per tooth. Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm. The surface roughness of the workpiece was measured at the same intervals.",
+   "With MQL, the tool life was 38 minutes, compared with 41 minutes for flood coolant and 22 minutes for dry milling. The surface roughness was similar for MQL and flood coolant, about Ra 0.9 µm. The results suggest that MQL can replace flood coolant in this operation and reduce the use of cutting fluid by more than 95 percent."
+  ],
+  "paragraphsRu": [
+   "Обильный полив СОЖ повышает стойкость инструмента при фрезеровании, но жидкость дорого покупать, очищать и утилизировать, к тому же она может вредить здоровью операторов. В этом исследовании мы сравниваем фрезерование всухую, с обильным поливом СОЖ и с минимальной смазкой (MQL) при торцевом фрезеровании стали 42CrMo4 твердосплавными пластинами с покрытием.",
+   "Все испытания проводили на вертикальном обрабатывающем центре при скорости резания 200 м/мин и подаче 0,15 мм на зуб. Износ по задней поверхности измеряли оптическим микроскопом через каждые десять проходов; окончанием стойкости считали износ по задней поверхности 0,3 мм. Шероховатость поверхности заготовки измеряли с тем же интервалом.",
+   "С MQL стойкость составила 38 минут — против 41 минуты с обильным поливом и 22 минут всухую. Шероховатость поверхности с MQL и с поливом оказалась близкой, около Ra 0,9 мкм. Результаты позволяют предположить, что в этой операции MQL может заменить обильный полив и сократить расход СОЖ более чем на 95 процентов."
+  ],
+  "summaries": [
+   [
+    "The study compares dry milling, flood coolant and MQL because coolant is costly and can be harmful.",
+    "The study shows how to make new carbide inserts.",
+    "The study compares different steels without any cooling."
+   ],
+   [
+    "Tests on a machining center measured flank wear and roughness at regular intervals.",
+    "Tool life ended when the insert broke into pieces.",
+    "Wear was measured only once at the end of the test."
+   ],
+   [
+    "MQL gave almost the same tool life and surface as flood coolant with far less fluid.",
+    "Dry milling gave the longest tool life.",
+    "MQL made the surface much rougher than flood coolant."
+   ]
+  ],
+  "retell": [
+   "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+   "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+   "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant."
+  ],
+  "parse": {
+   "sentence": "Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm.",
+   "parts": [
+    [
+     "Flank wear was measured with an optical microscope",
+     "пассив: износ по задней поверхности измеряли оптическим микроскопом"
+    ],
+    [
+     "after every ten passes",
+     "через каждые десять проходов"
+    ],
+    [
+     "and the end of tool life was defined as a flank wear of 0.3 mm",
+     "пассив: окончанием стойкости считали износ 0,3 мм"
+    ]
+   ],
+   "q": "When did the tool life end?",
+   "options": [
+    "When the flank wear reached 0.3 mm",
+    "After ten passes",
+    "When the roughness reached Ra 0.9 µm"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "Why is flood coolant a problem?",
+    "key": "expensive to buy, filter and dispose of"
+   },
+   {
+    "q": "What steel was milled?",
+    "key": "42CrMo4 steel"
+   },
+   {
+    "q": "What was the cutting speed?",
+    "key": "cutting speed of 200 m/min"
+   },
+   {
+    "q": "How was flank wear measured?",
+    "key": "optical microscope"
+   },
+   {
+    "q": "What flank wear defined the end of tool life?",
+    "key": "flank wear of 0.3 mm"
+   },
+   {
+    "q": "What was the tool life with MQL?",
+    "key": "tool life was 38 minutes"
+   },
+   {
+    "q": "What was the tool life in dry milling?",
+    "key": "22 minutes for dry milling"
+   },
+   {
+    "q": "How much can MQL reduce the use of cutting fluid?",
+    "key": "more than 95 percent"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+    "voice": "us-f"
+   },
+   {
+    "text": "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+    "voice": "us-m"
+   },
+   {
+    "text": "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant.",
+    "voice": "us-f"
+   },
+   {
+    "text": "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant.",
+    "voice": "us-m"
+   },
+   {
+    "text": "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-bolt-loosening",
+  "module": "doc-abstract",
+  "level": 2,
+  "topic": "join",
+  "kind": "аннотация",
+  "title": "Self-loosening of bolted joints under transverse vibration",
+  "paragraphs": [
+   "Bolted joints in machines and vehicles often work under vibration, and they can lose their clamp load over time. This paper investigates how three locking methods affect the self-loosening of M10 bolts of property class 8.8 under transverse vibration.",
+   "The joints were tightened to a preload of 28 kN and tested on a Junker-type machine, which moves the clamped plates sideways by ±0.4 mm at 12.5 Hz. Plain joints were compared with joints using a split lock washer, a nylon-insert lock nut and a liquid thread locker. The clamp load was recorded continuously with a load washer.",
+   "Plain joints lost 80 percent of their preload within 300 cycles. The split lock washer gave almost no improvement, whereas the lock nut kept about 60 percent of the preload after 2000 cycles. The thread locker performed best: the loss of preload was less than 10 percent. The authors conclude that split washers should not be used to prevent loosening under transverse vibration."
+  ],
+  "paragraphsRu": [
+   "Болтовые соединения в машинах и транспортных средствах часто работают в условиях вибрации и со временем могут терять усилие затяжки. В статье исследуется, как три способа стопорения влияют на самоотвинчивание болтов M10 класса прочности 8.8 при поперечной вибрации.",
+   "Соединения затягивали до усилия 28 кН и испытывали на машине типа Юнкера, которая смещает стянутые пластины вбок на ±0,4 мм с частотой 12,5 Гц. Соединения без стопорения сравнивали с соединениями с пружинной шайбой, гайкой с нейлоновым кольцом и жидким фиксатором резьбы. Усилие затяжки непрерывно регистрировали датчиком-шайбой.",
+   "Соединения без стопорения потеряли 80 процентов затяжки за 300 циклов. Пружинная шайба почти ничего не улучшила, тогда как самоконтрящаяся гайка сохранила около 60 процентов затяжки после 2000 циклов. Лучше всех показал себя фиксатор резьбы: потеря затяжки составила менее 10 процентов. Авторы делают вывод, что пружинные шайбы не следует применять для защиты от самоотвинчивания при поперечной вибрации."
+  ],
+  "summaries": [
+   [
+    "The paper studies how locking methods stop bolts from loosening under vibration.",
+    "The paper explains how to make M10 bolts.",
+    "The paper shows that vibration increases the clamp load."
+   ],
+   [
+    "Preloaded joints with different locking methods were shaken sideways, and the clamp load was recorded.",
+    "The joints were tested without any preload.",
+    "The clamp load was measured only once at the end."
+   ],
+   [
+    "Plain joints and split washers loosened fast, the lock nut helped, and thread locker worked best.",
+    "The split lock washer was the best method.",
+    "The thread locker lost most of its preload."
+   ]
+  ],
+  "retell": [
+   "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+   "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+   "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent."
+  ],
+  "parse": {
+   "sentence": "The split lock washer gave almost no improvement, whereas the lock nut kept about 60 percent of the preload after 2000 cycles.",
+   "parts": [
+    [
+     "The split lock washer gave almost no improvement,",
+     "пружинная шайба почти ничего не улучшила"
+    ],
+    [
+     "whereas",
+     "тогда как — противопоставление"
+    ],
+    [
+     "the lock nut kept about 60 percent of the preload after 2000 cycles",
+     "самоконтрящаяся гайка сохранила около 60% затяжки после 2000 циклов"
+    ]
+   ],
+   "q": "Which method kept about 60 percent of the preload?",
+   "options": [
+    "The lock nut",
+    "The split lock washer",
+    "The plain joint"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What property class were the bolts?",
+    "key": "property class 8.8"
+   },
+   {
+    "q": "What preload were the joints tightened to?",
+    "key": "preload of 28 kN"
+   },
+   {
+    "q": "How far were the plates moved?",
+    "key": "sideways by ±0.4 mm"
+   },
+   {
+    "q": "What measured the clamp load?",
+    "key": "with a load washer"
+   },
+   {
+    "q": "How fast did plain joints lose their preload?",
+    "key": "within 300 cycles"
+   },
+   {
+    "q": "How much preload did the lock nut keep?",
+    "key": "about 60 percent of the preload"
+   },
+   {
+    "q": "Which locking method performed best?",
+    "key": "thread locker performed best"
+   },
+   {
+    "q": "What should not be used to prevent loosening?",
+    "key": "split washers should not be used"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-pump-test",
+  "module": "doc-grammar",
+  "level": 2,
+  "topic": "hyd",
+  "kind": "методика",
+  "title": "Test method: performance test of a gear pump",
+  "paragraphs": [
+   "After repair, every gear pump is subjected to a performance test on the hydraulic test bench before it is returned to the customer. The test is carried out with ISO VG 46 hydraulic oil at a temperature of 50 ± 3 °C, because the viscosity of the oil strongly affects the results.",
+   "The pump is driven by an electric motor at its rated speed of 1500 rpm. The outlet pressure is increased in steps of 50 bar from zero to the rated pressure of 200 bar by a loading valve. At each step, the flow rate is measured with a gear-type flow meter, and the input torque is recorded.",
+   "The volumetric efficiency is calculated as the measured flow divided by the theoretical flow. A pump is accepted if its volumetric efficiency at rated pressure is at least 90 percent and no external leakage is found. Pumps that do not meet this criterion are dismantled again, and the worn parts are replaced."
+  ],
+  "paragraphsRu": [
+   "После ремонта каждый шестерённый насос проходит испытания на рабочие характеристики на гидравлическом стенде, прежде чем его вернут заказчику. Испытания проводят на гидравлическом масле ISO VG 46 при температуре 50 ± 3 °C, поскольку вязкость масла сильно влияет на результаты.",
+   "Насос приводится электродвигателем с номинальной частотой вращения 1500 об/мин. Давление на выходе нагрузочным клапаном повышают ступенями по 50 бар от нуля до номинального давления 200 бар. На каждой ступени расход измеряют шестерённым расходомером и регистрируют крутящий момент на входе.",
+   "Объёмный КПД рассчитывают как отношение измеренной подачи к теоретической. Насос принимают, если его объёмный КПД при номинальном давлении не менее 90 процентов и наружных утечек нет. Насосы, не удовлетворяющие этому критерию, снова разбирают и заменяют изношенные детали."
+  ],
+  "summaries": [
+   [
+    "Repaired gear pumps are tested on a bench with oil at a controlled temperature.",
+    "Repaired pumps are sent to the customer without any test.",
+    "The oil temperature does not matter in this test."
+   ],
+   [
+    "The pump runs at rated speed while the pressure is raised step by step and flow and torque are measured.",
+    "The pressure is raised at once to 500 bar.",
+    "The pump is turned by hand during the test."
+   ],
+   [
+    "A volumetric efficiency of at least 90 percent with no leaks is needed; otherwise the pump is repaired again.",
+    "Pumps with 70 percent efficiency are accepted.",
+    "Pumps that fail the test are sent to the customer anyway."
+   ]
+  ],
+  "retell": [
+   "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+   "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+   "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again."
+  ],
+  "parse": {
+   "sentence": "The outlet pressure is increased in steps of 50 bar from zero to the rated pressure of 200 bar by a loading valve.",
+   "parts": [
+    [
+     "The outlet pressure",
+     "подлежащее (цепочка): давление на выходе"
+    ],
+    [
+     "is increased in steps of 50 bar from zero to the rated pressure of 200 bar",
+     "пассив: повышается ступенями по 50 бар от нуля до номинальных 200 бар"
+    ],
+    [
+     "by a loading valve",
+     "чем: нагрузочным клапаном (by + исполнитель действия)"
+    ]
+   ],
+   "q": "What increases the outlet pressure?",
+   "options": [
+    "A loading valve",
+    "The electric motor",
+    "The flow meter"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "When is the performance test carried out?",
+    "key": "After repair"
+   },
+   {
+    "q": "What oil is used?",
+    "key": "ISO VG 46"
+   },
+   {
+    "q": "Why is the oil temperature controlled?",
+    "key": "viscosity of the oil strongly affects"
+   },
+   {
+    "q": "What is the rated speed of the pump?",
+    "key": "rated speed of 1500 rpm"
+   },
+   {
+    "q": "In what steps is the pressure increased?",
+    "key": "in steps of 50 bar"
+   },
+   {
+    "q": "What is the flow rate measured with?",
+    "key": "gear-type flow meter"
+   },
+   {
+    "q": "How is the volumetric efficiency calculated?",
+    "key": "divided by the theoretical flow"
+   },
+   {
+    "q": "What happens to pumps that do not meet the criterion?",
+    "key": "dismantled again"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again.",
+    "voice": "us-f"
+   },
+   {
+    "text": "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again.",
+    "voice": "us-m"
+   },
+   {
+    "text": "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-bolt-req",
+  "module": "doc-standard",
+  "level": 3,
+  "topic": "join",
+  "kind": "требования",
+  "title": "Assembly requirements for bolted joints of a press frame",
+  "paragraphs": [
+   "All structural bolted joints of the press frame shall use bolts of property class 10.9 with hardened washers under both the bolt head and the nut. Bolts shall be tightened with a calibrated torque wrench to the values given in Table 3, which correspond to a preload of approximately 70 percent of the proof load of the bolt. Impact wrenches may be used for running down the bolts, but not for final tightening.",
+   "Joints with more than four bolts shall be tightened in a cross pattern in at least two passes: first to 50 percent and then to 100 percent of the specified torque. After final tightening, each bolt should be marked with a paint line across the head and the washer, so that any later rotation can be detected during inspection.",
+   "Bolts of property class 10.9 that have been tightened to full preload shall not be reused. Thread lubricant may be applied only if it is specified in the drawing, because it changes the relationship between torque and preload by up to 30 percent. Any joint in which the specified torque cannot be reached shall be reported to the design department before the press is put into operation."
+  ],
+  "paragraphsRu": [
+   "Во всех силовых болтовых соединениях рамы пресса должны применяться болты класса прочности 10.9 с закалёнными шайбами под головкой болта и под гайкой. Болты должны затягиваться тарированным динамометрическим ключом до значений из таблицы 3, которые соответствуют усилию затяжки примерно 70 процентов пробной нагрузки болта. Ударные гайковёрты допускается применять для наживления болтов, но не для окончательной затяжки.",
+   "Соединения, в которых более четырёх болтов, должны затягиваться крест-накрест не менее чем в два прохода: сначала до 50, затем до 100 процентов заданного момента. После окончательной затяжки каждый болт рекомендуется пометить краской — линией через головку и шайбу, чтобы при осмотре можно было обнаружить последующий поворот.",
+   "Болты класса прочности 10.9, уже затянутые на полное усилие, повторно применять запрещается. Смазку резьбы допускается наносить, только если она указана на чертеже, поскольку она меняет соотношение между моментом и усилием затяжки до 30 процентов. О любом соединении, в котором не удаётся достичь заданного момента, необходимо сообщить в конструкторский отдел до ввода пресса в эксплуатацию."
+  ],
+  "summaries": [
+   [
+    "Frame joints need 10.9 bolts with hardened washers, tightened by a calibrated torque wrench to Table 3.",
+    "Any bolts may be used if they fit the holes.",
+    "Impact wrenches must be used for final tightening."
+   ],
+   [
+    "Large joints are tightened crosswise in two passes, and bolts should be paint-marked.",
+    "All bolts are tightened to full torque in one pass, one after another.",
+    "Paint marks are forbidden on bolt heads."
+   ],
+   [
+    "Tightened 10.9 bolts must not be reused, lubricant needs the drawing, and problem joints must be reported.",
+    "Bolts of class 10.9 may be reused many times.",
+    "Lubricant has no effect on the preload."
+   ]
+  ],
+  "retell": [
+   "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+   "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+   "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported."
+  ],
+  "parse": {
+   "sentence": "Bolts of property class 10.9 that have been tightened to full preload shall not be reused.",
+   "parts": [
+    [
+     "Bolts of property class 10.9",
+     "подлежащее: болты класса прочности 10.9"
+    ],
+    [
+     "that have been tightened to full preload",
+     "уточнение: которые уже затянуты на полное усилие (пассив в Present Perfect)"
+    ],
+    [
+     "shall not be reused",
+     "обязательный запрет: повторно не применять"
+    ]
+   ],
+   "q": "Which bolts must not be used again?",
+   "options": [
+    "10.9 bolts already tightened to full preload",
+    "All new bolts",
+    "Bolts with paint marks"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What must be placed under the bolt head and the nut?",
+    "key": "hardened washers"
+   },
+   {
+    "q": "What tool shall be used for tightening?",
+    "key": "calibrated torque wrench"
+   },
+   {
+    "q": "What preload do the values in Table 3 correspond to?",
+    "key": "approximately 70 percent of the proof load"
+   },
+   {
+    "q": "What may impact wrenches be used for?",
+    "key": "running down the bolts"
+   },
+   {
+    "q": "In what pattern shall large joints be tightened?",
+    "key": "in a cross pattern"
+   },
+   {
+    "q": "Why should each bolt be marked with a paint line?",
+    "key": "later rotation can be detected"
+   },
+   {
+    "q": "Which bolts shall not be reused?",
+    "key": "shall not be reused"
+   },
+   {
+    "q": "How much can thread lubricant change the torque–preload relationship?",
+    "key": "by up to 30 percent"
+   },
+   {
+    "q": "Who must be told if the torque cannot be reached?",
+    "key": "reported to the design department"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-weld-inspection",
+  "module": "doc-standard",
+  "level": 2,
+  "topic": "join",
+  "kind": "отчёт о контроле",
+  "title": "Inspection report: welds of a machine base frame",
+  "paragraphs": [
+   "Report number: IR-2026-118. Item: welded base frame for a grinding machine, drawing WF-310, revision A. Inspection method: visual inspection of all welds, followed by dye penetrant testing of the four lifting lugs. Acceptance criteria: quality level B according to the customer specification.",
+   "Most welds were found to be acceptable. However, on weld 14, an undercut 0.8 mm deep and 25 mm long was measured, while the maximum allowed depth is 0.5 mm. Weld spatter was found near weld 9, and it was removed by grinding during the inspection. No cracks were detected on the lifting lugs.",
+   "Disposition: weld 14 shall be repaired by grinding the undercut area and adding one more weld pass, and then inspected again. The welder confirmed that the welding current had been set too high for the plate thickness of 6 mm. Status: the frame is on hold until the repair is accepted by the quality inspector."
+  ],
+  "paragraphsRu": [
+   "Номер отчёта: IR-2026-118. Изделие: сварная станина шлифовального станка, чертёж WF-310, редакция A. Метод контроля: визуальный контроль всех швов, затем капиллярный контроль четырёх грузовых проушин. Критерии приёмки: уровень качества B по техническим условиям заказчика.",
+   "Большинство швов признаны годными. Однако на шве 14 измерен подрез глубиной 0,8 мм и длиной 25 мм, тогда как максимально допустимая глубина — 0,5 мм. Возле шва 9 обнаружены брызги металла; их удалили шлифовкой во время контроля. Трещин на грузовых проушинах не выявлено.",
+   "Решение: шов 14 исправить — зашлифовать зону подреза и наложить ещё один проход, затем проконтролировать повторно. Сварщик подтвердил, что сварочный ток был выставлен слишком большим для толщины листа 6 мм. Статус: станина задержана до приёмки исправления контролёром ОТК."
+  ],
+  "summaries": [
+   [
+    "The report gives the item, the inspection methods and the acceptance criteria.",
+    "The report describes how the frame was designed.",
+    "Only the lifting lugs were inspected."
+   ],
+   [
+    "One weld had a too-deep undercut, spatter was removed, and no cracks were found.",
+    "Cracks were found on all four lifting lugs.",
+    "The undercut on weld 14 was within the limit."
+   ],
+   [
+    "Weld 14 will be repaired and checked again; the current was too high, and the frame is on hold.",
+    "The frame was shipped to the customer without repair.",
+    "The cause was a wrong drawing revision."
+   ]
+  ],
+  "retell": [
+   "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+   "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+   "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted."
+  ],
+  "parse": {
+   "sentence": "However, on weld 14, an undercut 0.8 mm deep and 25 mm long was measured, while the maximum allowed depth is 0.5 mm.",
+   "parts": [
+    [
+     "However, on weld 14,",
+     "однако на шве 14"
+    ],
+    [
+     "an undercut 0.8 mm deep and 25 mm long was measured",
+     "пассив: измерен подрез глубиной 0,8 мм и длиной 25 мм (размеры стоят после слова)"
+    ],
+    [
+     "while the maximum allowed depth is 0.5 mm",
+     "тогда как максимально допустимая глубина — 0,5 мм"
+    ]
+   ],
+   "q": "Is the undercut on weld 14 acceptable?",
+   "options": [
+    "No, it is deeper than allowed",
+    "Yes, it is within the limit",
+    "It was not measured"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What machine is the frame for?",
+    "key": "for a grinding machine"
+   },
+   {
+    "q": "Which parts were tested with dye penetrant?",
+    "key": "four lifting lugs"
+   },
+   {
+    "q": "What quality level is required?",
+    "key": "quality level B"
+   },
+   {
+    "q": "How deep was the undercut on weld 14?",
+    "key": "0.8 mm deep"
+   },
+   {
+    "q": "What is the maximum allowed depth?",
+    "key": "maximum allowed depth is 0.5 mm"
+   },
+   {
+    "q": "How was the spatter removed?",
+    "key": "removed by grinding"
+   },
+   {
+    "q": "Why did the undercut appear?",
+    "key": "current had been set too high"
+   },
+   {
+    "q": "Who must accept the repair?",
+    "key": "accepted by the quality inspector"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+    "voice": "us-f"
+   },
+   {
+    "text": "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+    "voice": "us-m"
+   },
+   {
+    "text": "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "t-mech-contamination",
+  "module": "doc-speed",
+  "level": 3,
+  "topic": "maint",
+  "kind": "обсуждение",
+  "title": "Contamination: the main cause of hydraulic failures",
+  "paragraphs": [
+   "Industry surveys repeatedly show that most failures of hydraulic systems are caused by contaminated fluid rather than by design faults. Solid particles, water and air all reduce the service life of components, but hard particles of about the same size as the internal clearances, typically 5 to 15 µm, are the most damaging, because they enter the gaps between moving parts and cause abrasive wear.",
+   "Water is often underestimated. Even a small amount of free water reduces the lubricating ability of the oil, promotes corrosion and, at high pressures, can lead to cavitation damage in pumps. Air entering through a loose suction fitting has a similar effect and is usually noticed first as a loud noise from the pump.",
+   "Cleanliness is therefore specified as a code according to ISO 4406, which gives the number of particles larger than 4, 6 and 14 µm per milliliter of fluid. For a system with servo valves, a typical target is 16/14/11. Lowering the code by one step roughly halves the number of particles, and in practice the cost of better filtration is usually much smaller than the cost of unplanned downtime and replaced components."
+  ],
+  "paragraphsRu": [
+   "Отраслевые обзоры раз за разом показывают, что большинство отказов гидросистем вызвано загрязнённой рабочей жидкостью, а не ошибками конструкции. Твёрдые частицы, вода и воздух — все они сокращают срок службы элементов, но опаснее всего твёрдые частицы размером примерно с внутренние зазоры, обычно 5–15 мкм: они попадают в щели между движущимися деталями и вызывают абразивный износ.",
+   "Воду часто недооценивают. Даже небольшое количество свободной воды ухудшает смазывающую способность масла, способствует коррозии, а при высоком давлении может привести к кавитационному разрушению насосов. Воздух, подсасываемый через неплотный штуцер всасывающей линии, действует так же, и первым признаком обычно бывает громкий шум насоса.",
+   "Поэтому чистоту жидкости задают кодом по ISO 4406, который указывает число частиц крупнее 4, 6 и 14 мкм на миллилитр жидкости. Для системы с сервоклапанами типичная цель — 16/14/11. Снижение кода на одну ступень примерно вдвое уменьшает число частиц, а на практике лучшая фильтрация обычно обходится намного дешевле внепланового простоя и замены элементов."
+  ],
+  "summaries": [
+   [
+    "Most hydraulic failures come from contamination, and particles the size of the clearances are the worst.",
+    "Most hydraulic failures are caused by design faults.",
+    "Very large particles are the most dangerous because they block the pipes."
+   ],
+   [
+    "Water and air also damage the system, causing poor lubrication, corrosion, cavitation and noise.",
+    "A little water in the oil improves lubrication.",
+    "Air in the oil makes the pump quieter."
+   ],
+   [
+    "Cleanliness is set by an ISO 4406 code, and better filtration is cheaper than downtime.",
+    "ISO 4406 measures the viscosity of the oil.",
+    "Better filtration usually costs more than unplanned downtime."
+   ]
+  ],
+  "retell": [
+   "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+   "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+   "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime."
+  ],
+  "parse": {
+   "sentence": "Solid particles, water and air all reduce the service life of components, but hard particles of about the same size as the internal clearances, typically 5 to 15 µm, are the most damaging, because they enter the gaps between moving parts and cause abrasive wear.",
+   "parts": [
+    [
+     "Solid particles, water and air all reduce the service life of components,",
+     "первая часть: твёрдые частицы, вода и воздух — все сокращают срок службы элементов"
+    ],
+    [
+     "but hard particles of about the same size as the internal clearances, typically 5 to 15 µm,",
+     "подлежащее второй части: твёрдые частицы размером с внутренние зазоры, обычно 5–15 мкм"
+    ],
+    [
+     "are the most damaging, because they enter the gaps … and cause abrasive wear",
+     "сказуемое: опаснее всего, потому что попадают в зазоры и вызывают абразивный износ"
+    ]
+   ],
+   "q": "Why are particles of 5 to 15 µm the most damaging?",
+   "options": [
+    "They enter the gaps between moving parts",
+    "They make the oil too thick",
+    "They block the suction fitting"
+   ],
+   "answer": 0
+  },
+  "find": [
+   {
+    "q": "What causes most failures of hydraulic systems?",
+    "key": "contaminated fluid"
+   },
+   {
+    "q": "What particle size is the most damaging?",
+    "key": "typically 5 to 15 µm"
+   },
+   {
+    "q": "What kind of wear do hard particles cause?",
+    "key": "abrasive wear"
+   },
+   {
+    "q": "What can water lead to at high pressures?",
+    "key": "cavitation damage in pumps"
+   },
+   {
+    "q": "How is air in the system usually noticed first?",
+    "key": "loud noise from the pump"
+   },
+   {
+    "q": "Which standard gives the cleanliness code?",
+    "key": "according to ISO 4406"
+   },
+   {
+    "q": "What is a typical target for a system with servo valves?",
+    "key": "16/14/11"
+   },
+   {
+    "q": "What happens when the code is lowered by one step?",
+    "key": "roughly halves the number of particles"
+   }
+  ],
+  "source": "Houston (собственный текст)",
+  "license": "собственный текст приложения",
+  "speak": [
+   {
+    "text": "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime.",
+    "voice": "us-f"
+   },
+   {
+    "text": "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime.",
+    "voice": "us-m"
+   },
+   {
+    "text": "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
  }
 ]

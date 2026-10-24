@@ -10,6 +10,8 @@
 import json
 from pathlib import Path
 
+from fields import space_field, with_field
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content"
 STD = ["us-f", "us-m", "gb-f", "gb-m"]  # голоса образцов: вариант языка × пол из настроек
@@ -368,6 +370,34 @@ PASSAGES = [
             ("Почему сборка заняла три месяца?", ["Из-за защитного кожуха", "Из-за гидравлического привода", "Из-за программы сбора данных"]),
         ],
     },
+    # Машиностроительный близнец p-interview: те же персонажи, тот же ход ответа по STAR, те же вопросы.
+    {
+        "id": "p-interview-mech", "field": "mech", "title": "Собеседование: вопрос о проекте", "kind": "собеседование",
+        "situation": "Майк спрашивает кандидатку Грейс о её проекте. Так звучит хороший ответ по методу STAR.",
+        "lines": [
+            ("mike", "So, tell me about a project you're proud of.",
+             "Итак, расскажите о проекте, которым вы гордитесь."),
+            ("grace", "Sure. Last year I worked on a gearbox housing for a student racing team. I was responsible for the machining process.",
+             "Конечно. В прошлом году я работала над корпусом редуктора для студенческой гоночной команды. Я отвечала за технологию механической обработки."),
+            ("mike", "What was the main challenge?",
+             "В чём была главная трудность?"),
+            ("grace", "The housing kept moving in the fixture, so the bore positions were out of tolerance. We couldn't buy a new fixture because of the budget, so I suggested adding a third clamp and changing the order of operations instead.",
+             "Корпус всё время смещался в приспособлении, и положение отверстий выходило за допуск. Купить новое приспособление мы не могли из-за бюджета, поэтому я предложила вместо этого добавить третий прижим и поменять порядок операций."),
+            ("mike", "And did it work?",
+             "И это сработало?"),
+            ("grace", "It did. The position error dropped from about a tenth of a millimetre to twenty microns, and we stayed within the budget.",
+             "Да. Погрешность положения снизилась примерно с десятой доли миллиметра до двадцати микрон, и мы уложились в бюджет."),
+            ("mike", "Nice. What would you do differently next time?",
+             "Отлично. Что бы вы сделали иначе в следующий раз?"),
+            ("grace", "I'd check the fixture earlier. We found the problem quite late, and it cost us a few weeks.",
+             "Я бы раньше проверила приспособление. Мы обнаружили проблему довольно поздно, и это стоило нам нескольких недель."),
+        ],
+        "questions": [
+            ("За что отвечала Грейс?", ["За технологию механической обработки", "За закупки", "За сборку редуктора"]),
+            ("Как решили проблему?", ["Добавили третий прижим и поменяли порядок операций", "Купили новое приспособление", "Расширили допуск на отверстия"]),
+            ("Что она сделала бы иначе?", ["Раньше проверила бы приспособление", "Выбрала бы другой корпус", "Попросила бы больше бюджета"]),
+        ],
+    },
 ]
 
 # ——— Позывной: чанки по функциям. (чанк, перевод, пример, перевод примера) ———
@@ -464,6 +494,16 @@ FUNCTIONS = {
     "call-explain": "объяснить просто",
     "call-disagree": "возразить / не знаю",
     "call-questions": "вопросы работодателю",
+}
+
+# Чанки общие для всех (сам чанк не про космос), но пример у некоторых космический: для механиков
+# подменяем только пример — byField.mech. Отдельный чанк-близнец с тем же en ломал бы проверку повторов
+# и подсказки «Моего рассказа» (они ссылаются на эти id).
+CHUNK_EXAMPLES_MECH = {
+    "c-intro-02": ("I'm a fourth-year student in mechanical engineering.", "Я студент четвёртого курса, машиностроение."),
+    "c-intro-04": ("My background is in mechanical engineering.", "По специальности я инженер-машиностроитель."),
+    "c-intro-08": ("In my free time, I like to fix things in my garage.", "В свободное время я люблю что-нибудь чинить в гараже."),
+    "c-project-04": ("The main challenge was the vibration during cutting.", "Главной трудностью была вибрация при резании."),
 }
 
 # ——— Позывной: вопросы для быстрого ответа (голоса — разные акценты) ———
@@ -682,6 +722,39 @@ SUBSTITUTION = {
     ],
 }
 
+# ——— Машиностроительные близнецы космических элементов (field="mech") ———
+# Идут после всех старых элементов модуля: id продолжают нумерацию, у старых ничего не сдвигается.
+# Близнец — тот же учебный приём и та же трудность, что у космического элемента того же модуля.
+QUESTIONS_MECH = {
+    "call-time": [
+        # ← If you could work on any space mission, which one would it be?
+        ("If you could build any machine, what would it be?", "Если бы можно было построить любую машину — какую?"),
+    ],
+    "call-explain": [
+        # ← How does a rocket engine work, in simple terms?
+        ("How does a hydraulic press work, in simple terms?", "Как работает гидравлический пресс, если просто?"),
+        # ← What does a nozzle do, in simple terms?
+        ("What does a gearbox do, in simple terms?", "Что делает редуктор, если просто?"),
+        # ← Why do rockets have several stages?
+        ("Why do we use coolant when we cut metal?", "Зачем при резании металла нужна СОЖ?"),
+        # ← How does a satellite stay in orbit?
+        ("How does a bolt hold two parts together?", "Как болт удерживает две детали вместе?"),
+        # ← Why do engineers worry about vibration during launch?
+        ("Why do engineers worry about vibration in machine tools?", "Почему инженеров беспокоит вибрация станков?"),
+    ],
+}
+TRANSLATE_MECH = {
+    "call-intro": [
+        ("Я студент четвёртого курса, учусь на машиностроении.", "I'm a fourth-year student studying mechanical engineering."),
+    ],
+}
+SUBSTITUTION_MECH = {
+    "call-intro": [
+        ("My background is in mechanical engineering.", "По специальности я инженер-машиностроитель.",
+         [("технология машиностроения", "My background is in manufacturing engineering."), ("материаловедение", "My background is in materials science."), ("прикладная математика", "My background is in applied mathematics.")]),
+    ],
+}
+
 
 def slug(module: str, i: int) -> str:
     return f"{module.split('-', 1)[1]}-{i + 1:02d}"
@@ -689,6 +762,13 @@ def slug(module: str, i: int) -> str:
 
 def std_speak(*texts: str | None) -> list[dict]:
     return [{"text": t, "voice": v} for t in texts if t for v in STD]
+
+
+def check_twins(what: str, items: list[dict]):
+    """В каждом модуле космических элементов столько же, сколько машиностроительных близнецов."""
+    for m in {x["module"] for x in items}:
+        n = {f: sum(1 for x in items if x["module"] == m and x.get("field") == f) for f in ("space", "mech")}
+        assert n["space"] == n["mech"], f"{what}, {m}: space {n['space']} ≠ mech {n['mech']}"
 
 
 def build():
@@ -704,19 +784,23 @@ def build():
             p = {"id": f"l-{slug(module, i)}", "module": module, "text": text, "options": [text, *wrong], "ru": ru, "focus": focus, "voice": voice, "reviewed": False}
             if rest:
                 p["say"] = rest[0]
-            phrases.append(p)
+            phrases.append(with_field(p, space_field(text, ru)))
     for i, (text, wrong, ru, focus) in enumerate(ACCENT_PHRASES):
         voices = ACCENT_SETS[i % 2]
-        phrases.append({"id": f"l-accents-{i + 1:02d}", "module": "air-accents", "text": text, "options": [text, *wrong], "ru": ru, "focus": focus, "voice": voices[0], "voices": voices, "reviewed": False})
+        phrases.append(with_field({"id": f"l-accents-{i + 1:02d}", "module": "air-accents", "text": text, "options": [text, *wrong], "ru": ru, "focus": focus, "voice": voices[0], "voices": voices, "reviewed": False}, space_field(text, ru)))
+    assert not any(p.get("field") for p in phrases), "космическая фраза Эфира — нужен близнец field='mech' в том же модуле"
 
     passages = []
     for p in PASSAGES:
-        passages.append({
+        texts = [p["title"], p["situation"], *[x for _, t, ru in p["lines"] for x in (t, ru)], *[x for q, opts in p["questions"] for x in (q, *opts)]]
+        field = p.get("field") or space_field(*texts)
+        assert field != "mech" or not space_field(*texts), f"{p['id']}: в близнеце-механике космические слова"
+        passages.append(with_field({
             "id": p["id"], "module": "air-long", "title": p["title"], "kind": p["kind"], "situation": p["situation"],
             "lines": [{"speaker": s, "voice": VOICE[s], "text": t, "ru": ru} for s, t, ru in p["lines"]],
             "questions": [{"q": q, "options": opts, "answer": 0} for q, opts in p["questions"]],
             "reviewed": False,
-        })
+        }, field))
 
     connected = [{"module": m, **v} for m, v in CONNECTED.items()]
 
@@ -724,40 +808,70 @@ def build():
     for module, items in CHUNKS.items():
         for i, (en, ru, ex, ex_ru) in enumerate(items):
             c = {"id": f"c-{slug(module, i)}", "module": module, "fn": FUNCTIONS[module], "en": en, "ru": ru, "reviewed": False}
+            assert not space_field(en, ru), f"{c['id']}: сам чанк про космос — нужен близнец"
             if ex:
                 c["example"] = ex
                 c["exampleRu"] = ex_ru
             c["speak"] = std_speak(en, ex)
+            if c["id"] in CHUNK_EXAMPLES_MECH:
+                mex, mex_ru = CHUNK_EXAMPLES_MECH[c["id"]]
+                assert not space_field(mex, mex_ru)
+                c["byField"] = {"mech": {"example": mex, "exampleRu": mex_ru, "speak": std_speak(en, mex)}}
+            else:
+                assert not space_field(ex, ex_ru), f"{c['id']}: космический пример — нужен byField.mech в CHUNK_EXAMPLES_MECH"
             chunks.append(c)
+    assert set(CHUNK_EXAMPLES_MECH) <= {c["id"] for c in chunks}
 
     questions = []
     k = 0
     for module, items in QUESTIONS.items():
         for i, (q, ru) in enumerate(items):
-            questions.append({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False})
+            questions.append(with_field({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False}, space_field(q, ru)))
             k += 1
     for module, items in QUESTIONS_MORE.items():
         start = len(QUESTIONS.get(module, []))
         for i, (q, ru) in enumerate(items, start):
-            questions.append({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False})
+            questions.append(with_field({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "reviewed": False}, space_field(q, ru)))
+            k += 1
+    for module, items in QUESTIONS_MECH.items():
+        start = len(QUESTIONS.get(module, [])) + len(QUESTIONS_MORE.get(module, []))
+        for i, (q, ru) in enumerate(items, start):
+            assert not space_field(q, ru)
+            questions.append({"id": f"q-{slug(module, i)}", "module": module, "q": q, "ru": ru, "voice": QUESTION_VOICES[k % len(QUESTION_VOICES)], "field": "mech", "reviewed": False})
             k += 1
     assert len({q["id"] for q in questions}) == len(questions), "id вопросов повторяются"
     assert len({q["q"] for q in questions}) == len(questions), "вопросы повторяются"
+    check_twins("вопросы", questions)
 
     translate = []
     for module, items in TRANSLATE.items():
         for i, (ru, en) in enumerate(items):
-            translate.append({"id": f"t-{slug(module, i)}", "module": module, "ru": ru, "en": en, "speak": std_speak(en), "reviewed": False})
+            translate.append(with_field({"id": f"t-{slug(module, i)}", "module": module, "ru": ru, "en": en, "speak": std_speak(en), "reviewed": False}, space_field(ru, en)))
+    for module, items in TRANSLATE_MECH.items():
+        for i, (ru, en) in enumerate(items, len(TRANSLATE.get(module, []))):
+            assert not space_field(ru, en)
+            translate.append({"id": f"t-{slug(module, i)}", "module": module, "ru": ru, "en": en, "speak": std_speak(en), "field": "mech", "reviewed": False})
+    check_twins("перевод", translate)
 
     subst = []
+
+    def add_subst(module: str, i: int, base: str, ru: str, swaps, field):
+        subst.append(with_field({
+            "id": f"s-{slug(module, i)}", "module": module, "base": base, "ru": ru,
+            "swaps": [{"cue": c, "en": e} for c, e in swaps],
+            "speak": std_speak(base, *[e for _, e in swaps]),
+            "reviewed": False,
+        }, field))
+
     for module, items in SUBSTITUTION.items():
         for i, (base, ru, swaps) in enumerate(items):
-            subst.append({
-                "id": f"s-{slug(module, i)}", "module": module, "base": base, "ru": ru,
-                "swaps": [{"cue": c, "en": e} for c, e in swaps],
-                "speak": std_speak(base, *[e for _, e in swaps]),
-                "reviewed": False,
-            })
+            add_subst(module, i, base, ru, swaps, space_field(base, ru))
+    for module, items in SUBSTITUTION_MECH.items():
+        for i, (base, ru, swaps) in enumerate(items, len(SUBSTITUTION.get(module, []))):
+            assert not space_field(base, ru, *[x for s in swaps for x in s])
+            add_subst(module, i, base, ru, swaps, "mech")
+    check_twins("подстановка", subst)
+    check_twins("отрывки", passages)
 
     def dump(path: Path, data):
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

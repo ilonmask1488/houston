@@ -108,3 +108,42 @@
     --scrim: rgb(0 0 0 / 0.6);
   }
 }
+
+/*
+  Машиностроение («Torque»): цех вместо пульта связи — холодная сталь панели
+  и сигнальный оранжевый (как окраска ограждений и кнопок «стоп») вместо янтарного.
+  Остальные токены — общие. Контраст проверяет scripts/contrast.test.ts.
+*/
+:root[data-field='mech'] {
+  --paper: #e8eaed;
+  --surface: #f5f6f8;
+  --ink: #15191e;
+  --lcd: #dce0e5;
+  --signal: #ff6b1a;
+  --signal-ink: #a63c00;
+  --on-signal: #15191e;
+}
+
+:root[data-field='mech'][data-theme='dark'] {
+  --paper: #101317;
+  --surface: #181c21;
+  --ink: #e5e8ec;
+  --lcd: #0a0c0f;
+  --signal: #ff8a3d;
+  --signal-ink: #ff8a3d;
+  --on-signal: #101317;
+  --on-ink: #101317;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-field='mech']:not([data-theme='light']) {
+    --paper: #101317;
+    --surface: #181c21;
+    --ink: #e5e8ec;
+    --lcd: #0a0c0f;
+    --signal: #ff8a3d;
+    --signal-ink: #ff8a3d;
+    --on-signal: #101317;
+    --on-ink: #101317;
+  }
+}

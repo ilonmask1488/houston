@@ -11,6 +11,7 @@ import type {
   DocText,
   Episode,
   FalseFriend,
+  Field,
   GameStatic,
   GrammarFixItem,
   GrammarGap,
@@ -109,10 +110,34 @@ export const itemsByModule = new Map<string, ModuleItems>()
 
 let loading: Promise<void> | null = null
 
-export function loadContent(): Promise<void> {
+/** Специальность, под которую отфильтрован контент (до загрузки — space, как было всегда). */
+export let currentField: Field = 'space'
+
+type Fielded = { field?: Field; byField?: Partial<Record<Field, Record<string, unknown>>> }
+
+/**
+  Контент под специальность: элементы чужой специальности убираются, у остальных применяются
+  переопределения byField (например, свой пример ответа на собеседовании). Идёт по всем массивам
+  и вложенным объектам: боссы и тексты внутри них — тоже.
+*/
+export function forField<T>(value: T, field: Field): T {
+  if (Array.isArray(value))
+    return value
+      .filter((x) => !(x && typeof x === 'object' && (x as Fielded).field && (x as Fielded).field !== field))
+      .map((x) => forField(x, field)) as T
+  if (value && typeof value === 'object') {
+    const { byField, ...rest } = value as Record<string, unknown> & Fielded
+    const merged = byField?.[field] ? { ...rest, ...byField[field] } : rest
+    return Object.fromEntries(Object.entries(merged).map(([k, v]) => [k, forField(v, field)])) as T
+  }
+  return value
+}
+
+export function loadContent(field: Field = 'space'): Promise<void> {
+  currentField = field
   // Неудачную загрузку не запоминаем — иначе «Повторить» вернёт ту же ошибку.
   loading ??= import('./data').then(
-    ({ raw }) => fill(raw),
+    ({ raw }) => fill(forField(raw, field)),
     (e: unknown) => {
       loading = null
       throw e

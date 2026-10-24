@@ -5,7 +5,7 @@
 */
 import type { DictWord } from '../../content/types'
 import { db, type AppDB } from '../db/db'
-import { dictWords, loadDictionary } from '../dict/dict'
+import { fieldWords, loadDictionary } from '../dict/dict'
 import { localDate } from '../progress/streak'
 import { addWordCards } from './cards'
 
@@ -37,7 +37,7 @@ export async function addDailyWords(vocabSize: number, database: AppDB = db, dat
   await loadDictionary()
   const have = new Set((await database.cards.toArray()).map((c) => c.itemId))
   const day = Math.floor(Date.parse(`${date}T12:00:00Z`) / 86_400_000)
-  const words = pickDailyWords(dictWords, have, vocabSize, day)
+  const words = pickDailyWords(fieldWords(), have, vocabSize, day)
   for (const w of words) await addWordCards(w.id, database)
   await database.setMeta('dailyWordsDate', date)
   return words.length

@@ -4,6 +4,7 @@
   грузится при первом обращении (словарь, тап по слову, повторение слов).
   Поиск понимает формы: tested → test, specimens → specimen, studies → study.
 */
+import { currentField } from '../../content'
 import type { DictWord } from '../../content/types'
 
 export const dictById = new Map<string, DictWord>()
@@ -49,6 +50,14 @@ export function loadDictionary(): Promise<void> {
     },
   )
   return loading
+}
+
+/**
+  Слова своей специальности и общие: для игр, «слов дня» и списка тем. Поиск и перевод по тапу
+  работают по всему словарю — встретил «nozzle» в своём тексте — перевод найдётся.
+*/
+export function fieldWords(): DictWord[] {
+  return dictWords.filter((w) => !w.field || w.field === currentField)
 }
 
 export function dictionaryLoaded(): boolean {

@@ -16,6 +16,7 @@ import json
 from pathlib import Path
 
 from author_phase3 import split_sentences
+from fields import space_field, with_field
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content"
@@ -354,6 +355,17 @@ ORDER = [
         "Best,",
         "Ivan",
     ]),
+    # близнец отклика (там — ракетно-космическая специальность) для машиностроения; четвёртое поле — field
+    ("mail-apply", "Отклик на вакансию", [
+        "Subject: Application – Junior Manufacturing Engineer",
+        "Dear Ms Clark,",
+        "I am writing to apply for the Junior Manufacturing Engineer position advertised on your website.",
+        "I am a fourth-year student in mechanical engineering, and in my current project I redesigned a machining fixture that cut the setup time by 30%.",
+        "I have attached my CV and a short portfolio.",
+        "I look forward to hearing from you.",
+        "Kind regards,",
+        "Ivan Petrov",
+    ], "mech"),
 ]
 
 # Напиши сам: (модуль, задание, входящее письмо или None, образец, что проверить)
@@ -812,6 +824,62 @@ FALSE_FRIENDS = [
      "Band — музыкальная группа или лента, bandage — бинт. Банда — gang."),
 ]
 
+# Специальности (scripts/fields.py). Космические по смыслу — только для space:
+FF_SPACE = {"spacecraft"}
+# Ловушка общая, космический лишь пример — механику свой контекст:
+FF_BY_FIELD = {
+    "major": {"mech": {"context": "Моя специальность — технология машиностроения."}},
+    "department": {"mech": {"context": "Наша кафедра готовит технологов-машиностроителей."}},
+}
+
+# Машиностроение (field: "mech"): цех, станки, сборка, термообработка, ремонт
+FALSE_FRIENDS_MECH = [
+    ("milling-cutter", "фреза", "Фреза затупилась — поменяй её.", ["milling cutter", "fraise", "milling machine"],
+     "Fraise по-английски — старинный гофрированный воротник или редкое название зенковки (а по-французски — клубника). Фреза — milling cutter (концевая — end mill); milling machine — сам фрезерный станок."),
+    ("carriage", "суппорт (токарного станка)", "Подведи суппорт ближе к патрону.", ["carriage", "support", "carrier"],
+     "Support — опора, поддержка; carrier — перевозчик или носитель. Суппорт токарного станка — carriage (нижняя часть — saddle, поперечные салазки — cross slide)."),
+    ("overhaul", "капитальный ремонт", "Пресс стоит на капитальном ремонте до марта.", ["major overhaul", "capital repair", "capital renovation"],
+     "Capital — столица, капитал; «capital repair» — калька. Капремонт станка или двигателя — overhaul (major overhaul), текущий ремонт — repair."),
+    ("setup-technician", "наладчик (станков)", "Позови наладчика — станок надо перенастроить под новую деталь.", ["setup technician", "adjuster", "tuner"],
+     "Adjuster — чаще всего страховой оценщик убытков (loss adjuster) или регулировочный механизм; tuner — настройщик пианино или тюнер. Наладчик — setup technician (BrE — setter)."),
+    ("shift", "смена (рабочая)", "Я работаю во вторую смену.", ["second shift", "second change", "second replacement"],
+     "Change — изменение, перемена; replacement — замена (детали, человека). Рабочая смена — shift: day shift, night shift."),
+    ("preventive-maintenance", "профилактика (оборудования)", "В пятницу линия стоит на профилактике.", ["preventive maintenance", "prophylaxis", "prevention"],
+     "Prophylaxis — медицинская профилактика болезней, prevention — предотвращение вообще. Плановая профилактика оборудования — preventive maintenance."),
+    ("rolled-steel", "прокат (металлопрокат)", "На склад привезли стальной прокат.", ["rolled steel", "steel rental", "rolling stock"],
+     "Rental — прокат в смысле аренды, rolling stock — подвижной состав железной дороги. Металлопрокат — rolled steel (rolled products, sections)."),
+    ("drill-jig", "кондуктор (сверлильный)", "Сверли отверстия по кондуктору.", ["drill jig", "drill conductor", "drill conveyor"],
+     "Conductor — дирижёр, кондуктор в транспорте или проводник тока; conveyor — конвейер. Сверлильный кондуктор — drill jig (втулки в нём — drill bushings)."),
+    ("chamfer", "фаска", "Сними фаску 1 × 45° на торце вала.", ["chamfer", "facet", "fascia"],
+     "Facet — грань (камня, многогранника), fascia — лицевая панель, карниз. Фаска на кромке — chamfer (разделка под сварку — bevel)."),
+    ("thread", "резьба", "Резьба M10 в отверстии сорвана.", ["thread", "carving", "cutting"],
+     "Carving — резьба по дереву или камню, cutting — резка. Резьба на болте и в отверстии — thread."),
+    ("grinding", "шлифовка (на станке)", "После термообработки вал идёт на шлифовку.", ["grinding", "polishing", "sanding"],
+     "Polishing — полировка (ради блеска, а не размера), sanding — обработка шкуркой. Шлифовка на станке до точного размера — grinding."),
+    ("machine-shop", "цех (механический)", "Он работает в механическом цехе.", ["machine shop", "machine guild", "machine store"],
+     "Guild — средневековый цех ремесленников, гильдия; store — магазин или склад. Механический цех — machine shop, цех вообще — shop или workshop."),
+    ("work-order", "наряд (на работу)", "Мастер выдал наряд на ремонт насоса.", ["work order", "outfit", "attire"],
+     "Outfit и attire — наряд в смысле одежды. Наряд-задание на работу — work order (или job card)."),
+    ("delivery-note", "накладная", "Распишись в накладной за полученные детали.", ["delivery note", "overhead", "overlay"],
+     "Overheads — накладные расходы, overlay — наложение, накладка. Накладная на полученный товар — delivery note (AmE — packing slip), транспортная — waybill."),
+    ("welding-jig", "стапель (сварочный)", "Раму собирают и сваривают на стапеле.", ["welding jig", "welding staple", "welding stack"],
+     "Staple — скоба степлера, stack — стопка, штабель. Сборочно-сварочный стапель — jig или fixture (для кораблей — slipway)."),
+    ("damage-inspection", "дефектовка", "После разборки редуктора провели дефектовку деталей.", ["inspection for wear and damage", "defection", "defectation"],
+     "Defection — переход на сторону противника, бегство; слова defectation нет. Дефектовка — inspection (for wear and damage)."),
+    ("washer", "шайба", "Под гайку подложи шайбу.", ["washer", "puck", "disc"],
+     "Puck — хоккейная шайба, disc — диск. Шайба под гайку — washer (пружинная — spring washer)."),
+    ("key", "шпонка", "Шпонка выпала из паза вала.", ["key", "spline", "pin"],
+     "Spline — шлиц (шлицевое соединение), pin — штифт. Шпонка — key, паз под неё — keyway."),
+    ("tempering", "отпуск (стали)", "После закалки детали идут на отпуск.", ["tempering", "holiday", "release"],
+     "Holiday — отпуск-отдых, release — отпускание (тормоза, пружины). Отпуск стали после закалки — tempering."),
+    ("gasket", "прокладка (уплотнительная)", "Под крышку нужна новая прокладка.", ["gasket", "laying", "padding"],
+     "Laying — прокладка в смысле укладки (кабеля, труб), padding — мягкая набивка. Уплотнительная прокладка — gasket."),
+    ("steel-grade", "марка (стали)", "Какая марка стали указана на чертеже?", ["steel grade", "steel brand", "steel mark"],
+     "Brand — торговая марка, mark — метка, отметка, оценка. Марка материала — grade."),
+    ("plug-gauge", "калибр (пробка)", "Проверь отверстие калибром-пробкой.", ["plug gauge", "plug calibre", "plug caliper"],
+     "Calibre — калибр оружия или уровень способностей, caliper — штангенциркуль. Калибр-пробка — plug gauge (проходной и непроходной — go / no-go)."),
+]
+
 # ——— Эпизоды 4–6 (формат как в author_phase2) ———
 EPISODES = [
     {
@@ -1015,6 +1083,14 @@ BOSS_DOC = {
     },
 }
 
+# Механику — та же статья, но панели не для космических аппаратов, а для вагонов и кузовов (byField.mech)
+BOSS_DOC_MECH = [
+    ("in spacecraft structures", "in rail vehicles and truck bodies"),
+    ("every flight panel", "every production panel"),
+    ("в конструкциях космических аппаратов", "в железнодорожных вагонах и кузовах грузовиков"),
+    ("каждой лётной панели", "каждой серийной панели"),
+]
+
 BOSS_MAIL = {
     "register": [
         ("Заказчик в ярости из-за задержки. Первая фраза ответа?", "neutral",
@@ -1062,12 +1138,19 @@ def build():
         assert bad not in options
         fix.append({"id": nid("mf", module), "module": module, "context": context, "bad": bad, "options": options, "why": why, "reviewed": False})
     order = []
-    for module, title, blocks in ORDER:
+    for module, title, blocks, *field in ORDER:
         assert len(set(blocks)) == len(blocks)
-        order.append({"id": nid("mo", module), "module": module, "title": title, "blocks": blocks, "reviewed": False})
+        f = field[0] if field else space_field(title, *blocks)
+        assert not (f == "mech" and space_field(title, *blocks)), f"{module}: космос в письме механика"
+        order.append(with_field({"id": nid("mo", module), "module": module, "title": title, "blocks": blocks, "reviewed": False}, f))
+    for module in {x["module"] for x in order}:
+        n = {f: sum(1 for x in order if x["module"] == module and x.get("field") in (None, f)) for f in ("space", "mech")}
+        assert n["space"] == n["mech"], f"{module}: у специальностей разное число писем {n}"
     write = []
     for module, task, incoming, model, checklist in WRITE:
         write.append({"id": nid("mw", module), "module": module, "task": task, "incoming": incoming, "model": model, "checklist": checklist, "reviewed": False})
+    for x in register + fix + write:
+        assert not space_field(json.dumps(x, ensure_ascii=False)), f"{x['id']}: космос — нужен field и близнец"
     bank = [{"id": f"bank-{i + 1}", "title": title, "phrases": [{"en": en, "ru": ru, "reg": reg} for en, ru, reg in items]} for i, (title, items) in enumerate(BANK)]
 
     pairs = []
@@ -1084,10 +1167,27 @@ def build():
         stress.append({"id": f"st-{w}", "module": "clean-stress", "text": w, "syllables": syl, "stress": k, "ipa": ipa, "ru": ru, "voices": STD, "reviewed": False})
 
     ff = []
-    for fid, word, context, options, why in FALSE_FRIENDS:
-        assert len(set(options)) == 3
-        ff.append({"id": f"ff-{fid}", "ru": word, "context": context, "options": options, "trap": options[1], "why": why,
-                   "speak": [{"text": options[0], "voice": v} for v in STD], "reviewed": False})
+    for rows, mech in ((FALSE_FRIENDS, False), (FALSE_FRIENDS_MECH, True)):
+        for fid, word, context, options, why in rows:
+            assert len(set(options)) == 3
+            x = {"id": f"ff-{fid}", "ru": word, "context": context, "options": options, "trap": options[1], "why": why,
+                 "speak": [{"text": options[0], "voice": v} for v in STD], "reviewed": False}
+            auto = space_field(word, context, *options)
+            if mech:
+                assert not auto, f"ff-{fid}: космос в машиностроительном"
+                with_field(x, "mech")
+            elif fid in FF_SPACE:
+                with_field(x, "space")
+            elif fid in FF_BY_FIELD:
+                x["byField"] = FF_BY_FIELD[fid]
+                assert not space_field(*(v for o in FF_BY_FIELD[fid].values() for v in o.values())), fid
+            else:
+                assert not auto, f"ff-{fid}: космический контекст — в FF_SPACE или FF_BY_FIELD"
+            ff.append(x)
+    assert len({x["id"] for x in ff}) == len(ff), "повторяющиеся id ложных друзей"
+    assert set(FF_SPACE) | set(FF_BY_FIELD) <= {x["id"][3:] for x in ff}
+    words = [x["ru"].split(" (")[0].lower() for x in ff]
+    assert len(set(words)) == len(words), [w for w in words if words.count(w) > 1]
 
     episodes = []
     for e in EPISODES:
@@ -1116,6 +1216,25 @@ def build():
     doc = {**{k: v for k, v in t.items() if k != "find"}, "find": [{"q": q, "key": k} for q, k in t["find"]],
            "source": "Houston (собственный текст)", "license": "собственный текст приложения",
            "speak": [{"text": r, "voice": v} for r in t["retell"] for v in STD], "reviewed": False}
+
+    # byField.mech: те же поля с заменами BOSS_DOC_MECH (только изменившиеся)
+    def mech_swap(v):
+        s = json.dumps(v, ensure_ascii=False)
+        for a, b in BOSS_DOC_MECH:
+            s = s.replace(a, b)
+        return json.loads(s)
+    used = {a: 0 for a, _ in BOSS_DOC_MECH}
+    for a in used:
+        used[a] = json.dumps(doc, ensure_ascii=False).count(a)
+    assert all(used.values()), f"boss-doc: замена не нашлась {used}"
+    over = {k: mech_swap(v) for k, v in doc.items() if mech_swap(v) != v}
+    assert not space_field(json.dumps({**doc, **over}, ensure_ascii=False)), "boss-doc: космос остался в версии механика"
+    flat_m = [s for p in over["paragraphs"] for s in split_sentences(p)]
+    for q, key in t["find"]:
+        assert sum(key.lower() in s.lower() for s in flat_m) == 1, f"boss-doc (mech): ключ «{key}»"
+    assert over["parse"]["sentence"] in flat_m
+    assert len(over["paragraphsRu"]) == len(over["paragraphs"])
+    doc["byField"] = {"mech": over}
     task, incoming, model, checklist = BOSS_MAIL["write"]
     mail = {
         "register": [{"id": f"mr-boss-{i + 1}", "module": "boss-mail", "situation": s, "want": w, "options": o, "why": why, "reviewed": False}

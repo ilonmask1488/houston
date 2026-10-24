@@ -62,6 +62,32 @@
     "\"…can be used on small satellites.\""
    ]
   ],
+  "byField": {
+   "mech": {
+    "rules": [
+     [
+      "We present / propose",
+      "что сделали",
+      "\"We present a quick-change fixture for thin parts…\""
+     ],
+     [
+      "was measured / tested",
+      "как проверяли",
+      "\"The fixture was tested on a CNC mill.\""
+     ],
+     [
+      "results show",
+      "что получили",
+      "\"Results show a 30% shorter setup time.\""
+     ],
+     [
+      "suggest / can be used",
+      "что из этого следует",
+      "\"…can be used in small-batch production.\""
+     ]
+    ]
+   }
+  },
   "tip": "Цифры в аннотации — самое ценное. Найди их первыми: проценты, градусы, килограммы."
  },
  {
@@ -152,6 +178,32 @@
     "\"Deviation: the test was paused…\""
    ]
   ],
+  "byField": {
+   "mech": {
+    "rules": [
+     [
+      "shall",
+      "обязательно",
+      "\"The frame shall withstand 1.25 × rated load.\""
+     ],
+     [
+      "should",
+      "рекомендуется",
+      "\"Strain gauges should be placed…\""
+     ],
+     [
+      "may",
+      "допускается",
+      "\"Minor surface marks may be accepted.\""
+     ],
+     [
+      "deviation",
+      "отклонение от методики",
+      "\"Deviation: the test was paused…\""
+     ]
+    ]
+   }
+  },
   "tip": "В требованиях ищи shall — это то, за что потом спросят на приёмке."
  },
  {

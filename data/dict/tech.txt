@@ -1,6 +1,8 @@
 # Технический словарь. Формат: термин|МФА (US, ˈ — ударение)|перевод|тема. Сгенерировано, reviewed: false.
 # Темы: space — аэрокосмическая техника, prop — двигатели, mat — материалы и композиты,
-# test — прочность и испытания, cad — CAD и конструирование, sens — измерения и датчики.
+# test — прочность и испытания, cad — CAD и конструирование, sens — измерения и датчики, doc — документы.
+# Машиностроение: mach — станки и обработка, join — сварка, крепёж и сборка, hyd — гидравлика и пневматика, maint — обслуживание и надёжность.
+# Поле специальности ставит сборка: space/prop → field "space", mach/join/hyd/maint → field "mech", остальные — общие.
 spacecraft|ˈspeɪskræft|космический аппарат|space
 satellite|ˈsætəlaɪt|спутник|space
 launch vehicle|ˈlɔːntʃ ˌviːəkəl|ракета-носитель|space
@@ -92,22 +94,22 @@ hot fire test|ˈhɑːt ˈfaɪər test|огневое испытание|prop
 combustion instability|kəmˈbʌstʃən ˌɪnstəˈbɪləti|неустойчивость горения|prop
 feed system|ˈfiːd ˌsɪstəm|система подачи|prop
 pressurization|ˌpreʃəraɪˈzeɪʃən|наддув|prop
-tank|tæŋk|бак|prop
-valve|vælv|клапан|prop
-check valve|ˈtʃek vælv|обратный клапан|prop
-manifold|ˈmænɪfoʊld|коллектор|prop
-flow rate|ˈfloʊ reɪt|расход|prop
+tank|tæŋk|бак|test
+valve|vælv|клапан|test
+check valve|ˈtʃek vælv|обратный клапан|test
+manifold|ˈmænɪfoʊld|коллектор|test
+flow rate|ˈfloʊ reɪt|расход|test
 mass flow|ˈmæs floʊ|массовый расход|prop
 heat flux|ˈhiːt flʌks|тепловой поток|prop
-additive manufacturing|ˈædətɪv ˌmænjəˈfæktʃərɪŋ|аддитивное производство|prop
+additive manufacturing|ˈædətɪv ˌmænjəˈfæktʃərɪŋ|аддитивное производство|cad
 nitrogen|ˈnaɪtrədʒən|азот|prop
-helium|ˈhiːliəm|гелий|prop
+helium|ˈhiːliəm|гелий|test
 cold gas thruster|ˈkoʊld ɡæs ˈθrʌstər|двигатель на холодном газе|prop
 impulse bit|ˈɪmpʌls bɪt|единичный (минимальный) импульс|prop
-solenoid valve|ˈsoʊlənɔɪd vælv|электромагнитный клапан|prop
-relief valve|rɪˈliːf vælv|предохранительный клапан|prop
-fitting|ˈfɪtɪŋ|штуцер, фитинг|prop
-hose|hoʊz|шланг|prop
+solenoid valve|ˈsoʊlənɔɪd vælv|электромагнитный клапан|test
+relief valve|rɪˈliːf vælv|предохранительный клапан|test
+fitting|ˈfɪtɪŋ|штуцер, фитинг|test
+hose|hoʊz|шланг|test
 composite|kəmˈpɑːzɪt|композит; составной|mat
 carbon fiber|ˈkɑːrbən ˌfaɪbər|углеродное волокно|mat
 glass fiber|ˈɡlæs ˌfaɪbər|стекловолокно|mat
@@ -393,3 +395,162 @@ corrective action|kəˈrektɪv ˈækʃən|корректирующее дейс�
 disposition|ˌdɪspəˈzɪʃən|решение (по несоответствию)|doc
 work instruction|ˈwɜːrk ɪnˌstrʌkʃən|рабочая инструкция|doc
 inspector|ɪnˈspektər|контролёр (ОТК)|doc
+lathe|leɪð|токарный станок|mach
+milling machine|ˈmɪlɪŋ məˌʃiːn|фрезерный станок|mach
+CNC|ˌsiː en ˈsiː|ЧПУ (числовое программное управление)|mach
+machining center|məˈʃiːnɪŋ ˌsentər|обрабатывающий центр|mach
+machine tool|məˈʃiːn tuːl|металлорежущий станок|mach
+spindle|ˈspɪndəl|шпиндель|mach
+chuck|tʃʌk|патрон (токарный)|mach
+headstock|ˈhedstɑːk|передняя бабка|mach
+tailstock|ˈteɪlstɑːk|задняя бабка|mach
+workpiece|ˈwɜːrkpiːs|заготовка, обрабатываемая деталь|mach
+cutting tool|ˈkʌtɪŋ tuːl|режущий инструмент|mach
+cutting insert|ˈkʌtɪŋ ˌɪnsɜːrt|сменная режущая пластина|mach
+carbide|ˈkɑːrbaɪd|твёрдый сплав|mach
+high-speed steel|ˌhaɪ spiːd ˈstiːl|быстрорежущая сталь|mach
+end mill|ˈend mɪl|концевая фреза|mach
+face milling|ˈfeɪs ˌmɪlɪŋ|торцевое фрезерование|mach
+drill bit|ˈdrɪl bɪt|сверло|mach
+reamer|ˈriːmər|развёртка|mach
+cutting speed|ˈkʌtɪŋ spiːd|скорость резания|mach
+feed rate|ˈfiːd reɪt|подача|mach
+depth of cut|ˌdepθ əv ˈkʌt|глубина резания|mach
+coolant|ˈkuːlənt|СОЖ, охлаждающая жидкость|mach
+flood coolant|ˈflʌd ˌkuːlənt|обильный полив СОЖ|mach
+minimum quantity lubrication|ˈmɪnɪməm ˈkwɑːntəti ˌluːbrɪˈkeɪʃən|минимальная смазка (MQL)|mach
+chips|tʃɪps|стружка|mach
+tool wear|ˈtuːl wer|износ инструмента|mach
+flank wear|ˈflæŋk wer|износ по задней поверхности|mach
+tool life|ˈtuːl laɪf|стойкость инструмента|mach
+roughing|ˈrʌfɪŋ|черновая обработка|mach
+finishing cut|ˈfɪnɪʃɪŋ kʌt|чистовой проход|mach
+grinding|ˈɡraɪndɪŋ|шлифование|mach
+facing|ˈfeɪsɪŋ|подрезка торца|mach
+G-code|ˈdʒiː koʊd|G-код (управляющая программа)|mach
+toolpath|ˈtuːlpæθ|траектория инструмента|mach
+work offset|ˈwɜːrk ˌɔːfset|смещение нуля детали|mach
+built-up edge|ˌbɪlt ʌp ˈedʒ|нарост на режущей кромке|mach
+micrometer|maɪˈkrɑːmɪtər|микрометр|mach
+caliper|ˈkælɪpər|штангенциркуль|mach
+dial indicator|ˈdaɪəl ˌɪndɪkeɪtər|индикатор часового типа|mach
+weld|weld|сварной шов; сваривать|join
+welder|ˈweldər|сварщик; сварочный аппарат|join
+arc welding|ˈɑːrk ˌweldɪŋ|дуговая сварка|join
+MIG welding|ˈmɪɡ ˌweldɪŋ|полуавтоматическая сварка (MIG)|join
+TIG welding|ˈtɪɡ ˌweldɪŋ|аргонодуговая сварка (TIG)|join
+spot welding|ˈspɑːt ˌweldɪŋ|точечная сварка|join
+welding current|ˈweldɪŋ ˌkɜːrənt|сварочный ток|join
+weld pass|ˈweld pæs|проход (при сварке)|join
+filler wire|ˈfɪlər waɪər|присадочная проволока|join
+shielding gas|ˈʃiːldɪŋ ɡæs|защитный газ|join
+heat-affected zone|ˌhiːt əˈfektɪd zoʊn|зона термического влияния|join
+fillet weld|ˈfɪlɪt weld|угловой шов|join
+butt weld|ˈbʌt weld|стыковой шов|join
+lack of fusion|ˌlæk əv ˈfjuːʒən|несплавление|join
+undercut|ˈʌndərkʌt|подрез (дефект шва)|join
+spatter|ˈspætər|брызги металла|join
+dye penetrant testing|ˌdaɪ ˈpenətrənt ˌtestɪŋ|капиллярный контроль|join
+visual inspection|ˌvɪʒuəl ɪnˈspekʃən|визуальный контроль|join
+lifting lug|ˈlɪftɪŋ lʌɡ|грузовая проушина|join
+bolted joint|ˈboʊltɪd dʒɔɪnt|болтовое соединение|join
+clamp load|ˈklæmp loʊd|усилие стяжки (затяжки)|join
+tightening torque|ˈtaɪtənɪŋ tɔːrk|момент затяжки|join
+torque wrench|ˈtɔːrk rentʃ|динамометрический ключ|join
+impact wrench|ˈɪmpækt rentʃ|ударный гайковёрт|join
+self-loosening|ˌself ˈluːsənɪŋ|самоотвинчивание|join
+thread locker|ˈθred ˌlɑːkər|фиксатор резьбы|join
+lock nut|ˈlɑːk nʌt|самоконтрящаяся (стопорная) гайка|join
+lock washer|ˈlɑːk ˌwɑːʃər|стопорная (пружинная) шайба|join
+property class|ˈprɑːpərti klæs|класс прочности (крепежа)|join
+proof load|ˈpruːf loʊd|пробная нагрузка (крепежа)|join
+thread pitch|ˈθred pɪtʃ|шаг резьбы|join
+stud|stʌd|шпилька|join
+dowel pin|ˈdaʊəl pɪn|установочный штифт|join
+keyway|ˈkiːweɪ|шпоночный паз|join
+circlip|ˈsɜːrklɪp|стопорное кольцо|join
+press fit|ˈpres fɪt|прессовая посадка, запрессовка|join
+transition fit|trænˈzɪʃən fɪt|переходная посадка|join
+jig|dʒɪɡ|сборочное приспособление, кондуктор|join
+pump|pʌmp|насос|hyd
+gear pump|ˈɡɪr pʌmp|шестерённый насос|hyd
+piston pump|ˈpɪstən pʌmp|поршневой насос|hyd
+vane pump|ˈveɪn pʌmp|пластинчатый насос|hyd
+hydraulic cylinder|haɪˌdrɔːlɪk ˈsɪlɪndər|гидроцилиндр|hyd
+piston|ˈpɪstən|поршень|hyd
+piston rod|ˈpɪstən rɑːd|шток|hyd
+directional control valve|dəˌrekʃənəl kənˈtroʊl vælv|гидрораспределитель|hyd
+spool|spuːl|золотник|hyd
+servo valve|ˈsɜːrvoʊ vælv|сервоклапан|hyd
+pressure reducing valve|ˈpreʃər rɪˌduːsɪŋ vælv|редукционный клапан|hyd
+loading valve|ˈloʊdɪŋ vælv|нагрузочный клапан|hyd
+accumulator|əˈkjuːmjəleɪtər|гидроаккумулятор|hyd
+reservoir|ˈrezərvwɑːr|гидробак, резервуар|hyd
+hydraulic fluid|haɪˌdrɔːlɪk ˈfluːɪd|рабочая жидкость|hyd
+viscosity|vɪˈskɑːsəti|вязкость|hyd
+filtration|fɪlˈtreɪʃən|фильтрация|hyd
+suction line|ˈsʌkʃən laɪn|всасывающая линия|hyd
+return line|rɪˈtɜːrn laɪn|сливная линия|hyd
+pressure drop|ˈpreʃər drɑːp|перепад давления|hyd
+rated pressure|ˈreɪtɪd ˌpreʃər|номинальное давление|hyd
+seal|siːl|уплотнение|hyd
+O-ring|ˈoʊ rɪŋ|уплотнительное кольцо|hyd
+rod seal|ˈrɑːd siːl|уплотнение штока|hyd
+gasket|ˈɡæskɪt|прокладка|hyd
+pneumatic|nuːˈmætɪk|пневматический|hyd
+compressed air|kəmˌprest ˈer|сжатый воздух|hyd
+compressor|kəmˈpresər|компрессор|hyd
+cavitation|ˌkævɪˈteɪʃən|кавитация|hyd
+volumetric efficiency|ˌvɑːljəˌmetrɪk ɪˈfɪʃənsi|объёмный КПД|hyd
+internal leakage|ɪnˌtɜːrnəl ˈliːkɪdʒ|внутренние утечки|hyd
+external leakage|ɪkˌstɜːrnəl ˈliːkɪdʒ|наружные утечки|hyd
+quick coupling|ˌkwɪk ˈkʌplɪŋ|быстроразъёмное соединение|hyd
+hydraulic press|haɪˌdrɔːlɪk ˈpres|гидравлический пресс|hyd
+cleanliness code|ˈklenlinəs koʊd|класс чистоты (код по ISO 4406)|hyd
+preventive maintenance|prɪˌventɪv ˈmeɪntənəns|планово-предупредительное обслуживание|maint
+predictive maintenance|prɪˌdɪktɪv ˈmeɪntənəns|обслуживание по фактическому состоянию|maint
+condition monitoring|kənˈdɪʃən ˌmɑːnɪtərɪŋ|контроль технического состояния|maint
+downtime|ˈdaʊntaɪm|простой (оборудования)|maint
+lubrication|ˌluːbrɪˈkeɪʃən|смазка (процесс), смазывание|maint
+lubricant|ˈluːbrɪkənt|смазочный материал|maint
+grease|ɡriːs|пластичная смазка|maint
+oil analysis|ˈɔɪl əˌnæləsɪs|анализ масла|maint
+rolling bearing|ˈroʊlɪŋ ˌberɪŋ|подшипник качения|maint
+ball bearing|ˈbɔːl ˌberɪŋ|шарикоподшипник|maint
+roller bearing|ˈroʊlər ˌberɪŋ|роликоподшипник|maint
+plain bearing|ˈpleɪn ˌberɪŋ|подшипник скольжения|maint
+inner ring|ˈɪnər rɪŋ|внутреннее кольцо (подшипника)|maint
+outer ring|ˈaʊtər rɪŋ|наружное кольцо (подшипника)|maint
+raceway|ˈreɪsweɪ|дорожка качения|maint
+bearing cage|ˈberɪŋ keɪdʒ|сепаратор подшипника|maint
+spalling|ˈspɔːlɪŋ|выкрашивание (усталостное)|maint
+pitting|ˈpɪtɪŋ|питтинг, точечное выкрашивание|maint
+abrasive wear|əˌbreɪsɪv ˈwer|абразивный износ|maint
+misalignment|ˌmɪsəˈlaɪnmənt|несоосность|maint
+unbalance|ʌnˈbæləns|дисбаланс|maint
+vibration analysis|vaɪˈbreɪʃən əˌnæləsɪs|вибродиагностика|maint
+overheating|ˌoʊvərˈhiːtɪŋ|перегрев|maint
+failure analysis|ˈfeɪljər əˌnæləsɪs|анализ отказов|maint
+mean time between failures|ˌmiːn ˈtaɪm bɪˌtwiːn ˈfeɪljərz|средняя наработка на отказ|maint
+service life|ˈsɜːrvɪs laɪf|срок службы|maint
+gearbox|ˈɡɪrbɑːks|редуктор; коробка передач|maint
+gear|ɡɪr|шестерня, зубчатое колесо; передача|maint
+coupling|ˈkʌplɪŋ|муфта|maint
+belt drive|ˈbelt draɪv|ремённая передача|maint
+drain plug|ˈdreɪn plʌɡ|сливная пробка|maint
+sight glass|ˈsaɪt ɡlæs|смотровое стекло (указатель уровня)|maint
+lockout|ˈlɑːkaʊt|блокировка оборудования перед ремонтом|maint
+maintenance log|ˈmeɪntənəns lɔːɡ|журнал обслуживания|maint
+spare part|ˌsper ˈpɑːrt|запасная часть|maint
+conveyor|kənˈveɪər|конвейер|maint
+contamination|kənˌtæmɪˈneɪʃən|загрязнение (рабочей жидкости)|maint
+bushing|ˈbʊʃɪŋ|втулка|mach
+tighten|ˈtaɪtən|затягивать (резьбовое соединение)|join
+loosen|ˈluːsən|ослаблять(ся), откручивать(ся)|join
+wrench|rentʃ|гаечный ключ|join
+roller|ˈroʊlər|ролик|maint
+leakage|ˈliːkɪdʒ|утечка, негерметичность|hyd
+vibration|vaɪˈbreɪʃən|вибрация|test
+transverse|trænzˈvɜːrs|поперечный|test
+inspection|ɪnˈspekʃən|контроль, осмотр|doc
+hardened|ˈhɑːrdənd|закалённый|mat

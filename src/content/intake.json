@@ -150,7 +150,18 @@
         { "q": "Why can't the rocket move during the test?", "options": ["It is held down by clamps.", "The engines are too weak.", "It has no fuel on board."], "answer": 0 },
         { "q": "What do the sensors measure?", "options": ["Speed and altitude.", "Pressure, temperature and vibration.", "Only the fuel level."], "answer": 1 },
         { "q": "What happens if the data does not match the model?", "options": ["The rocket flies anyway.", "The model is thrown away.", "Engineers look for the reason first."], "answer": 2 }
-      ]
+      ],
+      "byField": {
+        "mech": {
+          "title": "A load test of a new press",
+          "text": "Before a new press goes into production, engineers test it in the workshop. This is called a load test. The press is fixed to the floor with strong bolts, so it cannot move. The machine runs for a few hours while hundreds of sensors measure pressure, temperature and vibration. After the test, the team compares the data with the computer model. If the numbers match, the press is ready for the next step. If they do not match, engineers look for the reason before they continue. A short test in the workshop is much cheaper than a breakdown in the factory.",
+          "questions": [
+            { "q": "Why can't the press move during the test?", "options": ["It is fixed to the floor with bolts.", "The motor is too weak.", "It has no oil inside."], "answer": 0 },
+            { "q": "What do the sensors measure?", "options": ["Speed and position.", "Pressure, temperature and vibration.", "Only the oil level."], "answer": 1 },
+            { "q": "What happens if the data does not match the model?", "options": ["The press goes into production anyway.", "The model is thrown away.", "Engineers look for the reason first."], "answer": 2 }
+          ]
+        }
+      }
     },
     {
       "id": "ir-2", "level": 2, "title": "Why composite specimens fail",
@@ -167,7 +178,8 @@
   "speaking": [
     { "id": "is-1", "voice": "us-f", "q": "Tell me a little about yourself and your studies.", "ru": "Расскажи немного о себе и об учёбе." },
     { "id": "is-2", "voice": "us-m", "q": "What project are you working on right now?", "ru": "Над каким проектом ты сейчас работаешь?" },
-    { "id": "is-3", "voice": "us-f", "q": "Why do you want to work in the space industry?", "ru": "Почему ты хочешь работать в космической отрасли?" }
+    { "id": "is-3", "voice": "us-f", "q": "Why do you want to work in the space industry?", "ru": "Почему ты хочешь работать в космической отрасли?",
+      "byField": { "mech": { "q": "Why do you want to work in mechanical engineering?", "ru": "Почему ты хочешь работать в машиностроении?" } } }
   ],
 
   "soundCheck": [

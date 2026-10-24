@@ -3,11 +3,14 @@
 */
 import { chunkById } from '../../content'
 import { CLAUDE_PROMPTS } from '../../i18n/claude-prompts'
+import { skinField, WHO } from '../../i18n/skins'
 import type { AnswerRow, InterviewItem } from '../db/types'
 
 /** Подставить {ключи}; незаполненные подстановки заменяются на «—». */
 export function fill(template: string, vars: Record<string, string>): string {
-  return template.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? '—')
+  // {who} — кто учится, по специальности (инженер-ракетчик или механик)
+  const all: Record<string, string> = { who: WHO[skinField], ...vars }
+  return template.replace(/\{(\w+)\}/g, (_, k: string) => all[k] ?? '—')
 }
 
 export function editStoryPrompt(p: { question: string; answer: string; level?: string; star: boolean }): string {

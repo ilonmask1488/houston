@@ -273,7 +273,141 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "paragraphs": [
+     "Honeycomb sandwich panels are widely used in rail vehicles and truck bodies because they combine high bending stiffness with low mass. However, their compressive strength is sensitive to manufacturing defects such as core crushing, skin wrinkles and disbonds between the skin and the core. This study quantifies the effect of these defects on the edgewise compressive strength of aluminium honeycomb panels with carbon fibre skins.",
+     "Forty-eight panels measuring 300 by 200 millimetres were manufactured in four groups: pristine panels and panels with artificial core crushing, skin wrinkles or disbonds. Disbonds were introduced by placing a 25-millimetre PTFE film between the skin and the core before curing. All panels were inspected by ultrasonic C-scan and then loaded to failure in edgewise compression at a rate of 0.5 millimetres per minute.",
+     "Pristine panels failed at a mean load of 86 kilonewtons with a coefficient of variation of 4 percent. Core crushing reduced the strength by only 3 percent, which is within the scatter of the pristine group. Skin wrinkles reduced the strength by 11 percent, while disbonds caused the largest reduction of 27 percent. In all disbonded panels, failure started with local skin buckling over the disbond.",
+     "The results suggest that disbonds are the most critical defect for compressive loading and should be given priority in inspection. Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every production panel, whereas visual inspection is considered sufficient for core crushing."
+    ],
+    "paragraphsRu": [
+     "Трёхслойные панели с сотовым заполнителем широко применяются в железнодорожных вагонах и кузовах грузовиков, потому что сочетают высокую изгибную жёсткость с малой массой. Однако их прочность при сжатии чувствительна к производственным дефектам — смятию сот, складкам обшивки и отслоениям обшивки от заполнителя. В этом исследовании количественно оценивается влияние этих дефектов на прочность при торцевом сжатии панелей с алюминиевыми сотами и обшивками из углепластика.",
+     "Сорок восемь панелей размером 300 на 200 миллиметров изготовили четырьмя группами: бездефектные панели и панели с искусственным смятием сот, складками обшивки или отслоениями. Отслоения создавали, помещая перед отверждением между обшивкой и заполнителем плёнку из ПТФЭ размером 25 миллиметров. Все панели проконтролировали ультразвуковым C-сканированием, а затем нагружали торцевым сжатием до разрушения со скоростью 0,5 миллиметра в минуту.",
+     "Бездефектные панели разрушились при средней нагрузке 86 килоньютонов с коэффициентом вариации 4 процента. Смятие сот снизило прочность всего на 3 процента, что лежит в пределах разброса бездефектной группы. Складки обшивки снизили прочность на 11 процентов, а наибольшее снижение — на 27 процентов — вызвали отслоения. Во всех панелях с отслоениями разрушение начиналось с местной потери устойчивости обшивки над отслоением.",
+     "Результаты позволяют предположить, что при сжатии самый критичный дефект — отслоение и при контроле ему следует уделять первоочередное внимание. Поскольку отслоение размером 25 миллиметров надёжно выявляется C-сканированием, авторы рекомендуют C-скан каждой серийной панели, тогда как для смятия сот достаточным считается визуальный осмотр."
+    ],
+    "summaries": [
+     [
+      "Sandwich panels are light and stiff, but defects may reduce their compressive strength, which this study measures.",
+      "Sandwich panels are always made without defects.",
+      "Honeycomb panels are heavier than solid aluminium plates."
+     ],
+     [
+      "Four groups of panels, with and without artificial defects, were inspected and compressed to failure.",
+      "The panels were tested in bending at high temperature.",
+      "Only pristine panels were tested."
+     ],
+     [
+      "Disbonds reduced strength the most, wrinkles moderately, and core crushing hardly at all.",
+      "All defects reduced strength by about the same amount.",
+      "Core crushing was the most dangerous defect."
+     ],
+     [
+      "Disbonds are the most critical defect, so every production panel should be checked by C-scan.",
+      "Visual inspection is enough for all defects.",
+      "C-scan cannot detect disbonds."
+     ]
+    ],
+    "retell": [
+     "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+     "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+     "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+     "Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel."
+    ],
+    "parse": {
+     "sentence": "Because a 25-millimetre disbond is reliably detected by C-scan, the authors recommend C-scan inspection of every production panel, whereas visual inspection is considered sufficient for core crushing.",
+     "parts": [
+      [
+       "Because a 25-millimetre disbond is reliably detected by C-scan,",
+       "причина: отслоение 25 мм надёжно видно на C-скане (пассив: is detected)"
+      ],
+      [
+       "the authors recommend C-scan inspection of every production panel,",
+       "главное: авторы рекомендуют C-скан каждой серийной панели"
+      ],
+      [
+       "whereas visual inspection is considered sufficient for core crushing.",
+       "противопоставление (whereas — тогда как): для смятия сот достаточно осмотра"
+      ]
+     ],
+     "q": "What do the authors recommend for core crushing?",
+     "options": [
+      "Visual inspection",
+      "C-scan of every panel",
+      "No inspection at all"
+     ],
+     "answer": 0
+    },
+    "speak": [
+     {
+      "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Sandwich panels are light and stiff, but manufacturing defects can reduce their compressive strength, and this study measures how much.",
+      "voice": "gb-m"
+     },
+     {
+      "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+      "voice": "us-f"
+     },
+     {
+      "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+      "voice": "us-m"
+     },
+     {
+      "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "They made panels with and without artificial defects, checked them by C-scan and compressed them to failure.",
+      "voice": "gb-m"
+     },
+     {
+      "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Disbonds reduced the strength by 27 percent, wrinkles by 11 percent, and core crushing only by 3 percent.",
+      "voice": "gb-m"
+     },
+     {
+      "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel.",
+      "voice": "us-f"
+     },
+     {
+      "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel.",
+      "voice": "us-m"
+     },
+     {
+      "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel.",
+      "voice": "gb-f"
+     },
+     {
+      "text": "Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel.",
+      "voice": "gb-m"
+     }
+    ]
+   }
+  }
  },
  "mail": {
   "register": [

@@ -61,7 +61,8 @@
   "q": "If you could work on any space mission, which one would it be?",
   "ru": "Если бы можно было работать над любой космической миссией — какой?",
   "voice": "au-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-time-04",
@@ -149,7 +150,8 @@
   "q": "How does a rocket engine work, in simple terms?",
   "ru": "Как работает ракетный двигатель, если просто?",
   "voice": "in-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-explain-03",
@@ -485,7 +487,8 @@
   "q": "What does a nozzle do, in simple terms?",
   "ru": "Что делает сопло, если просто?",
   "voice": "us-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-explain-07",
@@ -525,7 +528,8 @@
   "q": "Why do rockets have several stages?",
   "ru": "Почему у ракет несколько ступеней?",
   "voice": "gb-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-explain-12",
@@ -533,7 +537,8 @@
   "q": "How does a satellite stay in orbit?",
   "ru": "Как спутник держится на орбите?",
   "voice": "in-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-explain-13",
@@ -557,7 +562,8 @@
   "q": "Why do engineers worry about vibration during launch?",
   "ru": "Почему инженеров беспокоит вибрация при старте?",
   "voice": "gb-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "q-disagree-05",
@@ -637,6 +643,60 @@
   "q": "Is there anything you'd like to ask about the next steps?",
   "ru": "Хочешь что-нибудь спросить о дальнейших шагах?",
   "voice": "au-m",
+  "reviewed": false
+ },
+ {
+  "id": "q-time-12",
+  "module": "call-time",
+  "q": "If you could build any machine, what would it be?",
+  "ru": "Если бы можно было построить любую машину — какую?",
+  "voice": "us-m",
+  "field": "mech",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-16",
+  "module": "call-explain",
+  "q": "How does a hydraulic press work, in simple terms?",
+  "ru": "Как работает гидравлический пресс, если просто?",
+  "voice": "gb-f",
+  "field": "mech",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-17",
+  "module": "call-explain",
+  "q": "What does a gearbox do, in simple terms?",
+  "ru": "Что делает редуктор, если просто?",
+  "voice": "in-m",
+  "field": "mech",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-18",
+  "module": "call-explain",
+  "q": "Why do we use coolant when we cut metal?",
+  "ru": "Зачем при резании металла нужна СОЖ?",
+  "voice": "au-f",
+  "field": "mech",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-19",
+  "module": "call-explain",
+  "q": "How does a bolt hold two parts together?",
+  "ru": "Как болт удерживает две детали вместе?",
+  "voice": "us-f",
+  "field": "mech",
+  "reviewed": false
+ },
+ {
+  "id": "q-explain-20",
+  "module": "call-explain",
+  "q": "Why do engineers worry about vibration in machine tools?",
+  "ru": "Почему инженеров беспокоит вибрация станков?",
+  "voice": "gb-m",
+  "field": "mech",
   "reviewed": false
  }
 ]

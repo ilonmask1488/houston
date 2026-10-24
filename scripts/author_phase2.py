@@ -9,6 +9,8 @@
 import json
 from pathlib import Path
 
+from fields import space_field
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content" / "story"
 STD = ["us-f", "us-m", "gb-f", "gb-m"]
@@ -67,6 +69,16 @@ QUESTIONS = [
      "Yes, a couple. What does a typical day look like for someone in this role? And what would you expect from me in the first three months?",
      ["c-questions-01", "c-questions-02", "c-questions-04"]),
 ]
+# Вопросы общие для всех специальностей; у кого образец ответа про ракеты и космос — для механиков
+# свой образец (byField.mech), той же длины и того же хода. «future» ключевых слов не содержит, но «увидеть,
+# как полетит» — космическое, поэтому подменяем и его.
+EXAMPLES_MECH = {
+    "about": "I'm a fourth-year student in mechanical engineering. At the moment I'm working on a project about fatigue testing: we run cyclic tests on steel and composite specimens and compare the results with finite element models. Before that, I spent a summer at a machine shop, where I got hands-on experience with CNC machines and measuring tools. What I enjoy most is the link between design and real production. I'm looking for a position where I can work on machine design and learn from experienced engineers.",
+    "project": "The goal of the project was to reduce the weight of a gearbox housing. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be cast and machined. As a result, the mass dropped by about eighteen percent, and the housing passed the load test on the first try.",
+    "why": "Two reasons. First, your team designs and builds real machines, not only models, and that's exactly the kind of work I enjoy. Second, I read about your test equipment for the automotive industry, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about production and quality control.",
+    "teamwork": "Last year four of us designed a small gearbox test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.",
+    "future": "In five years, I'd like to be a design engineer who can take a part from drawing to production on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see a machine I designed actually running on a real production line.",
+}
 QUESTION_VOICE = "us-m"  # интервьюер Майк
 EXAMPLE_VOICE = "gb-f"
 
@@ -90,6 +102,7 @@ EPISODES = [
                 ("I was born in a small town, and I have a cat.", "Я родился в маленьком городе, и у меня есть кот.", "Не по делу: на собеседовании начинают с учёбы и работы."),
                 ("I am student. I study rockets.", "Я студент. Я учу ракеты.", "Слишком коротко и с ошибкой: «a student». Добавь, чем занимаешься сейчас."),
             ]),
+            # ↑ у механиков вместо этой реплики — mech_lines[4]
             ("dana", "Composite testing, interesting. What exactly are you testing?", "Испытания композитов — интересно. Что именно вы испытываете?"),
             ("me", [
                 ("Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.", "В основном растяжение и изгиб образцов из углепластика, и я сравниваю результаты с расчётом МКЭ.", None),
@@ -116,6 +129,14 @@ EPISODES = [
                 ("Please call me tomorrow.", "Позвоните мне завтра, пожалуйста.", "Давит на интервьюера — сроки они уже назвали."),
             ]),
         ],
+        # Машиностроение: те же реплики, кроме космических (номер реплики → замена); в JSON — byField.mech.lines целиком.
+        "mech_lines": {
+            4: ("me", [
+                ("I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.", "Я студент четвёртого курса, машиностроение. Сейчас работаю над проектом по испытаниям композитов.", None),
+                ("I was born in a small town, and I have a cat.", "Я родился в маленьком городе, и у меня есть кот.", "Не по делу: на собеседовании начинают с учёбы и работы."),
+                ("I am student. I study machines.", "Я студент. Я учу машины.", "Слишком коротко и с ошибкой: «a student». Добавь, чем занимаешься сейчас."),
+            ]),
+        },
         "culture": ("Small talk и вопросы в конце",
                     "«Did you find us okay?» в начале собеседования — не проверка, а способ расслабиться: отвечай коротко и дружелюбно. В конце всегда задавай вопрос о работе — «вопросов нет» звучит как отсутствие интереса. О зарплате — не первым вопросом, лучше на следующем этапе."),
     },
@@ -191,26 +212,52 @@ EPISODES = [
 
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
-    questions = [
-        {"id": qid, "q": q, "ru": ru, "tip": tip, "star": star, "example": ex, "chunks": ch,
-         "voice": QUESTION_VOICE, "speak": [{"text": ex, "voice": EXAMPLE_VOICE}], "reviewed": False}
-        for qid, q, ru, tip, star, ex, ch in QUESTIONS
-    ]
-    episodes = []
-    for e in EPISODES:
+    questions = []
+    for qid, q, ru, tip, star, ex, ch in QUESTIONS:
+        item = {"id": qid, "q": q, "ru": ru, "tip": tip, "star": star, "example": ex, "chunks": ch,
+                "voice": QUESTION_VOICE, "speak": [{"text": ex, "voice": EXAMPLE_VOICE}], "reviewed": False}
+        assert not space_field(q, ru, tip), f"{qid}: сам вопрос или совет про космос"
+        if qid in EXAMPLES_MECH:
+            mex = EXAMPLES_MECH[qid]
+            assert not space_field(mex), f"{qid}: в образце для механиков космические слова"
+            item["byField"] = {"mech": {"example": mex, "speak": [{"text": mex, "voice": EXAMPLE_VOICE}]}}
+        else:
+            assert not space_field(ex), f"{qid}: космический образец — нужен EXAMPLES_MECH"
+        questions.append(item)
+    assert set(EXAMPLES_MECH) <= {q["id"] for q in questions}
+
+    def row_texts(row) -> list[str]:
+        return [x for o in row[1] for x in o if x] if row[0] == "me" else [row[1], row[2]]
+
+    def build_lines(eid: str, rows) -> list[dict]:
         lines = []
-        for i, row in enumerate(e["lines"]):
+        for i, row in enumerate(rows):
             if row[0] == "me":
                 opts = [{"text": t, "ru": r, "why": w} for t, r, w in row[1]]
-                assert opts[0]["why"] is None and all(o["why"] for o in opts[1:]), f"{e['id']}#{i}: верный вариант — первый"
+                assert opts[0]["why"] is None and all(o["why"] for o in opts[1:]), f"{eid}#{i}: верный вариант — первый"
                 lines.append({"speaker": "me", "options": opts, "speak": [{"text": opts[0]["text"], "voice": v} for v in STD]})
             else:
                 who, text, ru = row
                 lines.append({"speaker": who, "voice": CHARS[who], "text": text, "ru": ru})
-        episodes.append({
+        return lines
+
+    episodes = []
+    for e in EPISODES:
+        ep = {
             "id": e["id"], "n": e["n"], "title": e["title"], "place": e["place"], "after": e["after"], "intro": e["intro"],
-            "lines": lines, "culture": {"title": e["culture"][0], "text": e["culture"][1]}, "reviewed": False,
-        })
+            "lines": build_lines(e["id"], e["lines"]), "culture": {"title": e["culture"][0], "text": e["culture"][1]}, "reviewed": False,
+        }
+        assert not space_field(e["title"], e["place"], e["intro"], *e["culture"]), f"{e['id']}: космическое вступление — нужен byField"
+        mech = e.get("mech_lines", {})
+        rows = [mech.get(i, row) for i, row in enumerate(e["lines"])]
+        for i, row in enumerate(rows):
+            assert not space_field(*row_texts(row)), f"{e['id']}#{i}: космическая реплика — нужна замена в mech_lines"
+        for i, row in mech.items():
+            base = e["lines"][i]
+            assert row[0] == base[0] and (row[0] != "me" or len(row[1]) == len(base[1])), f"{e['id']}#{i}: замена должна повторять говорящего и число вариантов"
+        if mech:
+            ep["byField"] = {"mech": {"lines": build_lines(e["id"], rows)}}
+        episodes.append(ep)
 
     def dump(name: str, data):
         (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

@@ -6,7 +6,9 @@ import { ru } from '../../i18n/ru'
 import { BackupError, downloadBackup, importBackup, parseBackup, type Backup } from '../../lib/backup/backup'
 import { db, resetProgress } from '../../lib/db/db'
 import type { Settings } from '../../lib/db/types'
-import { updateSettings, useSettings } from '../../lib/settings/settings'
+import { saveField, updateSettings, useSettings } from '../../lib/settings/settings'
+import { FIELDS } from '../../content/types'
+import { skinField } from '../../i18n/skins'
 import { recognitionSupported } from '../../lib/speech/recognize'
 import s from './SettingsScreen.module.css'
 
@@ -103,6 +105,17 @@ export function SettingsScreen() {
           disabled={!canVibrate}
           onChange={(v) => set({ vibration: v })}
         />
+      </Section>
+
+      <Section title={ru.field.settings}>
+        <Field label={ru.field.settings} hint={ru.field.settingsHint}>
+          <Segmented
+            label={ru.field.settings}
+            value={settings.field ?? 'space'}
+            options={FIELDS.map((id) => ({ value: id, label: ru.field.options[id]!.title }))}
+            onChange={(v) => void saveField(v).then(() => v !== skinField && window.location.reload())}
+          />
+        </Field>
       </Section>
 
       <Section title={t.display}>

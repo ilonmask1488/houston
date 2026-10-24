@@ -43,7 +43,8 @@
    "Kind regards,",
    "Ivan Petrov"
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "mo-request-1",
@@ -89,5 +90,22 @@
    "Ivan"
   ],
   "reviewed": false
+ },
+ {
+  "id": "mo-apply-2",
+  "module": "mail-apply",
+  "title": "Отклик на вакансию",
+  "blocks": [
+   "Subject: Application – Junior Manufacturing Engineer",
+   "Dear Ms Clark,",
+   "I am writing to apply for the Junior Manufacturing Engineer position advertised on your website.",
+   "I am a fourth-year student in mechanical engineering, and in my current project I redesigned a machining fixture that cut the setup time by 30%.",
+   "I have attached my CV and a short portfolio.",
+   "I look forward to hearing from you.",
+   "Kind regards,",
+   "Ivan Petrov"
+  ],
+  "reviewed": false,
+  "field": "mech"
  }
 ]

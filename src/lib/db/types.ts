@@ -1,3 +1,4 @@
+import type { Field } from '../../content/types'
 /*
   Записи прогресса в IndexedDB. Правило: в базе только JSON-совместимые значения
   (время — числом миллисекунд, не Date), чтобы бэкап сохранялся и восстанавливался без потерь.
@@ -23,6 +24,8 @@ export type Settings = {
   vibration: boolean
   theme: ThemeSetting
   desiredRetention: 0.85 | 0.9 | 0.95
+  /** специальность: тексты, термины, примеры и стиль приложения (не выбрана — спросить при первом запуске) */
+  field?: Field
 }
 
 export type SettingsRow = Partial<Settings> & { id: 'main' }

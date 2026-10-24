@@ -288,7 +288,289 @@
    "title": "Small talk и вопросы в конце",
    "text": "«Did you find us okay?» в начале собеседования — не проверка, а способ расслабиться: отвечай коротко и дружелюбно. В конце всегда задавай вопрос о работе — «вопросов нет» звучит как отсутствие интереса. О зарплате — не первым вопросом, лучше на следующем этапе."
   },
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "lines": [
+     {
+      "speaker": "mike",
+      "voice": "us-m",
+      "text": "Hi, thanks for coming in. Did you find us okay?",
+      "ru": "Привет, спасибо, что пришёл. Легко нашёл нас?"
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "Yes, thanks. The directions were really clear.",
+        "ru": "Да, спасибо. Всё было очень понятно объяснено.",
+        "why": null
+       },
+       {
+        "text": "No, I am finding you with difficulty.",
+        "ru": "Нет, я находил вас с трудностью.",
+        "why": "Калька с русского — так не говорят. Короткое «Yes, thanks» здесь уместнее."
+       },
+       {
+        "text": "Yes. Where is the toilet?",
+        "ru": "Да. Где туалет?",
+        "why": "Слишком резко для первой фразы. Сначала поблагодари."
+       }
+      ],
+      "speak": [
+       {
+        "text": "Yes, thanks. The directions were really clear.",
+        "voice": "us-f"
+       },
+       {
+        "text": "Yes, thanks. The directions were really clear.",
+        "voice": "us-m"
+       },
+       {
+        "text": "Yes, thanks. The directions were really clear.",
+        "voice": "gb-f"
+       },
+       {
+        "text": "Yes, thanks. The directions were really clear.",
+        "voice": "gb-m"
+       }
+      ]
+     },
+     {
+      "speaker": "mike",
+      "voice": "us-m",
+      "text": "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the structures team.",
+      "ru": "Отлично. Я Майк, занимаюсь наймом, а это Дана — она руководит группой конструкций."
+     },
+     {
+      "speaker": "dana",
+      "voice": "us-f",
+      "text": "Nice to meet you. So, let's start easy. Tell me a little about yourself.",
+      "ru": "Приятно познакомиться. Начнём с простого: расскажи немного о себе."
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.",
+        "ru": "Я студент четвёртого курса, машиностроение. Сейчас работаю над проектом по испытаниям композитов.",
+        "why": null
+       },
+       {
+        "text": "I was born in a small town, and I have a cat.",
+        "ru": "Я родился в маленьком городе, и у меня есть кот.",
+        "why": "Не по делу: на собеседовании начинают с учёбы и работы."
+       },
+       {
+        "text": "I am student. I study machines.",
+        "ru": "Я студент. Я учу машины.",
+        "why": "Слишком коротко и с ошибкой: «a student». Добавь, чем занимаешься сейчас."
+       }
+      ],
+      "speak": [
+       {
+        "text": "I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.",
+        "voice": "us-f"
+       },
+       {
+        "text": "I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.",
+        "voice": "us-m"
+       },
+       {
+        "text": "I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.",
+        "voice": "gb-f"
+       },
+       {
+        "text": "I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.",
+        "voice": "gb-m"
+       }
+      ]
+     },
+     {
+      "speaker": "dana",
+      "voice": "us-f",
+      "text": "Composite testing, interesting. What exactly are you testing?",
+      "ru": "Испытания композитов — интересно. Что именно вы испытываете?"
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+        "ru": "В основном растяжение и изгиб образцов из углепластика, и я сравниваю результаты с расчётом МКЭ.",
+        "why": null
+       },
+       {
+        "text": "It's a secret.",
+        "ru": "Это секрет.",
+        "why": "Звучит грубо. Если есть ограничения — скажи «I can't share the details, but in general…»."
+       },
+       {
+        "text": "Everything.",
+        "ru": "Всё.",
+        "why": "Слишком расплывчато. Назови конкретные испытания."
+       }
+      ],
+      "speak": [
+       {
+        "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+        "voice": "us-f"
+       },
+       {
+        "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+        "voice": "us-m"
+       },
+       {
+        "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+        "voice": "gb-f"
+       },
+       {
+        "text": "Mostly tensile and bending tests of carbon fiber specimens, and I compare the results with FEA.",
+        "voice": "gb-m"
+       }
+      ]
+     },
+     {
+      "speaker": "dana",
+      "voice": "us-f",
+      "text": "And what was the most difficult part?",
+      "ru": "А что было самым сложным?"
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+        "ru": "Хороший вопрос, дайте подумать. Пожалуй, получить стабильные результаты: образцы всё время разрушались в захватах.",
+        "why": null
+       },
+       {
+        "text": "Nothing was difficult.",
+        "ru": "Ничего сложного не было.",
+        "why": "Не верят никогда. Лучше честная трудность и как ты её решал."
+       },
+       {
+        "text": "The difficult part was difficult.",
+        "ru": "Сложная часть была сложной.",
+        "why": "Пустой ответ. Возьми паузу чанком «Let me think…» и назови конкретику."
+       }
+      ],
+      "speak": [
+       {
+        "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+        "voice": "us-f"
+       },
+       {
+        "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+        "voice": "us-m"
+       },
+       {
+        "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+        "voice": "gb-f"
+       },
+       {
+        "text": "That's a good question, let me think. Probably getting consistent results, because the specimens kept failing at the grips.",
+        "voice": "gb-m"
+       }
+      ]
+     },
+     {
+      "speaker": "mike",
+      "voice": "us-m",
+      "text": "Do you have any questions for us?",
+      "ru": "У тебя есть вопросы к нам?"
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "Yes, what does a typical day look like for an intern in your team?",
+        "ru": "Да: как выглядит обычный день стажёра в вашей команде?",
+        "why": null
+       },
+       {
+        "text": "What is the salary?",
+        "ru": "Какая зарплата?",
+        "why": "Не первым вопросом: сначала покажи интерес к работе."
+       },
+       {
+        "text": "No.",
+        "ru": "Нет.",
+        "why": "«Нет вопросов» звучит как отсутствие интереса."
+       }
+      ],
+      "speak": [
+       {
+        "text": "Yes, what does a typical day look like for an intern in your team?",
+        "voice": "us-f"
+       },
+       {
+        "text": "Yes, what does a typical day look like for an intern in your team?",
+        "voice": "us-m"
+       },
+       {
+        "text": "Yes, what does a typical day look like for an intern in your team?",
+        "voice": "gb-f"
+       },
+       {
+        "text": "Yes, what does a typical day look like for an intern in your team?",
+        "voice": "gb-m"
+       }
+      ]
+     },
+     {
+      "speaker": "dana",
+      "voice": "us-f",
+      "text": "It's a mix: some design work in CAD, some time in the lab, and a short stand-up every morning. You'd be working with Priya.",
+      "ru": "Всего понемногу: проектирование в CAD, работа в лаборатории и короткая планёрка каждое утро. Работать будешь с Прией."
+     },
+     {
+      "speaker": "mike",
+      "voice": "us-m",
+      "text": "Thanks for your time. We'll be in touch by the end of next week.",
+      "ru": "Спасибо за время. Мы свяжемся с тобой до конца следующей недели."
+     },
+     {
+      "speaker": "me",
+      "options": [
+       {
+        "text": "Thank you, I really enjoyed the conversation.",
+        "ru": "Спасибо, мне очень понравился разговор.",
+        "why": null
+       },
+       {
+        "text": "Okay, bye.",
+        "ru": "Ладно, пока.",
+        "why": "Слишком коротко для завершения собеседования."
+       },
+       {
+        "text": "Please call me tomorrow.",
+        "ru": "Позвоните мне завтра, пожалуйста.",
+        "why": "Давит на интервьюера — сроки они уже назвали."
+       }
+      ],
+      "speak": [
+       {
+        "text": "Thank you, I really enjoyed the conversation.",
+        "voice": "us-f"
+       },
+       {
+        "text": "Thank you, I really enjoyed the conversation.",
+        "voice": "us-m"
+       },
+       {
+        "text": "Thank you, I really enjoyed the conversation.",
+        "voice": "gb-f"
+       },
+       {
+        "text": "Thank you, I really enjoyed the conversation.",
+        "voice": "gb-m"
+       }
+      ]
+     }
+    ]
+   }
+  }
  },
  {
   "id": "ep-2",

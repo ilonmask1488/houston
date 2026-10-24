@@ -58,7 +58,7 @@ export function HomeScreen() {
       <h1 className="visually-hidden">{ru.nav.session}</h1>
       <div className={`${s.telemetry} scale-rule`}>
         <span className={s.brand}>
-          HOUSTON <span className={s.freq}>· {ru.mascot.name}</span>
+          {ru.appName.toUpperCase()} <span className={s.freq}>· {ru.mascot.name}</span>
         </span>
         <Link to="/me" className={s.me} aria-label={ru.home.profileLink}>
           <IconProfile />

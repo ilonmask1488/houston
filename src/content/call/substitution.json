@@ -171,7 +171,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "s-time-01",
@@ -1042,5 +1043,93 @@
    }
   ],
   "reviewed": false
+ },
+ {
+  "id": "s-intro-03",
+  "module": "call-intro",
+  "base": "My background is in mechanical engineering.",
+  "ru": "По специальности я инженер-машиностроитель.",
+  "swaps": [
+   {
+    "cue": "технология машиностроения",
+    "en": "My background is in manufacturing engineering."
+   },
+   {
+    "cue": "материаловедение",
+    "en": "My background is in materials science."
+   },
+   {
+    "cue": "прикладная математика",
+    "en": "My background is in applied mathematics."
+   }
+  ],
+  "speak": [
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in mechanical engineering.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in manufacturing engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in manufacturing engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in manufacturing engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in manufacturing engineering.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in materials science.",
+    "voice": "gb-m"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "us-f"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "us-m"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "My background is in applied mathematics.",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
  }
 ]

@@ -4,13 +4,66 @@
   Состояния: радуется, думает, подмигивает, «ой», празднует.
 */
 
+import { skinField } from '../i18n/skins'
+
 export type MascotMood = 'happy' | 'thinking' | 'wink' | 'oops' | 'celebrate'
 
 type Props = { mood?: MascotMood; size?: number; className?: string; title?: string }
 
 const INK = 'var(--ink)'
 
-export function Mascot({ mood = 'happy', size = 96, className, title }: Props) {
+export function Mascot(props: Props) {
+  return skinField === 'mech' ? <Vintik {...props} /> : <Ping {...props} />
+}
+
+/*
+  Винтик — маскот машиностроения: шестигранная гайка в оранжевой каске, с гаечным ключом.
+  Лицо и состояния — те же, что у Ping (общий Face), чтобы реакции выглядели одинаково.
+*/
+function Vintik({ mood = 'happy', size = 96, className, title }: Props) {
+  return (
+    <svg
+      viewBox="0 0 160 140"
+      width={size}
+      height={(size * 140) / 160}
+      className={className}
+      role={title ? 'img' : undefined}
+      aria-hidden={title ? undefined : true}
+      aria-label={title}
+      data-mood={mood}
+    >
+      {/* гаечный ключ в «руке» */}
+      <g stroke={INK} strokeWidth="3" strokeLinejoin="round" strokeLinecap="round">
+        <path d="M118 96 L146 70" strokeWidth="7" stroke={INK} />
+        <path d="M118 96 L146 70" strokeWidth="3.5" stroke="var(--surface)" />
+        <path d="M140 60 Q156 58 154 72 L146 70 L142 66 Z" fill="var(--surface)" />
+      </g>
+      {/* корпус-гайка: шестигранник */}
+      <path d="M80 44 L118 66 L118 110 L80 132 L42 110 L42 66 Z" fill="var(--surface)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M50 118 L80 136 L110 118" fill="none" stroke="var(--signal)" strokeWidth="4" strokeLinecap="round" opacity="0.9" />
+      {/* каска */}
+      <path d="M50 58 Q50 26 80 26 Q110 26 110 58 Z" fill="var(--signal)" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M42 60 H118" stroke={INK} strokeWidth="4" strokeLinecap="round" />
+      <path d="M80 27 V44" stroke={INK} strokeWidth="2.5" opacity="0.6" />
+      <Face mood={mood} />
+      {mood === 'celebrate' && (
+        <g stroke="var(--signal)" strokeWidth="3" strokeLinecap="round">
+          <path d="M20 40 L20 52 M14 46 L26 46" />
+          <path d="M136 22 L136 32 M131 27 L141 27" />
+          <path d="M18 76 L28 76" />
+        </g>
+      )}
+      {mood === 'thinking' && (
+        <g fill="var(--ink-2)">
+          <circle cx="30" cy="54" r="3" />
+          <circle cx="20" cy="42" r="4.5" />
+        </g>
+      )}
+    </svg>
+  )
+}
+
+function Ping({ mood = 'happy', size = 96, className, title }: Props) {
   return (
     <svg
       viewBox="0 0 160 140"

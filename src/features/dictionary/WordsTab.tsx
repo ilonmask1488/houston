@@ -9,7 +9,7 @@ import type { DictWord } from '../../content/types'
 import { ru } from '../../i18n/ru'
 import { defaultVoice } from '../../lib/audio/audio'
 import { db } from '../../lib/db/db'
-import { dictById, dictWords, dictionaryLoaded, loadDictionary, norm } from '../../lib/dict/dict'
+import { dictById, dictWords, dictionaryLoaded, fieldWords, loadDictionary, norm } from '../../lib/dict/dict'
 import { addWordCards } from '../../lib/srs/cards'
 import s from './DictionaryScreen.module.css'
 
@@ -88,7 +88,7 @@ export function WordsTab({ query }: { query: string }) {
 
   const topics = useMemo(() => {
     const m = new Map<string, DictWord[]>()
-    if (loaded) for (const w of dictWords) if (w.band === 'tech' && w.topic) m.set(w.topic, [...(m.get(w.topic) ?? []), w])
+    if (loaded) for (const w of fieldWords()) if (w.band === 'tech' && w.topic) m.set(w.topic, [...(m.get(w.topic) ?? []), w])
     return [...m]
   }, [loaded])
 

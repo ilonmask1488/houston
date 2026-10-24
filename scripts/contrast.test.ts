@@ -35,12 +35,14 @@ const PAIRS: [string, string][] = [
 ]
 
 describe('контраст токенов', () => {
-  for (const [name, sel] of [
-    ['светлая', ':root {'],
-    ['тёмная', ":root[data-theme='dark']"],
+  for (const [name, sel, extra] of [
+    ['светлая', ':root {', null],
+    ['тёмная', ":root[data-theme='dark']", null],
+    ['машиностроение, светлая', ":root[data-field='mech'] {", null],
+    ['машиностроение, тёмная', ":root[data-theme='dark']", ":root[data-field='mech'][data-theme='dark']"],
   ] as const) {
     const light = block(':root {')
-    const t = { ...light, ...block(sel) }
+    const t = { ...light, ...block(sel), ...(extra ? block(extra) : {}) }
     for (const [fg, bg] of PAIRS) {
       it(`${name}: ${fg} на ${bg}`, () => {
         expect(contrast(t[fg]!, t[bg]!)).toBeGreaterThanOrEqual(4.5)

@@ -9,6 +9,13 @@ export const TRACKS: TrackId[] = ['air', 'call', 'doc', 'mail', 'clean']
 
 export type Accent = 'us' | 'gb' | 'in' | 'au'
 /** Голоса edge-tts: акцент + пол. Персонажи сюжета получают свои голоса из этого же набора. */
+/**
+  Специальность ученика: общее ядро видят все, профильное (field) — только своя специальность.
+  space — ракетно-космическая техника (стиль Houston), mech — машиностроение (свой стиль).
+*/
+export type Field = 'space' | 'mech'
+export const FIELDS: Field[] = ['space', 'mech']
+
 export type VoiceId = 'us-f' | 'us-m' | 'gb-f' | 'gb-m' | 'in-f' | 'in-m' | 'au-f' | 'au-m'
 export const VOICES: VoiceId[] = ['us-f', 'us-m', 'gb-f', 'gb-m', 'in-f', 'in-m', 'au-f', 'au-m']
 
@@ -142,7 +149,7 @@ export type DocText = {
   id: string
   module: string
   level: 1 | 2 | 3
-  topic: 'space' | 'prop' | 'mat' | 'test' | 'cad' | 'sens'
+  topic: 'space' | 'prop' | 'mat' | 'test' | 'cad' | 'sens' | 'mach' | 'join' | 'hyd' | 'maint'
   /** жанр: статья, аннотация, даташит, требования… */
   kind: string
   title: string
@@ -174,6 +181,8 @@ export type DictWord = {
   /** у технических: полоса частотности, если термин есть и в общем списке */
   freq?: string
   voices?: VoiceId[]
+  /** термин одной специальности (космос — space, машиностроение — mech); нет — общий */
+  field?: Field
   reviewed: boolean
 }
 

@@ -1,5 +1,11 @@
 """
-Контент фазы 3 — Техдок: стратегии чтения, 18 технических текстов (6 тем × 3 уровня), встроенный словарь.
+Контент фазы 3 — Техдок: стратегии чтения, технические тексты (3 уровня), встроенный словарь.
+
+Специальности (scripts/fields.py): текст про ракеты и космос получает field="space" (space_field по
+заголовку и абзацам), машиностроительные тексты (темы mach, join, hyd, maint) — field="mech" явно;
+остальные (материалы, испытания, CAD, датчики) — общие. В каждом модуле doc-* космических и
+машиностроительных текстов поровну, чтобы у обеих специальностей модуль был одной длины.
+Термины словаря: темы space/prop → field="space", mach/join/hyd/maint → field="mech".
 
   .venv\\Scripts\\python.exe scripts\\author_phase3.py
 
@@ -12,6 +18,8 @@
 import json
 import re
 from pathlib import Path
+
+from fields import space_field, with_field
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content"
@@ -48,6 +56,12 @@ STRATEGIES = {
             ["results show", "что получили", "\"Results show a 12 °C reduction.\""],
             ["suggest / can be used", "что из этого следует", "\"…can be used on small satellites.\""],
         ],
+        "byField": {"mech": {"rules": [
+            ["We present / propose", "что сделали", "\"We present a quick-change fixture for thin parts…\""],
+            ["was measured / tested", "как проверяли", "\"The fixture was tested on a CNC mill.\""],
+            ["results show", "что получили", "\"Results show a 30% shorter setup time.\""],
+            ["suggest / can be used", "что из этого следует", "\"…can be used in small-batch production.\""],
+        ]}},
         "tip": "Цифры в аннотации — самое ценное. Найди их первыми: проценты, градусы, килограммы.",
     },
     "doc-grammar": {
@@ -87,6 +101,12 @@ STRATEGIES = {
             ["may", "допускается", "\"Minor surface marks may be accepted.\""],
             ["deviation", "отклонение от методики", "\"Deviation: the test was paused…\""],
         ],
+        "byField": {"mech": {"rules": [
+            ["shall", "обязательно", "\"The frame shall withstand 1.25 × rated load.\""],
+            ["should", "рекомендуется", "\"Strain gauges should be placed…\""],
+            ["may", "допускается", "\"Minor surface marks may be accepted.\""],
+            ["deviation", "отклонение от методики", "\"Deviation: the test was paused…\""],
+        ]}},
         "tip": "В требованиях ищи shall — это то, за что потом спросят на приёмке.",
     },
     "doc-speed": {
@@ -905,6 +925,341 @@ TEXTS = [
             "q": "What can cause voids in the laminate?", "options": ["Water that condenses on cold material", "A freezer at −18 °C", "Writing the date on the label"], "answer": 0,
         },
     },
+    # ——— Машиностроение (field: "mech"): близнецы космических текстов — те же модули, уровни и жанры ———
+    # темы: mach — станки и обработка, join — сварка, крепёж, сборка, hyd — гидравлика, maint — обслуживание
+    {
+        "id": "t-mech-lathe", "field": "mech", "module": "doc-structure", "level": 1, "topic": "mach", "kind": "статья", "title": "How a lathe turns a shaft",
+        "paragraphs": [
+            "A lathe is a machine tool that makes round parts, such as shafts, pins and bushings. The workpiece is held in a chuck and turns with the spindle. A cutting tool moves along the workpiece and removes metal in the form of chips.",
+            "Three settings control the cut: the cutting speed, the feed rate and the depth of cut. A higher speed saves time, but the tool becomes hot and wears faster. For this reason, the operator usually removes most of the metal with a rough cut first and then makes a light finishing cut. The finishing cut gives the final size and a smooth surface.",
+        ],
+        "paragraphsRu": [
+            "Токарный станок — это металлорежущий станок для круглых деталей, например валов, пальцев и втулок. Заготовку зажимают в патроне, и она вращается вместе со шпинделем. Резец движется вдоль заготовки и снимает металл в виде стружки.",
+            "Резание определяют три параметра: скорость резания, подача и глубина резания. Более высокая скорость экономит время, но инструмент сильнее нагревается и быстрее изнашивается. Поэтому оператор обычно сначала снимает бóльшую часть металла черновым проходом, а затем делает лёгкий чистовой проход. Чистовой проход даёт окончательный размер и гладкую поверхность.",
+        ],
+        "summaries": [
+            ["A lathe turns the workpiece while a tool removes metal to make round parts.", "A lathe is used only to make flat plates.", "The cutting tool turns with the spindle, and the workpiece stays still."],
+            ["Speed, feed and depth of cut control the cut; a rough cut comes before a finishing cut.", "A higher cutting speed makes the tool last longer.", "The finishing cut removes most of the metal."],
+        ],
+        "retell": ["A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it.", "Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last."],
+        "find": [("What kind of parts does a lathe make?", "makes round parts"), ("What holds the workpiece?", "held in a chuck"), ("In what form is the metal removed?", "in the form of chips"), ("What three settings control the cut?", "the cutting speed, the feed rate and the depth of cut"), ("What happens to the tool at a higher speed?", "wears faster"), ("What does the finishing cut give?", "the final size and a smooth surface")],
+        "parse": {
+            "sentence": "For this reason, the operator usually removes most of the metal with a rough cut first and then makes a light finishing cut.",
+            "parts": [["For this reason,", "поэтому — связка с предыдущим предложением"], ["the operator usually removes most of the metal with a rough cut first", "сначала оператор снимает бóльшую часть металла черновым проходом"], ["and then makes a light finishing cut", "а затем делает лёгкий чистовой проход"]],
+            "q": "What does the operator do first?", "options": ["Removes most of the metal with a rough cut", "Makes a light finishing cut", "Measures the final size"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-cylinder", "field": "mech", "module": "doc-structure", "level": 1, "topic": "hyd", "kind": "статья", "title": "How a hydraulic cylinder works",
+        "paragraphs": [
+            "A hydraulic cylinder turns the pressure of oil into a straight-line force. It consists of a tube, a piston and a piston rod. A pump sends oil into the cylinder, and the oil pushes the piston and the rod out.",
+            "The force of the cylinder depends on two things: the oil pressure and the area of the piston. For example, a piston with an area of 20 square centimeters at 100 bar gives a force of about 20 kN. Seals on the piston and on the rod keep the oil inside. If the seals are worn, oil leaks, and the cylinder becomes slow and weak.",
+        ],
+        "paragraphsRu": [
+            "Гидроцилиндр превращает давление масла в прямолинейное усилие. Он состоит из гильзы, поршня и штока. Насос подаёт масло в цилиндр, и масло выталкивает поршень со штоком.",
+            "Усилие цилиндра зависит от двух величин: давления масла и площади поршня. Например, поршень площадью 20 квадратных сантиметров при 100 бар даёт усилие около 20 кН. Уплотнения на поршне и на штоке удерживают масло внутри. Если уплотнения изношены, масло подтекает, и цилиндр становится медленным и слабым.",
+        ],
+        "summaries": [
+            ["A cylinder uses oil pressure from a pump to push a piston and a rod in a straight line.", "A hydraulic cylinder turns electricity into rotation.", "The piston pushes oil back into the pump to create force."],
+            ["The force is pressure times piston area, and good seals are needed to keep it.", "The force does not depend on the piston area.", "Worn seals make the cylinder faster and stronger."],
+        ],
+        "retell": ["A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.", "Its force is pressure times piston area, and worn seals let oil leak and make it weak."],
+        "find": [("What does a hydraulic cylinder turn the oil pressure into?", "straight-line force"), ("What are the main parts of a cylinder?", "a tube, a piston and a piston rod"), ("What sends oil into the cylinder?", "A pump sends oil"), ("What does the force depend on?", "the oil pressure and the area of the piston"), ("What force does a 20 cm² piston give at 100 bar?", "force of about 20 kN"), ("What keeps the oil inside?", "keep the oil inside"), ("What happens if the seals are worn?", "becomes slow and weak")],
+        "parse": {
+            "sentence": "If the seals are worn, oil leaks, and the cylinder becomes slow and weak.",
+            "parts": [["If the seals are worn,", "условие (пассив are worn): если уплотнения изношены"], ["oil leaks,", "масло подтекает"], ["and the cylinder becomes slow and weak", "и цилиндр становится медленным и слабым"]],
+            "q": "What happens when the seals are worn?", "options": ["Oil leaks and the cylinder becomes weak", "The piston area becomes larger", "The pump stops at once"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-bearings", "field": "mech", "module": "doc-structure", "level": 1, "topic": "maint", "kind": "статья", "title": "Rolling bearings: why they fail",
+        "paragraphs": [
+            "A rolling bearing lets a shaft turn with very little friction. It has an inner ring, an outer ring, and balls or rollers between them. A bearing cage keeps the balls evenly spaced.",
+            "Most bearings do not fail because they are old. They fail because of poor lubrication, dirt, misalignment or wrong mounting. A bearing that is beginning to fail often becomes noisy and hot. Regular checks of temperature and vibration help to find the problem early, before the machine stops.",
+        ],
+        "paragraphsRu": [
+            "Подшипник качения позволяет валу вращаться с очень малым трением. У него есть внутреннее кольцо, наружное кольцо и шарики или ролики между ними. Сепаратор удерживает шарики на равном расстоянии друг от друга.",
+            "Большинство подшипников выходит из строя не от старости. Они отказывают из-за плохой смазки, грязи, несоосности или неправильного монтажа. Подшипник, который начинает отказывать, часто шумит и греется. Регулярные проверки температуры и вибрации помогают обнаружить неисправность рано, до того как станок остановится.",
+        ],
+        "summaries": [
+            ["A bearing has two rings with balls or rollers between them, so a shaft turns easily.", "A bearing increases friction to stop the shaft.", "The cage is the outer cover of the machine."],
+            ["Bearings usually fail because of lubrication, dirt or mounting problems, and checks find this early.", "Bearings almost always fail simply because they are old.", "A failing bearing becomes quiet and cold."],
+        ],
+        "retell": ["A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily.", "Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early."],
+        "find": [("What does a rolling bearing let a shaft do?", "turn with very little friction"), ("What is between the inner and the outer ring?", "balls or rollers between them"), ("What keeps the balls evenly spaced?", "bearing cage"), ("Why do most bearings fail?", "poor lubrication, dirt, misalignment or wrong mounting"), ("What happens to a bearing that is beginning to fail?", "noisy and hot"), ("What checks help to find the problem early?", "checks of temperature and vibration")],
+        "parse": {
+            "sentence": "Regular checks of temperature and vibration help to find the problem early, before the machine stops.",
+            "parts": [["Regular checks of temperature and vibration", "подлежащее: регулярные проверки температуры и вибрации"], ["help to find the problem early", "помогают обнаружить неисправность рано"], [", before the machine stops", "до того как станок остановится"]],
+            "q": "What helps to find the problem early?", "options": ["Regular checks of temperature and vibration", "A new bearing cage", "Stopping the machine every day"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-oil-change", "field": "mech", "module": "doc-structure", "level": 1, "topic": "maint", "kind": "рабочая инструкция", "title": "Work instruction: changing the gearbox oil",
+        "paragraphs": [
+            "This instruction applies to the main gearbox of conveyor line 3. The oil shall be changed every 4000 operating hours or once a year, whichever comes first. The work takes about one hour and needs two people.",
+            "Before you start, stop the conveyor and lock out the main switch with your personal lock. Let the gearbox cool down for at least 30 minutes, because hot oil can burn your skin. Put an oil tray under the drain plug, remove the plug and let the old oil drain completely.",
+            "Clean the magnetic drain plug and look for metal particles on it. A few fine particles are normal, but large pieces must be reported to the maintenance supervisor. Fit the plug with a new washer and fill the gearbox with 12 liters of fresh oil until the level is in the middle of the sight glass. Write the date and the hours in the maintenance log.",
+        ],
+        "paragraphsRu": [
+            "Настоящая инструкция относится к главному редуктору конвейерной линии 3. Масло необходимо менять каждые 4000 моточасов или раз в год — смотря что наступит раньше. Работа занимает около часа и выполняется вдвоём.",
+            "Перед началом остановите конвейер и заблокируйте главный выключатель своим личным замком. Дайте редуктору остыть не менее 30 минут: горячее масло может обжечь кожу. Поставьте поддон под сливную пробку, выверните пробку и дайте старому маслу полностью стечь.",
+            "Очистите магнитную сливную пробку и осмотрите её на наличие металлических частиц. Немного мелких частиц — норма, но о крупных кусочках нужно сообщить мастеру службы ремонта. Установите пробку с новой шайбой и залейте в редуктор 12 литров свежего масла, пока уровень не дойдёт до середины смотрового стекла. Запишите дату и моточасы в журнал обслуживания.",
+        ],
+        "summaries": [
+            ["The instruction is for the conveyor gearbox, and the oil is changed every 4000 hours or yearly.", "The oil is changed every week by one person.", "The instruction is for all machines in the factory."],
+            ["Stop and lock out the conveyor, let the gearbox cool, and drain the old oil.", "Drain the oil while it is still hot to save time.", "The conveyor can keep running during the oil change."],
+            ["Check the plug for metal, refit it with a new washer, add fresh oil and record the work.", "Large metal pieces on the plug are normal and need no report.", "The old washer should always be used again."],
+        ],
+        "retell": [
+            "The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year.",
+            "Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray.",
+            "Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log.",
+        ],
+        "find": [
+            ("How often shall the oil be changed?", "every 4000 operating hours"),
+            ("How many people are needed?", "needs two people"),
+            ("What must you lock out?", "lock out the main switch"),
+            ("How long should the gearbox cool down?", "at least 30 minutes"),
+            ("Why must you wait before draining the oil?", "hot oil can burn your skin"),
+            ("What must be reported to the supervisor?", "large pieces must be reported"),
+            ("How much fresh oil is needed?", "12 liters of fresh oil"),
+            ("Where do you write the date and the hours?", "in the maintenance log"),
+        ],
+        "parse": {
+            "sentence": "Fit the plug with a new washer and fill the gearbox with 12 liters of fresh oil until the level is in the middle of the sight glass.",
+            "parts": [["Fit the plug with a new washer", "повелительное: установите пробку с новой шайбой"], ["and fill the gearbox with 12 liters of fresh oil", "и залейте в редуктор 12 литров свежего масла"], ["until the level is in the middle of the sight glass", "пока уровень не дойдёт до середины смотрового стекла (until — пока не)"]],
+            "q": "When do you stop filling the oil?", "options": ["When the level is in the middle of the sight glass", "When the oil starts to leak", "After exactly one hour"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-tool-wear", "field": "mech", "module": "doc-abstract", "level": 2, "topic": "mach", "kind": "аннотация", "title": "Tool life of coated carbide inserts with minimum quantity lubrication",
+        "paragraphs": [
+            "Flood coolant improves tool life in milling, but it is expensive to buy, filter and dispose of, and it can be harmful to operators. In this study, we compare dry milling, flood coolant and minimum quantity lubrication (MQL) when face milling a 42CrMo4 steel with coated carbide inserts.",
+            "All tests were carried out on a vertical machining center at a cutting speed of 200 m/min and a feed of 0.15 mm per tooth. Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm. The surface roughness of the workpiece was measured at the same intervals.",
+            "With MQL, the tool life was 38 minutes, compared with 41 minutes for flood coolant and 22 minutes for dry milling. The surface roughness was similar for MQL and flood coolant, about Ra 0.9 µm. The results suggest that MQL can replace flood coolant in this operation and reduce the use of cutting fluid by more than 95 percent.",
+        ],
+        "paragraphsRu": [
+            "Обильный полив СОЖ повышает стойкость инструмента при фрезеровании, но жидкость дорого покупать, очищать и утилизировать, к тому же она может вредить здоровью операторов. В этом исследовании мы сравниваем фрезерование всухую, с обильным поливом СОЖ и с минимальной смазкой (MQL) при торцевом фрезеровании стали 42CrMo4 твердосплавными пластинами с покрытием.",
+            "Все испытания проводили на вертикальном обрабатывающем центре при скорости резания 200 м/мин и подаче 0,15 мм на зуб. Износ по задней поверхности измеряли оптическим микроскопом через каждые десять проходов; окончанием стойкости считали износ по задней поверхности 0,3 мм. Шероховатость поверхности заготовки измеряли с тем же интервалом.",
+            "С MQL стойкость составила 38 минут — против 41 минуты с обильным поливом и 22 минут всухую. Шероховатость поверхности с MQL и с поливом оказалась близкой, около Ra 0,9 мкм. Результаты позволяют предположить, что в этой операции MQL может заменить обильный полив и сократить расход СОЖ более чем на 95 процентов.",
+        ],
+        "summaries": [
+            ["The study compares dry milling, flood coolant and MQL because coolant is costly and can be harmful.", "The study shows how to make new carbide inserts.", "The study compares different steels without any cooling."],
+            ["Tests on a machining center measured flank wear and roughness at regular intervals.", "Tool life ended when the insert broke into pieces.", "Wear was measured only once at the end of the test."],
+            ["MQL gave almost the same tool life and surface as flood coolant with far less fluid.", "Dry milling gave the longest tool life.", "MQL made the surface much rougher than flood coolant."],
+        ],
+        "retell": [
+            "Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication.",
+            "They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life.",
+            "MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant.",
+        ],
+        "find": [
+            ("Why is flood coolant a problem?", "expensive to buy, filter and dispose of"),
+            ("What steel was milled?", "42CrMo4 steel"),
+            ("What was the cutting speed?", "cutting speed of 200 m/min"),
+            ("How was flank wear measured?", "optical microscope"),
+            ("What flank wear defined the end of tool life?", "flank wear of 0.3 mm"),
+            ("What was the tool life with MQL?", "tool life was 38 minutes"),
+            ("What was the tool life in dry milling?", "22 minutes for dry milling"),
+            ("How much can MQL reduce the use of cutting fluid?", "more than 95 percent"),
+        ],
+        "parse": {
+            "sentence": "Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm.",
+            "parts": [["Flank wear was measured with an optical microscope", "пассив: износ по задней поверхности измеряли оптическим микроскопом"], ["after every ten passes", "через каждые десять проходов"], ["and the end of tool life was defined as a flank wear of 0.3 mm", "пассив: окончанием стойкости считали износ 0,3 мм"]],
+            "q": "When did the tool life end?", "options": ["When the flank wear reached 0.3 mm", "After ten passes", "When the roughness reached Ra 0.9 µm"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-bolt-loosening", "field": "mech", "module": "doc-abstract", "level": 2, "topic": "join", "kind": "аннотация", "title": "Self-loosening of bolted joints under transverse vibration",
+        "paragraphs": [
+            "Bolted joints in machines and vehicles often work under vibration, and they can lose their clamp load over time. This paper investigates how three locking methods affect the self-loosening of M10 bolts of property class 8.8 under transverse vibration.",
+            "The joints were tightened to a preload of 28 kN and tested on a Junker-type machine, which moves the clamped plates sideways by ±0.4 mm at 12.5 Hz. Plain joints were compared with joints using a split lock washer, a nylon-insert lock nut and a liquid thread locker. The clamp load was recorded continuously with a load washer.",
+            "Plain joints lost 80 percent of their preload within 300 cycles. The split lock washer gave almost no improvement, whereas the lock nut kept about 60 percent of the preload after 2000 cycles. The thread locker performed best: the loss of preload was less than 10 percent. The authors conclude that split washers should not be used to prevent loosening under transverse vibration.",
+        ],
+        "paragraphsRu": [
+            "Болтовые соединения в машинах и транспортных средствах часто работают в условиях вибрации и со временем могут терять усилие затяжки. В статье исследуется, как три способа стопорения влияют на самоотвинчивание болтов M10 класса прочности 8.8 при поперечной вибрации.",
+            "Соединения затягивали до усилия 28 кН и испытывали на машине типа Юнкера, которая смещает стянутые пластины вбок на ±0,4 мм с частотой 12,5 Гц. Соединения без стопорения сравнивали с соединениями с пружинной шайбой, гайкой с нейлоновым кольцом и жидким фиксатором резьбы. Усилие затяжки непрерывно регистрировали датчиком-шайбой.",
+            "Соединения без стопорения потеряли 80 процентов затяжки за 300 циклов. Пружинная шайба почти ничего не улучшила, тогда как самоконтрящаяся гайка сохранила около 60 процентов затяжки после 2000 циклов. Лучше всех показал себя фиксатор резьбы: потеря затяжки составила менее 10 процентов. Авторы делают вывод, что пружинные шайбы не следует применять для защиты от самоотвинчивания при поперечной вибрации.",
+        ],
+        "summaries": [
+            ["The paper studies how locking methods stop bolts from loosening under vibration.", "The paper explains how to make M10 bolts.", "The paper shows that vibration increases the clamp load."],
+            ["Preloaded joints with different locking methods were shaken sideways, and the clamp load was recorded.", "The joints were tested without any preload.", "The clamp load was measured only once at the end."],
+            ["Plain joints and split washers loosened fast, the lock nut helped, and thread locker worked best.", "The split lock washer was the best method.", "The thread locker lost most of its preload."],
+        ],
+        "retell": [
+            "The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration.",
+            "Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time.",
+            "Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent.",
+        ],
+        "find": [
+            ("What property class were the bolts?", "property class 8.8"),
+            ("What preload were the joints tightened to?", "preload of 28 kN"),
+            ("How far were the plates moved?", "sideways by ±0.4 mm"),
+            ("What measured the clamp load?", "with a load washer"),
+            ("How fast did plain joints lose their preload?", "within 300 cycles"),
+            ("How much preload did the lock nut keep?", "about 60 percent of the preload"),
+            ("Which locking method performed best?", "thread locker performed best"),
+            ("What should not be used to prevent loosening?", "split washers should not be used"),
+        ],
+        "parse": {
+            "sentence": "The split lock washer gave almost no improvement, whereas the lock nut kept about 60 percent of the preload after 2000 cycles.",
+            "parts": [["The split lock washer gave almost no improvement,", "пружинная шайба почти ничего не улучшила"], ["whereas", "тогда как — противопоставление"], ["the lock nut kept about 60 percent of the preload after 2000 cycles", "самоконтрящаяся гайка сохранила около 60% затяжки после 2000 циклов"]],
+            "q": "Which method kept about 60 percent of the preload?", "options": ["The lock nut", "The split lock washer", "The plain joint"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-pump-test", "field": "mech", "module": "doc-grammar", "level": 2, "topic": "hyd", "kind": "методика", "title": "Test method: performance test of a gear pump",
+        "paragraphs": [
+            "After repair, every gear pump is subjected to a performance test on the hydraulic test bench before it is returned to the customer. The test is carried out with ISO VG 46 hydraulic oil at a temperature of 50 ± 3 °C, because the viscosity of the oil strongly affects the results.",
+            "The pump is driven by an electric motor at its rated speed of 1500 rpm. The outlet pressure is increased in steps of 50 bar from zero to the rated pressure of 200 bar by a loading valve. At each step, the flow rate is measured with a gear-type flow meter, and the input torque is recorded.",
+            "The volumetric efficiency is calculated as the measured flow divided by the theoretical flow. A pump is accepted if its volumetric efficiency at rated pressure is at least 90 percent and no external leakage is found. Pumps that do not meet this criterion are dismantled again, and the worn parts are replaced.",
+        ],
+        "paragraphsRu": [
+            "После ремонта каждый шестерённый насос проходит испытания на рабочие характеристики на гидравлическом стенде, прежде чем его вернут заказчику. Испытания проводят на гидравлическом масле ISO VG 46 при температуре 50 ± 3 °C, поскольку вязкость масла сильно влияет на результаты.",
+            "Насос приводится электродвигателем с номинальной частотой вращения 1500 об/мин. Давление на выходе нагрузочным клапаном повышают ступенями по 50 бар от нуля до номинального давления 200 бар. На каждой ступени расход измеряют шестерённым расходомером и регистрируют крутящий момент на входе.",
+            "Объёмный КПД рассчитывают как отношение измеренной подачи к теоретической. Насос принимают, если его объёмный КПД при номинальном давлении не менее 90 процентов и наружных утечек нет. Насосы, не удовлетворяющие этому критерию, снова разбирают и заменяют изношенные детали.",
+        ],
+        "summaries": [
+            ["Repaired gear pumps are tested on a bench with oil at a controlled temperature.", "Repaired pumps are sent to the customer without any test.", "The oil temperature does not matter in this test."],
+            ["The pump runs at rated speed while the pressure is raised step by step and flow and torque are measured.", "The pressure is raised at once to 500 bar.", "The pump is turned by hand during the test."],
+            ["A volumetric efficiency of at least 90 percent with no leaks is needed; otherwise the pump is repaired again.", "Pumps with 70 percent efficiency are accepted.", "Pumps that fail the test are sent to the customer anyway."],
+        ],
+        "retell": [
+            "Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results.",
+            "The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured.",
+            "The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again.",
+        ],
+        "find": [
+            ("When is the performance test carried out?", "After repair"),
+            ("What oil is used?", "ISO VG 46"),
+            ("Why is the oil temperature controlled?", "viscosity of the oil strongly affects"),
+            ("What is the rated speed of the pump?", "rated speed of 1500 rpm"),
+            ("In what steps is the pressure increased?", "in steps of 50 bar"),
+            ("What is the flow rate measured with?", "gear-type flow meter"),
+            ("How is the volumetric efficiency calculated?", "divided by the theoretical flow"),
+            ("What happens to pumps that do not meet the criterion?", "dismantled again"),
+        ],
+        "parse": {
+            "sentence": "The outlet pressure is increased in steps of 50 bar from zero to the rated pressure of 200 bar by a loading valve.",
+            "parts": [["The outlet pressure", "подлежащее (цепочка): давление на выходе"], ["is increased in steps of 50 bar from zero to the rated pressure of 200 bar", "пассив: повышается ступенями по 50 бар от нуля до номинальных 200 бар"], ["by a loading valve", "чем: нагрузочным клапаном (by + исполнитель действия)"]],
+            "q": "What increases the outlet pressure?", "options": ["A loading valve", "The electric motor", "The flow meter"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-bolt-req", "field": "mech", "module": "doc-standard", "level": 3, "topic": "join", "kind": "требования", "title": "Assembly requirements for bolted joints of a press frame",
+        "paragraphs": [
+            "All structural bolted joints of the press frame shall use bolts of property class 10.9 with hardened washers under both the bolt head and the nut. Bolts shall be tightened with a calibrated torque wrench to the values given in Table 3, which correspond to a preload of approximately 70 percent of the proof load of the bolt. Impact wrenches may be used for running down the bolts, but not for final tightening.",
+            "Joints with more than four bolts shall be tightened in a cross pattern in at least two passes: first to 50 percent and then to 100 percent of the specified torque. After final tightening, each bolt should be marked with a paint line across the head and the washer, so that any later rotation can be detected during inspection.",
+            "Bolts of property class 10.9 that have been tightened to full preload shall not be reused. Thread lubricant may be applied only if it is specified in the drawing, because it changes the relationship between torque and preload by up to 30 percent. Any joint in which the specified torque cannot be reached shall be reported to the design department before the press is put into operation.",
+        ],
+        "paragraphsRu": [
+            "Во всех силовых болтовых соединениях рамы пресса должны применяться болты класса прочности 10.9 с закалёнными шайбами под головкой болта и под гайкой. Болты должны затягиваться тарированным динамометрическим ключом до значений из таблицы 3, которые соответствуют усилию затяжки примерно 70 процентов пробной нагрузки болта. Ударные гайковёрты допускается применять для наживления болтов, но не для окончательной затяжки.",
+            "Соединения, в которых более четырёх болтов, должны затягиваться крест-накрест не менее чем в два прохода: сначала до 50, затем до 100 процентов заданного момента. После окончательной затяжки каждый болт рекомендуется пометить краской — линией через головку и шайбу, чтобы при осмотре можно было обнаружить последующий поворот.",
+            "Болты класса прочности 10.9, уже затянутые на полное усилие, повторно применять запрещается. Смазку резьбы допускается наносить, только если она указана на чертеже, поскольку она меняет соотношение между моментом и усилием затяжки до 30 процентов. О любом соединении, в котором не удаётся достичь заданного момента, необходимо сообщить в конструкторский отдел до ввода пресса в эксплуатацию.",
+        ],
+        "summaries": [
+            ["Frame joints need 10.9 bolts with hardened washers, tightened by a calibrated torque wrench to Table 3.", "Any bolts may be used if they fit the holes.", "Impact wrenches must be used for final tightening."],
+            ["Large joints are tightened crosswise in two passes, and bolts should be paint-marked.", "All bolts are tightened to full torque in one pass, one after another.", "Paint marks are forbidden on bolt heads."],
+            ["Tightened 10.9 bolts must not be reused, lubricant needs the drawing, and problem joints must be reported.", "Bolts of class 10.9 may be reused many times.", "Lubricant has no effect on the preload."],
+        ],
+        "retell": [
+            "Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load.",
+            "Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark.",
+            "Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported.",
+        ],
+        "find": [
+            ("What must be placed under the bolt head and the nut?", "hardened washers"),
+            ("What tool shall be used for tightening?", "calibrated torque wrench"),
+            ("What preload do the values in Table 3 correspond to?", "approximately 70 percent of the proof load"),
+            ("What may impact wrenches be used for?", "running down the bolts"),
+            ("In what pattern shall large joints be tightened?", "in a cross pattern"),
+            ("Why should each bolt be marked with a paint line?", "later rotation can be detected"),
+            ("Which bolts shall not be reused?", "shall not be reused"),
+            ("How much can thread lubricant change the torque–preload relationship?", "by up to 30 percent"),
+            ("Who must be told if the torque cannot be reached?", "reported to the design department"),
+        ],
+        "parse": {
+            "sentence": "Bolts of property class 10.9 that have been tightened to full preload shall not be reused.",
+            "parts": [["Bolts of property class 10.9", "подлежащее: болты класса прочности 10.9"], ["that have been tightened to full preload", "уточнение: которые уже затянуты на полное усилие (пассив в Present Perfect)"], ["shall not be reused", "обязательный запрет: повторно не применять"]],
+            "q": "Which bolts must not be used again?", "options": ["10.9 bolts already tightened to full preload", "All new bolts", "Bolts with paint marks"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-weld-inspection", "field": "mech", "module": "doc-standard", "level": 2, "topic": "join", "kind": "отчёт о контроле", "title": "Inspection report: welds of a machine base frame",
+        "paragraphs": [
+            "Report number: IR-2026-118. Item: welded base frame for a grinding machine, drawing WF-310, revision A. Inspection method: visual inspection of all welds, followed by dye penetrant testing of the four lifting lugs. Acceptance criteria: quality level B according to the customer specification.",
+            "Most welds were found to be acceptable. However, on weld 14, an undercut 0.8 mm deep and 25 mm long was measured, while the maximum allowed depth is 0.5 mm. Weld spatter was found near weld 9, and it was removed by grinding during the inspection. No cracks were detected on the lifting lugs.",
+            "Disposition: weld 14 shall be repaired by grinding the undercut area and adding one more weld pass, and then inspected again. The welder confirmed that the welding current had been set too high for the plate thickness of 6 mm. Status: the frame is on hold until the repair is accepted by the quality inspector.",
+        ],
+        "paragraphsRu": [
+            "Номер отчёта: IR-2026-118. Изделие: сварная станина шлифовального станка, чертёж WF-310, редакция A. Метод контроля: визуальный контроль всех швов, затем капиллярный контроль четырёх грузовых проушин. Критерии приёмки: уровень качества B по техническим условиям заказчика.",
+            "Большинство швов признаны годными. Однако на шве 14 измерен подрез глубиной 0,8 мм и длиной 25 мм, тогда как максимально допустимая глубина — 0,5 мм. Возле шва 9 обнаружены брызги металла; их удалили шлифовкой во время контроля. Трещин на грузовых проушинах не выявлено.",
+            "Решение: шов 14 исправить — зашлифовать зону подреза и наложить ещё один проход, затем проконтролировать повторно. Сварщик подтвердил, что сварочный ток был выставлен слишком большим для толщины листа 6 мм. Статус: станина задержана до приёмки исправления контролёром ОТК.",
+        ],
+        "summaries": [
+            ["The report gives the item, the inspection methods and the acceptance criteria.", "The report describes how the frame was designed.", "Only the lifting lugs were inspected."],
+            ["One weld had a too-deep undercut, spatter was removed, and no cracks were found.", "Cracks were found on all four lifting lugs.", "The undercut on weld 14 was within the limit."],
+            ["Weld 14 will be repaired and checked again; the current was too high, and the frame is on hold.", "The frame was shipped to the customer without repair.", "The cause was a wrong drawing revision."],
+        ],
+        "retell": [
+            "Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant.",
+            "One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found.",
+            "Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted.",
+        ],
+        "find": [
+            ("What machine is the frame for?", "for a grinding machine"),
+            ("Which parts were tested with dye penetrant?", "four lifting lugs"),
+            ("What quality level is required?", "quality level B"),
+            ("How deep was the undercut on weld 14?", "0.8 mm deep"),
+            ("What is the maximum allowed depth?", "maximum allowed depth is 0.5 mm"),
+            ("How was the spatter removed?", "removed by grinding"),
+            ("Why did the undercut appear?", "current had been set too high"),
+            ("Who must accept the repair?", "accepted by the quality inspector"),
+        ],
+        "parse": {
+            "sentence": "However, on weld 14, an undercut 0.8 mm deep and 25 mm long was measured, while the maximum allowed depth is 0.5 mm.",
+            "parts": [["However, on weld 14,", "однако на шве 14"], ["an undercut 0.8 mm deep and 25 mm long was measured", "пассив: измерен подрез глубиной 0,8 мм и длиной 25 мм (размеры стоят после слова)"], ["while the maximum allowed depth is 0.5 mm", "тогда как максимально допустимая глубина — 0,5 мм"]],
+            "q": "Is the undercut on weld 14 acceptable?", "options": ["No, it is deeper than allowed", "Yes, it is within the limit", "It was not measured"], "answer": 0,
+        },
+    },
+    {
+        "id": "t-mech-contamination", "field": "mech", "module": "doc-speed", "level": 3, "topic": "maint", "kind": "обсуждение", "title": "Contamination: the main cause of hydraulic failures",
+        "paragraphs": [
+            "Industry surveys repeatedly show that most failures of hydraulic systems are caused by contaminated fluid rather than by design faults. Solid particles, water and air all reduce the service life of components, but hard particles of about the same size as the internal clearances, typically 5 to 15 µm, are the most damaging, because they enter the gaps between moving parts and cause abrasive wear.",
+            "Water is often underestimated. Even a small amount of free water reduces the lubricating ability of the oil, promotes corrosion and, at high pressures, can lead to cavitation damage in pumps. Air entering through a loose suction fitting has a similar effect and is usually noticed first as a loud noise from the pump.",
+            "Cleanliness is therefore specified as a code according to ISO 4406, which gives the number of particles larger than 4, 6 and 14 µm per milliliter of fluid. For a system with servo valves, a typical target is 16/14/11. Lowering the code by one step roughly halves the number of particles, and in practice the cost of better filtration is usually much smaller than the cost of unplanned downtime and replaced components.",
+        ],
+        "paragraphsRu": [
+            "Отраслевые обзоры раз за разом показывают, что большинство отказов гидросистем вызвано загрязнённой рабочей жидкостью, а не ошибками конструкции. Твёрдые частицы, вода и воздух — все они сокращают срок службы элементов, но опаснее всего твёрдые частицы размером примерно с внутренние зазоры, обычно 5–15 мкм: они попадают в щели между движущимися деталями и вызывают абразивный износ.",
+            "Воду часто недооценивают. Даже небольшое количество свободной воды ухудшает смазывающую способность масла, способствует коррозии, а при высоком давлении может привести к кавитационному разрушению насосов. Воздух, подсасываемый через неплотный штуцер всасывающей линии, действует так же, и первым признаком обычно бывает громкий шум насоса.",
+            "Поэтому чистоту жидкости задают кодом по ISO 4406, который указывает число частиц крупнее 4, 6 и 14 мкм на миллилитр жидкости. Для системы с сервоклапанами типичная цель — 16/14/11. Снижение кода на одну ступень примерно вдвое уменьшает число частиц, а на практике лучшая фильтрация обычно обходится намного дешевле внепланового простоя и замены элементов.",
+        ],
+        "summaries": [
+            ["Most hydraulic failures come from contamination, and particles the size of the clearances are the worst.", "Most hydraulic failures are caused by design faults.", "Very large particles are the most dangerous because they block the pipes."],
+            ["Water and air also damage the system, causing poor lubrication, corrosion, cavitation and noise.", "A little water in the oil improves lubrication.", "Air in the oil makes the pump quieter."],
+            ["Cleanliness is set by an ISO 4406 code, and better filtration is cheaper than downtime.", "ISO 4406 measures the viscosity of the oil.", "Better filtration usually costs more than unplanned downtime."],
+        ],
+        "retell": [
+            "Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear.",
+            "Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy.",
+            "Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime.",
+        ],
+        "find": [
+            ("What causes most failures of hydraulic systems?", "contaminated fluid"),
+            ("What particle size is the most damaging?", "typically 5 to 15 µm"),
+            ("What kind of wear do hard particles cause?", "abrasive wear"),
+            ("What can water lead to at high pressures?", "cavitation damage in pumps"),
+            ("How is air in the system usually noticed first?", "loud noise from the pump"),
+            ("Which standard gives the cleanliness code?", "according to ISO 4406"),
+            ("What is a typical target for a system with servo valves?", "16/14/11"),
+            ("What happens when the code is lowered by one step?", "roughly halves the number of particles"),
+        ],
+        "parse": {
+            "sentence": "Solid particles, water and air all reduce the service life of components, but hard particles of about the same size as the internal clearances, typically 5 to 15 µm, are the most damaging, because they enter the gaps between moving parts and cause abrasive wear.",
+            "parts": [["Solid particles, water and air all reduce the service life of components,", "первая часть: твёрдые частицы, вода и воздух — все сокращают срок службы элементов"], ["but hard particles of about the same size as the internal clearances, typically 5 to 15 µm,", "подлежащее второй части: твёрдые частицы размером с внутренние зазоры, обычно 5–15 мкм"], ["are the most damaging, because they enter the gaps … and cause abrasive wear", "сказуемое: опаснее всего, потому что попадают в зазоры и вызывают абразивный износ"]],
+            "q": "Why are particles of 5 to 15 µm the most damaging?", "options": ["They enter the gaps between moving parts", "They make the oil too thick", "They block the suction fitting"], "answer": 0,
+        },
+    },
 ]
 
 
@@ -963,6 +1318,21 @@ def band_of(rank: int) -> str:
     return "ngsl1" if rank <= 500 else "ngsl2" if rank <= 1000 else "ngsl3" if rank <= 2000 else "ngsl4"
 
 
+# Тема термина → специальность. Остальные темы (mat, test, cad, sens, doc) — общие.
+TERM_FIELD = {"space": "space", "prop": "space", "mach": "mech", "join": "mech", "hyd": "mech", "maint": "mech"}
+MECH_TOPICS = {"mach", "join", "hyd", "maint"}
+
+
+def text_field(t: dict):
+    """Космический текст — по ключевым словам (или теме space/prop), машиностроительный — явно field="mech"."""
+    if t.get("field") == "mech":
+        assert t["topic"] in MECH_TOPICS, f"{t['id']}: у машиностроительного текста тема {t['topic']}"
+        assert not space_field(t["title"], *t["paragraphs"]), f"{t['id']}: машиностроительный текст про космос"
+        return "mech"
+    assert t["topic"] not in MECH_TOPICS, f"{t['id']}: тема {t['topic']} без field=mech"
+    return "space" if t["topic"] in ("space", "prop") else space_field(t["title"], *t["paragraphs"])
+
+
 def build_dictionary() -> list[dict]:
     forms = lemma_forms()
     ranks = ngsl_ranks()
@@ -984,7 +1354,7 @@ def build_dictionary() -> list[dict]:
     tech = []
     for term, ipa, ru, topic in read_pairs("tech.txt"):
         key = term.lower()
-        entry = {"id": f"w-{slug(key)}", "text": term, "ru": ru, "ipa": ipa, "topic": topic, "band": "tech", "voices": STD, "reviewed": False}
+        entry = with_field({"id": f"w-{slug(key)}", "text": term, "ru": ru, "ipa": ipa, "topic": topic, "band": "tech", "voices": STD, "reviewed": False}, TERM_FIELD.get(topic))
         if key in words:  # термин совпал с общим словом — берём техническое значение, но сохраняем полосу
             entry["freq"] = words[key]["band"]
             entry["forms"] = words[key]["forms"]
@@ -1007,14 +1377,18 @@ def build():
         assert len(t["summaries"]) == len(t["paragraphs"]) == len(t["retell"]), f"{t['id']}: число абзацев"
         assert len(t["paragraphsRu"]) == len(t["paragraphs"]), f"{t['id']}: число абзацев перевода"
         assert t["parse"]["sentence"] in flat, f"{t['id']}: разбираемое предложение не из текста"
-        texts.append({
-            **{k: v for k, v in t.items() if k not in ("find",)},
+        texts.append(with_field({
+            **{k: v for k, v in t.items() if k not in ("find", "field")},
             "find": [{"q": q, "key": key} for q, key in t["find"]],
             "source": SOURCE, "license": LICENSE,
             # образцы пересказа — голосом по настройкам (вариант × пол)
             "speak": [{"text": r, "voice": v} for r in t["retell"] for v in STD],
             "reviewed": False,
-        })
+        }, text_field(t)))
+    # Модули doc-*: у космоса и машиностроения одинаковое число текстов (общие видят обе специальности).
+    for m in sorted({t["module"] for t in texts}):
+        n = {f: sum(1 for t in texts if t["module"] == m and t.get("field") in (None, f)) for f in ("space", "mech")}
+        assert n["space"] == n["mech"], f"{m}: текстов у space {n['space']}, у mech {n['mech']}"
     dictionary = build_dictionary()
 
     def dump(path: Path, data):
@@ -1025,7 +1399,10 @@ def build():
     dump(OUT / "dict" / "words.json", dictionary)
     n_tech = sum(1 for w in dictionary if w["band"] == "tech")
     words_total = sum(len(" ".join(t["paragraphs"]).split()) for t in TEXTS)
-    print(f"Техдок: {len(texts)} текстов ({words_total} слов), {len(strategies)} стратегий; словарь: {len(dictionary)} слов, из них технических {n_tech}")
+    by_field = {f: sum(1 for t in texts if t.get("field") == f) for f in ("space", "mech")}
+    terms = {f: sum(1 for w in dictionary if w.get("field") == f) for f in ("space", "mech")}
+    print(f"Техдок: {len(texts)} текстов ({words_total} слов; space {by_field['space']}, mech {by_field['mech']}, общих {len(texts) - sum(by_field.values())}), {len(strategies)} стратегий; "
+          f"словарь: {len(dictionary)} слов, из них технических {n_tech} (space {terms['space']}, mech {terms['mech']})")
 
 
 if __name__ == "__main__":

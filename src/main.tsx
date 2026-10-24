@@ -6,6 +6,8 @@ import { initApp } from './app/init'
 import { LoadFailed } from './app/LoadFailed'
 import { loadManifest } from './lib/audio/manifest'
 import { installAudioUnlock } from './lib/audio/player'
+import { storedField } from './lib/settings/settings'
+import { applySkin } from './i18n/skins'
 import './styles/base.css'
 
 installAudioUnlock()
@@ -13,7 +15,14 @@ installAudioUnlock()
 // Контент и манифест звука нужны экранам синхронно — рендерим, когда они загружены (из кэша это мгновенно).
 // initApp — после контента: он заводит карточки по списку уроков.
 const root = createRoot(document.getElementById('root')!)
-void Promise.all([loadContent(), loadManifest()])
+// Специальность — до контента и отрисовки: по ней фильтруются тексты и термины и выбирается стиль.
+// Ещё не выбрана — показываем как раньше (космос), а выбор спросит FieldPicker.
+void storedField()
+  .catch(() => undefined)
+  .then((field) => {
+    applySkin(field ?? 'space')
+    return Promise.all([loadContent(field ?? 'space'), loadManifest()])
+  })
   .then(() => initApp())
   .then(
     () => true,

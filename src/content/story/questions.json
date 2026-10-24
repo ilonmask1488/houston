@@ -19,7 +19,18 @@
     "voice": "gb-f"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "example": "I'm a fourth-year student in mechanical engineering. At the moment I'm working on a project about fatigue testing: we run cyclic tests on steel and composite specimens and compare the results with finite element models. Before that, I spent a summer at a machine shop, where I got hands-on experience with CNC machines and measuring tools. What I enjoy most is the link between design and real production. I'm looking for a position where I can work on machine design and learn from experienced engineers.",
+    "speak": [
+     {
+      "text": "I'm a fourth-year student in mechanical engineering. At the moment I'm working on a project about fatigue testing: we run cyclic tests on steel and composite specimens and compare the results with finite element models. Before that, I spent a summer at a machine shop, where I got hands-on experience with CNC machines and measuring tools. What I enjoy most is the link between design and real production. I'm looking for a position where I can work on machine design and learn from experienced engineers.",
+      "voice": "gb-f"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "project",
@@ -41,7 +52,18 @@
     "voice": "gb-f"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "example": "The goal of the project was to reduce the weight of a gearbox housing. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be cast and machined. As a result, the mass dropped by about eighteen percent, and the housing passed the load test on the first try.",
+    "speak": [
+     {
+      "text": "The goal of the project was to reduce the weight of a gearbox housing. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be cast and machined. As a result, the mass dropped by about eighteen percent, and the housing passed the load test on the first try.",
+      "voice": "gb-f"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "why",
@@ -61,7 +83,18 @@
     "voice": "gb-f"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "example": "Two reasons. First, your team designs and builds real machines, not only models, and that's exactly the kind of work I enjoy. Second, I read about your test equipment for the automotive industry, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about production and quality control.",
+    "speak": [
+     {
+      "text": "Two reasons. First, your team designs and builds real machines, not only models, and that's exactly the kind of work I enjoy. Second, I read about your test equipment for the automotive industry, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about production and quality control.",
+      "voice": "gb-f"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "strengths",
@@ -142,7 +175,18 @@
     "voice": "gb-f"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "example": "Last year four of us designed a small gearbox test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.",
+    "speak": [
+     {
+      "text": "Last year four of us designed a small gearbox test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early.",
+      "voice": "gb-f"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "failure",
@@ -181,7 +225,18 @@
     "voice": "gb-f"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "example": "In five years, I'd like to be a design engineer who can take a part from drawing to production on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see a machine I designed actually running on a real production line.",
+    "speak": [
+     {
+      "text": "In five years, I'd like to be a design engineer who can take a part from drawing to production on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see a machine I designed actually running on a real production line.",
+      "voice": "gb-f"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "ask",

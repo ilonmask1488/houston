@@ -12,6 +12,8 @@
 import json
 from pathlib import Path
 
+from fields import space_field, with_field
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content" / "grammar"
 NONE = "∅"
@@ -47,7 +49,7 @@ GAPS = {
          "Порядковые числительные (first, second, third) идут с the."),
         ("___ first stage separates after two minutes.", ["The", "A", NONE],
          "Первая ступень отделяется через две минуты.",
-         "Порядковое числительное first — с the. Без артикля по-английски так не говорят."),
+         "Порядковое числительное first — с the. Без артикля по-английски так не говорят.", "space"),
         ("Carbon fibre is lighter than ___ steel.", [NONE, "the", "a"],
          "Углепластик легче стали.",
          "Материал вообще (неисчисляемое существительное в общем смысле) — без артикля: steel, aluminium, water."),
@@ -780,22 +782,92 @@ FIX = {
     ],
 }
 
+# ——— Близнецы для машиностроения (field: "mech") ———
+# Каждому космическому заданию темы (field: "space" — по space_field или пятым полем) — цеховое с тем же
+# грамматическим правилом. Дописываются в конец темы: id позиционные, старые не сдвигаются.
+GAPS_MECH = {
+    "articles": [
+        ("___ first shift starts at seven o'clock.", ["The", "A", NONE],
+         "Первая смена начинается в семь часов.",
+         "Порядковое числительное first — с the: the first shift, the second operation. Без артикля по-английски так не говорят."),
+        ("I read an interesting article in ___ Journal of Manufacturing Processes.", ["the", "a", NONE],
+         "Я прочитал интересную статью в журнале Journal of Manufacturing Processes.",
+         "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал."),
+    ],
+    "tenses": [
+        ("Have you ever ___ a five-axis machine in action?", ["seen", "saw", "see"],
+         "Ты когда-нибудь видел пятиосевой станок в работе?",
+         "Have + третья форма глагола (seen). Saw — вторая форма, после have не ставится."),
+        ("This is the first time I ___ a real forging press.", ["have seen", "see", "am seeing"],
+         "Я впервые вижу настоящий ковочный пресс.",
+         "После This is the first time… — Present Perfect. По-русски «вижу», но see/am seeing — ошибка."),
+    ],
+    "questions": [
+        ("___ you ever been to a steel plant?", ["Have", "Did", "Were"],
+         "Ты когда-нибудь был на металлургическом заводе?",
+         "Ever + been — Present Perfect, вопрос начинается с Have."),
+    ],
+    "verbs": [
+        ("I am very ___ in machine tools.", ["interested", "interesting", "interest"],
+         "Мне очень интересны станки.",
+         "-ed — что чувствует человек (interested), -ing — каков предмет (interesting). «I am interesting» = «я интересный»."),
+    ],
+    "passive": [
+        ("The first KAMAZ truck ___ built in 1976.", ["was", "has", "is"],
+         "Первый КамАЗ собрали в 1976 году.",
+         "Конкретный год в прошлом — пассив Past Simple: was built."),
+    ],
+    "word-order": [
+        ("I have ___ been to a car plant.", ["never", "ever not", "not never"],
+         "Я никогда не был на автозаводе.",
+         "Never уже содержит отрицание. Двойное отрицание (not never) в английском — ошибка."),
+    ],
+}
+
+FIX_MECH = {
+    "prepositions": [
+        ("I'm interested on machine tools.", "I'm interested in machine tools.",
+         "Я интересуюсь станками.",
+         "Interested in — только in."),
+    ],
+    "passive": [
+        ("This lathe designed by our chief engineer.", "This lathe was designed by our chief engineer.", "Этот станок спроектировал наш главный инженер.",
+         "Без was в предложении нет сказуемого — выходит только словосочетание «этот станок, спроектированный нашим главным инженером». Пассив: be + третья форма (was designed)."),
+    ],
+    "word-order": [
+        ("Never I have seen such a big press.", "I have never seen such a big press.",
+         "Я никогда не видел такой большой пресс.",
+         "Never — между have и третьей формой."),
+    ],
+}
+
+
+def rows(base, mech, topic):
+    """Строки темы с полем специальности: космос — пятым полем или по space_field, близнецы — mech."""
+    out = []
+    for row in base[topic]:
+        out.append((*row[:4], row[4] if len(row) > 4 else space_field(row[0], row[1] if isinstance(row[1], str) else "", row[2])))
+    for row in mech.get(topic, []):
+        assert not space_field(*row[:3] if isinstance(row[1], str) else (row[0], row[2])), f"{topic}: космос в близнеце «{row[0]}»"
+        out.append((*row, "mech"))
+    return out
+
 
 def build_gaps():
     out = []
     for topic in TOPICS:
-        for i, (text, options, ru, why) in enumerate(GAPS[topic], 1):
-            out.append({"id": f"gr-{topic}-{i:03d}", "topic": topic, "text": text, "options": options,
-                        "ru": ru, "why": why, "reviewed": False})
+        for i, (text, options, ru, why, field) in enumerate(rows(GAPS, GAPS_MECH, topic), 1):
+            out.append(with_field({"id": f"gr-{topic}-{i:03d}", "topic": topic, "text": text, "options": options,
+                                   "ru": ru, "why": why, "reviewed": False}, field))
     return out
 
 
 def build_fix():
     out = []
     for topic in TOPICS:
-        for i, (wrong, right, ru, why) in enumerate(FIX[topic], 1):
-            out.append({"id": f"gf-{topic}-{i:03d}", "topic": topic, "wrong": wrong, "right": right,
-                        "ru": ru, "why": why, "reviewed": False})
+        for i, (wrong, right, ru, why, field) in enumerate(rows(FIX, FIX_MECH, topic), 1):
+            out.append(with_field({"id": f"gf-{topic}-{i:03d}", "topic": topic, "wrong": wrong, "right": right,
+                                   "ru": ru, "why": why, "reviewed": False}, field))
     return out
 
 
@@ -810,6 +882,14 @@ def check(gaps, fix):
         assert len(set(o.lower() for o in opts)) == len(opts), f"{g['id']}: варианты повторяются"
         assert all(o.strip() for o in opts), f"{g['id']}: пустой вариант"
         assert g["ru"].strip() and g["why"].strip(), f"{g['id']}: пустой перевод или объяснение"
+    assert set(GAPS_MECH) <= set(TOPICS) and set(FIX_MECH) <= set(TOPICS)
+    for name, items in (("пропуски", gaps), ("исправления", fix)):
+        key = "text" if name == "пропуски" else "wrong"
+        texts = [x[key] for x in items]
+        assert len(texts) == len(set(texts)), f"{name}: повтор {[t for t in texts if texts.count(t) > 1]}"
+        for t in TOPICS:
+            n = {f: sum(1 for x in items if x["topic"] == t and x.get("field") in (None, f)) for f in ("space", "mech")}
+            assert n["space"] == n["mech"], f"{name}/{t}: у специальностей разное число заданий {n}"
     for f in fix:
         assert f["wrong"] != f["right"], f"{f['id']}: wrong совпадает с right"
         assert "___" not in f["wrong"] + f["right"], f"{f['id']}: пропуск в задании на исправление"
@@ -827,5 +907,6 @@ if __name__ == "__main__":
     write("gaps.json", gaps)
     write("fix.json", fix)
     for t in TOPICS:
-        print(f"{t:13} пропуски {len(GAPS[t]):3}  исправления {len(FIX[t]):3}")
-    print(f"всего: пропуски {len(gaps)}, исправления {len(fix)}")
+        print(f"{t:13} пропуски {len(GAPS[t]):3} +{len(GAPS_MECH.get(t, [])):2} mech  исправления {len(FIX[t]):3} +{len(FIX_MECH.get(t, [])):2} mech")
+    sp = sum(x.get("field") == "space" for x in gaps + fix)
+    print(f"всего: пропуски {len(gaps)}, исправления {len(fix)}; space {sp}, mech {sum(x.get('field') == 'mech' for x in gaps + fix)}")

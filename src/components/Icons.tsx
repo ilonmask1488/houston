@@ -1,4 +1,5 @@
 /* Иконки — линейные, в духе приборной панели. */
+import { skinField } from '../i18n/skins'
 
 type P = { size?: number }
 
@@ -11,8 +12,16 @@ const common = {
   'aria-hidden': true,
 }
 
-/** Сеанс: антенна с волнами */
+/** Сеанс: антенна с волнами; у машиностроения — шестерня */
 export function IconSession({ size = 24 }: P) {
+  if (skinField === 'mech')
+    return (
+      <svg viewBox="0 0 24 24" width={size} height={size} {...common}>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 3.5v2.3M12 18.2v2.3M3.5 12h2.3M18.2 12h2.3M6 6l1.6 1.6M16.4 16.4L18 18M6 18l1.6-1.6M16.4 7.6L18 6" />
+        <circle cx="12" cy="12" r="6.2" />
+      </svg>
+    )
   return (
     <svg viewBox="0 0 24 24" width={size} height={size} {...common}>
       <path d="M12 12v9M8.5 21h7" />

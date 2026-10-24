@@ -22,7 +22,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "t-intro-02",
@@ -972,6 +973,32 @@
     "voice": "gb-m"
    }
   ],
+  "reviewed": false
+ },
+ {
+  "id": "t-intro-07",
+  "module": "call-intro",
+  "ru": "Я студент четвёртого курса, учусь на машиностроении.",
+  "en": "I'm a fourth-year student studying mechanical engineering.",
+  "speak": [
+   {
+    "text": "I'm a fourth-year student studying mechanical engineering.",
+    "voice": "us-f"
+   },
+   {
+    "text": "I'm a fourth-year student studying mechanical engineering.",
+    "voice": "us-m"
+   },
+   {
+    "text": "I'm a fourth-year student studying mechanical engineering.",
+    "voice": "gb-f"
+   },
+   {
+    "text": "I'm a fourth-year student studying mechanical engineering.",
+    "voice": "gb-m"
+   }
+  ],
+  "field": "mech",
   "reviewed": false
  }
 ]

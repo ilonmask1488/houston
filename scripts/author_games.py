@@ -15,6 +15,11 @@ Tuesday/Thursday, he's/he was, launch/lunch и т. п.
           Перевод берётся из исходного файла, если не задан явно.
   NEW     (id g-st-n-NNN) — новые короткие фразы из жизни КБ и быта. Пока mp3 нет, их читает голос
           телефона; generate_audio.py озвучит их по полю voice (us-f, us-m, gb-f, gb-m по кругу).
+  MECH    (id g-st-m-NNN, field: "mech") — новые фразы из цеха для специальности «машиностроение»:
+          станки, допуски и замеры, сборка, сварка, гидравлика, ремонт, план и ОТК. Правила те же, что у NEW.
+
+Специальности (scripts/fields.py): фраза про ракеты и космос получает field: "space" — автоматически по
+тексту и переводу (space_field) или по списку SPACE_EXTRA, где ключевых слов нет, но смысл космический.
 
 Формат строки: (текст, ловушка 1, ловушка 2, фокус[, перевод]). options[0] всегда верный — приложение
 перемешивает. Новые строки добавлять только в конец списков: id — порядковые, так они не сдвинутся.
@@ -23,6 +28,8 @@ Tuesday/Thursday, he's/he was, launch/lunch и т. п.
 """
 import json
 from pathlib import Path
+
+from fields import space_field, with_field
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "content"
@@ -393,6 +400,99 @@ NEW = [
     ("Would you like tea or coffee?", "Do you like tea or coffee?", "Would you like tea or juice?", "Would you like tea", "Вам чай или кофе?"),
 ]
 
+# Космические по смыслу, хотя ключевых слов space_field в тексте нет (ракетный двигатель, огневые, полёт)
+SPACE_EXTRA = {
+    "The engine pumps fuel and oxidizer into a chamber, where they burn.",
+    "Shallow scratches are fine, but any crack must be reported and approved before flight.",
+    "The bracket was vibrated in three axes, 3 dB above the expected flight levels.",
+    "The authors printed a one-piece injector for a small methane-oxygen engine.",
+    "After CT inspection and water tests, twelve hot fires showed 96 percent efficiency and no damage.",
+}
+
+# ——— Часть 3: цех (field: "mech"), звук пока — голос телефона ———
+MECH = [
+    # станки и цех
+    ("The lathe on line two is down again.", "The lathe on line three is down again.", "The lathe on line two was down again.", "line two is down", "Токарный станок на второй линии опять встал."),
+    ("Set the spindle speed to fifteen hundred rpm.", "Set the spindle speed to sixteen hundred rpm.", "Set the spindle speed to five hundred rpm.", "fifteen hundred rpm", "Поставь обороты шпинделя тысяча пятьсот в минуту."),
+    ("We can't run the CNC machine without the new program.", "We can run the CNC machine without the new program.", "We can't run the CNC machine without the new programs.", "We can't run the CNC machine", "Без новой программы мы не можем запустить станок с ЧПУ."),
+    ("The coolant tank needs topping up.", "The coolant tanks need topping up.", "The coolant tank needed topping up.", "The coolant tank needs", "В бак СОЖ нужно долить жидкости.", "gb-f"),
+    ("Change the insert after forty parts.", "Change the insert after fourteen parts.", "Change the inserts after forty parts.", "after forty parts", "Меняй пластину после сорока деталей."),
+    ("The tool broke in the middle of the cut.", "The tool broke at the end of the cut.", "The tools broke in the middle of the cut.", "in the middle of the cut", "Инструмент сломался в середине прохода."),
+    ("The milling machine is free after lunch.", "The milling machine is free before lunch.", "The milling machine was free after lunch.", "is free after lunch", "Фрезерный станок освободится после обеда."),
+    ("Clamp the workpiece before you start the machine.", "Clamp the workpiece before we start the machine.", "Clamp the workpieces before you start the machine.", "before you start the machine", "Закрепи заготовку, прежде чем запускать станок."),
+    ("Turn off the machine before you clean it.", "Turn off the machine after you clean it.", "Turn on the machine before you clean it.", "Turn off the machine before", "Выключи станок, прежде чем его чистить."),
+    ("The drill bit was blunt, so I changed it.", "The drill bit was blunt, so I'll change it.", "The drill bits were blunt, so I changed them.", "was blunt, so I changed it", "Сверло затупилось, и я его поменял."),
+    ("Put on your safety glasses before you go in.", "Put on your safety glasses after you go in.", "Put on your safety glasses before we go in.", "before you go in", "Надень защитные очки, прежде чем заходить."),
+    # допуски и замеры
+    ("The shaft diameter is twenty-five millimetres.", "The shaft diameter is twenty-nine millimetres.", "The shaft diameter was twenty-five millimetres.", "twenty-five millimetres", "Диаметр вала — двадцать пять миллиметров."),
+    ("This bore is twelve microns oversize.", "This bore is twenty microns oversize.", "This bore is twelve microns undersize.", "twelve microns oversize", "Это отверстие больше номинала на двенадцать микрон."),
+    ("Measure the part with the micrometer, not the calipers.", "Measure the part with the calipers, not the micrometer.", "Measure the parts with the micrometer, not the calipers.", "with the micrometer, not the calipers", "Меряй деталь микрометром, а не штангенциркулем."),
+    ("The runout is within tolerance now.", "The runout isn't within tolerance now.", "The runout is within tolerance today.", "is within tolerance now", "Биение теперь в допуске."),
+    ("Three of the twenty shafts are out of tolerance.", "Three of the thirty shafts are out of tolerance.", "Two of the twenty shafts are out of tolerance.", "Three of the twenty shafts", "Три вала из двадцати не в допуске."),
+    ("Check the flatness on both sides of the plate.", "Check the flatness on one side of the plate.", "Check the flatness on both sides of the plates.", "on both sides of the plate", "Проверь плоскостность с обеих сторон плиты."),
+    ("The surface roughness should be Ra one point six.", "The surface roughness should be Ra three point two.", "The surface roughness could be Ra one point six.", "should be Ra one point six", "Шероховатость поверхности должна быть Ra 1,6."),
+    ("The thread gauge goes in easily.", "The thread gauge doesn't go in easily.", "The thread gauges go in easily.", "The thread gauge goes in easily", "Резьбовой калибр входит легко."),
+    ("Zero the indicator before you measure.", "Zero the indicator after you measure.", "Zero the indicators before you measure.", "before you measure", "Обнули индикатор перед замером."),
+    # сборка
+    ("Tighten the bolts in a cross pattern.", "Loosen the bolts in a cross pattern.", "Tighten the bolts in a star pattern.", "Tighten the bolts in a cross pattern", "Затягивай болты крест-накрест."),
+    ("The bearing should be pressed, not hammered in.", "The bearing should be hammered, not pressed in.", "The bearing must be pressed, not hammered in.", "should be pressed, not hammered", "Подшипник нужно запрессовывать, а не забивать молотком."),
+    ("We're missing two washers for this assembly.", "We're missing ten washers for this assembly.", "We were missing two washers for this assembly.", "missing two washers", "Для этого узла нам не хватает двух шайб."),
+    ("Put a drop of thread locker on each bolt.", "Put two drops of thread locker on each bolt.", "Put a drop of thread locker on each nut.", "a drop of thread locker on each bolt", "Капни фиксатор резьбы на каждый болт."),
+    ("The gearbox goes back together on Thursday.", "The gearbox goes back together on Tuesday.", "The gearbox went back together on Thursday.", "goes back together on Thursday", "Редуктор соберём обратно в четверг."),
+    ("Use the torque wrench, not the impact gun.", "Use the impact gun, not the torque wrench.", "Use the torque wrench, not the spanner.", "the torque wrench, not the impact gun", "Бери динамометрический ключ, а не гайковёрт."),
+    ("The seal goes on before the cover.", "The seal goes on after the cover.", "The seals go on before the cover.", "goes on before the cover", "Уплотнение ставится до крышки."),
+    ("Can you pass me the ten-millimetre spanner?", "Can you pass me the thirteen-millimetre spanner?", "Can you pass him the ten-millimetre spanner?", "pass me the ten-millimetre spanner", "Подай мне ключ на десять.", "gb-m"),
+    ("The pin is too tight to go in.", "The pins are too tight to go in.", "The pin was too tight to go in.", "The pin is too tight", "Штифт слишком тугой, не входит."),
+    # сварка
+    ("The welder needs two more hours on the frame.", "The welder needs ten more hours on the frame.", "The welder needed two more hours on the frame.", "two more hours on the frame", "Сварщику нужно ещё два часа на раму."),
+    ("There's porosity in the second weld.", "There was porosity in the second weld.", "There's porosity in the third weld.", "in the second weld", "Во втором шве есть пористость."),
+    ("Grind the weld flush before painting.", "Grind the weld flush after painting.", "Grind the welds flush before painting.", "flush before painting", "Зачисти шов заподлицо перед покраской."),
+    ("We weld the brackets after the frame is square.", "We weld the brackets before the frame is square.", "We weld the bracket after the frame is square.", "after the frame is square", "Кронштейны привариваем, когда раму уже выставили под прямой угол."),
+    ("We've got one cylinder of argon left.", "We've got two cylinders of argon left.", "We've got one cylinder of oxygen left.", "one cylinder of argon", "У нас остался один баллон аргона."),
+    ("Don't weld near the hydraulic lines.", "Don't weld near the hydraulic line.", "Don't work near the hydraulic lines.", "Don't weld near", "Не вари рядом с гидролиниями."),
+    ("The weld cracked after the heat treatment.", "The weld cracked before the heat treatment.", "The welds cracked after the heat treatment.", "cracked after the heat treatment", "Шов треснул после термообработки."),
+    # гидравлика
+    ("The hydraulic pressure is down to ninety bar.", "The hydraulic pressure is down to nineteen bar.", "The hydraulic pressure was down to ninety bar.", "down to ninety bar", "Давление в гидросистеме упало до девяноста бар."),
+    ("There's an oil leak under the press.", "There was an oil leak under the press.", "There's an oil leak behind the press.", "an oil leak under the press", "Под прессом течёт масло."),
+    ("Replace the filter every five hundred hours.", "Replace the filter every five thousand hours.", "Replace the filters every five hundred hours.", "every five hundred hours", "Меняй фильтр каждые пятьсот часов."),
+    ("The pump is noisier than it was yesterday.", "The pump is quieter than it was yesterday.", "The pump is noisier than it was on Monday.", "noisier than it was yesterday", "Насос шумит сильнее, чем вчера."),
+    ("Bleed the air from the cylinder first.", "Bleed the air from the cylinders first.", "Bleed the oil from the cylinder first.", "the air from the cylinder", "Сначала стравь воздух из цилиндра."),
+    ("The hose burst at two hundred bar.", "The hose burst at three hundred bar.", "The hoses burst at two hundred bar.", "burst at two hundred bar", "Шланг лопнул при двухстах барах."),
+    # обслуживание и ремонт
+    ("The conveyor is stopped for maintenance until noon.", "The conveyor was stopped for maintenance until noon.", "The conveyor is stopped for maintenance until two.", "is stopped for maintenance until noon", "Конвейер остановлен на обслуживание до полудня."),
+    ("We change the oil in this gearbox twice a year.", "We change the oil in this gearbox three times a year.", "We change the oil in these gearboxes twice a year.", "in this gearbox twice a year", "Масло в этом редукторе меняем два раза в год."),
+    ("The bearing on the motor is running hot.", "The bearing on the motor was running hot.", "The bearings on the motor are running hot.", "is running hot", "Подшипник двигателя греется."),
+    ("I'll replace the belt tomorrow morning.", "I'll replace the belts tomorrow morning.", "I'll replace the belt tomorrow evening.", "the belt tomorrow morning", "Ремень заменю завтра утром."),
+    ("The machine has run for six thousand hours.", "The machine has run for sixty thousand hours.", "The machines have run for six thousand hours.", "six thousand hours", "Станок наработал шесть тысяч часов."),
+    ("Lock out the machine before you open the guard.", "Lock out the machine after you open the guard.", "Lock out the machines before you open the guard.", "before you open the guard", "Прежде чем открывать ограждение, заблокируй станок."),
+    ("The fault came back after the restart.", "The fault came back before the restart.", "The faults came back after the restart.", "came back after the restart", "После перезапуска неисправность вернулась."),
+    ("The maintenance team can't come until Wednesday.", "The maintenance team can't come until Tuesday.", "The maintenance team couldn't come until Wednesday.", "can't come until Wednesday", "Ремонтники не смогут прийти раньше среды."),
+    # план и производство
+    ("We need four hundred housings by the end of the month.", "We need four thousand housings by the end of the month.", "We need four hundred housings by the end of the week.", "four hundred housings by the end of the month", "К концу месяца нам нужно четыреста корпусов."),
+    ("The night shift made eighty parts.", "The night shift made eighteen parts.", "The day shift made eighty parts.", "The night shift made eighty", "Ночная смена сделала восемьдесят деталей."),
+    ("This order has priority over the others.", "This order had priority over the others.", "These orders have priority over the others.", "This order has priority", "Этот заказ приоритетнее остальных."),
+    ("The batch of gears is ready for shipping.", "The batch of gears was ready for shipping.", "The batch of gears isn't ready for shipping.", "is ready for shipping", "Партия шестерён готова к отгрузке."),
+    ("We're behind schedule by three days.", "We're behind schedule by two days.", "We were behind schedule by three days.", "behind schedule by three days", "Мы отстаём от графика на три дня."),
+    ("The cycle time is forty-five seconds per part.", "The cycle time is forty-five minutes per part.", "The cycle time was forty-five seconds per part.", "forty-five seconds per part", "Время цикла — сорок пять секунд на деталь."),
+    ("Let's move the job to the second shift.", "Let's move the job to the first shift.", "Let's move the jobs to the second shift.", "to the second shift", "Давай перенесём эту работу на вторую смену."),
+    ("The material for this order arrives on Monday.", "The material for this order arrived on Monday.", "The material for this order arrives on Sunday.", "arrives on Monday", "Материал под этот заказ придёт в понедельник."),
+    ("Can we finish the batch before the weekend?", "Can't we finish the batch before the weekend?", "Can we finish the batch after the weekend?", "Can we finish the batch before", "Успеем закончить партию до выходных?"),
+    ("The new line will start in a fortnight.", "The new line won't start in a fortnight.", "The new lines will start in a fortnight.", "will start in a fortnight", "Новая линия заработает через две недели.", "gb-f"),
+    ("We only have steel for two more days.", "We only have steel for ten more days.", "We only had steel for two more days.", "steel for two more days", "Стали нам хватит только на два дня."),
+    ("The foreman asked them to stay late.", "The foreman asked me to stay late.", "The foreman asks them to stay late.", "asked them to stay late", "Мастер попросил их задержаться."),
+    # ОТК и качество
+    ("The inspector rejected six parts from this batch.", "The inspector rejected sixteen parts from this batch.", "The inspector rejected six parts from these batches.", "rejected six parts", "Контролёр забраковал шесть деталей из этой партии."),
+    ("Every tenth part goes to the lab.", "Every tenth part went to the lab.", "Every fifth part goes to the lab.", "Every tenth part goes", "Каждая десятая деталь идёт в лабораторию."),
+    ("The first article passed inspection on Friday.", "The first article failed inspection on Friday.", "The first article passed inspection on Thursday.", "passed inspection on Friday", "Первая деталь из партии прошла контроль в пятницу."),
+    ("Put the bad parts in the red box.", "Put the bad parts in the blue box.", "Put the bad parts in the red bin.", "in the red box", "Бракованные детали клади в красный ящик."),
+    ("The hardness is lower than the drawing says.", "The hardness is higher than the drawing says.", "The hardness was lower than the drawing says.", "lower than the drawing says", "Твёрдость ниже, чем указано на чертеже."),
+    ("We found burrs on the inside edge.", "We found burrs on the outside edge.", "We find burrs on the inside edge.", "burrs on the inside edge", "Мы нашли заусенцы на внутренней кромке."),
+    ("The customer wants a certificate for each batch.", "The customer wanted a certificate for each batch.", "The customers want a certificate for each batch.", "The customer wants a certificate", "Заказчику нужен сертификат на каждую партию."),
+    ("Write the measurements on the inspection sheet.", "Write the measurements on the inspection sheets.", "Read the measurements on the inspection sheet.", "Write the measurements", "Запиши замеры в карту контроля."),
+    ("Half of the scrap came from one machine.", "Most of the scrap came from one machine.", "Half of the scrap comes from one machine.", "Half of the scrap came", "Половина брака пришлась на один станок."),
+    ("Stop the line if you see a crack.", "Stop the line when you see a crack.", "Stop the line if they see a crack.", "Stop the line if you see", "Увидишь трещину — останавливай линию."),
+]
+
 
 def load(rel: str):
     return json.loads((OUT / rel).read_text(encoding="utf-8"))
@@ -448,10 +548,17 @@ def build():
         assert text in have, f"нет звука для «{text}»"
         ru = row[4] if len(row) > 4 else ru_of.get(text)
         assert ru, f"нет перевода для «{text}»"
-        items.append(item(f"g-st-r-{k + 1:03d}", row, pick_voice(have[text], k), ru))
+        x = item(f"g-st-r-{k + 1:03d}", row, pick_voice(have[text], k), ru)
+        items.append(with_field(x, "space" if text in SPACE_EXTRA else space_field(text, ru)))
     for k, row in enumerate(NEW):
         # голос по кругу; шестое поле — свой голос (британское выражение — британским голосом)
-        items.append(item(f"g-st-n-{k + 1:03d}", row, row[5] if len(row) > 5 else STD[k % len(STD)], row[4]))
+        x = item(f"g-st-n-{k + 1:03d}", row, row[5] if len(row) > 5 else STD[k % len(STD)], row[4])
+        items.append(with_field(x, "space" if row[0] in SPACE_EXTRA else space_field(row[0], row[4])))
+    for k, row in enumerate(MECH):
+        assert not space_field(*row[:3], row[4]), f"g-st-m-{k + 1:03d}: космос в цеховой фразе"
+        x = item(f"g-st-m-{k + 1:03d}", row, row[5] if len(row) > 5 else STD[k % len(STD)], row[4])
+        items.append(with_field(x, "mech"))
+    assert SPACE_EXTRA <= {r[0] for r in REUSED + NEW}, SPACE_EXTRA - {r[0] for r in REUSED + NEW}
 
     # самопроверка
     texts = [x["text"] for x in items]
@@ -474,7 +581,9 @@ def build():
 
     (OUT / "games").mkdir(parents=True, exist_ok=True)
     (OUT / "games" / "static.json").write_text(json.dumps(items, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"«Помехи»: {len(REUSED)} реплик с готовым звуком, {len(NEW)} новых фраз, всего {len(items)}")
+    by = {f: sum(1 for x in items if x.get("field") == f) for f in ("space", "mech")}
+    print(f"«Помехи»: {len(REUSED)} реплик с готовым звуком, {len(NEW)} новых фраз, {len(MECH)} цеховых, всего {len(items)}"
+          f" (space {by['space']}, mech {by['mech']}, общих {len(items) - by['space'] - by['mech']})")
 
 
 if __name__ == "__main__":

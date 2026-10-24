@@ -4,6 +4,26 @@
 
 | Текст | Голос |
 |---|---|
+| Sure. Last year I worked on a gearbox housing for a student racing team. I was responsible for the machining process. | au-f |
+| The housing kept moving in the fixture, so the bore positions were out of tolerance. We couldn't buy a new fixture because of the budget, so I suggested adding a third clamp and changing the order of operations instead. | au-f |
+| It did. The position error dropped from about a tenth of a millimetre to twenty microns, and we stayed within the budget. | au-f |
+| I'd check the fixture earlier. We found the problem quite late, and it cost us a few weeks. | au-f |
+| Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel. | us-f |
+| Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel. | us-m |
+| Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel. | gb-f |
+| Disbonds are the most critical, so the authors recommend C-scan inspection of every production panel. | gb-m |
+| I'm a fourth-year student in mechanical engineering. | us-f |
+| I'm a fourth-year student in mechanical engineering. | us-m |
+| I'm a fourth-year student in mechanical engineering. | gb-f |
+| I'm a fourth-year student in mechanical engineering. | gb-m |
+| In my free time, I like to fix things in my garage. | us-f |
+| In my free time, I like to fix things in my garage. | us-m |
+| In my free time, I like to fix things in my garage. | gb-f |
+| In my free time, I like to fix things in my garage. | gb-m |
+| The main challenge was the vibration during cutting. | us-f |
+| The main challenge was the vibration during cutting. | us-m |
+| The main challenge was the vibration during cutting. | gb-f |
+| The main challenge was the vibration during cutting. | gb-m |
 | Where are you from originally? | us-f |
 | How was your weekend? | gb-m |
 | How's your day going so far? | in-f |
@@ -56,6 +76,20 @@
 | Before we finish, is there anything you want to know about the team? | gb-m |
 | Do you have any questions about the internship schedule? | in-f |
 | Is there anything you'd like to ask about the next steps? | au-m |
+| If you could build any machine, what would it be? | us-m |
+| How does a hydraulic press work, in simple terms? | gb-f |
+| What does a gearbox do, in simple terms? | in-m |
+| Why do we use coolant when we cut metal? | au-f |
+| How does a bolt hold two parts together? | us-f |
+| Why do engineers worry about vibration in machine tools? | gb-m |
+| My background is in manufacturing engineering. | us-f |
+| My background is in manufacturing engineering. | us-m |
+| My background is in manufacturing engineering. | gb-f |
+| My background is in manufacturing engineering. | gb-m |
+| I'm a fourth-year student studying mechanical engineering. | us-f |
+| I'm a fourth-year student studying mechanical engineering. | us-m |
+| I'm a fourth-year student studying mechanical engineering. | gb-f |
+| I'm a fourth-year student studying mechanical engineering. | gb-m |
 | clothing | us-f |
 | clothing | us-m |
 | clothing | gb-f |
@@ -740,6 +774,634 @@
 | inspector | us-m |
 | inspector | gb-f |
 | inspector | gb-m |
+| lathe | us-f |
+| lathe | us-m |
+| lathe | gb-f |
+| lathe | gb-m |
+| milling machine | us-f |
+| milling machine | us-m |
+| milling machine | gb-f |
+| milling machine | gb-m |
+| CNC | us-f |
+| CNC | us-m |
+| CNC | gb-f |
+| CNC | gb-m |
+| machining center | us-f |
+| machining center | us-m |
+| machining center | gb-f |
+| machining center | gb-m |
+| machine tool | us-f |
+| machine tool | us-m |
+| machine tool | gb-f |
+| machine tool | gb-m |
+| spindle | us-f |
+| spindle | us-m |
+| spindle | gb-f |
+| spindle | gb-m |
+| headstock | us-f |
+| headstock | us-m |
+| headstock | gb-f |
+| headstock | gb-m |
+| tailstock | us-f |
+| tailstock | us-m |
+| tailstock | gb-f |
+| tailstock | gb-m |
+| workpiece | us-f |
+| workpiece | us-m |
+| workpiece | gb-f |
+| workpiece | gb-m |
+| cutting tool | us-f |
+| cutting tool | us-m |
+| cutting tool | gb-f |
+| cutting tool | gb-m |
+| cutting insert | us-f |
+| cutting insert | us-m |
+| cutting insert | gb-f |
+| cutting insert | gb-m |
+| carbide | us-f |
+| carbide | us-m |
+| carbide | gb-f |
+| carbide | gb-m |
+| high-speed steel | us-f |
+| high-speed steel | us-m |
+| high-speed steel | gb-f |
+| high-speed steel | gb-m |
+| end mill | us-f |
+| end mill | us-m |
+| end mill | gb-f |
+| end mill | gb-m |
+| face milling | us-f |
+| face milling | us-m |
+| face milling | gb-f |
+| face milling | gb-m |
+| drill bit | us-f |
+| drill bit | us-m |
+| drill bit | gb-f |
+| drill bit | gb-m |
+| reamer | us-f |
+| reamer | us-m |
+| reamer | gb-f |
+| reamer | gb-m |
+| cutting speed | us-f |
+| cutting speed | us-m |
+| cutting speed | gb-f |
+| cutting speed | gb-m |
+| feed rate | us-f |
+| feed rate | us-m |
+| feed rate | gb-f |
+| feed rate | gb-m |
+| depth of cut | us-f |
+| depth of cut | us-m |
+| depth of cut | gb-f |
+| depth of cut | gb-m |
+| coolant | us-f |
+| coolant | us-m |
+| coolant | gb-f |
+| coolant | gb-m |
+| flood coolant | us-f |
+| flood coolant | us-m |
+| flood coolant | gb-f |
+| flood coolant | gb-m |
+| minimum quantity lubrication | us-f |
+| minimum quantity lubrication | us-m |
+| minimum quantity lubrication | gb-f |
+| minimum quantity lubrication | gb-m |
+| chips | us-f |
+| chips | us-m |
+| chips | gb-f |
+| chips | gb-m |
+| tool wear | us-f |
+| tool wear | us-m |
+| tool wear | gb-f |
+| tool wear | gb-m |
+| flank wear | us-f |
+| flank wear | us-m |
+| flank wear | gb-f |
+| flank wear | gb-m |
+| tool life | us-f |
+| tool life | us-m |
+| tool life | gb-f |
+| tool life | gb-m |
+| roughing | us-f |
+| roughing | us-m |
+| roughing | gb-f |
+| roughing | gb-m |
+| finishing cut | us-f |
+| finishing cut | us-m |
+| finishing cut | gb-f |
+| finishing cut | gb-m |
+| grinding | us-f |
+| grinding | us-m |
+| grinding | gb-f |
+| grinding | gb-m |
+| facing | us-f |
+| facing | us-m |
+| facing | gb-f |
+| facing | gb-m |
+| G-code | us-f |
+| G-code | us-m |
+| G-code | gb-f |
+| G-code | gb-m |
+| toolpath | us-f |
+| toolpath | us-m |
+| toolpath | gb-f |
+| toolpath | gb-m |
+| work offset | us-f |
+| work offset | us-m |
+| work offset | gb-f |
+| work offset | gb-m |
+| built-up edge | us-f |
+| built-up edge | us-m |
+| built-up edge | gb-f |
+| built-up edge | gb-m |
+| micrometer | us-f |
+| micrometer | us-m |
+| micrometer | gb-f |
+| micrometer | gb-m |
+| caliper | us-f |
+| caliper | us-m |
+| caliper | gb-f |
+| caliper | gb-m |
+| dial indicator | us-f |
+| dial indicator | us-m |
+| dial indicator | gb-f |
+| dial indicator | gb-m |
+| weld | us-f |
+| weld | us-m |
+| weld | gb-f |
+| weld | gb-m |
+| welder | us-f |
+| welder | us-m |
+| welder | gb-f |
+| welder | gb-m |
+| arc welding | us-f |
+| arc welding | us-m |
+| arc welding | gb-f |
+| arc welding | gb-m |
+| MIG welding | us-f |
+| MIG welding | us-m |
+| MIG welding | gb-f |
+| MIG welding | gb-m |
+| TIG welding | us-f |
+| TIG welding | us-m |
+| TIG welding | gb-f |
+| TIG welding | gb-m |
+| spot welding | us-f |
+| spot welding | us-m |
+| spot welding | gb-f |
+| spot welding | gb-m |
+| welding current | us-f |
+| welding current | us-m |
+| welding current | gb-f |
+| welding current | gb-m |
+| weld pass | us-f |
+| weld pass | us-m |
+| weld pass | gb-f |
+| weld pass | gb-m |
+| filler wire | us-f |
+| filler wire | us-m |
+| filler wire | gb-f |
+| filler wire | gb-m |
+| shielding gas | us-f |
+| shielding gas | us-m |
+| shielding gas | gb-f |
+| shielding gas | gb-m |
+| heat-affected zone | us-f |
+| heat-affected zone | us-m |
+| heat-affected zone | gb-f |
+| heat-affected zone | gb-m |
+| fillet weld | us-f |
+| fillet weld | us-m |
+| fillet weld | gb-f |
+| fillet weld | gb-m |
+| butt weld | us-f |
+| butt weld | us-m |
+| butt weld | gb-f |
+| butt weld | gb-m |
+| lack of fusion | us-f |
+| lack of fusion | us-m |
+| lack of fusion | gb-f |
+| lack of fusion | gb-m |
+| undercut | us-f |
+| undercut | us-m |
+| undercut | gb-f |
+| undercut | gb-m |
+| spatter | us-f |
+| spatter | us-m |
+| spatter | gb-f |
+| spatter | gb-m |
+| dye penetrant testing | us-f |
+| dye penetrant testing | us-m |
+| dye penetrant testing | gb-f |
+| dye penetrant testing | gb-m |
+| visual inspection | us-f |
+| visual inspection | us-m |
+| visual inspection | gb-f |
+| visual inspection | gb-m |
+| lifting lug | us-f |
+| lifting lug | us-m |
+| lifting lug | gb-f |
+| lifting lug | gb-m |
+| bolted joint | us-f |
+| bolted joint | us-m |
+| bolted joint | gb-f |
+| bolted joint | gb-m |
+| clamp load | us-f |
+| clamp load | us-m |
+| clamp load | gb-f |
+| clamp load | gb-m |
+| tightening torque | us-f |
+| tightening torque | us-m |
+| tightening torque | gb-f |
+| tightening torque | gb-m |
+| torque wrench | us-f |
+| torque wrench | us-m |
+| torque wrench | gb-f |
+| torque wrench | gb-m |
+| impact wrench | us-f |
+| impact wrench | us-m |
+| impact wrench | gb-f |
+| impact wrench | gb-m |
+| self-loosening | us-f |
+| self-loosening | us-m |
+| self-loosening | gb-f |
+| self-loosening | gb-m |
+| thread locker | us-f |
+| thread locker | us-m |
+| thread locker | gb-f |
+| thread locker | gb-m |
+| lock nut | us-f |
+| lock nut | us-m |
+| lock nut | gb-f |
+| lock nut | gb-m |
+| lock washer | us-f |
+| lock washer | us-m |
+| lock washer | gb-f |
+| lock washer | gb-m |
+| property class | us-f |
+| property class | us-m |
+| property class | gb-f |
+| property class | gb-m |
+| proof load | us-f |
+| proof load | us-m |
+| proof load | gb-f |
+| proof load | gb-m |
+| thread pitch | us-f |
+| thread pitch | us-m |
+| thread pitch | gb-f |
+| thread pitch | gb-m |
+| stud | us-f |
+| stud | us-m |
+| stud | gb-f |
+| stud | gb-m |
+| dowel pin | us-f |
+| dowel pin | us-m |
+| dowel pin | gb-f |
+| dowel pin | gb-m |
+| keyway | us-f |
+| keyway | us-m |
+| keyway | gb-f |
+| keyway | gb-m |
+| circlip | us-f |
+| circlip | us-m |
+| circlip | gb-f |
+| circlip | gb-m |
+| press fit | us-f |
+| press fit | us-m |
+| press fit | gb-f |
+| press fit | gb-m |
+| transition fit | us-f |
+| transition fit | us-m |
+| transition fit | gb-f |
+| transition fit | gb-m |
+| jig | us-f |
+| jig | us-m |
+| jig | gb-f |
+| jig | gb-m |
+| pump | us-f |
+| pump | us-m |
+| pump | gb-f |
+| pump | gb-m |
+| gear pump | us-f |
+| gear pump | us-m |
+| gear pump | gb-f |
+| gear pump | gb-m |
+| piston pump | us-f |
+| piston pump | us-m |
+| piston pump | gb-f |
+| piston pump | gb-m |
+| vane pump | us-f |
+| vane pump | us-m |
+| vane pump | gb-f |
+| vane pump | gb-m |
+| hydraulic cylinder | us-f |
+| hydraulic cylinder | us-m |
+| hydraulic cylinder | gb-f |
+| hydraulic cylinder | gb-m |
+| piston | us-f |
+| piston | us-m |
+| piston | gb-f |
+| piston | gb-m |
+| piston rod | us-f |
+| piston rod | us-m |
+| piston rod | gb-f |
+| piston rod | gb-m |
+| directional control valve | us-f |
+| directional control valve | us-m |
+| directional control valve | gb-f |
+| directional control valve | gb-m |
+| spool | us-f |
+| spool | us-m |
+| spool | gb-f |
+| spool | gb-m |
+| servo valve | us-f |
+| servo valve | us-m |
+| servo valve | gb-f |
+| servo valve | gb-m |
+| pressure reducing valve | us-f |
+| pressure reducing valve | us-m |
+| pressure reducing valve | gb-f |
+| pressure reducing valve | gb-m |
+| loading valve | us-f |
+| loading valve | us-m |
+| loading valve | gb-f |
+| loading valve | gb-m |
+| accumulator | us-f |
+| accumulator | us-m |
+| accumulator | gb-f |
+| accumulator | gb-m |
+| reservoir | us-f |
+| reservoir | us-m |
+| reservoir | gb-f |
+| reservoir | gb-m |
+| hydraulic fluid | us-f |
+| hydraulic fluid | us-m |
+| hydraulic fluid | gb-f |
+| hydraulic fluid | gb-m |
+| viscosity | us-f |
+| viscosity | us-m |
+| viscosity | gb-f |
+| viscosity | gb-m |
+| filtration | us-f |
+| filtration | us-m |
+| filtration | gb-f |
+| filtration | gb-m |
+| suction line | us-f |
+| suction line | us-m |
+| suction line | gb-f |
+| suction line | gb-m |
+| return line | us-f |
+| return line | us-m |
+| return line | gb-f |
+| return line | gb-m |
+| pressure drop | us-f |
+| pressure drop | us-m |
+| pressure drop | gb-f |
+| pressure drop | gb-m |
+| rated pressure | us-f |
+| rated pressure | us-m |
+| rated pressure | gb-f |
+| rated pressure | gb-m |
+| seal | us-f |
+| seal | us-m |
+| seal | gb-f |
+| seal | gb-m |
+| O-ring | us-f |
+| O-ring | us-m |
+| O-ring | gb-f |
+| O-ring | gb-m |
+| rod seal | us-f |
+| rod seal | us-m |
+| rod seal | gb-f |
+| rod seal | gb-m |
+| gasket | us-f |
+| gasket | us-m |
+| gasket | gb-f |
+| gasket | gb-m |
+| pneumatic | us-f |
+| pneumatic | us-m |
+| pneumatic | gb-f |
+| pneumatic | gb-m |
+| compressed air | us-f |
+| compressed air | us-m |
+| compressed air | gb-f |
+| compressed air | gb-m |
+| compressor | us-f |
+| compressor | us-m |
+| compressor | gb-f |
+| compressor | gb-m |
+| cavitation | us-f |
+| cavitation | us-m |
+| cavitation | gb-f |
+| cavitation | gb-m |
+| volumetric efficiency | us-f |
+| volumetric efficiency | us-m |
+| volumetric efficiency | gb-f |
+| volumetric efficiency | gb-m |
+| internal leakage | us-f |
+| internal leakage | us-m |
+| internal leakage | gb-f |
+| internal leakage | gb-m |
+| external leakage | us-f |
+| external leakage | us-m |
+| external leakage | gb-f |
+| external leakage | gb-m |
+| quick coupling | us-f |
+| quick coupling | us-m |
+| quick coupling | gb-f |
+| quick coupling | gb-m |
+| hydraulic press | us-f |
+| hydraulic press | us-m |
+| hydraulic press | gb-f |
+| hydraulic press | gb-m |
+| cleanliness code | us-f |
+| cleanliness code | us-m |
+| cleanliness code | gb-f |
+| cleanliness code | gb-m |
+| preventive maintenance | us-f |
+| preventive maintenance | us-m |
+| preventive maintenance | gb-f |
+| preventive maintenance | gb-m |
+| predictive maintenance | us-f |
+| predictive maintenance | us-m |
+| predictive maintenance | gb-f |
+| predictive maintenance | gb-m |
+| condition monitoring | us-f |
+| condition monitoring | us-m |
+| condition monitoring | gb-f |
+| condition monitoring | gb-m |
+| downtime | us-f |
+| downtime | us-m |
+| downtime | gb-f |
+| downtime | gb-m |
+| lubrication | us-f |
+| lubrication | us-m |
+| lubrication | gb-f |
+| lubrication | gb-m |
+| lubricant | us-f |
+| lubricant | us-m |
+| lubricant | gb-f |
+| lubricant | gb-m |
+| grease | us-f |
+| grease | us-m |
+| grease | gb-f |
+| grease | gb-m |
+| oil analysis | us-f |
+| oil analysis | us-m |
+| oil analysis | gb-f |
+| oil analysis | gb-m |
+| rolling bearing | us-f |
+| rolling bearing | us-m |
+| rolling bearing | gb-f |
+| rolling bearing | gb-m |
+| ball bearing | us-f |
+| ball bearing | us-m |
+| ball bearing | gb-f |
+| ball bearing | gb-m |
+| roller bearing | us-f |
+| roller bearing | us-m |
+| roller bearing | gb-f |
+| roller bearing | gb-m |
+| plain bearing | us-f |
+| plain bearing | us-m |
+| plain bearing | gb-f |
+| plain bearing | gb-m |
+| inner ring | us-f |
+| inner ring | us-m |
+| inner ring | gb-f |
+| inner ring | gb-m |
+| outer ring | us-f |
+| outer ring | us-m |
+| outer ring | gb-f |
+| outer ring | gb-m |
+| raceway | us-f |
+| raceway | us-m |
+| raceway | gb-f |
+| raceway | gb-m |
+| bearing cage | us-f |
+| bearing cage | us-m |
+| bearing cage | gb-f |
+| bearing cage | gb-m |
+| spalling | us-f |
+| spalling | us-m |
+| spalling | gb-f |
+| spalling | gb-m |
+| pitting | us-f |
+| pitting | us-m |
+| pitting | gb-f |
+| pitting | gb-m |
+| abrasive wear | us-f |
+| abrasive wear | us-m |
+| abrasive wear | gb-f |
+| abrasive wear | gb-m |
+| misalignment | us-f |
+| misalignment | us-m |
+| misalignment | gb-f |
+| misalignment | gb-m |
+| unbalance | us-f |
+| unbalance | us-m |
+| unbalance | gb-f |
+| unbalance | gb-m |
+| vibration analysis | us-f |
+| vibration analysis | us-m |
+| vibration analysis | gb-f |
+| vibration analysis | gb-m |
+| overheating | us-f |
+| overheating | us-m |
+| overheating | gb-f |
+| overheating | gb-m |
+| failure analysis | us-f |
+| failure analysis | us-m |
+| failure analysis | gb-f |
+| failure analysis | gb-m |
+| mean time between failures | us-f |
+| mean time between failures | us-m |
+| mean time between failures | gb-f |
+| mean time between failures | gb-m |
+| gearbox | us-f |
+| gearbox | us-m |
+| gearbox | gb-f |
+| gearbox | gb-m |
+| gear | us-f |
+| gear | us-m |
+| gear | gb-f |
+| gear | gb-m |
+| coupling | us-f |
+| coupling | us-m |
+| coupling | gb-f |
+| coupling | gb-m |
+| belt drive | us-f |
+| belt drive | us-m |
+| belt drive | gb-f |
+| belt drive | gb-m |
+| drain plug | us-f |
+| drain plug | us-m |
+| drain plug | gb-f |
+| drain plug | gb-m |
+| sight glass | us-f |
+| sight glass | us-m |
+| sight glass | gb-f |
+| sight glass | gb-m |
+| lockout | us-f |
+| lockout | us-m |
+| lockout | gb-f |
+| lockout | gb-m |
+| maintenance log | us-f |
+| maintenance log | us-m |
+| maintenance log | gb-f |
+| maintenance log | gb-m |
+| spare part | us-f |
+| spare part | us-m |
+| spare part | gb-f |
+| spare part | gb-m |
+| conveyor | us-f |
+| conveyor | us-m |
+| conveyor | gb-f |
+| conveyor | gb-m |
+| contamination | us-f |
+| contamination | us-m |
+| contamination | gb-f |
+| contamination | gb-m |
+| bushing | us-f |
+| bushing | us-m |
+| bushing | gb-f |
+| bushing | gb-m |
+| tighten | us-f |
+| tighten | us-m |
+| tighten | gb-f |
+| tighten | gb-m |
+| loosen | us-f |
+| loosen | us-m |
+| loosen | gb-f |
+| loosen | gb-m |
+| wrench | us-f |
+| wrench | us-m |
+| wrench | gb-f |
+| wrench | gb-m |
+| roller | us-f |
+| roller | us-m |
+| roller | gb-f |
+| roller | gb-m |
+| leakage | us-f |
+| leakage | us-m |
+| leakage | gb-f |
+| leakage | gb-m |
+| vibration | us-f |
+| vibration | us-m |
+| vibration | gb-f |
+| vibration | gb-m |
+| transverse | us-f |
+| transverse | us-m |
+| transverse | gb-f |
+| transverse | gb-m |
+| inspection | us-f |
+| inspection | us-m |
+| inspection | gb-f |
+| inspection | gb-m |
+| hardened | us-f |
+| hardened | us-m |
+| hardened | gb-f |
+| hardened | gb-m |
 | The thruster module uses nitrogen, fits into 100 by 100 by 50 millimeters and weighs no more than 1.2 kilograms. | us-f |
 | The thruster module uses nitrogen, fits into 100 by 100 by 50 millimeters and weighs no more than 1.2 kilograms. | us-m |
 | The thruster module uses nitrogen, fits into 100 by 100 by 50 millimeters and weighs no more than 1.2 kilograms. | gb-f |
@@ -836,6 +1498,114 @@
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | us-m |
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | gb-f |
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | gb-m |
+| A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it. | us-f |
+| A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it. | us-m |
+| A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it. | gb-f |
+| A lathe makes round parts: the workpiece turns in the chuck, and the tool cuts chips from it. | gb-m |
+| Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last. | us-f |
+| Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last. | us-m |
+| Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last. | gb-f |
+| Speed, feed and depth of cut control the cut, and the operator makes a rough cut first and a light finishing cut last. | gb-m |
+| A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line. | us-f |
+| A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line. | us-m |
+| A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line. | gb-f |
+| A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line. | gb-m |
+| Its force is pressure times piston area, and worn seals let oil leak and make it weak. | us-f |
+| Its force is pressure times piston area, and worn seals let oil leak and make it weak. | us-m |
+| Its force is pressure times piston area, and worn seals let oil leak and make it weak. | gb-f |
+| Its force is pressure times piston area, and worn seals let oil leak and make it weak. | gb-m |
+| A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily. | us-f |
+| A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily. | us-m |
+| A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily. | gb-f |
+| A rolling bearing has an inner and an outer ring with balls or rollers between them, so the shaft turns easily. | gb-m |
+| Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early. | us-f |
+| Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early. | us-m |
+| Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early. | gb-f |
+| Bearings usually fail because of bad lubrication, dirt, misalignment or mounting, and temperature and vibration checks find the problem early. | gb-m |
+| The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year. | us-f |
+| The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year. | us-m |
+| The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year. | gb-f |
+| The gearbox of conveyor line 3 gets new oil every 4000 hours or once a year. | gb-m |
+| Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray. | us-f |
+| Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray. | us-m |
+| Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray. | gb-f |
+| Stop and lock out the conveyor, wait 30 minutes, and drain the old oil into a tray. | gb-m |
+| Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log. | us-f |
+| Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log. | us-m |
+| Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log. | gb-f |
+| Check the magnetic plug for metal, fit a new washer, add 12 liters of oil and write it in the log. | gb-m |
+| Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication. | us-f |
+| Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication. | us-m |
+| Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication. | gb-f |
+| Coolant is costly and can be harmful, so the authors compare dry milling, flood coolant and minimum lubrication. | gb-m |
+| They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life. | us-f |
+| They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life. | us-m |
+| They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life. | gb-f |
+| They milled steel at 200 meters per minute and measured flank wear every ten passes, with 0.3 millimeters as the end of tool life. | gb-m |
+| MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant. | us-f |
+| MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant. | us-m |
+| MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant. | gb-f |
+| MQL gave 38 minutes of tool life, close to 41 with coolant and much better than 22 dry, so it can replace flood coolant. | gb-m |
+| The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration. | us-f |
+| The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration. | us-m |
+| The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration. | gb-f |
+| The paper studies how three locking methods stop M10 bolts from loosening under sideways vibration. | gb-m |
+| Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time. | us-f |
+| Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time. | us-m |
+| Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time. | gb-f |
+| Joints preloaded to 28 kilonewtons were shaken sideways on a Junker machine, and the clamp load was recorded all the time. | gb-m |
+| Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent. | us-f |
+| Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent. | us-m |
+| Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent. | gb-f |
+| Plain joints and split washers lost their preload fast, the lock nut kept 60 percent, and thread locker lost less than 10 percent. | gb-m |
+| Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results. | us-f |
+| Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results. | us-m |
+| Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results. | gb-f |
+| Every repaired gear pump is tested on the bench with oil at 50 degrees, because viscosity affects the results. | gb-m |
+| The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured. | us-f |
+| The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured. | us-m |
+| The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured. | gb-f |
+| The pump runs at 1500 rpm, the pressure goes up in 50 bar steps to 200 bar, and flow and torque are measured. | gb-m |
+| The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again. | us-f |
+| The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again. | us-m |
+| The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again. | gb-f |
+| The pump passes if its volumetric efficiency is at least 90 percent and it does not leak; if not, it is repaired again. | gb-m |
+| Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load. | us-f |
+| Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load. | us-m |
+| Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load. | gb-f |
+| Frame joints use 10.9 bolts with hardened washers, tightened with a calibrated torque wrench to about 70 percent of the proof load. | gb-m |
+| Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark. | us-f |
+| Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark. | us-m |
+| Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark. | gb-f |
+| Joints with more than four bolts are tightened crosswise in two passes, and each bolt gets a paint mark. | gb-m |
+| Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported. | us-f |
+| Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported. | us-m |
+| Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported. | gb-f |
+| Tightened 10.9 bolts are not reused, lubricant is used only if the drawing says so, and problem joints are reported. | gb-m |
+| Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant. | us-f |
+| Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant. | us-m |
+| Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant. | gb-f |
+| Report IR-2026-118 covers the welds of a grinding machine base frame, checked visually and with dye penetrant. | gb-m |
+| One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found. | us-f |
+| One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found. | us-m |
+| One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found. | gb-f |
+| One weld had an undercut of 0.8 millimeters, more than the allowed 0.5, but no cracks were found. | gb-m |
+| Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted. | us-f |
+| Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted. | us-m |
+| Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted. | gb-f |
+| Weld 14 will be ground and welded again, the current was too high, and the frame waits until the repair is accepted. | gb-m |
+| Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear. | us-f |
+| Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear. | us-m |
+| Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear. | gb-f |
+| Most hydraulic failures come from dirty fluid, and particles of 5 to 15 micrometers that fit into the clearances cause the most wear. | gb-m |
+| Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy. | us-f |
+| Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy. | us-m |
+| Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy. | gb-f |
+| Water reduces lubrication and causes corrosion and cavitation, and air from a loose fitting makes the pump noisy. | gb-m |
+| Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime. | us-f |
+| Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime. | us-m |
+| Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime. | gb-f |
+| Cleanliness is given as an ISO 4406 code such as 16/14/11, and good filtration costs less than downtime. | gb-m |
 | cultured | us-f |
 | cultured | us-m |
 | cultured | gb-f |
@@ -884,10 +1654,6 @@
 | set of documents | us-m |
 | set of documents | gb-f |
 | set of documents | gb-m |
-| inspection | us-f |
-| inspection | us-m |
-| inspection | gb-f |
-| inspection | gb-m |
 | stocktaking | us-f |
 | stocktaking | us-m |
 | stocktaking | gb-f |
@@ -1048,6 +1814,70 @@
 | gang | us-m |
 | gang | gb-f |
 | gang | gb-m |
+| milling cutter | us-f |
+| milling cutter | us-m |
+| milling cutter | gb-f |
+| milling cutter | gb-m |
+| carriage | us-f |
+| carriage | us-m |
+| carriage | gb-f |
+| carriage | gb-m |
+| major overhaul | us-f |
+| major overhaul | us-m |
+| major overhaul | gb-f |
+| major overhaul | gb-m |
+| setup technician | us-f |
+| setup technician | us-m |
+| setup technician | gb-f |
+| setup technician | gb-m |
+| second shift | us-f |
+| second shift | us-m |
+| second shift | gb-f |
+| second shift | gb-m |
+| rolled steel | us-f |
+| rolled steel | us-m |
+| rolled steel | gb-f |
+| rolled steel | gb-m |
+| drill jig | us-f |
+| drill jig | us-m |
+| drill jig | gb-f |
+| drill jig | gb-m |
+| machine shop | us-f |
+| machine shop | us-m |
+| machine shop | gb-f |
+| machine shop | gb-m |
+| work order | us-f |
+| work order | us-m |
+| work order | gb-f |
+| work order | gb-m |
+| delivery note | us-f |
+| delivery note | us-m |
+| delivery note | gb-f |
+| delivery note | gb-m |
+| welding jig | us-f |
+| welding jig | us-m |
+| welding jig | gb-f |
+| welding jig | gb-m |
+| inspection for wear and damage | us-f |
+| inspection for wear and damage | us-m |
+| inspection for wear and damage | gb-f |
+| inspection for wear and damage | gb-m |
+| key | us-f |
+| key | us-m |
+| key | gb-f |
+| key | gb-m |
+| tempering | us-f |
+| tempering | us-m |
+| tempering | gb-f |
+| tempering | gb-m |
+| steel grade | us-f |
+| steel grade | us-m |
+| steel grade | gb-f |
+| steel grade | gb-m |
+| plug gauge | us-f |
+| plug gauge | us-m |
+| plug gauge | gb-f |
+| plug gauge | gb-m |
 | The design review is on Thursday at ten. | us-f |
 | We need fifteen more bolts for the bracket. | us-m |
 | The wall thickness is three point five millimetres. | gb-f |
@@ -1130,3 +1960,84 @@
 | I'll text you when I get home. | gb-m |
 | The tickets are forty pounds each. | gb-f |
 | Would you like tea or coffee? | us-m |
+| The lathe on line two is down again. | us-f |
+| Set the spindle speed to fifteen hundred rpm. | us-m |
+| We can't run the CNC machine without the new program. | gb-f |
+| The coolant tank needs topping up. | gb-f |
+| Change the insert after forty parts. | us-f |
+| The tool broke in the middle of the cut. | us-m |
+| The milling machine is free after lunch. | gb-f |
+| Clamp the workpiece before you start the machine. | gb-m |
+| Turn off the machine before you clean it. | us-f |
+| The drill bit was blunt, so I changed it. | us-m |
+| Put on your safety glasses before you go in. | gb-f |
+| The shaft diameter is twenty-five millimetres. | gb-m |
+| This bore is twelve microns oversize. | us-f |
+| Measure the part with the micrometer, not the calipers. | us-m |
+| The runout is within tolerance now. | gb-f |
+| Three of the twenty shafts are out of tolerance. | gb-m |
+| Check the flatness on both sides of the plate. | us-f |
+| The surface roughness should be Ra one point six. | us-m |
+| The thread gauge goes in easily. | gb-f |
+| Zero the indicator before you measure. | gb-m |
+| Tighten the bolts in a cross pattern. | us-f |
+| The bearing should be pressed, not hammered in. | us-m |
+| We're missing two washers for this assembly. | gb-f |
+| Put a drop of thread locker on each bolt. | gb-m |
+| The gearbox goes back together on Thursday. | us-f |
+| Use the torque wrench, not the impact gun. | us-m |
+| The seal goes on before the cover. | gb-f |
+| Can you pass me the ten-millimetre spanner? | gb-m |
+| The pin is too tight to go in. | us-f |
+| The welder needs two more hours on the frame. | us-m |
+| There's porosity in the second weld. | gb-f |
+| Grind the weld flush before painting. | gb-m |
+| We weld the brackets after the frame is square. | us-f |
+| We've got one cylinder of argon left. | us-m |
+| Don't weld near the hydraulic lines. | gb-f |
+| The weld cracked after the heat treatment. | gb-m |
+| The hydraulic pressure is down to ninety bar. | us-f |
+| There's an oil leak under the press. | us-m |
+| Replace the filter every five hundred hours. | gb-f |
+| The pump is noisier than it was yesterday. | gb-m |
+| Bleed the air from the cylinder first. | us-f |
+| The hose burst at two hundred bar. | us-m |
+| The conveyor is stopped for maintenance until noon. | gb-f |
+| We change the oil in this gearbox twice a year. | gb-m |
+| The bearing on the motor is running hot. | us-f |
+| I'll replace the belt tomorrow morning. | us-m |
+| The machine has run for six thousand hours. | gb-f |
+| Lock out the machine before you open the guard. | gb-m |
+| The fault came back after the restart. | us-f |
+| The maintenance team can't come until Wednesday. | us-m |
+| We need four hundred housings by the end of the month. | gb-f |
+| The night shift made eighty parts. | gb-m |
+| This order has priority over the others. | us-f |
+| The batch of gears is ready for shipping. | us-m |
+| We're behind schedule by three days. | gb-f |
+| The cycle time is forty-five seconds per part. | gb-m |
+| Let's move the job to the second shift. | us-f |
+| The material for this order arrives on Monday. | us-m |
+| Can we finish the batch before the weekend? | gb-f |
+| The new line will start in a fortnight. | gb-f |
+| We only have steel for two more days. | us-f |
+| The foreman asked them to stay late. | us-m |
+| The inspector rejected six parts from this batch. | gb-f |
+| Every tenth part goes to the lab. | gb-m |
+| The first article passed inspection on Friday. | us-f |
+| Put the bad parts in the red box. | us-m |
+| The hardness is lower than the drawing says. | gb-f |
+| We found burrs on the inside edge. | gb-m |
+| The customer wants a certificate for each batch. | us-f |
+| Write the measurements on the inspection sheet. | us-m |
+| Half of the scrap came from one machine. | gb-f |
+| Stop the line if you see a crack. | gb-m |
+| I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | us-f |
+| I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | us-m |
+| I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | gb-f |
+| I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | gb-m |
+| I'm a fourth-year student in mechanical engineering. At the moment I'm working on a project about fatigue testing: we run cyclic tests on steel and composite specimens and compare the results with finite element models. Before that, I spent a summer at a machine shop, where I got hands-on experience with CNC machines and measuring tools. What I enjoy most is the link between design and real production. I'm looking for a position where I can work on machine design and learn from experienced engineers. | gb-f |
+| The goal of the project was to reduce the weight of a gearbox housing. I was responsible for the stress analysis. I built the model in SolidWorks, ran a topology study, and proposed a lighter shape with ribs. Then I worked closely with the workshop to make sure it could actually be cast and machined. As a result, the mass dropped by about eighteen percent, and the housing passed the load test on the first try. | gb-f |
+| Two reasons. First, your team designs and builds real machines, not only models, and that's exactly the kind of work I enjoy. Second, I read about your test equipment for the automotive industry, which is very close to my current project. I think I could contribute to the testing side from day one and learn a lot about production and quality control. | gb-f |
+| Last year four of us designed a small gearbox test stand for a student competition. My role was the data acquisition system. Halfway through, we realized that the mechanical and electrical parts didn't fit together, because we had worked separately. I suggested a short daily meeting and a shared list of interfaces. It took ten minutes a day, but after that we didn't have a single integration problem, and we finished two days early. | gb-f |
+| In five years, I'd like to be a design engineer who can take a part from drawing to production on my own. I'd also like to mentor younger engineers, the way my supervisors helped me. And ideally, I'd like to see a machine I designed actually running on a real production line. | gb-f |

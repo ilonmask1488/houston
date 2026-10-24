@@ -1,5 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db, type AppDB } from '../db/db'
+import type { Field } from '../../content/types'
 import type { Settings } from '../db/types'
 
 /** По умолчанию занятие 30 минут: параллельно идёт китайский в «Сяо Хо». */
@@ -58,5 +59,32 @@ export function applyAppearance(s: Pick<Settings, 'theme'>): void {
     localStorage.setItem(MIRROR_KEY, JSON.stringify({ theme: s.theme }))
   } catch {
     /* нет доступа к localStorage — не критично */
+  }
+}
+
+/*
+  Специальность нужна до загрузки контента (по ней фильтруются тексты и термины) и до отрисовки
+  (по ней стиль), поэтому кроме базы она лежит в localStorage — читается мгновенно.
+*/
+const FIELD_KEY = 'houston:field'
+
+/** Специальность, выбранная раньше; undefined — ещё не выбирали (первый запуск). */
+export async function storedField(database: AppDB = db): Promise<Field | undefined> {
+  try {
+    const v = localStorage.getItem(FIELD_KEY)
+    if (v === 'space' || v === 'mech') return v
+  } catch {
+    /* localStorage недоступен — берём из базы */
+  }
+  return (await loadSettings(database)).field
+}
+
+/** Сохранить специальность. Контент и стиль применяются при старте — после смены нужна перезагрузка. */
+export async function saveField(field: Field, database: AppDB = db): Promise<void> {
+  await updateSettings({ field }, database)
+  try {
+    localStorage.setItem(FIELD_KEY, field)
+  } catch {
+    /* без зеркала — прочитаем из базы */
   }
 }

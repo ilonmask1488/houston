@@ -1,6 +1,7 @@
 import { Component, useEffect, useRef, useState, type ReactNode } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useRegisterSW } from 'virtual:pwa-register/react'
+import { FieldPicker } from '../features/onboarding/FieldPicker'
 import { IconDictionary, IconSession, IconStory, IconTracks, IconTraining } from '../components/Icons'
 import { Banner } from '../components/ui'
 import ui from '../components/ui.module.css'
@@ -32,6 +33,7 @@ export function Shell() {
         <Outlet />
       </ErrorBoundary>
       <UpdateToasts audioError={audioError} />
+      <FieldPicker />
       {!fullscreen && (
         <nav className={s.nav} aria-label="Разделы">
           <ul className={s.navList}>

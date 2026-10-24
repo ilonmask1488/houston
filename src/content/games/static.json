@@ -23,7 +23,8 @@
   "ru": "Я студент четвёртого курса, аэрокосмическая инженерия.",
   "focus": "I'm a fourth-year student in",
   "voice": "us-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-003",
@@ -49,7 +50,8 @@
   "ru": "По специальности я инженер ракетно-космической техники.",
   "focus": "is in rocket and",
   "voice": "gb-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-005",
@@ -101,7 +103,8 @@
   "ru": "В свободное время я люблю читать о космических миссиях.",
   "focus": "I like to read about space missions",
   "voice": "gb-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-009",
@@ -426,7 +429,8 @@
   "ru": "Главной трудностью была вибрация при старте.",
   "focus": "was the vibration at launch",
   "voice": "us-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-034",
@@ -868,7 +872,8 @@
   "ru": "Я студент четвёртого курса, учусь на ракетостроении.",
   "focus": "I'm a fourth-year student",
   "voice": "gb-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-068",
@@ -2831,7 +2836,8 @@
   "ru": "Двигатель подаёт горючее и окислитель в камеру, где они сгорают.",
   "focus": "where they burn",
   "voice": "us-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-219",
@@ -2844,7 +2850,8 @@
   "ru": "Горячий газ разгоняется в сопле, и быстрая струя создаёт тягу.",
   "focus": "speeds up in the nozzle",
   "voice": "gb-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-220",
@@ -2857,7 +2864,8 @@
   "ru": "У спутника есть полезная нагрузка, которая выполняет задачу, и платформа, которая её обслуживает.",
   "focus": "a bus that supports it",
   "voice": "gb-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-221",
@@ -2896,7 +2904,8 @@
   "ru": "Неглубокие царапины допустимы, но о любой трещине нужно сообщить и получить согласование до полёта.",
   "focus": "any crack must be reported",
   "voice": "gb-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-224",
@@ -2922,7 +2931,8 @@
   "ru": "Кронштейн испытали на вибрацию по трём осям, на 3 дБ выше ожидаемых полётных уровней.",
   "focus": "3 dB above the expected flight levels",
   "voice": "us-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-226",
@@ -2935,7 +2945,8 @@
   "ru": "Авторы напечатали цельную форсуночную головку для небольшого метан-кислородного двигателя.",
   "focus": "a one-piece injector",
   "voice": "us-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-227",
@@ -2948,7 +2959,8 @@
   "ru": "После КТ-контроля и проливок водой двенадцать огневых испытаний показали эффективность 96 процентов и никаких повреждений.",
   "focus": "twelve hot fires showed 96 percent",
   "voice": "gb-f",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-228",
@@ -2987,7 +2999,8 @@
   "ru": "Поэтому такие ленты могут заменить нагреватели и вентиляторы в небольших маломощных спутниках.",
   "focus": "can replace heaters and fans",
   "voice": "us-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-231",
@@ -3169,7 +3182,8 @@
   "ru": "Если бы можно было работать над любой космической миссией — какой?",
   "focus": "work on any space mission",
   "voice": "au-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-245",
@@ -3234,7 +3248,8 @@
   "ru": "Как работает ракетный двигатель, если просто?",
   "focus": "How does a rocket engine work",
   "voice": "in-m",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "g-st-r-250",
@@ -4483,5 +4498,1013 @@
   "focus": "Would you like tea",
   "voice": "us-m",
   "reviewed": false
+ },
+ {
+  "id": "g-st-m-001",
+  "text": "The lathe on line two is down again.",
+  "options": [
+   "The lathe on line two is down again.",
+   "The lathe on line three is down again.",
+   "The lathe on line two was down again."
+  ],
+  "ru": "Токарный станок на второй линии опять встал.",
+  "focus": "line two is down",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-002",
+  "text": "Set the spindle speed to fifteen hundred rpm.",
+  "options": [
+   "Set the spindle speed to fifteen hundred rpm.",
+   "Set the spindle speed to sixteen hundred rpm.",
+   "Set the spindle speed to five hundred rpm."
+  ],
+  "ru": "Поставь обороты шпинделя тысяча пятьсот в минуту.",
+  "focus": "fifteen hundred rpm",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-003",
+  "text": "We can't run the CNC machine without the new program.",
+  "options": [
+   "We can't run the CNC machine without the new program.",
+   "We can run the CNC machine without the new program.",
+   "We can't run the CNC machine without the new programs."
+  ],
+  "ru": "Без новой программы мы не можем запустить станок с ЧПУ.",
+  "focus": "We can't run the CNC machine",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-004",
+  "text": "The coolant tank needs topping up.",
+  "options": [
+   "The coolant tank needs topping up.",
+   "The coolant tanks need topping up.",
+   "The coolant tank needed topping up."
+  ],
+  "ru": "В бак СОЖ нужно долить жидкости.",
+  "focus": "The coolant tank needs",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-005",
+  "text": "Change the insert after forty parts.",
+  "options": [
+   "Change the insert after forty parts.",
+   "Change the insert after fourteen parts.",
+   "Change the inserts after forty parts."
+  ],
+  "ru": "Меняй пластину после сорока деталей.",
+  "focus": "after forty parts",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-006",
+  "text": "The tool broke in the middle of the cut.",
+  "options": [
+   "The tool broke in the middle of the cut.",
+   "The tool broke at the end of the cut.",
+   "The tools broke in the middle of the cut."
+  ],
+  "ru": "Инструмент сломался в середине прохода.",
+  "focus": "in the middle of the cut",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-007",
+  "text": "The milling machine is free after lunch.",
+  "options": [
+   "The milling machine is free after lunch.",
+   "The milling machine is free before lunch.",
+   "The milling machine was free after lunch."
+  ],
+  "ru": "Фрезерный станок освободится после обеда.",
+  "focus": "is free after lunch",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-008",
+  "text": "Clamp the workpiece before you start the machine.",
+  "options": [
+   "Clamp the workpiece before you start the machine.",
+   "Clamp the workpiece before we start the machine.",
+   "Clamp the workpieces before you start the machine."
+  ],
+  "ru": "Закрепи заготовку, прежде чем запускать станок.",
+  "focus": "before you start the machine",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-009",
+  "text": "Turn off the machine before you clean it.",
+  "options": [
+   "Turn off the machine before you clean it.",
+   "Turn off the machine after you clean it.",
+   "Turn on the machine before you clean it."
+  ],
+  "ru": "Выключи станок, прежде чем его чистить.",
+  "focus": "Turn off the machine before",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-010",
+  "text": "The drill bit was blunt, so I changed it.",
+  "options": [
+   "The drill bit was blunt, so I changed it.",
+   "The drill bit was blunt, so I'll change it.",
+   "The drill bits were blunt, so I changed them."
+  ],
+  "ru": "Сверло затупилось, и я его поменял.",
+  "focus": "was blunt, so I changed it",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-011",
+  "text": "Put on your safety glasses before you go in.",
+  "options": [
+   "Put on your safety glasses before you go in.",
+   "Put on your safety glasses after you go in.",
+   "Put on your safety glasses before we go in."
+  ],
+  "ru": "Надень защитные очки, прежде чем заходить.",
+  "focus": "before you go in",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-012",
+  "text": "The shaft diameter is twenty-five millimetres.",
+  "options": [
+   "The shaft diameter is twenty-five millimetres.",
+   "The shaft diameter is twenty-nine millimetres.",
+   "The shaft diameter was twenty-five millimetres."
+  ],
+  "ru": "Диаметр вала — двадцать пять миллиметров.",
+  "focus": "twenty-five millimetres",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-013",
+  "text": "This bore is twelve microns oversize.",
+  "options": [
+   "This bore is twelve microns oversize.",
+   "This bore is twenty microns oversize.",
+   "This bore is twelve microns undersize."
+  ],
+  "ru": "Это отверстие больше номинала на двенадцать микрон.",
+  "focus": "twelve microns oversize",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-014",
+  "text": "Measure the part with the micrometer, not the calipers.",
+  "options": [
+   "Measure the part with the micrometer, not the calipers.",
+   "Measure the part with the calipers, not the micrometer.",
+   "Measure the parts with the micrometer, not the calipers."
+  ],
+  "ru": "Меряй деталь микрометром, а не штангенциркулем.",
+  "focus": "with the micrometer, not the calipers",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-015",
+  "text": "The runout is within tolerance now.",
+  "options": [
+   "The runout is within tolerance now.",
+   "The runout isn't within tolerance now.",
+   "The runout is within tolerance today."
+  ],
+  "ru": "Биение теперь в допуске.",
+  "focus": "is within tolerance now",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-016",
+  "text": "Three of the twenty shafts are out of tolerance.",
+  "options": [
+   "Three of the twenty shafts are out of tolerance.",
+   "Three of the thirty shafts are out of tolerance.",
+   "Two of the twenty shafts are out of tolerance."
+  ],
+  "ru": "Три вала из двадцати не в допуске.",
+  "focus": "Three of the twenty shafts",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-017",
+  "text": "Check the flatness on both sides of the plate.",
+  "options": [
+   "Check the flatness on both sides of the plate.",
+   "Check the flatness on one side of the plate.",
+   "Check the flatness on both sides of the plates."
+  ],
+  "ru": "Проверь плоскостность с обеих сторон плиты.",
+  "focus": "on both sides of the plate",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-018",
+  "text": "The surface roughness should be Ra one point six.",
+  "options": [
+   "The surface roughness should be Ra one point six.",
+   "The surface roughness should be Ra three point two.",
+   "The surface roughness could be Ra one point six."
+  ],
+  "ru": "Шероховатость поверхности должна быть Ra 1,6.",
+  "focus": "should be Ra one point six",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-019",
+  "text": "The thread gauge goes in easily.",
+  "options": [
+   "The thread gauge goes in easily.",
+   "The thread gauge doesn't go in easily.",
+   "The thread gauges go in easily."
+  ],
+  "ru": "Резьбовой калибр входит легко.",
+  "focus": "The thread gauge goes in easily",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-020",
+  "text": "Zero the indicator before you measure.",
+  "options": [
+   "Zero the indicator before you measure.",
+   "Zero the indicator after you measure.",
+   "Zero the indicators before you measure."
+  ],
+  "ru": "Обнули индикатор перед замером.",
+  "focus": "before you measure",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-021",
+  "text": "Tighten the bolts in a cross pattern.",
+  "options": [
+   "Tighten the bolts in a cross pattern.",
+   "Loosen the bolts in a cross pattern.",
+   "Tighten the bolts in a star pattern."
+  ],
+  "ru": "Затягивай болты крест-накрест.",
+  "focus": "Tighten the bolts in a cross pattern",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-022",
+  "text": "The bearing should be pressed, not hammered in.",
+  "options": [
+   "The bearing should be pressed, not hammered in.",
+   "The bearing should be hammered, not pressed in.",
+   "The bearing must be pressed, not hammered in."
+  ],
+  "ru": "Подшипник нужно запрессовывать, а не забивать молотком.",
+  "focus": "should be pressed, not hammered",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-023",
+  "text": "We're missing two washers for this assembly.",
+  "options": [
+   "We're missing two washers for this assembly.",
+   "We're missing ten washers for this assembly.",
+   "We were missing two washers for this assembly."
+  ],
+  "ru": "Для этого узла нам не хватает двух шайб.",
+  "focus": "missing two washers",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-024",
+  "text": "Put a drop of thread locker on each bolt.",
+  "options": [
+   "Put a drop of thread locker on each bolt.",
+   "Put two drops of thread locker on each bolt.",
+   "Put a drop of thread locker on each nut."
+  ],
+  "ru": "Капни фиксатор резьбы на каждый болт.",
+  "focus": "a drop of thread locker on each bolt",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-025",
+  "text": "The gearbox goes back together on Thursday.",
+  "options": [
+   "The gearbox goes back together on Thursday.",
+   "The gearbox goes back together on Tuesday.",
+   "The gearbox went back together on Thursday."
+  ],
+  "ru": "Редуктор соберём обратно в четверг.",
+  "focus": "goes back together on Thursday",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-026",
+  "text": "Use the torque wrench, not the impact gun.",
+  "options": [
+   "Use the torque wrench, not the impact gun.",
+   "Use the impact gun, not the torque wrench.",
+   "Use the torque wrench, not the spanner."
+  ],
+  "ru": "Бери динамометрический ключ, а не гайковёрт.",
+  "focus": "the torque wrench, not the impact gun",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-027",
+  "text": "The seal goes on before the cover.",
+  "options": [
+   "The seal goes on before the cover.",
+   "The seal goes on after the cover.",
+   "The seals go on before the cover."
+  ],
+  "ru": "Уплотнение ставится до крышки.",
+  "focus": "goes on before the cover",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-028",
+  "text": "Can you pass me the ten-millimetre spanner?",
+  "options": [
+   "Can you pass me the ten-millimetre spanner?",
+   "Can you pass me the thirteen-millimetre spanner?",
+   "Can you pass him the ten-millimetre spanner?"
+  ],
+  "ru": "Подай мне ключ на десять.",
+  "focus": "pass me the ten-millimetre spanner",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-029",
+  "text": "The pin is too tight to go in.",
+  "options": [
+   "The pin is too tight to go in.",
+   "The pins are too tight to go in.",
+   "The pin was too tight to go in."
+  ],
+  "ru": "Штифт слишком тугой, не входит.",
+  "focus": "The pin is too tight",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-030",
+  "text": "The welder needs two more hours on the frame.",
+  "options": [
+   "The welder needs two more hours on the frame.",
+   "The welder needs ten more hours on the frame.",
+   "The welder needed two more hours on the frame."
+  ],
+  "ru": "Сварщику нужно ещё два часа на раму.",
+  "focus": "two more hours on the frame",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-031",
+  "text": "There's porosity in the second weld.",
+  "options": [
+   "There's porosity in the second weld.",
+   "There was porosity in the second weld.",
+   "There's porosity in the third weld."
+  ],
+  "ru": "Во втором шве есть пористость.",
+  "focus": "in the second weld",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-032",
+  "text": "Grind the weld flush before painting.",
+  "options": [
+   "Grind the weld flush before painting.",
+   "Grind the weld flush after painting.",
+   "Grind the welds flush before painting."
+  ],
+  "ru": "Зачисти шов заподлицо перед покраской.",
+  "focus": "flush before painting",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-033",
+  "text": "We weld the brackets after the frame is square.",
+  "options": [
+   "We weld the brackets after the frame is square.",
+   "We weld the brackets before the frame is square.",
+   "We weld the bracket after the frame is square."
+  ],
+  "ru": "Кронштейны привариваем, когда раму уже выставили под прямой угол.",
+  "focus": "after the frame is square",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-034",
+  "text": "We've got one cylinder of argon left.",
+  "options": [
+   "We've got one cylinder of argon left.",
+   "We've got two cylinders of argon left.",
+   "We've got one cylinder of oxygen left."
+  ],
+  "ru": "У нас остался один баллон аргона.",
+  "focus": "one cylinder of argon",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-035",
+  "text": "Don't weld near the hydraulic lines.",
+  "options": [
+   "Don't weld near the hydraulic lines.",
+   "Don't weld near the hydraulic line.",
+   "Don't work near the hydraulic lines."
+  ],
+  "ru": "Не вари рядом с гидролиниями.",
+  "focus": "Don't weld near",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-036",
+  "text": "The weld cracked after the heat treatment.",
+  "options": [
+   "The weld cracked after the heat treatment.",
+   "The weld cracked before the heat treatment.",
+   "The welds cracked after the heat treatment."
+  ],
+  "ru": "Шов треснул после термообработки.",
+  "focus": "cracked after the heat treatment",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-037",
+  "text": "The hydraulic pressure is down to ninety bar.",
+  "options": [
+   "The hydraulic pressure is down to ninety bar.",
+   "The hydraulic pressure is down to nineteen bar.",
+   "The hydraulic pressure was down to ninety bar."
+  ],
+  "ru": "Давление в гидросистеме упало до девяноста бар.",
+  "focus": "down to ninety bar",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-038",
+  "text": "There's an oil leak under the press.",
+  "options": [
+   "There's an oil leak under the press.",
+   "There was an oil leak under the press.",
+   "There's an oil leak behind the press."
+  ],
+  "ru": "Под прессом течёт масло.",
+  "focus": "an oil leak under the press",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-039",
+  "text": "Replace the filter every five hundred hours.",
+  "options": [
+   "Replace the filter every five hundred hours.",
+   "Replace the filter every five thousand hours.",
+   "Replace the filters every five hundred hours."
+  ],
+  "ru": "Меняй фильтр каждые пятьсот часов.",
+  "focus": "every five hundred hours",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-040",
+  "text": "The pump is noisier than it was yesterday.",
+  "options": [
+   "The pump is noisier than it was yesterday.",
+   "The pump is quieter than it was yesterday.",
+   "The pump is noisier than it was on Monday."
+  ],
+  "ru": "Насос шумит сильнее, чем вчера.",
+  "focus": "noisier than it was yesterday",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-041",
+  "text": "Bleed the air from the cylinder first.",
+  "options": [
+   "Bleed the air from the cylinder first.",
+   "Bleed the air from the cylinders first.",
+   "Bleed the oil from the cylinder first."
+  ],
+  "ru": "Сначала стравь воздух из цилиндра.",
+  "focus": "the air from the cylinder",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-042",
+  "text": "The hose burst at two hundred bar.",
+  "options": [
+   "The hose burst at two hundred bar.",
+   "The hose burst at three hundred bar.",
+   "The hoses burst at two hundred bar."
+  ],
+  "ru": "Шланг лопнул при двухстах барах.",
+  "focus": "burst at two hundred bar",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-043",
+  "text": "The conveyor is stopped for maintenance until noon.",
+  "options": [
+   "The conveyor is stopped for maintenance until noon.",
+   "The conveyor was stopped for maintenance until noon.",
+   "The conveyor is stopped for maintenance until two."
+  ],
+  "ru": "Конвейер остановлен на обслуживание до полудня.",
+  "focus": "is stopped for maintenance until noon",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-044",
+  "text": "We change the oil in this gearbox twice a year.",
+  "options": [
+   "We change the oil in this gearbox twice a year.",
+   "We change the oil in this gearbox three times a year.",
+   "We change the oil in these gearboxes twice a year."
+  ],
+  "ru": "Масло в этом редукторе меняем два раза в год.",
+  "focus": "in this gearbox twice a year",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-045",
+  "text": "The bearing on the motor is running hot.",
+  "options": [
+   "The bearing on the motor is running hot.",
+   "The bearing on the motor was running hot.",
+   "The bearings on the motor are running hot."
+  ],
+  "ru": "Подшипник двигателя греется.",
+  "focus": "is running hot",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-046",
+  "text": "I'll replace the belt tomorrow morning.",
+  "options": [
+   "I'll replace the belt tomorrow morning.",
+   "I'll replace the belts tomorrow morning.",
+   "I'll replace the belt tomorrow evening."
+  ],
+  "ru": "Ремень заменю завтра утром.",
+  "focus": "the belt tomorrow morning",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-047",
+  "text": "The machine has run for six thousand hours.",
+  "options": [
+   "The machine has run for six thousand hours.",
+   "The machine has run for sixty thousand hours.",
+   "The machines have run for six thousand hours."
+  ],
+  "ru": "Станок наработал шесть тысяч часов.",
+  "focus": "six thousand hours",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-048",
+  "text": "Lock out the machine before you open the guard.",
+  "options": [
+   "Lock out the machine before you open the guard.",
+   "Lock out the machine after you open the guard.",
+   "Lock out the machines before you open the guard."
+  ],
+  "ru": "Прежде чем открывать ограждение, заблокируй станок.",
+  "focus": "before you open the guard",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-049",
+  "text": "The fault came back after the restart.",
+  "options": [
+   "The fault came back after the restart.",
+   "The fault came back before the restart.",
+   "The faults came back after the restart."
+  ],
+  "ru": "После перезапуска неисправность вернулась.",
+  "focus": "came back after the restart",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-050",
+  "text": "The maintenance team can't come until Wednesday.",
+  "options": [
+   "The maintenance team can't come until Wednesday.",
+   "The maintenance team can't come until Tuesday.",
+   "The maintenance team couldn't come until Wednesday."
+  ],
+  "ru": "Ремонтники не смогут прийти раньше среды.",
+  "focus": "can't come until Wednesday",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-051",
+  "text": "We need four hundred housings by the end of the month.",
+  "options": [
+   "We need four hundred housings by the end of the month.",
+   "We need four thousand housings by the end of the month.",
+   "We need four hundred housings by the end of the week."
+  ],
+  "ru": "К концу месяца нам нужно четыреста корпусов.",
+  "focus": "four hundred housings by the end of the month",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-052",
+  "text": "The night shift made eighty parts.",
+  "options": [
+   "The night shift made eighty parts.",
+   "The night shift made eighteen parts.",
+   "The day shift made eighty parts."
+  ],
+  "ru": "Ночная смена сделала восемьдесят деталей.",
+  "focus": "The night shift made eighty",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-053",
+  "text": "This order has priority over the others.",
+  "options": [
+   "This order has priority over the others.",
+   "This order had priority over the others.",
+   "These orders have priority over the others."
+  ],
+  "ru": "Этот заказ приоритетнее остальных.",
+  "focus": "This order has priority",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-054",
+  "text": "The batch of gears is ready for shipping.",
+  "options": [
+   "The batch of gears is ready for shipping.",
+   "The batch of gears was ready for shipping.",
+   "The batch of gears isn't ready for shipping."
+  ],
+  "ru": "Партия шестерён готова к отгрузке.",
+  "focus": "is ready for shipping",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-055",
+  "text": "We're behind schedule by three days.",
+  "options": [
+   "We're behind schedule by three days.",
+   "We're behind schedule by two days.",
+   "We were behind schedule by three days."
+  ],
+  "ru": "Мы отстаём от графика на три дня.",
+  "focus": "behind schedule by three days",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-056",
+  "text": "The cycle time is forty-five seconds per part.",
+  "options": [
+   "The cycle time is forty-five seconds per part.",
+   "The cycle time is forty-five minutes per part.",
+   "The cycle time was forty-five seconds per part."
+  ],
+  "ru": "Время цикла — сорок пять секунд на деталь.",
+  "focus": "forty-five seconds per part",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-057",
+  "text": "Let's move the job to the second shift.",
+  "options": [
+   "Let's move the job to the second shift.",
+   "Let's move the job to the first shift.",
+   "Let's move the jobs to the second shift."
+  ],
+  "ru": "Давай перенесём эту работу на вторую смену.",
+  "focus": "to the second shift",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-058",
+  "text": "The material for this order arrives on Monday.",
+  "options": [
+   "The material for this order arrives on Monday.",
+   "The material for this order arrived on Monday.",
+   "The material for this order arrives on Sunday."
+  ],
+  "ru": "Материал под этот заказ придёт в понедельник.",
+  "focus": "arrives on Monday",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-059",
+  "text": "Can we finish the batch before the weekend?",
+  "options": [
+   "Can we finish the batch before the weekend?",
+   "Can't we finish the batch before the weekend?",
+   "Can we finish the batch after the weekend?"
+  ],
+  "ru": "Успеем закончить партию до выходных?",
+  "focus": "Can we finish the batch before",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-060",
+  "text": "The new line will start in a fortnight.",
+  "options": [
+   "The new line will start in a fortnight.",
+   "The new line won't start in a fortnight.",
+   "The new lines will start in a fortnight."
+  ],
+  "ru": "Новая линия заработает через две недели.",
+  "focus": "will start in a fortnight",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-061",
+  "text": "We only have steel for two more days.",
+  "options": [
+   "We only have steel for two more days.",
+   "We only have steel for ten more days.",
+   "We only had steel for two more days."
+  ],
+  "ru": "Стали нам хватит только на два дня.",
+  "focus": "steel for two more days",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-062",
+  "text": "The foreman asked them to stay late.",
+  "options": [
+   "The foreman asked them to stay late.",
+   "The foreman asked me to stay late.",
+   "The foreman asks them to stay late."
+  ],
+  "ru": "Мастер попросил их задержаться.",
+  "focus": "asked them to stay late",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-063",
+  "text": "The inspector rejected six parts from this batch.",
+  "options": [
+   "The inspector rejected six parts from this batch.",
+   "The inspector rejected sixteen parts from this batch.",
+   "The inspector rejected six parts from these batches."
+  ],
+  "ru": "Контролёр забраковал шесть деталей из этой партии.",
+  "focus": "rejected six parts",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-064",
+  "text": "Every tenth part goes to the lab.",
+  "options": [
+   "Every tenth part goes to the lab.",
+   "Every tenth part went to the lab.",
+   "Every fifth part goes to the lab."
+  ],
+  "ru": "Каждая десятая деталь идёт в лабораторию.",
+  "focus": "Every tenth part goes",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-065",
+  "text": "The first article passed inspection on Friday.",
+  "options": [
+   "The first article passed inspection on Friday.",
+   "The first article failed inspection on Friday.",
+   "The first article passed inspection on Thursday."
+  ],
+  "ru": "Первая деталь из партии прошла контроль в пятницу.",
+  "focus": "passed inspection on Friday",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-066",
+  "text": "Put the bad parts in the red box.",
+  "options": [
+   "Put the bad parts in the red box.",
+   "Put the bad parts in the blue box.",
+   "Put the bad parts in the red bin."
+  ],
+  "ru": "Бракованные детали клади в красный ящик.",
+  "focus": "in the red box",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-067",
+  "text": "The hardness is lower than the drawing says.",
+  "options": [
+   "The hardness is lower than the drawing says.",
+   "The hardness is higher than the drawing says.",
+   "The hardness was lower than the drawing says."
+  ],
+  "ru": "Твёрдость ниже, чем указано на чертеже.",
+  "focus": "lower than the drawing says",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-068",
+  "text": "We found burrs on the inside edge.",
+  "options": [
+   "We found burrs on the inside edge.",
+   "We found burrs on the outside edge.",
+   "We find burrs on the inside edge."
+  ],
+  "ru": "Мы нашли заусенцы на внутренней кромке.",
+  "focus": "burrs on the inside edge",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-069",
+  "text": "The customer wants a certificate for each batch.",
+  "options": [
+   "The customer wants a certificate for each batch.",
+   "The customer wanted a certificate for each batch.",
+   "The customers want a certificate for each batch."
+  ],
+  "ru": "Заказчику нужен сертификат на каждую партию.",
+  "focus": "The customer wants a certificate",
+  "voice": "us-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-070",
+  "text": "Write the measurements on the inspection sheet.",
+  "options": [
+   "Write the measurements on the inspection sheet.",
+   "Write the measurements on the inspection sheets.",
+   "Read the measurements on the inspection sheet."
+  ],
+  "ru": "Запиши замеры в карту контроля.",
+  "focus": "Write the measurements",
+  "voice": "us-m",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-071",
+  "text": "Half of the scrap came from one machine.",
+  "options": [
+   "Half of the scrap came from one machine.",
+   "Most of the scrap came from one machine.",
+   "Half of the scrap comes from one machine."
+  ],
+  "ru": "Половина брака пришлась на один станок.",
+  "focus": "Half of the scrap came",
+  "voice": "gb-f",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "g-st-m-072",
+  "text": "Stop the line if you see a crack.",
+  "options": [
+   "Stop the line if you see a crack.",
+   "Stop the line when you see a crack.",
+   "Stop the line if they see a crack."
+  ],
+  "ru": "Увидишь трещину — останавливай линию.",
+  "focus": "Stop the line if you see",
+  "voice": "gb-m",
+  "reviewed": false,
+  "field": "mech"
  }
 ]

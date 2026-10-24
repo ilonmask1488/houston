@@ -105,7 +105,8 @@
   "right": "I'm interested in space technology.",
   "ru": "Я интересуюсь космической техникой.",
   "why": "Interested in — только in.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gf-prepositions-004",
@@ -169,6 +170,16 @@
   "ru": "Позвони мне в пять часов.",
   "why": "Точное время — at.",
   "reviewed": false
+ },
+ {
+  "id": "gf-prepositions-011",
+  "topic": "prepositions",
+  "wrong": "I'm interested on machine tools.",
+  "right": "I'm interested in machine tools.",
+  "ru": "Я интересуюсь станками.",
+  "why": "Interested in — только in.",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gf-tenses-001",
@@ -519,7 +530,8 @@
   "right": "This engine was designed by Korolev's team.",
   "ru": "Этот двигатель спроектировала команда Королёва.",
   "why": "Без was в предложении нет сказуемого — выходит только словосочетание «этот двигатель, спроектированный командой Королёва». Пассив: be + третья форма (was designed).",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gf-passive-004",
@@ -576,6 +588,16 @@
   "reviewed": false
  },
  {
+  "id": "gf-passive-010",
+  "topic": "passive",
+  "wrong": "This lathe designed by our chief engineer.",
+  "right": "This lathe was designed by our chief engineer.",
+  "ru": "Этот станок спроектировал наш главный инженер.",
+  "why": "Без was в предложении нет сказуемого — выходит только словосочетание «этот станок, спроектированный нашим главным инженером». Пассив: be + третья форма (was designed).",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
   "id": "gf-word-order-001",
   "topic": "word-order",
   "wrong": "I go always to work by metro.",
@@ -627,7 +649,8 @@
   "right": "I have never seen such a big rocket.",
   "ru": "Я никогда не видел такую большую ракету.",
   "why": "Never — между have и третьей формой.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gf-word-order-007",
@@ -655,5 +678,15 @@
   "ru": "Я внимательно проверил чертёж.",
   "why": "Наречие не ставят между глаголом и дополнением.",
   "reviewed": false
+ },
+ {
+  "id": "gf-word-order-010",
+  "topic": "word-order",
+  "wrong": "Never I have seen such a big press.",
+  "right": "I have never seen such a big press.",
+  "ru": "Я никогда не видел такой большой пресс.",
+  "why": "Never — между have и третьей формой.",
+  "reviewed": false,
+  "field": "mech"
  }
 ]

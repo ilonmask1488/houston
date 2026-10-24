@@ -1299,7 +1299,8 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "ff-procedure",
@@ -2043,7 +2044,12 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "context": "Моя специальность — технология машиностроения."
+   }
+  }
  },
  {
   "id": "ff-room",
@@ -2105,7 +2111,12 @@
     "voice": "gb-m"
    }
   ],
-  "reviewed": false
+  "reviewed": false,
+  "byField": {
+   "mech": {
+    "context": "Наша кафедра готовит технологов-машиностроителей."
+   }
+  }
  },
  {
   "id": "ff-term-project",
@@ -2726,5 +2737,709 @@
    }
   ],
   "reviewed": false
+ },
+ {
+  "id": "ff-milling-cutter",
+  "ru": "фреза",
+  "context": "Фреза затупилась — поменяй её.",
+  "options": [
+   "milling cutter",
+   "fraise",
+   "milling machine"
+  ],
+  "trap": "fraise",
+  "why": "Fraise по-английски — старинный гофрированный воротник или редкое название зенковки (а по-французски — клубника). Фреза — milling cutter (концевая — end mill); milling machine — сам фрезерный станок.",
+  "speak": [
+   {
+    "text": "milling cutter",
+    "voice": "us-f"
+   },
+   {
+    "text": "milling cutter",
+    "voice": "us-m"
+   },
+   {
+    "text": "milling cutter",
+    "voice": "gb-f"
+   },
+   {
+    "text": "milling cutter",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-carriage",
+  "ru": "суппорт (токарного станка)",
+  "context": "Подведи суппорт ближе к патрону.",
+  "options": [
+   "carriage",
+   "support",
+   "carrier"
+  ],
+  "trap": "support",
+  "why": "Support — опора, поддержка; carrier — перевозчик или носитель. Суппорт токарного станка — carriage (нижняя часть — saddle, поперечные салазки — cross slide).",
+  "speak": [
+   {
+    "text": "carriage",
+    "voice": "us-f"
+   },
+   {
+    "text": "carriage",
+    "voice": "us-m"
+   },
+   {
+    "text": "carriage",
+    "voice": "gb-f"
+   },
+   {
+    "text": "carriage",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-overhaul",
+  "ru": "капитальный ремонт",
+  "context": "Пресс стоит на капитальном ремонте до марта.",
+  "options": [
+   "major overhaul",
+   "capital repair",
+   "capital renovation"
+  ],
+  "trap": "capital repair",
+  "why": "Capital — столица, капитал; «capital repair» — калька. Капремонт станка или двигателя — overhaul (major overhaul), текущий ремонт — repair.",
+  "speak": [
+   {
+    "text": "major overhaul",
+    "voice": "us-f"
+   },
+   {
+    "text": "major overhaul",
+    "voice": "us-m"
+   },
+   {
+    "text": "major overhaul",
+    "voice": "gb-f"
+   },
+   {
+    "text": "major overhaul",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-setup-technician",
+  "ru": "наладчик (станков)",
+  "context": "Позови наладчика — станок надо перенастроить под новую деталь.",
+  "options": [
+   "setup technician",
+   "adjuster",
+   "tuner"
+  ],
+  "trap": "adjuster",
+  "why": "Adjuster — чаще всего страховой оценщик убытков (loss adjuster) или регулировочный механизм; tuner — настройщик пианино или тюнер. Наладчик — setup technician (BrE — setter).",
+  "speak": [
+   {
+    "text": "setup technician",
+    "voice": "us-f"
+   },
+   {
+    "text": "setup technician",
+    "voice": "us-m"
+   },
+   {
+    "text": "setup technician",
+    "voice": "gb-f"
+   },
+   {
+    "text": "setup technician",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-shift",
+  "ru": "смена (рабочая)",
+  "context": "Я работаю во вторую смену.",
+  "options": [
+   "second shift",
+   "second change",
+   "second replacement"
+  ],
+  "trap": "second change",
+  "why": "Change — изменение, перемена; replacement — замена (детали, человека). Рабочая смена — shift: day shift, night shift.",
+  "speak": [
+   {
+    "text": "second shift",
+    "voice": "us-f"
+   },
+   {
+    "text": "second shift",
+    "voice": "us-m"
+   },
+   {
+    "text": "second shift",
+    "voice": "gb-f"
+   },
+   {
+    "text": "second shift",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-preventive-maintenance",
+  "ru": "профилактика (оборудования)",
+  "context": "В пятницу линия стоит на профилактике.",
+  "options": [
+   "preventive maintenance",
+   "prophylaxis",
+   "prevention"
+  ],
+  "trap": "prophylaxis",
+  "why": "Prophylaxis — медицинская профилактика болезней, prevention — предотвращение вообще. Плановая профилактика оборудования — preventive maintenance.",
+  "speak": [
+   {
+    "text": "preventive maintenance",
+    "voice": "us-f"
+   },
+   {
+    "text": "preventive maintenance",
+    "voice": "us-m"
+   },
+   {
+    "text": "preventive maintenance",
+    "voice": "gb-f"
+   },
+   {
+    "text": "preventive maintenance",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-rolled-steel",
+  "ru": "прокат (металлопрокат)",
+  "context": "На склад привезли стальной прокат.",
+  "options": [
+   "rolled steel",
+   "steel rental",
+   "rolling stock"
+  ],
+  "trap": "steel rental",
+  "why": "Rental — прокат в смысле аренды, rolling stock — подвижной состав железной дороги. Металлопрокат — rolled steel (rolled products, sections).",
+  "speak": [
+   {
+    "text": "rolled steel",
+    "voice": "us-f"
+   },
+   {
+    "text": "rolled steel",
+    "voice": "us-m"
+   },
+   {
+    "text": "rolled steel",
+    "voice": "gb-f"
+   },
+   {
+    "text": "rolled steel",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-drill-jig",
+  "ru": "кондуктор (сверлильный)",
+  "context": "Сверли отверстия по кондуктору.",
+  "options": [
+   "drill jig",
+   "drill conductor",
+   "drill conveyor"
+  ],
+  "trap": "drill conductor",
+  "why": "Conductor — дирижёр, кондуктор в транспорте или проводник тока; conveyor — конвейер. Сверлильный кондуктор — drill jig (втулки в нём — drill bushings).",
+  "speak": [
+   {
+    "text": "drill jig",
+    "voice": "us-f"
+   },
+   {
+    "text": "drill jig",
+    "voice": "us-m"
+   },
+   {
+    "text": "drill jig",
+    "voice": "gb-f"
+   },
+   {
+    "text": "drill jig",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-chamfer",
+  "ru": "фаска",
+  "context": "Сними фаску 1 × 45° на торце вала.",
+  "options": [
+   "chamfer",
+   "facet",
+   "fascia"
+  ],
+  "trap": "facet",
+  "why": "Facet — грань (камня, многогранника), fascia — лицевая панель, карниз. Фаска на кромке — chamfer (разделка под сварку — bevel).",
+  "speak": [
+   {
+    "text": "chamfer",
+    "voice": "us-f"
+   },
+   {
+    "text": "chamfer",
+    "voice": "us-m"
+   },
+   {
+    "text": "chamfer",
+    "voice": "gb-f"
+   },
+   {
+    "text": "chamfer",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-thread",
+  "ru": "резьба",
+  "context": "Резьба M10 в отверстии сорвана.",
+  "options": [
+   "thread",
+   "carving",
+   "cutting"
+  ],
+  "trap": "carving",
+  "why": "Carving — резьба по дереву или камню, cutting — резка. Резьба на болте и в отверстии — thread.",
+  "speak": [
+   {
+    "text": "thread",
+    "voice": "us-f"
+   },
+   {
+    "text": "thread",
+    "voice": "us-m"
+   },
+   {
+    "text": "thread",
+    "voice": "gb-f"
+   },
+   {
+    "text": "thread",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-grinding",
+  "ru": "шлифовка (на станке)",
+  "context": "После термообработки вал идёт на шлифовку.",
+  "options": [
+   "grinding",
+   "polishing",
+   "sanding"
+  ],
+  "trap": "polishing",
+  "why": "Polishing — полировка (ради блеска, а не размера), sanding — обработка шкуркой. Шлифовка на станке до точного размера — grinding.",
+  "speak": [
+   {
+    "text": "grinding",
+    "voice": "us-f"
+   },
+   {
+    "text": "grinding",
+    "voice": "us-m"
+   },
+   {
+    "text": "grinding",
+    "voice": "gb-f"
+   },
+   {
+    "text": "grinding",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-machine-shop",
+  "ru": "цех (механический)",
+  "context": "Он работает в механическом цехе.",
+  "options": [
+   "machine shop",
+   "machine guild",
+   "machine store"
+  ],
+  "trap": "machine guild",
+  "why": "Guild — средневековый цех ремесленников, гильдия; store — магазин или склад. Механический цех — machine shop, цех вообще — shop или workshop.",
+  "speak": [
+   {
+    "text": "machine shop",
+    "voice": "us-f"
+   },
+   {
+    "text": "machine shop",
+    "voice": "us-m"
+   },
+   {
+    "text": "machine shop",
+    "voice": "gb-f"
+   },
+   {
+    "text": "machine shop",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-work-order",
+  "ru": "наряд (на работу)",
+  "context": "Мастер выдал наряд на ремонт насоса.",
+  "options": [
+   "work order",
+   "outfit",
+   "attire"
+  ],
+  "trap": "outfit",
+  "why": "Outfit и attire — наряд в смысле одежды. Наряд-задание на работу — work order (или job card).",
+  "speak": [
+   {
+    "text": "work order",
+    "voice": "us-f"
+   },
+   {
+    "text": "work order",
+    "voice": "us-m"
+   },
+   {
+    "text": "work order",
+    "voice": "gb-f"
+   },
+   {
+    "text": "work order",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-delivery-note",
+  "ru": "накладная",
+  "context": "Распишись в накладной за полученные детали.",
+  "options": [
+   "delivery note",
+   "overhead",
+   "overlay"
+  ],
+  "trap": "overhead",
+  "why": "Overheads — накладные расходы, overlay — наложение, накладка. Накладная на полученный товар — delivery note (AmE — packing slip), транспортная — waybill.",
+  "speak": [
+   {
+    "text": "delivery note",
+    "voice": "us-f"
+   },
+   {
+    "text": "delivery note",
+    "voice": "us-m"
+   },
+   {
+    "text": "delivery note",
+    "voice": "gb-f"
+   },
+   {
+    "text": "delivery note",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-welding-jig",
+  "ru": "стапель (сварочный)",
+  "context": "Раму собирают и сваривают на стапеле.",
+  "options": [
+   "welding jig",
+   "welding staple",
+   "welding stack"
+  ],
+  "trap": "welding staple",
+  "why": "Staple — скоба степлера, stack — стопка, штабель. Сборочно-сварочный стапель — jig или fixture (для кораблей — slipway).",
+  "speak": [
+   {
+    "text": "welding jig",
+    "voice": "us-f"
+   },
+   {
+    "text": "welding jig",
+    "voice": "us-m"
+   },
+   {
+    "text": "welding jig",
+    "voice": "gb-f"
+   },
+   {
+    "text": "welding jig",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-damage-inspection",
+  "ru": "дефектовка",
+  "context": "После разборки редуктора провели дефектовку деталей.",
+  "options": [
+   "inspection for wear and damage",
+   "defection",
+   "defectation"
+  ],
+  "trap": "defection",
+  "why": "Defection — переход на сторону противника, бегство; слова defectation нет. Дефектовка — inspection (for wear and damage).",
+  "speak": [
+   {
+    "text": "inspection for wear and damage",
+    "voice": "us-f"
+   },
+   {
+    "text": "inspection for wear and damage",
+    "voice": "us-m"
+   },
+   {
+    "text": "inspection for wear and damage",
+    "voice": "gb-f"
+   },
+   {
+    "text": "inspection for wear and damage",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-washer",
+  "ru": "шайба",
+  "context": "Под гайку подложи шайбу.",
+  "options": [
+   "washer",
+   "puck",
+   "disc"
+  ],
+  "trap": "puck",
+  "why": "Puck — хоккейная шайба, disc — диск. Шайба под гайку — washer (пружинная — spring washer).",
+  "speak": [
+   {
+    "text": "washer",
+    "voice": "us-f"
+   },
+   {
+    "text": "washer",
+    "voice": "us-m"
+   },
+   {
+    "text": "washer",
+    "voice": "gb-f"
+   },
+   {
+    "text": "washer",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-key",
+  "ru": "шпонка",
+  "context": "Шпонка выпала из паза вала.",
+  "options": [
+   "key",
+   "spline",
+   "pin"
+  ],
+  "trap": "spline",
+  "why": "Spline — шлиц (шлицевое соединение), pin — штифт. Шпонка — key, паз под неё — keyway.",
+  "speak": [
+   {
+    "text": "key",
+    "voice": "us-f"
+   },
+   {
+    "text": "key",
+    "voice": "us-m"
+   },
+   {
+    "text": "key",
+    "voice": "gb-f"
+   },
+   {
+    "text": "key",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-tempering",
+  "ru": "отпуск (стали)",
+  "context": "После закалки детали идут на отпуск.",
+  "options": [
+   "tempering",
+   "holiday",
+   "release"
+  ],
+  "trap": "holiday",
+  "why": "Holiday — отпуск-отдых, release — отпускание (тормоза, пружины). Отпуск стали после закалки — tempering.",
+  "speak": [
+   {
+    "text": "tempering",
+    "voice": "us-f"
+   },
+   {
+    "text": "tempering",
+    "voice": "us-m"
+   },
+   {
+    "text": "tempering",
+    "voice": "gb-f"
+   },
+   {
+    "text": "tempering",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-gasket",
+  "ru": "прокладка (уплотнительная)",
+  "context": "Под крышку нужна новая прокладка.",
+  "options": [
+   "gasket",
+   "laying",
+   "padding"
+  ],
+  "trap": "laying",
+  "why": "Laying — прокладка в смысле укладки (кабеля, труб), padding — мягкая набивка. Уплотнительная прокладка — gasket.",
+  "speak": [
+   {
+    "text": "gasket",
+    "voice": "us-f"
+   },
+   {
+    "text": "gasket",
+    "voice": "us-m"
+   },
+   {
+    "text": "gasket",
+    "voice": "gb-f"
+   },
+   {
+    "text": "gasket",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-steel-grade",
+  "ru": "марка (стали)",
+  "context": "Какая марка стали указана на чертеже?",
+  "options": [
+   "steel grade",
+   "steel brand",
+   "steel mark"
+  ],
+  "trap": "steel brand",
+  "why": "Brand — торговая марка, mark — метка, отметка, оценка. Марка материала — grade.",
+  "speak": [
+   {
+    "text": "steel grade",
+    "voice": "us-f"
+   },
+   {
+    "text": "steel grade",
+    "voice": "us-m"
+   },
+   {
+    "text": "steel grade",
+    "voice": "gb-f"
+   },
+   {
+    "text": "steel grade",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "ff-plug-gauge",
+  "ru": "калибр (пробка)",
+  "context": "Проверь отверстие калибром-пробкой.",
+  "options": [
+   "plug gauge",
+   "plug calibre",
+   "plug caliper"
+  ],
+  "trap": "plug calibre",
+  "why": "Calibre — калибр оружия или уровень способностей, caliper — штангенциркуль. Калибр-пробка — plug gauge (проходной и непроходной — go / no-go).",
+  "speak": [
+   {
+    "text": "plug gauge",
+    "voice": "us-f"
+   },
+   {
+    "text": "plug gauge",
+    "voice": "us-m"
+   },
+   {
+    "text": "plug gauge",
+    "voice": "gb-f"
+   },
+   {
+    "text": "plug gauge",
+    "voice": "gb-m"
+   }
+  ],
+  "reviewed": false,
+  "field": "mech"
  }
 ]

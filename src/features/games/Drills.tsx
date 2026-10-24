@@ -12,7 +12,7 @@ import type { DictWord, GrammarFixItem, GrammarGap, VoiceId } from '../../conten
 import { ru } from '../../i18n/ru'
 import { defaultVoice, playText, stopAudio } from '../../lib/audio/audio'
 import { sfx } from '../../lib/audio/sfx'
-import { dictWords, loadDictionary } from '../../lib/dict/dict'
+import { fieldWords, loadDictionary } from '../../lib/dict/dict'
 import { loadDeck, type Deck } from '../../lib/games/deck'
 import { comboPoints, gameRandom, twinsVoice } from '../../lib/games/games'
 import { numberItem, NUMBER_KINDS, type NumberItem } from '../../lib/games/numbers'
@@ -117,7 +117,7 @@ export function TermsGame({ seconds, onFinish }: { seconds: number; onFinish: (o
     let alive = true
     void (async () => {
       await loadDictionary()
-      const pool = dictWords.filter((w) => w.band === 'tech' && w.voices?.length)
+      const pool = fieldWords().filter((w) => w.band === 'tech' && w.voices?.length)
       const d = await loadDeck('terms', pool, ['term'])
       if (!alive) return
       setDeck(d)

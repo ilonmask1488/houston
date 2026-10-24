@@ -116,7 +116,8 @@
   ],
   "ru": "Первая ступень отделяется через две минуты.",
   "why": "Порядковое числительное first — с the. Без артикля по-английски так не говорят.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-articles-010",
@@ -222,7 +223,8 @@
   ],
   "ru": "Я прочитал интересную статью в журнале Journal of Spacecraft and Rockets.",
   "why": "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-articles-018",
@@ -302,6 +304,34 @@
   "ru": "Это единственный чертёж, который у нас есть.",
   "why": "The only — «единственный»: предмет однозначно определён. An only тут не говорят.",
   "reviewed": false
+ },
+ {
+  "id": "gr-articles-024",
+  "topic": "articles",
+  "text": "___ first shift starts at seven o'clock.",
+  "options": [
+   "The",
+   "A",
+   "∅"
+  ],
+  "ru": "Первая смена начинается в семь часов.",
+  "why": "Порядковое числительное first — с the: the first shift, the second operation. Без артикля по-английски так не говорят.",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "gr-articles-025",
+  "topic": "articles",
+  "text": "I read an interesting article in ___ Journal of Manufacturing Processes.",
+  "options": [
+   "the",
+   "a",
+   "∅"
+  ],
+  "ru": "Я прочитал интересную статью в журнале Journal of Manufacturing Processes.",
+  "why": "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал.",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gr-prepositions-001",
@@ -770,7 +800,8 @@
   ],
   "ru": "Ты когда-нибудь видел запуск ракеты?",
   "why": "Have + третья форма глагола (seen). Saw — вторая форма, после have не ставится.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-tenses-011",
@@ -939,7 +970,8 @@
   ],
   "ru": "Я впервые вижу настоящий ракетный двигатель.",
   "why": "После This is the first time… — Present Perfect. По-русски «вижу», но see/am seeing — ошибка.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-tenses-024",
@@ -953,6 +985,34 @@
   "ru": "Наша команда ещё не закончила анализ.",
   "why": "Yet в отрицании — Present Perfect: hasn't finished. Isn't finish — неправильная форма.",
   "reviewed": false
+ },
+ {
+  "id": "gr-tenses-025",
+  "topic": "tenses",
+  "text": "Have you ever ___ a five-axis machine in action?",
+  "options": [
+   "seen",
+   "saw",
+   "see"
+  ],
+  "ru": "Ты когда-нибудь видел пятиосевой станок в работе?",
+  "why": "Have + третья форма глагола (seen). Saw — вторая форма, после have не ставится.",
+  "reviewed": false,
+  "field": "mech"
+ },
+ {
+  "id": "gr-tenses-026",
+  "topic": "tenses",
+  "text": "This is the first time I ___ a real forging press.",
+  "options": [
+   "have seen",
+   "see",
+   "am seeing"
+  ],
+  "ru": "Я впервые вижу настоящий ковочный пресс.",
+  "why": "После This is the first time… — Present Perfect. По-русски «вижу», но see/am seeing — ошибка.",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gr-questions-001",
@@ -1108,7 +1168,8 @@
   ],
   "ru": "Ты когда-нибудь был на Байконуре?",
   "why": "Ever + been — Present Perfect, вопрос начинается с Have.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-questions-013",
@@ -1239,6 +1300,20 @@
   "ru": "Как часто ты ходишь в спортзал? — Три раза в неделю.",
   "why": "Вопрос о частоте — How often. How long — о длительности, how much — о количестве.",
   "reviewed": false
+ },
+ {
+  "id": "gr-questions-023",
+  "topic": "questions",
+  "text": "___ you ever been to a steel plant?",
+  "options": [
+   "Have",
+   "Did",
+   "Were"
+  ],
+  "ru": "Ты когда-нибудь был на металлургическом заводе?",
+  "why": "Ever + been — Present Perfect, вопрос начинается с Have.",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gr-countable-001",
@@ -1693,7 +1768,8 @@
   ],
   "ru": "Мне очень интересны ракетные двигатели.",
   "why": "-ed — что чувствует человек (interested), -ing — каков предмет (interesting). «I am interesting» = «я интересный».",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-verbs-014",
@@ -1837,6 +1913,20 @@
   "ru": "Мы должны закончить чертежи к пятнице.",
   "why": "После must, can, should — глагол без to.",
   "reviewed": false
+ },
+ {
+  "id": "gr-verbs-025",
+  "topic": "verbs",
+  "text": "I am very ___ in machine tools.",
+  "options": [
+   "interested",
+   "interesting",
+   "interest"
+  ],
+  "ru": "Мне очень интересны станки.",
+  "why": "-ed — что чувствует человек (interested), -ing — каков предмет (interesting). «I am interesting» = «я интересный».",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gr-passive-001",
@@ -2096,7 +2186,8 @@
   ],
   "ru": "Первый спутник запустили в 1957 году.",
   "why": "Конкретный год в прошлом — пассив Past Simple: was launched.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-passive-021",
@@ -2123,6 +2214,20 @@
   "ru": "Проект финансирует государство.",
   "why": "Пассив: is + третья форма (funded).",
   "reviewed": false
+ },
+ {
+  "id": "gr-passive-023",
+  "topic": "passive",
+  "text": "The first KAMAZ truck ___ built in 1976.",
+  "options": [
+   "was",
+   "has",
+   "is"
+  ],
+  "ru": "Первый КамАЗ собрали в 1976 году.",
+  "why": "Конкретный год в прошлом — пассив Past Simple: was built.",
+  "reviewed": false,
+  "field": "mech"
  },
  {
   "id": "gr-word-order-001",
@@ -2239,7 +2344,8 @@
   ],
   "ru": "Я никогда не был на Байконуре.",
   "why": "Never уже содержит отрицание. Двойное отрицание (not never) в английском — ошибка.",
-  "reviewed": false
+  "reviewed": false,
+  "field": "space"
  },
  {
   "id": "gr-word-order-010",
@@ -2396,5 +2502,19 @@
   "ru": "Я внимательно проверил чертёж.",
   "why": "Между глаголом и дополнением наречие не ставят: checked the drawing carefully.",
   "reviewed": false
+ },
+ {
+  "id": "gr-word-order-022",
+  "topic": "word-order",
+  "text": "I have ___ been to a car plant.",
+  "options": [
+   "never",
+   "ever not",
+   "not never"
+  ],
+  "ru": "Я никогда не был на автозаводе.",
+  "why": "Never уже содержит отрицание. Двойное отрицание (not never) в английском — ошибка.",
+  "reviewed": false,
+  "field": "mech"
  }
 ]
