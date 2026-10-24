@@ -72,16 +72,20 @@ test.describe('однократные объяснения', () => {
 
 test('ни одно упражнение не требует микрофона: «Сказал вслух без записи»', async ({ page }, info) => {
   test.skip(info.project.name !== 'android', 'запись есть только в Chrome с поддельным микрофоном')
+  // пар на слух стало больше, а новые без mp3 ждут синтез (на CI голоса нет) — дольше 30 с
+  test.setTimeout(120_000)
   await page.goto('./#/run/module/clean-th')
   await page.getByRole('button', { name: 'Понятно, поехали' }).click()
-  for (let i = 0; i < 12; i++) {
+  // Порядок шагов случаен: идём по парам на слух, пока не встретится шаг «скажи вслух».
+  // Короткие таймауты и без падений на отдельном клике — на медленном CI шаг может ещё не смениться.
+  for (let i = 0; i < 40; i++) {
     const skip = page.getByRole('button', { name: 'Сказал вслух без записи' })
     if (await skip.isVisible().catch(() => false)) break
-    const g = page.getByRole('group', { name: 'Какое слово прозвучало' })
-    if (await g.isVisible().catch(() => false)) {
-      await g.getByRole('button').first().click()
-      await page.getByRole('button', { name: 'Дальше' }).click()
-    }
+    const option = page.getByRole('group', { name: 'Какое слово прозвучало' }).getByRole('button').first()
+    if (await option.isEnabled({ timeout: 500 }).catch(() => false)) await option.click({ timeout: 2000 }).catch(() => {})
+    const next = page.getByRole('button', { name: /^(Дальше|Понятно.*)$/ }).first()
+    if (await next.isVisible().catch(() => false)) await next.click({ timeout: 2000 }).catch(() => {})
+    await page.waitForTimeout(200)
   }
   await page.getByRole('button', { name: 'Сказал вслух без записи' }).click()
   await expect(page.getByRole('button', { name: 'Похоже' })).toBeVisible()
