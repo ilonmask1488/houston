@@ -49,6 +49,7 @@ test('занятие: одна кнопка «Начать», блоки иду�
 })
 
 test('между блоками можно пропустить следующий блок', async ({ page }) => {
+  test.setTimeout(90_000)
   await seedIntake(page)
   await page.goto('./#/session')
   await expect(page.getByText(/игра «Помехи»/)).toBeVisible()

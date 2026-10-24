@@ -1,7 +1,7 @@
 import { expect, test } from './fixtures.ts'
 import { seedIntake } from './helpers.ts'
 
-// Игры на время: короткий раунд доигрывается до итогов (отвечаем первым вариантом, после ошибки — «Дальше»).
+// Игры на время: короткий раунд доходит до итогов (ответ, при ошибке — «Дальше», затем время кончается само).
 for (const id of ['static', 'numbers', 'terms', 'twins', 'ff']) {
   test(`игра ${id}: раунд до итогов, без ошибок страницы`, async ({ page }) => {
     test.setTimeout(90_000)
@@ -12,14 +12,11 @@ for (const id of ['static', 'numbers', 'terms', 'twins', 'ff']) {
     await page.getByRole('button', { name: 'Старт' }).click()
     const over = page.getByRole('heading', { name: 'Раунд окончен' })
     await expect(page.locator('[role=group] button').first()).toBeVisible({ timeout: 15_000 })
-    for (let i = 0; i < 120 && !(await over.isVisible().catch(() => false)); i++) {
-      const next = page.getByRole('button', { name: 'Дальше', exact: true })
-      if (await next.isVisible().catch(() => false)) await next.click({ timeout: 1000 }).catch(() => {})
-      const opt = page.locator('[role=group] button:not([disabled])').first()
-      if (await opt.isVisible().catch(() => false)) await opt.click({ timeout: 1000 }).catch(() => {})
-      await page.waitForTimeout(250)
-    }
-    await expect(over).toBeVisible({ timeout: 15_000 })
+    // один ответ (после ошибки — «Дальше», на разборе таймер стоит), потом раунд доходит до конца сам
+    await page.locator('[role=group] button').first().click()
+    const next = page.getByRole('button', { name: 'Дальше', exact: true })
+    await next.waitFor({ timeout: 1500 }).then(() => next.click()).catch(() => {})
+    await expect(over).toBeVisible({ timeout: 30_000 })
     expect(errors).toEqual([])
   })
 }

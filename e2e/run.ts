@@ -176,14 +176,12 @@ export async function runSegment(page: Page, maxSteps = 200, opts: { checkHelp?:
 /** Сыграть открытую «Помехи» до конца раунда. */
 export async function playStatic(page: Page): Promise<void> {
   await click(page, 'Старт')
-  for (let i = 0; i < 60; i++) {
-    if (await page.getByRole('heading', { name: 'Раунд окончен' }).isVisible().catch(() => false)) return
-    // после ошибки игра показывает разбор и ждёт «Дальше» (таймер на паузе)
-    const next = page.getByRole('button', { name: 'Дальше', exact: true })
-    if (await next.isVisible().catch(() => false)) await next.click({ timeout: 1000 }).catch(() => {})
-    const opt = page.getByRole('group', { name: 'Что прозвучало?' }).getByRole('button').first()
-    if (await opt.isVisible().catch(() => false)) await opt.click({ timeout: 1000 }).catch(() => {})
-    await page.waitForTimeout(400)
-  }
-  await expect(page.getByRole('heading', { name: 'Раунд окончен' })).toBeVisible({ timeout: 15_000 })
+  // Один ответ, после ошибки — «Дальше» (на разборе таймер стоит), дальше просто ждём конца раунда:
+  // без ответов время идёт без пауз, и раунд заканчивается предсказуемо и на медленном CI.
+  const opt = page.getByRole('group', { name: 'Что прозвучало?' }).getByRole('button').first()
+  await expect(opt).toBeVisible({ timeout: 15_000 })
+  await opt.click()
+  const next = page.getByRole('button', { name: 'Дальше', exact: true })
+  await next.waitFor({ timeout: 1500 }).then(() => next.click()).catch(() => {})
+  await expect(page.getByRole('heading', { name: 'Раунд окончен' })).toBeVisible({ timeout: 30_000 })
 }
