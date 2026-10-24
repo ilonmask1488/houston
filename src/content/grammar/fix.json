@@ -518,7 +518,7 @@
   "wrong": "This engine designed by Korolev's team.",
   "right": "This engine was designed by Korolev's team.",
   "ru": "Этот двигатель спроектировала команда Королёва.",
-  "why": "Без was смысл меняется: двигатель сам «спроектировал». Пассив — be + третья форма.",
+  "why": "Без was в предложении нет сказуемого — выходит только словосочетание «этот двигатель, спроектированный командой Королёва». Пассив: be + третья форма (was designed).",
   "reviewed": false
  },
  {
@@ -596,10 +596,10 @@
  {
   "id": "gf-word-order-003",
   "topic": "word-order",
-  "wrong": "I also am a student.",
+  "wrong": "I am too a student.",
   "right": "I am also a student.",
   "ru": "Я тоже студент.",
-  "why": "С be also ставится после глагола.",
+  "why": "Also ставится после be: I am also a student. Too — только в конце предложения: I am a student too.",
   "reviewed": false
  },
  {
