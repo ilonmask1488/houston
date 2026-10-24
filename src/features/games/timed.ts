@@ -9,8 +9,34 @@ export type TimedOutcome = { score: number; correct: number; wrong: number; best
 
 /** `ready` — таймер стартует, когда материал загружен (колода из базы, словарь). */
 /** `paused` — пока показан разбор ошибки, время не идёт: читать объяснение не должно стоить очков. */
-export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, ready = true, paused = false) {
+/**
+  Обратный отсчёт, который можно ставить на паузу. Считает накопленные миллисекунды, а не тики по секунде:
+  иначе при частых паузах (ошибка → разбор → «Дальше» быстрее секунды) setInterval перезапускался
+  и не успевал отсчитать ни одной секунды — игра не кончалась.
+*/
+export function useCountdown(seconds: number, running: boolean): number {
   const [left, setLeft] = useState(seconds)
+  const spent = useRef(0)
+  useEffect(() => {
+    if (!running) return
+    let last = Date.now()
+    const tick = () => {
+      const now = Date.now()
+      spent.current += now - last
+      last = now
+      setLeft(Math.max(0, seconds - Math.floor(spent.current / 1000)))
+    }
+    const timer = setInterval(tick, 250)
+    return () => {
+      clearInterval(timer)
+      tick()
+    }
+  }, [running, seconds])
+  return left
+}
+
+export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, ready = true, paused = false) {
+  const left = useCountdown(seconds, ready && !paused)
   const [streak, setStreak] = useState(0)
   const [score, setScore] = useState(0)
   const stats = useRef({ correct: 0, wrong: 0, best: 0 })
@@ -19,11 +45,6 @@ export function useTimed(seconds: number, onFinish: (o: TimedOutcome) => void, r
   useEffect(() => {
     if (ready && !started.current) started.current = Date.now()
   }, [ready])
-  useEffect(() => {
-    if (!ready || paused) return
-    const timer = setInterval(() => setLeft((n) => Math.max(0, n - 1)), 1000)
-    return () => clearInterval(timer)
-  }, [ready, paused])
   useEffect(() => {
     if (left > 0 || ended.current) return
     ended.current = true

@@ -26,6 +26,7 @@ import { currentSpeed, updateSegment } from '../../lib/session/session'
 import { useSettings } from '../../lib/settings/settings'
 import s from './games.module.css'
 import { GrammarGame, NumbersGame, TermsGame } from './Drills'
+import { useCountdown } from './timed'
 import { SpeedreadGame } from './Speedread'
 import { FalseFriendsGame, TwinsGame } from './Twins'
 import { NextBlock } from '../session/NextBlock'
@@ -151,7 +152,6 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
   const [item, setItem] = useState<StaticItem | null>(null)
   const [options, setOptions] = useState<string[]>([])
   const [given, setGiven] = useState<number | null>(null)
-  const [left, setLeft] = useState(seconds)
   const [streak, setStreak] = useState(0)
   const [score, setScore] = useState(0)
   const stats = useRef({ correct: 0, wrong: 0, best: 0 })
@@ -194,11 +194,7 @@ function StaticGame({ seconds, onFinish }: { seconds: number; onFinish: (o: Outc
 
   // Пока показан разбор ошибки (ждём «Дальше»), время стоит
   const reviewing = !!item && given !== null && options[given] !== item.text
-  useEffect(() => {
-    if (!pool || reviewing) return
-    const timer = setInterval(() => setLeft((n) => Math.max(0, n - 1)), 1000)
-    return () => clearInterval(timer)
-  }, [pool, reviewing])
+  const left = useCountdown(seconds, !!pool && !reviewing)
 
   useEffect(() => {
     if (left > 0 || ended.current) return
