@@ -242,8 +242,8 @@
  {
   "id": "q-intro-08",
   "module": "call-intro",
-  "q": "How did you get here today?",
-  "ru": "Как ты сегодня сюда добрался?",
+  "q": "How's your day going so far?",
+  "ru": "Как проходит твой день?",
   "voice": "in-f",
   "reviewed": false
  },
@@ -354,7 +354,7 @@
  {
   "id": "q-clarify-04",
   "module": "call-clarify",
-  "q": "Can you give me a ROM estimate for the new bracket?",
+  "q": "Can you give me an R.O.M. estimate for the new bracket?",
   "ru": "Можешь дать грубую оценку (ROM) по новому кронштейну? (Переспроси, что такое ROM.)",
   "voice": "us-f",
   "reviewed": false
@@ -394,7 +394,7 @@
  {
   "id": "q-clarify-09",
   "module": "call-clarify",
-  "q": "What's the MoS on this joint, roughly?",
+  "q": "What's the M.O.S. on this joint, roughly?",
   "ru": "Какой примерно запас прочности (MoS) у этого соединения? (Переспроси, что такое MoS.)",
   "voice": "gb-f",
   "reviewed": false
@@ -419,7 +419,7 @@
   "id": "q-project-07",
   "module": "call-project",
   "q": "Describe a time you disagreed with a teammate. How did you resolve it?",
-  "ru": "Расскажи, как ты не сошёлся во мнениях с товарищем по команде. Как вы это решили?",
+  "ru": "Расскажи о случае, когда ты не сошёлся во мнениях с товарищем по команде. Как вы это решили?",
   "voice": "us-f",
   "reviewed": false
  },
@@ -427,7 +427,7 @@
   "id": "q-project-08",
   "module": "call-project",
   "q": "Tell me about a time something went wrong during a test.",
-  "ru": "Расскажи, как что-то пошло не так во время испытания.",
+  "ru": "Расскажи о случае, когда во время испытания что-то пошло не так.",
   "voice": "gb-m",
   "reviewed": false
  },
@@ -498,8 +498,8 @@
  {
   "id": "q-explain-08",
   "module": "call-explain",
-  "q": "What's the difference between FEM and a physical test?",
-  "ru": "Чем расчёт МКЭ отличается от натурного испытания?",
+  "q": "What's the difference between a computer simulation and a physical test?",
+  "ru": "Чем компьютерный расчёт (например, МКЭ) отличается от натурного испытания?",
   "voice": "in-f",
   "reviewed": false
  },
@@ -563,7 +563,7 @@
   "id": "q-disagree-05",
   "module": "call-disagree",
   "q": "Isn't a 3D model enough without drawings?",
-  "ru": "Разве 3D-модели недостаточно и без чертежей?",
+  "ru": "Разве одной 3D-модели не хватит — без чертежей?",
   "voice": "in-f",
   "reviewed": false
  },

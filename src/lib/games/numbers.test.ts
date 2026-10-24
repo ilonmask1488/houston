@@ -41,8 +41,22 @@ describe('цифры на слух', () => {
     const teen = [...seen].find(([say]) => say.includes(' fifteen kilonewtons'))
     if (teen) expect(teen[1].slice(0, 2)).toEqual(['15 kN', '50 kN'])
     const q = [...seen].find(([say]) => say.endsWith('a quarter to three.'))
-    if (q) expect(q[1][0]).toBe('14:45')
+    if (q) expect(q[1][0]).toBe('2:45')
     const half = [...seen].find(([say]) => say.endsWith('half past two.'))
-    if (half) expect(half[1][0]).toBe('14:30')
+    if (half) expect(half[1][0]).toBe('2:30')
+    const big = [...seen].find(([say]) => say.endsWith('thousand and fourteen newtons.'))
+    if (big) expect(big[1][1]).toMatch(/,040 N$/)
+  })
+  it('даты только существующие: ни «31 апреля», ни «30 февраля»', () => {
+    const DAYS: Record<string, number> = { января: 31, февраля: 28, марта: 31, апреля: 30, мая: 31, июня: 30, июля: 31, августа: 31, сентября: 30, октября: 31, ноября: 30, декабря: 31 }
+    const r = rng(23)
+    for (let k = 0; k < NUMBER_KINDS * 2000; k++) {
+      const it = numberItem(r, k)
+      if (!it.id.startsWith('date-')) continue
+      for (const o of it.options) {
+        const [d, m] = o.split(' ')
+        expect(Number(d), o).toBeLessThanOrEqual(DAYS[m!]!)
+      }
+    }
   })
 })

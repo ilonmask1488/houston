@@ -32,6 +32,7 @@ export function ordinalWords(n: number): string {
 }
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 const MONTHS_RU = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
 
 export type NumberItem = {
@@ -82,7 +83,7 @@ const GENS: Gen[] = [
     ] as const)
     return {
       id: `teen-${n}-${unit[0]}`,
-      say: `${pick(r, ['The limit is', 'We need', 'It is about', 'Set it to'])} ${intWords(n)} ${unit[1]}.`,
+      say: `${pick(r, ['The limit is', 'We need', "It's about", 'Set it to'])} ${intWords(n)} ${unit[1]}.`,
       options: three(`${n} ${unit[0]}`, [`${teenTwin(n)} ${unit[0]}`], () => `${int(r, 11, 99)} ${unit[0]}`),
       ru: unit[2],
     }
@@ -94,7 +95,7 @@ const GENS: Gen[] = [
     const s = `${a}.${b}`
     return {
       id: `dec-${s}`,
-      say: `${pick(r, ['The wall thickness is', 'Make the hole', 'The gap should be'])} ${decimalWords(s)} millimetres.`,
+      say: `${pick(r, ['The wall thickness is', 'The hole diameter is', 'The gap should be'])} ${decimalWords(s)} millimetres.`,
       options: three(`${s} mm`, [`${a}.0${b} mm`, `${a}${b} mm`], () => `${int(r, 1, 9)}.${int(r, 1, 9)} mm`),
       ru: 'размер',
     }
@@ -130,7 +131,8 @@ const GENS: Gen[] = [
     const sign = neg ? '−' : '+'
     return {
       id: `temp-${sign}${n}`,
-      say: `${pick(r, ['The chamber goes down to', 'Operating range starts at', 'The sample was cooled to'])} ${neg ? 'minus' : 'plus'} ${intWords(n)} degrees Celsius.`,
+      // фраза по знаку: «охладили до плюс сорока» звучит нелепо
+      say: `${pick(r, neg ? ['The chamber goes down to', 'Operating range starts at', 'The sample was cooled to'] : ['The oven heats up to', 'Operating range goes up to', 'The sample was heated to'])} ${neg ? 'minus' : 'plus'} ${intWords(n)} degrees Celsius.`,
       options: three(`${sign}${n} °C`, [`${sign}${teenTwin(n)} °C`, `${neg ? '+' : '−'}${n} °C`], () => `${sign}${int(r, 11, 90)} °C`),
       ru: 'температура',
     }
@@ -138,7 +140,9 @@ const GENS: Gen[] = [
   // Большие числа: 1,250 N
   (r) => {
     const n = int(r, 1, 9) * 1000 + pick(r, [150, 250, 350, 450, 500, 750, 15, 50, 40, 14])
-    const twist = n % 100 === 50 ? n - 35 : n + 35 // 1,250 ↔ 1,215
+    // ловушка 13/30 по последним двум цифрам: 1,014 ↔ 1,040, 1,250 ↔ 1,215
+    const t = n % 100
+    const twist = (t >= 13 && t <= 19) || (t >= 30 && t % 10 === 0) ? n - t + teenTwin(t) : n + 35
     return {
       id: `big-${n}`,
       say: `The force reached ${intWords(n)} newtons.`,
@@ -146,27 +150,32 @@ const GENS: Gen[] = [
       ru: 'сила',
     }
   },
-  // Даты: the 13th of March / the 30th of March / the 13th of May
+  // Даты: the 13th of March / the 30th of March / the 13th of May — только существующие даты
   (r) => {
-    const d = pick(r, [3, 13, 30, 14, 4, 15, 5, 16, 20, 2, 12, 21])
     const m = int(r, 0, 11)
-    const tw = d === 3 ? 13 : d === 13 ? 30 : d === 30 ? 13 : d === 4 ? 14 : d === 14 ? 4 : d === 5 ? 15 : d === 15 ? 5 : d === 2 ? 12 : d === 12 ? 20 : d === 20 ? 2 : d + 10
-    const m2 = (m + pick(r, [2, 9])) % 12
+    const days = DAYS_IN_MONTH[m]!
+    const d = pick(r, [3, 13, 30, 14, 4, 15, 5, 16, 20, 2, 12, 21].filter((x) => x <= days))
+    const TWIN: Record<number, number> = { 3: 13, 13: 30, 30: 13, 4: 14, 14: 4, 5: 15, 15: 5, 16: 6, 2: 12, 12: 20, 20: 2, 21: 20 }
+    const tw = TWIN[d]!
+    const months = [...Array(12).keys()].filter((k) => k !== m && d <= DAYS_IN_MONTH[k]!)
+    const m2 = pick(r, months)
+    const ok = (x: string) => {
+      const [dd, mm] = x.split(' ')
+      return Number(dd) <= DAYS_IN_MONTH[MONTHS_RU.indexOf(mm!)]!
+    }
     return {
       id: `date-${d}-${m}`,
       say: `${pick(r, ['The review is on', 'Please send it by', 'The test is scheduled for'])} the ${ordinalWords(d)} of ${MONTHS[m]}.`,
-      options: three(`${d} ${MONTHS_RU[m]}`, [`${tw} ${MONTHS_RU[m]}`, `${d} ${MONTHS_RU[m2]}`], () => `${int(r, 1, 28)} ${MONTHS_RU[m]}`),
+      options: three(`${d} ${MONTHS_RU[m]}`, [`${tw} ${MONTHS_RU[m]}`, `${d} ${MONTHS_RU[m2]}`].filter(ok), () => `${int(r, 1, 28)} ${MONTHS_RU[m]}`),
       ru: 'дата',
     }
   },
-  // Время: a quarter to three = 14:45, a quarter past three = 15:15, half past = 15:30 (не 14:30!)
+  // Время: a quarter to three = 2:45, a quarter past three = 3:15, half past three = 3:30 (не «половина третьего»!)
+  // Варианты — в 12-часовом виде, как и звучит фраза: утро или вечер из неё не понять.
   (r) => {
-    const h = int(r, 1, 11)
+    const h = int(r, 1, 12)
     const kind = pick(r, ['to', 'past', 'half'] as const)
-    // 1–6 — после обеда (13:00–18:00), 7–11 — утро; 12 так и остаётся 12
-    const pm = h <= 6
-    const H = (x: number) => (pm && x < 12 ? x + 12 : x)
-    const at = (hh: number, mm: number) => `${String(H(hh)).padStart(2, '0')}:${String(mm).padStart(2, '0')}`
+    const at = (hh: number, mm: number) => `${hh}:${String(mm).padStart(2, '0')}`
     const prev = h === 1 ? 12 : h - 1
     const say = kind === 'to' ? `a quarter to ${intWords(h)}` : kind === 'past' ? `a quarter past ${intWords(h)}` : `half past ${intWords(h)}`
     const right = kind === 'to' ? at(prev, 45) : kind === 'past' ? at(h, 15) : at(h, 30)
@@ -174,10 +183,11 @@ const GENS: Gen[] = [
     return {
       id: `time-${kind}-${h}`,
       say: `${pick(r, ["Let's meet at", 'The call starts at', 'The bench is free at'])} ${say}.`,
-      options: three(right, traps, () => at(int(r, 1, 6), 0)),
+      options: three(right, traps, () => at(int(r, 1, 12), 0)),
       ru: 'время',
     }
   },
+
   // Номер чертежа по цифрам: seven oh four two
   (r) => {
     const digits = Array.from({ length: 4 }, () => int(r, 0, 9))

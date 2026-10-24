@@ -95,7 +95,7 @@
   "text": "In my free time, I like to read about space missions.",
   "options": [
    "In my free time, I like to read about space missions.",
-   "In my free time, I'd like to read about space missions.",
+   "In my free time, I used to read about space missions.",
    "In my free time, I like to read about a space mission."
   ],
   "ru": "В свободное время я люблю читать о космических миссиях.",
@@ -200,7 +200,7 @@
   "options": [
    "Let me put it another way.",
    "Let me put it the other way.",
-   "Let me put it in another way."
+   "Let me say it another way."
   ],
   "ru": "Скажу по-другому.",
   "focus": "put it another way",
@@ -475,7 +475,7 @@
    "My role is to prepare the test plan.",
    "My role was to prepare the test plans."
   ],
-  "ru": "Моя задача была подготовить программу испытаний.",
+  "ru": "Моей задачей было подготовить программу испытаний.",
   "focus": "was to prepare the test plan",
   "voice": "us-f",
   "reviewed": false
@@ -538,9 +538,9 @@
   "options": [
    "Basically, it's a way to find weak spots before we build anything.",
    "Basically, it's a way to find weak spots after we build anything.",
-   "Basically, it's a way to find weak spots before we built anything."
+   "Basically, it's a way to find weak spots before we test anything."
   ],
-  "ru": "По сути, это способ найти слабые места до того, как что-то построено.",
+  "ru": "По сути, это способ найти слабые места ещё до того, как мы что-то построим.",
   "focus": "before we build anything",
   "voice": "us-m",
   "reviewed": false
@@ -1123,7 +1123,7 @@
   "options": [
    "My background is in materials science.",
    "My background was in materials science.",
-   "My background is in material science."
+   "My background is in materials engineering."
   ],
   "ru": "По образованию я материаловед.",
   "focus": "is in materials science",
@@ -1591,7 +1591,7 @@
   "options": [
    "Morning, everyone. Let's keep this short. Tom, you first.",
    "Morning, everyone. Let's keep it short. Tom, you first.",
-   "Morning, everyone. Let's keep this short. Tom, you're first."
+   "Morning, everyone. Let's keep this short. Tom, you're next."
   ],
   "ru": "Всем доброе утро. Давайте коротко. Том, ты первый.",
   "focus": "Let's keep this short",
@@ -1645,7 +1645,7 @@
    "Let's start with the bad news.",
    "Let's start with some good news."
   ],
-  "ru": "Давай начнём с хороших.",
+  "ru": "Давай начнём с хороших новостей.",
   "focus": "with the good news",
   "voice": "us-f",
   "reviewed": false
@@ -2165,7 +2165,7 @@
    "Sorry, I'll slow down. The first tests this morning went well. No problems.",
    "Sorry, I'll slow down. The first test this evening went well. No problems."
   ],
-  "ru": "Извини, помедленнее. Первый тест утром прошёл хорошо. Проблем нет.",
+  "ru": "Извини, буду говорить медленнее. Первый тест утром прошёл хорошо. Проблем нет.",
   "focus": "The first test this morning",
   "voice": "gb-m",
   "reviewed": false
@@ -2240,7 +2240,7 @@
   "text": "That fixed it. Channel four is stable now.",
   "options": [
    "That fixed it. Channel four is stable now.",
-   "That fixed it. Channel four isn't stable now.",
+   "That fixed it. Channel five is stable now.",
    "That fixed it. Channel fourteen is stable now."
   ],
   "ru": "Помогло. Четвёртый канал теперь стабилен.",
@@ -3075,7 +3075,7 @@
    "Tell me about the time you worked under pressure.",
    "Tell me about a time you were under pressure."
   ],
-  "ru": "Расскажи, как работал в условиях давления и сжатых сроков.",
+  "ru": "Расскажи о случае, когда тебе пришлось работать под давлением (в стрессе, в сжатые сроки).",
   "focus": "a time you worked under pressure",
   "voice": "us-m",
   "reviewed": false
@@ -3140,7 +3140,7 @@
    "Do you know how our production line was organized?",
    "Do you know how their production line is organized?"
   ],
-  "ru": "Знаешь, как устроена наша производственная линия? (Можно честно сказать, что нет.)",
+  "ru": "Знаешь, как устроена наша производственная линия?",
   "focus": "how our production line is",
   "voice": "gb-f",
   "reviewed": false
@@ -3426,7 +3426,7 @@
    "The design review is on Tuesday at ten.",
    "The design review is on Thursday at two."
   ],
-  "ru": "Защита проекта в четверг в десять.",
+  "ru": "Рассмотрение проекта (design review) — в четверг в десять.",
   "focus": "on Thursday at ten",
   "voice": "us-f",
   "reviewed": false
@@ -3475,7 +3475,7 @@
   "text": "Can you send them the updated drawing today?",
   "options": [
    "Can you send them the updated drawing today?",
-   "Can you send him the updated drawing today?",
+   "Can you send me the updated drawing today?",
    "Can't you send them the updated drawing today?"
   ],
   "ru": "Можешь сегодня отправить им обновлённый чертёж?",
@@ -3948,7 +3948,7 @@
   ],
   "ru": "Он в отпуске до двадцатого.",
   "focus": "He's on holiday until the twentieth",
-  "voice": "us-f",
+  "voice": "gb-f",
   "reviewed": false
  },
  {
@@ -4165,11 +4165,11 @@
   "options": [
    "That one costs fifteen pounds.",
    "That one costs fifty pounds.",
-   "That one cost fifteen pounds."
+   "This one costs fifteen pounds."
   ],
   "ru": "Вон тот стоит пятнадцать фунтов.",
   "focus": "costs fifteen pounds",
-  "voice": "us-m",
+  "voice": "gb-m",
   "reviewed": false
  },
  {
@@ -4216,7 +4216,7 @@
   "text": "We met them at the station.",
   "options": [
    "We met them at the station.",
-   "We met him at the station.",
+   "We met you at the station.",
    "We meet them at the station."
   ],
   "ru": "Мы встретили их на вокзале.",
@@ -4312,7 +4312,7 @@
   ],
   "ru": "Мне два кофе с собой.",
   "focus": "two coffees",
-  "voice": "us-f",
+  "voice": "gb-f",
   "reviewed": false
  },
  {
@@ -4464,11 +4464,11 @@
   "options": [
    "The tickets are forty pounds each.",
    "The tickets are fourteen pounds each.",
-   "The ticket is forty pounds each."
+   "The tickets were forty pounds each."
   ],
   "ru": "Билеты — по сорок фунтов.",
   "focus": "forty pounds each",
-  "voice": "us-f",
+  "voice": "gb-f",
   "reviewed": false
  },
  {
@@ -4477,7 +4477,7 @@
   "options": [
    "Would you like tea or coffee?",
    "Do you like tea or coffee?",
-   "Would you like a tea or coffee?"
+   "Would you like tea or juice?"
   ],
   "ru": "Вам чай или кофе?",
   "focus": "Would you like tea",

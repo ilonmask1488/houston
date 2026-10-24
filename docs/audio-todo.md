@@ -6,7 +6,7 @@
 |---|---|
 | Where are you from originally? | us-f |
 | How was your weekend? | gb-m |
-| How did you get here today? | in-f |
+| How's your day going so far? | in-f |
 | What do you like most about living in Moscow? | au-m |
 | Why do you want to work in a design bureau? | us-m |
 | What software do you use for design work? | gb-f |
@@ -20,12 +20,12 @@
 | What does a good engineer need besides technical knowledge? | gb-f |
 | What are your salary expectations? | in-m |
 | What's something you'd like to get better at? | au-f |
-| Can you give me a ROM estimate for the new bracket? | us-f |
+| Can you give me an R.O.M. estimate for the new bracket? | us-f |
 | Can you send me the updated drawings by the end of the day? | gb-m |
 | Have you checked the GD and T callouts on the housing? | in-f |
 | What's your availability for the CDR next week? | au-m |
 | Can we move our call to half past? | us-m |
-| What's the MoS on this joint, roughly? | gb-f |
+| What's the M.O.S. on this joint, roughly? | gb-f |
 | Could you take care of the thing we discussed on Monday? | in-m |
 | Tell me about a time you had to learn something new quickly. | au-f |
 | Describe a time you disagreed with a teammate. How did you resolve it? | us-f |
@@ -38,7 +38,7 @@
 | How did you check that your calculations were correct? | au-f |
 | What does a nozzle do, in simple terms? | us-f |
 | Why do composite parts fail in fatigue? | gb-m |
-| What's the difference between FEM and a physical test? | in-f |
+| What's the difference between a computer simulation and a physical test? | in-f |
 | What's a tolerance, and why does it matter? | au-m |
 | What is a safety factor? | us-m |
 | Why do rockets have several stages? | gb-f |
@@ -1088,7 +1088,7 @@
 | Use the M8 bolts, not the M6. | us-m |
 | I think he's sent the wrong file. | gb-f |
 | Our team is smaller than theirs. | gb-m |
-| He's on holiday until the twentieth. | us-f |
+| He's on holiday until the twentieth. | gb-f |
 | Make sure you save it as a PDF. | us-m |
 | The gap should be less than half a millimetre. | gb-f |
 | We'll run the test again tomorrow morning. | gb-m |
@@ -1105,7 +1105,7 @@
 | I'm afraid we can't meet that deadline. | gb-f |
 | The stress is highest near the fillet. | gb-m |
 | How much are these apples? | us-f |
-| That one costs fifteen pounds. | us-m |
+| That one costs fifteen pounds. | gb-m |
 | The next bus leaves at seven forty. | gb-f |
 | Can I pay by card here? | gb-m |
 | I'll be there in ten minutes. | us-f |
@@ -1116,7 +1116,7 @@
 | Could you call me back after six? | us-m |
 | The shop closes at nine on Sundays. | gb-f |
 | He's been to London twice. | gb-m |
-| I'd like two coffees to take away. | us-f |
+| I'd like two coffees to take away. | gb-f |
 | The weather was great last weekend. | us-m |
 | Excuse me, is this seat taken? | gb-f |
 | Can you pick me up at eight? | gb-m |
@@ -1128,5 +1128,5 @@
 | I didn't know it was your birthday. | us-m |
 | There's a pharmacy on the corner. | gb-f |
 | I'll text you when I get home. | gb-m |
-| The tickets are forty pounds each. | us-f |
+| The tickets are forty pounds each. | gb-f |
 | Would you like tea or coffee? | us-m |
