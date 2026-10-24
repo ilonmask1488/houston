@@ -45,10 +45,10 @@ test('вводный тест целиком → профиль по трека�
   }
 
   // 4. Чтение: отвечаем на все вопросы
-  await expect(page.getByRole('heading', { name: 'A static fire test' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: /^(A static fire test|A load test of a new press)$/ })).toBeVisible()
   await page.getByRole('button', { name: 'К вопросам' }).click()
   await expect(page.getByText(/Время чтения/)).toBeVisible()
-  await page.getByRole('button', { name: 'It is held down by clamps.' }).click()
+  await page.getByRole('button', { name: /^(It is held down by clamps|It is fixed to the floor with bolts)\.$/ }).click()
   await page.getByRole('button', { name: 'Pressure, temperature and vibration.' }).click()
   await page.getByRole('button', { name: 'Engineers look for the reason first.' }).click()
   await page.getByRole('button', { name: 'Дальше' }).click()

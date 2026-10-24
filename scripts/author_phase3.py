@@ -934,7 +934,7 @@ TEXTS = [
             "Three settings control the cut: the cutting speed, the feed rate and the depth of cut. A higher speed saves time, but the tool becomes hot and wears faster. For this reason, the operator usually removes most of the metal with a rough cut first and then makes a light finishing cut. The finishing cut gives the final size and a smooth surface.",
         ],
         "paragraphsRu": [
-            "Токарный станок — это металлорежущий станок для круглых деталей, например валов, пальцев и втулок. Заготовку зажимают в патроне, и она вращается вместе со шпинделем. Резец движется вдоль заготовки и снимает металл в виде стружки.",
+            "Токарный станок — это металлорежущий станок для изготовления круглых деталей, например валов, пальцев и втулок. Заготовку зажимают в патроне, и она вращается вместе со шпинделем. Резец движется вдоль заготовки и снимает металл в виде стружки.",
             "Резание определяют три параметра: скорость резания, подача и глубина резания. Более высокая скорость экономит время, но инструмент сильнее нагревается и быстрее изнашивается. Поэтому оператор обычно сначала снимает бóльшую часть металла черновым проходом, а затем делает лёгкий чистовой проход. Чистовой проход даёт окончательный размер и гладкую поверхность.",
         ],
         "summaries": [
@@ -961,7 +961,7 @@ TEXTS = [
         ],
         "summaries": [
             ["A cylinder uses oil pressure from a pump to push a piston and a rod in a straight line.", "A hydraulic cylinder turns electricity into rotation.", "The piston pushes oil back into the pump to create force."],
-            ["The force is pressure times piston area, and good seals are needed to keep it.", "The force does not depend on the piston area.", "Worn seals make the cylinder faster and stronger."],
+            ["The force is pressure times piston area, and worn seals let oil leak and make the cylinder weak.", "The force does not depend on the piston area.", "Worn seals make the cylinder faster and stronger."],
         ],
         "retell": ["A hydraulic cylinder uses oil from a pump to push a piston and a rod in a straight line.", "Its force is pressure times piston area, and worn seals let oil leak and make it weak."],
         "find": [("What does a hydraulic cylinder turn the oil pressure into?", "straight-line force"), ("What are the main parts of a cylinder?", "a tube, a piston and a piston rod"), ("What sends oil into the cylinder?", "A pump sends oil"), ("What does the force depend on?", "the oil pressure and the area of the piston"), ("What force does a 20 cm² piston give at 100 bar?", "force of about 20 kN"), ("What keeps the oil inside?", "keep the oil inside"), ("What happens if the seals are worn?", "becomes slow and weak")],
@@ -1034,13 +1034,13 @@ TEXTS = [
     {
         "id": "t-mech-tool-wear", "field": "mech", "module": "doc-abstract", "level": 2, "topic": "mach", "kind": "аннотация", "title": "Tool life of coated carbide inserts with minimum quantity lubrication",
         "paragraphs": [
-            "Flood coolant improves tool life in milling, but it is expensive to buy, filter and dispose of, and it can be harmful to operators. In this study, we compare dry milling, flood coolant and minimum quantity lubrication (MQL) when face milling a 42CrMo4 steel with coated carbide inserts.",
+            "Flood coolant can improve tool life in milling, but it is expensive to buy, filter and dispose of, and it can be harmful to operators. In this study, we compare dry milling, flood coolant and minimum quantity lubrication (MQL) when face milling a 42CrMo4 steel with coated carbide inserts.",
             "All tests were carried out on a vertical machining center at a cutting speed of 200 m/min and a feed of 0.15 mm per tooth. Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm. The surface roughness of the workpiece was measured at the same intervals.",
             "With MQL, the tool life was 38 minutes, compared with 41 minutes for flood coolant and 22 minutes for dry milling. The surface roughness was similar for MQL and flood coolant, about Ra 0.9 µm. The results suggest that MQL can replace flood coolant in this operation and reduce the use of cutting fluid by more than 95 percent.",
         ],
         "paragraphsRu": [
-            "Обильный полив СОЖ повышает стойкость инструмента при фрезеровании, но жидкость дорого покупать, очищать и утилизировать, к тому же она может вредить здоровью операторов. В этом исследовании мы сравниваем фрезерование всухую, с обильным поливом СОЖ и с минимальной смазкой (MQL) при торцевом фрезеровании стали 42CrMo4 твердосплавными пластинами с покрытием.",
-            "Все испытания проводили на вертикальном обрабатывающем центре при скорости резания 200 м/мин и подаче 0,15 мм на зуб. Износ по задней поверхности измеряли оптическим микроскопом через каждые десять проходов; окончанием стойкости считали износ по задней поверхности 0,3 мм. Шероховатость поверхности заготовки измеряли с тем же интервалом.",
+            "Обильный полив СОЖ может повышать стойкость инструмента при фрезеровании, но жидкость дорого покупать, очищать и утилизировать, к тому же она может вредить здоровью операторов. В этом исследовании мы сравниваем фрезерование всухую, с обильным поливом СОЖ и с минимальной смазкой (MQL) при торцовом фрезеровании стали 42CrMo4 твердосплавными пластинами с покрытием.",
+            "Все испытания проводили на вертикальном обрабатывающем центре при скорости резания 200 м/мин и подаче 0,15 мм на зуб. Износ по задней поверхности измеряли оптическим микроскопом через каждые десять проходов; критерием затупления принимали износ по задней поверхности 0,3 мм. Шероховатость поверхности заготовки измеряли с тем же интервалом.",
             "С MQL стойкость составила 38 минут — против 41 минуты с обильным поливом и 22 минут всухую. Шероховатость поверхности с MQL и с поливом оказалась близкой, около Ra 0,9 мкм. Результаты позволяют предположить, что в этой операции MQL может заменить обильный полив и сократить расход СОЖ более чем на 95 процентов.",
         ],
         "summaries": [
@@ -1065,7 +1065,7 @@ TEXTS = [
         ],
         "parse": {
             "sentence": "Flank wear was measured with an optical microscope after every ten passes, and the end of tool life was defined as a flank wear of 0.3 mm.",
-            "parts": [["Flank wear was measured with an optical microscope", "пассив: износ по задней поверхности измеряли оптическим микроскопом"], ["after every ten passes", "через каждые десять проходов"], ["and the end of tool life was defined as a flank wear of 0.3 mm", "пассив: окончанием стойкости считали износ 0,3 мм"]],
+            "parts": [["Flank wear was measured with an optical microscope", "пассив: износ по задней поверхности измеряли оптическим микроскопом"], ["after every ten passes", "через каждые десять проходов"], ["and the end of tool life was defined as a flank wear of 0.3 mm", "пассив: критерием затупления принимали износ 0,3 мм"]],
             "q": "When did the tool life end?", "options": ["When the flank wear reached 0.3 mm", "After ten passes", "When the roughness reached Ra 0.9 µm"], "answer": 0,
         },
     },
@@ -1078,7 +1078,7 @@ TEXTS = [
         ],
         "paragraphsRu": [
             "Болтовые соединения в машинах и транспортных средствах часто работают в условиях вибрации и со временем могут терять усилие затяжки. В статье исследуется, как три способа стопорения влияют на самоотвинчивание болтов M10 класса прочности 8.8 при поперечной вибрации.",
-            "Соединения затягивали до усилия 28 кН и испытывали на машине типа Юнкера, которая смещает стянутые пластины вбок на ±0,4 мм с частотой 12,5 Гц. Соединения без стопорения сравнивали с соединениями с пружинной шайбой, гайкой с нейлоновым кольцом и жидким фиксатором резьбы. Усилие затяжки непрерывно регистрировали датчиком-шайбой.",
+            "Соединения затягивали до усилия 28 кН и испытывали на машине типа Юнкера, которая смещает стянутые пластины вбок на ±0,4 мм с частотой 12,5 Гц. Соединения без стопорения сравнивали с соединениями с пружинной шайбой, гайкой с нейлоновым кольцом и жидким фиксатором резьбы. Усилие затяжки непрерывно регистрировали кольцевым (шайбовым) датчиком силы.",
             "Соединения без стопорения потеряли 80 процентов затяжки за 300 циклов. Пружинная шайба почти ничего не улучшила, тогда как самоконтрящаяся гайка сохранила около 60 процентов затяжки после 2000 циклов. Лучше всех показал себя фиксатор резьбы: потеря затяжки составила менее 10 процентов. Авторы делают вывод, что пружинные шайбы не следует применять для защиты от самоотвинчивания при поперечной вибрации.",
         ],
         "summaries": [
@@ -1153,9 +1153,9 @@ TEXTS = [
             "Bolts of property class 10.9 that have been tightened to full preload shall not be reused. Thread lubricant may be applied only if it is specified in the drawing, because it changes the relationship between torque and preload by up to 30 percent. Any joint in which the specified torque cannot be reached shall be reported to the design department before the press is put into operation.",
         ],
         "paragraphsRu": [
-            "Во всех силовых болтовых соединениях рамы пресса должны применяться болты класса прочности 10.9 с закалёнными шайбами под головкой болта и под гайкой. Болты должны затягиваться тарированным динамометрическим ключом до значений из таблицы 3, которые соответствуют усилию затяжки примерно 70 процентов пробной нагрузки болта. Ударные гайковёрты допускается применять для наживления болтов, но не для окончательной затяжки.",
+            "Во всех силовых болтовых соединениях рамы пресса должны применяться болты класса прочности 10.9 с закалёнными шайбами под головкой болта и под гайкой. Болты должны затягиваться тарированным динамометрическим ключом до значений из таблицы 3, которые соответствуют усилию затяжки примерно 70 процентов пробной нагрузки болта. Ударные гайковёрты допускается применять для предварительного заворачивания болтов, но не для окончательной затяжки.",
             "Соединения, в которых более четырёх болтов, должны затягиваться крест-накрест не менее чем в два прохода: сначала до 50, затем до 100 процентов заданного момента. После окончательной затяжки каждый болт рекомендуется пометить краской — линией через головку и шайбу, чтобы при осмотре можно было обнаружить последующий поворот.",
-            "Болты класса прочности 10.9, уже затянутые на полное усилие, повторно применять запрещается. Смазку резьбы допускается наносить, только если она указана на чертеже, поскольку она меняет соотношение между моментом и усилием затяжки до 30 процентов. О любом соединении, в котором не удаётся достичь заданного момента, необходимо сообщить в конструкторский отдел до ввода пресса в эксплуатацию.",
+            "Болты класса прочности 10.9, уже затянутые на полное усилие, повторно применять запрещается. Смазку резьбы допускается наносить, только если она указана на чертеже, поскольку она меняет соотношение между моментом и усилием затяжки на величину до 30 процентов. О любом соединении, в котором не удаётся достичь заданного момента, необходимо сообщить в конструкторский отдел до ввода пресса в эксплуатацию.",
         ],
         "summaries": [
             ["Frame joints need 10.9 bolts with hardened washers, tightened by a calibrated torque wrench to Table 3.", "Any bolts may be used if they fit the holes.", "Impact wrenches must be used for final tightening."],
@@ -1187,18 +1187,18 @@ TEXTS = [
     {
         "id": "t-mech-weld-inspection", "field": "mech", "module": "doc-standard", "level": 2, "topic": "join", "kind": "отчёт о контроле", "title": "Inspection report: welds of a machine base frame",
         "paragraphs": [
-            "Report number: IR-2026-118. Item: welded base frame for a grinding machine, drawing WF-310, revision A. Inspection method: visual inspection of all welds, followed by dye penetrant testing of the four lifting lugs. Acceptance criteria: quality level B according to the customer specification.",
+            "Report number: IR-2026-118. Item: welded base frame for a grinding machine, drawing WF-310, revision A. Inspection method: visual inspection of all welds, followed by dye penetrant testing of the four lifting lugs. Acceptance criteria: quality level C according to ISO 5817.",
             "Most welds were found to be acceptable. However, on weld 14, an undercut 0.8 mm deep and 25 mm long was measured, while the maximum allowed depth is 0.5 mm. Weld spatter was found near weld 9, and it was removed by grinding during the inspection. No cracks were detected on the lifting lugs.",
             "Disposition: weld 14 shall be repaired by grinding the undercut area and adding one more weld pass, and then inspected again. The welder confirmed that the welding current had been set too high for the plate thickness of 6 mm. Status: the frame is on hold until the repair is accepted by the quality inspector.",
         ],
         "paragraphsRu": [
-            "Номер отчёта: IR-2026-118. Изделие: сварная станина шлифовального станка, чертёж WF-310, редакция A. Метод контроля: визуальный контроль всех швов, затем капиллярный контроль четырёх грузовых проушин. Критерии приёмки: уровень качества B по техническим условиям заказчика.",
+            "Номер отчёта: IR-2026-118. Изделие: сварная станина шлифовального станка, чертёж WF-310, редакция A. Метод контроля: визуальный контроль всех швов, затем капиллярный контроль четырёх грузовых проушин. Критерии приёмки: уровень качества C по ISO 5817.",
             "Большинство швов признаны годными. Однако на шве 14 измерен подрез глубиной 0,8 мм и длиной 25 мм, тогда как максимально допустимая глубина — 0,5 мм. Возле шва 9 обнаружены брызги металла; их удалили шлифовкой во время контроля. Трещин на грузовых проушинах не выявлено.",
             "Решение: шов 14 исправить — зашлифовать зону подреза и наложить ещё один проход, затем проконтролировать повторно. Сварщик подтвердил, что сварочный ток был выставлен слишком большим для толщины листа 6 мм. Статус: станина задержана до приёмки исправления контролёром ОТК.",
         ],
         "summaries": [
             ["The report gives the item, the inspection methods and the acceptance criteria.", "The report describes how the frame was designed.", "Only the lifting lugs were inspected."],
-            ["One weld had a too-deep undercut, spatter was removed, and no cracks were found.", "Cracks were found on all four lifting lugs.", "The undercut on weld 14 was within the limit."],
+            ["One weld had an undercut that was too deep, spatter was removed, and no cracks were found.", "Cracks were found on all four lifting lugs.", "The undercut on weld 14 was within the limit."],
             ["Weld 14 will be repaired and checked again; the current was too high, and the frame is on hold.", "The frame was shipped to the customer without repair.", "The cause was a wrong drawing revision."],
         ],
         "retell": [
@@ -1209,7 +1209,7 @@ TEXTS = [
         "find": [
             ("What machine is the frame for?", "for a grinding machine"),
             ("Which parts were tested with dye penetrant?", "four lifting lugs"),
-            ("What quality level is required?", "quality level B"),
+            ("What quality level is required?", "quality level C"),
             ("How deep was the undercut on weld 14?", "0.8 mm deep"),
             ("What is the maximum allowed depth?", "maximum allowed depth is 0.5 mm"),
             ("How was the spatter removed?", "removed by grinding"),
@@ -1226,13 +1226,13 @@ TEXTS = [
         "id": "t-mech-contamination", "field": "mech", "module": "doc-speed", "level": 3, "topic": "maint", "kind": "обсуждение", "title": "Contamination: the main cause of hydraulic failures",
         "paragraphs": [
             "Industry surveys repeatedly show that most failures of hydraulic systems are caused by contaminated fluid rather than by design faults. Solid particles, water and air all reduce the service life of components, but hard particles of about the same size as the internal clearances, typically 5 to 15 µm, are the most damaging, because they enter the gaps between moving parts and cause abrasive wear.",
-            "Water is often underestimated. Even a small amount of free water reduces the lubricating ability of the oil, promotes corrosion and, at high pressures, can lead to cavitation damage in pumps. Air entering through a loose suction fitting has a similar effect and is usually noticed first as a loud noise from the pump.",
-            "Cleanliness is therefore specified as a code according to ISO 4406, which gives the number of particles larger than 4, 6 and 14 µm per milliliter of fluid. For a system with servo valves, a typical target is 16/14/11. Lowering the code by one step roughly halves the number of particles, and in practice the cost of better filtration is usually much smaller than the cost of unplanned downtime and replaced components.",
+            "Water is often underestimated. Even a small amount of free water reduces the lubricating ability of the oil, promotes corrosion and can lead to cavitation damage in pumps. Air entering through a loose suction fitting has a similar effect and is usually noticed first as a loud noise from the pump.",
+            "Cleanliness is therefore specified as a code according to ISO 4406, which is based on the number of particles of 4, 6 and 14 µm and larger per milliliter of fluid. For a system with servo valves, a typical target is 16/14/11. Lowering the code by one step roughly halves the number of particles, and in practice the cost of better filtration is usually much smaller than the cost of unplanned downtime and replaced components.",
         ],
         "paragraphsRu": [
             "Отраслевые обзоры раз за разом показывают, что большинство отказов гидросистем вызвано загрязнённой рабочей жидкостью, а не ошибками конструкции. Твёрдые частицы, вода и воздух — все они сокращают срок службы элементов, но опаснее всего твёрдые частицы размером примерно с внутренние зазоры, обычно 5–15 мкм: они попадают в щели между движущимися деталями и вызывают абразивный износ.",
-            "Воду часто недооценивают. Даже небольшое количество свободной воды ухудшает смазывающую способность масла, способствует коррозии, а при высоком давлении может привести к кавитационному разрушению насосов. Воздух, подсасываемый через неплотный штуцер всасывающей линии, действует так же, и первым признаком обычно бывает громкий шум насоса.",
-            "Поэтому чистоту жидкости задают кодом по ISO 4406, который указывает число частиц крупнее 4, 6 и 14 мкм на миллилитр жидкости. Для системы с сервоклапанами типичная цель — 16/14/11. Снижение кода на одну ступень примерно вдвое уменьшает число частиц, а на практике лучшая фильтрация обычно обходится намного дешевле внепланового простоя и замены элементов.",
+            "Воду часто недооценивают. Даже небольшое количество свободной воды ухудшает смазывающую способность масла, способствует коррозии и может привести к кавитационному разрушению насосов. Воздух, подсасываемый через неплотный штуцер всасывающей линии, действует так же, и первым признаком обычно бывает громкий шум насоса.",
+            "Поэтому чистоту жидкости задают кодом по ISO 4406, который строится по числу частиц размером 4, 6 и 14 мкм и более в миллилитре жидкости. Для системы с сервоклапанами типичная цель — 16/14/11. Снижение кода на одну ступень примерно вдвое уменьшает число частиц, а на практике лучшая фильтрация обычно обходится намного дешевле внепланового простоя и замены элементов.",
         ],
         "summaries": [
             ["Most hydraulic failures come from contamination, and particles the size of the clearances are the worst.", "Most hydraulic failures are caused by design faults.", "Very large particles are the most dangerous because they block the pipes."],
@@ -1248,7 +1248,7 @@ TEXTS = [
             ("What causes most failures of hydraulic systems?", "contaminated fluid"),
             ("What particle size is the most damaging?", "typically 5 to 15 µm"),
             ("What kind of wear do hard particles cause?", "abrasive wear"),
-            ("What can water lead to at high pressures?", "cavitation damage in pumps"),
+            ("What can water lead to in pumps?", "cavitation damage in pumps"),
             ("How is air in the system usually noticed first?", "loud noise from the pump"),
             ("Which standard gives the cleanliness code?", "according to ISO 4406"),
             ("What is a typical target for a system with servo valves?", "16/14/11"),

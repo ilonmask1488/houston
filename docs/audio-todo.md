@@ -2032,6 +2032,7 @@
 | Write the measurements on the inspection sheet. | us-m |
 | Half of the scrap came from one machine. | gb-f |
 | Stop the line if you see a crack. | gb-m |
+| Great. I'm Mike, I handle recruitment, and this is Dana. She leads the design team. | us-m |
 | I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | us-f |
 | I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | us-m |
 | I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing. | gb-f |

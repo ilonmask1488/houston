@@ -685,7 +685,7 @@
   "wrong": "Never I have seen such a big press.",
   "right": "I have never seen such a big press.",
   "ru": "Я никогда не видел такой большой пресс.",
-  "why": "Never — между have и третьей формой.",
+  "why": "Never стоит между have и третьей формой: I have never seen. Never в начале возможно только с инверсией (Never have I seen…), но это книжный, эмоциональный стиль.",
   "reviewed": false,
   "field": "mech"
  }

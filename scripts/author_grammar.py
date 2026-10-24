@@ -71,9 +71,9 @@ GAPS = {
         ("Our plant is certified to ___ ISO 9001.", [NONE, "the", "an"],
          "Наш завод сертифицирован по ISO 9001.",
          "Название стандарта с номером — без артикля: ISO 9001, GOST 2.307. С the — только если добавить слово standard."),
-        ("I read an interesting article in ___ Journal of Spacecraft and Rockets.", ["the", "a", NONE],
-         "Я прочитал интересную статью в журнале Journal of Spacecraft and Rockets.",
-         "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал."),
+        ("I read an interesting article in ___ latest issue of Aerospace America.", ["the", "a", NONE],
+         "Я прочитал интересную статью в свежем номере Aerospace America.",
+         "Latest («самый последний, свежий») работает как превосходная степень, поэтому всегда с the: the latest issue, the latest version."),
         ("___ Volga is the longest river in Europe.", ["The", NONE, "A"],
          "Волга — самая длинная река в Европе.",
          "Реки, моря и океаны — с the: the Volga, the Black Sea. Города и страны — обычно без артикля."),
@@ -790,9 +790,9 @@ GAPS_MECH = {
         ("___ first shift starts at seven o'clock.", ["The", "A", NONE],
          "Первая смена начинается в семь часов.",
          "Порядковое числительное first — с the: the first shift, the second operation. Без артикля по-английски так не говорят."),
-        ("I read an interesting article in ___ Journal of Manufacturing Processes.", ["the", "a", NONE],
-         "Я прочитал интересную статью в журнале Journal of Manufacturing Processes.",
-         "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал."),
+        ("I read an interesting article in ___ latest issue of Machine Design.", ["the", "a", NONE],
+         "Я прочитал интересную статью в последнем номере журнала Machine Design.",
+         "Latest («самый последний, свежий») работает как превосходная степень, поэтому всегда с the: the latest issue, the latest version."),
     ],
     "tenses": [
         ("Have you ever ___ a five-axis machine in action?", ["seen", "saw", "see"],
@@ -837,7 +837,7 @@ FIX_MECH = {
     "word-order": [
         ("Never I have seen such a big press.", "I have never seen such a big press.",
          "Я никогда не видел такой большой пресс.",
-         "Never — между have и третьей формой."),
+         "Never стоит между have и третьей формой: I have never seen. Never в начале возможно только с инверсией (Never have I seen…), но это книжный, эмоциональный стиль."),
     ],
 }
 

@@ -104,7 +104,7 @@ test('прогулка новичка', async ({ page }) => {
 
   // ——— Обучение и «Сегодня» ———
   await page.getByRole('button', { name: 'К занятию' }).click()
-  const tour = page.getByRole('dialog', { name: 'Как устроен Houston' })
+  const tour = page.getByRole('dialog', { name: /^Как устроен / })
   for (let i = 1; i <= 4; i++) {
     await expect(tour.getByText(`${i} / 4`)).toBeVisible()
     await snap(page, `обучение-${i}`)

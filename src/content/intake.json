@@ -154,7 +154,7 @@
       "byField": {
         "mech": {
           "title": "A load test of a new press",
-          "text": "Before a new press goes into production, engineers test it in the workshop. This is called a load test. The press is fixed to the floor with strong bolts, so it cannot move. The machine runs for a few hours while hundreds of sensors measure pressure, temperature and vibration. After the test, the team compares the data with the computer model. If the numbers match, the press is ready for the next step. If they do not match, engineers look for the reason before they continue. A short test in the workshop is much cheaper than a breakdown in the factory.",
+          "text": "Before a new press goes into production, engineers test it in the workshop. This is called a load test. The press is fixed to the floor with strong bolts, so it cannot move. The machine runs for a few hours while dozens of sensors measure pressure, temperature and vibration. After the test, the team compares the data with the computer model. If the numbers match, the press is ready for the next step. If they do not match, engineers look for the reason before they continue. A short test in the workshop is much cheaper than a breakdown at the customer's factory.",
           "questions": [
             { "q": "Why can't the press move during the test?", "options": ["It is fixed to the floor with bolts.", "The motor is too weak.", "It has no oil inside."], "answer": 0 },
             { "q": "What do the sensors measure?", "options": ["Speed and position.", "Pressure, temperature and vibration.", "Only the oil level."], "answer": 1 },

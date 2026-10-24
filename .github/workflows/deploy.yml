@@ -33,6 +33,10 @@ jobs:
         run: npx playwright install --with-deps chromium webkit
       - name: E2E (Android + iPhone)
         run: npm run e2e
+      - name: E2E машиностроение (Android)
+        run: npm run e2e -- --project=android
+        env:
+          E2E_FIELD: mech
       - uses: actions/upload-artifact@v7
         if: failure()
         with:

@@ -215,14 +215,14 @@
  {
   "id": "gr-articles-017",
   "topic": "articles",
-  "text": "I read an interesting article in ___ Journal of Spacecraft and Rockets.",
+  "text": "I read an interesting article in ___ latest issue of Aerospace America.",
   "options": [
    "the",
    "a",
    "∅"
   ],
-  "ru": "Я прочитал интересную статью в журнале Journal of Spacecraft and Rockets.",
-  "why": "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал.",
+  "ru": "Я прочитал интересную статью в свежем номере Aerospace America.",
+  "why": "Latest («самый последний, свежий») работает как превосходная степень, поэтому всегда с the: the latest issue, the latest version.",
   "reviewed": false,
   "field": "space"
  },
@@ -322,14 +322,14 @@
  {
   "id": "gr-articles-025",
   "topic": "articles",
-  "text": "I read an interesting article in ___ Journal of Manufacturing Processes.",
+  "text": "I read an interesting article in ___ latest issue of Machine Design.",
   "options": [
    "the",
    "a",
    "∅"
   ],
-  "ru": "Я прочитал интересную статью в журнале Journal of Manufacturing Processes.",
-  "why": "Названия журналов вида «Journal of …» идут с the — это конкретный, единственный журнал.",
+  "ru": "Я прочитал интересную статью в последнем номере журнала Machine Design.",
+  "why": "Latest («самый последний, свежий») работает как превосходная степень, поэтому всегда с the: the latest issue, the latest version.",
   "reviewed": false,
   "field": "mech"
  },

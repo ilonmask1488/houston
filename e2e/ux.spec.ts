@@ -16,7 +16,7 @@ test.describe('однократные объяснения', () => {
 
   test('первый запуск: обучение из четырёх шагов после теста, потом не показывается; можно показать заново', async ({ page }) => {
     await seedIntake(page)
-    const tour = page.getByRole('dialog', { name: 'Как устроен Houston' })
+    const tour = page.getByRole('dialog', { name: /^Как устроен / })
     await expect(tour).toBeVisible()
     await expect(tour.getByText('1 / 4')).toBeVisible()
     await expect(tour.getByRole('heading', { name: 'Каждый день — одно занятие' })).toBeVisible()
@@ -32,7 +32,7 @@ test.describe('однократные объяснения', () => {
     await page.getByRole('link', { name: /^Как устроено приложение/ }).click()
     await expect(page.getByRole('heading', { level: 2, name: 'Повторение и оценки' })).toBeVisible()
     await page.getByRole('button', { name: 'Показать обучение заново' }).click()
-    await expect(page.getByRole('dialog', { name: 'Как устроен Houston' })).toBeVisible()
+    await expect(page.getByRole('dialog', { name: /^Как устроен / })).toBeVisible()
   })
 
   test('тому, кто уже занимался, после обновления — «Что изменилось», прогресс на месте', async ({ page }) => {

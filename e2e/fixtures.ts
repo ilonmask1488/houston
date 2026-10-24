@@ -11,7 +11,7 @@ export type { Page } from '@playwright/test'
 export const test = base.extend<{ coachmarks: boolean; field: 'space' | 'mech' | null }>({
   coachmarks: [true, { option: true }],
   // Специальность выбрана заранее (как у того, кто уже пользуется приложением). null — первый запуск с выбором.
-  field: ['space', { option: true }],
+  field: [(process.env.E2E_FIELD as 'space' | 'mech' | undefined) ?? 'space', { option: true }],
   page: async ({ page, coachmarks, field }, provide) => {
     if (field) await page.addInitScript((f) => localStorage.setItem('houston:field', f), field)
     if (coachmarks) {

@@ -410,7 +410,7 @@ cutting insert|ˈkʌtɪŋ ˌɪnsɜːrt|сменная режущая пласт�
 carbide|ˈkɑːrbaɪd|твёрдый сплав|mach
 high-speed steel|ˌhaɪ spiːd ˈstiːl|быстрорежущая сталь|mach
 end mill|ˈend mɪl|концевая фреза|mach
-face milling|ˈfeɪs ˌmɪlɪŋ|торцевое фрезерование|mach
+face milling|ˈfeɪs ˌmɪlɪŋ|торцовое фрезерование|mach
 drill bit|ˈdrɪl bɪt|сверло|mach
 reamer|ˈriːmər|развёртка|mach
 cutting speed|ˈkʌtɪŋ spiːd|скорость резания|mach
@@ -427,18 +427,18 @@ roughing|ˈrʌfɪŋ|черновая обработка|mach
 finishing cut|ˈfɪnɪʃɪŋ kʌt|чистовой проход|mach
 grinding|ˈɡraɪndɪŋ|шлифование|mach
 facing|ˈfeɪsɪŋ|подрезка торца|mach
-G-code|ˈdʒiː koʊd|G-код (управляющая программа)|mach
+G-code|ˈdʒiː koʊd|G-код (язык управляющих программ ЧПУ)|mach
 toolpath|ˈtuːlpæθ|траектория инструмента|mach
 work offset|ˈwɜːrk ˌɔːfset|смещение нуля детали|mach
 built-up edge|ˌbɪlt ʌp ˈedʒ|нарост на режущей кромке|mach
-micrometer|maɪˈkrɑːmɪtər|микрометр|mach
+micrometer|maɪˈkrɑːmɪtər|микрометр (измерительный инструмент)|mach
 caliper|ˈkælɪpər|штангенциркуль|mach
 dial indicator|ˈdaɪəl ˌɪndɪkeɪtər|индикатор часового типа|mach
 weld|weld|сварной шов; сваривать|join
 welder|ˈweldər|сварщик; сварочный аппарат|join
 arc welding|ˈɑːrk ˌweldɪŋ|дуговая сварка|join
-MIG welding|ˈmɪɡ ˌweldɪŋ|полуавтоматическая сварка (MIG)|join
-TIG welding|ˈtɪɡ ˌweldɪŋ|аргонодуговая сварка (TIG)|join
+MIG welding|ˈmɪɡ ˌweldɪŋ|сварка плавящимся электродом в инертном газе (MIG), «полуавтомат»|join
+TIG welding|ˈtɪɡ ˌweldɪŋ|аргонодуговая сварка неплавящимся электродом (TIG)|join
 spot welding|ˈspɑːt ˌweldɪŋ|точечная сварка|join
 welding current|ˈweldɪŋ ˌkɜːrənt|сварочный ток|join
 weld pass|ˈweld pæs|проход (при сварке)|join
@@ -469,7 +469,7 @@ stud|stʌd|шпилька|join
 dowel pin|ˈdaʊəl pɪn|установочный штифт|join
 keyway|ˈkiːweɪ|шпоночный паз|join
 circlip|ˈsɜːrklɪp|стопорное кольцо|join
-press fit|ˈpres fɪt|прессовая посадка, запрессовка|join
+press fit|ˈpres fɪt|посадка с натягом; запрессовка|join
 transition fit|trænˈzɪʃən fɪt|переходная посадка|join
 jig|dʒɪɡ|сборочное приспособление, кондуктор|join
 pump|pʌmp|насос|hyd
@@ -494,7 +494,7 @@ return line|rɪˈtɜːrn laɪn|сливная линия|hyd
 pressure drop|ˈpreʃər drɑːp|перепад давления|hyd
 rated pressure|ˈreɪtɪd ˌpreʃər|номинальное давление|hyd
 seal|siːl|уплотнение|hyd
-O-ring|ˈoʊ rɪŋ|уплотнительное кольцо|hyd
+O-ring|ˈoʊ rɪŋ|уплотнительное кольцо круглого сечения|hyd
 rod seal|ˈrɑːd siːl|уплотнение штока|hyd
 gasket|ˈɡæskɪt|прокладка|hyd
 pneumatic|nuːˈmætɪk|пневматический|hyd
@@ -508,7 +508,7 @@ quick coupling|ˌkwɪk ˈkʌplɪŋ|быстроразъёмное соедине
 hydraulic press|haɪˌdrɔːlɪk ˈpres|гидравлический пресс|hyd
 cleanliness code|ˈklenlinəs koʊd|класс чистоты (код по ISO 4406)|hyd
 preventive maintenance|prɪˌventɪv ˈmeɪntənəns|планово-предупредительное обслуживание|maint
-predictive maintenance|prɪˌdɪktɪv ˈmeɪntənəns|обслуживание по фактическому состоянию|maint
+predictive maintenance|prɪˌdɪktɪv ˈmeɪntənəns|предиктивное (прогнозное) обслуживание|maint
 condition monitoring|kənˈdɪʃən ˌmɑːnɪtərɪŋ|контроль технического состояния|maint
 downtime|ˈdaʊntaɪm|простой (оборудования)|maint
 lubrication|ˌluːbrɪˈkeɪʃən|смазка (процесс), смазывание|maint

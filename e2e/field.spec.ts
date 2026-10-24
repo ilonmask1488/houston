@@ -14,6 +14,7 @@ test.describe('специальность', () => {
     await expect(picker).toHaveCount(0)
     // библиотека: машиностроительные тексты есть, космических нет
     await page.goto('./#/library')
+    await expect(page.getByRole('link', { name: /How a lathe turns a shaft/ })).toBeVisible()
     await expect(page.getByRole('link', { name: /CubeSat|satellite|rocket/i })).toHaveCount(0)
     // настройки: можно вернуть космос
     await page.goto('./#/settings')

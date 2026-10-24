@@ -4521,7 +4521,7 @@
    "Set the spindle speed to sixteen hundred rpm.",
    "Set the spindle speed to five hundred rpm."
   ],
-  "ru": "Поставь обороты шпинделя тысяча пятьсот в минуту.",
+  "ru": "Выставь обороты шпинделя на тысячу пятьсот в минуту.",
   "focus": "fifteen hundred rpm",
   "voice": "us-m",
   "reviewed": false,
@@ -4549,7 +4549,7 @@
    "The coolant tanks need topping up.",
    "The coolant tank needed topping up."
   ],
-  "ru": "В бак СОЖ нужно долить жидкости.",
+  "ru": "В бак нужно долить СОЖ.",
   "focus": "The coolant tank needs",
   "voice": "gb-f",
   "reviewed": false,
@@ -5359,7 +5359,7 @@
   "options": [
    "The foreman asked them to stay late.",
    "The foreman asked me to stay late.",
-   "The foreman asks them to stay late."
+   "The foreman told them to stay late."
   ],
   "ru": "Мастер попросил их задержаться.",
   "focus": "asked them to stay late",

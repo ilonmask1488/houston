@@ -413,9 +413,9 @@ SPACE_EXTRA = {
 MECH = [
     # станки и цех
     ("The lathe on line two is down again.", "The lathe on line three is down again.", "The lathe on line two was down again.", "line two is down", "Токарный станок на второй линии опять встал."),
-    ("Set the spindle speed to fifteen hundred rpm.", "Set the spindle speed to sixteen hundred rpm.", "Set the spindle speed to five hundred rpm.", "fifteen hundred rpm", "Поставь обороты шпинделя тысяча пятьсот в минуту."),
+    ("Set the spindle speed to fifteen hundred rpm.", "Set the spindle speed to sixteen hundred rpm.", "Set the spindle speed to five hundred rpm.", "fifteen hundred rpm", "Выставь обороты шпинделя на тысячу пятьсот в минуту."),
     ("We can't run the CNC machine without the new program.", "We can run the CNC machine without the new program.", "We can't run the CNC machine without the new programs.", "We can't run the CNC machine", "Без новой программы мы не можем запустить станок с ЧПУ."),
-    ("The coolant tank needs topping up.", "The coolant tanks need topping up.", "The coolant tank needed topping up.", "The coolant tank needs", "В бак СОЖ нужно долить жидкости.", "gb-f"),
+    ("The coolant tank needs topping up.", "The coolant tanks need topping up.", "The coolant tank needed topping up.", "The coolant tank needs", "В бак нужно долить СОЖ.", "gb-f"),
     ("Change the insert after forty parts.", "Change the insert after fourteen parts.", "Change the inserts after forty parts.", "after forty parts", "Меняй пластину после сорока деталей."),
     ("The tool broke in the middle of the cut.", "The tool broke at the end of the cut.", "The tools broke in the middle of the cut.", "in the middle of the cut", "Инструмент сломался в середине прохода."),
     ("The milling machine is free after lunch.", "The milling machine is free before lunch.", "The milling machine was free after lunch.", "is free after lunch", "Фрезерный станок освободится после обеда."),
@@ -479,7 +479,7 @@ MECH = [
     ("Can we finish the batch before the weekend?", "Can't we finish the batch before the weekend?", "Can we finish the batch after the weekend?", "Can we finish the batch before", "Успеем закончить партию до выходных?"),
     ("The new line will start in a fortnight.", "The new line won't start in a fortnight.", "The new lines will start in a fortnight.", "will start in a fortnight", "Новая линия заработает через две недели.", "gb-f"),
     ("We only have steel for two more days.", "We only have steel for ten more days.", "We only had steel for two more days.", "steel for two more days", "Стали нам хватит только на два дня."),
-    ("The foreman asked them to stay late.", "The foreman asked me to stay late.", "The foreman asks them to stay late.", "asked them to stay late", "Мастер попросил их задержаться."),
+    ("The foreman asked them to stay late.", "The foreman asked me to stay late.", "The foreman told them to stay late.", "asked them to stay late", "Мастер попросил их задержаться."),
     # ОТК и качество
     ("The inspector rejected six parts from this batch.", "The inspector rejected sixteen parts from this batch.", "The inspector rejected six parts from these batches.", "rejected six parts", "Контролёр забраковал шесть деталей из этой партии."),
     ("Every tenth part goes to the lab.", "Every tenth part went to the lab.", "Every fifth part goes to the lab.", "Every tenth part goes", "Каждая десятая деталь идёт в лабораторию."),

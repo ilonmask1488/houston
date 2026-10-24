@@ -131,6 +131,7 @@ EPISODES = [
         ],
         # Машиностроение: те же реплики, кроме космических (номер реплики → замена); в JSON — byField.mech.lines целиком.
         "mech_lines": {
+            2: ("mike", "Great. I'm Mike, I handle recruitment, and this is Dana. She leads the design team.", "Отлично. Я Майк, занимаюсь наймом, а это Дана — она руководит группой конструкторов."),
             4: ("me", [
                 ("I'm a fourth-year student in mechanical engineering. I'm currently working on a project about composite testing.", "Я студент четвёртого курса, машиностроение. Сейчас работаю над проектом по испытаниям композитов.", None),
                 ("I was born in a small town, and I have a cat.", "Я родился в маленьком городе, и у меня есть кот.", "Не по делу: на собеседовании начинают с учёбы и работы."),

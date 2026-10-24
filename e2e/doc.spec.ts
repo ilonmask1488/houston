@@ -2,6 +2,8 @@ import { expect, test } from './fixtures.ts'
 import { runSegment } from './run.ts'
 
 test('Техдок: прочитать текст, добавить слово в карточки, задания с пересказом вслух', async ({ page }) => {
+  // космический текст и термин; у машиностроения свой короткий сценарий — в field.spec.ts
+  test.skip(process.env.E2E_FIELD === 'mech', 'тексты про спутник у машиностроения не показываются')
   test.setTimeout(180_000)
   await page.goto('./#/tracks')
   await page.getByRole('link', { name: /Библиотека текстов/ }).click()

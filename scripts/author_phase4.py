@@ -837,7 +837,7 @@ FALSE_FRIENDS_MECH = [
     ("milling-cutter", "фреза", "Фреза затупилась — поменяй её.", ["milling cutter", "fraise", "milling machine"],
      "Fraise по-английски — старинный гофрированный воротник или редкое название зенковки (а по-французски — клубника). Фреза — milling cutter (концевая — end mill); milling machine — сам фрезерный станок."),
     ("carriage", "суппорт (токарного станка)", "Подведи суппорт ближе к патрону.", ["carriage", "support", "carrier"],
-     "Support — опора, поддержка; carrier — перевозчик или носитель. Суппорт токарного станка — carriage (нижняя часть — saddle, поперечные салазки — cross slide)."),
+     "Support — опора, поддержка; carrier — перевозчик, носитель, а на токарном станке — хомутик (поводок). Суппорт токарного станка — carriage (нижняя часть — saddle, поперечные салазки — cross slide)."),
     ("overhaul", "капитальный ремонт", "Пресс стоит на капитальном ремонте до марта.", ["major overhaul", "capital repair", "capital renovation"],
      "Capital — столица, капитал; «capital repair» — калька. Капремонт станка или двигателя — overhaul (major overhaul), текущий ремонт — repair."),
     ("setup-technician", "наладчик (станков)", "Позови наладчика — станок надо перенастроить под новую деталь.", ["setup technician", "adjuster", "tuner"],
