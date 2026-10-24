@@ -9,7 +9,7 @@
    "constructive"
   ],
   "trap": "construction",
-  "why": "Construction — строительство, стройка. Конструкция изделия — design (как устроено) или structure (несущая часть).",
+  "why": "Construction — прежде всего строительство; «of heavy construction» — о том, как сделано. Конструкция как устройство изделия — design, несущая часть — structure.",
   "speak": [
    {
     "text": "design",
@@ -37,10 +37,10 @@
   "options": [
    "part",
    "detail",
-   "item"
+   "particle"
   ],
   "trap": "detail",
-  "why": "Detail — подробность, мелкая особенность. Деталь изделия — part (или component).",
+  "why": "Detail — подробность, мелкая особенность; particle — частица. Деталь изделия — part (или component).",
   "speak": [
    {
     "text": "part",
@@ -717,27 +717,27 @@
   "ru": "интеллигентный",
   "context": "Он очень интеллигентный человек.",
   "options": [
-   "well-educated and cultured",
+   "cultured",
    "intelligent",
    "intellectual"
   ],
   "trap": "intelligent",
-  "why": "Intelligent — умный, сообразительный. Интеллигентный — well-educated, cultured, well-mannered.",
+  "why": "Intelligent — умный, сообразительный; intellectual — интеллектуал, человек идей. Интеллигентный — cultured, well-educated, well-mannered.",
   "speak": [
    {
-    "text": "well-educated and cultured",
+    "text": "cultured",
     "voice": "us-f"
    },
    {
-    "text": "well-educated and cultured",
+    "text": "cultured",
     "voice": "us-m"
    },
    {
-    "text": "well-educated and cultured",
+    "text": "cultured",
     "voice": "gb-f"
    },
    {
-    "text": "well-educated and cultured",
+    "text": "cultured",
     "voice": "gb-m"
    }
   ],
@@ -750,10 +750,10 @@
   "options": [
    "performer",
    "artist",
-   "artiste"
+   "artisan"
   ],
   "trap": "artist",
-  "why": "Artist — прежде всего художник. Артист на сцене — performer, actor, singer.",
+  "why": "Artist — прежде всего художник; про музыкантов говорят recording artist, но нейтрально «тот, кто выступает» — performer (или entertainer). Artisan — ремесленник.",
   "speak": [
    {
     "text": "performer",
@@ -1404,7 +1404,7 @@
    "checkup"
   ],
   "trap": "control",
-  "why": "Control — управление, регулирование (control system — система управления). Проверка размеров — inspection.",
+  "why": "Control само по себе — управление, регулирование (control system — система управления); в связке quality control — ок. Проверка размеров детали — inspection (dimensional inspection).",
   "speak": [
    {
     "text": "inspection",
@@ -1652,7 +1652,7 @@
    "exploration"
   ],
   "trap": "exploitation",
-  "why": "Exploitation — эксплуатация людей или нещадное использование ресурсов. Эксплуатация техники — service, operation, use.",
+  "why": "Exploitation — эксплуатация людей, использование в корыстных целях; о ресурсах — разработка (exploitation of oil fields). Эксплуатация техники — service, operation, use.",
   "speak": [
    {
     "text": "service",
@@ -2644,7 +2644,7 @@
    "crystal"
   ],
   "trap": "brilliant",
-  "why": "Brilliant — блестящий, гениальный (brilliant idea). Камень — diamond.",
+  "why": "Brilliant — блестящий, гениальный (brilliant idea); как «бриллиантовая огранка» — только ювелирный термин. Кольцо с бриллиантом — diamond ring.",
   "speak": [
    {
     "text": "diamond",

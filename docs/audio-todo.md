@@ -56,6 +56,14 @@
 | Before we finish, is there anything you want to know about the team? | gb-m |
 | Do you have any questions about the internship schedule? | in-f |
 | Is there anything you'd like to ask about the next steps? | au-m |
+| clothing | us-f |
+| clothing | us-m |
+| clothing | gb-f |
+| clothing | gb-m |
+| closing | us-f |
+| closing | us-m |
+| closing | gb-f |
+| closing | gb-m |
 | thread | us-f |
 | thread | us-m |
 | thread | gb-f |
@@ -828,6 +836,10 @@
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | us-m |
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | gb-f |
 | It can stay out for 30 days, so write down each time it is taken out; old material must be tested again. | gb-m |
+| cultured | us-f |
+| cultured | us-m |
+| cultured | gb-f |
+| cultured | gb-m |
 | complaint | us-f |
 | complaint | us-m |
 | complaint | gb-f |

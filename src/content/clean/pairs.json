@@ -184,8 +184,8 @@
   "module": "clean-th",
   "a": "path",
   "b": "pass",
-  "ipaA": "pæθ",
-  "ipaB": "pæs",
+  "ipaA": "pɑːθ",
+  "ipaB": "pɑːs",
   "ruA": "путь",
   "ruB": "проход; пропуск",
   "speak": [
@@ -315,45 +315,45 @@
   "reviewed": false
  },
  {
-  "id": "mp-then-zen",
+  "id": "mp-clothing-closing",
   "module": "clean-th",
-  "a": "then",
-  "b": "zen",
-  "ipaA": "ðen",
-  "ipaB": "zen",
-  "ruA": "тогда",
-  "ruB": "дзен",
+  "a": "clothing",
+  "b": "closing",
+  "ipaA": "ˈkləʊðɪŋ",
+  "ipaB": "ˈkləʊzɪŋ",
+  "ruA": "одежда",
+  "ruB": "закрытие; закрывающий",
   "speak": [
    {
-    "text": "then",
+    "text": "clothing",
     "voice": "us-f"
    },
    {
-    "text": "then",
+    "text": "clothing",
     "voice": "us-m"
    },
    {
-    "text": "then",
+    "text": "clothing",
     "voice": "gb-f"
    },
    {
-    "text": "then",
+    "text": "clothing",
     "voice": "gb-m"
    },
    {
-    "text": "zen",
+    "text": "closing",
     "voice": "us-f"
    },
    {
-    "text": "zen",
+    "text": "closing",
     "voice": "us-m"
    },
    {
-    "text": "zen",
+    "text": "closing",
     "voice": "gb-f"
    },
    {
-    "text": "zen",
+    "text": "closing",
     "voice": "gb-m"
    }
   ],
@@ -367,7 +367,7 @@
   "ipaA": "west",
   "ipaB": "vest",
   "ruA": "запад",
-  "ruB": "жилет",
+  "ruB": "жилет (AmE); майка (BrE)",
   "speak": [
    {
     "text": "west",
